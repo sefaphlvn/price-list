@@ -44,8 +44,9 @@ function App() {
   // Table state
   const [pagination, setPagination] = useState<TablePaginationConfig>({
     current: 1,
-    pageSize: 10,
+    pageSize: 100,
     showSizeChanger: true,
+    pageSizeOptions: ['50', '100', '200', '500'],
     showTotal: (total) => `Toplam ${total} kayıt`,
   });
 
@@ -132,6 +133,7 @@ function App() {
       dataIndex: 'model',
       key: 'model',
       width: 150,
+      render: (text) => <Text strong style={{ color: '#1890ff' }}>{text}</Text>,
     },
     {
       title: 'Donanım',
@@ -150,20 +152,48 @@ function App() {
       dataIndex: 'transmission',
       key: 'transmission',
       width: 120,
+      render: (text) => text ? <span style={{
+        background: '#f0f5ff',
+        padding: '2px 8px',
+        borderRadius: '4px',
+        fontSize: '12px',
+        color: '#1890ff'
+      }}>{text}</span> : '-',
     },
     {
       title: 'Yakıt',
       dataIndex: 'fuel',
       key: 'fuel',
-      width: 100,
+      width: 130,
+      render: (text) => {
+        const colors: { [key: string]: string } = {
+          'Benzin': '#ff4d4f',
+          'Dizel': '#52c41a',
+          'Elektrik': '#1890ff',
+          'Plug-in Hybrid': '#722ed1',
+          'CNG': '#faad14',
+        };
+        return text ? <span style={{
+          background: colors[text] || '#f0f0f0',
+          color: '#fff',
+          padding: '4px 12px',
+          borderRadius: '12px',
+          fontSize: '12px',
+          fontWeight: '500'
+        }}>{text}</span> : '-';
+      },
     },
     {
       title: 'Fiyat',
       dataIndex: 'priceRaw',
       key: 'price',
-      width: 150,
+      width: 180,
       sorter: (a, b) => a.priceNumeric - b.priceNumeric,
       defaultSortOrder: 'ascend',
+      render: (text) => <Text strong style={{
+        color: '#52c41a',
+        fontSize: '14px'
+      }}>{text}</Text>,
     },
   ];
 
@@ -200,34 +230,76 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '24px', maxWidth: '1400px', margin: '0 auto' }}>
-      <Card>
-        <Space direction="vertical" size="large" style={{ width: '100%' }}>
-          {/* Header */}
-          <div>
-            <Title level={2}>Fiyat Listesi Görüntüleyici</Title>
-            <Space>
-              <Text>Marka:</Text>
-              <Select
-                value={selectedBrand}
-                onChange={setSelectedBrand}
-                style={{ width: 200 }}
-                options={BRANDS.map((b) => ({ label: b.name, value: b.id }))}
-              />
-              <Button
-                icon={<ReloadOutlined />}
-                onClick={fetchData}
-                loading={fetchState.loading}
+    <div style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      padding: '40px 24px'
+    }}>
+      <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+        <Card
+          style={{
+            borderRadius: '20px',
+            boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
+            background: 'rgba(255, 255, 255, 0.98)',
+            backdropFilter: 'blur(10px)'
+          }}
+        >
+          <Space direction="vertical" size="large" style={{ width: '100%' }}>
+            {/* Header */}
+            <div style={{
+              borderBottom: '2px solid #f0f0f0',
+              paddingBottom: '24px',
+              marginBottom: '8px'
+            }}>
+              <Title
+                level={2}
+                style={{
+                  margin: 0,
+                  marginBottom: '16px',
+                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  fontSize: '32px',
+                  fontWeight: '700'
+                }}
               >
-                Yenile
-              </Button>
-            </Space>
-            {fetchState.data?.lastUpdated && (
-              <div style={{ marginTop: 8 }}>
-                <Text type="secondary">Son güncelleme: {fetchState.data.lastUpdated}</Text>
-              </div>
-            )}
-          </div>
+                🚗 Otomobil Fiyat Listesi
+              </Title>
+              <Space wrap size="middle">
+                <div>
+                  <Text strong style={{ marginRight: 8, color: '#666' }}>Marka:</Text>
+                  <Select
+                    value={selectedBrand}
+                    onChange={setSelectedBrand}
+                    style={{ width: 200 }}
+                    size="large"
+                    options={BRANDS.map((b) => ({ label: b.name, value: b.id }))}
+                  />
+                </div>
+                <Button
+                  icon={<ReloadOutlined />}
+                  onClick={fetchData}
+                  loading={fetchState.loading}
+                  size="large"
+                  type="primary"
+                  style={{
+                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    border: 'none',
+                    borderRadius: '8px',
+                    fontWeight: '500'
+                  }}
+                >
+                  Yenile
+                </Button>
+              </Space>
+              {fetchState.data?.lastUpdated && (
+                <div style={{ marginTop: 12 }}>
+                  <Text type="secondary" style={{ fontSize: '13px' }}>
+                    📅 Son güncelleme: {fetchState.data.lastUpdated}
+                  </Text>
+                </div>
+              )}
+            </div>
 
           {/* Error */}
           {fetchState.error && (
@@ -251,60 +323,121 @@ function App() {
           {!fetchState.loading && fetchState.data && (
             <>
               {/* Filters */}
-              <Space wrap>
-                <Search
-                  placeholder="Model, donanım, motor, şanzıman ara..."
-                  value={searchText}
-                  onChange={(e) => setSearchText(e.target.value)}
-                  style={{ width: 300 }}
-                  prefix={<SearchOutlined />}
-                  allowClear
-                />
-                <Select
-                  placeholder="Model"
-                  value={modelFilter}
-                  onChange={setModelFilter}
-                  style={{ width: 180 }}
-                  allowClear
-                  options={modelOptions.map((m) => ({ label: m, value: m }))}
-                />
-                <Select
-                  placeholder="Şanzıman"
-                  value={transmissionFilter}
-                  onChange={setTransmissionFilter}
-                  style={{ width: 150 }}
-                  allowClear
-                  options={transmissionOptions.map((t) => ({ label: t, value: t }))}
-                />
-              </Space>
+              <div style={{
+                background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                padding: '20px',
+                borderRadius: '12px',
+                marginTop: '8px'
+              }}>
+                <Text strong style={{ display: 'block', marginBottom: '12px', color: '#333' }}>
+                  🔍 Filtreler
+                </Text>
+                <Space wrap size="middle">
+                  <Search
+                    placeholder="Model, donanım, motor ara..."
+                    value={searchText}
+                    onChange={(e) => setSearchText(e.target.value)}
+                    style={{ width: 300 }}
+                    size="large"
+                    prefix={<SearchOutlined />}
+                    allowClear
+                  />
+                  <Select
+                    placeholder="Model Seç"
+                    value={modelFilter}
+                    onChange={setModelFilter}
+                    style={{ width: 180 }}
+                    size="large"
+                    allowClear
+                    options={modelOptions.map((m) => ({ label: m, value: m }))}
+                  />
+                  <Select
+                    placeholder="Şanzıman"
+                    value={transmissionFilter}
+                    onChange={setTransmissionFilter}
+                    style={{ width: 150 }}
+                    size="large"
+                    allowClear
+                    options={transmissionOptions.map((t) => ({ label: t, value: t }))}
+                  />
+                </Space>
+              </div>
 
               {/* Export buttons */}
-              <Space wrap>
-                <Button icon={<DownloadOutlined />} onClick={handleExportCSV}>
-                  CSV İndir
-                </Button>
-                <Button icon={<DownloadOutlined />} onClick={handleExportXLSX}>
-                  Excel İndir
-                </Button>
-                <Button icon={<CopyOutlined />} onClick={handleCopyMarkdown}>
-                  Markdown Kopyala
-                </Button>
-              </Space>
+              <div style={{
+                background: 'rgba(102, 126, 234, 0.08)',
+                padding: '16px 20px',
+                borderRadius: '12px',
+                borderLeft: '4px solid #667eea'
+              }}>
+                <Text strong style={{ display: 'block', marginBottom: '12px', color: '#667eea' }}>
+                  📥 Dışa Aktar
+                </Text>
+                <Space wrap size="middle">
+                  <Button
+                    icon={<DownloadOutlined />}
+                    onClick={handleExportCSV}
+                    size="large"
+                    style={{
+                      borderRadius: '8px',
+                      borderColor: '#667eea',
+                      color: '#667eea'
+                    }}
+                  >
+                    CSV İndir
+                  </Button>
+                  <Button
+                    icon={<DownloadOutlined />}
+                    onClick={handleExportXLSX}
+                    size="large"
+                    style={{
+                      borderRadius: '8px',
+                      borderColor: '#52c41a',
+                      color: '#52c41a'
+                    }}
+                  >
+                    Excel İndir
+                  </Button>
+                  <Button
+                    icon={<CopyOutlined />}
+                    onClick={handleCopyMarkdown}
+                    size="large"
+                    style={{
+                      borderRadius: '8px',
+                      borderColor: '#722ed1',
+                      color: '#722ed1'
+                    }}
+                  >
+                    Markdown Kopyala
+                  </Button>
+                </Space>
+              </div>
 
               {/* Table */}
-              <Table
-                columns={columns}
-                dataSource={filteredData}
-                rowKey={(record, index) => `${record.model}-${record.trim}-${index}`}
-                pagination={pagination}
-                onChange={(newPagination) => setPagination(newPagination)}
-                scroll={{ x: 1000 }}
-                size="small"
-              />
+              <div style={{
+                background: '#fff',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.08)'
+              }}>
+                <Table
+                  columns={columns}
+                  dataSource={filteredData}
+                  rowKey={(record, index) => `${record.model}-${record.trim}-${index}`}
+                  pagination={pagination}
+                  onChange={(newPagination) => setPagination(newPagination)}
+                  scroll={{ x: 1000 }}
+                  size="middle"
+                  style={{
+                    borderRadius: '12px'
+                  }}
+                />
+              </div>
             </>
           )}
         </Space>
       </Card>
+      </div>
     </div>
   );
 }
