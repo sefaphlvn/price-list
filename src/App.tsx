@@ -133,6 +133,7 @@ function App() {
       dataIndex: 'model',
       key: 'model',
       width: 150,
+      sorter: (a, b) => a.model.localeCompare(b.model, 'tr'),
       render: (text) => <Text strong style={{ color: '#1890ff' }}>{text}</Text>,
     },
     {
@@ -140,18 +141,21 @@ function App() {
       dataIndex: 'trim',
       key: 'trim',
       width: 200,
+      sorter: (a, b) => a.trim.localeCompare(b.trim, 'tr'),
     },
     {
       title: 'Motor',
       dataIndex: 'engine',
       key: 'engine',
       width: 150,
+      sorter: (a, b) => a.engine.localeCompare(b.engine, 'tr'),
     },
     {
       title: 'Şanzıman',
       dataIndex: 'transmission',
       key: 'transmission',
       width: 120,
+      sorter: (a, b) => a.transmission.localeCompare(b.transmission, 'tr'),
       render: (text) => text ? <span style={{
         background: '#f0f5ff',
         padding: '2px 8px',
@@ -165,6 +169,7 @@ function App() {
       dataIndex: 'fuel',
       key: 'fuel',
       width: 130,
+      sorter: (a, b) => a.fuel.localeCompare(b.fuel, 'tr'),
       render: (text) => {
         const colors: { [key: string]: string } = {
           'Benzin': '#ff4d4f',
