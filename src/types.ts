@@ -4,7 +4,8 @@ export interface BrandConfig {
   id: string;
   name: string;
   url: string;
-  parser: 'vw' | 'skoda' | 'renault' | 'generic'; // Parser strategy
+  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'ford' | 'generic'; // Parser strategy
+  responseType?: 'json' | 'xml'; // Response type (default: json)
   logo?: string;
 }
 

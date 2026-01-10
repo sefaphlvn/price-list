@@ -1,0 +1,904 @@
+{
+    "carPriceList": [
+        {
+            "modelCode": "CF702",
+            "modelName": "Yeni Puma",
+            "modelYears": [
+                "2025"
+            ],
+            "image": "https://cdnepws.azureedge.net/getmedia/2cb442ff-1056-4894-b11a-172f21395b3e/PumaMCAFiyatListesi.webp.aspx?ext=.webp",
+            "discoverLink": "/suv/yeni-puma",
+            "technicalBrochureLink": "https://cdnepws.azureedge.net/getmedia/5659c085-0154-4373-9b94-677148caab8c/Puma-teknikfoy-ekim-2025.pdf.aspx",
+            "termsbyModelYear": [
+                {
+                    "modelYear": "2025",
+                    "termsAndConditions": "<ul class=\"fop-list-square fop-small\">\r\n\t<li>Ford Otomotiv San.A.Ş. kampanya ile ilgili değişiklik yapma hakkını saklı tutar. Farklı vade ve son taksit tutarı seçenekleri için Ford Yetkili Satıcılarından bilgi alabilirsiniz.</li>\r\n\t<li>Yukarıda belirtilen birim fiyatların uygulanmaya başladığı tarih 9&nbsp;Aralık 2025&rsquo;tir.</li>\r\n\t<li>Belirtilen fiyatlar tavsiye edilen anahtar teslim fiyatlar olup, aracın tüm vergiler dahil satış fiyatıdır.</li>\r\n\t<li>Not : Opsiyonlu araç alımlarında ÖTV matrahı değişeceğinden uygulanacak ÖTV oranı ve tavsiye edilen anahtar teslim fiyatı belirtilen rakamlardan farklılık gösterebilmektedir.</li>\r\n\t<li>T.Edilen Kampanyalı Anahtar Teslim Fiyatına konu araç fiyatı tavsiye edilen perakende satış fiyatı üzerinden 2025 Model Yılı Puma araç modellerinde %3 oranında indirim olarak uygulanmaktadır. Söz konusu indirim Peşin ve destekli kredili alımlarda geçerlidir.</li>\r\n\t<li>İlk Tescil Harcı ilgili tutarın içerisine dahil edilmemiştir.</li>\r\n</ul>\r\n"
+                }
+            ],
+            "searchText": "ford-yeni-puma",
+            "carType": "Binek",
+            "carProductionPlace": "Romanya",
+            "isSelected": false,
+            "entities": [
+                {
+                    "entityCode": "HCDJB7DNGHAABML2ACMAA",
+                    "entityDescription": "SUV, 1.0L EcoBoost 125PS, 7 İleri Otomatik, Benzin/Hibrit",
+                    "modelYear": "2025",
+                    "series": "Titanium",
+                    "engine": "1.0L EcoBoost 125PS",
+                    "capacity": null,
+                    "fuelType": "Benzin/Hibrit",
+                    "gearbox": "7 İleri Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "SUV",
+                    "campaignedTurnkeyPrice": "1787100",
+                    "deliveredTurnkeyListPrice": "1842100",
+                    "carPrice3": "1787100",
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": "/benimfordum/teklif-alin/cf702",
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CF702",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya (Akik Siyah & Kurşun Gri)",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "24100",
+                            "turnkeyListPrice": "23400",
+                            "carPrice3": "23400",
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CF702",
+                            "modelYear": "2025",
+                            "carOption": "Özel Renk (Fantastik Kırmızı & Ada Mavisi)",
+                            "carOptionDescription": [
+                                "Elektrikli, Katlanan, Isıtmalı ve Logo Yansıtmalı Yan Aynalar\n360° Kamera\nÖn Park Sensörleri\nGelişmiş Çarpışma Önleme Yardımcısı\nŞerit Takip ve Uyarı Sistemi (6 ileri manuel vites araçlarda)\nŞerit Hizalama Özellikli Şerit Takip ve Uyarı Sistemi (7 ileri otomatik vites araçlarda)\nÇapraz Trafik Uyarılı Kör Nokta Uyarı Sistemi\nDur&Kalk Özellikli Akıllı Adaptif Hız Kontrol Sistemi (6 ileri manuel vites araçlarda)\nDur&Kalk Özellikli ve Çarpışma Önleme Yardımcılı Adaptif Hız Kontrol Sistemi (7 ileri otomatik vites araçlarda)"
+                            ],
+                            "deliveredTurnkeyPrice": "45600",
+                            "turnkeyListPrice": "44200",
+                            "carPrice3": "44200",
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CF702",
+                            "modelYear": "2025",
+                            "carOption": "16'' Çelik Stepne",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "4800",
+                            "turnkeyListPrice": "4700",
+                            "carPrice3": "4700",
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CF702",
+                            "modelYear": "2025",
+                            "carOption": "Teknoloji Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "57900",
+                            "turnkeyListPrice": "56200",
+                            "carPrice3": "56200",
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                },
+                {
+                    "entityCode": "HCDLBZDNGHAABML2ACMAA",
+                    "entityDescription": "SUV, 1.0L EcoBoost 155PS, 7 İleri Otomatik, Benzin/Hibrit",
+                    "modelYear": "2025",
+                    "series": "ST-Line X",
+                    "engine": "1.0L EcoBoost 155PS",
+                    "capacity": null,
+                    "fuelType": "Benzin/Hibrit",
+                    "gearbox": "7 İleri Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "SUV",
+                    "campaignedTurnkeyPrice": "2014700",
+                    "deliveredTurnkeyListPrice": "2076700",
+                    "carPrice3": "2014700",
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": "/benimfordum/teklif-alin/cf702",
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CF702",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya (Akik Siyah & Kurşun Gri)",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "24100",
+                            "turnkeyListPrice": "23400",
+                            "carPrice3": "23400",
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CF702",
+                            "modelYear": "2025",
+                            "carOption": "Özel Renk (Fantastik Kırmızı & Ada Mavisi)",
+                            "carOptionDescription": [
+                                "Elektrikli, Katlanan, Isıtmalı ve Logo Yansıtmalı Yan Aynalar\n360° Kamera\nÖn Park Sensörleri\nGelişmiş Çarpışma Önleme Yardımcısı\nŞerit Takip ve Uyarı Sistemi (6 ileri manuel vites araçlarda)\nŞerit Hizalama Özellikli Şerit Takip ve Uyarı Sistemi (7 ileri otomatik vites araçlarda)\nÇapraz Trafik Uyarılı Kör Nokta Uyarı Sistemi\nDur&Kalk Özellikli Akıllı Adaptif Hız Kontrol Sistemi (6 ileri manuel vites araçlarda)\nDur&Kalk Özellikli ve Çarpışma Önleme Yardımcılı Adaptif Hız Kontrol Sistemi (7 ileri otomatik vites araçlarda)"
+                            ],
+                            "deliveredTurnkeyPrice": "45600",
+                            "turnkeyListPrice": "44200",
+                            "carPrice3": "44200",
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CF702",
+                            "modelYear": "2025",
+                            "carOption": "16'' Çelik Stepne",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "4800",
+                            "turnkeyListPrice": "4700",
+                            "carPrice3": "4700",
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CF702",
+                            "modelYear": "2025",
+                            "carOption": "Açılabilir Panoramik Cam Tavan",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "63000",
+                            "turnkeyListPrice": "61100",
+                            "carPrice3": "61100",
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "modelCode": "CGE02",
+            "modelName": "Focus",
+            "modelYears": [
+                "2025"
+            ],
+            "image": "https://cdnepws.azureedge.net/getmedia/eacec84b-7e06-48d2-a388-42a8a1381738/focus-Sedan-1920x1080-copy.png.aspx?width=1920&height=1080&ext=.png",
+            "discoverLink": "/otomobiller/ford-focus",
+            "technicalBrochureLink": "https://cdnepws.azureedge.net/getmedia/1ef366f3-90e2-40b3-8796-6ff7dfea6a96/focus-teknikfoy-aralik-2025_1.pdf.aspx",
+            "termsbyModelYear": [
+                {
+                    "modelYear": "2025",
+                    "termsAndConditions": "<ul class=\"fop-list-square fop-small\">\r\n\t<li>Ford Otomotiv San.A.Ş. kampanya ile ilgili değişiklik yapma hakkını saklı tutar. Farklı vade ve son taksit tutarı seçenekleri için Ford Yetkili Satıcılarından bilgi alabilirsiniz.</li>\r\n\t<li>Yukarıda belirtilen birim fiyatların uygulanmaya başladığı tarih 9 Aralık 2025&rsquo;tir.</li>\r\n\t<li>Belirtilen fiyatlar tavsiye edilen anahtar teslim fiyatlar olup, aracın tüm vergiler dahil satış fiyatıdır.</li>\r\n\t<li>T.Edilen Kampanyalı Anahtar Teslim Fiyatına konu (Peşin) araç fiyatı tavsiye edilen perakende satış fiyatı üzerinden 2025 Model yılı Focus araçlarda %5 indirim olarak uygulanmaktadır. Söz konusu kampanya destekli kredi kampanyaları ile birleştirilememektedir.</li>\r\n\t<li>Not : Opsiyonlu araç alımlarında ÖTV matrahı değişeceğinden uygulanacak ÖTV oranı ve tavsiye edilen anahtar teslim fiyatı belirtilen rakamlardan farklılık gösterebilmektedir.</li>\r\n\t<li>İlk Tescil Harcı ilgili tutarın içerisine dahil edilmemiştir.</li>\r\n</ul>\r\n"
+                }
+            ],
+            "searchText": "ford-focus",
+            "carType": "Binek",
+            "carProductionPlace": "Almanya",
+            "isSelected": false,
+            "entities": [
+                {
+                    "entityCode": "FCDHY9DEGMAABML6ACMAA",
+                    "entityDescription": "Sedan, 1.5L EcoBlue 115PS, 8 İleri Otomatik, Dizel",
+                    "modelYear": "2025",
+                    "series": "Yeni Titanium Stil",
+                    "engine": "1.5L EcoBlue 115PS",
+                    "capacity": null,
+                    "fuelType": "Dizel",
+                    "gearbox": "8 İleri Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "Sedan",
+                    "campaignedTurnkeyPrice": "2247700",
+                    "deliveredTurnkeyListPrice": "2365400",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": "/benimfordum/teklif-alin/cge02",
+                    "campaignEntity": "1",
+                    "options": [
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya",
+                            "carOptionDescription": [
+                                "Geliştirilmiş Adaptif Hız Kontrol Sistemi, Dur& Kalk(Stop&Go)\nŞerit Hizalama Yardımcısı\nAcil Durum Manevra Destek Sistemi\nTrafik Levhası Tanıma Sistemi\nKör Nokta Uyarı Sistemi ve Çapraz Trafik Uyarısı\nOtomatik Yanan Uzun Farlar"
+                            ],
+                            "deliveredTurnkeyPrice": "28300",
+                            "turnkeyListPrice": "26900",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Özel Renk (Manyetik Gri, Fantastik Kırmızı)",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "53400",
+                            "turnkeyListPrice": "50700",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Ford Co-Pilot 360 #2",
+                            "carOptionDescription": [
+                                "Isıtmalı Ön Cam, Direksiyon ve Ön Koltuklar"
+                            ],
+                            "deliveredTurnkeyPrice": "50200",
+                            "turnkeyListPrice": "47700",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Açılabilir Panoramik Cam Tavan",
+                            "carOptionDescription": [
+                                "9 hoparlör, 1 Subwoofer"
+                            ],
+                            "deliveredTurnkeyPrice": "94100",
+                            "turnkeyListPrice": "89400",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Kış Paketi",
+                            "carOptionDescription": [
+                                "Ford Dinamik LED Ön Far Sitemi,Yansıma Önleyici Uzun Farlar ile"
+                            ],
+                            "deliveredTurnkeyPrice": "24800",
+                            "turnkeyListPrice": "23600",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "B&O Müzik Sistemi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "28400",
+                            "turnkeyListPrice": "26900",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Stil Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "56700",
+                            "turnkeyListPrice": "53800",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                },
+                {
+                    "entityCode": "FCD4Y9DEGMAABML6ACMAA",
+                    "entityDescription": "Sedan, 1.5L EcoBlue 115PS, 8 İleri Otomatik, Dizel",
+                    "modelYear": "2025",
+                    "series": "Yeni Titanium X",
+                    "engine": "1.5L EcoBlue 115PS",
+                    "capacity": null,
+                    "fuelType": "Dizel",
+                    "gearbox": "8 İleri Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "Sedan",
+                    "campaignedTurnkeyPrice": "2362700",
+                    "deliveredTurnkeyListPrice": "2623900",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": "/benimfordum/teklif-alin/cge02",
+                    "campaignEntity": "1",
+                    "options": [
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya",
+                            "carOptionDescription": [
+                                "Geliştirilmiş Adaptif Hız Kontrol Sistemi, Dur& Kalk(Stop&Go)\nŞerit Hizalama Yardımcısı\nAcil Durum Manevra Destek Sistemi\nTrafik Levhası Tanıma Sistemi\nKör Nokta Uyarı Sistemi ve Çapraz Trafik Uyarısı\nOtomatik Yanan Uzun Farlar"
+                            ],
+                            "deliveredTurnkeyPrice": "28300",
+                            "turnkeyListPrice": "26900",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Özel Renk (Manyetik Gri, Fantastik Kırmızı)",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "53400",
+                            "turnkeyListPrice": "50700",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Ford Co-Pilot 360 #2",
+                            "carOptionDescription": [
+                                "Isıtmalı Ön Cam, Direksiyon ve Ön Koltuklar"
+                            ],
+                            "deliveredTurnkeyPrice": "50200",
+                            "turnkeyListPrice": "47700",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Açılabilir Panoramik Cam Tavan",
+                            "carOptionDescription": [
+                                "9 hoparlör, 1 Subwoofer"
+                            ],
+                            "deliveredTurnkeyPrice": "94100",
+                            "turnkeyListPrice": "89400",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Kış Paketi",
+                            "carOptionDescription": [
+                                "Ford Dinamik LED Ön Far Sitemi,Yansıma Önleyici Uzun Farlar ile"
+                            ],
+                            "deliveredTurnkeyPrice": "24800",
+                            "turnkeyListPrice": "23600",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "B&O Müzik Sistemi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "28400",
+                            "turnkeyListPrice": "26900",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CGE02",
+                            "modelYear": "2025",
+                            "carOption": "Stil Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "56700",
+                            "turnkeyListPrice": "53800",
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "modelCode": "CTD02",
+            "modelName": "Kuga",
+            "modelYears": [
+                "2025"
+            ],
+            "image": "https://cdnepws.azureedge.net/getmedia/0a51aaae-3e67-436b-b548-67c315434a50/fa9ae7ee-2462-4e65-a920-b92fa837cef9.png.aspx?width=1024&height=576&ext=.png",
+            "discoverLink": "/suv/yeni-kuga",
+            "technicalBrochureLink": "https://cdnepws.azureedge.net/getmedia/a2fb965f-5368-4cda-a676-58a91ddd9c15/KugaMCA-teknikfoy-Agustos2025.pdf.aspx",
+            "termsbyModelYear": [
+                {
+                    "modelYear": "2025",
+                    "termsAndConditions": "<ul class=\"fop-list-square fop-small\">\r\n\t<li>Ford Otomotiv San. A.Ş. kampanya ile ilgili değişiklik yapma hakkını saklı tutar. Farklı vade ve son taksit tutarı seçenekleri için Ford Yetkili Satıcılarından bilgi alabilirsiniz.</li>\r\n\t<li>Yukarıda&nbsp;belirtilen birim fiyatların uygulanmaya başladığı tarih 9&nbsp;Aralık&nbsp;2025&rsquo;tir.</li>\r\n\t<li>Belirtilen fiyatlar tavsiye edilen anahtar teslim fiyatlar olup, aracın tüm vergiler dahil satış fiyatıdır.</li>\r\n\t<li>Not : Opsiyonlu araç alımlarında ÖTV matrahı değişeceğinden uygulanacak ÖTV oranı ve tavsiye edilen anahtar teslim fiyatı belirtilen rakamlardan farklılık gösterebilmektedir.</li>\r\n\t<li>İlk Tescil Harcı ilgili tutarın içerisine dahil edilmemiştir.</li>\r\n</ul>\r\n"
+                }
+            ],
+            "searchText": "ford-kuga",
+            "carType": "Binek",
+            "carProductionPlace": "İspanya",
+            "isSelected": false,
+            "entities": [
+                {
+                    "entityCode": "SADKCRDEGMAABML2",
+                    "entityDescription": "SUV, 1.5L EcoBoost 186PS, 8 İleri Otomatik, Benzin",
+                    "modelYear": "2025",
+                    "series": "Titanium",
+                    "engine": "1.5L EcoBoost 186PS",
+                    "capacity": null,
+                    "fuelType": "Benzin",
+                    "gearbox": "8 İleri Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "SUV",
+                    "campaignedTurnkeyPrice": null,
+                    "deliveredTurnkeyListPrice": "2379100",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": "/benimfordum/teklif-alin/ctd02",
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya",
+                            "carOptionDescription": [
+                                "Isıtmalı Ön/Arka koltuklar\nIsıtmalı Direksiyon ve Isıtmalı Ön Cam"
+                            ],
+                            "deliveredTurnkeyPrice": "25100",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Özel Renk",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "47500",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Kış Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "33500",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                },
+                {
+                    "entityCode": "SAD5CRDEGMAABML1",
+                    "entityDescription": "SUV, 1.5L EcoBoost 186PS, 8 İleri Otomatik, Benzin",
+                    "modelYear": "2025",
+                    "series": "Active X",
+                    "engine": "1.5L EcoBoost 186PS",
+                    "capacity": null,
+                    "fuelType": "Benzin",
+                    "gearbox": "8 İleri Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "SUV",
+                    "campaignedTurnkeyPrice": null,
+                    "deliveredTurnkeyListPrice": "2938500",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": null,
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya",
+                            "carOptionDescription": [
+                                "Isıtmalı Ön/Arka koltuklar\nIsıtmalı Direksiyon ve Isıtmalı Ön Cam"
+                            ],
+                            "deliveredTurnkeyPrice": "25100",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Özel Renk",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "47500",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Kış Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "33500",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                },
+                {
+                    "entityCode": "SAJYCRDEGMAABML2",
+                    "entityDescription": "SUV, 1.5L EcoBoost 186PS, 8 İleri Otomatik, Benzin",
+                    "modelYear": "2025",
+                    "series": "ST-Line",
+                    "engine": "1.5L EcoBoost 186PS",
+                    "capacity": null,
+                    "fuelType": "Benzin",
+                    "gearbox": "8 İleri Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "SUV",
+                    "campaignedTurnkeyPrice": null,
+                    "deliveredTurnkeyListPrice": "3026300",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": "/benimfordum/teklif-alin/ctd02",
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya",
+                            "carOptionDescription": [
+                                "Isıtmalı Ön/Arka koltuklar\nIsıtmalı Direksiyon ve Isıtmalı Ön Cam"
+                            ],
+                            "deliveredTurnkeyPrice": "25100",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Özel Renk",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "47500",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Kış Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "33500",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                },
+                {
+                    "entityCode": "SAD8CRDEGMAABML2",
+                    "entityDescription": "SUV, 1.5L EcoBoost 186PS, 8 İleri Otomatik, Benzin",
+                    "modelYear": "2025",
+                    "series": "ST-Line X",
+                    "engine": "1.5L EcoBoost 186PS",
+                    "capacity": null,
+                    "fuelType": "Benzin",
+                    "gearbox": "8 İleri Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "SUV",
+                    "campaignedTurnkeyPrice": null,
+                    "deliveredTurnkeyListPrice": "3209400",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": "/benimfordum/teklif-alin/ctd02",
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya",
+                            "carOptionDescription": [
+                                "Isıtmalı Ön/Arka koltuklar\nIsıtmalı Direksiyon ve Isıtmalı Ön Cam"
+                            ],
+                            "deliveredTurnkeyPrice": "25100",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Özel Renk",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "47500",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CTD02",
+                            "modelYear": "2025",
+                            "carOption": "Kış Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "33500",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "modelCode": "CHQ03",
+            "modelName": "Yeni Journey Courier",
+            "modelYears": [
+                "2025"
+            ],
+            "image": "https://cdnepws.azureedge.net/getmedia/3118c5ea-ee87-47fa-bbd1-526bf0758676/TourneoCourier-1920x1080-copy.webp.aspx?ext=.webp",
+            "discoverLink": "/ticari-araclar/yeni-tourneo-courier",
+            "technicalBrochureLink": "https://cdnepws.azureedge.net/getmedia/494d801e-40f9-4c9e-b8ca-947b3307b00e/tourneocourier-teknikfoy-ocak-2024.pdf.aspx",
+            "termsbyModelYear": [
+                {
+                    "modelYear": "2025",
+                    "termsAndConditions": "<ul class=\"fop-list-square fop-small\">\r\n\t<li>Ford Otomotiv San. A.Ş. kampanya ile ilgili değişiklik yapma hakkını saklı tutar. Farklı vade ve son taksit tutarı seçenekleri için Ford Yetkili Satıcılarından bilgi alabilirsiniz.</li>\r\n\t<li>Yukarıda&nbsp;belirtilen birim fiyatların uygulanmaya başladığı tarih 9 Aralık 2025&rsquo;tir.</li>\r\n\t<li>Belirtilen fiyatlar tavsiye edilen anahtar teslim fiyatlar olup, aracın tüm vergiler dahil satış fiyatıdır.</li>\r\n\t<li>Not : Opsiyonlu araç alımlarında ÖTV matrahı değişeceğinden uygulanacak ÖTV oranı ve tavsiye edilen anahtar teslim fiyatı belirtilen rakamlardan farklılık gösterebilmektedir.</li>\r\n\t<li>İlk Tescil Harcı ilgili tutarın içerisine dahil edilmemiştir.</li>\r\n</ul>\r\n"
+                }
+            ],
+            "searchText": "ford-yeni-journey-courier",
+            "carType": "Binek",
+            "carProductionPlace": "Romanya",
+            "isSelected": false,
+            "entities": [
+                {
+                    "entityCode": "AMGFB7DEBTAACMAA",
+                    "entityDescription": "Kombi, 1.0L EcoBoost 125PS, 6 İleri Manuel, Benzin",
+                    "modelYear": "2025",
+                    "series": "Deluxe",
+                    "engine": "1.0L EcoBoost 125PS",
+                    "capacity": null,
+                    "fuelType": "Benzin",
+                    "gearbox": "6 İleri Manuel",
+                    "emission": "Euro 6.2",
+                    "body": "Kombi",
+                    "campaignedTurnkeyPrice": null,
+                    "deliveredTurnkeyListPrice": "2192000",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": "/benimfordum/teklif-alin/cgw01",
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CHQ03",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "31600",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CHQ03",
+                            "modelYear": "2025",
+                            "carOption": "Güvenlik Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "30000",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CHQ03",
+                            "modelYear": "2025",
+                            "carOption": "Yedek Lastik",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "17400",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                },
+                {
+                    "entityCode": "AMGGB7DEGHAACMAA",
+                    "entityDescription": "Kombi, 1.0L EcoBoost 125PS, 7 İleri Otomatik, Benzin",
+                    "modelYear": "2025",
+                    "series": "Titanium",
+                    "engine": "1.0L EcoBoost 125PS",
+                    "capacity": null,
+                    "fuelType": "Benzin",
+                    "gearbox": "7 İleri Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "Kombi",
+                    "campaignedTurnkeyPrice": null,
+                    "deliveredTurnkeyListPrice": "2754900",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": "/benimfordum/teklif-alin/cgw01",
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CHQ03",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "31600",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CHQ03",
+                            "modelYear": "2025",
+                            "carOption": "17\" Alaşım Jant",
+                            "carOptionDescription": [
+                                "Bundle 5 Sürücü Destek Sistemi\nKör Nokta Uyarı\nNavigasyon\nAkıllı Adaptif Hız Kontrol sistemi\nÇapraz Trafik Uyarı Sistemi\nGeri Fren Önleme  \n"
+                            ],
+                            "deliveredTurnkeyPrice": "31600",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CHQ03",
+                            "modelYear": "2025",
+                            "carOption": "Gelişmiş Güvenlik Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "109500",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CHQ03",
+                            "modelYear": "2025",
+                            "carOption": "Isıtmalı Ön Cam",
+                            "carOptionDescription": [
+                                "Mercan Kırmızı"
+                            ],
+                            "deliveredTurnkeyPrice": "7600",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "modelCode": "CF703",
+            "modelName": "PUMA GEN-E",
+            "modelYears": [
+                "2025"
+            ],
+            "image": "https://cdnepws.azureedge.net/getmedia/f42c29eb-539d-4953-8d75-9deedb502c50/Puma-Gen-E_1.png.aspx?width=668&height=376&ext=.png",
+            "discoverLink": "/otomobiller/puma-gen-e",
+            "technicalBrochureLink": "https://cdnepws.azureedge.net/getmedia/ada6794e-c1e7-4a8b-908b-a0ca030550a7/Puma-Gen-E-teknikfoy-Haziran2025-(1).pdf.aspx",
+            "termsbyModelYear": [
+                {
+                    "modelYear": "2025",
+                    "termsAndConditions": "<ul class=\"fop-list-square fop-small\">\r\n\t<li>Ford Otomotiv San. A.Ş. kampanya ile ilgili değişiklik yapma hakkını saklı tutar. Farklı vade ve son taksit tutarı seçenekleri için Ford Yetkili Satıcılarından bilgi alabilirsiniz.</li>\r\n\t<li>Yukarıda&nbsp;belirtilen birim fiyatların uygulanmaya başladığı tarih 9&nbsp;Aralık&nbsp;2025&rsquo;tir.</li>\r\n\t<li>Belirtilen fiyatlar tavsiye edilen anahtar teslim fiyatlar olup, aracın tüm vergiler dahil satış fiyatıdır.</li>\r\n\t<li>Not : Opsiyonlu araç alımlarında ÖTV matrahı değişeceğinden uygulanacak ÖTV oranı ve tavsiye edilen anahtar teslim fiyatı belirtilen rakamlardan farklılık gösterebilmektedir.</li>\r\n\t<li>İlk Tescil Harcı ilgili tutarın içerisine dahil edilmemiştir.</li>\r\n</ul>\r\n"
+                }
+            ],
+            "searchText": "ford-puma-gen-e",
+            "carType": "Binek",
+            "carProductionPlace": "Romanya",
+            "isSelected": false,
+            "entities": [
+                {
+                    "entityCode": "HCBCC0FGWAAABML1ACMAA",
+                    "entityDescription": "SUV, 123KW, Otomatik, Elektrik",
+                    "modelYear": "2025",
+                    "series": "Premium",
+                    "engine": "123KW",
+                    "capacity": null,
+                    "fuelType": "Elektrik",
+                    "gearbox": "Otomatik",
+                    "emission": "Euro 6.2",
+                    "body": "SUV",
+                    "campaignedTurnkeyPrice": null,
+                    "deliveredTurnkeyListPrice": "1938700",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": null,
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CF703",
+                            "modelYear": "2025",
+                            "carOption": "Açılabilir Panoramik Cam Tavan",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "40400",
+                            "turnkeyListPrice": "39200",
+                            "carPrice3": "39200",
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "modelCode": "CHQ04",
+            "modelName": "Yeni Journey Courier BEV",
+            "modelYears": [
+                "2025"
+            ],
+            "image": "https://cdnepws.azureedge.net/getmedia/3118c5ea-ee87-47fa-bbd1-526bf0758676/TourneoCourier-1920x1080-copy.webp.aspx?ext=.webp",
+            "discoverLink": "/ticari-araclar/e-tourneo-courier ",
+            "technicalBrochureLink": "",
+            "termsbyModelYear": [
+                {
+                    "modelYear": "2025",
+                    "termsAndConditions": "<ul class=\"fop-list-square fop-small\">\r\n\t<li>Ford Otomotiv San.A.Ş. kampanya ile ilgili değişiklik yapma hakkını saklı tutar. Farklı vade ve son taksit tutarı seçenekleri için Ford Yetkili Satıcılarından bilgi alabilirsiniz.</li>\r\n\t<li>Yukarıda&nbsp;belirtilen birim fiyatların uygulanmaya başladığı tarih 9&nbsp;Aralık&nbsp;2025&rsquo;tir.</li>\r\n\t<li>Belirtilen fiyatlar tavsiye edilen anahtar teslim fiyatlar olup, aracın tüm vergiler dahil satış fiyatıdır.</li>\r\n\t<li>İlk Tescil Harcı ilgili tutarın içerisine dahil edilmemiştir.</li>\r\n</ul>\r\n"
+                }
+            ],
+            "searchText": "ford-yeni-journey-courier-bev",
+            "carType": "Binek",
+            "carProductionPlace": "Romanya",
+            "isSelected": false,
+            "entities": [
+                {
+                    "entityCode": "AMGGC0CAWAAACMAA",
+                    "entityDescription": "Kombi, 100KW, Otomatik, Elektrik",
+                    "modelYear": "2025",
+                    "series": "Titanium",
+                    "engine": "100KW",
+                    "capacity": null,
+                    "fuelType": "Elektrik",
+                    "gearbox": "Otomatik",
+                    "emission": "-",
+                    "body": "Kombi",
+                    "campaignedTurnkeyPrice": null,
+                    "deliveredTurnkeyListPrice": "2003100",
+                    "carPrice3": null,
+                    "carPrice4": null,
+                    "carPrice5": null,
+                    "getInformationLink": null,
+                    "campaignEntity": "0",
+                    "options": [
+                        {
+                            "modelCode": "CHQ04",
+                            "modelYear": "2025",
+                            "carOption": "Metalik Boya",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "19200",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        },
+                        {
+                            "modelCode": "CHQ04",
+                            "modelYear": "2025",
+                            "carOption": "Gelişmiş Güvenlik Paketi",
+                            "carOptionDescription": null,
+                            "deliveredTurnkeyPrice": "66400",
+                            "turnkeyListPrice": null,
+                            "carPrice3": null,
+                            "carPrice4": null,
+                            "carPrice5": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

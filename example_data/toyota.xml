@@ -1,0 +1,2683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data>
+	<!--<Model id="Corolla" name="Corolla" beyazBalon="2017 yılında dünyada en çok tercih edilen binek otomobil" kirmiziBalon=""
+		   testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+		   url="https://www.toyota.com.tr/araba-modelleri/corolla-sedan"
+		   labelListeFiyati1="Tavsiye Edilen 2024 MY&lt;br /&gt; Liste Fiyatları"
+		   labelListeFiyati2="Tavsiye Edilen Temmuz Ayına &lt;br /&gt; Özel Sınırlı Sayıda Kampanyalı &lt;br /&gt; 2024 MY Fiyatları*"
+		   labelKampanyaliFiyati1="Yenilenen Corolla Tavsiye Edilen &lt;br /&gt; 2024 MY Fiyatları*"
+		   labelOTVTesvikli1="Yenilenen Corolla Tavsiye Edilen &lt;br /&gt; Temmuz Ayına Özel  Sınırlı Sayıda &lt;br /&gt; Kampanyalı 2024 MY Fiyatları*"
+		   
+		   order="0" yerliUretim="1" Aktifmi="1" baseModelImg="Corolla-Benzinli-Dream-MultidriveS" kampanyaButonGozuksun="1" crmId="929932B9-927D-E111-A776-002655515434"
+		   isBasvuruMerkezindeGoster="1"   
+    tmeModelName= "Corolla sedan"
+    tmeModelId="corolla"
+	>-->
+	<!--<ModelFiyat id="Corolla-Benzinli-Vision-MultidriveS">
+			<Govde>COROLLA</Govde>
+			<Model>1.5 Vision Multidrive S</Model>
+			<ListeFiyati1>1219500</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<ListeFiyati2>1060000</ListeFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.5 Dream</UpSell>
+			<UpSell>COROLLA 1.5 Dream</UpSell>
+			<UpSell>COROLLA 1.5 Dream</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Manuel</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Vision, Dream, Flame </PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.aeb4c1ae-f84a-4a76-b801-ea40ef0e577c</Url>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Benzinli-Vision-MultidriveS">
+			<Govde>COROLLA</Govde>
+			<Model>1.5 Vision Plus Multidrive S</Model>
+			--><!--<ListeFiyati1></ListeFiyati1>--><!--
+			<KampanyaliFiyati1>1219500</KampanyaliFiyati1>
+--><!--			<ListeFiyati2></ListeFiyati2>--><!--
+			<OTVTesvikli1>1165000</OTVTesvikli1>
+			<UpSell>COROLLA 1.5 Dream</UpSell>
+			<UpSell>COROLLA 1.5 Dream</UpSell>
+			<UpSell>COROLLA 1.5 Dream</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Manuel</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Vision, Dream, Flame </PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.02ed0589-6c57-483b-b32a-2e3ba8fd66bc</Url>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Benzinli-Dream">
+			<Govde>COROLLA</Govde>
+			<Model>1.5 Dream</Model>
+			<ListeFiyati1>709900 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.5 Flame</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Manuel</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Dream</PaketBilgisi>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Benzinli-Dream-MultidriveS">
+			<Govde>COROLLA</Govde>
+			<Model>1.5 Dream Multidrive S</Model>
+			<ListeFiyati1>1334500</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<ListeFiyati2>1200000</ListeFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.5 Flame Multidrive S</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Dream</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.e8afd813-58dd-4d7a-9503-22f863f251ef</Url>
+		</ModelFiyat>-->
+	<!--</ModelFiyat>
+		<ModelFiyat id="Corolla-Benzinli-Dream-X-Pack-MultidriveS">
+      <Govde>COROLLA</Govde>
+      <Model>1.5 Flame</Model>
+      <ListeFiyati1>860800 TL </ListeFiyati1>
+      <KampanyaliFiyati1></KampanyaliFiyati1>
+      <OTVTesvikli1></OTVTesvikli1>
+      <UpSell>COROLLA 1.5 Flame X-Pack</UpSell>
+      <Durum>1</Durum>
+      <AracTipi>Sedan</AracTipi>
+      <VitesTipi>Manuel</VitesTipi>
+      <MotorTipi>Benzinli</MotorTipi>
+      <MotorHacmi>1.5 </MotorHacmi>
+      <PaketBilgisi>Flame</PaketBilgisi>
+    </ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Benzinli-Dream-X-Pack-MultidriveS">
+			<Govde>COROLLA</Govde>
+			<Model>1.5 Dream X-Pack Multidrive S</Model>
+			<ListeFiyati1>1416000 TL </ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<ListeFiyati2>1259500</ListeFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.5 Dream X-Pack Multidrive S</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5 </MotorHacmi>
+			<PaketBilgisi>Dream X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.9cc83e67-9f66-4e0b-966b-897cf31aa3c2</Url>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Benzinli-Flame-X-Pack-MultidriveS">
+			<Govde>COROLLA</Govde>
+			<Model>1.5 Flame X-Pack Multidrive S</Model>
+			<ListeFiyati1>1501500</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<ListeFiyati2>1345000</ListeFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.8 Passion Multidrive S</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5 </MotorHacmi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.97d67888-0774-4604-be36-dceaf5a1610d</Url>
+			<PaketBilgisi>Flame X-Pack</PaketBilgisi>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Benzinli-Passion-X-Pack">
+			<Govde>COROLLA </Govde>
+			<Model>1.5 Passion X-Pack Multidrive S</Model>
+			<ListeFiyati1>1622500 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<ListeFiyati2>1466000</ListeFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.8 Hybrid Passion e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5 </MotorHacmi>
+			<PaketBilgisi>Passion X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.2650d057-2c0a-4749-8dcb-9a028ca6d73e</Url>
+		</ModelFiyat>-->
+	<!--<ModelFiyat Renk="1">
+      <Govde>Corolla</Govde>
+      <Model>%70 ÖTV'li versiyonlarda</Model>
+      <ListeFiyati1></ListeFiyati1>
+      <KampanyaliFiyati1></KampanyaliFiyati1>
+      <KampanyaliFiyati2></KampanyaliFiyati2>
+      <OTVTesvikli1></OTVTesvikli1>
+      <Durum>1</Durum>
+      <AracTipi>Sedan</AracTipi>
+      <VitesTipi>Otomatik</VitesTipi>
+      <MotorTipi>Benzinli</MotorTipi>
+      <MotorHacmi>1.5 </MotorHacmi>
+      <PaketBilgisi>Vision, Dream, Flame, Passion, Flame X-Pack, Passion X-Pack</PaketBilgisi>
+    </ModelFiyat>-->
+	<!--<ModelFiyat Renk="1">
+			<Govde>Corolla</Govde>
+			<Model>%80 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>9000 TL</ListeFiyati1>
+			<KampanyaliFiyati1> TL</KampanyaliFiyati1>
+			<ListeFiyati2>9000 TL</ListeFiyati2>
+			<OTVTesvikli1> TL</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5 </MotorHacmi>
+			<PaketBilgisi>Vision, Dream, Dream X-Pack, Flame X-Pack, Passion X-Pack</PaketBilgisi>
+		</ModelFiyat>
+
+		<Aciklama>-->
+	<![CDATA[  
+      <center><!--<a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/Corolla2021MY.pdf" target="_blank">2021 Model Yılı fiyat listesi için tıklayınız</a>--></center>
+      <br><!--<br>
+      * İlgili araçlar stoklarla sınırlıdır.
+      <br><br>-->
+	  <br><br><br>
+	   <b>Menşei : Türkiye </b>  
+      <br><br><br>
+	  * Kampanyalı araçlar stoklarla sınırlıdır.
+	  <!--<br><br><br>
+	  ** Kredi Kampanyası ve "Tavsiye Edilen Ocak Ayına Özel Sınırlı Sayıda Kampanyalı Fiyatlar" bir arada kullanılamaz.
+      <br><br>
+	  *** Metalik ve sedefli metalik renk fiyat farkı kampanya dahilinde 1.5 Vision Multidrive S ve 1.5 Vision Plus Multidrive S versiyonu için geçerli değildir.
+	  <br><br>
+	   1.5 Vision MDS ve 1.5 Vision Plus MDS versiyonlarında ÖTV muaf avantajı.-->
+	  <br><br><br>
+	  Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+       Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+       Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+]]>
+	<!--</Aciklama>
+	</Model>-->
+
+	<Model id="Corolla" name="Corolla" beyazBalon="2017 yılında dünyada en çok tercih edilen binek otomobil" kirmiziBalon=""
+	   testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+	   url="https://www.toyota.com.tr/araba-modelleri/corolla-sedan"
+	   pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/corolla/Corolla-Teknik-ve-Donanim-Ozellikleri.pdf"
+       labelListeFiyati1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+	   labelListeFiyati2=""
+       labelKampanyaliFiyati1=""
+       labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kampanyalı Fiyatlar*"
+       labelOTVTesvikli1=""
+	   kampanyaBanner="1.650.000 TL'den başlayan avantajlı fiyatlarla!"
+	   order="0" yerliUretim="1" Aktifmi="1" baseModelImg="Yeni-Corolla-Benzinli-Dream-MultidriveS" kampanyaButonGozuksun="1" crmId="929932B9-927D-E111-A776-002655515434"
+	   isBasvuruMerkezindeGoster="1" tmeModelName= "Corolla sedan" tmeModelId="corolla" vehicleType="Sedan Benzinli"
+				  hybrid="0" sedan="1" hatchback="0" professional="0" suv="0" benzinli="1" onlineReservation="1"
+binek="1"
+	>
+		<ModelFiyat id="Corolla-Benzinli-Vision-MultidriveS">
+			<Govde>COROLLA</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.5 Vision Plus Multidrive S</Model>
+			<ListeFiyati1>1989500 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>1650000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.5 Dream</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Manuel</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Vision, Dream, Flame </PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.02ed0589-6c57-483b-b32a-2e3ba8fd66bc</Url>
+		</ModelFiyat>
+		<ModelFiyat id="Corolla-Benzinli-Dream-MultidriveS">
+			<Govde>COROLLA</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.5 Dream Multidrive S</Model>
+			<ListeFiyati1>2163000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>1850000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.5 Flame Multidrive S</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Dream</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.e8afd813-58dd-4d7a-9503-22f863f251ef</Url>
+		</ModelFiyat>
+		<ModelFiyat id="Corolla-Benzinli-Dream-X-Pack-MultidriveS">
+			<Govde>COROLLA</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.5 Dream X-Pack Multidrive S</Model>
+			<ListeFiyati1>2302500 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>1924000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.5 Dream X-Pack Multidrive S</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5 </MotorHacmi>
+			<PaketBilgisi>Dream X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.9cc83e67-9f66-4e0b-966b-897cf31aa3c2</Url>
+		</ModelFiyat>
+		<ModelFiyat id="Corolla-Benzinli-Flame-X-Pack-MultidriveS">
+			<Govde>COROLLA</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.5 Flame X-Pack Multidrive S</Model>
+			<ListeFiyati1>2564000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2159500 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.8 Passion Multidrive S</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5 </MotorHacmi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.97d67888-0774-4604-be36-dceaf5a1610d</Url>
+			<PaketBilgisi>Flame X-Pack</PaketBilgisi>
+		</ModelFiyat>
+		<!--<ModelFiyat id="Corolla-Benzinli-Passion-X-Pack">
+			<Govde>COROLLA </Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.5 Passion X-Pack Multidrive S</Model>
+			<ListeFiyati1>2518000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2126000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA 1.8 Hybrid Passion e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5 </MotorHacmi>
+			<PaketBilgisi>Passion X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.2650d057-2c0a-4749-8dcb-9a028ca6d73e</Url>
+		</ModelFiyat>-->
+
+		<ModelFiyat Renk="1">
+			<Govde>Corolla</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>%75 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>16550</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>16550</KampanyaliFiyati2>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5 </MotorHacmi>
+			<PaketBilgisi>Vision, Dream, Dream X-Pack, Flame X-Pack, Passion X-Pack</PaketBilgisi>
+		</ModelFiyat>
+		
+
+		<ModelFiyat Renk="1">
+			<Govde>Corolla</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>%80 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>17000</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>17000</KampanyaliFiyati2>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5 </MotorHacmi>
+			<PaketBilgisi>Vision, Dream, Dream X-Pack, Flame X-Pack, Passion X-Pack</PaketBilgisi>
+		</ModelFiyat>
+
+		<Aciklama>
+			<![CDATA[  
+      <center><!--<a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/Corolla2021MY.pdf" target="_blank">2021 Model Yılı fiyat listesi için tıklayınız</a>--></center>
+      
+	  <b>Menşei : Türkiye </b>  
+      <br><br>
+	  *Kampanyalı araçlar stoklarla sınırlıdır.
+	  <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+	  Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+]]>
+		</Aciklama>
+	</Model>
+
+	<!--<Model id="CorollaHybrid" name="Corolla Hybrid" beyazBalon="2017 yılında dünyada en çok tercih edilen binek otomobil" kirmiziBalon=""
+		  testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+		  url="https://www.toyota.com.tr/araba-modelleri/corolla-sedan"
+		  labelListeFiyati1="Tavsiye Edilen Hybrid'e Özel&lt;br /&gt; ÖTV Oranı ile 2024 MY Fiyatları"
+		  labelKampanyaliFiyati1="Tavsiye Edilen Hybrid'e Özel&lt;br /&gt; ÖTV Oranı ile 2023 MY Fiyatları"
+		  labelOTVTesvikli1="Tavsiye Edilen Temmuz Ayına &lt;br /&gt;Sınırlı Sayıda Kampanyalı &lt;br /&gt; 2023 MY Fiyatları*"
+		  order="1" hybrid="1" yerliUretim="1" Aktifmi="1" baseModelImg="Corolla-Hybrid-Passion-X-Pack" kampanyaButonGozuksun="1" crmId="F53787AD-41F7-E811-B96D-005056BE43B4" 
+		  isBasvuruMerkezindeGoster="1"
+		  tmeModelName= "Corolla sedan" tmeModelId="corolla"  vehicleType="Sedan Hybrid"
+		  >-->
+	<!--<ModelFiyat id="Corolla-Hybrid-Dream" >
+			<Govde>COROLLA</Govde>
+			<Model>1.8 Hybrid Dream e-CVT</Model>
+			<ListeFiyati1>1637000</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA Hybrid Flame e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Düz Vites</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Dream</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.a546fa49-53a7-4954-a3ff-e58e58c6a0d9</Url>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Hybrid-Dream-X-Pack">
+			<Govde>COROLLA</Govde>
+			<Model>1.8 Hybrid Dream-X-Pack e-CVT</Model>
+			<ListeFiyati1>1696000 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA Hybrid Dream-X-Pack e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik Vites</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Flame</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.0147c06c-2044-4afb-9116-a8b0650bdd54</Url>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Hybrid-Flame-X-Pack">
+			<Govde>COROLLA</Govde>
+			<Model>1.8 Hybrid Flame X-Pack e-CVT</Model>
+			<ListeFiyati1>1740000 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell>COROLLA Hybrid Passion e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik </VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Flame X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.585fcee6-f9e3-47c1-b788-083b8db94ea5</Url>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Hybrid-Passion-X-Pack">
+			<Govde>COROLLA</Govde>
+			<Model>1.8 Hybrid Passion X-Pack e-CVT</Model>
+			<ListeFiyati1>1867500 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Passion X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.e1532b7f-ead0-4daf-9af1-28be5819ebb9</Url>
+		</ModelFiyat>-->
+	<!--<ModelFiyat Renk="1">
+      <Govde>Corolla</Govde>
+      <Model>%50 ÖTV'li versiyonlarda</Model>
+      <ListeFiyati1></ListeFiyati1>
+      <KampanyaliFiyati1></KampanyaliFiyati1>
+      <KampanyaliFiyati2></KampanyaliFiyati2>
+      <OTVTesvikli1></OTVTesvikli1>
+      <Durum>1</Durum>
+      <AracTipi>Sedan</AracTipi>
+      <VitesTipi> Otomatik Vites</VitesTipi>
+      <MotorTipi>Hybrid</MotorTipi>
+      <MotorHacmi>1.8</MotorHacmi>
+      <PaketBilgisi>Vision, Dream, Flame, Passion</PaketBilgisi>
+    </ModelFiyat>-->
+	<!--<ModelFiyat Renk="1">
+			<Govde>Corolla</Govde>
+			<Model>%80 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>9000</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi> Otomatik Vites</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Vision, Dream, Flame, Passion</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.97d67888-0774-4604-be36-dceaf5a1610d</Url>
+		</ModelFiyat>-->
+	<!--<Aciklama>
+			<![CDATA[ 
+         <center><!<a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/CorollaHybrid2021MY.pdf" target="_blank">2021 Model Yılı fiyat listesi için tıklayınız</a></center>
+         <br><br>
+         * Kampanyalı araçlar stoklarla sınırlıdır.
+         <br><br> 
+         <br><br>
+         <b>Menşei : Türkiye </b> 
+         <br><br><br>
+	      * Kampanyalı araçlar stoklarla sınırlıdır.
+         <br><br><br>
+          Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+         <br><br>
+          Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+         <br><br>
+          Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+]]>-->
+	<!--</Aciklama>
+	</Model>-->
+
+	<Model id="CorollaHybrid" name="Corolla Hybrid" beyazBalon="2017 yılında dünyada en çok tercih edilen binek otomobil" kirmiziBalon=""
+			testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+			url="https://www.toyota.com.tr/araba-modelleri/corolla-sedan"
+			optionalPriceUrl=""
+			pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/corolla/Corolla-Teknik-ve-Donanim-Ozellikleri.pdf"
+		    labelListeFiyati1=""
+	    	labelListeFiyati2=""
+	    	labelKampanyaliFiyati1=""
+	    	labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kampanyalı Fiyatlar*"
+	    	labelOTVTesvikli1="Tavsiye Edilen Hybrid'e Özel &lt;br /&gt; ÖTV Oranı ile Fiyatlar"
+			order="1" hybrid="1" sedan="1" professional="0" electric="0" hatchback="0" suv="0" benzinli="0" yerliUretim="1" Aktifmi="1" baseModelImg="Corolla-Hybrid-Passion-X-Pack"
+			kampanyaButonGozuksun="1" crmId="F53787AD-41F7-E811-B96D-005056BE43B4" isBasvuruMerkezindeGoster="1"
+			tmeModelName= "Corolla sedan" tmeModelId="corolla"  vehicleType="Sedan Hybrid" onlineReservation="0" binek="1"
+		  >
+		<ModelFiyat id="Corolla-Hybrid-Dream-2024" >
+			<Govde>COROLLA</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.8 Hybrid Dream e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1>2377000 TL</OTVTesvikli1>
+			<UpSell>COROLLA Hybrid Flame e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Düz Vites</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Dream</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.a546fa49-53a7-4954-a3ff-e58e58c6a0d9</Url>
+		</ModelFiyat>
+ 
+		<ModelFiyat id="Corolla-Hybrid-Dream-X-Pack">
+			<Govde>COROLLA</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.8 Hybrid Dream-X-Pack e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2266000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2446000 TL</OTVTesvikli1>
+			<UpSell>COROLLA Hybrid Dream-X-Pack e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik Vites</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Flame</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.0147c06c-2044-4afb-9116-a8b0650bdd54</Url>
+		</ModelFiyat>
+	
+		<ModelFiyat id="Corolla-Hybrid-Flame-X-Pack">
+			<Govde>COROLLA</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.8 Hybrid Flame X-Pack e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2379000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2717000 TL</OTVTesvikli1>
+			<UpSell>COROLLA Hybrid Passion e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik </VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Flame X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.585fcee6-f9e3-47c1-b788-083b8db94ea5</Url>
+		</ModelFiyat>
+		 
+		<ModelFiyat id="Corolla-Hybrid-Passion-X-Pack">
+			<Govde>COROLLA</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.8 Hybrid Passion X-Pack e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2544000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2833000 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Passion X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.e1532b7f-ead0-4daf-9af1-28be5819ebb9</Url>
+		</ModelFiyat>
+ 
+		<ModelFiyat Renk="1">
+			<Govde>Corolla</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>%70 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>16100</KampanyaliFiyati2>
+			<OTVTesvikli1>16100</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi> Otomatik Vites</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Vision, Dream, Flame, Passion</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-sedan/genel-bakis.COROLLA.785.97d67888-0774-4604-be36-dceaf5a1610d</Url>
+		</ModelFiyat>
+		<Aciklama>
+			<![CDATA[  <center><!--<a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/CorollaHybrid2021MY.pdf" target="_blank">2021 Model Yılı fiyat listesi için tıklayınız</a>--></center>
+         
+		 <b>Menşei : Türkiye </b> 
+         <br><br>
+	     *Kampanyalı araçlar stoklarla sınırlıdır.
+         <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+		 Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+         <br><br>
+         Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+         <br><br>
+         Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+
+]]>
+		</Aciklama>
+	</Model>
+
+	<Model id="YeniCorollacrosssHybrid" name="Yeni Corolla Cross Hybrid" beyazBalon="" kirmiziBalon=""  testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx" 
+	url="https://www.toyota.com.tr/araba-modelleri/corolla-cross"
+	  pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/corolla-cross/Corolla-Cross-Hybrid-Teknik-ve-Donanim-Ozellikleri.pdf"
+	   labelListeFiyati1=""
+	  labelListeFiyati2=""
+	  labelKampanyaliFiyati1=""
+	  labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kampanyalı Fiyatlar*"
+      labelOTVTesvikli1="Tavsiye Edilen Hybrid'e Özel &lt;br /&gt; ÖTV Oranı ile Fiyatlar"
+	  kampanyaBanner=""
+	  order="2" Aktifmi="1" baseModelImg="corolla-cross-1-8-hybrid-passion-x-pack-e-cvt" kampanyaButonGozuksun="1" crmId="1F10F220-C4F8-EC11-B893-005056BEEB23"
+	  tmeModelName ="Corolla Cross" isBasvuruMerkezindeGoster="1"
+	  hybrid="1" sedan="0" professional="0" electric="0" suv="1" benzinli="0" hatchback="0" binek="1"
+	  tmeModelId= "cx" vehicleType="SUV Hybrid">
+		
+		<ModelFiyat id="corolla-cross-1-8-hybrid-flame-e-cvt" >
+			<Govde>COROLLA CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.8 Hybrid Flame e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2484000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>3090000 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Hybrid Flame e-CVT</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-cross/genel-bakis.CX.040.1a0da513-3233-48f7-81b9-0a15002ad13b</Url>
+		</ModelFiyat>
+
+		<!--<ModelFiyat id="corolla-cross-1-8-hybrid-flame-x-pack-e-cvt">
+			<Govde>COROLLA CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.8 Hybrid Flame X-Pack e-CVT</Model>
+			<ListeFiyati1>2452000 TL</ListeFiyati1>
+			<KampanyaliFiyati1>2135000 TL</KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Hybrid Flame X-Pack e-CVT</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-cross/genel-bakis.CX.040.03ea0708-9538-4b53-93fd-41a627a3c058</Url>
+		</ModelFiyat>-->
+
+		<ModelFiyat id="corolla-cross-1-8-hybrid-passion-e-cvt">
+			<Govde>COROLLA CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.8 Hybrid Passion e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2720000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>3200000 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Hybrid Passion e-CVT</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-cross/genel-bakis.CX.040.3104ab2c-ed3a-457d-92e1-ae6bbe9b5171</Url>
+		</ModelFiyat>
+
+
+		<ModelFiyat id="corolla-cross-1-8-hybrid-passion-x-pack-e-cvt">
+			<Govde>COROLLA CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.8 Hybrid Passion X-Pack e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>3157000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>3700000 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Hybrid Passion X-Pack e-CVT</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-cross/genel-bakis.CX.040.b37fa8d6-aee0-46f6-9ea1-fb86173de682</Url>
+		</ModelFiyat>
+
+		
+		
+		
+		
+		<!--<ModelFiyat id="corolla-cross-1-8-hybrid-passion-x-pack-siyah-tavan-e-cvt">
+			<Govde>COROLLA CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.8 Hybrid Passion X-Pack Siyah Tavan e-CVT**</Model>
+			<ListeFiyati1>2947500 TL</ListeFiyati1>
+			<KampanyaliFiyati1>2594000 TL</KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Hybrid Passion X-Pack Siyah Tavan e-CVT</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-cross/genel-bakis.CX.040.b37fa8d6-aee0-46f6-9ea1-fb86173de682</Url>
+		</ModelFiyat>-->
+
+		<ModelFiyat Renk="1">
+			<Govde>COROLLA CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%70 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>20800</KampanyaliFiyati2>
+			<OTVTesvikli1>20800</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+		<ModelFiyat Renk="1">
+			<Govde>COROLLA CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%80 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>22000</KampanyaliFiyati2>
+			<OTVTesvikli1>22000</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+		
+		
+		<Aciklama>
+			<![CDATA[
+      <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/2020MY.pdf" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center>--> 
+        
+	     <b>Menşei : Japonya </b>
+         <br><br>
+	     *Kampanyalı araçlar stoklarla sınırlıdır.
+	     <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+	     Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+         <br><br>
+         Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+         <br><br>
+         Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+]]>
+		</Aciklama>
+	</Model>
+
+	<Model id="CHRHybrid" name="Toyota C-HR Hybrid" beyazBalon="" kirmiziBalon=""
+			 testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+			 optionalPriceUrl=""
+			 url="https://www.toyota.com.tr/araba-modelleri/c-hr"
+	         labelListeFiyati1=""
+	         labelListeFiyati2=""
+	         labelKampanyaliFiyati1=""
+	         labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kampanyalı Fiyatlar*"
+	         labelOTVTesvikli1="Tavsiye Edilen Hybrid'e Özel &lt;br /&gt; ÖTV Oranı ile Fiyatlar"
+  pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/toyota-c-hr/25/TOYOTA_CHR_Teknik_Ozellikler.pdf"
+		   
+		   kampanyaBanner="2.090.000 TL'den başlayan avantajlı fiyatlarla!"
+		   hybrid="1" sedan="0" professional="0" suv="1" benzinli="0" hatchback="0" order="3" yerliUretim="1" Aktifmi="1" baseModelImg="c-hr-1-8-hybrid-4x2-Passion-X-Pack-e-CVT-JBL" kampanyaButonGozuksun="1" crmId="C8DD9CCC-7B69-E611-A732-005056BE43B4"
+		   isBasvuruMerkezindeGoster="1"  tmeModelName= "C-HR" tmeModelId= "c-hr" vehicleType="SUV Hybrid" onlineReservation="1" binek="1"
+   >
+
+		<ModelFiyat id="c-hr-hybrid-Flame-e-CVT">
+			<Govde>YENİ TOYOTA C-HR</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.8 Hybrid Flame e-CVT**</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2090000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2318500 TL</OTVTesvikli1>
+			<UpSell>TOYOTA C-HR Hybrid 4x2 Dynamic Deri Koltuklu e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Flame </PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/c-hr/olustur?path=configure/6c193d6b-514c-436f-ab43-654d97e601d8/04f8b11b-38d1-4740-a8d4-6ed7cc040fa5#carconfig-engine</Url>
+		</ModelFiyat>
+
+
+		<ModelFiyat id="c-hr-hybrid-Passion-e-CVT">
+			<Govde>YENİ TOYOTA C-HR</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.8 Hybrid Passion e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2420000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2717000 TL</OTVTesvikli1>
+			<UpSell>TOYOTA C-HR Hybrid 4x2 Dynamic Deri Koltuklu e-CVT</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Passion </PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/c-hr/olustur?path=configure/6c193d6b-514c-436f-ab43-654d97e601d8/04f8b11b-38d1-4740-a8d4-6ed7cc040fa5#carconfig-engine</Url>
+		</ModelFiyat>
+
+	
+
+		<ModelFiyat id="c-hr-1-8-hybrid-Passion-X-Sport-e-CVT">
+			<Govde>YENİ TOYOTA C-HR</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.8 Hybrid Passion X-Sport e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2755000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2950000 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Passion X-Sport</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/c-hr/olustur?path=configure/6c193d6b-514c-436f-ab43-654d97e601d8/2b398401-2edf-4830-8435-cffc15b2841b#carconfig-engine</Url>
+		</ModelFiyat>
+
+		<!--<ModelFiyat id="c-hr-1-8-hybrid-Passion-X-Style-e-CVT-">
+			<Govde>TOYOTA C-HR</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.8 Hybrid Passion X-Style e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2559000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>3170000 TL</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Passion X-Style</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/c-hr/olustur?path=configure/6c193d6b-514c-436f-ab43-654d97e601d8/27cd8f92-a0c5-40e5-82b6-3823a1c87922#carconfig-engine</Url>
+		</ModelFiyat>-->
+
+
+		<ModelFiyat id="c-hr-1-8-gr-sport-e-CVT-">
+			<Govde>TOYOTA C-HR</Govde>
+			<ModelYili>2026</ModelYili>
+			<Model>1.8 Hybrid GR SPORT e-CVT </Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2870000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>3170000 TL</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>GR Sport</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/c-hr/olustur?path=configure/6c193d6b-514c-436f-ab43-654d97e601d8/27cd8f92-a0c5-40e5-82b6-3823a1c87922#carconfig-engine</Url>
+		</ModelFiyat>
+		<!--<ModelFiyat id="c-hr-1-8-hybrid-4x2-Passion-X-Pack-e-CVT-JBL">
+			<Govde>TOYOTA C-HR</Govde>
+			<Model>1.8 Hybrid 4x2 Passion X-Pack e-CVT (Siyah Tavan ve JBL&lt;sup&gt;2&lt;/sup&gt;)</Model>
+			<ListeFiyati1>1895350 TL</ListeFiyati1>
+			<KampanyaliFiyati1>1895350</KampanyaliFiyati1>
+			<OTVTesvikli1>1775350</OTVTesvikli1>
+			<ListeFiyati2></ListeFiyati2>
+			<UpSell>TOYOTA C-HR Hybrid 4x2 Dynamic Deri Koltuklu e-CVT</UpSell>
+			<UpSell>TOYOTA C-HR Hybrid 4x2 Dynamic Techno Paketi e-CVT</UpSell>
+			<UpSell>TOYOTA C-HR Hybrid 4x2 Dynamic Techno Paketi e-CVT (JBL Premium Ses Sistemli)</UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Passion X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/c-hr/genel-bakis.C-HR.2XE.3b58c795-e91c-4ad2-aef5-5c9c81b31db4</Url>
+		</ModelFiyat>-->
+
+
+		<ModelFiyat Renk="1">
+			<Govde>Toyota C-HR Hybrid*</Govde>
+			<Model>%70 ÖTV'li versiyonlarda**</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>18900</KampanyaliFiyati2>
+			<OTVTesvikli1>18900</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Flame</PaketBilgisi>
+		</ModelFiyat>
+		<Aciklama>
+			<![CDATA[ 
+      <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/C-HR2021MY.pdf" target="_blank">2021 Model Yılı fiyat listesi için tıklayınız</a></center>-->
+      
+	  <b>Menşei : Türkiye </b>
+      <br><br>
+	  *Kampanyalı araçlar stoklarla sınırlıdır.
+	  <br><br>
+	  **Metalik ve sedefli metalik renk fiyat farkı yalnızca 1.8 Hybrid Flame e-CVT versiyonu için geçerlidir. 
+	  <br><br>
+	  Diğer versiyonlar Metalik ve sedefli metalik renk seçenekleri ile sunulmakta olup tavsiye edilen fiyatlara metalik ve sedefli metalik renk fiyatları dahildir.
+	  <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+      Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.  
+     
+]]>
+		</Aciklama>
+	</Model>
+
+	<!--<Model id="CorollaHB" name="Corolla Hatchback" beyazBalon="" kirmiziBalon=""
+		 testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+		 url="https://www.toyota.com.tr/araba-modelleri/corolla-hatchback"
+		 labelListeFiyati1="Tavsiye Edilen 2023 MY&lt;br /&gt;Fiyatları"
+		 labelKampanyaliFiyati1="Tavsiye Edilen 2023 MY&lt;br /&gt;Fiyatları"
+		 order="5"
+		 Aktifmi="1">-->
+	<!--<ModelFiyat id="Corolla-Hatchback-Benzinli-Dream-MultidriveS">
+			<Govde>COROLLA HATCHBACK</Govde>
+			<Model>1.2 Turbo Dream Multidrive S</Model>
+			<ListeFiyati1>744400 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.2</MotorHacmi>
+			<PaketBilgisi>Dream</PaketBilgisi>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Hatchback-Benzinli-Dream-XPack-MultidriveS">
+			<Govde>COROLLA HATCHBACK</Govde>
+			<Model>1.2 Turbo Dream X-Pack Multidrive S</Model>
+			<ListeFiyati1>781600 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.2</MotorHacmi>
+			<PaketBilgisi>Dream X-Pack</PaketBilgisi>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Hatchback-Benzinli-Flame-MultidriveS">
+			<Govde>COROLLA HATCHBACK</Govde>
+			<Model>1.2 Turbo Flame Multidrive S</Model>
+			<ListeFiyati1>789650</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.2</MotorHacmi>
+			<PaketBilgisi>Flame</PaketBilgisi>
+		</ModelFiyat>-->
+	<!--<ModelFiyat id="Corolla-Hatchback-Benzinli-Flame-XPack-MultidriveS">
+			<Govde>COROLLA HATCHBACK</Govde>
+			<Model>1.2 Turbo Flame X-Pack Multidrive S</Model>
+			<ListeFiyati1>848700</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.2</MotorHacmi>
+			<PaketBilgisi>Flame X-Pack</PaketBilgisi>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat Renk="1">
+      <Govde>Corolla Hatchback</Govde>
+      <Model>%50 ÖTV'li versiyonlarda</Model>
+      <ListeFiyati1></ListeFiyati1>
+      <KampanyaliFiyati1></KampanyaliFiyati1>
+      <KampanyaliFiyati2></KampanyaliFiyati2>
+      <OTVTesvikli1></OTVTesvikli1>
+      <Durum>1</Durum>
+      <AracTipi>Hatchback</AracTipi>
+      <VitesTipi>Otomatik</VitesTipi>
+      <MotorTipi>Benzinli</MotorTipi>
+      <MotorHacmi>1.2</MotorHacmi>
+      <PaketBilgisi>Dream, Dream X-Pack, Flame, Flame X-Pack</PaketBilgisi>
+    </ModelFiyat>-->
+	<!--<ModelFiyat Renk="1">
+			<Govde>Corolla Hatchback</Govde>
+			<Model>%80 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>3000 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.2</MotorHacmi>
+			<PaketBilgisi>Dream, Dream X-Pack, Flame, Flame X-Pack</PaketBilgisi>
+		</ModelFiyat>-->
+	<Aciklama>
+		<![CDATA[
+      <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/2020MY.pdf" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center> 
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+      ]]>-->
+	</Aciklama>
+	<!--</Model>-->
+
+	<Model id="CorollaHBHybrid" name="Corolla Hatchback Hybrid" beyazBalon="" kirmiziBalon=""
+		  testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+		  url="https://www.toyota.com.tr/araba-modelleri/corolla-hatchback"
+  pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/corolla-hb/Corolla-Hatchback-Teknik-ve-Donanim-Ozellikleri.pdf"
+	  labelListeFiyati1=""
+	  labelListeFiyati2=""
+	  labelKampanyaliFiyati1=""
+	  labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kampanyalı Fiyatlar*"
+	  labelOTVTesvikli1="Tavsiye Edilen Hybrid'e &lt;br /&gt; Özel ÖTV Oranı &lt;br /&gt; İle Fiyatlar"
+		  kampanyaBanner="" 
+		  order="4"   hybrid="1" sedan="0" hatchback="1" professional="0" onlineReservation="1" suv="0" benzinli="0"
+		  Aktifmi="1"   kampanyaButonGozuksun="1"  crmId="92CBC3CA-8AF2-E811-B96D-005056BE43B4"
+		  isBasvuruMerkezindeGoster="1" tmeModelName= "Corolla Hatchback"  tmeModelId= "corolla-hb"  vehicleType="HB Hybrid"  binek="1" >
+		
+		
+		<ModelFiyat id="Corolla-Hatchback-Hybrid-Flame-e-CVT">
+			<Govde>COROLLA HATCHBACK HYBRID</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.8 Hybrid Flame e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2115000</KampanyaliFiyati2>
+			<OTVTesvikli1>2478500 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Flame</PaketBilgisi>
+		</ModelFiyat>
+
+
+		<ModelFiyat id="Corolla-Hatchback-Passion-X-Pack-e-CVT">
+			<Govde>COROLLA HATCHBACK HYBRID</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.8 Hybrid Passion X-Pack e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2419500</KampanyaliFiyati2>
+			<OTVTesvikli1>2718000 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Flame</PaketBilgisi>
+		</ModelFiyat>
+		
+
+        <ModelFiyat id="Corolla-Hatchback-Hybrid-gr-sport-e-cvt">
+			<Govde>YENİ COROLLA HATCHBACK HYBRID</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.8 Hybrid GR SPORT e-CVT**</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2419500</KampanyaliFiyati2>
+			<OTVTesvikli1>2718000 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Passion</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/corolla-hatchback/genel-bakis.Corolla-HB.040.3b4bc849-4d3e-4c80-8925-b20402208eb6</Url>
+
+		</ModelFiyat>
+		
+
+
+		<ModelFiyat Renk="1">
+			<Govde>Corolla Hatchback</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%70 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>18900</KampanyaliFiyati2>
+			<OTVTesvikli1>18900</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi>Dream, Dream X-Pack, Flame, Flame X-Pack, Passion X-Pack</PaketBilgisi>
+		</ModelFiyat>
+
+
+		<Aciklama>
+			<![CDATA[ 
+      <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/2020MY.pdf" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center>--> 
+	  
+	   Menşei : İngiltere  </b>
+	  <br><br>
+      *Kampanyalı araçlar stoklarla sınırlıdır.
+      <br><br>
+	  **Metalik ve sedefli metalik renk fiyat farkı 1.8 Hybrid GR SPORT e-CVT versiyonu için geçerli değildir.
+	  <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+	  Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+	  <br><br>
+	  Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+	  <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+      ]]>
+		</Aciklama>
+	</Model>
+
+	<!--<Model id="YarisCross" name="Yaris Cross" beyazBalon="" kirmiziBalon="" testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx" url="https://www.toyota.com.tr/araba-modelleri/yaris-cross"
+		   labelListeFiyati1="Tavsiye Edilen 2023 MY&lt;br /&gt; Fiyatları"
+		   labelKampanyaliFiyati1="Tavsiye Edilen Kredi Kampanyalı &lt;br /&gt; 2023 MY Fiyatları**"
+		   labelOTVTesvikli1="Tavsiye Edilen Temmuz Ayına Özel &lt;br /&gt; Sınırlı Sayıda Kampanyalı &lt;br /&gt; 2023 MY Fiyatları*"
+		   order="5" Aktifmi="1" baseModelImg="yaris-cross-1-5-flame-x-pack-mds" kampanyaButonGozuksun="1" crmId="47616A42-B795-EC11-A787-005056BEEB23" isBasvuruMerkezindeGoster="1"
+	tmeModelName= "Yaris Cross"
+    tmeModelId= "yb"
+		   >-->
+	<!--<ModelFiyat id="yaris-cross-1-5-dream-mds">
+			<Govde>YARIS CROSS</Govde>
+			<Model>1.5 Dream Multidrive S</Model>
+			<ListeFiyati1>1421000 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1>1335000</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.0</MotorHacmi>
+			<PaketBilgisi>Dream Multidrive S</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris-cross/genel-bakis.YB.040.d538c7ed-d021-4f48-a6f5-ff12119fc819</Url>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat id="yaris-cross-1-5-dream-x-pack-mds">
+			<Govde>YARIS CROSS</Govde>
+			<Model>1.5 Dream X-Pack Multidrive S</Model>
+			<ListeFiyati1>1453000 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1>1368000</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Dream X-Pack Multidrive S</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris-cross/genel-bakis.YB.040.908b70ca-52c6-48ee-8633-087434529a0a</Url>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat id="yaris-cross-1-5-flame-x-pack-mds">
+			<Govde>YARIS CROSS</Govde>
+			<Model>1.5 Flame X-Pack Multidrive S</Model>
+			<ListeFiyati1>1512000 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1>1433000</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Flame X-Pack Multidrive S</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris-cross/genel-bakis.YB.040.34e21c39-ebad-4f4b-a84b-097c314a5ab3</Url>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat Renk="1">
+			<Govde>YARIS CROSS</Govde>
+			<Model>%80 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>7000</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1>7000</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+		<Aciklama>-->
+	<![CDATA[
+      <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/2020MY.pdf" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center>--> 
+      
+	  <b>Menşei : Fransa </b>
+      <br><br>
+	  *İlgili araçlar stoklarla sınırlıdır.
+	  <br><br>
+	  **Kredi Kampanyası ve "Tavsiye Edilen Ocak Ayına Özel Sınırlı Sayıda Kampanyalı Fiyatlar" bir arada kullanılamaz.
+	  <br><br>
+	  Metalik ve sedefli metalik renk fiyat farkı Hybrid Passion X-Pack versiyonu için geçerli değildir.
+	  <br><br><br>
+      Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.  
+        ]]>
+	<!--</Aciklama>
+	</Model>-->
+
+	<Model id="YarisCrossHybrid" name="Yaris Cross Hybrid" beyazBalon="" kirmiziBalon="" testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx" url="https://www.toyota.com.tr/araba-modelleri/yaris-cross"
+			 pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/yaris-cross/Yaris-Cross-Hybrid-Teknik-ve-Donanim-Ozellikleri.pdf"
+	    	labelListeFiyati1=""
+	        labelListeFiyati2=""
+	        labelKampanyaliFiyati1=""
+	        labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kampanyalı Fiyatlar*"
+	        labelOTVTesvikli1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+		     kampanyaBanner="370.000 TL'ye varan indirim ile avantajlı fiyatlar!"
+			 order="5" Aktifmi="1" baseModelImg="yaris-cross-1-5-hybrid-passion-x-pack-mds" kampanyaButonGozuksun="1" crmId="48616A42-B795-EC11-A787-005056BEEB23"
+			 isBasvuruMerkezindeGoster="1" tmeModelName= "Yaris Cross" hybrid="1" sedan="0" hatchback="0" professional="0" 
+		     onlineReservation="1" suv="1" benzinli="0"   tmeModelId= "yb"  vehicleType="SUV Hybrid"  binek="1"  >
+		
+
+
+		<ModelFiyat id="yaris-cross-1-5-hybrid-dream-mds">
+			<Govde>YARIS CROSS</Govde>
+			<Model>1.5 Hybrid Dream 130 HP e-CVT</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2203000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2520500 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.0</MotorHacmi>
+			<PaketBilgisi>Dream Multidrive S</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris-cross/genel-bakis.YB.040.fd68603a-3bfe-4e87-a53a-d4f7b8d98131</Url>
+		</ModelFiyat>
+
+
+
+
+		<ModelFiyat id="yaris-cross-1-5-hybrid-flame-mds">
+			<Govde>YARIS CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.5 Hybrid Flame 130 HP e-CVT</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2531000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2893000 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Flame X-Pack Multidrive S</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris-cross/genel-bakis.YB.040.48064f3a-2ad3-4346-b889-0b84a8323d5c</Url>
+		</ModelFiyat>
+
+
+
+		<ModelFiyat id="yaris-cross-1-5-hybrid-flame-x-pack-mds">
+			<Govde>YARIS CROSS</Govde>
+			<Model>1.5 Hybrid Flame X-Pack 130 HP e-CVT</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2555000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2932000 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Flame X-Pack Multidrive S</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris-cross/genel-bakis.YB.040.67743bbe-8d2a-4c93-bccb-16d4188729cb</Url>
+		</ModelFiyat>
+
+
+
+		<!--<ModelFiyat id="yaris-cross-1-5-hybrid-passion-x-pack-mds">
+			<Govde>YARIS CROSS</Govde>
+			<Model>1.5 Hybrid Passion X-Pack 130 HP e-CVT**</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2383500 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2710500 TL</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Passion X-Pack Multidrive S</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris-cross/genel-bakis</Url>
+		</ModelFiyat>-->
+		
+		
+
+		<ModelFiyat Renk="1">
+			<Govde>YARIS CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%80 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>20000</KampanyaliFiyati2>
+			<OTVTesvikli1>20000</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+		<ModelFiyat Renk="1">
+			<Govde>YARIS CROSS</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%90 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>21150</KampanyaliFiyati2>
+			<OTVTesvikli1>21150</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+
+		<Aciklama>
+			<![CDATA[
+      <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/2020MY.pdf" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center>--> 
+	  
+	  <b>Menşei : Fransa </b>
+      <br><br>
+	  *Kampanyalı araçlar stoklarla sınırlıdır.
+	  <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+      Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.  
+        ]]>
+		</Aciklama>
+	</Model>
+
+	<!--<Model id="Yaris" name="Yaris" beyazBalon="" kirmiziBalon="" testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx" url="https://www.toyota.com.tr/araba-modelleri/yaris"
+		   labelListeFiyati1="Tavsiye Edilen 2023 MY&lt;br /&gt;Fiyatları"
+		   labelKampanyaliFiyati1="Tavsiye Edilen Kredi Kampanyalı &lt;br /&gt; 2023 MY Fiyatları**"
+		   labelOTVTesvikli1="Tavsiye Edilen Temmuz Ayına Özel &lt;br /&gt; Sınırlı Sayıda Kampanyalı &lt;br /&gt; 2023 MY Fiyatları*"
+		   order="5" Aktifmi="1" baseModelImg="yeni-yaris-1-5-flame-xpack-mds" kampanyaButonGozuksun="1" crmId="999932B9-927D-E111-A776-002655515434" isBasvuruMerkezindeGoster="1"
+		   tmeModelName= "Yaris"  vehicleType="Hatchback"
+    tmeModelId= "ya"
+		   >-->
+	<!--<ModelFiyat id="yaris-1-0-vision">
+			<Govde>YARIS</Govde>
+			<Model>1.0 Vision</Model>
+			<ListeFiyati1>543350 TL </ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.0</MotorHacmi>
+			<PaketBilgisi>Vision</PaketBilgisi>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat id="yaris-1-5-dream-mds">
+			<Govde>YARIS</Govde>
+			<Model>1.5 Dream Multidrive S</Model>
+			<ListeFiyati1>1176700 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1>1066000</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Dream</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris/genel-bakis.YA.040.0fecc5ad-35de-40cd-98fc-1c53d59f9947</Url>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat id="yaris-1-5-dream-xpack-mds">
+			<Govde>YARIS</Govde>
+			<Model>1.5 Dream X-Pack Multidrive S</Model>
+			<ListeFiyati1>1240000 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1>1136500</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Dream X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris/genel-bakis.YA.040.40405b5e-fbc9-44af-9c61-c0fb70927cc3</Url>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat id="yeni-yaris-1-5-flame-mds">
+			<Govde>YARIS</Govde>
+			<Model>1.5 Flame Multidrive S</Model>
+			<ListeFiyati1>1260000 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1>1157500</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Flame</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris/genel-bakis.YA.040.9c6d0cf8-05f2-438a-a4cf-c09b73a0324a</Url>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat id="yaris-1-5-flame-xpack-mds">
+			<Govde>YARIS</Govde>
+			<Model>1.5 Flame X-Pack Multidrive S</Model>
+			<ListeFiyati1>1310000 TL</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1>1208500</OTVTesvikli1>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Flame X-Pack</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris/genel-bakis.YA.040.432698a2-037a-4f45-8860-d7c55d9fbb67</Url>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat Renk="1">
+			<Govde>Yaris</Govde>
+			<Model>%70 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>5000</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>-->
+	<!--<ModelFiyat Renk="1">
+      <Govde>Yaris</Govde>
+      <Model>%80 ÖTV'li versiyonlarda</Model>
+      <ListeFiyati1>2800</ListeFiyati1>
+      <KampanyaliFiyati1></KampanyaliFiyati1>
+      <OTVTesvikli1></OTVTesvikli1>
+      <Durum>1</Durum>
+      <AracTipi>Hatchback</AracTipi>
+      <VitesTipi>Otomatik</VitesTipi>
+      <MotorTipi>Benzinli</MotorTipi>
+      <MotorHacmi>1.5</MotorHacmi>
+      <PaketBilgisi></PaketBilgisi>
+    </ModelFiyat>-->
+	<!--<ModelFiyat Renk="1">
+			<Govde>Yaris</Govde>
+			<Model>%80 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>7000</ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1>7000</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Benzinli</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>-->
+	<!--<Aciklama>-->
+	<![CDATA[
+      <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/2020MY.pdf" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center> 
+      <br><br>
+	   <b>Menşei : Fransa </b>
+      <br><br>
+	  *Kampanyalı araçlar stoklarla sınırlıdır.
+	  <br><br>
+	  **Kredi Kampanyası ve "Tavsiye Edilen Ocak Ayına Özel Sınırlı Sayıda Kampanyalı Fiyatlar" bir arada kullanılamaz.
+	  <br><br>
+       Metalik ve sedefli metalik renk fiyat farkı Hybrid Passion X-Pack versiyonu için geçerli değildir.
+	   <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+       Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+       Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+       Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.  
+        ]]>-->
+	<!--</Aciklama>
+	</Model>-->
+
+	<Model id="YarisHybrid" name="Yaris Hybrid" beyazBalon="" kirmiziBalon=""  testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx" url="https://www.toyota.com.tr/araba-modelleri/yaris"
+			 pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/yaris/Yaris-Hybrid-Teknik-ve-Donanim-Ozellikleri.pdf"
+		     labelListeFiyati1=""
+		     labelListeFiyati2=""
+		     labelKampanyaliFiyati1=""
+		     labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kampanyalı Fiyatlar*"
+		     labelOTVTesvikli1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+			 order="6" Aktifmi="1" baseModelImg="yeni-yaris-hybrid-1-5-hybrid-Passion-e-cvt" crmId="849932B9-927D-E111-A776-002655515434" isBasvuruMerkezindeGoster="1"
+			 tmeModelName= "Yaris" hybrid="1" sedan="0" hatchback="0"
+		     professional="0" onlineReservation="1" suv="1" benzinli="0" tmeModelId= "ya" vehicleType="HB Hybrid"  binek="1"  >
+		
+	
+
+		<ModelFiyat id="yaris-hybrid-1-5-hybrid-Flame-e-cvt">
+			<Govde>YARIS</Govde>
+			<Model>1.5 Hybrid Flame e-CVT</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>1878000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2080000 TL</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Flame</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris/genel-bakis.YA.040.fc3177e7-21ac-4a52-ae97-f2c6c0a9f8ea</Url>
+		</ModelFiyat>
+
+
+	
+
+		<ModelFiyat id="yaris-hybrid-1-5-hybrid-Passion-e-cvt">
+			<Govde>YARIS</Govde>
+			<Model>1.5 Hybrid Passion X-Pack Siyah Tavan e-CVT**</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2182500 TL</KampanyaliFiyati2>
+			<OTVTesvikli1>2385500 TL</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi>Passion</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/yaris/genel-bakis</Url>
+		</ModelFiyat>
+
+
+	
+		
+
+		<ModelFiyat Renk="1">
+			<Govde>Yaris</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%80 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>17000</KampanyaliFiyati2>
+			<OTVTesvikli1>17000</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Hatchback</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+		<Aciklama>
+			<![CDATA[
+      <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/2020MY.pdf" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center>-->
+      
+	  <b>Menşei : Fransa </b>
+      <br><br>
+	  *Kampanyalı araçlar stoklarla sınırlıdır.
+	  <br><br>
+	  **Siyah tavan opsiyonu ile metalik boyalı siyah tavan ve yan aynalar sunulmaktadır. Metalik ve sedefli metalik renk fiyat farkı 1.5 Hybrid Passion X-Pack Siyah Tavan e-CVT versiyonu için geçerli değildir. 
+	  <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+	  Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.  
+      
+	 ]]>
+		</Aciklama>
+	</Model>
+
+	<Model id="LandCruiserPrado" name="Land Cruiser Prado" beyazBalon="" kirmiziBalon="" testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx" url="https://www.toyota.com.tr/araba-modelleri/land-cruiser-prado"
+		 labelListeFiyati1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatı"
+		 labelListeFiyati2=""
+		 labelKampanyaliFiyati1=""
+		 labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kampanyalı  Fiyat*"
+	     labelOTVTesvikli1=""
+			 order="4" Aktifmi="1" baseModelImg="land-cruiser-prado-2-8-D-4D" kampanyaButonGozuksun="0" isBasvuruMerkezindeGoster="1" crmId="8E9932B9-927D-E111-A776-002655515434"
+					 tmeModelName= "Landcruiser"
+	  tmeModelId= "landcruiser150"  vehicleType="SUV" 
+	   pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/land-cruiser-prado/Land-Cruiser-Prado-Teknik-ve-Donanim-Ozellikleri.pdf" binek="1"
+		  >
+		<!--<ModelFiyat id="land-cruiser-prado-2-8-D-4D">
+			<Govde>Land Cruiser Prado</Govde>
+			<Model>2.8 D-4D 8 A\T Land Cruiser Prado</Model>
+			<ModelYili>2024</ModelYili>
+			<ListeFiyati1>9750000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>9550000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.8</MotorHacmi>
+			<PaketBilgisi>Land Cruiser Prado</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/land-cruiser-prado</Url>
+		</ModelFiyat>-->
+
+		<ModelFiyat id="land-cruiser-prado-2-8-D-4D">
+			<Govde>Land Cruiser Prado</Govde>
+			<Model>2.8 D-4D 8 A\T Land Cruiser Prado</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1>16000000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>12000000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.8</MotorHacmi>
+			<PaketBilgisi>Land Cruiser Prado</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/land-cruiser-prado</Url>
+		</ModelFiyat>
+
+
+		<!--<ModelFiyat id="land-cruiser-prado-2-8-D-4D-Bej">
+			<Govde>Land Cruiser Prado</Govde>
+			<Model>2.8 D-4D 204PS(Premium Bej Döşeme)</Model>
+			<ListeFiyati1>4032850 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.8</MotorHacmi>
+			<PaketBilgisi>Land Cruiser Prado</PaketBilgisi>
+		</ModelFiyat>-->
+		<!--<ModelFiyat Renk="1">
+			<Govde>Land Cruiser Prado</Govde>
+			<Model>%220 ÖTV'li versiyonlarda*</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.8</MotorHacmi>
+			<PaketBilgisi>Land Cruiser Prado</PaketBilgisi>
+		</ModelFiyat>-->
+		<Aciklama>
+			<![CDATA[<!--<!<center><a class="DetailLink" href="" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center>-->
+       
+	   <b>Menşei : Japonya </b>
+	   <br><br>
+       **Tavsiye edilen fiyatlara metalik ve sedefli metalik renk fiyatları dahildir.
+       <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+       Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+       <br><br>
+       Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+       <br><br>
+       Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.  
+       ]]>
+		</Aciklama>
+	</Model>
+
+
+	<!--<Model id="CamryHybrid" name="Camry" beyazBalon="" kirmiziBalon="" testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx" url="https://www.toyota.com.tr/araba-modelleri/camry"
+	labelListeFiyati1="Tavsiye Edilen 2023 MY &lt;br /&gt; Fiyatları"
+	labelListeFiyati2="Tavsiye Edilen 2023 MY &lt;br /&gt; Fiyatları"
+pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/camry/Camry%202021%20Teknik%20ve%20Donan%C4%B1m%20%C3%96zellikleri_tcm-3043-2303534.pdf"
+		  order="7" Aktifmi="1" baseModelImg="camry-2-5-hybrid-passion-e-cvt" kampanyaButonGozuksun="0" crmId="F43787AD-41F7-E811-B96D-005056BE43B4" isBasvuruMerkezindeGoster="1"
+		    tmeModelName="Camry"
+					   	    hybrid="1" sedan="1" hatchback="0" professional="0" suv="0" benzinli="0"
+
+    tmeModelId= "camry"  vehicleType="Sedan Hybrid"
+		>-->
+
+	<!--<ModelFiyat id="camry-2-5-hybrid-dream-e-cvt">
+      <Govde>Camry</Govde>
+      <Model>2.5 Hybrid Dream e-CVT</Model>
+      <ListeFiyati1>740800 TL</ListeFiyati1>
+      <ListeFiyati2></ListeFiyati2>
+      <Durum>1</Durum>
+      <AracTipi>Sedan</AracTipi>
+      <VitesTipi>Otomatik</VitesTipi>
+      <MotorTipi>Hybrid</MotorTipi>
+      <MotorHacmi>2.5</MotorHacmi>
+      <PaketBilgisi>Dream</PaketBilgisi>
+    </ModelFiyat>-->
+	<!--<ModelFiyat id="camry-2-5-hybrid-passion-e-cvt">
+			<Govde>Camry</Govde>
+			<Model>2.5 Hybrid Passion e-CVT</Model>
+			<ModelYili>2023</ModelYili>
+			<ListeFiyati1>3811550 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<Durum>1</Durum>
+			<AracTipi>Sedan</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>2.5</MotorHacmi>
+			<PaketBilgisi>Passion</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/camry/genel-bakis.CAMRY.1L5.5ecc344a-f13d-4319-aca8-113677d6a035</Url>
+		</ModelFiyat>-->
+
+	<!--<ModelFiyat Renk="1">
+			<Govde>Camry Hybrid</Govde>
+			<ModelYili>2023</ModelYili>
+			<Model>%220 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>14000</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>2.5</MotorHacmi>
+			<PaketBilgisi>4x4-Flame ,4x4-Passion ,4x4 Passion X-Pack</PaketBilgisi>
+		</ModelFiyat>
+		<Aciklama>-->
+	<![CDATA[  
+      <!--<!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/2020MY.pdf" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center>    
+      
+	  <b> Menşei : Japonya </b>
+      <br><br>
+      *Söz konusu araç sipariş üzerine getirilmektedir. Müşteri tesliminde, teslim tarihinde geçerli olan Tavsiye Edilen Liste Fiyatı geçerli olacaktır.
+      <br><br><br>
+      Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+]]>
+	<!--</Aciklama>-->
+	<!--</Model>-->
+	<!--test-->
+	<!--<Model id="RAV4Hybrid" name="RAV4 Hybrid" beyazBalon="" kirmiziBalon="" testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx" url="https://www.toyota.com.tr/araba-modelleri/rav4"
+		pdfUrl="https://toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/rav4/RAV4-Hybrid-Teknik-ve-Donanim-Ozellikleri.pdf"
+	   labelListeFiyati1=""
+	   labelListeFiyati2=""
+	   labelKampanyaliFiyati1=""
+	   labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı Sayıda &lt;br /&gt; Kampanyalı Fiyatları*"
+	   labelOTVTesvikli1="Tavsiye Edilen Hybrid'e Özel &lt;br /&gt; ÖTV Oranı ile Fiyatlar"
+	   hybrid="1" sedan="0" hatchback="0" professional="0" suv="1" benzinli="0" order="7" Aktifmi="1" 
+	   baseModelImg="rav4-2-5-hybrid-4x4-passion-x-sport-e-cvt-jbl" kampanyaButonGozuksun="0" 
+	   crmId="ae88a083-12c0-e511-b549-005056be2a40" isBasvuruMerkezindeGoster="1" 
+		  tmeModelId= "ra" vehicleType="SUV Hybrid"    tmeModelName= "RAV4"      >-->
+		
+		
+		<!--<ModelFiyat id="rav4-2-5-hybrid-4x4-passion-x-pack-e-cvt">
+			<Govde>RAV4</Govde>
+			<Model>2.5 Hybrid 4x4 Passion X-Pack e-CVT</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1>5639000 TL</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>2.5</MotorHacmi>
+			<PaketBilgisi>4x4 Flame</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/rav4/genel-bakis.RA.1G3.3645b463-8133-43bb-939f-5ee2ec8fc61c</Url>
+		</ModelFiyat>-->
+		
+		
+		
+		<!--<ModelFiyat id="rav4-2-5-hybrid-4x4-gr-sport-e-cvt">
+			<Govde>RAV4</Govde>
+			<Model>2.5 Hybrid 4x4 GR SPORT e-CVT**</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1>5781000 TL</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>2.5</MotorHacmi>
+			<PaketBilgisi>4x4 Gr Sport</PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/rav4/genel-bakis.RA.2QY.44fba216-8d48-438b-b4cd-423f4499fb43</Url>
+		</ModelFiyat>-->
+
+		
+			<!--<ModelFiyat Renk="1">
+			<Govde>RAV4 Hybrid</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%150 ÖTV'li versiyonlarda</Model>
+				<ListeFiyati1></ListeFiyati1>
+				<ListeFiyati2></ListeFiyati2>
+				<KampanyaliFiyati1></KampanyaliFiyati1>
+				<KampanyaliFiyati2></KampanyaliFiyati2>
+				<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>2.5</MotorHacmi>
+			<PaketBilgisi>4x4-Flame ,4x4-Passion ,4x4 Passion X-Pack</PaketBilgisi>
+		</ModelFiyat>-->
+
+		<!--<ModelFiyat Renk="1">
+			<Govde>RAV4 Hybrid</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%170 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1>32400 TL</OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>SUV</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Hybrid</MotorTipi>
+			<MotorHacmi>2.5</MotorHacmi>
+			<PaketBilgisi>4x4-Flame ,4x4-Passion ,4x4 Passion X-Pack</PaketBilgisi>
+		</ModelFiyat>-->
+		
+		
+		
+		
+		<!--<Aciklama>-->
+			<!--<![CDATA[-->
+      <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/2020MY.pdf" target="_blank">2020 Model Yılı fiyat listesi için tıklayınız</a></center>-->
+      
+	  <!--<br><br><br>
+	   <b>Menşei : Japonya </b>
+      <br><br><br>
+	  *Kampanyalı araçlar stoklarla sınırlıdır.
+	  <br><br>
+	  **Metalik ve sedefli metalik renk fiyat farkı 2.5 Hybrid 4x4 GR SPORT e-CVT versiyonu için geçerli değildir.
+	  <br><br><br>
+	  --><!--*JBL opsiyonu ile JBL Premium Ses Sistemi sunulmaktadır.--><!--
+	  --><!--<br>
+	  Metalik ve sedefli metalik renk fiyat farkı  Hybrid 4x4 Passion X-Sport versiyonu için geçerli değildir.--><!--
+	  --><!--<br>
+	  **Kasım 2020 üretimi ile gelen RAV4 Hybrid modellerimize "Akıllı Giriş ve Çalıştırma Sistemi (Hırsızlığa Karşı Sinyal Kesme Özelliği ile)" eklenmiştir ve Dijital Kameralı İç Dikiz Aynası 2.jenerasyonu ile güncellenmiştir. Passion, Passion X-Pack, Passion X-Sport versiyonlarında Lityum- iyon bataryaya geçiş yapılmıştır.--><!--
+      <br><br>
+       Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+       Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+       Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.  
+       
+      ]]>-->
+		<!--</Aciklama>-->
+	<!--</Model>-->
+
+	<Model id="Hilux" name="Hilux" beyazBalon="2016 ve 2017'nin en çok tercih edilen pick-up'ı" kirmiziBalon="" 
+			testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx" 
+			url="https://www.toyota.com.tr/araba-modelleri/hilux"
+			pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/hilux/Toyota-Hilux-Teknik-Ozellikler-ve-Donanim-Tablosu.pdf"
+		    labelListeFiyati1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+		    labelListeFiyati2="Tavsiye Edilen Vergi &lt;br /&gt; Levhalı Müşterilere Özel &lt;br /&gt; Nakit Alım Fiyatları***"
+		    labelKampanyaliFiyati1=""
+		    labelKampanyaliFiyati2="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kampanyalı Fiyatlar*"
+            labelOTVTesvikli1=""
+			kampanyaBanner="4x2 Hi-Cruiser A/T versiyonuna özel 1.000.000 TL, 6 AY, %0 kredi avantajıyla!**"
+			order="9" Aktifmi="1" baseModelImg="hilux-2-4l-4x4-Invincible-A-T-JBL" kampanyaButonGozuksun="1" crmId="809932b9-927d-e111-a776-002655515434" isBasvuruMerkezindeGoster="1"
+			tmeModelName= "Hilux" professional="1" benzinli="1"
+			tmeModelId= "hilux" vehicleType="Ticari" onlineReservation="1" ticari="1"    >
+
+	
+		<ModelFiyat id="hilux-2-4l-4x2-hi-cruiser-A-T">
+			<Govde>Hilux</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>2.4 D-4D 4x2 Hi-Cruiser A/T</Model>
+			<ListeFiyati1>2617000 TL</ListeFiyati1>
+			<ListeFiyati2>2194500 TL</ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>2455000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Ticari</AracTipi>
+			<VitesTipi></VitesTipi>
+			<MotorTipi></MotorTipi>
+			<MotorHacmi></MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/hilux/genel-bakis.HILUX.040.e5a09fe8-e677-478e-a53e-2d2e44ab4bfe</Url>
+		</ModelFiyat>
+
+		
+
+		<ModelFiyat id="hilux-2-4l-4x4-adventure-A-T">
+			<Govde>Hilux</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>2.4 D-4D 4x4 Adventure A/T</Model>
+			<ListeFiyati1>3968500 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>3860000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Ticari</AracTipi>
+			<VitesTipi></VitesTipi>
+			<MotorTipi></MotorTipi>
+			<MotorHacmi></MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/hilux/genel-bakis.HILUX.040.904a3fee-d56c-47e3-8a30-b63ec364f141</Url>
+		</ModelFiyat>
+
+
+
+		<ModelFiyat id="hilux-2-4l-4x4-Invincible-A-T">
+			<Govde>Hilux</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>2.4 D-4D 4x4 Invincible A/T</Model>
+			<ListeFiyati1>4619000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>4145000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Ticari</AracTipi>
+			<VitesTipi></VitesTipi>
+			<MotorTipi></MotorTipi>
+			<MotorHacmi></MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/hilux/genel-bakis.HILUX.040.16b009d6-2ca5-4a16-bd30-66e173c39eb6</Url>
+		</ModelFiyat>
+
+
+		<ModelFiyat id="hilux-2-8l-4x4-Gr-Sport-A-T">
+			<Govde>Hilux</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>2.8 D-4D 4x4 GR SPORT A/T</Model>
+			<ListeFiyati1>5344500 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>4995000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Ticari</AracTipi>
+			<VitesTipi></VitesTipi>
+			<MotorTipi></MotorTipi>
+			<MotorHacmi></MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/hilux/genel-bakis.HILUX.040.16b009d6-2ca5-4a16-bd30-66e173c39eb6</Url>
+		</ModelFiyat>
+		
+		
+		
+
+		<ModelFiyat Renk="1">
+			<Govde>Hilux</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%4 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1>22000 TL</ListeFiyati1>
+			<ListeFiyati2>22000 TL</ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>22000 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Ticari</AracTipi>
+			<VitesTipi></VitesTipi>
+			<MotorTipi></MotorTipi>
+			<MotorHacmi></MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+		
+		<ModelFiyat Renk="1">
+			<Govde>Hilux</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>%50 ÖTV'li versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<ListeFiyati2>31750 TL</ListeFiyati2>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<KampanyaliFiyati2>31750 TL</KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi>Ticari</AracTipi>
+			<VitesTipi></VitesTipi>
+			<MotorTipi></MotorTipi>
+			<MotorHacmi></MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+		<Aciklama>
+			<![CDATA[ <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/Hilux2021MY.pdf" target="_blank">2021 Model Yılı fiyat listesi için tıklayınız</a></center>-->
+     
+	  
+      <b> Menşei : Tayland </b>
+      <br><br>
+	  *Kampanyalı araçlar stoklarla sınırlıdır. 
+	  <br><br>
+	  **İlgili kredi kampanyası tüzel müşterilere özel 2.4L 4x2 Hi-Cruiser A/T versiyonu özelinde 1.000.000 TL, 6 ay, 0% faiz imkanı ile sunulmaktadır.
+	  <br><br> 
+	  ***Tavsiye Edilen Vergi Levhalı Müşterilere Özel Nakit Alım Fiyatları ve kredi kampanyası bir arada kullanılamaz.
+	  <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+	  Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.  
+       
+      ]]>
+
+		</Aciklama>
+	</Model>
+
+	<Model id="ProaceCity" name="Proace City" beyazBalon="" kirmiziBalon=""
+		   testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+		   url="https://www.toyota.com.tr/araba-modelleri/proace-city-verso"
+		   optionalPriceUrl=""
+		   pdfUrl="https://toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/proace-city/Toyota-Proace-City-Teknik-Donanim-Tablosu.pdf"
+		   labelListeFiyati1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+		   labelListeFiyati2=""
+		   labelKampanyaliFiyati1="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kredi Kampanyalı Fiyatlar*"
+	       labelKampanyaliFiyati2=""
+		   labelOTVTesvikli1=""
+		   kampanyaBanner="600.000 TL, 6 AY, %0 faizli kredi avantajıyla VEYA 50.000 TL Nakit Alım İndirimiyle!**"
+		   order="10" hybrid="0" sedan="0" hatchback="0" professional="1" suv="0" benzinli="1"
+		   Aktifmi="1" baseModelImg="Proace-City-1-5-D-130-HP-Passion-X-Pack-A-T" kampanyaButonGozuksun="0" crmId="67A1E23B-740A-EB11-B4ED-005056BEEB23" isBasvuruMerkezindeGoster="1"
+		   tmeModelName= "Proace City"
+		   tmeModelId= "pd" vehicleType="Ticari" onlineReservation="0"  ticari="1"  >
+		
+		
+		<ModelFiyat id="Proace-City-1-5-D-130-HP-Dream-A-T">
+			<Govde>Proace City</Govde>
+			<Model>1.5 D 130 HP Dream A/T</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1>1817500 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1>1544500 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Camli Van</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/proace-city-verso/genel-bakis.PF.epr.89dab64c-6872-4813-832c-bc56c8e28746</Url>
+		</ModelFiyat>
+		
+		
+		<ModelFiyat id="Proace-City-1-5-D-130-HP-Flame-X-Pack-A-T">
+			<Govde>Proace City</Govde>
+			<Model>1.5 D 130 HP Flame X-Pack A/T</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1>2081000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1>1743000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Camli Van</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/proace-city-verso/genel-bakis.PF.epr.fa1811fe-5280-459d-a074-ceca9fd174de</Url>
+		</ModelFiyat>
+		
+		
+		<ModelFiyat id="Proace-City-1-5-D-130-HP-Passion-X-Pack-A-T">
+			<Govde>Proace City</Govde>
+			<Model>1.5 D 130 HP Passion X-Pack A/T</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1>2173500 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1>1832000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Camli Van</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>1.8</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/proace-city-verso/genel-bakis</Url>
+		</ModelFiyat>
+		
+		
+		<ModelFiyat Renk="1">
+			<Govde>Proace City</Govde>
+			<Model>Tüm versiyonlarda</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1>15000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1>15000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi></AracTipi>
+			<VitesTipi></VitesTipi>
+			<MotorTipi></MotorTipi>
+			<MotorHacmi></MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+		<Aciklama>
+			<![CDATA[ <!--<center> <a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/ProaceCity2024.pdf" target="_blank">Opsiyonel Paketler Fiyat Listesi için tıklayınız</a></center>-->
+     
+	  
+	  <b>Menşei : İspanya </b>
+      <br><br>  
+	  *Kampanyalı araçlar stoklarla sınırlıdır. 
+	  <br><br>
+	  **İlgili kredi kampanyası tüzel müşterilere özel 600.000 TL, 6 ay, 0% faiz imkanı ile sunulmaktadır.
+	  <br><br>
+	  ***Nakit alım indirimi ile kredi kampanyalı fiyatlar bir arada kullanılamaz.
+	  <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+      Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+      ]]>
+		</Aciklama>
+	</Model>
+
+	<Model id="ProaceCityCargo" name="Proace City Cargo" beyazBalon="" kirmiziBalon=""
+		   testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+		   url="https://www.toyota.com.tr/araba-modelleri/proace-city-cargo"
+		  labelListeFiyati1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+		  labelListeFiyati2=""
+		  labelKampanyaliFiyati1="Tavsiye Edilen Ocak Ayına &lt;br /&gt; Özel Sınırlı Sayıda &lt;br /&gt; Kredi Kampanyalı Fiyatlar*"
+		  labelKampanyaliFiyati2=""
+	       labelOTVTesvikli1=""
+		   kampanyaBanner="300.000 TL, 6 AY, %0 faizli kredi avantajıyla VEYA 45.000 TL Nakit Alım İndirimiyle!**"
+		   order="10"  hybrid="0"  Aktifmi="1" baseModelImg="Proace-City-Cargo-1-5-D-100-HP-Dream-6-M-T" kampanyaButonGozuksun="0" crmId="F6623D55-57F9-EB11-8523-005056BEEB23" isBasvuruMerkezindeGoster="1"
+		   tmeModelName= "Proace City" professional="1" benzinli="1"
+			 pdfUrl="https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/proace-city-cargo/Proace-City-Cargo-Teknik-ve-Donanim-Ozellikleri.pdf"
+		   tmeModelId= "pd" vehicleType="Ticari" ticari="1">
+
+
+		<ModelFiyat id="Proace-City-Cargo-1-5-D-100-HP-Vision">
+			<Govde>PROACE CITY CARGO</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.5 D 100 HP Vision</Model>
+			<ListeFiyati1>1217000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1>1183000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Camli Van</AracTipi>
+			<VitesTipi>Düz</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+		
+
+		<ModelFiyat id="Proace-City-Cargo-1-5-D-100-HP-Dream">
+			<Govde>PROACE CITY CARGO</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>1.5 D 100 HP Dream</Model>
+			<ListeFiyati1>1271000 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1>1235000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Camli Van</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>
+			<MotorTipi>Düz</MotorTipi>
+			<MotorHacmi>1.5</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+
+
+		<ModelFiyat Renk="1">
+			<Govde>PROACE CITY CARGO</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>Tüm versiyonlarda</Model>
+			<ListeFiyati1>13600 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1>13600 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<Durum>1</Durum>
+			<AracTipi></AracTipi>
+			<VitesTipi></VitesTipi>
+			<MotorTipi></MotorTipi>
+			<MotorHacmi></MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+
+		<Aciklama>
+			<![CDATA[ <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/ProaceCityCargo2022.pdf" target="_blank">Opsiyonel Paketler Fiyat Listesi için tıklayınız</a></center>--> 
+        
+		Menşei : İspanya </b> 
+		<br><br>
+		*Kampanyalı araçlar stoklarla sınırlıdır. 
+		<br><br>
+		**İlgili kredi kampanyası tüzel müşterilere özel 300.000 TL, 6 ay, 0% faiz imkanı ile sunulmaktadır. 
+		<br><br>
+		***Nakit alım indirimi ile kredi kampanyalı fiyatlar bir arada kullanılamaz.
+		<br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+		Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır. 
+		<br><br> 
+		Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır. 
+		<br><br> 
+		Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir. 
+			
+			
+		
+]]>
+		</Aciklama>
+	</Model>
+
+
+	<Model id="ProaceVerso" name="Proace Verso" beyazBalon="" kirmiziBalon=""
+		   testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+		   url="https://www.toyota.com.tr/araba-modelleri/proace-verso"
+		   optionalPriceUrl=""
+		   pdfUrl="https://toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/proace-verso/TOYOTA_ProaceVerso_Teknik_Donanim.pdf"
+		   labelListeFiyati1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+		   labelListeFiyati2=""
+		   labelKampanyaliFiyati1="Tavsiye Edilen Ocak Ayına &lt;br /&gt; Özel Sınırlı Sayıda &lt;br /&gt; Kredi Kampanyalı Fiyatlar*"		   
+		   labelKampanyaliFiyati2=""
+		   labelOTVTesvikli1=""
+		   kampanyaBanner="600.000 TL, 6 AY, %0 faizli kredi avantajıyla VEYA 80.000 TL Nakit Alım İndirimiyle!***"
+		   order="11" hybrid="0" sedan="0" hatchback="0" professional="1" suv="0" benzinli="1"
+		   Aktifmi="1" baseModelImg="Proace-Verso-2-0-D-180-HP-Passion-A-T" kampanyaButonGozuksun="0" crmId="D8AA89A2-0E05-E711-9752-005056BE43B4" isBasvuruMerkezindeGoster="1"
+		   tmeModelName= "Proace Verso"
+		   tmeModelId= "ProaceVerso" vehicleType="Ticari" onlineReservation="0" ticari="1"
+		 >
+		
+		<ModelFiyat id="Proace-Verso-2-0-D-180-HP-Passion-A-T">
+			<Govde>Proace Verso</Govde>
+			<Model>2.2 D 180 HP Passion A/T</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1>2313500 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1>2200000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Camli Van</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>S
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.0</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/proace-city-verso/genel-bakis.PF.epr.89dab64c-6872-4813-832c-bc56c8e28746</Url>
+		</ModelFiyat>
+
+
+
+
+		<ModelFiyat id="Proace-Verso-2-0-D-180-HP-Passion-X-Pack-A-T">
+			<Govde>Proace Verso</Govde>
+			<Model>2.2 D 180 HP Passion X-Pack A/T</Model>
+			<ModelYili>2025</ModelYili>
+			<ListeFiyati1>2381500 TL</ListeFiyati1>
+			<ListeFiyati2></ListeFiyati2>
+			<KampanyaliFiyati1>2265000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Camli Van</AracTipi>
+			<VitesTipi>Otomatik</VitesTipi>S
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.0</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+			<Url>https://www.toyota.com.tr/araba-modelleri/proace-city-verso/genel-bakis.PF.epr.89dab64c-6872-4813-832c-bc56c8e28746</Url>
+		</ModelFiyat>
+
+
+	
+
+
+	
+		<Aciklama>
+			<![CDATA[ <!--<center> <a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/ProaceCity2024.pdf" target="_blank">Opsiyonel Paketler Fiyat Listesi için tıklayınız</a></center>-->
+    
+	  
+	  <b>Menşei : Fransa </b>
+      <br><br>
+	  *Kampanyalı araçlar stoklarla sınırlıdır.
+      <br><br>
+	  **Tavsiye edilen fiyatlara metalik ve sedefli metalik renk fiyatları dahildir.
+	  <br><br>
+	  ***İlgili kredi kampanyası tüzel müşterilere özel 600.000 TL, 6 ay, 0% faiz imkanı ile sunulmaktadır.
+	  <br><br>
+	  ****Nakit alım indirimi ile kredi kampanyalı fiyatlar bir arada kullanılamaz.
+	  <br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+      Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır.
+      <br><br>
+      Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir.
+     
+	 ]]>
+			
+		</Aciklama>
+	</Model>
+
+
+
+	
+	
+	
+
+	<Model id="ProaceCargo" name="Proace Cargo" beyazBalon="" kirmiziBalon=""
+		   testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+		   url="https://www.toyota.com.tr/araba-modelleri/proace-cargo"
+		   labelListeFiyati1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+		   labelListeFiyati2="Tavsiye Edilen Vergi &lt;br /&gt; Levhalı Müşterilere Özel &lt;br /&gt; Nakit Alım Fiyatları***"
+	       labelKampanyaliFiyati1="Tavsiye Edilen Ocak &lt;br /&gt; Ayına Özel Sınırlı &lt;br /&gt; Sayıda Kredi Kampanyalı Fiyatlar*"
+	       labelKampanyaliFiyati2=""
+		   labelOTVTesvikli1=""
+		   kampanyaBanner="300.000 TL, 6 AY, %0 faizli kredi avantajıyla!***"
+		   order="11"  hybrid="0"  Aktifmi="1" baseModelImg="Proace-Cargo-2-0-D-145-HP-Flame-M-T" kampanyaButonGozuksun="0" crmId="CD73F8C5-BFF6-E511-91AF-005056BE43B4" isBasvuruMerkezindeGoster="1"
+		   tmeModelName= "Proace" professional="1" benzinli="1"
+  pdfUrl="https://toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/proace-cargo/TOYOTA_ProaceCargo_Teknik_Donanim.pdf"
+		   tmeModelId= "Proace" vehicleType="Ticari" ticari="1">
+
+		
+		<ModelFiyat id="Proace-Cargo-2-0-D-145-HP-Flame-M-T">
+			<Govde>Proace Cargo</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>2.0 D 145 HP Flame M/T</Model>
+			<ListeFiyati1>1622000 TL</ListeFiyati1>
+			<ListeFiyati2>1479000 TL</ListeFiyati2>
+			<KampanyaliFiyati1>1569000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Panel Van</AracTipi>
+			<VitesTipi>Düz</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.0</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+
+		<!--<ModelFiyat id="Proace-Cargo-2-0-D-145-HP-Flame-M-T">
+			<Govde>Proace Cargo</Govde>
+			<ModelYili>2024</ModelYili>
+			<Model>2.0 D 145 HP Flame M/T</Model>
+			<ListeFiyati1>1390000 TL</ListeFiyati1>
+			<KampanyaliFiyati1>1325000 TL</KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Panel Van</AracTipi>
+			<VitesTipi>Düz</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.0</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>-->
+
+			
+
+		<!--<ModelFiyat Renk="1">
+			<Govde>PROACE CITY CARGO</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>Tüm versiyonlarda</Model>
+			<ListeFiyati1></ListeFiyati1>
+			<KampanyaliFiyati1></KampanyaliFiyati1>
+			<OTVTesvikli1></OTVTesvikli1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<Durum>1</Durum>
+			<AracTipi></AracTipi>
+			<VitesTipi></VitesTipi>
+			<MotorTipi></MotorTipi>
+			<MotorHacmi></MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>-->
+
+
+		<Aciklama>
+			<![CDATA[ <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/ProaceCityCargo2022.pdf" target="_blank">Opsiyonel Paketler Fiyat Listesi için tıklayınız</a></center>--> 
+
+		
+		<b>Menşei : Fransa </b>
+        <br><br>
+	    *Kampanyalı araçlar stoklarla sınırlıdır.
+        <br><br>
+	    **Tavsiye edilen fiyatlara metalik ve sedefli metalik renk fiyatları dahildir. 
+		<br><br>
+		***İlgili kredi kampanyası tüzel müşterilere özel 300.000 TL, 6 ay, 0% faiz imkanı ile sunulmaktadır.
+		<br><br>
+		****Tavsiye Edilen Vergi Levhalı Müşterilere Özel Nakit Alım Fiyatları ve kredi kampanyası bir arada kullanılamaz.
+		<br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>		
+		Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır. 
+		<br><br> 
+		Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır. 
+		<br><br>
+		Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir. 
+			
+			
+		
+]]>
+		</Aciklama>
+	</Model>
+
+	<Model id="ProaceMax" name="Proace Max" beyazBalon="" kirmiziBalon=""
+			   testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+			   url="https://www.toyota.com.tr/araba-modelleri/proace-max"
+			  labelListeFiyati1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+			  labelListeFiyati2="Tavsiye Edilen Vergi &lt;br /&gt; Levhalı Müşterilere Özel &lt;br /&gt; Nakit Alım Fiyatları***"
+			  labelKampanyaliFiyati1="Tavsiye Edilen Ocak Ayına &lt;br /&gt; Özel Sınırlı Sayıda &lt;br /&gt; Kampanyalı Fiyatlar*"
+			  labelKampanyaliFiyati2=""
+			  labelOTVTesvikli1=""
+	     	   kampanyaBanner="600.000 TL, 6 AY, %0 faizli kredi avantajıyla!***"
+			   order="15"  hybrid="0"  Aktifmi="1" baseModelImg="Proace-Cargo-2-0-D-145-HP-Flame-M-T" kampanyaButonGozuksun="0" crmId="23ACE8C4-C269-EE11-B106-005056BE43B4" isBasvuruMerkezindeGoster="1"
+			   tmeModelName= "Proace max" professional="1" benzinli="1"
+			 pdfUrl="https://toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/proace-max/Toyota_Proace_MAX_Teknik_ve_Donanim_Ozellikleri.pdf"
+			   tmeModelId= "pm_ps" vehicleType="Ticari" ticari="1">
+
+
+		<ModelFiyat id="Proace-max-2-2-D-140-HP-L3H2-13M-M-T">
+			<Govde>Proace Max</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>2.2 D 140 HP 13M³ M/T</Model>
+			<ListeFiyati1>1750000 TL</ListeFiyati1>
+			<ListeFiyati2>1504000 TL</ListeFiyati2>
+			<KampanyaliFiyati1>1625000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Panel Van</AracTipi>
+			<VitesTipi>Düz</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.2</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+
+		<ModelFiyat id="Proace-max-2-2-D-180-HP-L4H2-15M-M-T">
+			<Govde>Proace Max</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>2.2 D 180 HP 15M³ M/T</Model>
+			<ListeFiyati1>1820000 TL</ListeFiyati1>
+			<ListeFiyati2>1572000 TL</ListeFiyati2>
+			<KampanyaliFiyati1>1695000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Panel Van</AracTipi>
+			<VitesTipi>Düz</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.2</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+		<ModelFiyat id="Proace-max-2-2-D-180-HP-L4H3-17M-M-T">
+			<Govde>Proace Max</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>2.2 D 180 HP 17M³ M/T</Model>
+			<ListeFiyati1>1870000 TL</ListeFiyati1>
+			<ListeFiyati2>1620500 TL</ListeFiyati2>
+			<KampanyaliFiyati1>1745000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Panel Van</AracTipi>
+			<VitesTipi>Düz</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.2</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		
+		</ModelFiyat>
+
+
+
+
+
+
+		<Aciklama>
+			<![CDATA[ <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/ProaceCityCargo2022.pdf" target="_blank">Opsiyonel Paketler Fiyat Listesi için tıklayınız</a></center>--> 
+
+		
+		</b> Menşei : İtalya </b>
+        <br><br>
+	    *Kampanyalı araçlar stoklarla sınırlıdır.
+       	<br><br>
+		**Tavsiye edilen fiyatlara metalik ve sedefli metalik renk fiyatları dahildir.
+		<br><br>
+		***İlgili kredi kampanyası tüzel müşterilere özel 600.000 TL, 6 ay, %0 faiz imkanı ile sunulmaktadır.
+		<br><br>
+		****Tavsiye Edilen Vergi Levhalı Müşterilere Özel Nakit Alım Fiyatları ve kredi kampanyası bir arada kullanılamaz.
+		<br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+		Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır. 
+		<br><br> 
+		Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır. 
+		<br><br> 
+		Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir. 		
+		
+]]>
+		</Aciklama>
+	</Model>
+
+
+
+
+	<Model id="ProaceMaxKamyonet" name="Proace Max Kamyonet" beyazBalon="" kirmiziBalon=""
+			   testsurusu="https://www.toyota.com.tr/#/iframe/https%3A%2F%2Fturkiye.toyota.com.tr%2Fbasvuru%2FYeniToyota.aspx"
+			   url="https://www.toyota.com.tr/araba-modelleri/proace-max"
+			  labelListeFiyati1="Tavsiye Edilen &lt;br /&gt; Liste Fiyatları"
+			  labelListeFiyati2="Tavsiye Edilen Vergi &lt;br /&gt; Levhalı Müşterilere Özel &lt;br /&gt; Nakit Alım Fiyatları***"
+			  labelKampanyaliFiyati1="Tavsiye Edilen Ocak Ayına &lt;br /&gt; Özel Sınırlı Sayıda &lt;br /&gt; Kampanyalı Fiyatlar*"
+			  labelKampanyaliFiyati2=""
+			  labelOTVTesvikli1=""
+	     	   kampanyaBanner="600.000 TL, 6 AY, %0 faizli kredi avantajıyla!***"
+			   order="15"  hybrid="0"  Aktifmi="1" baseModelImg="Proace-max-Kamyonet-2-2-D-140-HP-L4-Kasalı-M-T" kampanyaButonGozuksun="0" crmId="00000000-0000-0000-0000-000000000000" isBasvuruMerkezindeGoster="0"
+			   tmeModelName= "Proace max" professional="1" benzinli="1"
+			 pdfUrl="https://toyota.com.tr/content/dam/toyota/nmsc/turkey/cars/e-brosur/proace-max/Toyota_Proace_MAX_Teknik_ve_Donanim_Ozellikleri.pdf"
+			   tmeModelId= "pm_ps" vehicleType="Ticari" ticari="1">
+
+
+		<ModelFiyat id="Proace-max-Kamyonet-2-2-D-140-HP-L4-Kasalı-M-T">
+			<Govde>Proace Max Kamyonet</Govde>
+			<ModelYili>2025</ModelYili>
+			<Model>2.2 D 140 HP L4 Kasalı M/T</Model>
+			<ListeFiyati1>1850000 TL</ListeFiyati1>
+			<ListeFiyati2>1572000 TL</ListeFiyati2>
+			<KampanyaliFiyati1>1695000 TL</KampanyaliFiyati1>
+			<KampanyaliFiyati2></KampanyaliFiyati2>
+			<OTVTesvikli1></OTVTesvikli1>
+			<UpSell></UpSell>
+			<Durum>1</Durum>
+			<AracTipi>Kamyonet</AracTipi>
+			<VitesTipi>Düz</VitesTipi>
+			<MotorTipi>Dizel</MotorTipi>
+			<MotorHacmi>2.2</MotorHacmi>
+			<PaketBilgisi></PaketBilgisi>
+		</ModelFiyat>
+
+
+		
+
+		
+
+		<Aciklama>
+			<![CDATA[ <!--<center><a class="DetailLink" href="https://turkiye.toyota.com.tr/middle/ProaceCityCargo2022.pdf" target="_blank">Opsiyonel Paketler Fiyat Listesi için tıklayınız</a></center>--> 
+
+		
+		Menşei : İtalya </b>
+        <br><br>
+	    *Kampanyalı araçlar stoklarla sınırlıdır.
+		<br><br>
+        **Tavsiye edilen fiyatlara metalik ve sedefli metalik renk fiyatları dahildir.
+		<br><br>
+		***İlgili kredi kampanyası tüzel müşterilere özel 600.000 TL, 6 ay, %0 faiz imkanı ile sunulmaktadır.
+		<br><br>
+		****Tavsiye Edilen Vergi Levhalı Müşterilere Özel Nakit Alım Fiyatları ve kredi kampanyası bir arada kullanılamaz.
+		<br><br><br>
+	  19.12.2025 tarihinde Resmi Gazete’de yayımlanan vergi mevzuatındaki değişiklikleri içeren 7566 sayılı kanun kapsamında araçların ilk tescil işlemlerinde devir bedeli üzerinden alınacak olan %0,2 (Binde 2) harç bedeli fiyatlara dahil edilmemiştir. Satış fiyatı üzerinden %0,2 harç bedeli müşteriden ayrıca tahsil edilecektir.
+	  <br><br>
+		Metalik ve Sedefli Metalik renk fiyat farklarının araç fiyatına eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi oranı, motor silindir hacmi ve ÖTV matrahına göre değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır. 
+		<br><br> 
+		Tavsiye edilen fiyat listemizde belirtilen fiyatlar, standart donanımlı araçlara ait olup, opsiyonel donanımlar ve paketler ayrıca fiyatlandırılır. Araca opsiyonel donanımların eklenmesi durumunda, 25 Kasım 2016 tarihli Resmi Gazete’de yayımlanan 2016/9542 sayılı “Bazı Mal ve Hizmetlere Uygulanan Katma Değer Vergisi Oranları ile Özel Tüketim Vergisi Oranlarının Yeniden Belirlenmesi Hakkında Karar” uyarınca aracın Özel Tüketim Vergisi matrahı ve vergi oranı değişebilecektir. Vergi mevzuatından kaynaklanan bu değişiklik, aracın tavsiye edilen anahtar teslim fiyatına yansıtılacaktır. 
+		<br><br> 
+		Toyota Türkiye Pazarlama ve Satış A.Ş. satışa sunulan aracın nihai satış fiyatını, önceden bildirim yapmaksızın aracın tüm bedeli ödenip faturasının kesildiği tarihe kadar dilediği zaman değiştirme hakkına sahiptir. Aracın faturasının kesildiği tarihte geçerli olacak tavsiye edilen azami anahtar teslim satış fiyatını belirleme hakkı Toyota Türkiye’ ye aittir. 		
+		
+]]>
+		</Aciklama>
+	</Model>
+	
+	
+	
+
+
+</Data>

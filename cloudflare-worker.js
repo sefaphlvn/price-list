@@ -31,6 +31,9 @@ async function handleRequest(request) {
     'binekarac2.vw.com.tr',
     'www.skoda.com.tr',
     'best.renault.com.tr',
+    'turkiye.toyota.com.tr',
+    'www.hyundai.com',
+    'www.ford.com.tr',
     // Add more domains as needed
   ]
 
@@ -53,10 +56,28 @@ async function handleRequest(request) {
   }
 
   try {
+    // Special handling for Ford API
+    const targetDomain = new URL(targetUrl).hostname
+    let fetchHeaders = {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      'Accept': 'application/json, application/xml, text/xml, text/plain, */*',
+      'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+    }
+
+    // For Ford, add their origin as Referer to mimic same-origin request
+    if (targetDomain === 'www.ford.com.tr') {
+      fetchHeaders['Referer'] = 'https://www.ford.com.tr/kampanyalar/fiyat-listesi'
+      fetchHeaders['Origin'] = 'https://www.ford.com.tr'
+    } else {
+      fetchHeaders['Referer'] = new URL(targetUrl).origin + '/'
+    }
+
     const response = await fetch(targetUrl, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'application/json, text/plain, */*',
+      headers: fetchHeaders,
+      cf: {
+        // Cloudflare-specific options
+        cacheEverything: false,
+        cacheTtl: 0,
       }
     })
 

@@ -58,7 +58,9 @@ function App() {
     setFetchState({ loading: true, error: null, data: null });
 
     try {
-      const jsonData = await fetchWithTimeout(brand.url);
+      const jsonData = await fetchWithTimeout(brand.url, {
+        responseType: brand.responseType || 'json'
+      });
       const parsedData = parseData(jsonData, brand.name, brand.parser, brand.url);
 
       if (parsedData.rows.length === 0) {
@@ -175,6 +177,7 @@ function App() {
           'Benzin': '#ff4d4f',
           'Dizel': '#52c41a',
           'Elektrik': '#1890ff',
+          'Hybrid': '#13c2c2',
           'Plug-in Hybrid': '#722ed1',
           'CNG': '#faad14',
         };

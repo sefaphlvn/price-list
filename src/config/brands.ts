@@ -23,6 +23,26 @@ export const BRANDS: BrandConfig[] = [
     url: `${CORS_PROXY}https://best.renault.com.tr/wp-json/service/v1/CatFiyatData?cat=Binek`,
     parser: 'renault',
   },
+  {
+    id: 'toyota',
+    name: 'Toyota',
+    url: `${CORS_PROXY}https://turkiye.toyota.com.tr/middle/fiyat-listesi/fiyat_v3.xml`,
+    parser: 'toyota',
+    responseType: 'xml',
+  },
+  {
+    id: 'hyundai',
+    name: 'Hyundai',
+    url: `${CORS_PROXY}https://www.hyundai.com/wsvc/tr/spa/pricelist/list?loc=TR&lan=tr`,
+    parser: 'hyundai',
+  },
+  // Ford disabled - API requires session cookies which cannot be proxied
+  // {
+  //   id: 'ford',
+  //   name: 'Ford',
+  //   url: `${CORS_PROXY}https://www.ford.com.tr/fwebapi/main/carPriceListNewUI?searchparam=&cartype=Binek`,
+  //   parser: 'ford',
+  // },
   // Future brands can be added here:
   // {
   //   id: 'audi',

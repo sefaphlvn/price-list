@@ -277,6 +277,213 @@ const parseRenaultData = (data: any, brand: string): PriceListRow[] => {
   return rows;
 };
 
+// Toyota-specific parser
+const parseToyotaData = (data: any, brand: string): PriceListRow[] => {
+  const rows: PriceListRow[] = [];
+
+  try {
+    // Toyota XML structure: Data.Model[] > ModelFiyat[]
+    let models = data?.Data?.Model;
+
+    if (!models) {
+      console.error('❌ Model not found in XML');
+      return rows;
+    }
+
+    // Convert to array if it's a single object
+    if (!Array.isArray(models)) {
+      models = [models];
+    }
+
+    // Process each model and its variants
+    models.forEach((model: any) => {
+      let modelFiyatArray = model.ModelFiyat;
+
+      if (!modelFiyatArray) {
+        console.log('⚠️ No ModelFiyat in model');
+        return; // Skip models without ModelFiyat
+      }
+
+      // Convert to array if it's a single object
+      if (!Array.isArray(modelFiyatArray)) {
+        modelFiyatArray = [modelFiyatArray];
+      }
+
+      console.log(`📋 Processing ${modelFiyatArray.length} variants`);
+
+      modelFiyatArray.forEach((item: any) => {
+        // Skip inactive items (Durum can be number 1 or string "1")
+        if (item.Durum !== 1 && item.Durum !== '1') {
+          return;
+        }
+
+        const modelName = item.Model || 'Unknown';
+
+        // Skip informational rows (ÖTV disclosures, etc.)
+        if (modelName.includes('%') ||
+            modelName.includes('ÖTV') ||
+            modelName.toLowerCase().includes('tüm versiyonlarda') ||
+            modelName.toLowerCase().includes('versiyonlarda')) {
+          return;
+        }
+
+        const govde = item.Govde || '';
+        const motorHacmi = item.MotorHacmi || '';
+        const vitesTipi = item.VitesTipi || '';
+        const motorTipi = item.MotorTipi || '';
+
+        // Price priority: KampanyaliFiyati2 > KampanyaliFiyati1 > ListeFiyati2 > ListeFiyati1
+        let fiyat = item.KampanyaliFiyati2 || item.KampanyaliFiyati1 || item.ListeFiyati2 || item.ListeFiyati1 || '';
+
+        // Clean price (remove " TL" suffix and convert to string)
+        if (fiyat) {
+          fiyat = fiyat.toString().replace(/\s*TL\s*$/i, '').trim();
+        }
+
+        // Map motor type to fuel type
+        let yakit = '';
+        const motorTipiLower = motorTipi.toLowerCase();
+        if (motorTipiLower.includes('hybrid') || motorTipiLower.includes('hibrit')) {
+          yakit = 'Hybrid';
+        } else if (motorTipiLower.includes('benzin')) {
+          yakit = 'Benzin';
+        } else if (motorTipiLower.includes('dizel') || motorTipiLower.includes('diesel')) {
+          yakit = 'Dizel';
+        } else if (motorTipiLower.includes('elektrik') || motorTipiLower.includes('electric')) {
+          yakit = 'Elektrik';
+        }
+
+        if (fiyat) {
+          rows.push({
+            model: govde,
+            trim: modelName,
+            engine: motorHacmi,
+            transmission: vitesTipi,
+            fuel: yakit,
+            priceRaw: fiyat,
+            priceNumeric: parsePrice(fiyat),
+            brand,
+          });
+        }
+      });
+    });
+
+    console.log(`✅ Total Toyota rows parsed: ${rows.length}`);
+  } catch (error) {
+    console.error('❌ Toyota parse error:', error);
+  }
+
+  return rows;
+};
+
+// Hyundai-specific parser
+const parseHyundaiData = (data: any, brand: string): PriceListRow[] => {
+  const rows: PriceListRow[] = [];
+
+  try {
+    // Hyundai JSON structure: productList[] > yearDetailList[] > priceDetailList[]
+    const productList = data?.productList;
+
+    if (!Array.isArray(productList)) {
+      console.error('❌ productList is not an array');
+      return rows;
+    }
+
+    productList.forEach((product: any) => {
+      const productName = product.productName || 'Unknown';
+      const yearDetailList = product.yearDetailList;
+
+      if (!Array.isArray(yearDetailList)) return;
+
+      yearDetailList.forEach((yearDetail: any) => {
+        const priceDetailList = yearDetail.priceDetailList;
+
+        if (!Array.isArray(priceDetailList)) return;
+
+        priceDetailList.forEach((item: any) => {
+          const trimName = item.trimName || '';
+          const powertrainName = item.powertrainName || '';
+          const transmission = item.transmission || '';
+          const fuelName = item.fuelName || '';
+
+          // Use suggestedPrice if available, otherwise use price
+          const price = item.suggestedPrice || item.price || '';
+
+          if (price && price !== 'N/A') {
+            rows.push({
+              model: productName,
+              trim: trimName,
+              engine: powertrainName.replace(trimName, '').trim(),
+              transmission: transmission,
+              fuel: fuelName,
+              priceRaw: price.toString(),
+              priceNumeric: parsePrice(price.toString()),
+              brand,
+            });
+          }
+        });
+      });
+    });
+
+    console.log(`✅ Total Hyundai rows parsed: ${rows.length}`);
+  } catch (error) {
+    console.error('❌ Hyundai parse error:', error);
+  }
+
+  return rows;
+};
+
+// Ford-specific parser
+const parseFordData = (data: any, brand: string): PriceListRow[] => {
+  const rows: PriceListRow[] = [];
+
+  try {
+    // Ford JSON structure: carPriceList[] > entities[]
+    const carPriceList = data?.carPriceList;
+
+    if (!Array.isArray(carPriceList)) {
+      console.error('❌ carPriceList is not an array');
+      return rows;
+    }
+
+    carPriceList.forEach((car: any) => {
+      const modelName = car.modelName || 'Unknown';
+      const entities = car.entities;
+
+      if (!Array.isArray(entities)) return;
+
+      entities.forEach((entity: any) => {
+        const series = entity.series || '';
+        const engine = entity.engine || '';
+        const gearbox = entity.gearbox || '';
+        const fuelType = entity.fuelType || '';
+
+        // Use campaignedTurnkeyPrice if available, otherwise use deliveredTurnkeyListPrice
+        const price = entity.campaignedTurnkeyPrice || entity.deliveredTurnkeyListPrice || '';
+
+        if (price) {
+          rows.push({
+            model: modelName,
+            trim: series,
+            engine: engine,
+            transmission: gearbox,
+            fuel: fuelType,
+            priceRaw: price.toString(),
+            priceNumeric: parsePrice(price.toString()),
+            brand,
+          });
+        }
+      });
+    });
+
+    console.log(`✅ Total Ford rows parsed: ${rows.length}`);
+  } catch (error) {
+    console.error('❌ Ford parse error:', error);
+  }
+
+  return rows;
+};
+
 // Generic parser for other brands
 const parseGenericData = (data: any, brand: string): PriceListRow[] => {
   const rows: PriceListRow[] = [];
@@ -314,7 +521,7 @@ const parseGenericData = (data: any, brand: string): PriceListRow[] => {
 export const parseData = (
   data: any,
   brand: string,
-  parserType: 'vw' | 'skoda' | 'renault' | 'generic',
+  parserType: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'ford' | 'generic',
   url?: string
 ): ParsedData => {
   let rows: PriceListRow[] = [];
@@ -326,6 +533,12 @@ export const parseData = (
       rows = parseSkodaData(data, brand);
     } else if (parserType === 'renault') {
       rows = parseRenaultData(data, brand);
+    } else if (parserType === 'toyota') {
+      rows = parseToyotaData(data, brand);
+    } else if (parserType === 'hyundai') {
+      rows = parseHyundaiData(data, brand);
+    } else if (parserType === 'ford') {
+      rows = parseFordData(data, brand);
     } else {
       rows = parseGenericData(data, brand);
     }
