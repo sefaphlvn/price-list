@@ -18,7 +18,6 @@ import {
   ReloadOutlined,
 } from '@ant-design/icons';
 import type { ColumnsType, TablePaginationConfig } from 'antd/es/table';
-import type { FilterValue, SorterResult } from 'antd/es/table/interface';
 
 import { PriceListRow, FetchState } from './types';
 import { BRANDS, getBrandById } from './config/brands';
