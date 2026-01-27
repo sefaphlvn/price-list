@@ -1,0 +1,404 @@
+{
+  "common": {
+    "brand": "Marka",
+    "price": "Fiyat",
+    "model": "Model",
+    "trim": "Donanim",
+    "engine": "Motor",
+    "transmission": "Sanziman",
+    "fuel": "Yakit",
+    "compare": "Karsilastir",
+    "favorites": "Favoriler",
+    "loading": "Yukleniyor...",
+    "error": "Hata",
+    "refresh": "Yenile",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "export": "Disa Aktar",
+    "download": "Indir",
+    "copy": "Kopyala",
+    "add": "Ekle",
+    "remove": "Kaldir",
+    "clear": "Temizle",
+    "cancel": "Iptal",
+    "confirm": "Onayla",
+    "save": "Kaydet",
+    "close": "Kapat",
+    "viewAll": "Tumunu Gor",
+    "noData": "Veri bulunamadi",
+    "total": "Toplam",
+    "records": "kayit",
+    "all": "Tumunu",
+    "select": "Secin",
+    "live": "Canli",
+    "historical": "Gecmis",
+    "date": "Tarih"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "priceList": "Fiyat Listesi",
+    "statistics": "Istatistikler",
+    "comparison": "Karsilastirma",
+    "insights": "Analizler",
+    "my": "Benim",
+    "marketPulse": "Piyasa Nabzi",
+    "positioning": "Konumlandirma",
+    "gaps": "Bosluk Bulucu",
+    "promos": "Promosyonlar",
+    "architecture": "Fiyat Mimarisi",
+    "lifecycle": "Yasam Dongusu",
+    "alerts": "Uyarilar"
+  },
+  "home": {
+    "title": "Turkiye'nin Arac Fiyat Platformu",
+    "subtitle": "5 markadan guncel fiyatlar, karsilastirma ve analiz",
+    "cta": {
+      "viewPrices": "Fiyatlara Goz At",
+      "compare": "Karsilastir"
+    },
+    "stats": {
+      "totalVehicles": "Toplam Arac",
+      "lowestPrice": "En Dusuk Fiyat",
+      "highestPrice": "En Yuksek Fiyat",
+      "brandsUpdated": "Guncellenen Marka"
+    },
+    "features": {
+      "title": "Ozellikler",
+      "dailyUpdate": {
+        "title": "Gunluk Guncelleme",
+        "description": "Tum markalardan otomatik veri toplama"
+      },
+      "priceTracking": {
+        "title": "Gecmis Takibi",
+        "description": "Fiyat trendi analizi ve karsilastirma"
+      },
+      "comparison": {
+        "title": "Detayli Karsilastirma",
+        "description": "Araclari yan yana kiyaslama"
+      }
+    },
+    "brands": {
+      "title": "Markalar"
+    }
+  },
+  "priceList": {
+    "title": "Fiyat Listesi",
+    "filters": {
+      "title": "Filtreler",
+      "searchPlaceholder": "Model, donanim, motor ara...",
+      "selectModel": "Model Secin",
+      "selectTransmission": "Sanziman Secin",
+      "selectFuel": "Yakit Secin"
+    },
+    "dataSource": {
+      "live": "Canli Veri",
+      "historical": "Gecmis Veri"
+    },
+    "export": {
+      "title": "Disa Aktar",
+      "csv": "CSV Indir",
+      "excel": "Excel Indir",
+      "markdown": "Markdown Kopyala"
+    },
+    "lastUpdated": "Son guncelleme",
+    "dataDate": "Veri tarihi",
+    "historicalNote": "Gecmis veri goruntuleniyor",
+    "addToFavorites": "Favorilere Ekle",
+    "addToCompare": "Karsilastirmaya Ekle",
+    "track": "Takip Et",
+    "untrack": "Takibi Birak",
+    "viewTrend": "Fiyat Trendi",
+    "copyLink": "Linki Kopyala",
+    "linkCopied": "Link kopyalandi"
+  },
+  "statistics": {
+    "title": "Istatistikler",
+    "subtitle": "Fiyat analizleri ve segment karsilastirmalari",
+    "priceComparison": {
+      "title": "Fiyat Karsilastirmasi",
+      "avgByBrand": "Marka Bazli Ortalama Fiyat",
+      "priceRange": "Fiyat Araligi"
+    },
+    "segmentAnalysis": {
+      "title": "Segment Analizi",
+      "byBodyType": "Govde Tipine Gore",
+      "byPriceRange": "Fiyat Araligina Gore"
+    },
+    "priceTrend": {
+      "title": "Fiyat Trendi",
+      "selectModel": "Model secin",
+      "change": "Degisim",
+      "minPrice": "Minimum",
+      "maxPrice": "Maksimum",
+      "avgPrice": "Ortalama"
+    }
+  },
+  "comparison": {
+    "title": "Karsilastirma",
+    "subtitle": "Secili araclari karsilastirin",
+    "favorites": {
+      "title": "Favorilerim",
+      "empty": "Henuz favori eklenmemis",
+      "addHint": "Fiyat listesinden arac ekleyin"
+    },
+    "compareList": {
+      "title": "Karsilastirma Listesi",
+      "empty": "Karsilastirmak icin arac secin",
+      "maxReached": "Maksimum 4 arac karsilastirabilirsiniz",
+      "clearAll": "Tumunu Temizle"
+    },
+    "table": {
+      "feature": "Ozellik",
+      "best": "En Iyi"
+    },
+    "pdf": {
+      "generate": "PDF Rapor Olustur",
+      "generating": "PDF olusturuluyor...",
+      "title": "Arac Karsilastirma Raporu"
+    },
+    "showOnlyDifferences": "Sadece Farklilar",
+    "allSame": "Tum degerler ayni"
+  },
+  "tracking": {
+    "title": "Takip Edilenler",
+    "subtitle": "Fiyat degisimlerini takip edin",
+    "priceChanges": "Fiyat Degisimleri",
+    "vehiclesChanged": "{{count}} aracta fiyat degisti",
+    "noChanges": "Fiyat degisimi yok",
+    "oldPrice": "Eski Fiyat",
+    "newPrice": "Yeni Fiyat",
+    "difference": "Fark",
+    "increased": "Artti",
+    "decreased": "Azaldi",
+    "showIncreased": "Artanlar",
+    "showDecreased": "Azalanlar",
+    "showAll": "Tumunu Goster",
+    "updateAll": "Tumu Guncelle",
+    "clearAll": "Tumu Temizle",
+    "empty": "Takip edilen arac yok",
+    "addHint": "Fiyat listesinden arac takip edin"
+  },
+  "trend": {
+    "title": "Fiyat Trendi",
+    "days30": "30 Gun",
+    "days90": "90 Gun",
+    "days365": "365 Gun",
+    "noData": "Bu donem icin veri yok",
+    "price": "Fiyat",
+    "date": "Tarih"
+  },
+  "fuels": {
+    "benzin": "Benzin",
+    "dizel": "Dizel",
+    "elektrik": "Elektrik",
+    "hybrid": "Hybrid",
+    "pluginHybrid": "Plug-in Hybrid",
+    "cng": "CNG"
+  },
+  "segments": {
+    "bodyTypes": {
+      "sedan": "Sedan",
+      "hatchback": "Hatchback",
+      "suv": "SUV",
+      "crossover": "Crossover",
+      "stationWagon": "Station Wagon",
+      "coupe": "Coupe",
+      "mpv": "MPV",
+      "pickup": "Pickup"
+    },
+    "priceRanges": {
+      "budget": "Butce Dostu",
+      "mid": "Orta Segment",
+      "premium": "Premium",
+      "luxury": "Luks"
+    }
+  },
+  "loading": {
+    "title": "Arac Fiyat Platformu",
+    "subtitle": "Veriler yukleniyor...",
+    "skip": "Atla"
+  },
+  "errors": {
+    "fetchError": "Veriler yuklenirken bir hata olustu",
+    "noData": "Veri bulunamadi",
+    "networkError": "Baglanti hatasi",
+    "tryAgain": "Tekrar Dene",
+    "unexpectedError": "Bir hata olustu",
+    "errorDescription": "Beklenmeyen bir hata olustu. Lutfen sayfayi yenileyin."
+  },
+  "footer": {
+    "copyright": "Tum haklar saklidir",
+    "dataSource": "Veriler resmi marka sitelerinden alinmaktadir",
+    "lastUpdate": "Son guncelleme"
+  },
+  "pwa": {
+    "offline": "Cevrimdisi Mod",
+    "offlineDesc": "Internet baglantiniz yok. Onbellege alinmis veriler gosteriliyor.",
+    "install": "Uygulamayi Yukle",
+    "installDesc": "Ana ekrana ekleyerek daha hizli erisim ve cevrimdisi destek alin.",
+    "installButton": "Yukle",
+    "notNow": "Simdi Degil",
+    "updateAvailable": "Guncelleme Mevcut",
+    "updateAvailableDesc": "Yeni bir surum mevcut. Guncellemek icin yenileyin.",
+    "refresh": "Yenile"
+  },
+  "insights": {
+    "title": "Fiyat Analizleri",
+    "subtitle": "Yapay zeka destekli fiyat analizi ve firsat onerileri",
+    "bestDeals": "En Iyi Firsatlar",
+    "todaysDeals": "Gunun Firsatlari",
+    "overpriced": "Pahali Araclar",
+    "dealScore": "Firsat Skoru",
+    "segmentAvg": "Segment ortalamasi",
+    "belowAvg": "ortalamanin altinda",
+    "aboveAvg": "ortalamanin ustunde",
+    "youSave": "Tasarruf",
+    "savingsTooltip": "Segment ortalamasina gore",
+    "overpriceTooltip": "Segment ortalamasinin ustunde",
+    "zScoreExplanation": "Ortalamadan istatistiksel sapma",
+    "noDealsToday": "Bugun ozel firsat bulunamadi",
+    "checkLater": "Yeni firsatlar icin daha sonra tekrar kontrol edin",
+    "noOverpriced": "Pahali arac bulunamadi",
+    "allFairlyPriced": "Tum araclar segmentlerinde makul fiyatlandirilmis",
+    "dealsExplanation": "Bu araclar segment ortalamalarinin oldukca altinda fiyatlandirilmis, potansiyel firsatlar sunuyor.",
+    "overpricedWarning": "Fiyat Uyarisi",
+    "overpricedExplanation": "Bu araclar segment ortalamasinin oldukca ustunde fiyatlandirilmis. Alternatifleri degerlendirebilir veya pazarlik yapabilirsiniz.",
+    "dataDate": "Veri tarihi",
+    "totalAnalyzed": "Toplam analiz edilen"
+  },
+  "my": {
+    "title": "Panelim",
+    "subtitle": "Kisisellestirilmis arac takip paneliniz",
+    "emptyTitle": "Henuz takip edilen arac yok",
+    "emptyDesc": "Kisisellestirilmis panelinizi gormek icin favorilerinize arac ekleyin veya fiyat degisimlerini takip etmeye baslayin.",
+    "browsePrices": "Fiyat Listesine Git",
+    "favorites": "Favoriler",
+    "tracked": "Takip Edilen",
+    "inCompare": "Karsilastirmada",
+    "priceChanges": "Fiyat Degisimi",
+    "changes": "degisim",
+    "portfolioSummary": "Portfoy Ozeti",
+    "totalChange": "Toplam Degisim",
+    "avgChange": "Ort. Degisim",
+    "breakdown": "Dagılım",
+    "topMovers": "En Cok Hareketli",
+    "topGainers": "En Cok Artanlar",
+    "topLosers": "En Cok Dusunler",
+    "noIncrease": "Fiyat artisi yok",
+    "noDecrease": "Fiyat dususu yok",
+    "viewMore": "+{{count}} daha"
+  },
+  "search": {
+    "placeholder": "Arac ara veya komut yaz...",
+    "noResults": "Sonuc bulunamadi",
+    "navigate": "Gezinme",
+    "select": "Sec",
+    "actions": "Hizli Aksiyonlar"
+  },
+  "whatsNew": {
+    "title": "Yenilikler",
+    "gotIt": "Anladim!",
+    "features": "Yeni Ozellikler",
+    "improvements": "Iyilestirmeler",
+    "fixes": "Hata Duzeltmleri"
+  },
+  "intel": {
+    "mode": "Intel Modu",
+    "enable": "Gelismis Ozellikleri Etkinlestir",
+    "disable": "Gelismis Ozellikleri Devre Disi Birak"
+  },
+  "marketPulse": {
+    "title": "Piyasa Nabzi",
+    "subtitle": "Fiyat degisimlerini ve piyasa hareketlerini takip edin",
+    "priceChanges": "Fiyat Degisimleri",
+    "volatility": "Volatilite",
+    "bigMoves": "Buyuk Hareketler",
+    "topIncreases": "En Cok Artanlar",
+    "topDecreases": "En Cok Dusenler",
+    "newVehicles": "Yeni Araclar",
+    "removedVehicles": "Kaldirilan Araclar",
+    "totalChanges": "Toplam Degisim",
+    "increases": "Artislar",
+    "decreases": "Dususler"
+  },
+  "positioning": {
+    "title": "Fiyat Konumlandirma",
+    "subtitle": "Aracin segment icindeki pozisyonunu gorun",
+    "similarVehicles": "Benzer Araclar",
+    "pricePercentile": "Fiyat Yuzdeligi",
+    "priceBands": "Fiyat Bantlari",
+    "min": "Minimum",
+    "median": "Ortanca",
+    "max": "Maksimum",
+    "searchVehicle": "Arac ara...",
+    "selectVehicle": "Arac secin",
+    "selectFirst": "Analiz icin bir arac secin"
+  },
+  "gaps": {
+    "title": "Bosluk Bulucu",
+    "subtitle": "Piyasa bosluklerini ve firsatlari kesfet",
+    "heatmap": "Isi Haritasi",
+    "heatmapDesc": "Segment x Fiyat Bandi matrisi",
+    "opportunities": "Firsatlar",
+    "segmentEditor": "Segment Duzenleyici",
+    "editorDesc": "Ozel segment haritalamasi ekleyin",
+    "opportunityScore": "Firsat Skoru",
+    "totalGaps": "Toplam Bosluk",
+    "highOpportunity": "Yuksek Firsat",
+    "segments": "Segmentler"
+  },
+  "promos": {
+    "title": "Promosyonlar",
+    "subtitle": "Onimsiz indirimleri ve fiyat dususlerini takip edin",
+    "activePromos": "Aktif Indirimler",
+    "noActivePromos": "Aktif indirim bulunamadi",
+    "recentDrops": "Son Fiyat Dususleri",
+    "discount": "Indirim",
+    "peakPrice": "En Yuksek Fiyat",
+    "totalDiscounted": "Indirimli Arac",
+    "avgDiscount": "Ort. Indirim",
+    "recentDropsCount": "Son 7 Gun",
+    "implicitNote": "Onimsiz Indirim Tespiti",
+    "implicitDesc": "Bu sayfa tarihsel fiyat verilerini analiz ederek son 90 gun icerisinde en yuksek fiyatindan %5 veya daha fazla dusen araclari tespit eder."
+  },
+  "architecture": {
+    "title": "Fiyat Mimarisi",
+    "subtitle": "Donanim merdiveni ve markalar arasi karsilastirma",
+    "trimLadder": "Donanim Merdiveni",
+    "crossBrand": "Markalar Arasi",
+    "basePrice": "Baslangic Fiyati",
+    "stepSize": "Adim Boyutu",
+    "selectBrand": "Marka secin",
+    "selectModel": "Model secin",
+    "selectSegment": "Segment secin"
+  },
+  "lifecycle": {
+    "title": "Yasam Dongusu",
+    "subtitle": "Model yili gecisleri ve yenileme sinyalleri",
+    "yearTransitions": "Yil Gecisleri",
+    "noTransitions": "Model yili gecisi bulunamadi",
+    "upcomingRefreshes": "Yaklasan Yenilemeler",
+    "entryPrices": "Giris Fiyatlari",
+    "totalTransitions": "Yil Gecisi",
+    "staleModels": "Eski Modeller",
+    "avgEntryPrice": "Ort. Giris Fiyati"
+  },
+  "alertsV2": {
+    "title": "Gelismis Uyarilar",
+    "subtitle": "Kural tabanli fiyat uyarilari olusturun",
+    "myRules": "Kurallarim",
+    "createRule": "Kural Olustur",
+    "triggered": "Tetiklenenler",
+    "conditions": "kosul",
+    "addCondition": "Kosul Ekle",
+    "ruleName": "Kural Adi",
+    "totalRules": "Toplam Kural",
+    "activeRules": "Aktif Kurallar",
+    "triggeredCount": "Tetiklenen",
+    "noRules": "Henuz kural olusturulmamiş",
+    "noTriggered": "Tetiklenen uyari yok",
+    "active": "Aktif",
+    "inactive": "Pasif",
+    "builderDesc": "Kural olusturucu"
+  }
+}

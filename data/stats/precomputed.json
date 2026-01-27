@@ -1,0 +1,194 @@
+{
+  "generatedAt": "2026-01-27T13:03:13.349Z",
+  "totalVehicles": 175,
+  "overallStats": {
+    "avgPrice": 2968356,
+    "minPrice": 1183000,
+    "maxPrice": 12000000,
+    "medianPrice": 2455000
+  },
+  "brandStats": [
+    {
+      "name": "Hyundai",
+      "vehicleCount": 47,
+      "avgPrice": 2373681,
+      "minPrice": 1313000,
+      "maxPrice": 6458000,
+      "medianPrice": 1786000
+    },
+    {
+      "name": "Volkswagen",
+      "vehicleCount": 46,
+      "avgPrice": 4110022,
+      "minPrice": 2001000,
+      "maxPrice": 10989000,
+      "medianPrice": 3525000
+    },
+    {
+      "name": "Toyota",
+      "vehicleCount": 39,
+      "avgPrice": 2547654,
+      "minPrice": 1183000,
+      "maxPrice": 12000000,
+      "medianPrice": 2203000
+    },
+    {
+      "name": "Škoda",
+      "vehicleCount": 22,
+      "avgPrice": 3269582,
+      "minPrice": 1759900,
+      "maxPrice": 6675900,
+      "medianPrice": 3328650
+    },
+    {
+      "name": "Renault",
+      "vehicleCount": 21,
+      "avgPrice": 2264238,
+      "minPrice": 1580000,
+      "maxPrice": 3750000,
+      "medianPrice": 2204999.99
+    }
+  ],
+  "fuelStats": [
+    {
+      "fuel": "Benzin",
+      "count": 102,
+      "percentage": 58.3,
+      "avgPrice": 2742129
+    },
+    {
+      "fuel": "Dizel",
+      "count": 22,
+      "percentage": 12.6,
+      "avgPrice": 4073750
+    },
+    {
+      "fuel": "Elektrik",
+      "count": 19,
+      "percentage": 10.9,
+      "avgPrice": 3063584
+    },
+    {
+      "fuel": "Hybrid",
+      "count": 18,
+      "percentage": 10.3,
+      "avgPrice": 2443806
+    },
+    {
+      "fuel": "Bilinmiyor",
+      "count": 5,
+      "percentage": 2.9,
+      "avgPrice": 3338000
+    },
+    {
+      "fuel": "Plug-in Hybrid",
+      "count": 4,
+      "percentage": 2.3,
+      "avgPrice": 4329000
+    },
+    {
+      "fuel": "Benzin-LPG",
+      "count": 3,
+      "percentage": 1.7,
+      "avgPrice": 2276667
+    },
+    {
+      "fuel": "Benzin-Elektrik",
+      "count": 2,
+      "percentage": 1.1,
+      "avgPrice": 3555000
+    }
+  ],
+  "transmissionStats": [
+    {
+      "transmission": "DSG",
+      "count": 57,
+      "percentage": 32.6,
+      "avgPrice": 3735170
+    },
+    {
+      "transmission": "Otomatik",
+      "count": 49,
+      "percentage": 28,
+      "avgPrice": 2511500
+    },
+    {
+      "transmission": "DCT",
+      "count": 31,
+      "percentage": 17.7,
+      "avgPrice": 2121129
+    },
+    {
+      "transmission": "Automatic",
+      "count": 12,
+      "percentage": 6.9,
+      "avgPrice": 3366750
+    },
+    {
+      "transmission": "Bilinmiyor",
+      "count": 8,
+      "percentage": 4.6,
+      "avgPrice": 3642263
+    },
+    {
+      "transmission": "Düz",
+      "count": 6,
+      "percentage": 3.4,
+      "avgPrice": 1585333
+    },
+    {
+      "transmission": "Manuel",
+      "count": 5,
+      "percentage": 2.9,
+      "avgPrice": 1914000
+    },
+    {
+      "transmission": "Manual",
+      "count": 4,
+      "percentage": 2.3,
+      "avgPrice": 1351750
+    },
+    {
+      "transmission": "Tiptronik",
+      "count": 2,
+      "percentage": 1.1,
+      "avgPrice": 10722500
+    },
+    {
+      "transmission": "Otomatik Vites",
+      "count": 1,
+      "percentage": 0.6,
+      "avgPrice": 2266000
+    }
+  ],
+  "priceSegments": [
+    {
+      "segment": "budget",
+      "min": 0,
+      "max": 1500000,
+      "count": 7,
+      "percentage": 4
+    },
+    {
+      "segment": "mid",
+      "min": 1500000,
+      "max": 3000000,
+      "count": 109,
+      "percentage": 62.3
+    },
+    {
+      "segment": "premium",
+      "min": 3000000,
+      "max": 5000000,
+      "count": 45,
+      "percentage": 25.7
+    },
+    {
+      "segment": "luxury",
+      "min": 5000000,
+      "max": 0,
+      "count": 14,
+      "percentage": 8
+    }
+  ]
+}

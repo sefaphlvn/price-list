@@ -1,0 +1,1786 @@
+{
+  "generatedAt": "2026-01-27T13:03:13.342Z",
+  "totalVehicles": 175,
+  "brands": {
+    "volkswagen": {
+      "name": "Volkswagen",
+      "date": "2026-01-27",
+      "vehicles": [
+        {
+          "model": "Polo",
+          "trim": "Life",
+          "engine": "1.0 TSI 95 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.197.000,00",
+          "priceNumeric": 2197000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "T-Cross",
+          "trim": "Life",
+          "engine": "1.0 TSI 116 PS",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.102.000,00",
+          "priceNumeric": 2102000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "T-Cross",
+          "trim": "Life",
+          "engine": "1.0 TSI 116 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.349.000,00",
+          "priceNumeric": 2349000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "T-Cross",
+          "trim": "Style",
+          "engine": "1.0 TSI 116 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.626.000,00",
+          "priceNumeric": 2626000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "T-Cross",
+          "trim": "R-Line",
+          "engine": "1.0 TSI 116 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.727.000,00",
+          "priceNumeric": 2727000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Taigo",
+          "trim": "Life",
+          "engine": "1.0 TSI 95 PS",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.001.000,00",
+          "priceNumeric": 2001000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Taigo",
+          "trim": "Life",
+          "engine": "1.0 TSI 116 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.274.000,00",
+          "priceNumeric": 2274000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Taigo",
+          "trim": "Style",
+          "engine": "1.0 TSI 116 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.704.000,00",
+          "priceNumeric": 2704000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Taigo",
+          "trim": "R-Line",
+          "engine": "1.0 TSI 116 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.820.000,00",
+          "priceNumeric": 2820000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Taigo",
+          "trim": "Style",
+          "engine": "1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.879.000,00",
+          "priceNumeric": 2879000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Taigo",
+          "trim": "R-Line",
+          "engine": "1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.079.000,00",
+          "priceNumeric": 3079000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Golf",
+          "trim": "Impression",
+          "engine": "1.5 TSI 116 PS",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.087.000,00",
+          "priceNumeric": 2087000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Golf",
+          "trim": "Life",
+          "engine": "1.5 eTSI 116 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.614.000,00",
+          "priceNumeric": 2614000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Golf",
+          "trim": "Style",
+          "engine": "1.5 eTSI 116 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.949.000,00",
+          "priceNumeric": 2949000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Golf",
+          "trim": "Style",
+          "engine": "1.5 eTSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.135.000,00",
+          "priceNumeric": 3135000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Golf",
+          "trim": "R-Line",
+          "engine": "1.5 eTSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.344.000,00",
+          "priceNumeric": 3344000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Golf GTI",
+          "trim": "GTI",
+          "engine": "2.0 TSI 265 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.804.000,00",
+          "priceNumeric": 4804000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Golf R",
+          "trim": "R",
+          "engine": "2.0 TSI 333 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺6.520.000,00",
+          "priceNumeric": 6520000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "T-Roc",
+          "trim": "Life",
+          "engine": "1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.595.000,00",
+          "priceNumeric": 2595000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "T-Roc",
+          "trim": "Style",
+          "engine": "1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.909.000,00",
+          "priceNumeric": 2909000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tiguan",
+          "trim": "Life",
+          "engine": "1.5 eTSI ACT 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.144.000,00",
+          "priceNumeric": 3144000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tiguan",
+          "trim": "Elegance",
+          "engine": "1.5 eTSI ACT 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.044.000,00",
+          "priceNumeric": 4044000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tiguan",
+          "trim": "R-Line",
+          "engine": "1.5 eTSI ACT 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.313.000,00",
+          "priceNumeric": 4313000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tiguan",
+          "trim": "Elegance",
+          "engine": "2.0 TDI SCR 193 PS 4M",
+          "transmission": "DSG",
+          "fuel": "Dizel",
+          "priceRaw": "₺5.783.000,00",
+          "priceNumeric": 5783000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tiguan",
+          "trim": "R-Line",
+          "engine": "2.0 TDI SCR 193 PS 4M",
+          "transmission": "DSG",
+          "fuel": "Dizel",
+          "priceRaw": "₺6.119.000,00",
+          "priceNumeric": 6119000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tayron",
+          "trim": "Life",
+          "engine": "1.5 eTSI ACT 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.390.000,00",
+          "priceNumeric": 3390000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tayron",
+          "trim": "Life",
+          "engine": "1.5 eTSI ACT 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.481.000,00",
+          "priceNumeric": 3481000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tayron",
+          "trim": "Elegance",
+          "engine": "1.5 eTSI ACT 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.334.000,00",
+          "priceNumeric": 4334000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tayron",
+          "trim": "Elegance",
+          "engine": "1.5 eTSI ACT 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.431.000,00",
+          "priceNumeric": 4431000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tayron",
+          "trim": "R-Line",
+          "engine": "1.5 eTSI ACT 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.624.000,00",
+          "priceNumeric": 4624000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Tayron",
+          "trim": "R-Line",
+          "engine": "1.5 eTSI ACT 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.720.000,00",
+          "priceNumeric": 4720000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "ID.4",
+          "trim": "Pure",
+          "engine": "125 kW 170 PS",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "₺2.462.000,00",
+          "priceNumeric": 2462000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "Impression",
+          "engine": "1.5 eTSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.328.000,00",
+          "priceNumeric": 3328000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "Impression",
+          "engine": "1.5 eHybrid 204 PS",
+          "transmission": "DSG",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "₺3.569.000,00",
+          "priceNumeric": 3569000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "Business",
+          "engine": "1.5 eTSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.976.000,00",
+          "priceNumeric": 3976000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "Elegance",
+          "engine": "1.5 eTSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.414.000,00",
+          "priceNumeric": 4414000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "Elegance",
+          "engine": "1.5 eHybrid 204 PS",
+          "transmission": "DSG",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "₺4.404.000,00",
+          "priceNumeric": 4404000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "R-Line",
+          "engine": "1.5 eTSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.536.000,00",
+          "priceNumeric": 4536000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "R-Line",
+          "engine": "1.5 eHybrid 204 PS",
+          "transmission": "DSG",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "₺4.550.000,00",
+          "priceNumeric": 4550000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "R-Line",
+          "engine": "1.5 eHybrid 272 PS",
+          "transmission": "DSG",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "₺4.793.000,00",
+          "priceNumeric": 4793000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "Elegance",
+          "engine": "2.0 TDI SCR 193 PS 4M",
+          "transmission": "DSG",
+          "fuel": "Dizel",
+          "priceRaw": "₺6.660.000,00",
+          "priceNumeric": 6660000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "R-Line",
+          "engine": "2.0 TSI 265 PS 4M",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺6.699.000,00",
+          "priceNumeric": 6699000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Passat",
+          "trim": "R-Line",
+          "engine": "2.0 TDI SCR 193 PS 4M",
+          "transmission": "DSG",
+          "fuel": "Dizel",
+          "priceRaw": "₺6.820.000,00",
+          "priceNumeric": 6820000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "ID.7",
+          "trim": "Pro S",
+          "engine": "210 kW 286 PS",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "₺4.307.000,00",
+          "priceNumeric": 4307000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Touareg",
+          "trim": "Elegance",
+          "engine": "3.0 V6 TDI SCR 286 PS",
+          "transmission": "Tiptronik",
+          "fuel": "Dizel",
+          "priceRaw": "₺10.456.000,00",
+          "priceNumeric": 10456000,
+          "brand": "Volkswagen"
+        },
+        {
+          "model": "Touareg",
+          "trim": "R-Line",
+          "engine": "3.0 V6 TDI SCR 286 PS",
+          "transmission": "Tiptronik",
+          "fuel": "Dizel",
+          "priceRaw": "₺10.989.000,00",
+          "priceNumeric": 10989000,
+          "brand": "Volkswagen"
+        }
+      ]
+    },
+    "renault": {
+      "name": "Renault",
+      "date": "2026-01-27",
+      "vehicles": [
+        {
+          "model": "R5 E-Tech ELEKTRİKLİ",
+          "trim": "Techno",
+          "engine": "Techno EV40 120hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "₺1.887.999,99",
+          "priceNumeric": 1887999.99,
+          "brand": "Renault"
+        },
+        {
+          "model": "R5 E-Tech ELEKTRİKLİ",
+          "trim": "Techno",
+          "engine": "Techno EV52 150hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "₺1.940.000,01",
+          "priceNumeric": 1940000.01,
+          "brand": "Renault"
+        },
+        {
+          "model": "Clio",
+          "trim": "evolution",
+          "engine": "evolution 1.0 TCe X-Tronic 90 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.580.000,00",
+          "priceNumeric": 1580000,
+          "brand": "Renault"
+        },
+        {
+          "model": "Clio",
+          "trim": "evolution",
+          "engine": "evolution 1.0 TCe X-Tronic 90 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.625.000,00",
+          "priceNumeric": 1625000,
+          "brand": "Renault"
+        },
+        {
+          "model": "Clio",
+          "trim": "techno esprit alpine",
+          "engine": "techno esprit alpine 1.0 TCe x-tronic 90hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.728.000,01",
+          "priceNumeric": 1728000.01,
+          "brand": "Renault"
+        },
+        {
+          "model": "Captur",
+          "trim": "techno",
+          "engine": "techno mild hybrid EDC 140 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.065.000,00",
+          "priceNumeric": 2065000,
+          "brand": "Renault"
+        },
+        {
+          "model": "Yeni Duster",
+          "trim": "evolution",
+          "engine": "evolution Eco-G 120 hp",
+          "transmission": "Manuel",
+          "fuel": "Benzin-LPG",
+          "priceRaw": "₺1.730.000,00",
+          "priceNumeric": 1730000,
+          "brand": "Renault"
+        },
+        {
+          "model": "Yeni Duster",
+          "trim": "evolution",
+          "engine": "evolution Turbo Tce EDC 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.859.999,99",
+          "priceNumeric": 1859999.99,
+          "brand": "Renault"
+        },
+        {
+          "model": "Yeni Duster",
+          "trim": "evolution",
+          "engine": "evolution hybrid 4x4 LPG 150 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin-LPG",
+          "priceRaw": "₺2.535.000,00",
+          "priceNumeric": 2535000,
+          "brand": "Renault"
+        },
+        {
+          "model": "Yeni Duster",
+          "trim": "techno",
+          "engine": "techno Turbo Tce EDC 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.905.000,02",
+          "priceNumeric": 1905000.02,
+          "brand": "Renault"
+        },
+        {
+          "model": "Yeni Duster",
+          "trim": "techno",
+          "engine": "techno Full hybrid E-Tech 160 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.429.999,99",
+          "priceNumeric": 2429999.99,
+          "brand": "Renault"
+        },
+        {
+          "model": "Yeni Duster",
+          "trim": "techno",
+          "engine": "techno hybrid 4x4 LPG 150 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin-LPG",
+          "priceRaw": "₺2.565.000,01",
+          "priceNumeric": 2565000.01,
+          "brand": "Renault"
+        },
+        {
+          "model": "Megane E-Tech ELEKTRİKLİ",
+          "trim": "Techno",
+          "engine": "Techno EV60 220 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "₺2.274.999,99",
+          "priceNumeric": 2274999.99,
+          "brand": "Renault"
+        },
+        {
+          "model": "Megane E-Tech ELEKTRİKLİ",
+          "trim": "Esprit Alpine",
+          "engine": "Esprit Alpine EV60 220 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "₺2.375.000,00",
+          "priceNumeric": 2375000,
+          "brand": "Renault"
+        },
+        {
+          "model": "Megane Sedan",
+          "trim": "Touch",
+          "engine": "Touch 1.3 TCe EDC 140 bg",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.050.000,01",
+          "priceNumeric": 2050000.01,
+          "brand": "Renault"
+        },
+        {
+          "model": "Megane Sedan",
+          "trim": "Icon",
+          "engine": "Icon 1.3 TCe EDC 140 bg",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.204.999,99",
+          "priceNumeric": 2204999.99,
+          "brand": "Renault"
+        },
+        {
+          "model": "Megane Sedan",
+          "trim": "Icon",
+          "engine": "Icon 1.5 Blue dCi EDC 115 bg",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "₺2.390.000,00",
+          "priceNumeric": 2390000,
+          "brand": "Renault"
+        },
+        {
+          "model": "Yeni Austral",
+          "trim": "techno",
+          "engine": "techno mild hybrid 150 hp auto",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.365.000,00",
+          "priceNumeric": 2365000,
+          "brand": "Renault"
+        },
+        {
+          "model": "Yeni Austral",
+          "trim": "esprit alpine",
+          "engine": "esprit alpine mild hybrid 150 hp auto",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.928.000,00",
+          "priceNumeric": 2928000,
+          "brand": "Renault"
+        },
+        {
+          "model": "Yeni Austral",
+          "trim": "esprit alpine",
+          "engine": "esprit alpine full hybrid E-tech 200 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin-Elektrik",
+          "priceRaw": "₺3.360.000,01",
+          "priceNumeric": 3360000.01,
+          "brand": "Renault"
+        },
+        {
+          "model": "Rafale",
+          "trim": "Esprit Alpine",
+          "engine": "esprit alpine full hybrid E-Tech 200 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin-Elektrik",
+          "priceRaw": "₺3.750.000,00",
+          "priceNumeric": 3750000,
+          "brand": "Renault"
+        }
+      ]
+    },
+    "toyota": {
+      "name": "Toyota",
+      "date": "2026-01-27",
+      "vehicles": [
+        {
+          "model": "COROLLA",
+          "trim": "1.5 Vision Plus Multidrive S",
+          "engine": 1.5,
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1650000",
+          "priceNumeric": 1650000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA",
+          "trim": "1.5 Dream Multidrive S",
+          "engine": 1.5,
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1850000",
+          "priceNumeric": 1850000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA",
+          "trim": "1.5 Dream X-Pack Multidrive S",
+          "engine": 1.5,
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1924000",
+          "priceNumeric": 1924000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA",
+          "trim": "1.5 Flame X-Pack Multidrive S",
+          "engine": 1.5,
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2159500",
+          "priceNumeric": 2159500,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA",
+          "trim": "1.8 Hybrid Dream-X-Pack e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik Vites",
+          "fuel": "Hybrid",
+          "priceRaw": "2266000",
+          "priceNumeric": 2266000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA",
+          "trim": "1.8 Hybrid Flame X-Pack e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2379000",
+          "priceNumeric": 2379000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA",
+          "trim": "1.8 Hybrid Passion X-Pack e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2544000",
+          "priceNumeric": 2544000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA CROSS",
+          "trim": "1.8 Hybrid Flame e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2484000",
+          "priceNumeric": 2484000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA CROSS",
+          "trim": "1.8 Hybrid Passion e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2720000",
+          "priceNumeric": 2720000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA CROSS",
+          "trim": "1.8 Hybrid Passion X-Pack e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3157000",
+          "priceNumeric": 3157000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "YENİ TOYOTA C-HR",
+          "trim": "1.8 Hybrid Flame e-CVT**",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2090000",
+          "priceNumeric": 2090000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "YENİ TOYOTA C-HR",
+          "trim": "1.8 Hybrid Passion e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2420000",
+          "priceNumeric": 2420000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "YENİ TOYOTA C-HR",
+          "trim": "1.8 Hybrid Passion X-Sport e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2755000",
+          "priceNumeric": 2755000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "TOYOTA C-HR",
+          "trim": "1.8 Hybrid GR SPORT e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2870000",
+          "priceNumeric": 2870000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA HATCHBACK HYBRID",
+          "trim": "1.8 Hybrid Flame e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2115000",
+          "priceNumeric": 2115000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "COROLLA HATCHBACK HYBRID",
+          "trim": "1.8 Hybrid Passion X-Pack e-CVT",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2419500",
+          "priceNumeric": 2419500,
+          "brand": "Toyota"
+        },
+        {
+          "model": "YENİ COROLLA HATCHBACK HYBRID",
+          "trim": "1.8 Hybrid GR SPORT e-CVT**",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2419500",
+          "priceNumeric": 2419500,
+          "brand": "Toyota"
+        },
+        {
+          "model": "YARIS CROSS",
+          "trim": "1.5 Hybrid Dream 130 HP e-CVT",
+          "engine": 1,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2203000",
+          "priceNumeric": 2203000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "YARIS CROSS",
+          "trim": "1.5 Hybrid Flame 130 HP e-CVT",
+          "engine": 1.5,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2531000",
+          "priceNumeric": 2531000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "YARIS CROSS",
+          "trim": "1.5 Hybrid Flame X-Pack 130 HP e-CVT",
+          "engine": 1.5,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2555000",
+          "priceNumeric": 2555000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "YARIS",
+          "trim": "1.5 Hybrid Flame e-CVT",
+          "engine": 1.5,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "1878000",
+          "priceNumeric": 1878000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "YARIS",
+          "trim": "1.5 Hybrid Passion X-Pack Siyah Tavan e-CVT**",
+          "engine": 1.5,
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2182500",
+          "priceNumeric": 2182500,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Land Cruiser Prado",
+          "trim": "2.8 D-4D 8 A\\T Land Cruiser Prado",
+          "engine": 2.8,
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "12000000",
+          "priceNumeric": 12000000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Hilux",
+          "trim": "2.4 D-4D 4x2 Hi-Cruiser A/T",
+          "engine": "",
+          "transmission": "",
+          "fuel": "",
+          "priceRaw": "2455000",
+          "priceNumeric": 2455000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Hilux",
+          "trim": "2.4 D-4D 4x4 Adventure A/T",
+          "engine": "",
+          "transmission": "",
+          "fuel": "",
+          "priceRaw": "3860000",
+          "priceNumeric": 3860000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Hilux",
+          "trim": "2.4 D-4D 4x4 Invincible A/T",
+          "engine": "",
+          "transmission": "",
+          "fuel": "",
+          "priceRaw": "4145000",
+          "priceNumeric": 4145000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Hilux",
+          "trim": "2.8 D-4D 4x4 GR SPORT A/T",
+          "engine": "",
+          "transmission": "",
+          "fuel": "",
+          "priceRaw": "4995000",
+          "priceNumeric": 4995000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace City",
+          "trim": "1.5 D 130 HP Dream A/T",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1544500",
+          "priceNumeric": 1544500,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace City",
+          "trim": "1.5 D 130 HP Flame X-Pack A/T",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1743000",
+          "priceNumeric": 1743000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace City",
+          "trim": "1.5 D 130 HP Passion X-Pack A/T",
+          "engine": 1.8,
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1832000",
+          "priceNumeric": 1832000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "PROACE CITY CARGO",
+          "trim": "1.5 D 100 HP Vision",
+          "engine": 1.5,
+          "transmission": "Düz",
+          "fuel": "Dizel",
+          "priceRaw": "1183000",
+          "priceNumeric": 1183000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "PROACE CITY CARGO",
+          "trim": "1.5 D 100 HP Dream",
+          "engine": 1.5,
+          "transmission": "Otomatik",
+          "fuel": "",
+          "priceRaw": "1235000",
+          "priceNumeric": 1235000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace Verso",
+          "trim": "2.2 D 180 HP Passion A/T",
+          "engine": 2,
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "2200000",
+          "priceNumeric": 2200000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace Verso",
+          "trim": "2.2 D 180 HP Passion X-Pack A/T",
+          "engine": 2,
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "2265000",
+          "priceNumeric": 2265000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace Cargo",
+          "trim": "2.0 D 145 HP Flame M/T",
+          "engine": 2,
+          "transmission": "Düz",
+          "fuel": "Dizel",
+          "priceRaw": "1569000",
+          "priceNumeric": 1569000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace Max",
+          "trim": "2.2 D 140 HP 13M³ M/T",
+          "engine": 2.2,
+          "transmission": "Düz",
+          "fuel": "Dizel",
+          "priceRaw": "1625000",
+          "priceNumeric": 1625000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace Max",
+          "trim": "2.2 D 180 HP 15M³ M/T",
+          "engine": 2.2,
+          "transmission": "Düz",
+          "fuel": "Dizel",
+          "priceRaw": "1695000",
+          "priceNumeric": 1695000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace Max",
+          "trim": "2.2 D 180 HP 17M³ M/T",
+          "engine": 2.2,
+          "transmission": "Düz",
+          "fuel": "Dizel",
+          "priceRaw": "1745000",
+          "priceNumeric": 1745000,
+          "brand": "Toyota"
+        },
+        {
+          "model": "Proace Max Kamyonet",
+          "trim": "2.2 D 140 HP L4 Kasalı M/T",
+          "engine": 2.2,
+          "transmission": "Düz",
+          "fuel": "Dizel",
+          "priceRaw": "1695000",
+          "priceNumeric": 1695000,
+          "brand": "Toyota"
+        }
+      ]
+    },
+    "hyundai": {
+      "name": "Hyundai",
+      "date": "2026-01-27",
+      "vehicles": [
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.2 Jump",
+          "engine": "1.2 MPI 79 PS Jump",
+          "transmission": "Manual",
+          "fuel": "Benzin",
+          "priceRaw": "1313000",
+          "priceNumeric": 1313000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Jump",
+          "engine": "1.0 T-GDI 90PS Jump",
+          "transmission": "Manual",
+          "fuel": "Benzin",
+          "priceRaw": "1313000",
+          "priceNumeric": 1313000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Jump",
+          "engine": "1.0 T-GDI 100 PS Jump",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1502000",
+          "priceNumeric": 1502000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Jump",
+          "engine": "1.0 T-GDI 90PS Jump",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1502000",
+          "priceNumeric": 1502000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Style",
+          "engine": "1.0 T-GDI 100 PS Style",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1596000",
+          "priceNumeric": 1596000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Style",
+          "engine": "1.0 T-GDI 90PS Style",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1596000",
+          "priceNumeric": 1596000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Elite",
+          "engine": "1.0 T-GDI 100 PS Elite",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1700000",
+          "priceNumeric": 1700000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Elite",
+          "engine": "1.0 T-GDI 90PS Elite",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1700000",
+          "priceNumeric": 1700000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Jump",
+          "engine": "1.0 T-GDI 90PS Jump",
+          "transmission": "Manual",
+          "fuel": "Benzin",
+          "priceRaw": "1334500",
+          "priceNumeric": 1334500,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Jump",
+          "engine": "1.0 T-GDI 90PS Jump",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1532000",
+          "priceNumeric": 1532000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Style",
+          "engine": "1.0 T-GDI 90PS Style",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1627000",
+          "priceNumeric": 1627000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i20 - Yerli Üretim",
+          "trim": "1.0 Elite",
+          "engine": "1.0 T-GDI 90PS Elite",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1731000",
+          "priceNumeric": 1731000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i30",
+          "trim": "Comfort",
+          "engine": "1.5T-GDI MHEV 140 PS  DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1893000",
+          "priceNumeric": 1893000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "i30",
+          "trim": "Prime",
+          "engine": "1.5T-GDI MHEV 140 PS  DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "2003000",
+          "priceNumeric": 2003000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Jump",
+          "engine": "1.2 MPI 79 PS",
+          "transmission": "Manual",
+          "fuel": "Benzin",
+          "priceRaw": "1446500",
+          "priceNumeric": 1446500,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Jump",
+          "engine": "1.0 T-GDI 100 PS",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1625000",
+          "priceNumeric": 1625000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Jump",
+          "engine": "1.0 T-GDI 90PS",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1625000",
+          "priceNumeric": 1625000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Style",
+          "engine": "1.0 T-GDI 100 PS",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1674000",
+          "priceNumeric": 1674000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Style",
+          "engine": "1.0 T-GDI 90PS",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1674000",
+          "priceNumeric": 1674000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Elite",
+          "engine": "1.0 T-GDI 100 PS",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1786000",
+          "priceNumeric": 1786000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Elite",
+          "engine": "1.0 T-GDI 90PS",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1786000",
+          "priceNumeric": 1786000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Jump",
+          "engine": "1.0 T-GDI 90PS",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1647000",
+          "priceNumeric": 1647000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Style",
+          "engine": "1.0 T-GDI 90PS",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1702000",
+          "priceNumeric": 1702000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "BAYON - Yerli Üretim",
+          "trim": "Elite",
+          "engine": "1.0 T-GDI 90PS",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "1815000",
+          "priceNumeric": 1815000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "KONA",
+          "trim": "Prime 1.6 T-GDi",
+          "engine": "1.6 T-GDI 180 PS Prime DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "2231000",
+          "priceNumeric": 2231000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Comfort",
+          "engine": "1.6 T-GDI 180 PS  4X2 DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "2384000",
+          "priceNumeric": 2384000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Prime",
+          "engine": "1.6 T-GDI 180 PS  4X2 DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "2674000",
+          "priceNumeric": 2674000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Prime Plus",
+          "engine": "1.6 T-GDI 180 PS  4X2 DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "2759000",
+          "priceNumeric": 2759000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Elite",
+          "engine": "1.6 T-GDI 160 PS  4X2 DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "2998000",
+          "priceNumeric": 2998000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Elite",
+          "engine": "1.6 T-GDI 180 PS  4X2 DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "3021000",
+          "priceNumeric": 3021000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Elite Plus",
+          "engine": "1.6 T-GDI 160 PS  4X4 DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "3321000",
+          "priceNumeric": 3321000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Elite Plus",
+          "engine": "1.6 T-GDI 180 PS  4X4 DCT",
+          "transmission": "DCT",
+          "fuel": "Benzin",
+          "priceRaw": "3342000",
+          "priceNumeric": 3342000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Prime",
+          "engine": "1.6 CRDI 136 PS  4X2 DCT (LB)",
+          "transmission": "DCT",
+          "fuel": "Dizel",
+          "priceRaw": "2739000",
+          "priceNumeric": 2739000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Elite",
+          "engine": "1.6 CRDI 136 PS  4X2 DCT",
+          "transmission": "DCT",
+          "fuel": "Dizel",
+          "priceRaw": "3133000",
+          "priceNumeric": 3133000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON",
+          "trim": "Elite Plus",
+          "engine": "1.6 CRDI 136 PS  4X4 DCT",
+          "transmission": "DCT",
+          "fuel": "Dizel",
+          "priceRaw": "3437000",
+          "priceNumeric": 3437000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "INSTER",
+          "trim": "Dynamic",
+          "engine": "71.1 kW",
+          "transmission": "Automatic",
+          "fuel": "Elektrik",
+          "priceRaw": "1453000",
+          "priceNumeric": 1453000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "INSTER",
+          "trim": "Advance",
+          "engine": "84.5 kW",
+          "transmission": "Automatic",
+          "fuel": "Elektrik",
+          "priceRaw": "1682000",
+          "priceNumeric": 1682000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "INSTER",
+          "trim": "Advance",
+          "engine": "Cross  84.5 kW",
+          "transmission": "Automatic",
+          "fuel": "Elektrik",
+          "priceRaw": "1733000",
+          "priceNumeric": 1733000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "KONA Elektrik",
+          "trim": "Advance",
+          "engine": "99 kW",
+          "transmission": "Automatic",
+          "fuel": "Elektrik",
+          "priceRaw": "2184000",
+          "priceNumeric": 2184000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "IONIQ 5",
+          "trim": "Advance",
+          "engine": "Dynamic Vision Roof 125 kW 4x2",
+          "transmission": "Automatic",
+          "fuel": "Elektrik",
+          "priceRaw": "2435000",
+          "priceNumeric": 2435000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "IONIQ 5 N",
+          "trim": "448 kW 4x4",
+          "engine": "",
+          "transmission": "Automatic",
+          "fuel": "Elektrik",
+          "priceRaw": "5655000",
+          "priceNumeric": 5655000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "IONIQ 6",
+          "trim": "111 kW 4x2 Advance",
+          "engine": "Advance 111 kW 4x2",
+          "transmission": "Automatic",
+          "fuel": "Elektrik",
+          "priceRaw": "2284000",
+          "priceNumeric": 2284000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "IONIQ 9",
+          "trim": "Progressive",
+          "engine": "160 kW 4X2",
+          "transmission": "Automatic",
+          "fuel": "Elektrik",
+          "priceRaw": "5394000",
+          "priceNumeric": 5394000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "IONIQ 9",
+          "trim": "Calligraphy",
+          "engine": "226,1 kW 4X4",
+          "transmission": "Automatic",
+          "fuel": "Elektrik",
+          "priceRaw": "6458000",
+          "priceNumeric": 6458000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "TUCSON Hibrit",
+          "trim": "Elite",
+          "engine": "1.6 T-GDI 215 PS  HEV 4x2 AT",
+          "transmission": "Automatic",
+          "fuel": "Benzin",
+          "priceRaw": "3498000",
+          "priceNumeric": 3498000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "SANTA FE Hibrit",
+          "trim": "Progressive",
+          "engine": "1.6 T-GDI HEV 215PS 4X4 AT",
+          "transmission": "Automatic",
+          "fuel": "Benzin",
+          "priceRaw": "5076000",
+          "priceNumeric": 5076000,
+          "brand": "Hyundai"
+        },
+        {
+          "model": "STARIA Hibrit",
+          "trim": "Elite",
+          "engine": "1.6 T-GDI 225 PS HEV  AT 4X2",
+          "transmission": "Automatic",
+          "fuel": "Benzin",
+          "priceRaw": "2549000",
+          "priceNumeric": 2549000,
+          "brand": "Hyundai"
+        }
+      ]
+    },
+    "skoda": {
+      "name": "Škoda",
+      "date": "2026-01-27",
+      "vehicles": [
+        {
+          "model": "Yeni Škoda Elroq",
+          "trim": "60 e-Prestige 204 PS",
+          "engine": "60 e-Prestige 204 PS",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "₺2.384.400",
+          "priceNumeric": 2384400,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Yeni Škoda Enyaq Coupé",
+          "trim": "60 e-Sportline 204 PS",
+          "engine": "60 e-Sportline 204 PS",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "₺3.499.400",
+          "priceNumeric": 3499400,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Yeni Škoda Enyaq Coupé",
+          "trim": "85x e-Sportline 285 PS",
+          "engine": "85x e-Sportline 285 PS",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "₺4.399.900",
+          "priceNumeric": 4399900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Yeni Škoda Enyaq",
+          "trim": "60 e-Prestige 204 PS",
+          "engine": "60 e-Prestige 204 PS",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "₺3.399.400",
+          "priceNumeric": 3399400,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Fabia",
+          "trim": "Premium 1.0 TSI 115 PS DSG",
+          "engine": "Premium 1.0 TSI 115 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.759.900",
+          "priceNumeric": 1759900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Fabia",
+          "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
+          "engine": "Monte Carlo 1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.134.900",
+          "priceNumeric": 2134900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Scala",
+          "trim": "Elite 1.0 TSI 115 PS DSG",
+          "engine": "Elite 1.0 TSI 115 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.785.900",
+          "priceNumeric": 1785900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Scala",
+          "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
+          "engine": "Monte Carlo 1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.372.900",
+          "priceNumeric": 2372900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "Elite 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Elite 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.552.900",
+          "priceNumeric": 2552900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Premium 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.912.900",
+          "priceNumeric": 2912900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "Combi Sportline 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Combi Sportline 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.307.900",
+          "priceNumeric": 3307900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Premium 1,5 TSI mHEV 150 PS DSG",
+          "engine": "Premium 1,5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.530.400",
+          "priceNumeric": 3530400,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Prestige 1,5 TSI  mHEV 150 PS DSG",
+          "engine": "Prestige 1,5 TSI  mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.151.900",
+          "priceNumeric": 4151900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Laurin & Klement Crystal 1,5 TSI mHEV 150 PS DSG",
+          "engine": "Laurin & Klement Crystal 1,5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.609.900",
+          "priceNumeric": 4609900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Laurin & Klement Crystal 2,0 TSI 265 PS DSG 4x4",
+          "engine": "Laurin & Klement Crystal 2,0 TSI 265 PS  4x4",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺6.675.900",
+          "priceNumeric": 6675900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Kamiq",
+          "trim": "Elite 1,0 TSI 115 PS DSG",
+          "engine": "Elite 1,0 TSI 115 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.900.400",
+          "priceNumeric": 1900400,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Kamiq",
+          "trim": "Premium 1,0 TSI 115 PS DSG",
+          "engine": "Premium 1,0 TSI 115 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.197.900",
+          "priceNumeric": 2197900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Kamiq",
+          "trim": "Monte Carlo 1,5 TSI 150 PS DSG",
+          "engine": "Monte Carlo 1,5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.622.900",
+          "priceNumeric": 2622900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Karoq",
+          "trim": "Prestige 1,5 TSI 150 PS DSG",
+          "engine": "Prestige 1,5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.349.400",
+          "priceNumeric": 3349400,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Karoq",
+          "trim": "Sportline 1,5 TSI 150 PS DSG",
+          "engine": "Sportline 1,5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.454.900",
+          "priceNumeric": 3454900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Kodiaq",
+          "trim": "Prestige 1,5 TSI  mHEV 150 PS DSG",
+          "engine": "Prestige 1,5 TSI  mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.379.900",
+          "priceNumeric": 4379900,
+          "brand": "Škoda"
+        },
+        {
+          "model": "Škoda Kodiaq",
+          "trim": "Sportline 1,5 TSI mHEV 150 PS DSG",
+          "engine": "Sportline 1,5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.546.900",
+          "priceNumeric": 4546900,
+          "brand": "Škoda"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-01-27T11:53:06.247Z",
+  "status": "healthy",
+  "summary": {
+    "totalBrands": 5,
+    "totalVehicles": 175,
+    "lastUpdate": "2026-01-27T09:18:38.267Z",
+    "dataDate": "2026-01-27"
+  },
+  "brands": [
+    {
+      "id": "volkswagen",
+      "name": "Volkswagen",
+      "status": "ok",
+      "vehicleCount": 46,
+      "latestDate": "2026-01-27",
+      "issues": []
+    },
+    {
+      "id": "renault",
+      "name": "Renault",
+      "status": "ok",
+      "vehicleCount": 21,
+      "latestDate": "2026-01-27",
+      "issues": []
+    },
+    {
+      "id": "toyota",
+      "name": "Toyota",
+      "status": "ok",
+      "vehicleCount": 39,
+      "latestDate": "2026-01-27",
+      "issues": []
+    },
+    {
+      "id": "hyundai",
+      "name": "Hyundai",
+      "status": "ok",
+      "vehicleCount": 47,
+      "latestDate": "2026-01-27",
+      "issues": []
+    },
+    {
+      "id": "skoda",
+      "name": "Škoda",
+      "status": "ok",
+      "vehicleCount": 22,
+      "latestDate": "2026-01-27",
+      "issues": []
+    }
+  ],
+  "issues": [],
+  "warnings": []
+}

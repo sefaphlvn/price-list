@@ -1,72 +1,180 @@
+/* Global Styles - Minimalist Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #ffffff;
+  color: #171717;
+  line-height: 1.5;
 }
 
 #root {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Modern scrollbar */
+/* Modern scrollbar - minimalist */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
+  background: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 10px;
+  background: #d4d4d4;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #5568d3 0%, #663a8c 100%);
+  background: #a3a3a3;
 }
 
-/* Table row hover effect */
+/* Selection color */
+::selection {
+  background: #0066FF;
+  color: white;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid #0066FF;
+  outline-offset: 2px;
+}
+
+/* Ant Design overrides for minimalist look */
 .ant-table-tbody > tr:hover > td {
-  background: rgba(102, 126, 234, 0.05) !important;
-  transition: background 0.3s ease;
+  background: #fafafa !important;
 }
 
-/* Button hover effects */
+.ant-btn {
+  transition: all 0.2s ease;
+}
+
 .ant-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
+  transform: translateY(-1px);
 }
 
 .ant-btn:active {
   transform: translateY(0);
 }
 
+.ant-btn-primary {
+  background: #000000;
+  border-color: #000000;
+}
+
+.ant-btn-primary:hover {
+  background: #262626 !important;
+  border-color: #262626 !important;
+}
+
 /* Select and Input focus effects */
 .ant-select-focused .ant-select-selector,
 .ant-input-affix-wrapper-focused,
-.ant-input:focus {
-  border-color: #667eea !important;
-  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2) !important;
+.ant-input:focus,
+.ant-picker-focused {
+  border-color: #0066FF !important;
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.1) !important;
 }
 
-/* Card animations */
+/* Card styles */
 .ant-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: box-shadow 0.2s ease;
 }
 
-/* Smooth animations */
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Menu styles */
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected {
+  color: #000000;
+  font-weight: 600;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected::after {
+  border-bottom-color: #000000;
+}
+
+/* Radio button group */
+.ant-radio-button-wrapper-checked {
+  background: #000000 !important;
+  border-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.ant-radio-button-wrapper-checked:hover {
+  background: #262626 !important;
+  border-color: #262626 !important;
+}
+
+/* Segmented control */
+.ant-segmented-item-selected {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Tag styles */
+.ant-tag {
+  border-radius: 4px;
+}
+
+/* Table styles */
+.ant-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa !important;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Statistic styles */
+.ant-statistic-title {
+  color: #737373;
+  font-size: 13px;
+}
+
+/* Badge styles */
+.ant-badge-count {
+  background: #0066FF;
+}
+
+/* Smooth transitions for theme changes */
 * {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Disable transitions for interactive elements during interaction */
+.ant-btn:active *,
+.ant-select:active *,
+.ant-input:active * {
+  transition: none;
 }

@@ -4,36 +4,45 @@ import { BrandConfig } from '../types';
 // Using Cloudflare Worker (Free 100k req/day)
 const CORS_PROXY = 'https://price-list-proxy.sefa-pehlivan.workers.dev/?url=';
 
+// Direct URLs for server-side collection (no CORS proxy needed)
+export const BRAND_DIRECT_URLS: Record<string, string> = {
+  volkswagen: 'https://binekarac2.vw.com.tr/app/local/fiyatlardata/fiyatlar-test.json?v=202511071652',
+  skoda: 'https://www.skoda.com.tr/_next/data/JqOPjpaBnXsRA79zGw7R6/fiyat-listesi.json',
+  renault: 'https://best.renault.com.tr/wp-json/service/v1/CatFiyatData?cat=Binek',
+  toyota: 'https://turkiye.toyota.com.tr/middle/fiyat-listesi/fiyat_v3.xml',
+  hyundai: 'https://www.hyundai.com/wsvc/tr/spa/pricelist/list?loc=TR&lan=tr',
+};
+
 export const BRANDS: BrandConfig[] = [
   {
     id: 'volkswagen',
     name: 'Volkswagen',
-    url: `${CORS_PROXY}https://binekarac2.vw.com.tr/app/local/fiyatlardata/fiyatlar-test.json?v=202511071652`,
+    url: `${CORS_PROXY}${BRAND_DIRECT_URLS.volkswagen}`,
     parser: 'vw',
   },
   {
     id: 'skoda',
     name: 'Škoda',
-    url: `${CORS_PROXY}https://www.skoda.com.tr/_next/data/vZMbunJTIP43xbP9kKalr/fiyat-listesi.json`,
+    url: `${CORS_PROXY}${BRAND_DIRECT_URLS.skoda}`,
     parser: 'skoda',
   },
   {
     id: 'renault',
     name: 'Renault',
-    url: `${CORS_PROXY}https://best.renault.com.tr/wp-json/service/v1/CatFiyatData?cat=Binek`,
+    url: `${CORS_PROXY}${BRAND_DIRECT_URLS.renault}`,
     parser: 'renault',
   },
   {
     id: 'toyota',
     name: 'Toyota',
-    url: `${CORS_PROXY}https://turkiye.toyota.com.tr/middle/fiyat-listesi/fiyat_v3.xml`,
+    url: `${CORS_PROXY}${BRAND_DIRECT_URLS.toyota}`,
     parser: 'toyota',
     responseType: 'xml',
   },
   {
     id: 'hyundai',
     name: 'Hyundai',
-    url: `${CORS_PROXY}https://www.hyundai.com/wsvc/tr/spa/pricelist/list?loc=TR&lan=tr`,
+    url: `${CORS_PROXY}${BRAND_DIRECT_URLS.hyundai}`,
     parser: 'hyundai',
   },
   // Ford disabled - API requires session cookies which cannot be proxied

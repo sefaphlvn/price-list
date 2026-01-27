@@ -1,0 +1,404 @@
+{
+  "common": {
+    "brand": "Brand",
+    "price": "Price",
+    "model": "Model",
+    "trim": "Trim",
+    "engine": "Engine",
+    "transmission": "Transmission",
+    "fuel": "Fuel",
+    "compare": "Compare",
+    "favorites": "Favorites",
+    "loading": "Loading...",
+    "error": "Error",
+    "refresh": "Refresh",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "download": "Download",
+    "copy": "Copy",
+    "add": "Add",
+    "remove": "Remove",
+    "clear": "Clear",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "close": "Close",
+    "viewAll": "View All",
+    "noData": "No data found",
+    "total": "Total",
+    "records": "records",
+    "all": "All",
+    "select": "Select",
+    "live": "Live",
+    "historical": "Historical",
+    "date": "Date"
+  },
+  "nav": {
+    "home": "Home",
+    "priceList": "Price List",
+    "statistics": "Statistics",
+    "comparison": "Comparison",
+    "insights": "Insights",
+    "my": "My",
+    "marketPulse": "Market Pulse",
+    "positioning": "Positioning",
+    "gaps": "Gap Finder",
+    "promos": "Promos",
+    "architecture": "Architecture",
+    "lifecycle": "Lifecycle",
+    "alerts": "Alerts"
+  },
+  "home": {
+    "title": "Turkey's Vehicle Price Platform",
+    "subtitle": "Current prices from 5 brands, comparison and analysis",
+    "cta": {
+      "viewPrices": "View Prices",
+      "compare": "Compare"
+    },
+    "stats": {
+      "totalVehicles": "Total Vehicles",
+      "lowestPrice": "Lowest Price",
+      "highestPrice": "Highest Price",
+      "brandsUpdated": "Brands Updated"
+    },
+    "features": {
+      "title": "Features",
+      "dailyUpdate": {
+        "title": "Daily Updates",
+        "description": "Automatic data collection from all brands"
+      },
+      "priceTracking": {
+        "title": "Price Tracking",
+        "description": "Price trend analysis and comparison"
+      },
+      "comparison": {
+        "title": "Detailed Comparison",
+        "description": "Side-by-side vehicle comparison"
+      }
+    },
+    "brands": {
+      "title": "Brands"
+    }
+  },
+  "priceList": {
+    "title": "Price List",
+    "filters": {
+      "title": "Filters",
+      "searchPlaceholder": "Search model, trim, engine...",
+      "selectModel": "Select Model",
+      "selectTransmission": "Select Transmission",
+      "selectFuel": "Select Fuel"
+    },
+    "dataSource": {
+      "live": "Live Data",
+      "historical": "Historical Data"
+    },
+    "export": {
+      "title": "Export",
+      "csv": "Download CSV",
+      "excel": "Download Excel",
+      "markdown": "Copy Markdown"
+    },
+    "lastUpdated": "Last updated",
+    "dataDate": "Data date",
+    "historicalNote": "Viewing historical data",
+    "addToFavorites": "Add to Favorites",
+    "addToCompare": "Add to Compare",
+    "track": "Track",
+    "untrack": "Untrack",
+    "viewTrend": "Price Trend",
+    "copyLink": "Copy Link",
+    "linkCopied": "Link copied"
+  },
+  "statistics": {
+    "title": "Statistics",
+    "subtitle": "Price analysis and segment comparisons",
+    "priceComparison": {
+      "title": "Price Comparison",
+      "avgByBrand": "Average Price by Brand",
+      "priceRange": "Price Range"
+    },
+    "segmentAnalysis": {
+      "title": "Segment Analysis",
+      "byBodyType": "By Body Type",
+      "byPriceRange": "By Price Range"
+    },
+    "priceTrend": {
+      "title": "Price Trend",
+      "selectModel": "Select model",
+      "change": "Change",
+      "minPrice": "Minimum",
+      "maxPrice": "Maximum",
+      "avgPrice": "Average"
+    }
+  },
+  "comparison": {
+    "title": "Comparison",
+    "subtitle": "Compare selected vehicles",
+    "favorites": {
+      "title": "My Favorites",
+      "empty": "No favorites added yet",
+      "addHint": "Add vehicles from the price list"
+    },
+    "compareList": {
+      "title": "Comparison List",
+      "empty": "Select vehicles to compare",
+      "maxReached": "You can compare up to 4 vehicles",
+      "clearAll": "Clear All"
+    },
+    "table": {
+      "feature": "Feature",
+      "best": "Best"
+    },
+    "pdf": {
+      "generate": "Generate PDF Report",
+      "generating": "Generating PDF...",
+      "title": "Vehicle Comparison Report"
+    },
+    "showOnlyDifferences": "Show Only Differences",
+    "allSame": "All values are the same"
+  },
+  "tracking": {
+    "title": "Tracked Vehicles",
+    "subtitle": "Track price changes",
+    "priceChanges": "Price Changes",
+    "vehiclesChanged": "{{count}} vehicle(s) price changed",
+    "noChanges": "No price changes",
+    "oldPrice": "Old Price",
+    "newPrice": "New Price",
+    "difference": "Difference",
+    "increased": "Increased",
+    "decreased": "Decreased",
+    "showIncreased": "Show Increased",
+    "showDecreased": "Show Decreased",
+    "showAll": "Show All",
+    "updateAll": "Update All",
+    "clearAll": "Clear All",
+    "empty": "No tracked vehicles",
+    "addHint": "Track vehicles from the price list"
+  },
+  "trend": {
+    "title": "Price Trend",
+    "days30": "30 Days",
+    "days90": "90 Days",
+    "days365": "365 Days",
+    "noData": "No data for this period",
+    "price": "Price",
+    "date": "Date"
+  },
+  "fuels": {
+    "benzin": "Gasoline",
+    "dizel": "Diesel",
+    "elektrik": "Electric",
+    "hybrid": "Hybrid",
+    "pluginHybrid": "Plug-in Hybrid",
+    "cng": "CNG"
+  },
+  "segments": {
+    "bodyTypes": {
+      "sedan": "Sedan",
+      "hatchback": "Hatchback",
+      "suv": "SUV",
+      "crossover": "Crossover",
+      "stationWagon": "Station Wagon",
+      "coupe": "Coupe",
+      "mpv": "MPV",
+      "pickup": "Pickup"
+    },
+    "priceRanges": {
+      "budget": "Budget",
+      "mid": "Mid-Range",
+      "premium": "Premium",
+      "luxury": "Luxury"
+    }
+  },
+  "loading": {
+    "title": "Vehicle Price Platform",
+    "subtitle": "Loading data...",
+    "skip": "Skip"
+  },
+  "errors": {
+    "fetchError": "An error occurred while loading data",
+    "noData": "No data found",
+    "networkError": "Connection error",
+    "tryAgain": "Try Again",
+    "unexpectedError": "Something went wrong",
+    "errorDescription": "An unexpected error occurred. Please try refreshing the page."
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "dataSource": "Data is sourced from official brand websites",
+    "lastUpdate": "Last update"
+  },
+  "pwa": {
+    "offline": "Offline Mode",
+    "offlineDesc": "No internet connection. Showing cached data.",
+    "install": "Install App",
+    "installDesc": "Add to home screen for faster access and offline support.",
+    "installButton": "Install",
+    "notNow": "Not Now",
+    "updateAvailable": "Update Available",
+    "updateAvailableDesc": "A new version is available. Refresh to update.",
+    "refresh": "Refresh"
+  },
+  "insights": {
+    "title": "Price Intelligence",
+    "subtitle": "AI-powered price analysis and deal recommendations",
+    "bestDeals": "Best Deals",
+    "todaysDeals": "Today's Deals",
+    "overpriced": "Overpriced",
+    "dealScore": "Deal Score",
+    "segmentAvg": "Segment avg",
+    "belowAvg": "below segment avg",
+    "aboveAvg": "above segment avg",
+    "youSave": "You Save",
+    "savingsTooltip": "Compared to segment average",
+    "overpriceTooltip": "Amount above segment average",
+    "zScoreExplanation": "Statistical deviation from average",
+    "noDealsToday": "No special deals found today",
+    "checkLater": "Check back later for new deals",
+    "noOverpriced": "No overpriced vehicles found",
+    "allFairlyPriced": "All vehicles are fairly priced within their segments",
+    "dealsExplanation": "These vehicles are priced significantly below their segment average, making them potential great deals.",
+    "overpricedWarning": "Price Warning",
+    "overpricedExplanation": "These vehicles are priced significantly above their segment average. Consider alternatives or negotiate the price.",
+    "dataDate": "Data date",
+    "totalAnalyzed": "Total analyzed"
+  },
+  "my": {
+    "title": "My Dashboard",
+    "subtitle": "Your personalized vehicle tracking dashboard",
+    "emptyTitle": "No vehicles tracked yet",
+    "emptyDesc": "Add vehicles to your favorites or start tracking price changes to see your personalized dashboard.",
+    "browsePrices": "Browse Price List",
+    "favorites": "Favorites",
+    "tracked": "Tracked",
+    "inCompare": "In Compare",
+    "priceChanges": "Price Changes",
+    "changes": "changes",
+    "portfolioSummary": "Portfolio Summary",
+    "totalChange": "Total Change",
+    "avgChange": "Avg. Change",
+    "breakdown": "Breakdown",
+    "topMovers": "Top Movers",
+    "topGainers": "Top Gainers",
+    "topLosers": "Top Losers",
+    "noIncrease": "No price increases",
+    "noDecrease": "No price decreases",
+    "viewMore": "+{{count}} more"
+  },
+  "search": {
+    "placeholder": "Search vehicles or type a command...",
+    "noResults": "No results found",
+    "navigate": "Navigate",
+    "select": "Select",
+    "actions": "Quick Actions"
+  },
+  "whatsNew": {
+    "title": "What's New",
+    "gotIt": "Got it!",
+    "features": "New Features",
+    "improvements": "Improvements",
+    "fixes": "Bug Fixes"
+  },
+  "intel": {
+    "mode": "Intel Mode",
+    "enable": "Enable Advanced Features",
+    "disable": "Disable Advanced Features"
+  },
+  "marketPulse": {
+    "title": "Market Pulse",
+    "subtitle": "Track price changes and market movements",
+    "priceChanges": "Price Changes",
+    "volatility": "Volatility",
+    "bigMoves": "Big Moves",
+    "topIncreases": "Top Increases",
+    "topDecreases": "Top Decreases",
+    "newVehicles": "New Vehicles",
+    "removedVehicles": "Removed Vehicles",
+    "totalChanges": "Total Changes",
+    "increases": "Increases",
+    "decreases": "Decreases"
+  },
+  "positioning": {
+    "title": "Price Positioning",
+    "subtitle": "See vehicle's position within its segment",
+    "similarVehicles": "Similar Vehicles",
+    "pricePercentile": "Price Percentile",
+    "priceBands": "Price Bands",
+    "min": "Minimum",
+    "median": "Median",
+    "max": "Maximum",
+    "searchVehicle": "Search vehicle...",
+    "selectVehicle": "Select vehicle",
+    "selectFirst": "Select a vehicle for analysis"
+  },
+  "gaps": {
+    "title": "Gap Finder",
+    "subtitle": "Discover market gaps and opportunities",
+    "heatmap": "Heatmap",
+    "heatmapDesc": "Segment x Price Band matrix",
+    "opportunities": "Opportunities",
+    "segmentEditor": "Segment Editor",
+    "editorDesc": "Add custom segment mappings",
+    "opportunityScore": "Opportunity Score",
+    "totalGaps": "Total Gaps",
+    "highOpportunity": "High Opportunity",
+    "segments": "Segments"
+  },
+  "promos": {
+    "title": "Promos",
+    "subtitle": "Track implicit discounts and price drops",
+    "activePromos": "Active Promos",
+    "noActivePromos": "No active promotions found",
+    "recentDrops": "Recent Price Drops",
+    "discount": "Discount",
+    "peakPrice": "Peak Price",
+    "totalDiscounted": "Discounted Vehicles",
+    "avgDiscount": "Avg. Discount",
+    "recentDropsCount": "Last 7 Days",
+    "implicitNote": "Implicit Discount Detection",
+    "implicitDesc": "This page analyzes historical price data to detect vehicles that have dropped 5% or more from their peak price within the last 90 days."
+  },
+  "architecture": {
+    "title": "Price Architecture",
+    "subtitle": "Trim ladder and cross-brand comparison",
+    "trimLadder": "Trim Ladder",
+    "crossBrand": "Cross-Brand",
+    "basePrice": "Base Price",
+    "stepSize": "Step Size",
+    "selectBrand": "Select brand",
+    "selectModel": "Select model",
+    "selectSegment": "Select segment"
+  },
+  "lifecycle": {
+    "title": "Lifecycle",
+    "subtitle": "Model year transitions and refresh signals",
+    "yearTransitions": "Year Transitions",
+    "noTransitions": "No model year transitions found",
+    "upcomingRefreshes": "Upcoming Refreshes",
+    "entryPrices": "Entry Prices",
+    "totalTransitions": "Year Transitions",
+    "staleModels": "Stale Models",
+    "avgEntryPrice": "Avg. Entry Price"
+  },
+  "alertsV2": {
+    "title": "Advanced Alerts",
+    "subtitle": "Create rule-based price alerts",
+    "myRules": "My Rules",
+    "createRule": "Create Rule",
+    "triggered": "Triggered",
+    "conditions": "conditions",
+    "addCondition": "Add Condition",
+    "ruleName": "Rule Name",
+    "totalRules": "Total Rules",
+    "activeRules": "Active Rules",
+    "triggeredCount": "Triggered",
+    "noRules": "No rules created yet",
+    "noTriggered": "No triggered alerts",
+    "active": "Active",
+    "inactive": "Inactive",
+    "builderDesc": "Rule builder"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "lastUpdated": "2026-01-27T09:18:38.267Z",
+  "brands": {
+    "volkswagen": {
+      "name": "Volkswagen",
+      "availableDates": [
+        "2026-01-27"
+      ],
+      "latestDate": "2026-01-27",
+      "totalRecords": 46
+    },
+    "renault": {
+      "name": "Renault",
+      "availableDates": [
+        "2026-01-27"
+      ],
+      "latestDate": "2026-01-27",
+      "totalRecords": 21
+    },
+    "toyota": {
+      "name": "Toyota",
+      "availableDates": [
+        "2026-01-27"
+      ],
+      "latestDate": "2026-01-27",
+      "totalRecords": 39
+    },
+    "hyundai": {
+      "name": "Hyundai",
+      "availableDates": [
+        "2026-01-27"
+      ],
+      "latestDate": "2026-01-27",
+      "totalRecords": 47
+    },
+    "skoda": {
+      "name": "Škoda",
+      "availableDates": [
+        "2026-01-27"
+      ],
+      "latestDate": "2026-01-27",
+      "totalRecords": 22
+    }
+  }
+}

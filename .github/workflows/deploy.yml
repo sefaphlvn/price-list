@@ -30,6 +30,15 @@ jobs:
           VITE_CORS_PROXY: ${{ secrets.VITE_CORS_PROXY }}
         run: npm run build
 
+      - name: Copy historical data to dist
+        run: |
+          if [ -d "data" ]; then
+            cp -r data dist/data
+            echo "Historical data copied to dist/data"
+          else
+            echo "No historical data folder found, skipping"
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
