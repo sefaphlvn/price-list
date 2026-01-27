@@ -40,6 +40,22 @@
       ],
       "latestDate": "2026-01-27",
       "totalRecords": 22
+    },
+    "fiat": {
+      "name": "Fiat",
+      "availableDates": [
+        "2026-01-27"
+      ],
+      "latestDate": "2026-01-27",
+      "totalRecords": 25
+    },
+    "peugeot": {
+      "name": "Peugeot",
+      "availableDates": [
+        "2026-01-27"
+      ],
+      "latestDate": "2026-01-27",
+      "totalRecords": 30
     }
   }
 }
