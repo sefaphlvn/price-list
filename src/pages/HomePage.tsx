@@ -20,11 +20,13 @@ const { Title, Text, Paragraph } = Typography;
 
 // Brand logos/icons mapping
 const brandIcons: { [key: string]: string } = {
-  vw: 'VW',
-  skoda: 'SK',
+  volkswagen: 'VW',
+  skoda: 'ŠK',
   renault: 'RN',
   toyota: 'TY',
   hyundai: 'HY',
+  fiat: 'FT',
+  peugeot: 'PG',
 };
 
 export default function HomePage() {

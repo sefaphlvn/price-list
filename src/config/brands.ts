@@ -11,6 +11,8 @@ export const BRAND_DIRECT_URLS: Record<string, string> = {
   renault: 'https://best.renault.com.tr/wp-json/service/v1/CatFiyatData?cat=Binek',
   toyota: 'https://turkiye.toyota.com.tr/middle/fiyat-listesi/fiyat_v3.xml',
   hyundai: 'https://www.hyundai.com/wsvc/tr/spa/pricelist/list?loc=TR&lan=tr',
+  fiat: 'https://kampanya.fiat.com.tr/Pdf/Fiyatlar/OtomobilFiyatListesi.pdf',
+  peugeot: 'https://kampanya.peugeot.com.tr/fiyat-listesi/fiyatlar.pdf',
 };
 
 export const BRANDS: BrandConfig[] = [
@@ -44,6 +46,20 @@ export const BRANDS: BrandConfig[] = [
     name: 'Hyundai',
     url: `${CORS_PROXY}${BRAND_DIRECT_URLS.hyundai}`,
     parser: 'hyundai',
+  },
+  {
+    id: 'fiat',
+    name: 'Fiat',
+    url: BRAND_DIRECT_URLS.fiat,
+    parser: 'fiat',
+    responseType: 'pdf',
+  },
+  {
+    id: 'peugeot',
+    name: 'Peugeot',
+    url: BRAND_DIRECT_URLS.peugeot,
+    parser: 'peugeot',
+    responseType: 'pdf',
   },
   // Ford disabled - API requires session cookies which cannot be proxied
   // {
