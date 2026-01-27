@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-27T19:51:04.465Z",
-  "totalVehicles": 175,
+  "generatedAt": "2026-01-27T19:53:42.435Z",
+  "totalVehicles": 230,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
@@ -1779,6 +1779,568 @@
           "priceRaw": "₺4.546.900",
           "priceNumeric": 4546900,
           "brand": "Škoda"
+        }
+      ]
+    },
+    "fiat": {
+      "name": "Fiat",
+      "date": "2026-01-27",
+      "vehicles": [
+        {
+          "model": "Egea Sedan",
+          "trim": "Urban",
+          "engine": "1.6 M.Jet 130 HP GSR*",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.569.900 TL",
+          "priceNumeric": 1569900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Sedan",
+          "trim": "Lounge",
+          "engine": "1.6 M.Jet 130 HP GSR* Urban Manuel Dizel 1",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.629.900 TL",
+          "priceNumeric": 1629900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Sedan",
+          "trim": "Easy",
+          "engine": "1.6 M.Jet 130 HP GSR* Urban Manuel Dizel 1",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.699.900 TL",
+          "priceNumeric": 1699900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Sedan",
+          "trim": "Urban",
+          "engine": "1.6 M.Jet 130 HP DCT GSR*",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.739.900 TL",
+          "priceNumeric": 1739900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Sedan",
+          "trim": "Lounge",
+          "engine": "1.6 M.Jet 130 HP DCT GSR* Urban Otomatik Dizel 1",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.789.900 TL",
+          "priceNumeric": 1789900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Cross",
+          "trim": "Urban",
+          "engine": "1.4 Fire 95 HP GSR Traction+ *",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.379.900 TL",
+          "priceNumeric": 1379900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Cross",
+          "trim": "Lounge",
+          "engine": "1.4 Fire 95 HP GSR Traction+ * Urban Manuel Benzinli 1",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.439.900 TL",
+          "priceNumeric": 1439900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Cross",
+          "trim": "Limited",
+          "engine": "1.4 Fire 95 HP GSR Traction+ * Urban Manuel Benzinli 1",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.499.900 TL",
+          "priceNumeric": 1499900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Cross",
+          "trim": "Street",
+          "engine": "1.4 Fire 95 HP GSR Traction+ * Urban Manuel Benzinli 1",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.679.900 TL",
+          "priceNumeric": 1679900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Cross",
+          "trim": "Urban",
+          "engine": "1.6 M.Jet 130 HP DCT GSR Traction*",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.719.900 TL",
+          "priceNumeric": 1719900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Cross",
+          "trim": "Lounge",
+          "engine": "1.6 M.Jet 130 HP DCT GSR Traction* Urban Otomatik Dizel 1",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.789.900 TL",
+          "priceNumeric": 1789900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Egea Cross",
+          "trim": "Limited",
+          "engine": "1.6 M.Jet 130 HP DCT GSR Traction* Urban Otomatik Dizel 1",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.949.900 TL",
+          "priceNumeric": 1949900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Topolino 2026",
+          "trim": "Topolino",
+          "engine": "6 kW/8 HP - 5.5kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "649.900 TL",
+          "priceNumeric": 649900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Topolino 2026",
+          "trim": "Topolino Plus",
+          "engine": "6 kW/8 HP - 5.5kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "694.900 TL",
+          "priceNumeric": 694900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Grande Panda",
+          "trim": "La Prima",
+          "engine": "44 kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.499.900 TL",
+          "priceNumeric": 1499900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Grande Panda",
+          "trim": "Icon",
+          "engine": "1.2 MHEV 110HP eDCT",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik - Benzin",
+          "priceRaw": "1.649.900 TL",
+          "priceNumeric": 1649900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Grande Panda",
+          "trim": "La Prima",
+          "engine": "1.2 MHEV 110HP eDCT",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik - Benzin",
+          "priceRaw": "1.749.900 TL",
+          "priceNumeric": 1749900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "600",
+          "trim": "La Prima",
+          "engine": "54 kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.969.900 TL",
+          "priceNumeric": 1969900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "600",
+          "trim": "Easy",
+          "engine": "1.2 145 hp MHEV",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik - Benzin",
+          "priceRaw": "1.697.900 TL",
+          "priceNumeric": 1697900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "500e",
+          "trim": "3+1",
+          "engine": "87 kW/118 HP - 42kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.019.900 TL",
+          "priceNumeric": 2019900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "500e",
+          "trim": "Cabrio",
+          "engine": "87 kW/118 HP - 42kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.075.900 TL",
+          "priceNumeric": 2075900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "500e",
+          "trim": "Giorgio Armani",
+          "engine": "87 kW/118 HP - 42kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.175.900 TL",
+          "priceNumeric": 2175900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Topolino 2025",
+          "trim": "Topolino",
+          "engine": "6 kW/8 HP - 5.5kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "634.900 TL",
+          "priceNumeric": 634900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Topolino 2025",
+          "trim": "Topolino Plus",
+          "engine": "6 kW/8 HP - 5.5kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "679.900 TL",
+          "priceNumeric": 679900,
+          "brand": "Fiat"
+        },
+        {
+          "model": "Topolino 2024",
+          "trim": "Topolino",
+          "engine": "6 kW/8 HP - 5.5kWh",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "575.900 TL",
+          "priceNumeric": 575900,
+          "brand": "Fiat"
+        }
+      ]
+    },
+    "peugeot": {
+      "name": "Peugeot",
+      "date": "2026-01-27",
+      "vehicles": [
+        {
+          "model": "E-208",
+          "trim": "Gt",
+          "engine": "100 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "1.999.500 TL",
+          "priceNumeric": 1999500,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "E-308",
+          "trim": "Gt",
+          "engine": "115 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "2.381.000 TL",
+          "priceNumeric": 2381000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "2008",
+          "trim": "Allure",
+          "engine": "1.2 PureTech 130 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.181.000 TL",
+          "priceNumeric": 2181000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "2008",
+          "trim": "Allure",
+          "engine": "1.2 Hybrid 145 HP",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.329.000 TL",
+          "priceNumeric": 2329000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "2008",
+          "trim": "Gt",
+          "engine": "1.2 Hybrid 145 HP",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.566.500 TL",
+          "priceNumeric": 2566500,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "E-2008",
+          "trim": "Allure",
+          "engine": "100 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "2.014.000 TL",
+          "priceNumeric": 2014000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "E-2008",
+          "trim": "Allure",
+          "engine": "115 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "2.201.500 TL",
+          "priceNumeric": 2201500,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "E-2008",
+          "trim": "Gt",
+          "engine": "115 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "2.308.500 TL",
+          "priceNumeric": 2308500,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "408",
+          "trim": "Allure",
+          "engine": "1.2 PureTech 130 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.175.000 TL",
+          "priceNumeric": 2175000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "408",
+          "trim": "Allure",
+          "engine": "1.2 PureTech 130 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.255.000 TL",
+          "priceNumeric": 2255000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "408",
+          "trim": "Gt",
+          "engine": "1.2 PureTech 130 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.670.000 TL",
+          "priceNumeric": 2670000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "408",
+          "trim": "Allure",
+          "engine": "1.2 Hybrid 145 HP",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.376.000 TL",
+          "priceNumeric": 2376000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "408",
+          "trim": "Allure",
+          "engine": "1.2 Hybrid 145 HP",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.592.000 TL",
+          "priceNumeric": 2592000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "408",
+          "trim": "Gt",
+          "engine": "1.2 Hybrid 145 HP",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.820.500 TL",
+          "priceNumeric": 2820500,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "3008",
+          "trim": "Allure",
+          "engine": "1.2 Hybrid 145 HP",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.851.000 TL",
+          "priceNumeric": 2851000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "3008",
+          "trim": "Gt",
+          "engine": "1.2 Hybrid 145 HP",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.259.000 TL",
+          "priceNumeric": 3259000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "E-3008",
+          "trim": "Allure",
+          "engine": "157 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "3.318.000 TL",
+          "priceNumeric": 3318000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "E-3008",
+          "trim": "Gt",
+          "engine": "157 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "3.514.500 TL",
+          "priceNumeric": 3514500,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "5008",
+          "trim": "Allure",
+          "engine": "1.2 Hybrid 145 HP",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.290.000 TL",
+          "priceNumeric": 3290000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "5008",
+          "trim": "Gt",
+          "engine": "1.2 Hybrid 145 HP",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.493.000 TL",
+          "priceNumeric": 3493000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "E-5008",
+          "trim": "Allure",
+          "engine": "157 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "3.502.000 TL",
+          "priceNumeric": 3502000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "E-5008",
+          "trim": "Gt",
+          "engine": "157 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "3.644.000 TL",
+          "priceNumeric": 3644000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "Rifter",
+          "trim": "Allure",
+          "engine": "1.5 BlueHDi 130 HP",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.543.500 TL",
+          "priceNumeric": 1543500,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "Rifter",
+          "trim": "Allure",
+          "engine": "1.5 BlueHDi 130 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.847.000 TL",
+          "priceNumeric": 1847000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "Rifter",
+          "trim": "Gt",
+          "engine": "1.5 BlueHDi 130 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "2.077.000 TL",
+          "priceNumeric": 2077000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "Partner Van",
+          "trim": "Comfort",
+          "engine": "1.5 BlueHDi 100 HP",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.237.500 TL",
+          "priceNumeric": 1237500,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "Partner Van",
+          "trim": "Comfort",
+          "engine": "1.5 BlueHDi 130 HP",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.330.000 TL",
+          "priceNumeric": 1330000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "Partner Van",
+          "trim": "Comfort",
+          "engine": "1.5 BlueHDi 130 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.405.000 TL",
+          "priceNumeric": 1405000,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "Expert Traveller",
+          "trim": "Allure",
+          "engine": "2.0 BlueHDi 180 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "2.290.500 TL",
+          "priceNumeric": 2290500,
+          "brand": "Peugeot"
+        },
+        {
+          "model": "Expert Traveller",
+          "trim": "Allure",
+          "engine": "2.2 BlueHDi 180 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "2.420.000 TL",
+          "priceNumeric": 2420000,
+          "brand": "Peugeot"
         }
       ]
     }

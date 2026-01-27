@@ -1,59 +1,70 @@
 {
-  "generatedAt": "2026-01-27T16:31:01.379Z",
-  "date": "2026-01-27",
-  "totalBrands": 7,
-  "successful": 7,
-  "failed": 0,
-  "usedFallback": 0,
-  "details": [
+  "timestamp": "2026-01-27T19:53:43.085Z",
+  "status": "healthy",
+  "summary": {
+    "totalBrands": 7,
+    "totalVehicles": 230,
+    "lastUpdate": "2026-01-27T19:53:41.813Z",
+    "dataDate": "2026-01-27"
+  },
+  "brands": [
     {
-      "brand": "volkswagen",
-      "success": true,
-      "count": 46,
-      "error": null,
-      "usedFallback": false
+      "id": "volkswagen",
+      "name": "Volkswagen",
+      "status": "ok",
+      "vehicleCount": 46,
+      "latestDate": "2026-01-27",
+      "issues": []
     },
     {
-      "brand": "skoda",
-      "success": true,
-      "count": 22,
-      "error": null,
-      "usedFallback": false
+      "id": "renault",
+      "name": "Renault",
+      "status": "ok",
+      "vehicleCount": 21,
+      "latestDate": "2026-01-27",
+      "issues": []
     },
     {
-      "brand": "renault",
-      "success": true,
-      "count": 21,
-      "error": null,
-      "usedFallback": false
+      "id": "toyota",
+      "name": "Toyota",
+      "status": "ok",
+      "vehicleCount": 39,
+      "latestDate": "2026-01-27",
+      "issues": []
     },
     {
-      "brand": "toyota",
-      "success": true,
-      "count": 39,
-      "error": null,
-      "usedFallback": false
+      "id": "hyundai",
+      "name": "Hyundai",
+      "status": "ok",
+      "vehicleCount": 47,
+      "latestDate": "2026-01-27",
+      "issues": []
     },
     {
-      "brand": "hyundai",
-      "success": true,
-      "count": 47,
-      "error": null,
-      "usedFallback": false
+      "id": "skoda",
+      "name": "Škoda",
+      "status": "ok",
+      "vehicleCount": 22,
+      "latestDate": "2026-01-27",
+      "issues": []
     },
     {
-      "brand": "fiat",
-      "success": true,
-      "count": 25,
-      "error": null,
-      "usedFallback": false
+      "id": "fiat",
+      "name": "Fiat",
+      "status": "ok",
+      "vehicleCount": 25,
+      "latestDate": "2026-01-27",
+      "issues": []
     },
     {
-      "brand": "peugeot",
-      "success": true,
-      "count": 30,
-      "error": null,
-      "usedFallback": false
+      "id": "peugeot",
+      "name": "Peugeot",
+      "status": "ok",
+      "vehicleCount": 30,
+      "latestDate": "2026-01-27",
+      "issues": []
     }
-  ]
+  ],
+  "issues": [],
+  "warnings": []
 }
