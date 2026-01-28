@@ -2385,16 +2385,17 @@ async function fetchFordUrl(url: string): Promise<any> {
 
 // Fetch Fiat PDF with special headers and retry (server may block cloud IPs)
 async function fetchFiatPdf(url: string): Promise<any> {
-  const maxRetries = 3;
+  const maxRetries = 2;
   let lastError: Error | null = null;
 
+  // Try direct connection first
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
-      console.log(`    Attempt ${attempt}/${maxRetries}...`);
+      console.log(`    Direct attempt ${attempt}/${maxRetries}...`);
 
       // Add delay between retries
       if (attempt > 1) {
-        const delay = Math.pow(2, attempt - 1) * 1000; // 2s, 4s
+        const delay = Math.pow(2, attempt - 1) * 1000;
         console.log(`    Waiting ${delay / 1000}s before retry...`);
         await new Promise(resolve => setTimeout(resolve, delay));
       }
@@ -2424,87 +2425,123 @@ async function fetchFiatPdf(url: string): Promise<any> {
       console.log(`    Response headers: content-type=${response.headers.get('content-type')}, content-length=${response.headers.get('content-length')}`);
 
       if (!response.ok) {
-        // Try to read error body
         const errorBody = await response.text().catch(() => 'Could not read body');
         console.log(`    Response body: ${errorBody.substring(0, 500)}`);
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
 
-      // Download PDF to temp file and extract with pdf.js-extract
-      const tempPath = path.join('/tmp', `fiat-pdf-${Date.now()}.pdf`);
-      const buffer = await response.arrayBuffer();
-      console.log(`    Downloaded ${buffer.byteLength} bytes`);
-      fs.writeFileSync(tempPath, Buffer.from(buffer));
-
-      const pdfExtract = new PDFExtract();
-      const pdfData = await pdfExtract.extract(tempPath, {});
-      console.log(`    PDF extracted: ${pdfData.pages?.length || 0} pages`);
-
-      // Clean up temp file
-      try { fs.unlinkSync(tempPath); } catch {}
-
-      console.log(`    Success on attempt ${attempt}`);
-      return pdfData;
+      return await extractPdfFromResponse(response, 'fiat');
     } catch (error: any) {
       lastError = error instanceof Error ? error : new Error(String(error));
-      // Log detailed error info for debugging
-      console.log(`    Attempt ${attempt} failed: ${lastError.message}`);
-      if (error.cause) {
-        console.log(`    Error cause: ${JSON.stringify(error.cause, null, 2)}`);
-      }
-      if (error.code) {
-        console.log(`    Error code: ${error.code}`);
-      }
-      if (error.errno) {
-        console.log(`    Error errno: ${error.errno}`);
-      }
-      if (error.syscall) {
-        console.log(`    Error syscall: ${error.syscall}`);
-      }
-      if (error.hostname) {
-        console.log(`    Error hostname: ${error.hostname}`);
-      }
+      logFetchError(error, attempt);
     }
   }
 
-  throw lastError || new Error('Failed to fetch Fiat PDF after all retries');
-}
+  // Try proxy fallback if direct connection failed
+  console.log(`    Direct connection failed, trying proxy...`);
+  const proxyUrls = [
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+    `https://corsproxy.io/?${encodeURIComponent(url)}`,
+  ];
 
-// Fetch Peugeot PDF with special headers
-async function fetchPeugeotPdf(url: string): Promise<any> {
-  const response = await fetch(url, {
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-      'Accept': 'application/pdf,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-      'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
-      'Accept-Encoding': 'gzip, deflate, br',
-      'Referer': 'https://kampanya.peugeot.com.tr/',
-      'Origin': 'https://kampanya.peugeot.com.tr',
-      'Connection': 'keep-alive',
-      'Sec-Fetch-Dest': 'document',
-      'Sec-Fetch-Mode': 'navigate',
-      'Sec-Fetch-Site': 'same-origin',
-      'Sec-Fetch-User': '?1',
-      'Upgrade-Insecure-Requests': '1',
-    },
-  });
+  for (const proxyUrl of proxyUrls) {
+    try {
+      console.log(`    Trying proxy: ${proxyUrl.substring(0, 50)}...`);
+      const response = await fetch(proxyUrl, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        },
+      });
 
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      console.log(`    Proxy response: ${response.status} ${response.statusText}`);
+
+      if (response.ok) {
+        return await extractPdfFromResponse(response, 'fiat');
+      }
+    } catch (error: any) {
+      console.log(`    Proxy failed: ${error.message}`);
+    }
   }
 
-  // Download PDF to temp file and extract with pdf.js-extract
-  const tempPath = path.join('/tmp', `peugeot-pdf-${Date.now()}.pdf`);
+  throw lastError || new Error('Failed to fetch Fiat PDF after all retries and proxies');
+}
+
+// Helper to extract PDF from response
+async function extractPdfFromResponse(response: Response, brand: string): Promise<any> {
+  const tempPath = path.join('/tmp', `${brand}-pdf-${Date.now()}.pdf`);
   const buffer = await response.arrayBuffer();
+  console.log(`    Downloaded ${buffer.byteLength} bytes`);
   fs.writeFileSync(tempPath, Buffer.from(buffer));
 
   const pdfExtract = new PDFExtract();
   const pdfData = await pdfExtract.extract(tempPath, {});
+  console.log(`    PDF extracted: ${pdfData.pages?.length || 0} pages`);
 
   // Clean up temp file
   try { fs.unlinkSync(tempPath); } catch {}
 
   return pdfData;
+}
+
+// Helper to log fetch errors
+function logFetchError(error: any, attempt: number): void {
+  const lastError = error instanceof Error ? error : new Error(String(error));
+  console.log(`    Attempt ${attempt} failed: ${lastError.message}`);
+  if (error.cause) {
+    console.log(`    Error cause: ${JSON.stringify(error.cause, null, 2)}`);
+  }
+  if (error.code) {
+    console.log(`    Error code: ${error.code}`);
+  }
+  if (error.errno) {
+    console.log(`    Error errno: ${error.errno}`);
+  }
+  if (error.syscall) {
+    console.log(`    Error syscall: ${error.syscall}`);
+  }
+  if (error.hostname) {
+    console.log(`    Error hostname: ${error.hostname}`);
+  }
+}
+
+// Fetch Peugeot PDF with special headers
+async function fetchPeugeotPdf(url: string): Promise<any> {
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'application/pdf,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Referer': 'https://kampanya.peugeot.com.tr/',
+        'Origin': 'https://kampanya.peugeot.com.tr',
+        'Connection': 'keep-alive',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'same-origin',
+        'Sec-Fetch-User': '?1',
+        'Upgrade-Insecure-Requests': '1',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+
+    return await extractPdfFromResponse(response, 'peugeot');
+  } catch (error: any) {
+    console.log(`    Direct connection failed: ${error.message}, trying proxy...`);
+
+    // Try proxy fallback
+    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+    const response = await fetch(proxyUrl);
+
+    if (!response.ok) {
+      throw new Error(`Proxy also failed: HTTP ${response.status}`);
+    }
+
+    return await extractPdfFromResponse(response, 'peugeot');
+  }
 }
 
 // Fetch data from URL (handles single and multi-URL brands)
