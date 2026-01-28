@@ -2383,6 +2383,104 @@ async function fetchFordUrl(url: string): Promise<any> {
   return response.json();
 }
 
+// Fetch Fiat PDF with special headers and retry (server may block cloud IPs)
+async function fetchFiatPdf(url: string): Promise<any> {
+  const maxRetries = 3;
+  let lastError: Error | null = null;
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      console.log(`    Attempt ${attempt}/${maxRetries}...`);
+
+      // Add delay between retries
+      if (attempt > 1) {
+        const delay = Math.pow(2, attempt - 1) * 1000; // 2s, 4s
+        console.log(`    Waiting ${delay / 1000}s before retry...`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+      }
+
+      const response = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+          'Accept': 'application/pdf,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+          'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Referer': 'https://kampanya.fiat.com.tr/',
+          'Origin': 'https://kampanya.fiat.com.tr',
+          'Connection': 'keep-alive',
+          'Sec-Fetch-Dest': 'document',
+          'Sec-Fetch-Mode': 'navigate',
+          'Sec-Fetch-Site': 'same-origin',
+          'Sec-Fetch-User': '?1',
+          'Upgrade-Insecure-Requests': '1',
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      // Download PDF to temp file and extract with pdf.js-extract
+      const tempPath = path.join('/tmp', `fiat-pdf-${Date.now()}.pdf`);
+      const buffer = await response.arrayBuffer();
+      fs.writeFileSync(tempPath, Buffer.from(buffer));
+
+      const pdfExtract = new PDFExtract();
+      const pdfData = await pdfExtract.extract(tempPath, {});
+
+      // Clean up temp file
+      try { fs.unlinkSync(tempPath); } catch {}
+
+      console.log(`    Success on attempt ${attempt}`);
+      return pdfData;
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+      console.log(`    Attempt ${attempt} failed: ${lastError.message}`);
+    }
+  }
+
+  throw lastError || new Error('Failed to fetch Fiat PDF after all retries');
+}
+
+// Fetch Peugeot PDF with special headers
+async function fetchPeugeotPdf(url: string): Promise<any> {
+  const response = await fetch(url, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+      'Accept': 'application/pdf,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+      'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'Referer': 'https://kampanya.peugeot.com.tr/',
+      'Origin': 'https://kampanya.peugeot.com.tr',
+      'Connection': 'keep-alive',
+      'Sec-Fetch-Dest': 'document',
+      'Sec-Fetch-Mode': 'navigate',
+      'Sec-Fetch-Site': 'same-origin',
+      'Sec-Fetch-User': '?1',
+      'Upgrade-Insecure-Requests': '1',
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+
+  // Download PDF to temp file and extract with pdf.js-extract
+  const tempPath = path.join('/tmp', `peugeot-pdf-${Date.now()}.pdf`);
+  const buffer = await response.arrayBuffer();
+  fs.writeFileSync(tempPath, Buffer.from(buffer));
+
+  const pdfExtract = new PDFExtract();
+  const pdfData = await pdfExtract.extract(tempPath, {});
+
+  // Clean up temp file
+  try { fs.unlinkSync(tempPath); } catch {}
+
+  return pdfData;
+}
+
 // Fetch data from URL (handles single and multi-URL brands)
 async function fetchBrandData(brand: BrandConfig): Promise<any> {
   // Handle Citroen's dynamic Next.js URL
@@ -2476,6 +2574,18 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
       }
     }
     throw new Error(`No valid ${brand.name} price list found for years ${years.join(', ')}`);
+  }
+
+  // Handle Fiat PDF with special headers (server blocks generic requests)
+  if (brand.parser === 'fiat') {
+    console.log(`  Fetching ${brand.name} PDF from ${brand.url}`);
+    return fetchFiatPdf(brand.url);
+  }
+
+  // Handle Peugeot PDF with special headers
+  if (brand.parser === 'peugeot') {
+    console.log(`  Fetching ${brand.name} PDF from ${brand.url}`);
+    return fetchPeugeotPdf(brand.url);
   }
 
   console.log(`  Fetching ${brand.name} from ${brand.url}`);
