@@ -31,6 +31,7 @@ const brandIcons: { [key: string]: string } = {
   peugeot: 'PG',
   byd: 'BYD',
   opel: 'OP',
+  citroen: 'CT',
 };
 
 // Brand colors
@@ -44,6 +45,7 @@ const brandColors: { [key: string]: string } = {
   peugeot: '#1a1a1a',
   byd: '#c41230',
   opel: '#f7ff14', // Opel yellow
+  citroen: '#ac0f21', // Citroën red
 };
 
 export default function HomePage() {

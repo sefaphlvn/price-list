@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-01-28T13:05:43.140Z",
+  "generatedAt": "2026-01-28T14:39:34.136Z",
   "date": "2026-01-28",
-  "totalBrands": 9,
-  "successful": 9,
+  "totalBrands": 12,
+  "successful": 12,
   "failed": 0,
   "usedFallback": 0,
   "details": [
@@ -66,6 +66,27 @@
       "brand": "opel",
       "success": true,
       "count": 21,
+      "error": null,
+      "usedFallback": false
+    },
+    {
+      "brand": "citroen",
+      "success": true,
+      "count": 17,
+      "error": null,
+      "usedFallback": false
+    },
+    {
+      "brand": "bmw",
+      "success": true,
+      "count": 61,
+      "error": null,
+      "usedFallback": false
+    },
+    {
+      "brand": "mercedes",
+      "success": true,
+      "count": 52,
       "error": null,
       "usedFallback": false
     }

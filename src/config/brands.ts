@@ -15,6 +15,9 @@ export const BRAND_DIRECT_URLS: Record<string, string> = {
   peugeot: 'https://kampanya.peugeot.com.tr/fiyat-listesi/fiyatlar.pdf',
   byd: 'https://www.bydauto.com.tr/fiyat-listesi',
   opel: 'https://www.opel.com.tr/araclar', // Base URL - multi-URL brand
+  citroen: 'https://talep.citroen.com.tr/fiyat-listesi', // Page URL - uses dynamic build ID
+  bmw: 'https://www.borusanotomotiv.com/bmw/stage2/fiyat-listesi/static-fiyat-listesi-v2.aspx',
+  mercedes: 'https://pladmin.mercedes-benz.com.tr/api/product/searchByCategoryCode', // Base API URL - multi-URL brand
 };
 
 // Multiple URLs for brands with per-model pages
@@ -29,6 +32,38 @@ export const BRAND_MULTI_URLS: Record<string, string[]> = {
     'https://fiyatlisteleri.opel.com.tr/arac/astra-elektrik',
     'https://fiyatlisteleri.opel.com.tr/arac/yeni-grandland',
     'https://fiyatlisteleri.opel.com.tr/arac/yeni-grandland-elektrik',
+  ],
+  mercedes: [
+    // A-Class, CLA, AMG GT
+    'w177-fl',   // A-Class
+    'c118-fl',   // CLA Coupé
+    'x118-fl',   // CLA Shooting Brake
+    'x290-fl',   // AMG GT 4-Door
+    // C-Class
+    'w206',      // C-Class Sedan
+    's206',      // C-Class Estate
+    // E-Class
+    'w214',      // E-Class Sedan
+    'c236',      // E-Class Coupé
+    'a236',      // E-Class Cabriolet
+    // S-Class, Maybach
+    'wv223',     // S-Class
+    'z223',      // Mercedes-Maybach S-Class
+    // EQ Electric
+    'v295',      // EQE
+    'v297',      // EQS
+    // SUV
+    'h243-fl',   // GLA
+    'h247-fl',   // GLB
+    'x247-fl',   // GLC (old)
+    'x254',      // GLC (new)
+    'c254',      // GLC Coupé
+    'w465',      // G-Class
+    // Sports / Luxury
+    'r232',      // SL
+    'z232',      // Mercedes-Maybach SL
+    'c192',      // CLE Coupé
+    'c174',      // B-Class
   ],
 };
 
@@ -92,6 +127,28 @@ export const BRANDS: BrandConfig[] = [
     urls: BRAND_MULTI_URLS.opel,
     parser: 'opel',
     responseType: 'html',
+  },
+  {
+    id: 'citroen',
+    name: 'Citroën',
+    url: BRAND_DIRECT_URLS.citroen,
+    parser: 'citroen',
+    responseType: 'json',
+  },
+  {
+    id: 'bmw',
+    name: 'BMW',
+    url: BRAND_DIRECT_URLS.bmw,
+    parser: 'bmw',
+    responseType: 'html',
+  },
+  {
+    id: 'mercedes',
+    name: 'Mercedes-Benz',
+    url: BRAND_DIRECT_URLS.mercedes,
+    urls: BRAND_MULTI_URLS.mercedes,
+    parser: 'mercedes',
+    responseType: 'json',
   },
   // Ford disabled - API requires session cookies which cannot be proxied
   // {

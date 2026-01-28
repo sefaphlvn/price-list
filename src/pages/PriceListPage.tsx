@@ -56,6 +56,7 @@ import {
   PriceListUrlState,
 } from '../utils/urlState';
 import PriceTrendModal from '../components/pricelist/PriceTrendModal';
+import BrandDisclaimer from '../components/common/BrandDisclaimer';
 
 const { Title, Text } = Typography;
 const { Search } = Input;
@@ -751,6 +752,17 @@ export default function PriceListPage() {
           </div>
         )}
       </motion.div>
+
+      {/* Brand Disclaimer */}
+      {fetchState.data && (
+        <motion.div variants={staggerItem}>
+          <BrandDisclaimer
+            brandName={BRANDS.find(b => b.id === selectedBrand)?.name || selectedBrand}
+            lastUpdated={fetchState.data.lastUpdated ? dayjs(fetchState.data.lastUpdated).format('DD/MM/YYYY') : undefined}
+            variant="compact"
+          />
+        </motion.div>
+      )}
 
       {/* Error */}
       {fetchState.error && (

@@ -4,7 +4,7 @@ export interface BrandConfig {
   id: string;
   name: string;
   url: string;
-  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'ford' | 'fiat' | 'peugeot' | 'byd' | 'opel' | 'generic'; // Parser strategy
+  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'ford' | 'fiat' | 'peugeot' | 'byd' | 'opel' | 'citroen' | 'bmw' | 'mercedes' | 'generic'; // Parser strategy
   responseType?: 'json' | 'xml' | 'pdf' | 'html'; // Response type (default: json)
   urls?: string[]; // Multiple URLs for brands with per-model pages (e.g., Opel)
   logo?: string;

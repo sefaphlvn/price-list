@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-28T13:05:52.736Z",
+  "lastUpdated": "2026-01-28T14:39:41.576Z",
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
@@ -79,6 +79,30 @@
       ],
       "latestDate": "2026-01-28",
       "totalRecords": 21
+    },
+    "citroen": {
+      "name": "Citroën",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 17
+    },
+    "bmw": {
+      "name": "BMW",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 61
+    },
+    "mercedes": {
+      "name": "Mercedes-Benz",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 52
     }
   }
 }

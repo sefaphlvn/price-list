@@ -1,7 +1,8 @@
 // Footer Component
 import { useTranslation } from 'react-i18next';
-import { Typography, Space } from 'antd';
-import { GithubOutlined } from '@ant-design/icons';
+import { Typography, Space, Divider } from 'antd';
+import { GithubOutlined, MailOutlined, QuestionCircleOutlined } from '@ant-design/icons';
+import { Link as RouterLink } from 'react-router-dom';
 
 import { tokens } from '../../theme/tokens';
 
@@ -27,29 +28,65 @@ export default function Footer() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: tokens.spacing.md,
+          gap: tokens.spacing.lg,
           textAlign: 'center',
         }}
       >
-        <Text type="secondary" style={{ fontSize: 13 }}>
-          {t('footer.dataSource')}
-        </Text>
+        {/* Disclaimer Section */}
+        <div
+          style={{
+            maxWidth: 800,
+            padding: tokens.spacing.md,
+            background: tokens.colors.gray[50],
+            borderRadius: tokens.borderRadius.md,
+            borderLeft: `3px solid ${tokens.colors.gray[300]}`,
+          }}
+        >
+          <Text style={{ fontSize: 12, color: tokens.colors.gray[600], lineHeight: 1.6 }}>
+            <strong>{t('disclaimer.footerTitle')}</strong> {t('disclaimer.footerDesc')}
+          </Text>
+          <br />
+          <Text style={{ fontSize: 11, color: tokens.colors.gray[500], lineHeight: 1.5 }}>
+            {t('disclaimer.footerPrices')} <strong>{t('disclaimer.footerNonBinding')}</strong> {t('disclaimer.footerContact')}
+          </Text>
+        </div>
 
-        <Space split={<span style={{ color: tokens.colors.gray[300] }}>|</span>}>
-          <Text type="secondary" style={{ fontSize: 12 }}>
-            © {currentYear} OtoFiyatList
-          </Text>
-          <Text type="secondary" style={{ fontSize: 12 }}>
-            {t('footer.copyright')}
-          </Text>
+        <Divider style={{ margin: `${tokens.spacing.sm} 0`, borderColor: tokens.colors.gray[200] }} />
+
+        {/* Links Row */}
+        <Space size="large" wrap style={{ justifyContent: 'center' }}>
+          <RouterLink to="/sss" style={{ color: tokens.colors.gray[600], fontSize: 12, textDecoration: 'none' }}>
+            <QuestionCircleOutlined style={{ marginRight: 4 }} />
+            {t('faq.title')}
+          </RouterLink>
+          <Link
+            href="mailto:destek@otofiyatlist.com"
+            style={{ color: tokens.colors.gray[600], fontSize: 12 }}
+          >
+            <MailOutlined style={{ marginRight: 4 }} />
+            destek@otofiyatlist.com
+          </Link>
           <Link
             href="https://github.com"
             target="_blank"
-            style={{ color: tokens.colors.gray[500], fontSize: 12 }}
+            style={{ color: tokens.colors.gray[600], fontSize: 12 }}
           >
             <GithubOutlined style={{ marginRight: 4 }} />
             GitHub
           </Link>
+        </Space>
+
+        {/* Copyright Row */}
+        <Space split={<span style={{ color: tokens.colors.gray[300] }}>|</span>}>
+          <Text type="secondary" style={{ fontSize: 11 }}>
+            © {currentYear} OtoFiyatList
+          </Text>
+          <Text type="secondary" style={{ fontSize: 11 }}>
+            {t('footer.copyright')}
+          </Text>
+          <Text type="secondary" style={{ fontSize: 11 }}>
+            {t('disclaimer.updateFrequency')}
+          </Text>
         </Space>
       </div>
     </footer>
