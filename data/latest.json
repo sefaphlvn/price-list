@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-28T17:28:16.262Z",
-  "totalVehicles": 488,
+  "generatedAt": "2026-01-28T17:46:44.092Z",
+  "totalVehicles": 486,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
@@ -2276,26 +2276,6 @@
           "fuel": "Elektrik",
           "priceRaw": "2.002.000 TL",
           "priceNumeric": 2002000,
-          "brand": "Opel"
-        },
-        {
-          "model": "Frontera Hybrid",
-          "trim": "Edition",
-          "engine": "Hybrid 1.2 145 (136HP)²",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "2.157.000 TL",
-          "priceNumeric": 2157000,
-          "brand": "Opel"
-        },
-        {
-          "model": "Frontera Hybrid",
-          "trim": "GS",
-          "engine": "Hybrid 1.2 145 (136HP)²",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "2.285.000 TL",
-          "priceNumeric": 2285000,
           "brand": "Opel"
         },
         {

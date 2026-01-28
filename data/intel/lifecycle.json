@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-01-28T17:28:16.375Z",
+  "generatedAt": "2026-01-28T17:46:44.192Z",
   "date": "2026-01-28",
   "summary": {
-    "totalModels": 227,
+    "totalModels": 226,
     "totalTransitions": 0,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
@@ -1801,18 +1801,6 @@
       "trimCount": 2,
       "fuelTypes": [
         "Elektrik"
-      ],
-      "lastUpdated": "2026-01-28"
-    },
-    {
-      "brand": "Opel",
-      "brandId": "opel",
-      "model": "Frontera Hybrid",
-      "entryPrice": 2157000,
-      "topPrice": 2285000,
-      "trimCount": 2,
-      "fuelTypes": [
-        "Hybrid"
       ],
       "lastUpdated": "2026-01-28"
     },

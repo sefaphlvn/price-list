@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-28T17:28:16.353Z",
+  "generatedAt": "2026-01-28T17:46:44.169Z",
   "date": "2026-01-28",
   "ladders": [
     {
@@ -3310,39 +3310,6 @@
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
-    },
-    {
-      "id": "opel-frontera-hybrid",
-      "model": "Frontera Hybrid",
-      "brand": "Opel",
-      "brandId": "opel",
-      "trims": [
-        {
-          "trim": "Edition",
-          "price": 2157000,
-          "priceFormatted": "2.157.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "Hybrid 1.2 145 (136HP)²",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid"
-        },
-        {
-          "trim": "GS",
-          "price": 2285000,
-          "priceFormatted": "2.285.000 TL",
-          "stepFromBase": 128000,
-          "stepPercent": 5.9341678256838195,
-          "engine": "Hybrid 1.2 145 (136HP)²",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid"
-        }
-      ],
-      "basePrice": 2157000,
-      "topPrice": 2285000,
-      "priceSpread": 128000,
-      "priceSpreadPercent": 5.93,
-      "trimCount": 2
     },
     {
       "id": "opel-frontera-elektrik",
@@ -8089,16 +8056,6 @@
           "trimCount": 4
         },
         {
-          "brand": "Opel",
-          "brandId": "opel",
-          "model": "Frontera Hybrid",
-          "basePrice": 2157000,
-          "topPrice": 2285000,
-          "basePriceFormatted": "₺2.157.000",
-          "topPriceFormatted": "₺2.285.000",
-          "trimCount": 2
-        },
-        {
           "brand": "Peugeot",
           "brandId": "peugeot",
           "model": "408",
@@ -9109,8 +9066,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8401532,
-      "avgTopPrice": 8633308
+      "avgBasePrice": 8451091,
+      "avgTopPrice": 8683691
     },
     {
       "segment": "SUV",
@@ -10139,9 +10096,9 @@
     }
   ],
   "summary": {
-    "totalModels": 227,
-    "avgTrimsPerModel": 2.1,
-    "avgPriceSpread": 313848,
-    "avgPriceSpreadPercent": 10.89
+    "totalModels": 226,
+    "avgTrimsPerModel": 2.2,
+    "avgPriceSpread": 314671,
+    "avgPriceSpreadPercent": 10.91
   }
 }
