@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-01-28T12:33:22.710Z",
+  "generatedAt": "2026-01-28T13:02:51.432Z",
   "date": "2026-01-28",
   "summary": {
-    "totalModels": 87,
+    "totalModels": 96,
     "totalTransitions": 1,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
@@ -363,6 +363,117 @@
       "trimCount": 1,
       "fuelTypes": [
         "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Astra",
+      "entryPrice": 2215000,
+      "topPrice": 2571000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin",
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Astra Elektrik",
+      "entryPrice": 2458000,
+      "topPrice": 2458000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Corsa",
+      "entryPrice": 1505000,
+      "topPrice": 2078000,
+      "trimCount": 5,
+      "fuelTypes": [
+        "Benzin",
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Corsa E",
+      "entryPrice": 2002000,
+      "topPrice": 2002000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Frontera Elektrik",
+      "entryPrice": 1838000,
+      "topPrice": 1950000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Frontera Hybrid",
+      "entryPrice": 2157000,
+      "topPrice": 2285000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Grandland",
+      "entryPrice": 2968000,
+      "topPrice": 3071000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Grandland Elektrik",
+      "entryPrice": 3289000,
+      "topPrice": 3391000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Mokka",
+      "entryPrice": 1896000,
+      "topPrice": 2598000,
+      "trimCount": 4,
+      "fuelTypes": [
+        "Benzin",
+        "Hybrid"
       ],
       "lastUpdated": "2026-01-28"
     },

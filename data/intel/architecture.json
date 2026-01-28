@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-28T12:33:22.682Z",
+  "generatedAt": "2026-01-28T13:02:51.412Z",
   "date": "2026-01-28",
   "ladders": [
     {
@@ -3578,6 +3578,333 @@
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
+    },
+    {
+      "id": "opel-corsa",
+      "model": "Corsa",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "Edition",
+          "price": 1505000,
+          "priceFormatted": "1.505.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "Edition",
+          "price": 1749000,
+          "priceFormatted": "1.749.000 TL",
+          "stepFromBase": 244000,
+          "stepPercent": 16.21262458471761,
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "GS",
+          "price": 1824000,
+          "priceFormatted": "1.824.000 TL",
+          "stepFromBase": 319000,
+          "stepPercent": 21.196013289036543,
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "Edition",
+          "price": 1960000,
+          "priceFormatted": "1.960.000 TL",
+          "stepFromBase": 455000,
+          "stepPercent": 30.23255813953488,
+          "engine": "Hybrid 1.2 110 (100HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid"
+        },
+        {
+          "trim": "GS",
+          "price": 2078000,
+          "priceFormatted": "2.078.000 TL",
+          "stepFromBase": 573000,
+          "stepPercent": 38.073089700996675,
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid"
+        }
+      ],
+      "basePrice": 1505000,
+      "topPrice": 2078000,
+      "priceSpread": 573000,
+      "priceSpreadPercent": 38.07,
+      "trimCount": 5
+    },
+    {
+      "id": "opel-corsa-e",
+      "model": "Corsa E",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "GS",
+          "price": 2002000,
+          "priceFormatted": "2.002.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "100 kW",
+          "transmission": "",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 2002000,
+      "topPrice": 2002000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
+      "id": "opel-frontera-hybrid",
+      "model": "Frontera Hybrid",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "Edition",
+          "price": 2157000,
+          "priceFormatted": "2.157.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "Hybrid 1.2 145 (136HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid"
+        },
+        {
+          "trim": "GS",
+          "price": 2285000,
+          "priceFormatted": "2.285.000 TL",
+          "stepFromBase": 128000,
+          "stepPercent": 5.9341678256838195,
+          "engine": "Hybrid 1.2 145 (136HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid"
+        }
+      ],
+      "basePrice": 2157000,
+      "topPrice": 2285000,
+      "priceSpread": 128000,
+      "priceSpreadPercent": 5.93,
+      "trimCount": 2
+    },
+    {
+      "id": "opel-frontera-elektrik",
+      "model": "Frontera Elektrik",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "GS",
+          "price": 1838000,
+          "priceFormatted": "1.838.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "44 kWh Batarya",
+          "transmission": "",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "GS",
+          "price": 1950000,
+          "priceFormatted": "1.950.000 TL",
+          "stepFromBase": 112000,
+          "stepPercent": 6.093579978237215,
+          "engine": "54 kWh Batarya - Uzun Menzil",
+          "transmission": "",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 1838000,
+      "topPrice": 1950000,
+      "priceSpread": 112000,
+      "priceSpreadPercent": 6.09,
+      "trimCount": 2
+    },
+    {
+      "id": "opel-mokka",
+      "model": "Mokka",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "Edition",
+          "price": 1896000,
+          "priceFormatted": "1.896.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "1.2 136 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "Edition",
+          "price": 2085000,
+          "priceFormatted": "2.085.000 TL",
+          "stepFromBase": 189000,
+          "stepPercent": 9.968354430379748,
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "GS",
+          "price": 2208000,
+          "priceFormatted": "2.208.000 TL",
+          "stepFromBase": 312000,
+          "stepPercent": 16.455696202531644,
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "GS",
+          "price": 2598000,
+          "priceFormatted": "2.598.000 TL",
+          "stepFromBase": 702000,
+          "stepPercent": 37.0253164556962,
+          "engine": "Hybrid 1.2 145 (136 HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid"
+        }
+      ],
+      "basePrice": 1896000,
+      "topPrice": 2598000,
+      "priceSpread": 702000,
+      "priceSpreadPercent": 37.03,
+      "trimCount": 4
+    },
+    {
+      "id": "opel-astra",
+      "model": "Astra",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "GS",
+          "price": 2215000,
+          "priceFormatted": "2.215.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "GS",
+          "price": 2571000,
+          "priceFormatted": "2.571.000 TL",
+          "stepFromBase": 356000,
+          "stepPercent": 16.072234762979683,
+          "engine": "1.5 130 HP Dizel",
+          "transmission": "Otomatik",
+          "fuel": "Dizel"
+        }
+      ],
+      "basePrice": 2215000,
+      "topPrice": 2571000,
+      "priceSpread": 356000,
+      "priceSpreadPercent": 16.07,
+      "trimCount": 2
+    },
+    {
+      "id": "opel-astra-elektrik",
+      "model": "Astra Elektrik",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "GS",
+          "price": 2458000,
+          "priceFormatted": "2.458.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "115 kW",
+          "transmission": "",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 2458000,
+      "topPrice": 2458000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
+      "id": "opel-grandland",
+      "model": "Grandland",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "Edition",
+          "price": 2968000,
+          "priceFormatted": "2.968.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid"
+        },
+        {
+          "trim": "GS",
+          "price": 3071000,
+          "priceFormatted": "3.071.000 TL",
+          "stepFromBase": 103000,
+          "stepPercent": 3.4703504043126685,
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid"
+        }
+      ],
+      "basePrice": 2968000,
+      "topPrice": 3071000,
+      "priceSpread": 103000,
+      "priceSpreadPercent": 3.47,
+      "trimCount": 2
+    },
+    {
+      "id": "opel-grandland-elektrik",
+      "model": "Grandland Elektrik",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "GS",
+          "price": 3289000,
+          "priceFormatted": "3.289.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "157 kW",
+          "transmission": "",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Edition",
+          "price": 3391000,
+          "priceFormatted": "3.391.000 TL",
+          "stepFromBase": 102000,
+          "stepPercent": 3.1012465795074493,
+          "engine": "157 kW",
+          "transmission": "",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 3289000,
+      "topPrice": 3391000,
+      "priceSpread": 102000,
+      "priceSpreadPercent": 3.1,
+      "trimCount": 2
     }
   ],
   "crossBrandComparison": [
@@ -3665,6 +3992,16 @@
           "trimCount": 3
         },
         {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Corsa",
+          "basePrice": 1505000,
+          "topPrice": 2078000,
+          "basePriceFormatted": "₺1.505.000",
+          "topPriceFormatted": "₺2.078.000",
+          "trimCount": 5
+        },
+        {
           "brand": "Toyota",
           "brandId": "toyota",
           "model": "Proace City",
@@ -3735,6 +4072,16 @@
           "trimCount": 2
         },
         {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Mokka",
+          "basePrice": 1896000,
+          "topPrice": 2598000,
+          "basePriceFormatted": "₺1.896.000",
+          "topPriceFormatted": "₺2.598.000",
+          "trimCount": 4
+        },
+        {
           "brand": "Škoda",
           "brandId": "skoda",
           "model": "Škoda Kamiq",
@@ -3753,6 +4100,16 @@
           "basePriceFormatted": "₺2.001.000",
           "topPriceFormatted": "₺3.079.000",
           "trimCount": 6
+        },
+        {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Corsa E",
+          "basePrice": 2002000,
+          "topPrice": 2002000,
+          "basePriceFormatted": "₺2.002.000",
+          "topPriceFormatted": "₺2.002.000",
+          "trimCount": 1
         },
         {
           "brand": "Fiat",
@@ -3785,6 +4142,16 @@
           "trimCount": 4
         },
         {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Frontera Hybrid",
+          "basePrice": 2157000,
+          "topPrice": 2285000,
+          "basePriceFormatted": "₺2.157.000",
+          "topPriceFormatted": "₺2.285.000",
+          "trimCount": 2
+        },
+        {
           "brand": "Peugeot",
           "brandId": "peugeot",
           "model": "408",
@@ -3813,6 +4180,16 @@
           "basePriceFormatted": "₺2.209.000",
           "topPriceFormatted": "₺2.209.000",
           "trimCount": 1
+        },
+        {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Astra",
+          "basePrice": 2215000,
+          "topPrice": 2571000,
+          "basePriceFormatted": "₺2.215.000",
+          "topPriceFormatted": "₺2.571.000",
+          "trimCount": 2
         },
         {
           "brand": "Hyundai",
@@ -3883,6 +4260,16 @@
           "basePriceFormatted": "₺2.870.000",
           "topPriceFormatted": "₺2.870.000",
           "trimCount": 1
+        },
+        {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Grandland",
+          "basePrice": 2968000,
+          "topPrice": 3071000,
+          "basePriceFormatted": "₺2.968.000",
+          "topPriceFormatted": "₺3.071.000",
+          "trimCount": 2
         },
         {
           "brand": "Volkswagen",
@@ -3975,8 +4362,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 2719562,
-      "avgTopPrice": 3070703
+      "avgBasePrice": 2640131,
+      "avgTopPrice": 2985831
     },
     {
       "segment": "SUV",
@@ -4243,6 +4630,133 @@
       "avgTopPrice": 2797650
     },
     {
+      "segment": "Electric",
+      "models": [
+        {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Frontera Elektrik",
+          "basePrice": 1838000,
+          "topPrice": 1950000,
+          "basePriceFormatted": "₺1.838.000",
+          "topPriceFormatted": "₺1.950.000",
+          "trimCount": 2
+        },
+        {
+          "brand": "Renault",
+          "brandId": "renault",
+          "model": "R5 E-Tech ELEKTRİKLİ",
+          "basePrice": 1887999.99,
+          "topPrice": 1940000.01,
+          "basePriceFormatted": "₺1.888.000",
+          "topPriceFormatted": "₺1.940.000",
+          "trimCount": 2
+        },
+        {
+          "brand": "Hyundai",
+          "brandId": "hyundai",
+          "model": "KONA Elektrik",
+          "basePrice": 2184000,
+          "topPrice": 2184000,
+          "basePriceFormatted": "₺2.184.000",
+          "topPriceFormatted": "₺2.184.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "Hyundai",
+          "brandId": "hyundai",
+          "model": "IONIQ 6",
+          "basePrice": 2284000,
+          "topPrice": 2284000,
+          "basePriceFormatted": "₺2.284.000",
+          "topPriceFormatted": "₺2.284.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "Hyundai",
+          "brandId": "hyundai",
+          "model": "IONIQ 5",
+          "basePrice": 2435000,
+          "topPrice": 2435000,
+          "basePriceFormatted": "₺2.435.000",
+          "topPriceFormatted": "₺2.435.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Astra Elektrik",
+          "basePrice": 2458000,
+          "topPrice": 2458000,
+          "basePriceFormatted": "₺2.458.000",
+          "topPriceFormatted": "₺2.458.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "Volkswagen",
+          "brandId": "volkswagen",
+          "model": "ID.4",
+          "basePrice": 2462000,
+          "topPrice": 2462000,
+          "basePriceFormatted": "₺2.462.000",
+          "topPriceFormatted": "₺2.462.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "BYD",
+          "brandId": "byd",
+          "model": "SEAL U EV",
+          "basePrice": 2489000,
+          "topPrice": 2489000,
+          "basePriceFormatted": "₺2.489.000",
+          "topPriceFormatted": "₺2.489.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Grandland Elektrik",
+          "basePrice": 3289000,
+          "topPrice": 3391000,
+          "basePriceFormatted": "₺3.289.000",
+          "topPriceFormatted": "₺3.391.000",
+          "trimCount": 2
+        },
+        {
+          "brand": "Volkswagen",
+          "brandId": "volkswagen",
+          "model": "ID.7",
+          "basePrice": 4307000,
+          "topPrice": 4307000,
+          "basePriceFormatted": "₺4.307.000",
+          "topPriceFormatted": "₺4.307.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "Hyundai",
+          "brandId": "hyundai",
+          "model": "IONIQ 9",
+          "basePrice": 5394000,
+          "topPrice": 6458000,
+          "basePriceFormatted": "₺5.394.000",
+          "topPriceFormatted": "₺6.458.000",
+          "trimCount": 2
+        },
+        {
+          "brand": "Hyundai",
+          "brandId": "hyundai",
+          "model": "IONIQ 5 N",
+          "basePrice": 5655000,
+          "topPrice": 5655000,
+          "basePriceFormatted": "₺5.655.000",
+          "topPriceFormatted": "₺5.655.000",
+          "trimCount": 1
+        }
+      ],
+      "avgBasePrice": 3056917,
+      "avgTopPrice": 3167750
+    },
+    {
       "segment": "Sedan",
       "models": [
         {
@@ -4360,103 +4874,6 @@
       "avgTopPrice": 3298155
     },
     {
-      "segment": "Electric",
-      "models": [
-        {
-          "brand": "Renault",
-          "brandId": "renault",
-          "model": "R5 E-Tech ELEKTRİKLİ",
-          "basePrice": 1887999.99,
-          "topPrice": 1940000.01,
-          "basePriceFormatted": "₺1.888.000",
-          "topPriceFormatted": "₺1.940.000",
-          "trimCount": 2
-        },
-        {
-          "brand": "Hyundai",
-          "brandId": "hyundai",
-          "model": "KONA Elektrik",
-          "basePrice": 2184000,
-          "topPrice": 2184000,
-          "basePriceFormatted": "₺2.184.000",
-          "topPriceFormatted": "₺2.184.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "Hyundai",
-          "brandId": "hyundai",
-          "model": "IONIQ 6",
-          "basePrice": 2284000,
-          "topPrice": 2284000,
-          "basePriceFormatted": "₺2.284.000",
-          "topPriceFormatted": "₺2.284.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "Hyundai",
-          "brandId": "hyundai",
-          "model": "IONIQ 5",
-          "basePrice": 2435000,
-          "topPrice": 2435000,
-          "basePriceFormatted": "₺2.435.000",
-          "topPriceFormatted": "₺2.435.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "Volkswagen",
-          "brandId": "volkswagen",
-          "model": "ID.4",
-          "basePrice": 2462000,
-          "topPrice": 2462000,
-          "basePriceFormatted": "₺2.462.000",
-          "topPriceFormatted": "₺2.462.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "BYD",
-          "brandId": "byd",
-          "model": "SEAL U EV",
-          "basePrice": 2489000,
-          "topPrice": 2489000,
-          "basePriceFormatted": "₺2.489.000",
-          "topPriceFormatted": "₺2.489.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "Volkswagen",
-          "brandId": "volkswagen",
-          "model": "ID.7",
-          "basePrice": 4307000,
-          "topPrice": 4307000,
-          "basePriceFormatted": "₺4.307.000",
-          "topPriceFormatted": "₺4.307.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "Hyundai",
-          "brandId": "hyundai",
-          "model": "IONIQ 9",
-          "basePrice": 5394000,
-          "topPrice": 6458000,
-          "basePriceFormatted": "₺5.394.000",
-          "topPriceFormatted": "₺6.458.000",
-          "trimCount": 2
-        },
-        {
-          "brand": "Hyundai",
-          "brandId": "hyundai",
-          "model": "IONIQ 5 N",
-          "basePrice": 5655000,
-          "topPrice": 5655000,
-          "basePriceFormatted": "₺5.655.000",
-          "topPriceFormatted": "₺5.655.000",
-          "trimCount": 1
-        }
-      ],
-      "avgBasePrice": 3233111,
-      "avgTopPrice": 3357111
-    },
-    {
       "segment": "MPV",
       "models": [
         {
@@ -4505,9 +4922,9 @@
     }
   ],
   "summary": {
-    "totalModels": 89,
+    "totalModels": 98,
     "avgTrimsPerModel": 2.7,
-    "avgPriceSpread": 431702,
-    "avgPriceSpreadPercent": 18.04
+    "avgPriceSpread": 413240,
+    "avgPriceSpreadPercent": 17.51
   }
 }

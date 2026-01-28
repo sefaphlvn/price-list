@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-01-28T12:33:22.632Z",
-  "totalVehicles": 242,
+  "generatedAt": "2026-01-28T13:02:51.375Z",
+  "totalVehicles": 263,
   "overallStats": {
-    "avgPrice": 2752427,
+    "avgPrice": 2715533,
     "minPrice": 575900,
     "maxPrice": 12000000,
-    "medianPrice": 2368950
+    "medianPrice": 2308500
   },
   "brandStats": [
     {
@@ -65,6 +65,14 @@
       "medianPrice": 2204999.99
     },
     {
+      "name": "Opel",
+      "vehicleCount": 21,
+      "avgPrice": 2290381,
+      "minPrice": 1505000,
+      "maxPrice": 3391000,
+      "medianPrice": 2157000
+    },
+    {
       "name": "BYD",
       "vehicleCount": 12,
       "avgPrice": 2897500,
@@ -76,50 +84,50 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 109,
-      "percentage": 45,
-      "avgPrice": 2690806
+      "count": 116,
+      "percentage": 44.1,
+      "avgPrice": 2644654
     },
     {
       "fuel": "Elektrik",
-      "count": 50,
-      "percentage": 20.7,
-      "avgPrice": 2616762
+      "count": 56,
+      "percentage": 21.3,
+      "avgPrice": 2602966
     },
     {
       "fuel": "Dizel",
-      "count": 39,
-      "percentage": 16.1,
-      "avgPrice": 3060054
+      "count": 40,
+      "percentage": 15.2,
+      "avgPrice": 3047828
     },
     {
       "fuel": "Hybrid",
-      "count": 27,
-      "percentage": 11.2,
-      "avgPrice": 2576500
+      "count": 34,
+      "percentage": 12.9,
+      "avgPrice": 2549485
     },
     {
       "fuel": "Bilinmiyor",
       "count": 5,
-      "percentage": 2.1,
+      "percentage": 1.9,
       "avgPrice": 3338000
     },
     {
       "fuel": "Plug-in Hybrid",
       "count": 4,
-      "percentage": 1.7,
+      "percentage": 1.5,
       "avgPrice": 4329000
     },
     {
       "fuel": "Benzin-LPG",
       "count": 3,
-      "percentage": 1.2,
+      "percentage": 1.1,
       "avgPrice": 2276667
     },
     {
       "fuel": "Elektrik - Benzin",
       "count": 3,
-      "percentage": 1.2,
+      "percentage": 1.1,
       "avgPrice": 1699233
     },
     {
@@ -132,50 +140,50 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 99,
-      "percentage": 40.9,
-      "avgPrice": 2355303
+      "count": 112,
+      "percentage": 42.6,
+      "avgPrice": 2347714
     },
     {
       "transmission": "DSG",
       "count": 57,
-      "percentage": 23.6,
+      "percentage": 21.7,
       "avgPrice": 3735170
     },
     {
       "transmission": "DCT",
       "count": 31,
-      "percentage": 12.8,
+      "percentage": 11.8,
       "avgPrice": 2121129
     },
     {
       "transmission": "Bilinmiyor",
-      "count": 17,
-      "percentage": 7,
-      "avgPrice": 3177712
+      "count": 23,
+      "percentage": 8.7,
+      "avgPrice": 2997787
     },
     {
       "transmission": "Manuel",
-      "count": 13,
-      "percentage": 5.4,
-      "avgPrice": 1630808
+      "count": 15,
+      "percentage": 5.7,
+      "avgPrice": 1640100
     },
     {
       "transmission": "Automatic",
       "count": 12,
-      "percentage": 5,
+      "percentage": 4.6,
       "avgPrice": 3366750
     },
     {
       "transmission": "Düz",
       "count": 6,
-      "percentage": 2.5,
+      "percentage": 2.3,
       "avgPrice": 1585333
     },
     {
       "transmission": "Manual",
       "count": 4,
-      "percentage": 1.7,
+      "percentage": 1.5,
       "avgPrice": 1351750
     },
     {
@@ -197,28 +205,28 @@
       "min": 0,
       "max": 1500000,
       "count": 19,
-      "percentage": 7.9
+      "percentage": 7.2
     },
     {
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 153,
-      "percentage": 63.2
+      "count": 171,
+      "percentage": 65
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
-      "count": 55,
-      "percentage": 22.7
+      "count": 58,
+      "percentage": 22.1
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
       "count": 15,
-      "percentage": 6.2
+      "percentage": 5.7
     }
   ]
 }

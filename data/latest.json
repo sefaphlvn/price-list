@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-28T12:33:22.620Z",
-  "totalVehicles": 242,
+  "generatedAt": "2026-01-28T13:02:51.365Z",
+  "totalVehicles": 263,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
@@ -2467,6 +2467,222 @@
           "priceRaw": "5.314.000 ₺",
           "priceNumeric": 5314000,
           "brand": "BYD"
+        }
+      ]
+    },
+    "opel": {
+      "name": "Opel",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "Corsa",
+          "trim": "Edition",
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.505.000 TL",
+          "priceNumeric": 1505000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Corsa",
+          "trim": "Edition",
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.749.000 TL",
+          "priceNumeric": 1749000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Corsa",
+          "trim": "GS",
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.824.000 TL",
+          "priceNumeric": 1824000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Corsa",
+          "trim": "Edition",
+          "engine": "Hybrid 1.2 110 (100HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "1.960.000 TL",
+          "priceNumeric": 1960000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Corsa",
+          "trim": "GS",
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.078.000 TL",
+          "priceNumeric": 2078000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Corsa E",
+          "trim": "GS",
+          "engine": "100 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "2.002.000 TL",
+          "priceNumeric": 2002000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Frontera Hybrid",
+          "trim": "Edition",
+          "engine": "Hybrid 1.2 145 (136HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.157.000 TL",
+          "priceNumeric": 2157000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Frontera Hybrid",
+          "trim": "GS",
+          "engine": "Hybrid 1.2 145 (136HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.285.000 TL",
+          "priceNumeric": 2285000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Frontera Elektrik",
+          "trim": "GS",
+          "engine": "44 kWh Batarya",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "1.838.000 TL",
+          "priceNumeric": 1838000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Frontera Elektrik",
+          "trim": "GS",
+          "engine": "54 kWh Batarya - Uzun Menzil",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "1.950.000 TL",
+          "priceNumeric": 1950000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Mokka",
+          "trim": "Edition",
+          "engine": "1.2 136 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.896.000 TL",
+          "priceNumeric": 1896000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Mokka",
+          "trim": "Edition",
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.085.000 TL",
+          "priceNumeric": 2085000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Mokka",
+          "trim": "GS",
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.208.000 TL",
+          "priceNumeric": 2208000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Mokka",
+          "trim": "GS",
+          "engine": "Hybrid 1.2 145 (136 HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.598.000 TL",
+          "priceNumeric": 2598000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Astra",
+          "trim": "GS",
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.215.000 TL",
+          "priceNumeric": 2215000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Astra",
+          "trim": "GS",
+          "engine": "1.5 130 HP Dizel",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "2.571.000 TL",
+          "priceNumeric": 2571000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Astra Elektrik",
+          "trim": "GS",
+          "engine": "115 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "2.458.000 TL",
+          "priceNumeric": 2458000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Grandland",
+          "trim": "Edition",
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.968.000 TL",
+          "priceNumeric": 2968000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Grandland",
+          "trim": "GS",
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.071.000 TL",
+          "priceNumeric": 3071000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Grandland Elektrik",
+          "trim": "Edition",
+          "engine": "157 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "3.391.000 TL",
+          "priceNumeric": 3391000,
+          "brand": "Opel"
+        },
+        {
+          "model": "Grandland Elektrik",
+          "trim": "GS",
+          "engine": "157 kW",
+          "transmission": "",
+          "fuel": "Elektrik",
+          "priceRaw": "3.289.000 TL",
+          "priceNumeric": 3289000,
+          "brand": "Opel"
         }
       ]
     }
