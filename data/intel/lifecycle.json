@@ -1,13 +1,28 @@
 {
-  "generatedAt": "2026-01-28T18:15:07.958Z",
+  "generatedAt": "2026-01-28T20:12:23.245Z",
   "date": "2026-01-28",
   "summary": {
-    "totalModels": 227,
-    "totalTransitions": 0,
+    "totalModels": 233,
+    "totalTransitions": 1,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
   },
-  "modelYearTransitions": [],
+  "modelYearTransitions": [
+    {
+      "id": "fiat-Topolino-2024-2026",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "oldYear": "2024",
+      "newYear": "2026",
+      "oldEntryPrice": 575900,
+      "newEntryPrice": 649900,
+      "priceDelta": 74000,
+      "priceDeltaPercent": 12.85,
+      "transitionDate": "2026-01-28",
+      "trimCount": 2
+    }
+  ],
   "entryPriceDeltas": [],
   "staleModels": [],
   "allModels": [
@@ -19,7 +34,7 @@
       "topPrice": 4037900,
       "trimCount": 2,
       "fuelTypes": [
-        "Mild Hybrid"
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -31,7 +46,7 @@
       "topPrice": 4252100,
       "trimCount": 2,
       "fuelTypes": [
-        "Mild Hybrid"
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -43,7 +58,7 @@
       "topPrice": 5099200,
       "trimCount": 2,
       "fuelTypes": [
-        "Plug-in Hybrid"
+        "Plug-in Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -103,7 +118,7 @@
       "topPrice": 11513600,
       "trimCount": 2,
       "fuelTypes": [
-        "Mild Hybrid"
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -115,7 +130,7 @@
       "topPrice": 8460000,
       "trimCount": 2,
       "fuelTypes": [
-        "Mild Hybrid"
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -127,7 +142,7 @@
       "topPrice": 20469100,
       "trimCount": 2,
       "fuelTypes": [
-        "Mild Hybrid"
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -331,7 +346,7 @@
       "topPrice": 22699500,
       "trimCount": 1,
       "fuelTypes": [
-        "Plug-in Hybrid"
+        "Plug-in Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -355,7 +370,7 @@
       "topPrice": 4713000,
       "trimCount": 2,
       "fuelTypes": [
-        "Mild Hybrid"
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -367,7 +382,7 @@
       "topPrice": 5369600,
       "trimCount": 2,
       "fuelTypes": [
-        "Plug-in Hybrid"
+        "Plug-in Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -391,7 +406,7 @@
       "topPrice": 5212100,
       "trimCount": 1,
       "fuelTypes": [
-        "Mild Hybrid"
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -463,7 +478,7 @@
       "topPrice": 22836200,
       "trimCount": 1,
       "fuelTypes": [
-        "Plug-in Hybrid"
+        "Plug-in Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -607,7 +622,7 @@
       "topPrice": 2150000,
       "trimCount": 3,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -679,7 +694,7 @@
       "topPrice": 2800000,
       "trimCount": 2,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -704,6 +719,79 @@
       "trimCount": 2,
       "fuelTypes": [
         "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "500e",
+      "entryPrice": 2019900,
+      "topPrice": 2175900,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "600",
+      "entryPrice": 1697900,
+      "topPrice": 1969900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Cross",
+      "entryPrice": 1379900,
+      "topPrice": 1949900,
+      "trimCount": 7,
+      "fuelTypes": [
+        "Benzin",
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Sedan",
+      "entryPrice": 1569900,
+      "topPrice": 1789900,
+      "trimCount": 5,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "entryPrice": 1499900,
+      "topPrice": 1749900,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "entryPrice": 575900,
+      "topPrice": 694900,
+      "trimCount": 5,
+      "fuelTypes": [
+        "Elektrik"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -775,7 +863,7 @@
       "topPrice": 2138700,
       "trimCount": 4,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1689,7 +1777,7 @@
       "topPrice": 3571800,
       "trimCount": 7,
       "fuelTypes": [
-        "Mild Hybrid"
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1701,7 +1789,7 @@
       "topPrice": 3785900,
       "trimCount": 4,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1738,7 +1826,7 @@
       "topPrice": 4783500,
       "trimCount": 2,
       "fuelTypes": [
-        "Mild Hybrid"
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1776,7 +1864,7 @@
       "trimCount": 5,
       "fuelTypes": [
         "Benzin",
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1812,7 +1900,7 @@
       "topPrice": 2285000,
       "trimCount": 2,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1824,7 +1912,7 @@
       "topPrice": 3071000,
       "trimCount": 2,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1849,7 +1937,7 @@
       "trimCount": 4,
       "fuelTypes": [
         "Benzin",
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1862,7 +1950,7 @@
       "trimCount": 3,
       "fuelTypes": [
         "Benzin",
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1874,7 +1962,7 @@
       "topPrice": 3259000,
       "trimCount": 2,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1887,7 +1975,7 @@
       "trimCount": 6,
       "fuelTypes": [
         "Benzin",
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1899,7 +1987,7 @@
       "topPrice": 3493000,
       "trimCount": 2,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2068,7 +2156,7 @@
       "topPrice": 3750000,
       "trimCount": 1,
       "fuelTypes": [
-        "Benzin-Elektrik"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2081,7 +2169,7 @@
       "trimCount": 3,
       "fuelTypes": [
         "Benzin",
-        "Benzin-Elektrik"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2093,7 +2181,7 @@
       "topPrice": 2565000.01,
       "trimCount": 6,
       "fuelTypes": [
-        "Benzin-LPG",
+        "LPG",
         "Benzin"
       ],
       "lastUpdated": "2026-01-28"
@@ -2275,7 +2363,7 @@
       "trimCount": 7,
       "fuelTypes": [
         "Benzin",
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2287,7 +2375,7 @@
       "topPrice": 3157000,
       "trimCount": 3,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2299,7 +2387,7 @@
       "topPrice": 2419500,
       "trimCount": 2,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2311,7 +2399,7 @@
       "topPrice": 4995000,
       "trimCount": 4,
       "fuelTypes": [
-        ""
+        "Diger"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2360,7 +2448,7 @@
       "trimCount": 2,
       "fuelTypes": [
         "Dizel",
-        ""
+        "Diger"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2408,7 +2496,7 @@
       "topPrice": 2870000,
       "trimCount": 1,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2420,7 +2508,7 @@
       "topPrice": 2182500,
       "trimCount": 2,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2432,7 +2520,7 @@
       "topPrice": 2555000,
       "trimCount": 3,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2444,7 +2532,7 @@
       "topPrice": 2419500,
       "trimCount": 1,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2456,7 +2544,7 @@
       "topPrice": 2755000,
       "trimCount": 3,
       "fuelTypes": [
-        "Hybrid"
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -2529,7 +2617,7 @@
       "trimCount": 11,
       "fuelTypes": [
         "Benzin",
-        "Plug-in Hybrid",
+        "Plug-in Hibrit",
         "Dizel"
       ],
       "lastUpdated": "2026-01-28"

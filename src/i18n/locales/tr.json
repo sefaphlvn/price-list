@@ -210,12 +210,22 @@
     "date": "Tarih"
   },
   "fuels": {
+    "petrol": "Benzin",
+    "diesel": "Dizel",
+    "electric": "Elektrik",
+    "hybrid": "Hibrit",
+    "phev": "Plug-in Hibrit",
     "benzin": "Benzin",
     "dizel": "Dizel",
     "elektrik": "Elektrik",
-    "hybrid": "Hybrid",
-    "pluginHybrid": "Plug-in Hybrid",
+    "pluginHybrid": "Plug-in Hibrit",
     "cng": "CNG"
+  },
+  "transmission": {
+    "automatic": "Otomatik",
+    "manual": "Manuel",
+    "otomatik": "Otomatik",
+    "manuel": "Manuel"
   },
   "segments": {
     "bodyTypes": {
@@ -443,14 +453,33 @@
   },
   "lifecycle": {
     "title": "Yasam Dongusu",
-    "subtitle": "Model yili gecisleri ve yenileme sinyalleri",
+    "subtitle": "Model yili gecisleri ve fiyat degisimlerini takip edin",
     "yearTransitions": "Yil Gecisleri",
     "noTransitions": "Model yili gecisi bulunamadi",
     "upcomingRefreshes": "Yaklasan Yenilemeler",
     "entryPrices": "Giris Fiyatlari",
     "totalTransitions": "Yil Gecisi",
     "staleModels": "Eski Modeller",
-    "avgEntryPrice": "Ort. Giris Fiyati"
+    "avgEntryPrice": "Ort. Giris Fiyati",
+    "yearChange": "Yil Gecisi",
+    "oldEntry": "Eski Giris",
+    "newEntry": "Yeni Giris",
+    "delta": "Degisim",
+    "trims": "Donanim",
+    "previousEntry": "Onceki Giris",
+    "currentEntry": "Guncel Giris",
+    "period": "Donem",
+    "lastUpdate": "Son Guncelleme",
+    "daysSince": "Gun",
+    "entryPrice": "Giris Fiyati",
+    "topPrice": "Tepe Fiyat",
+    "fuelTypes": "Yakit",
+    "totalModels": "Toplam Model",
+    "avgEntryDelta": "Ort. Giris Degisimi",
+    "entryPriceChanges": "Giris Fiyat Degisimleri",
+    "allModels": "Tum Modeller",
+    "noStaleModels": "Eski model bulunamadi",
+    "noEntryDeltas": "Giris fiyati degisimi bulunamadi"
   },
   "alertsV2": {
     "title": "Gelismis Uyarilar",

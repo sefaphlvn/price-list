@@ -210,12 +210,22 @@
     "date": "Date"
   },
   "fuels": {
+    "petrol": "Gasoline",
+    "diesel": "Diesel",
+    "electric": "Electric",
+    "hybrid": "Hybrid",
+    "phev": "Plug-in Hybrid",
     "benzin": "Gasoline",
     "dizel": "Diesel",
     "elektrik": "Electric",
-    "hybrid": "Hybrid",
     "pluginHybrid": "Plug-in Hybrid",
     "cng": "CNG"
+  },
+  "transmission": {
+    "automatic": "Automatic",
+    "manual": "Manual",
+    "otomatik": "Automatic",
+    "manuel": "Manual"
   },
   "segments": {
     "bodyTypes": {
@@ -443,14 +453,33 @@
   },
   "lifecycle": {
     "title": "Lifecycle",
-    "subtitle": "Model year transitions and refresh signals",
+    "subtitle": "Track model year transitions and price changes",
     "yearTransitions": "Year Transitions",
     "noTransitions": "No model year transitions found",
     "upcomingRefreshes": "Upcoming Refreshes",
     "entryPrices": "Entry Prices",
     "totalTransitions": "Year Transitions",
     "staleModels": "Stale Models",
-    "avgEntryPrice": "Avg. Entry Price"
+    "avgEntryPrice": "Avg. Entry Price",
+    "yearChange": "Year Change",
+    "oldEntry": "Old Entry",
+    "newEntry": "New Entry",
+    "delta": "Change",
+    "trims": "Trims",
+    "previousEntry": "Previous Entry",
+    "currentEntry": "Current Entry",
+    "period": "Period",
+    "lastUpdate": "Last Update",
+    "daysSince": "Days",
+    "entryPrice": "Entry Price",
+    "topPrice": "Top Price",
+    "fuelTypes": "Fuel",
+    "totalModels": "Total Models",
+    "avgEntryDelta": "Avg. Entry Change",
+    "entryPriceChanges": "Entry Price Changes",
+    "allModels": "All Models",
+    "noStaleModels": "No stale models found",
+    "noEntryDeltas": "No entry price changes found"
   },
   "alertsV2": {
     "title": "Advanced Alerts",

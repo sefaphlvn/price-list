@@ -295,11 +295,11 @@ export default function GapsPage() {
               onChange={setSelectedFuel}
               options={[
                 { value: 'all', label: t('common.all', 'Tumu') },
-                { value: 'Petrol', label: 'Benzin' },
-                { value: 'Diesel', label: 'Dizel' },
-                { value: 'Hybrid', label: 'Hybrid' },
-                { value: 'PHEV', label: 'PHEV' },
-                { value: 'Electric', label: 'Elektrik' },
+                { value: 'Benzin', label: t('fuels.petrol', 'Benzin') },
+                { value: 'Dizel', label: t('fuels.diesel', 'Dizel') },
+                { value: 'Hibrit', label: t('fuels.hybrid', 'Hibrit') },
+                { value: 'Plug-in Hibrit', label: t('fuels.phev', 'Plug-in Hibrit') },
+                { value: 'Elektrik', label: t('fuels.electric', 'Elektrik') },
               ]}
               placeholder={t('gaps.selectFuel', 'Yakit sec')}
             />
@@ -309,8 +309,8 @@ export default function GapsPage() {
               onChange={setSelectedTransmission}
               options={[
                 { value: 'all', label: t('common.all', 'Tumu') },
-                { value: 'Automatic', label: 'Otomatik' },
-                { value: 'Manual', label: 'Manuel' },
+                { value: 'Otomatik', label: t('transmission.automatic', 'Otomatik') },
+                { value: 'Manuel', label: t('transmission.manual', 'Manuel') },
               ]}
               placeholder={t('gaps.selectTransmission', 'Sanziman sec')}
             />
