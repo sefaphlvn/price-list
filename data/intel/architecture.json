@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-28T16:24:15.729Z",
+  "generatedAt": "2026-01-28T17:10:32.726Z",
   "date": "2026-01-28",
   "ladders": [
     {
@@ -3578,6 +3578,69 @@
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
+    },
+    {
+      "id": "opel-corsa",
+      "model": "Corsa",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "Edition",
+          "price": 1505000,
+          "priceFormatted": "1.505.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "Edition",
+          "price": 1749000,
+          "priceFormatted": "1.749.000 TL",
+          "stepFromBase": 244000,
+          "stepPercent": 16.21262458471761,
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "GS",
+          "price": 1824000,
+          "priceFormatted": "1.824.000 TL",
+          "stepFromBase": 319000,
+          "stepPercent": 21.196013289036543,
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "Edition",
+          "price": 1960000,
+          "priceFormatted": "1.960.000 TL",
+          "stepFromBase": 455000,
+          "stepPercent": 30.23255813953488,
+          "engine": "Hybrid 1.2 110 (100HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid"
+        },
+        {
+          "trim": "GS",
+          "price": 2078000,
+          "priceFormatted": "2.078.000 TL",
+          "stepFromBase": 573000,
+          "stepPercent": 38.073089700996675,
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid"
+        }
+      ],
+      "basePrice": 1505000,
+      "topPrice": 2078000,
+      "priceSpread": 573000,
+      "priceSpreadPercent": 38.07,
+      "trimCount": 5
     },
     {
       "id": "opel-corsa-e",
@@ -8240,6 +8303,16 @@
           "trimCount": 3
         },
         {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Corsa",
+          "basePrice": 1505000,
+          "topPrice": 2078000,
+          "basePriceFormatted": "₺1.505.000",
+          "topPriceFormatted": "₺2.078.000",
+          "trimCount": 5
+        },
+        {
           "brand": "Toyota",
           "brandId": "toyota",
           "model": "Proace City",
@@ -9460,8 +9533,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8074796,
-      "avgTopPrice": 8301868
+      "avgBasePrice": 8025767,
+      "avgTopPrice": 8255421
     },
     {
       "segment": "SUV",
@@ -10500,9 +10573,9 @@
     }
   ],
   "summary": {
-    "totalModels": 234,
+    "totalModels": 235,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 308669,
-    "avgPriceSpreadPercent": 10.87
+    "avgPriceSpread": 309794,
+    "avgPriceSpreadPercent": 10.99
   }
 }

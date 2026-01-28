@@ -1,9 +1,59 @@
 {
-  "collectedAt": "2026-01-28T16:23:24.560Z",
+  "collectedAt": "2026-01-28T17:09:48.269Z",
   "brand": "Opel",
   "brandId": "opel",
-  "rowCount": 16,
+  "rowCount": 21,
   "rows": [
+    {
+      "model": "Corsa",
+      "trim": "Edition",
+      "engine": "1.2 100 HP Benzin",
+      "transmission": "Manuel",
+      "fuel": "Benzin",
+      "priceRaw": "1.505.000 TL",
+      "priceNumeric": 1505000,
+      "brand": "Opel"
+    },
+    {
+      "model": "Corsa",
+      "trim": "Edition",
+      "engine": "1.2 100 HP Benzin",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "1.749.000 TL",
+      "priceNumeric": 1749000,
+      "brand": "Opel"
+    },
+    {
+      "model": "Corsa",
+      "trim": "GS",
+      "engine": "1.2 100 HP Benzin",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "1.824.000 TL",
+      "priceNumeric": 1824000,
+      "brand": "Opel"
+    },
+    {
+      "model": "Corsa",
+      "trim": "Edition",
+      "engine": "Hybrid 1.2 110 (100HP)²",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "1.960.000 TL",
+      "priceNumeric": 1960000,
+      "brand": "Opel"
+    },
+    {
+      "model": "Corsa",
+      "trim": "GS",
+      "engine": "Hybrid 1.2 145 (136HP)³",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "2.078.000 TL",
+      "priceNumeric": 2078000,
+      "brand": "Opel"
+    },
     {
       "model": "Corsa E",
       "trim": "GS",
