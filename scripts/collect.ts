@@ -10,6 +10,7 @@ import * as path from 'path';
 import { XMLParser } from 'fast-xml-parser';
 // @ts-ignore - pdf.js-extract types are incomplete
 import { PDFExtract, PDFExtractResult, PDFExtractPage } from 'pdf.js-extract';
+import * as cheerio from 'cheerio';
 
 // Types
 interface PriceListRow {
@@ -27,8 +28,8 @@ interface BrandConfig {
   id: string;
   name: string;
   url: string;
-  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'fiat' | 'peugeot' | 'ford' | 'generic';
-  responseType?: 'json' | 'xml' | 'pdf';
+  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'fiat' | 'peugeot' | 'byd' | 'ford' | 'generic';
+  responseType?: 'json' | 'xml' | 'pdf' | 'html';
 }
 
 interface CollectionResult {
@@ -105,6 +106,13 @@ const BRANDS: BrandConfig[] = [
     url: 'https://kampanya.peugeot.com.tr/fiyat-listesi/fiyatlar.pdf',
     parser: 'peugeot',
     responseType: 'pdf',
+  },
+  {
+    id: 'byd',
+    name: 'BYD',
+    url: 'https://www.bydauto.com.tr/fiyat-listesi',
+    parser: 'byd',
+    responseType: 'html',
   },
 ];
 
@@ -814,6 +822,126 @@ const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRo
   return vehicles;
 };
 
+// BYD parser - parses HTML data from bydauto.com.tr
+const parseBYDData = (html: string, brand: string): PriceListRow[] => {
+  const vehicles: PriceListRow[] = [];
+
+  try {
+    const $ = cheerio.load(html);
+
+    // Find all vehicle sections (they have IDs starting with "vehicle-")
+    $('[id^="vehicle-"]').each((_, section) => {
+      const $section = $(section);
+
+      // Get model name from h3.vehicle-name
+      const modelName = $section.find('h3.vehicle-name').text().trim() ||
+                        $section.find('h3').first().text().trim() ||
+                        'Unknown';
+
+      // Clean model name (remove "BYD" prefix if present)
+      const cleanModel = modelName.replace(/^BYD\s+/i, '').trim();
+
+      // Find the table and parse rows
+      $section.find('table tbody tr').each((_, row) => {
+        const $row = $(row);
+        const cells = $row.find('td');
+
+        if (cells.length >= 4) {
+          const variant = $(cells[0]).text().trim();
+          const trim = $(cells[1]).text().trim();
+          const otvRate = $(cells[2]).text().trim();
+          const priceText = $(cells[3]).text().trim();
+
+          // Parse price (Turkish format: 1.234.567 TL or 1.234.567,00 TL)
+          const priceMatch = priceText.match(/[\d.]+(?:,\d+)?/);
+          if (priceMatch) {
+            const priceNumeric = parsePrice(priceMatch[0]);
+
+            // Skip if price is invalid
+            if (priceNumeric < 100000 || priceNumeric > 50000000) return;
+
+            // Determine fuel type based on model name
+            let fuel = 'Elektrik'; // Default to electric for BYD
+            if (variant.toLowerCase().includes('dm-i') || variant.toLowerCase().includes('dmi')) {
+              fuel = 'Plug-in Hybrid';
+            }
+
+            // All BYD vehicles are automatic
+            const transmission = 'Otomatik';
+
+            // Use variant as engine info
+            const engine = variant.replace(cleanModel, '').trim() || variant;
+
+            vehicles.push({
+              model: cleanModel,
+              trim,
+              engine,
+              transmission,
+              fuel,
+              priceRaw: priceText,
+              priceNumeric,
+              brand,
+            });
+          }
+        }
+      });
+    });
+
+    // If no vehicles found with the structured approach, try a simpler table-based approach
+    if (vehicles.length === 0) {
+      $('table').each((_, table) => {
+        const $table = $(table);
+
+        // Find the parent section to get model name
+        const $parent = $table.closest('[id^="vehicle-"]');
+        let modelName = $parent.find('h3').first().text().trim() ||
+                        $table.prev('h3').text().trim() ||
+                        'Unknown';
+        const cleanModel = modelName.replace(/^BYD\s+/i, '').trim();
+
+        $table.find('tbody tr').each((_, row) => {
+          const $row = $(row);
+          const cells = $row.find('td');
+
+          if (cells.length >= 2) {
+            // Try to find price in last cell
+            const lastCell = $(cells[cells.length - 1]).text().trim();
+            const priceMatch = lastCell.match(/[\d.]+(?:,\d+)?/);
+
+            if (priceMatch) {
+              const priceNumeric = parsePrice(priceMatch[0]);
+              if (priceNumeric < 100000 || priceNumeric > 50000000) return;
+
+              const variant = cells.length >= 1 ? $(cells[0]).text().trim() : '';
+              const trim = cells.length >= 2 ? $(cells[1]).text().trim() : '';
+
+              let fuel = 'Elektrik';
+              if (variant.toLowerCase().includes('dm-i') || variant.toLowerCase().includes('dmi')) {
+                fuel = 'Plug-in Hybrid';
+              }
+
+              vehicles.push({
+                model: cleanModel || variant,
+                trim: trim || variant,
+                engine: variant,
+                transmission: 'Otomatik',
+                fuel,
+                priceRaw: lastCell,
+                priceNumeric,
+                brand,
+              });
+            }
+          }
+        });
+      });
+    }
+  } catch (error) {
+    console.error('BYD HTML parse error:', error);
+  }
+
+  return vehicles;
+};
+
 // Parse data based on brand parser type
 const parseData = (data: any, brand: string, parserType: string): PriceListRow[] => {
   switch (parserType) {
@@ -824,6 +952,7 @@ const parseData = (data: any, brand: string, parserType: string): PriceListRow[]
     case 'hyundai': return parseHyundaiData(data, brand);
     case 'fiat': return parseFiatData(data, brand);
     case 'peugeot': return parsePeugeotData(data, brand);
+    case 'byd': return parseBYDData(data, brand);
     default: return [];
   }
 };
@@ -866,6 +995,11 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
     try { fs.unlinkSync(tempPath); } catch {}
 
     return pdfData;
+  }
+
+  if (brand.responseType === 'html') {
+    // Return raw HTML text for HTML parser
+    return response.text();
   }
 
   return response.json();

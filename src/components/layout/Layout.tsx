@@ -1,8 +1,9 @@
 // Layout Component - Main layout wrapper with header and footer
 // Includes price change checking on load
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Spin } from 'antd';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -185,7 +186,7 @@ export default function Layout() {
           <PriceChangeAlert onViewChanges={() => setDrawerOpen(true)} />
         </div>
 
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="popLayout">
           <motion.div
             key={location.pathname}
             variants={pageVariants}
@@ -198,7 +199,22 @@ export default function Layout() {
               width: '100%',
             }}
           >
-            <Outlet />
+            <Suspense
+              fallback={
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    minHeight: '50vh',
+                  }}
+                >
+                  <Spin size="large" />
+                </div>
+              }
+            >
+              <Outlet />
+            </Suspense>
           </motion.div>
         </AnimatePresence>
       </main>

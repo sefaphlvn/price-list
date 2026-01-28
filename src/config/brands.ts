@@ -13,6 +13,7 @@ export const BRAND_DIRECT_URLS: Record<string, string> = {
   hyundai: 'https://www.hyundai.com/wsvc/tr/spa/pricelist/list?loc=TR&lan=tr',
   fiat: 'https://kampanya.fiat.com.tr/Pdf/Fiyatlar/OtomobilFiyatListesi.pdf',
   peugeot: 'https://kampanya.peugeot.com.tr/fiyat-listesi/fiyatlar.pdf',
+  byd: 'https://www.bydauto.com.tr/fiyat-listesi',
 };
 
 export const BRANDS: BrandConfig[] = [
@@ -60,6 +61,13 @@ export const BRANDS: BrandConfig[] = [
     url: BRAND_DIRECT_URLS.peugeot,
     parser: 'peugeot',
     responseType: 'pdf',
+  },
+  {
+    id: 'byd',
+    name: 'BYD',
+    url: BRAND_DIRECT_URLS.byd,
+    parser: 'byd',
+    responseType: 'html',
   },
   // Ford disabled - API requires session cookies which cannot be proxied
   // {
