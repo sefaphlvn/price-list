@@ -8,9 +8,7 @@ on:
     # Allow manual trigger from GitHub Actions UI
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 jobs:
   collect:
@@ -38,30 +36,20 @@ jobs:
       - name: Run health check
         run: npx tsx scripts/healthCheck.ts
 
-      - name: Build site
-        env:
-          VITE_CORS_PROXY: ${{ secrets.VITE_CORS_PROXY }}
-        run: npm run build
-
-      - name: Copy data to dist
+      - name: Check for changes
+        id: git-check
         run: |
-          if [ -d "data" ]; then
-            cp -r data dist/data
-            echo "Data copied to dist/data"
+          git add -f data/
+          if git diff --staged --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: collect
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit and push data
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: collect price data for $(date +%Y-%m-%d)"
+          git push
