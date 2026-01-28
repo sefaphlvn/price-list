@@ -99,7 +99,7 @@ export default function PriceListPage() {
   }, []);
 
   const [selectedBrand, setSelectedBrand] = useState<string>(
-    initialUrlState.brand || BRANDS[0].id
+    initialUrlState.brand || 'all'
   );
   const [fetchState, setFetchState] = useState<FetchState>({
     loading: true,
@@ -153,7 +153,7 @@ export default function PriceListPage() {
     if (!urlInitialized.current) return;
 
     const state: PriceListUrlState = {
-      brand: selectedBrand !== BRANDS[0].id ? selectedBrand : undefined,
+      brand: selectedBrand !== 'all' ? selectedBrand : undefined,
       q: searchText || undefined,
       model: modelFilter || undefined,
       transmission: transmissionFilter || undefined,
@@ -219,8 +219,20 @@ export default function PriceListPage() {
 
   // Update available dates when brand or index changes
   useEffect(() => {
-    if (indexData && indexData.brands[selectedBrand]) {
-      const dates = indexData.brands[selectedBrand].availableDates;
+    if (indexData) {
+      let dates: string[] = [];
+
+      if (selectedBrand === 'all') {
+        // For "all" brands, collect all unique dates from all brands
+        const allDatesSet = new Set<string>();
+        Object.values(indexData.brands).forEach((brand) => {
+          brand.availableDates.forEach((date) => allDatesSet.add(date));
+        });
+        dates = Array.from(allDatesSet).sort((a, b) => b.localeCompare(a)); // Sort descending (newest first)
+      } else if (indexData.brands[selectedBrand]) {
+        dates = indexData.brands[selectedBrand].availableDates;
+      }
+
       setAvailableDates(dates);
 
       // Set date from URL or auto-select latest (dates[0] is newest)
@@ -264,24 +276,65 @@ export default function PriceListPage() {
       const year = selectedDate.format('YYYY');
       const month = selectedDate.format('MM');
       const day = selectedDate.format('DD');
-      const url = `./data/${year}/${month}/${selectedBrand}/${day}.json`;
 
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(t('errors.noData'));
+      if (selectedBrand === 'all') {
+        // Fetch all brands in parallel
+        const allRows: PriceListRow[] = [];
+        let latestTimestamp = '';
+
+        const fetchPromises = BRANDS.map(async (brand) => {
+          try {
+            const url = `./data/${year}/${month}/${brand.id}/${day}.json`;
+            const response = await fetch(url);
+            if (response.ok) {
+              const storedData: StoredData = await response.json();
+              if (storedData.collectedAt > latestTimestamp) {
+                latestTimestamp = storedData.collectedAt;
+              }
+              return storedData.rows;
+            }
+          } catch {
+            // Skip failed brands
+          }
+          return [];
+        });
+
+        const results = await Promise.all(fetchPromises);
+        results.forEach((rows) => allRows.push(...rows));
+
+        if (allRows.length === 0) {
+          throw new Error(t('errors.noData'));
+        }
+
+        setFetchState({
+          loading: false,
+          error: null,
+          data: {
+            rows: allRows,
+            lastUpdated: latestTimestamp,
+            brand: t('common.all'),
+          },
+        });
+      } else {
+        // Fetch single brand
+        const url = `./data/${year}/${month}/${selectedBrand}/${day}.json`;
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(t('errors.noData'));
+        }
+
+        const storedData: StoredData = await response.json();
+
+        setFetchState({
+          loading: false,
+          error: null,
+          data: {
+            rows: storedData.rows,
+            lastUpdated: storedData.collectedAt,
+            brand: storedData.brand,
+          },
+        });
       }
-
-      const storedData: StoredData = await response.json();
-
-      setFetchState({
-        loading: false,
-        error: null,
-        data: {
-          rows: storedData.rows,
-          lastUpdated: storedData.collectedAt,
-          brand: storedData.brand,
-        },
-      });
     } catch (error) {
       const errorMessage =
         error instanceof Error ? error.message : t('errors.fetchError');
@@ -703,7 +756,10 @@ export default function PriceListPage() {
               onChange={handleBrandChange}
               style={{ width: 180 }}
               size="large"
-              options={BRANDS.map((b) => ({ label: b.name, value: b.id }))}
+              options={[
+                { label: t('common.all'), value: 'all' },
+                ...[...BRANDS].sort((a, b) => a.name.localeCompare(b.name, 'tr')).map((b) => ({ label: b.name, value: b.id }))
+              ]}
             />
           </div>
           <div>

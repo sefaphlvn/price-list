@@ -270,7 +270,7 @@ export default function ArchitecturePage() {
   const brands = useMemo(() => {
     if (!data?.ladders) return [];
     const brandSet = new Set(data.ladders.map((l: TrimLadder) => l.brand));
-    return Array.from(brandSet).sort().map((brand) => ({
+    return Array.from(brandSet).sort((a, b) => a.localeCompare(b, 'tr')).map((brand) => ({
       value: brand,
       label: brand,
     }));

@@ -287,7 +287,7 @@ export default function HomePage() {
           </div>
 
           <Row gutter={[16, 16]} justify="start">
-            {BRANDS.map((brand) => (
+            {[...BRANDS].sort((a, b) => a.name.localeCompare(b.name, 'tr')).map((brand) => (
               <Col xs={8} sm={6} md={4} lg={3} key={brand.id}>
                 <motion.div
                   variants={cardHoverVariants}

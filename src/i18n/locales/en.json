@@ -114,6 +114,18 @@
   "statistics": {
     "title": "Statistics",
     "subtitle": "Price analysis and segment comparisons",
+    "tabs": {
+      "overview": "Overview",
+      "brands": "Brands",
+      "rankings": "Rankings",
+      "fuelAnalysis": "Fuel Analysis"
+    },
+    "summary": {
+      "totalVehicles": "Total Vehicles",
+      "totalBrands": "Brand Count",
+      "avgPrice": "Average",
+      "medianPrice": "Median"
+    },
     "priceComparison": {
       "title": "Price Comparison",
       "avgByBrand": "Average Price by Brand",
@@ -131,7 +143,17 @@
       "minPrice": "Minimum",
       "maxPrice": "Maximum",
       "avgPrice": "Average"
-    }
+    },
+    "priceDistribution": "Price Distribution",
+    "fuelDistribution": "Fuel Distribution",
+    "transmissionDistribution": "Transmission Distribution",
+    "modelCount": "Model Count",
+    "brandPricePositioning": "Brand Price Positioning",
+    "topCheapest": "Top 10 Cheapest Vehicles",
+    "topExpensive": "Top 10 Most Expensive Vehicles",
+    "brandFuelBreakdown": "Brand Fuel Breakdown",
+    "fuelAvgPrices": "Average Price by Fuel Type",
+    "transmissionAvgPrices": "Average Price by Transmission"
   },
   "comparison": {
     "title": "Comparison",
@@ -245,6 +267,9 @@
   "insights": {
     "title": "Price Intelligence",
     "subtitle": "AI-powered price analysis and deal recommendations",
+    "tabs": {
+      "overview": "Overview"
+    },
     "bestDeals": "Best Deals",
     "todaysDeals": "Today's Deals",
     "overpriced": "Overpriced",
@@ -264,7 +289,20 @@
     "overpricedWarning": "Price Warning",
     "overpricedExplanation": "These vehicles are priced significantly above their segment average. Consider alternatives or negotiate the price.",
     "dataDate": "Data date",
-    "totalAnalyzed": "Total analyzed"
+    "totalAnalyzed": "Total analyzed",
+    "totalVehicles": "Analyzed",
+    "avgScore": "Avg. Score",
+    "greatDeals": "Good Deals (70+)",
+    "excellentDeals": "Excellent (80+)",
+    "avgSavings": "Avg. Savings",
+    "totalSavings": "Total Potential",
+    "scoreDistribution": "Deal Score Distribution",
+    "brandLeaderboard": "Brand Value Ranking",
+    "priceDeviation": "Price Deviation Analysis",
+    "deviationExplanation": "Negative = Below segment average",
+    "fuelAnalysis": "Value by Fuel Type",
+    "topBrandsByDeals": "Top Brands by Deals",
+    "noDealsFound": "No deals found"
   },
   "my": {
     "title": "My Dashboard",

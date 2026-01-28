@@ -28,7 +28,7 @@
     "noData": "Veri bulunamadi",
     "total": "Toplam",
     "records": "kayit",
-    "all": "Tumunu",
+    "all": "Hepsi",
     "select": "Secin",
     "live": "Canli",
     "historical": "Gecmis",
@@ -114,6 +114,18 @@
   "statistics": {
     "title": "Istatistikler",
     "subtitle": "Fiyat analizleri ve segment karsilastirmalari",
+    "tabs": {
+      "overview": "Genel Bakis",
+      "brands": "Markalar",
+      "rankings": "Siralamalar",
+      "fuelAnalysis": "Yakit Analizi"
+    },
+    "summary": {
+      "totalVehicles": "Toplam Arac",
+      "totalBrands": "Marka Sayisi",
+      "avgPrice": "Ortalama",
+      "medianPrice": "Medyan"
+    },
     "priceComparison": {
       "title": "Fiyat Karsilastirmasi",
       "avgByBrand": "Marka Bazli Ortalama Fiyat",
@@ -131,7 +143,17 @@
       "minPrice": "Minimum",
       "maxPrice": "Maksimum",
       "avgPrice": "Ortalama"
-    }
+    },
+    "priceDistribution": "Fiyat Dagilimi",
+    "fuelDistribution": "Yakit Dagilimi",
+    "transmissionDistribution": "Sanziman Dagilimi",
+    "modelCount": "Model Sayisi",
+    "brandPricePositioning": "Marka Fiyat Konumlandirmasi",
+    "topCheapest": "En Uygun 10 Arac",
+    "topExpensive": "En Pahali 10 Arac",
+    "brandFuelBreakdown": "Marka Bazli Yakit Dagilimi",
+    "fuelAvgPrices": "Yakit Tipine Gore Ortalama Fiyat",
+    "transmissionAvgPrices": "Sanziman Tipine Gore Ortalama Fiyat"
   },
   "comparison": {
     "title": "Karsilastirma",
@@ -243,8 +265,11 @@
     "refresh": "Yenile"
   },
   "insights": {
-    "title": "Fiyat Analizleri",
+    "title": "Fiyat Istihbarati",
     "subtitle": "Yapay zeka destekli fiyat analizi ve firsat onerileri",
+    "tabs": {
+      "overview": "Genel Bakis"
+    },
     "bestDeals": "En Iyi Firsatlar",
     "todaysDeals": "Gunun Firsatlari",
     "overpriced": "Pahali Araclar",
@@ -264,7 +289,20 @@
     "overpricedWarning": "Fiyat Uyarisi",
     "overpricedExplanation": "Bu araclar segment ortalamasinin oldukca ustunde fiyatlandirilmis. Alternatifleri degerlendirebilir veya pazarlik yapabilirsiniz.",
     "dataDate": "Veri tarihi",
-    "totalAnalyzed": "Toplam analiz edilen"
+    "totalAnalyzed": "Toplam analiz edilen",
+    "totalVehicles": "Analiz Edilen",
+    "avgScore": "Ort. Skor",
+    "greatDeals": "Iyi Firsatlar (70+)",
+    "excellentDeals": "Mukemmel (80+)",
+    "avgSavings": "Ort. Tasarruf",
+    "totalSavings": "Toplam Potansiyel",
+    "scoreDistribution": "Fiyat Skoru Dagilimi",
+    "brandLeaderboard": "Marka Deger Siralamasi",
+    "priceDeviation": "Fiyat Sapma Analizi",
+    "deviationExplanation": "Negatif = Segment ortalamasinin altinda",
+    "fuelAnalysis": "Yakit Tipine Gore Deger",
+    "topBrandsByDeals": "En Cok Firsatli Markalar",
+    "noDealsFound": "Firsat bulunamadi"
   },
   "my": {
     "title": "Panelim",
