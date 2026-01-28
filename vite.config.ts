@@ -2,12 +2,18 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
+// Disable PWA in dev mode to avoid caching issues
+const isDev = process.env.NODE_ENV === 'development';
+
 export default defineConfig({
   publicDir: 'public',
   server: {
     fs: {
-      allow: ['.'],
+      allow: ['..'], // Allow parent directory for symlink resolution
     },
+  },
+  resolve: {
+    preserveSymlinks: true,
   },
   build: {
     rollupOptions: {
@@ -26,6 +32,10 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      // Disable service worker in dev mode to avoid caching issues
+      devOptions: {
+        enabled: false,
+      },
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'icons/*.png'],
       manifest: {

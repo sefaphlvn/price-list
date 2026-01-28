@@ -14,6 +14,22 @@ export const BRAND_DIRECT_URLS: Record<string, string> = {
   fiat: 'https://kampanya.fiat.com.tr/Pdf/Fiyatlar/OtomobilFiyatListesi.pdf',
   peugeot: 'https://kampanya.peugeot.com.tr/fiyat-listesi/fiyatlar.pdf',
   byd: 'https://www.bydauto.com.tr/fiyat-listesi',
+  opel: 'https://www.opel.com.tr/araclar', // Base URL - multi-URL brand
+};
+
+// Multiple URLs for brands with per-model pages
+export const BRAND_MULTI_URLS: Record<string, string[]> = {
+  opel: [
+    'https://fiyatlisteleri.opel.com.tr/arac/corsa',
+    'https://fiyatlisteleri.opel.com.tr/arac/corsa-e',
+    'https://fiyatlisteleri.opel.com.tr/arac/yeni-frontera-hybrid',
+    'https://fiyatlisteleri.opel.com.tr/arac/frontera-elektrik',
+    'https://fiyatlisteleri.opel.com.tr/arac/yeni-mokka',
+    'https://fiyatlisteleri.opel.com.tr/arac/astra',
+    'https://fiyatlisteleri.opel.com.tr/arac/astra-elektrik',
+    'https://fiyatlisteleri.opel.com.tr/arac/yeni-grandland',
+    'https://fiyatlisteleri.opel.com.tr/arac/yeni-grandland-elektrik',
+  ],
 };
 
 export const BRANDS: BrandConfig[] = [
@@ -67,6 +83,14 @@ export const BRANDS: BrandConfig[] = [
     name: 'BYD',
     url: BRAND_DIRECT_URLS.byd,
     parser: 'byd',
+    responseType: 'html',
+  },
+  {
+    id: 'opel',
+    name: 'Opel',
+    url: BRAND_DIRECT_URLS.opel,
+    urls: BRAND_MULTI_URLS.opel,
+    parser: 'opel',
     responseType: 'html',
   },
   // Ford disabled - API requires session cookies which cannot be proxied

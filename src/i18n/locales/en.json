@@ -51,7 +51,7 @@
   },
   "home": {
     "title": "Turkey's Vehicle Price Platform",
-    "subtitle": "Current prices from 5 brands, comparison and analysis",
+    "subtitle": "Current prices from {{count}} brands, comparison and analysis",
     "cta": {
       "viewPrices": "View Prices",
       "compare": "Compare"

@@ -1,7 +1,0 @@
-name = "otofiyatlist-og-image"
-main = "src/index.ts"
-compatibility_date = "2024-01-01"
-
-# Edge caching for generated images
-[cache]
-ttl = 86400  # 24 hours

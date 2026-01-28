@@ -28,7 +28,8 @@ interface BrandConfig {
   id: string;
   name: string;
   url: string;
-  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'fiat' | 'peugeot' | 'byd' | 'ford' | 'generic';
+  urls?: string[]; // Multiple URLs for brands with per-model pages (e.g., Opel)
+  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'fiat' | 'peugeot' | 'byd' | 'opel' | 'ford' | 'generic';
   responseType?: 'json' | 'xml' | 'pdf' | 'html';
 }
 
@@ -112,6 +113,24 @@ const BRANDS: BrandConfig[] = [
     name: 'BYD',
     url: 'https://www.bydauto.com.tr/fiyat-listesi',
     parser: 'byd',
+    responseType: 'html',
+  },
+  {
+    id: 'opel',
+    name: 'Opel',
+    url: 'https://fiyatlisteleri.opel.com.tr',
+    urls: [
+      'https://fiyatlisteleri.opel.com.tr/arac/corsa',
+      'https://fiyatlisteleri.opel.com.tr/arac/corsa-e',
+      'https://fiyatlisteleri.opel.com.tr/arac/yeni-frontera-hybrid',
+      'https://fiyatlisteleri.opel.com.tr/arac/frontera-elektrik',
+      'https://fiyatlisteleri.opel.com.tr/arac/yeni-mokka',
+      'https://fiyatlisteleri.opel.com.tr/arac/astra',
+      'https://fiyatlisteleri.opel.com.tr/arac/astra-elektrik',
+      'https://fiyatlisteleri.opel.com.tr/arac/yeni-grandland',
+      'https://fiyatlisteleri.opel.com.tr/arac/yeni-grandland-elektrik',
+    ],
+    parser: 'opel',
     responseType: 'html',
   },
 ];
@@ -942,8 +961,163 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
   return vehicles;
 };
 
+// Opel parser - parses HTML data from fiyatlisteleri.opel.com.tr
+// Each model has its own page, so this parser handles a single page
+const parseOpelData = (html: string, brand: string, modelName?: string): PriceListRow[] => {
+  const vehicles: PriceListRow[] = [];
+
+  try {
+    const $ = cheerio.load(html);
+
+    // Get model name from page title if not provided
+    let model = modelName || '';
+    if (!model) {
+      const titleText = $('title').text().trim();
+      // Title format: "Opel Corsa Fiyat Listesi"
+      const titleMatch = titleText.match(/Opel\s+(.+?)\s+Fiyat\s+Listesi/i);
+      if (titleMatch) {
+        model = titleMatch[1].trim();
+      }
+    }
+
+    // Clean up model name
+    model = model
+      .replace(/^yeni-/i, '')
+      .replace(/-/g, ' ')
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(' ');
+
+    // Find the versions table
+    const $table = $('table.versions');
+    if ($table.length === 0) {
+      console.log(`    Warning: No versions table found for ${model}`);
+      return vehicles;
+    }
+
+    // Parse each row in tbody
+    $table.find('tbody tr').each((_, row) => {
+      const $row = $(row);
+      const cells = $row.find('td');
+
+      if (cells.length < 3) return;
+
+      // First cell: Motor / Şanzıman
+      const motorCell = $(cells[0]);
+      const engineSpan = motorCell.find('span').first().text().trim();
+      // Transmission is typically after <br>
+      const motorHtml = motorCell.html() || '';
+      const transmissionMatch = motorHtml.match(/<br\s*\/?>\s*(\w+)/i);
+      const transmission = transmissionMatch ? transmissionMatch[1].trim() : '';
+
+      // Determine fuel type from engine info
+      let fuel = '';
+      const engineLower = engineSpan.toLowerCase();
+      if (engineLower.includes('elektrik') || engineLower.includes('kw')) {
+        fuel = 'Elektrik';
+      } else if (engineLower.includes('hybrid')) {
+        fuel = 'Hybrid';
+      } else if (engineLower.includes('dizel')) {
+        fuel = 'Dizel';
+      } else if (engineLower.includes('benzin')) {
+        fuel = 'Benzin';
+      }
+
+      // Map transmission codes
+      let mappedTransmission = transmission;
+      const transLower = transmission.toLowerCase();
+      if (transLower.includes('mt') || transLower === 'manuel') {
+        mappedTransmission = 'Manuel';
+      } else if (
+        transLower.includes('at') ||
+        transLower.includes('dct') ||
+        transLower === 'otomatik' ||
+        transLower.startsWith('e-') ||
+        transLower === 'e' // e-DCT captured as just 'e'
+      ) {
+        mappedTransmission = 'Otomatik';
+      }
+
+      // Second cell: Donanım (trim) - can have multiple spans
+      const trimCell = $(cells[1]);
+      const trims: string[] = [];
+      trimCell.find('span').each((_, span) => {
+        const trimText = $(span).text().trim();
+        if (trimText && trimText.length > 0) {
+          trims.push(trimText);
+        }
+      });
+
+      // Price columns (3rd, 4th, 5th cells) - prefer MY26 price, then MY25, then campaign
+      // MY25 price is in cell[2], campaign in cell[3], MY26 in cell[4]
+      const priceColumns: string[][] = [];
+      for (let i = 2; i < cells.length; i++) {
+        const priceCell = $(cells[i]);
+        const prices: string[] = [];
+        priceCell.find('span').each((_, span) => {
+          const priceText = $(span).text().trim();
+          if (priceText && priceText.includes('TL')) {
+            prices.push(priceText);
+          }
+        });
+        priceColumns.push(prices);
+      }
+
+      // Match trims with prices
+      // Each trim should have corresponding prices in each column
+      trims.forEach((trim, trimIndex) => {
+        // Find the best price: prefer MY26 (last column), then MY25 (first column)
+        let priceText = '';
+
+        // Try MY26 price first (usually last column with prices)
+        if (priceColumns.length > 2 && priceColumns[2][trimIndex]) {
+          priceText = priceColumns[2][trimIndex];
+        }
+        // Fall back to MY25 price
+        if (!priceText && priceColumns[0] && priceColumns[0][trimIndex]) {
+          priceText = priceColumns[0][trimIndex];
+        }
+        // Fall back to campaign price
+        if (!priceText && priceColumns[1] && priceColumns[1][trimIndex]) {
+          priceText = priceColumns[1][trimIndex];
+        }
+
+        if (!priceText) return;
+
+        const priceNumeric = parsePrice(priceText);
+        if (!isValidPrice(priceNumeric)) return;
+
+        // Check for duplicate
+        const exists = vehicles.find(
+          v => v.model === model &&
+               v.trim === trim &&
+               v.engine === engineSpan &&
+               v.transmission === mappedTransmission
+        );
+
+        if (!exists) {
+          vehicles.push({
+            model,
+            trim,
+            engine: engineSpan,
+            transmission: mappedTransmission,
+            fuel,
+            priceRaw: priceText,
+            priceNumeric,
+            brand,
+          });
+        }
+      });
+    });
+  } catch (error) {
+    console.error('Opel HTML parse error:', error);
+  }
+
+  return vehicles;
+};
+
 // Parse data based on brand parser type
-const parseData = (data: any, brand: string, parserType: string): PriceListRow[] => {
+const parseData = (data: any, brand: string, parserType: string, modelName?: string): PriceListRow[] => {
   switch (parserType) {
     case 'vw': return parseVWData(data, brand);
     case 'skoda': return parseSkodaData(data, brand);
@@ -953,18 +1127,17 @@ const parseData = (data: any, brand: string, parserType: string): PriceListRow[]
     case 'fiat': return parseFiatData(data, brand);
     case 'peugeot': return parsePeugeotData(data, brand);
     case 'byd': return parseBYDData(data, brand);
+    case 'opel': return parseOpelData(data, brand, modelName);
     default: return [];
   }
 };
 
-// Fetch data from URL
-async function fetchBrandData(brand: BrandConfig): Promise<any> {
-  console.log(`  Fetching ${brand.name} from ${brand.url}`);
-
-  const response = await fetch(brand.url, {
+// Fetch data from a single URL
+async function fetchSingleUrl(url: string, responseType?: string): Promise<any> {
+  const response = await fetch(url, {
     headers: {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-      'Accept': 'application/json, application/xml, text/xml, text/plain, application/pdf, */*',
+      'Accept': 'application/json, application/xml, text/xml, text/plain, application/pdf, text/html, */*',
       'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
     },
   });
@@ -973,7 +1146,7 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
   }
 
-  if (brand.responseType === 'xml') {
+  if (responseType === 'xml') {
     const xmlText = await response.text();
     const parser = new XMLParser({
       ignoreAttributes: false,
@@ -982,9 +1155,9 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
     return parser.parse(xmlText);
   }
 
-  if (brand.responseType === 'pdf') {
+  if (responseType === 'pdf') {
     // Download PDF to temp file and extract with pdf.js-extract
-    const tempPath = path.join('/tmp', `${brand.id}-price-list.pdf`);
+    const tempPath = path.join('/tmp', `pdf-temp-${Date.now()}.pdf`);
     const buffer = await response.arrayBuffer();
     fs.writeFileSync(tempPath, Buffer.from(buffer));
 
@@ -997,12 +1170,46 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
     return pdfData;
   }
 
-  if (brand.responseType === 'html') {
-    // Return raw HTML text for HTML parser
+  if (responseType === 'html') {
     return response.text();
   }
 
   return response.json();
+}
+
+// Fetch data from URL (handles single and multi-URL brands)
+async function fetchBrandData(brand: BrandConfig): Promise<any> {
+  console.log(`  Fetching ${brand.name} from ${brand.url}`);
+  return fetchSingleUrl(brand.url, brand.responseType);
+}
+
+// Fetch and parse multi-URL brand (like Opel)
+async function fetchMultiUrlBrand(brand: BrandConfig): Promise<PriceListRow[]> {
+  if (!brand.urls || brand.urls.length === 0) {
+    return [];
+  }
+
+  const allRows: PriceListRow[] = [];
+
+  for (const url of brand.urls) {
+    // Extract model name from URL
+    const modelMatch = url.match(/\/arac\/([^?/]+)/);
+    const modelName = modelMatch ? modelMatch[1] : '';
+
+    console.log(`    Fetching ${modelName} from ${url}`);
+
+    try {
+      const html = await fetchSingleUrl(url, 'html');
+      const rows = parseData(html, brand.name, brand.parser, modelName);
+      console.log(`      Found ${rows.length} rows`);
+      allRows.push(...rows);
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      console.log(`      Error: ${errorMessage}`);
+    }
+  }
+
+  return allRows;
 }
 
 // Save data to file
@@ -1145,8 +1352,16 @@ async function collectAllBrands(): Promise<void> {
     console.log(`[${brand.name}]`);
 
     try {
-      const data = await fetchBrandData(brand);
-      const rawRows = parseData(data, brand.name, brand.parser);
+      let rawRows: PriceListRow[];
+
+      // Check if brand uses multiple URLs
+      if (brand.urls && brand.urls.length > 0) {
+        rawRows = await fetchMultiUrlBrand(brand);
+      } else {
+        const data = await fetchBrandData(brand);
+        rawRows = parseData(data, brand.name, brand.parser);
+      }
+
       const rows = filterValidRows(rawRows, brand.name);
 
       if (rows.length === 0) {

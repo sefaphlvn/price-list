@@ -195,12 +195,22 @@ export default function PriceListPage() {
     const loadIndex = async () => {
       try {
         const response = await fetch('./data/index.json');
-        if (response.ok) {
-          const data: IndexData = await response.json();
-          setIndexData(data);
+        if (!response.ok) {
+          console.warn('Index fetch failed:', response.status, response.statusText);
+          return;
         }
-      } catch {
-        console.log('Historical data index not available');
+
+        // Check content type
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+          console.warn('Index response is not JSON:', contentType);
+          return;
+        }
+
+        const data: IndexData = await response.json();
+        setIndexData(data);
+      } catch (error) {
+        console.warn('Failed to load index:', error);
       }
     };
     loadIndex();
@@ -864,7 +874,7 @@ export default function PriceListPage() {
             <Table
               columns={columns}
               dataSource={filteredData}
-              rowKey={(record, index) => `${record.brand}-${record.model}-${record.trim}-${index}`}
+              rowKey={(record) => `${record.brand}-${record.model}-${record.trim}-${record.engine || 'std'}-${record.transmission || 'auto'}-${record.priceNumeric}`}
               pagination={pagination}
               onChange={handleTableChange}
               scroll={{ x: 1200, y: 600 }}

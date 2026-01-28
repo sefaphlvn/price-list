@@ -30,6 +30,7 @@ const brandIcons: { [key: string]: string } = {
   fiat: 'FT',
   peugeot: 'PG',
   byd: 'BYD',
+  opel: 'OP',
 };
 
 // Brand colors
@@ -42,6 +43,7 @@ const brandColors: { [key: string]: string } = {
   fiat: '#8b0000',
   peugeot: '#1a1a1a',
   byd: '#c41230',
+  opel: '#f7ff14', // Opel yellow
 };
 
 export default function HomePage() {
@@ -150,7 +152,7 @@ export default function HomePage() {
                   maxWidth: 500,
                 }}
               >
-                {t('home.subtitle')}
+                {t('home.subtitle', { count: BRANDS.length })}
               </Paragraph>
 
               <Space size="middle" wrap>
@@ -292,7 +294,7 @@ export default function HomePage() {
                         marginBottom: tokens.spacing.sm,
                         fontSize: 14,
                         fontWeight: 700,
-                        color: brand.id === 'renault' ? '#000' : '#fff',
+                        color: brand.id === 'renault' || brand.id === 'opel' ? '#000' : '#fff',
                       }}
                     >
                       {brandIcons[brand.id] || brand.name.slice(0, 2).toUpperCase()}

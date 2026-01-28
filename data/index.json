@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-28T12:33:22.023Z",
+  "lastUpdated": "2026-01-28T12:58:04.327Z",
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
@@ -71,6 +71,14 @@
       ],
       "latestDate": "2026-01-28",
       "totalRecords": 12
+    },
+    "opel": {
+      "name": "Opel",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 21
     }
   }
 }

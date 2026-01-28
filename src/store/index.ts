@@ -153,7 +153,12 @@ export const createVehicleId = (
   trim: string,
   engine: string
 ): string => {
-  return `${brand}-${model}-${trim}-${engine}`.toLowerCase().replace(/\s+/g, '-');
+  // Handle undefined/empty values to prevent duplicate keys
+  const safeBrand = brand || 'unknown';
+  const safeModel = model || 'unknown';
+  const safeTrim = trim || 'base';
+  const safeEngine = engine || 'standard';
+  return `${safeBrand}-${safeModel}-${safeTrim}-${safeEngine}`.toLowerCase().replace(/\s+/g, '-');
 };
 
 // Create VehicleIdentifier from row data

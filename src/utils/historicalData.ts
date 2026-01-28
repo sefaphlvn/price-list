@@ -18,6 +18,13 @@ export const fetchIndex = async (): Promise<IndexData | null> => {
     const response = await fetch(`${BASE_PATH}/index.json`);
     if (!response.ok) return null;
 
+    // Check if response is actually JSON (not HTML from SPA fallback)
+    const contentType = response.headers.get('content-type');
+    if (!contentType || !contentType.includes('application/json')) {
+      console.warn('Index response is not JSON, got:', contentType);
+      return null;
+    }
+
     indexCache = await response.json();
     return indexCache;
   } catch (error) {

@@ -199,7 +199,7 @@ export default function StatisticsPage() {
           minHeight: '60vh',
         }}
       >
-        <Spin size="large" tip={t('common.loading')} />
+        <Spin size="large" />
       </div>
     );
   }
