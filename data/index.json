@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-28T11:17:05.171Z",
+  "lastUpdated": "2026-01-28T12:33:22.023Z",
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
@@ -63,6 +63,14 @@
       ],
       "latestDate": "2026-01-28",
       "totalRecords": 30
+    },
+    "byd": {
+      "name": "BYD",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 12
     }
   }
 }

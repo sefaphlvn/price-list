@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-01-28T11:17:05.862Z",
+  "generatedAt": "2026-01-28T12:33:22.710Z",
   "date": "2026-01-28",
   "summary": {
-    "totalModels": 79,
+    "totalModels": 87,
     "totalTransitions": 1,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
@@ -26,6 +26,102 @@
   "entryPriceDeltas": [],
   "staleModels": [],
   "allModels": [
+    {
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "ATTO 2",
+      "entryPrice": 1575000,
+      "topPrice": 1680000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "ATTO 3",
+      "entryPrice": 2209000,
+      "topPrice": 2209000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "DOLPHIN",
+      "entryPrice": 1749000,
+      "topPrice": 1889000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "HAN",
+      "entryPrice": 4779000,
+      "topPrice": 4779000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "SEAL",
+      "entryPrice": 2489000,
+      "topPrice": 3999000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "SEAL U EV",
+      "entryPrice": 2489000,
+      "topPrice": 2489000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "SEALION 7",
+      "entryPrice": 2489000,
+      "topPrice": 4109000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "TANG",
+      "entryPrice": 5314000,
+      "topPrice": 5314000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
     {
       "brand": "Fiat",
       "brandId": "fiat",

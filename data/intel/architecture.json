@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-28T11:17:05.842Z",
+  "generatedAt": "2026-01-28T12:33:22.682Z",
   "date": "2026-01-28",
   "ladders": [
     {
@@ -3354,6 +3354,230 @@
       "priceSpread": 129500,
       "priceSpreadPercent": 5.65,
       "trimCount": 2
+    },
+    {
+      "id": "byd-atto-2",
+      "model": "ATTO 2",
+      "brand": "BYD",
+      "brandId": "byd",
+      "trims": [
+        {
+          "trim": "Boost",
+          "price": 1575000,
+          "priceFormatted": "1.575.000 ₺",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "BYD  130 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Comfort",
+          "price": 1680000,
+          "priceFormatted": "1.680.000 ₺",
+          "stepFromBase": 105000,
+          "stepPercent": 6.666666666666667,
+          "engine": "BYD  130 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 1575000,
+      "topPrice": 1680000,
+      "priceSpread": 105000,
+      "priceSpreadPercent": 6.67,
+      "trimCount": 2
+    },
+    {
+      "id": "byd-dolphin",
+      "model": "DOLPHIN",
+      "brand": "BYD",
+      "brandId": "byd",
+      "trims": [
+        {
+          "trim": "Comfort",
+          "price": 1749000,
+          "priceFormatted": "1.749.000 ₺",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "BYD  150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Design",
+          "price": 1889000,
+          "priceFormatted": "1.889.000 ₺",
+          "stepFromBase": 140000,
+          "stepPercent": 8.00457404230989,
+          "engine": "BYD  150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 1749000,
+      "topPrice": 1889000,
+      "priceSpread": 140000,
+      "priceSpreadPercent": 8,
+      "trimCount": 2
+    },
+    {
+      "id": "byd-atto-3",
+      "model": "ATTO 3",
+      "brand": "BYD",
+      "brandId": "byd",
+      "trims": [
+        {
+          "trim": "Design",
+          "price": 2209000,
+          "priceFormatted": "2.209.000 ₺",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "BYD  150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 2209000,
+      "topPrice": 2209000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
+      "id": "byd-seal-u-ev",
+      "model": "SEAL U EV",
+      "brand": "BYD",
+      "brandId": "byd",
+      "trims": [
+        {
+          "trim": "Design",
+          "price": 2489000,
+          "priceFormatted": "2.489.000 ₺",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "BYD  160 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 2489000,
+      "topPrice": 2489000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
+      "id": "byd-seal",
+      "model": "SEAL",
+      "brand": "BYD",
+      "brandId": "byd",
+      "trims": [
+        {
+          "trim": "Design",
+          "price": 2489000,
+          "priceFormatted": "2.489.000 ₺",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "BYD  160 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Excellence",
+          "price": 3999000,
+          "priceFormatted": "3.999.000 ₺",
+          "stepFromBase": 1510000,
+          "stepPercent": 60.66693451185215,
+          "engine": "BYD  390 kW AWD",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 2489000,
+      "topPrice": 3999000,
+      "priceSpread": 1510000,
+      "priceSpreadPercent": 60.67,
+      "trimCount": 2
+    },
+    {
+      "id": "byd-sealion-7",
+      "model": "SEALION 7",
+      "brand": "BYD",
+      "brandId": "byd",
+      "trims": [
+        {
+          "trim": "Design",
+          "price": 2489000,
+          "priceFormatted": "2.489.000 ₺",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "BYD  160kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Excellence",
+          "price": 4109000,
+          "priceFormatted": "4.109.000 ₺",
+          "stepFromBase": 1620000,
+          "stepPercent": 65.08638007231819,
+          "engine": "BYD  390kW AWD",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 2489000,
+      "topPrice": 4109000,
+      "priceSpread": 1620000,
+      "priceSpreadPercent": 65.09,
+      "trimCount": 2
+    },
+    {
+      "id": "byd-han",
+      "model": "HAN",
+      "brand": "BYD",
+      "brandId": "byd",
+      "trims": [
+        {
+          "trim": "Executive",
+          "price": 4779000,
+          "priceFormatted": "4.779.000 ₺",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "BYD  380 kW AWD",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 4779000,
+      "topPrice": 4779000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
+      "id": "byd-tang",
+      "model": "TANG",
+      "brand": "BYD",
+      "brandId": "byd",
+      "trims": [
+        {
+          "trim": "Flagship",
+          "price": 5314000,
+          "priceFormatted": "5.314.000 ₺",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "BYD  380 kW AWD",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 5314000,
+      "topPrice": 5314000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     }
   ],
   "crossBrandComparison": [
@@ -3461,6 +3685,16 @@
           "trimCount": 1
         },
         {
+          "brand": "BYD",
+          "brandId": "byd",
+          "model": "ATTO 2",
+          "basePrice": 1575000,
+          "topPrice": 1680000,
+          "basePriceFormatted": "₺1.575.000",
+          "topPriceFormatted": "₺1.680.000",
+          "trimCount": 2
+        },
+        {
           "brand": "Toyota",
           "brandId": "toyota",
           "model": "Proace Max",
@@ -3488,6 +3722,16 @@
           "topPrice": 1969900,
           "basePriceFormatted": "₺1.697.900",
           "topPriceFormatted": "₺1.969.900",
+          "trimCount": 2
+        },
+        {
+          "brand": "BYD",
+          "brandId": "byd",
+          "model": "DOLPHIN",
+          "basePrice": 1749000,
+          "topPrice": 1889000,
+          "basePriceFormatted": "₺1.749.000",
+          "topPriceFormatted": "₺1.889.000",
           "trimCount": 2
         },
         {
@@ -3561,6 +3805,16 @@
           "trimCount": 2
         },
         {
+          "brand": "BYD",
+          "brandId": "byd",
+          "model": "ATTO 3",
+          "basePrice": 2209000,
+          "topPrice": 2209000,
+          "basePriceFormatted": "₺2.209.000",
+          "topPriceFormatted": "₺2.209.000",
+          "trimCount": 1
+        },
+        {
           "brand": "Hyundai",
           "brandId": "hyundai",
           "model": "KONA",
@@ -3589,6 +3843,26 @@
           "basePriceFormatted": "₺2.384.400",
           "topPriceFormatted": "₺2.384.400",
           "trimCount": 1
+        },
+        {
+          "brand": "BYD",
+          "brandId": "byd",
+          "model": "SEAL",
+          "basePrice": 2489000,
+          "topPrice": 3999000,
+          "basePriceFormatted": "₺2.489.000",
+          "topPriceFormatted": "₺3.999.000",
+          "trimCount": 2
+        },
+        {
+          "brand": "BYD",
+          "brandId": "byd",
+          "model": "SEALION 7",
+          "basePrice": 2489000,
+          "topPrice": 4109000,
+          "basePriceFormatted": "₺2.489.000",
+          "topPriceFormatted": "₺4.109.000",
+          "trimCount": 2
         },
         {
           "brand": "Volkswagen",
@@ -3651,6 +3925,16 @@
           "trimCount": 1
         },
         {
+          "brand": "BYD",
+          "brandId": "byd",
+          "model": "HAN",
+          "basePrice": 4779000,
+          "topPrice": 4779000,
+          "basePriceFormatted": "₺4.779.000",
+          "topPriceFormatted": "₺4.779.000",
+          "trimCount": 1
+        },
+        {
           "brand": "Hyundai",
           "brandId": "hyundai",
           "model": "SANTA FE Hibrit",
@@ -3658,6 +3942,16 @@
           "topPrice": 5076000,
           "basePriceFormatted": "₺5.076.000",
           "topPriceFormatted": "₺5.076.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "BYD",
+          "brandId": "byd",
+          "model": "TANG",
+          "basePrice": 5314000,
+          "topPrice": 5314000,
+          "basePriceFormatted": "₺5.314.000",
+          "topPriceFormatted": "₺5.314.000",
           "trimCount": 1
         },
         {
@@ -3681,8 +3975,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 2670591,
-      "avgTopPrice": 2993075
+      "avgBasePrice": 2719562,
+      "avgTopPrice": 3070703
     },
     {
       "segment": "SUV",
@@ -4119,6 +4413,16 @@
           "trimCount": 1
         },
         {
+          "brand": "BYD",
+          "brandId": "byd",
+          "model": "SEAL U EV",
+          "basePrice": 2489000,
+          "topPrice": 2489000,
+          "basePriceFormatted": "₺2.489.000",
+          "topPriceFormatted": "₺2.489.000",
+          "trimCount": 1
+        },
+        {
           "brand": "Volkswagen",
           "brandId": "volkswagen",
           "model": "ID.7",
@@ -4149,8 +4453,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 3326125,
-      "avgTopPrice": 3465625
+      "avgBasePrice": 3233111,
+      "avgTopPrice": 3357111
     },
     {
       "segment": "MPV",
@@ -4201,9 +4505,9 @@
     }
   ],
   "summary": {
-    "totalModels": 81,
-    "avgTrimsPerModel": 2.8,
-    "avgPriceSpread": 432673,
-    "avgPriceSpreadPercent": 18.09
+    "totalModels": 89,
+    "avgTrimsPerModel": 2.7,
+    "avgPriceSpread": 431702,
+    "avgPriceSpreadPercent": 18.04
   }
 }

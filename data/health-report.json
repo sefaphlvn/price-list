@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-28T11:17:06.429Z",
+  "timestamp": "2026-01-28T12:33:23.286Z",
   "status": "healthy",
   "summary": {
-    "totalBrands": 7,
-    "totalVehicles": 230,
-    "lastUpdate": "2026-01-28T11:17:05.171Z",
+    "totalBrands": 8,
+    "totalVehicles": 242,
+    "lastUpdate": "2026-01-28T12:33:22.023Z",
     "dataDate": "2026-01-28"
   },
   "brands": [
@@ -61,6 +61,14 @@
       "name": "Peugeot",
       "status": "ok",
       "vehicleCount": 30,
+      "latestDate": "2026-01-28",
+      "issues": []
+    },
+    {
+      "id": "byd",
+      "name": "BYD",
+      "status": "ok",
+      "vehicleCount": 12,
       "latestDate": "2026-01-28",
       "issues": []
     }

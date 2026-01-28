@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-28T11:17:05.798Z",
-  "totalVehicles": 230,
+  "generatedAt": "2026-01-28T12:33:22.620Z",
+  "totalVehicles": 242,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
@@ -2341,6 +2341,132 @@
           "priceRaw": "2.420.000 TL",
           "priceNumeric": 2420000,
           "brand": "Peugeot"
+        }
+      ]
+    },
+    "byd": {
+      "name": "BYD",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "ATTO 2",
+          "trim": "Boost",
+          "engine": "BYD  130 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.575.000 ₺",
+          "priceNumeric": 1575000,
+          "brand": "BYD"
+        },
+        {
+          "model": "ATTO 2",
+          "trim": "Comfort",
+          "engine": "BYD  130 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.680.000 ₺",
+          "priceNumeric": 1680000,
+          "brand": "BYD"
+        },
+        {
+          "model": "DOLPHIN",
+          "trim": "Comfort",
+          "engine": "BYD  150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.749.000 ₺",
+          "priceNumeric": 1749000,
+          "brand": "BYD"
+        },
+        {
+          "model": "DOLPHIN",
+          "trim": "Design",
+          "engine": "BYD  150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.889.000 ₺",
+          "priceNumeric": 1889000,
+          "brand": "BYD"
+        },
+        {
+          "model": "ATTO 3",
+          "trim": "Design",
+          "engine": "BYD  150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.209.000 ₺",
+          "priceNumeric": 2209000,
+          "brand": "BYD"
+        },
+        {
+          "model": "SEAL U EV",
+          "trim": "Design",
+          "engine": "BYD  160 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.489.000 ₺",
+          "priceNumeric": 2489000,
+          "brand": "BYD"
+        },
+        {
+          "model": "SEAL",
+          "trim": "Design",
+          "engine": "BYD  160 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.489.000 ₺",
+          "priceNumeric": 2489000,
+          "brand": "BYD"
+        },
+        {
+          "model": "SEAL",
+          "trim": "Excellence",
+          "engine": "BYD  390 kW AWD",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.999.000 ₺",
+          "priceNumeric": 3999000,
+          "brand": "BYD"
+        },
+        {
+          "model": "SEALION 7",
+          "trim": "Design",
+          "engine": "BYD  160kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.489.000 ₺",
+          "priceNumeric": 2489000,
+          "brand": "BYD"
+        },
+        {
+          "model": "SEALION 7",
+          "trim": "Excellence",
+          "engine": "BYD  390kW AWD",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.109.000 ₺",
+          "priceNumeric": 4109000,
+          "brand": "BYD"
+        },
+        {
+          "model": "HAN",
+          "trim": "Executive",
+          "engine": "BYD  380 kW AWD",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.779.000 ₺",
+          "priceNumeric": 4779000,
+          "brand": "BYD"
+        },
+        {
+          "model": "TANG",
+          "trim": "Flagship",
+          "engine": "BYD  380 kW AWD",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "5.314.000 ₺",
+          "priceNumeric": 5314000,
+          "brand": "BYD"
         }
       ]
     }
