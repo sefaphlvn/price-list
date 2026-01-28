@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-01-28T15:36:13.320Z",
+  "generatedAt": "2026-01-28T16:24:15.756Z",
   "date": "2026-01-28",
   "summary": {
-    "totalModels": 233,
+    "totalModels": 232,
     "totalTransitions": 1,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
@@ -1854,19 +1854,6 @@
       "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
-      ],
-      "lastUpdated": "2026-01-28"
-    },
-    {
-      "brand": "Opel",
-      "brandId": "opel",
-      "model": "Corsa",
-      "entryPrice": 1505000,
-      "topPrice": 2078000,
-      "trimCount": 5,
-      "fuelTypes": [
-        "Benzin",
-        "Hybrid"
       ],
       "lastUpdated": "2026-01-28"
     },

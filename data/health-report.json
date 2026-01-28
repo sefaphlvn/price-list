@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-28T15:36:13.935Z",
+  "timestamp": "2026-01-28T16:24:16.346Z",
   "status": "healthy",
   "summary": {
     "totalBrands": 19,
-    "totalVehicles": 513,
-    "lastUpdate": "2026-01-28T15:36:12.542Z",
+    "totalVehicles": 508,
+    "lastUpdate": "2026-01-28T16:24:15.035Z",
     "dataDate": "2026-01-28"
   },
   "brands": [
@@ -76,7 +76,7 @@
       "id": "opel",
       "name": "Opel",
       "status": "ok",
-      "vehicleCount": 21,
+      "vehicleCount": 16,
       "latestDate": "2026-01-28",
       "issues": []
     },

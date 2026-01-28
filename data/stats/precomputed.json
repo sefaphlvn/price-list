@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-01-28T15:36:13.223Z",
-  "totalVehicles": 513,
+  "generatedAt": "2026-01-28T16:24:15.672Z",
+  "totalVehicles": 508,
   "overallStats": {
-    "avgPrice": 4868385,
+    "avgPrice": 4898357,
     "minPrice": 575900,
     "maxPrice": 35229600,
-    "medianPrice": 2838700
+    "medianPrice": 2874500
   },
   "brandStats": [
     {
@@ -105,14 +105,6 @@
       "medianPrice": 2204999.99
     },
     {
-      "name": "Opel",
-      "vehicleCount": 21,
-      "avgPrice": 2290381,
-      "minPrice": 1505000,
-      "maxPrice": 3391000,
-      "medianPrice": 2157000
-    },
-    {
       "name": "Ford",
       "vehicleCount": 21,
       "avgPrice": 2464990,
@@ -127,6 +119,14 @@
       "minPrice": 581000,
       "maxPrice": 2800000,
       "medianPrice": 1954000
+    },
+    {
+      "name": "Opel",
+      "vehicleCount": 16,
+      "avgPrice": 2436375,
+      "minPrice": 1838000,
+      "maxPrice": 3391000,
+      "medianPrice": 2250000
     },
     {
       "name": "BYD",
@@ -164,27 +164,27 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 209,
-      "percentage": 40.7,
-      "avgPrice": 4951856
+      "count": 206,
+      "percentage": 40.6,
+      "avgPrice": 4999320
     },
     {
       "fuel": "Elektrik",
       "count": 125,
-      "percentage": 24.4,
+      "percentage": 24.6,
       "avgPrice": 4911740
     },
     {
       "fuel": "Dizel",
       "count": 53,
-      "percentage": 10.3,
+      "percentage": 10.4,
       "avgPrice": 3904140
     },
     {
       "fuel": "Hybrid",
-      "count": 47,
-      "percentage": 9.2,
-      "avgPrice": 2569011
+      "count": 45,
+      "percentage": 8.9,
+      "avgPrice": 2593456
     },
     {
       "fuel": "Mild Hybrid",
@@ -201,13 +201,13 @@
     {
       "fuel": "Plug-in Hibrit",
       "count": 13,
-      "percentage": 2.5,
+      "percentage": 2.6,
       "avgPrice": 9502282
     },
     {
       "fuel": "Plug-in Hybrid",
       "count": 10,
-      "percentage": 1.9,
+      "percentage": 2,
       "avgPrice": 8328640
     },
     {
@@ -238,27 +238,27 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 344,
-      "percentage": 67.1,
-      "avgPrice": 5841982
+      "count": 340,
+      "percentage": 66.9,
+      "avgPrice": 5888326
     },
     {
       "transmission": "DSG",
       "count": 57,
-      "percentage": 11.1,
+      "percentage": 11.2,
       "avgPrice": 3735170
     },
     {
       "transmission": "DCT",
       "count": 31,
-      "percentage": 6,
+      "percentage": 6.1,
       "avgPrice": 2121129
     },
     {
       "transmission": "Manuel",
-      "count": 25,
-      "percentage": 4.9,
-      "avgPrice": 1768556
+      "count": 24,
+      "percentage": 4.7,
+      "avgPrice": 1779538
     },
     {
       "transmission": "Bilinmiyor",
@@ -269,7 +269,7 @@
     {
       "transmission": "Automatic",
       "count": 12,
-      "percentage": 2.3,
+      "percentage": 2.4,
       "avgPrice": 3366750
     },
     {
@@ -309,28 +309,28 @@
       "min": 0,
       "max": 1500000,
       "count": 30,
-      "percentage": 5.8
+      "percentage": 5.9
     },
     {
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 239,
-      "percentage": 46.6
+      "count": 234,
+      "percentage": 46.1
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
       "count": 105,
-      "percentage": 20.5
+      "percentage": 20.7
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
       "count": 139,
-      "percentage": 27.1
+      "percentage": 27.4
     }
   ]
 }
