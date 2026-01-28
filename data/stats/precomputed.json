@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-01-28T17:46:44.109Z",
-  "totalVehicles": 486,
+  "generatedAt": "2026-01-28T18:00:50.411Z",
+  "totalVehicles": 488,
   "overallStats": {
-    "avgPrice": 5051597,
+    "avgPrice": 5039996,
     "minPrice": 581000,
     "maxPrice": 35229600,
-    "medianPrice": 3023650
+    "medianPrice": 3009500
   },
   "brandStats": [
     {
@@ -97,20 +97,20 @@
       "medianPrice": 2204999.99
     },
     {
+      "name": "Opel",
+      "vehicleCount": 21,
+      "avgPrice": 2290381,
+      "minPrice": 1505000,
+      "maxPrice": 3391000,
+      "medianPrice": 2157000
+    },
+    {
       "name": "Ford",
       "vehicleCount": 21,
       "avgPrice": 2464990,
       "minPrice": 1842100,
       "maxPrice": 3305300,
       "medianPrice": 2379100
-    },
-    {
-      "name": "Opel",
-      "vehicleCount": 19,
-      "avgPrice": 2297684,
-      "minPrice": 1505000,
-      "maxPrice": 3391000,
-      "medianPrice": 2085000
     },
     {
       "name": "Citroën",
@@ -157,25 +157,25 @@
     {
       "fuel": "Benzin",
       "count": 206,
-      "percentage": 42.4,
+      "percentage": 42.2,
       "avgPrice": 5003001
     },
     {
       "fuel": "Elektrik",
       "count": 115,
-      "percentage": 23.7,
+      "percentage": 23.6,
       "avgPrice": 5226005
     },
     {
       "fuel": "Hybrid",
-      "count": 45,
-      "percentage": 9.3,
-      "avgPrice": 2584478
+      "count": 47,
+      "percentage": 9.6,
+      "avgPrice": 2569011
     },
     {
       "fuel": "Dizel",
       "count": 44,
-      "percentage": 9.1,
+      "percentage": 9,
       "avgPrice": 4348870
     },
     {
@@ -199,7 +199,7 @@
     {
       "fuel": "Plug-in Hybrid",
       "count": 10,
-      "percentage": 2.1,
+      "percentage": 2,
       "avgPrice": 8328640
     },
     {
@@ -224,9 +224,9 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 322,
-      "percentage": 66.3,
-      "avgPrice": 6132782
+      "count": 324,
+      "percentage": 66.4,
+      "avgPrice": 6108635
     },
     {
       "transmission": "DSG",
@@ -301,22 +301,22 @@
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 221,
-      "percentage": 45.5
+      "count": 223,
+      "percentage": 45.7
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
       "count": 105,
-      "percentage": 21.6
+      "percentage": 21.5
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
       "count": 139,
-      "percentage": 28.6
+      "percentage": 28.5
     }
   ]
 }
