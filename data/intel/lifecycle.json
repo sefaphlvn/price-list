@@ -1,0 +1,992 @@
+{
+  "generatedAt": "2026-01-28T05:34:57.985Z",
+  "date": "2026-01-28",
+  "summary": {
+    "totalModels": 79,
+    "totalTransitions": 1,
+    "totalStaleModels": 0,
+    "avgEntryPriceDelta": 0
+  },
+  "modelYearTransitions": [
+    {
+      "id": "fiat-Topolino-2024-2026",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "oldYear": "2024",
+      "newYear": "2026",
+      "oldEntryPrice": 575900,
+      "newEntryPrice": 649900,
+      "priceDelta": 74000,
+      "priceDeltaPercent": 12.85,
+      "transitionDate": "2026-01-28",
+      "trimCount": 2
+    }
+  ],
+  "entryPriceDeltas": [],
+  "staleModels": [],
+  "allModels": [
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "500e",
+      "entryPrice": 2019900,
+      "topPrice": 2175900,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "600",
+      "entryPrice": 1697900,
+      "topPrice": 1969900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik",
+        "Elektrik - Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Cross",
+      "entryPrice": 1379900,
+      "topPrice": 1949900,
+      "trimCount": 7,
+      "fuelTypes": [
+        "Benzin",
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Sedan",
+      "entryPrice": 1569900,
+      "topPrice": 1789900,
+      "trimCount": 5,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "entryPrice": 1499900,
+      "topPrice": 1749900,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Elektrik",
+        "Elektrik - Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "entryPrice": 575900,
+      "topPrice": 694900,
+      "trimCount": 5,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "BAYON - Yerli Üretim",
+      "entryPrice": 1446500,
+      "topPrice": 1815000,
+      "trimCount": 10,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "i20 - Yerli Üretim",
+      "entryPrice": 1313000,
+      "topPrice": 1731000,
+      "trimCount": 12,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "i30",
+      "entryPrice": 1893000,
+      "topPrice": 2003000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "INSTER",
+      "entryPrice": 1453000,
+      "topPrice": 1733000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "IONIQ 5",
+      "entryPrice": 2435000,
+      "topPrice": 2435000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "IONIQ 5 N",
+      "entryPrice": 5655000,
+      "topPrice": 5655000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "IONIQ 6",
+      "entryPrice": 2284000,
+      "topPrice": 2284000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "IONIQ 9",
+      "entryPrice": 5394000,
+      "topPrice": 6458000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "KONA",
+      "entryPrice": 2231000,
+      "topPrice": 2231000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "KONA Elektrik",
+      "entryPrice": 2184000,
+      "topPrice": 2184000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "SANTA FE Hibrit",
+      "entryPrice": 5076000,
+      "topPrice": 5076000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "STARIA Hibrit",
+      "entryPrice": 2549000,
+      "topPrice": 2549000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "TUCSON",
+      "entryPrice": 2384000,
+      "topPrice": 3437000,
+      "trimCount": 10,
+      "fuelTypes": [
+        "Benzin",
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Hyundai",
+      "brandId": "hyundai",
+      "model": "TUCSON Hibrit",
+      "entryPrice": 3498000,
+      "topPrice": 3498000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "",
+      "entryPrice": 2181000,
+      "topPrice": 2566500,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Benzin",
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "3008",
+      "entryPrice": 2851000,
+      "topPrice": 3259000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "408",
+      "entryPrice": 2175000,
+      "topPrice": 2820500,
+      "trimCount": 6,
+      "fuelTypes": [
+        "Benzin",
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "5008",
+      "entryPrice": 3290000,
+      "topPrice": 3493000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-",
+      "entryPrice": 2014000,
+      "topPrice": 2308500,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-208",
+      "entryPrice": 1999500,
+      "topPrice": 1999500,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-3008",
+      "entryPrice": 3318000,
+      "topPrice": 3514500,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-308",
+      "entryPrice": 2381000,
+      "topPrice": 2381000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-5008",
+      "entryPrice": 3502000,
+      "topPrice": 3644000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "Expert Traveller",
+      "entryPrice": 2290500,
+      "topPrice": 2420000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "Partner Van",
+      "entryPrice": 1237500,
+      "topPrice": 1405000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "Rifter",
+      "entryPrice": 1543500,
+      "topPrice": 2077000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Captur",
+      "entryPrice": 2065000,
+      "topPrice": 2065000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Clio",
+      "entryPrice": 1580000,
+      "topPrice": 1728000.01,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Megane E-Tech ELEKTRİKLİ",
+      "entryPrice": 2274999.99,
+      "topPrice": 2375000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Megane Sedan",
+      "entryPrice": 2050000.01,
+      "topPrice": 2390000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Benzin",
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "R5 E-Tech ELEKTRİKLİ",
+      "entryPrice": 1887999.99,
+      "topPrice": 1940000.01,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Rafale",
+      "entryPrice": 3750000,
+      "topPrice": 3750000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin-Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Yeni Austral",
+      "entryPrice": 2365000,
+      "topPrice": 3360000.01,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Benzin",
+        "Benzin-Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Yeni Duster",
+      "entryPrice": 1730000,
+      "topPrice": 2565000.01,
+      "trimCount": 6,
+      "fuelTypes": [
+        "Benzin-LPG",
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Fabia",
+      "entryPrice": 1759900,
+      "topPrice": 2134900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kamiq",
+      "entryPrice": 1900400,
+      "topPrice": 2622900,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Karoq",
+      "entryPrice": 3349400,
+      "topPrice": 3454900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kodiaq",
+      "entryPrice": 4379900,
+      "topPrice": 4546900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Octavia",
+      "entryPrice": 2552900,
+      "topPrice": 3307900,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Scala",
+      "entryPrice": 1785900,
+      "topPrice": 2372900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "entryPrice": 3530400,
+      "topPrice": 6675900,
+      "trimCount": 4,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Yeni Škoda Elroq",
+      "entryPrice": 2384400,
+      "topPrice": 2384400,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Yeni Škoda Enyaq",
+      "entryPrice": 3399400,
+      "topPrice": 3399400,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Yeni Škoda Enyaq Coupé",
+      "entryPrice": 3499400,
+      "topPrice": 4399900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "COROLLA",
+      "entryPrice": 1650000,
+      "topPrice": 2544000,
+      "trimCount": 7,
+      "fuelTypes": [
+        "Benzin",
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "COROLLA CROSS",
+      "entryPrice": 2484000,
+      "topPrice": 3157000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "COROLLA HATCHBACK HYBRID",
+      "entryPrice": 2115000,
+      "topPrice": 2419500,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Hilux",
+      "entryPrice": 2455000,
+      "topPrice": 4995000,
+      "trimCount": 4,
+      "fuelTypes": [
+        ""
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Land Cruiser Prado",
+      "entryPrice": 12000000,
+      "topPrice": 12000000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace Cargo",
+      "entryPrice": 1569000,
+      "topPrice": 1569000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace City",
+      "entryPrice": 1544500,
+      "topPrice": 1832000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "PROACE CITY CARGO",
+      "entryPrice": 1183000,
+      "topPrice": 1235000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Dizel",
+        ""
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace Max",
+      "entryPrice": 1625000,
+      "topPrice": 1745000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace Max Kamyonet",
+      "entryPrice": 1695000,
+      "topPrice": 1695000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace Verso",
+      "entryPrice": 2200000,
+      "topPrice": 2265000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "TOYOTA C-HR",
+      "entryPrice": 2870000,
+      "topPrice": 2870000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "YARIS",
+      "entryPrice": 1878000,
+      "topPrice": 2182500,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "YARIS CROSS",
+      "entryPrice": 2203000,
+      "topPrice": 2555000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "YENİ COROLLA HATCHBACK HYBRID",
+      "entryPrice": 2419500,
+      "topPrice": 2419500,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "YENİ TOYOTA C-HR",
+      "entryPrice": 2090000,
+      "topPrice": 2755000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "Golf",
+      "entryPrice": 2087000,
+      "topPrice": 3344000,
+      "trimCount": 5,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "Golf GTI",
+      "entryPrice": 4804000,
+      "topPrice": 4804000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "Golf R",
+      "entryPrice": 6520000,
+      "topPrice": 6520000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "ID.4",
+      "entryPrice": 2462000,
+      "topPrice": 2462000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "ID.7",
+      "entryPrice": 4307000,
+      "topPrice": 4307000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "Passat",
+      "entryPrice": 3328000,
+      "topPrice": 6820000,
+      "trimCount": 11,
+      "fuelTypes": [
+        "Benzin",
+        "Plug-in Hybrid",
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "Polo",
+      "entryPrice": 2197000,
+      "topPrice": 2197000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "T-Cross",
+      "entryPrice": 2102000,
+      "topPrice": 2727000,
+      "trimCount": 4,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "T-Roc",
+      "entryPrice": 2595000,
+      "topPrice": 2909000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "Taigo",
+      "entryPrice": 2001000,
+      "topPrice": 3079000,
+      "trimCount": 6,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "Tayron",
+      "entryPrice": 3390000,
+      "topPrice": 4720000,
+      "trimCount": 6,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "Tiguan",
+      "entryPrice": 3144000,
+      "topPrice": 6119000,
+      "trimCount": 5,
+      "fuelTypes": [
+        "Benzin",
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volkswagen",
+      "brandId": "volkswagen",
+      "model": "Touareg",
+      "entryPrice": 10456000,
+      "topPrice": 10989000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    }
+  ]
+}
