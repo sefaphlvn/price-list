@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-01-28T13:02:51.432Z",
+  "generatedAt": "2026-01-28T15:36:13.320Z",
   "date": "2026-01-28",
   "summary": {
-    "totalModels": 96,
+    "totalModels": 233,
     "totalTransitions": 1,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
@@ -26,6 +26,462 @@
   "entryPriceDeltas": [],
   "staleModels": [],
   "allModels": [
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 120",
+      "entryPrice": 3550400,
+      "topPrice": 4037900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Mild Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 220 Gran Coupé",
+      "entryPrice": 3987700,
+      "topPrice": 4252100,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Mild Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 230e xDrive Active Tourer",
+      "entryPrice": 4769800,
+      "topPrice": 5099200,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Plug-in Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 320i Sedan",
+      "entryPrice": 5137900,
+      "topPrice": 5564500,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 420i Coupé",
+      "entryPrice": 6361300,
+      "topPrice": 7159300,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 420i Gran Coupé",
+      "entryPrice": 6183800,
+      "topPrice": 6994100,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 430i xDrive Cabrio",
+      "entryPrice": 9298700,
+      "topPrice": 9298700,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 520d xDrive Sedan",
+      "entryPrice": 10462700,
+      "topPrice": 11513600,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Mild Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 520i Sedan",
+      "entryPrice": 7958200,
+      "topPrice": 8460000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Mild Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 740d xDrive Sedan",
+      "entryPrice": 19489600,
+      "topPrice": 20469100,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Mild Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 840i xDrive Cabrio",
+      "entryPrice": 20316900,
+      "topPrice": 20316900,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 840i xDrive Coupe",
+      "entryPrice": 19585200,
+      "topPrice": 19585200,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW 840i xDrive Gran Coupe",
+      "entryPrice": 20129400,
+      "topPrice": 20129400,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW i4 eDrive40",
+      "entryPrice": 5568200,
+      "topPrice": 6148600,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW i5 eDrive40",
+      "entryPrice": 6628000,
+      "topPrice": 7029700,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW i5 M60 xDrive",
+      "entryPrice": 9509800,
+      "topPrice": 9509800,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW i5 M60 xDrive Touring",
+      "entryPrice": 9608100,
+      "topPrice": 9608100,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW i5 xDrive40",
+      "entryPrice": 7435700,
+      "topPrice": 7820300,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW i5 xDrive40 Touring",
+      "entryPrice": 7587100,
+      "topPrice": 7971800,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW i7 M70",
+      "entryPrice": 15205500,
+      "topPrice": 15205500,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW i7 xDrive60",
+      "entryPrice": 13267900,
+      "topPrice": 13752200,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW iX1 eDrive20",
+      "entryPrice": 3819500,
+      "topPrice": 4116100,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW iX2 eDrive20",
+      "entryPrice": 3876800,
+      "topPrice": 4228600,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW M3 Touring M xDrive",
+      "entryPrice": 18087800,
+      "topPrice": 18087800,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW M4 Competition Cabrio M xDrive",
+      "entryPrice": 18818000,
+      "topPrice": 18818000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW M4 Competition Coupé M xDrive",
+      "entryPrice": 18451700,
+      "topPrice": 18451700,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW M5 Sedan",
+      "entryPrice": 22699500,
+      "topPrice": 22699500,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Plug-in Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW X1 M35i xDrive",
+      "entryPrice": 7786900,
+      "topPrice": 7786900,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW X1 sDrive20i",
+      "entryPrice": 4467000,
+      "topPrice": 4713000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Mild Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW X1 xDrive25e",
+      "entryPrice": 5196100,
+      "topPrice": 5369600,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Plug-in Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW X2 M35i xDrive",
+      "entryPrice": 7882700,
+      "topPrice": 7882700,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW X2 sDrive20i",
+      "entryPrice": 5212100,
+      "topPrice": 5212100,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Mild Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "BMW Z4 sDrive30i",
+      "entryPrice": 7880000,
+      "topPrice": 7880000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "Yeni BMW iX M70 xDrive",
+      "entryPrice": 10714500,
+      "topPrice": 10714500,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "Yeni BMW iX xDrive60",
+      "entryPrice": 9614500,
+      "topPrice": 9614500,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "Yeni BMW M2",
+      "entryPrice": 13757700,
+      "topPrice": 13757700,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "Yeni BMW M3 Sedan Competition M xDrive",
+      "entryPrice": 17806000,
+      "topPrice": 17806000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "Yeni BMW M5 Touring",
+      "entryPrice": 22836200,
+      "topPrice": 22836200,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Plug-in Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
     {
       "brand": "BYD",
       "brandId": "byd",
@@ -123,6 +579,150 @@
       "lastUpdated": "2026-01-28"
     },
     {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Ami",
+      "entryPrice": 581000,
+      "topPrice": 581000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Berlingo",
+      "entryPrice": 1725000,
+      "topPrice": 1939000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Berlingo Van",
+      "entryPrice": 1343000,
+      "topPrice": 1420000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "C3 Aircross Hybrid 145",
+      "entryPrice": 1954000,
+      "topPrice": 2150000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Elektrikli ë-C3",
+      "entryPrice": 1508000,
+      "topPrice": 1508000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Elektrikli ë-C3 Aircross",
+      "entryPrice": 1809000,
+      "topPrice": 1809000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Elektrikli ë-C4",
+      "entryPrice": 2202000,
+      "topPrice": 2202000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Elektrikli ë-C4 X",
+      "entryPrice": 2167000,
+      "topPrice": 2167000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Spacetourer",
+      "entryPrice": 2444000,
+      "topPrice": 2444000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Yeni C5 Aircross Hybrid 145",
+      "entryPrice": 2600000,
+      "topPrice": 2800000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Yeni ë-C5 Aircross",
+      "entryPrice": 2380000,
+      "topPrice": 2380000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Sandero",
+      "entryPrice": 1240000,
+      "topPrice": 1340000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
       "brand": "Fiat",
       "brandId": "fiat",
       "model": "500e",
@@ -194,6 +794,126 @@
       "trimCount": 5,
       "fuelTypes": [
         "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Focus",
+      "entryPrice": 2545900,
+      "topPrice": 2676200,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Kuga",
+      "entryPrice": 2379100,
+      "topPrice": 3305300,
+      "trimCount": 7,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Puma Gen-E",
+      "entryPrice": 1938700,
+      "topPrice": 1996500,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Yeni Elektrikli Journey Courier",
+      "entryPrice": 2003100,
+      "topPrice": 2062900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Yeni Journey Courier",
+      "entryPrice": 2192000,
+      "topPrice": 2837200,
+      "trimCount": 4,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Yeni Puma",
+      "entryPrice": 1842100,
+      "topPrice": 2138700,
+      "trimCount": 4,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Honda",
+      "brandId": "honda",
+      "model": "CR-V Hybrid",
+      "entryPrice": 6160000,
+      "topPrice": 6160000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Hibrit"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Honda",
+      "brandId": "honda",
+      "model": "HR-V Hybrid",
+      "entryPrice": 2544000,
+      "topPrice": 2955000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Hibrit"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Honda",
+      "brandId": "honda",
+      "model": "Jazz Hybrid",
+      "entryPrice": 2380000,
+      "topPrice": 2380000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Hibrit"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Honda",
+      "brandId": "honda",
+      "model": "Type R",
+      "entryPrice": 5500000,
+      "topPrice": 5500000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -363,6 +1083,752 @@
       "trimCount": 1,
       "fuelTypes": [
         "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "CEE",
+      "entryPrice": 2070000,
+      "topPrice": 2070000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "EV3",
+      "entryPrice": 2095000,
+      "topPrice": 3500000,
+      "trimCount": 4,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "EV6 PE",
+      "entryPrice": 3500000,
+      "topPrice": 3500000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "EV9",
+      "entryPrice": 6360000,
+      "topPrice": 7630000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "Picanto",
+      "entryPrice": 1290000,
+      "topPrice": 1390000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "Sorento",
+      "entryPrice": 5990000,
+      "topPrice": 6130000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Hibrit"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "Sportage",
+      "entryPrice": 2370000,
+      "topPrice": 3325000,
+      "trimCount": 4,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "Stonic",
+      "entryPrice": 1740000,
+      "topPrice": 1999000,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "XCEED",
+      "entryPrice": 1790000,
+      "topPrice": 2175000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Hibrit",
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "A 200",
+      "entryPrice": 3159000,
+      "topPrice": 3159000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "C 200 4MATIC",
+      "entryPrice": 5770000,
+      "topPrice": 5770000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "C 200 4MATIC All-Terrain",
+      "entryPrice": 5436000,
+      "topPrice": 5436000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "CLA 220 4MATIC",
+      "entryPrice": 4643000,
+      "topPrice": 4643000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "CLA 350 4MATIC",
+      "entryPrice": 4657600,
+      "topPrice": 4657600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "CLE 300 4MATIC Cabriolet",
+      "entryPrice": 8869000,
+      "topPrice": 8869000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "CLE 300 4MATIC Coupé",
+      "entryPrice": 7911000,
+      "topPrice": 7911000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "E 180",
+      "entryPrice": 7525000,
+      "topPrice": 7587000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "E 220 d 4MATIC",
+      "entryPrice": 10193000,
+      "topPrice": 10270000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "EQA 250+",
+      "entryPrice": 3911800,
+      "topPrice": 4014800,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "EQE 280",
+      "entryPrice": 5587700,
+      "topPrice": 5587700,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "EQE 350 4MATIC",
+      "entryPrice": 6384400,
+      "topPrice": 6384400,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "EQS 450 4MATIC",
+      "entryPrice": 9436200,
+      "topPrice": 9436200,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "EQS 580 4MATIC",
+      "entryPrice": 11036200,
+      "topPrice": 11036200,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "G 450 d",
+      "entryPrice": 20357600,
+      "topPrice": 20357600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "G 500",
+      "entryPrice": 21670600,
+      "topPrice": 21670600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "G 580",
+      "entryPrice": 14490200,
+      "topPrice": 14490200,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLA 200",
+      "entryPrice": 4268000,
+      "topPrice": 4268000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLB 200",
+      "entryPrice": 4586000,
+      "topPrice": 4823000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLC 180",
+      "entryPrice": 6372000,
+      "topPrice": 6372000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLC 180 Coupé",
+      "entryPrice": 6787000,
+      "topPrice": 6787000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLC 300 d 4MATIC",
+      "entryPrice": 8463000,
+      "topPrice": 8463000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG A 45 S 4MATIC+",
+      "entryPrice": 6920000,
+      "topPrice": 6920000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG C 43 4MATIC",
+      "entryPrice": 7815000,
+      "topPrice": 7815000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG C 43 4MATIC Estate",
+      "entryPrice": 7928000,
+      "topPrice": 7928000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG C 63 S E PERFORMANCE",
+      "entryPrice": 12109000,
+      "topPrice": 12109000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG C 63 S E PERFORMANCE Estate",
+      "entryPrice": 12186000,
+      "topPrice": 12186000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG CLA 45 S 4MATIC+",
+      "entryPrice": 7481000,
+      "topPrice": 7481000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG CLA 45 S 4MATIC+ Shooting Brake",
+      "entryPrice": 7790000,
+      "topPrice": 7790000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG CLE 53 4MATIC+",
+      "entryPrice": 12910600,
+      "topPrice": 12910600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG E 53 Hybrid 4MATIC+",
+      "entryPrice": 19327600,
+      "topPrice": 19327600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG EQE 53 4MATIC+",
+      "entryPrice": 8204200,
+      "topPrice": 8204200,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG G 63",
+      "entryPrice": 25109100,
+      "topPrice": 28153600,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GLC 43 4MATIC",
+      "entryPrice": 9359000,
+      "topPrice": 9359000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GLC 43 4MATIC Coupé",
+      "entryPrice": 9868000,
+      "topPrice": 9868000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GLC 63 S E PERFORMANCE",
+      "entryPrice": 13457000,
+      "topPrice": 13457000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GLC 63 S E PERFORMANCE Coupé",
+      "entryPrice": 14142000,
+      "topPrice": 14142000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GT 43",
+      "entryPrice": 15140000,
+      "topPrice": 15140000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GT 43 4MATIC+",
+      "entryPrice": 14064600,
+      "topPrice": 14064600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GT 63 4MATIC+",
+      "entryPrice": 26496600,
+      "topPrice": 26496600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GT 63 PRO 4MATIC+",
+      "entryPrice": 30707600,
+      "topPrice": 30707600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG S 63 E PERFORMANCE",
+      "entryPrice": 35229600,
+      "topPrice": 35229600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG SL 43",
+      "entryPrice": 15231000,
+      "topPrice": 15231000,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG SL 63 4MATIC+",
+      "entryPrice": 25738600,
+      "topPrice": 25738600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-Maybach S 580 4MATIC",
+      "entryPrice": 28635600,
+      "topPrice": 28635600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-Maybach SL 680",
+      "entryPrice": 35187600,
+      "topPrice": 35187600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "S 450 d 4MATIC L",
+      "entryPrice": 19828600,
+      "topPrice": 19828600,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "JUKE",
+      "entryPrice": 1716400,
+      "topPrice": 2365600,
+      "trimCount": 6,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "QASHQAI",
+      "entryPrice": 2481400,
+      "topPrice": 3571800,
+      "trimCount": 7,
+      "fuelTypes": [
+        "Mild Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "QASHQAI e-POWER",
+      "entryPrice": 3440100,
+      "topPrice": 3785900,
+      "trimCount": 4,
+      "fuelTypes": [
+        "Hybrid"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "TOWNSTAR COMBI EV",
+      "entryPrice": 2367100,
+      "topPrice": 2417600,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "TOWNSTAR VAN",
+      "entryPrice": 1151800,
+      "topPrice": 2099300,
+      "trimCount": 6,
+      "fuelTypes": [
+        "Benzin",
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "X-TRAIL MILD HYBRID",
+      "entryPrice": 4343000,
+      "topPrice": 4783500,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Mild Hybrid"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -719,6 +2185,54 @@
       "fuelTypes": [
         "Benzin-LPG",
         "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "SEAT",
+      "brandId": "seat",
+      "model": "Arona",
+      "entryPrice": 1691796,
+      "topPrice": 1801979,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "SEAT",
+      "brandId": "seat",
+      "model": "Ateca",
+      "entryPrice": 2382942,
+      "topPrice": 2838700,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "SEAT",
+      "brandId": "seat",
+      "model": "Ibiza",
+      "entryPrice": 1601646,
+      "topPrice": 1721846,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "SEAT",
+      "brandId": "seat",
+      "model": "Leon",
+      "entryPrice": 2363910,
+      "topPrice": 2363910,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     },
@@ -1192,6 +2706,142 @@
       "trimCount": 2,
       "fuelTypes": [
         "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "EC40",
+      "entryPrice": 4020576,
+      "topPrice": 4874625,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "EC40 BLACK EDITION",
+      "entryPrice": 4160355,
+      "topPrice": 4160355,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "EX30",
+      "entryPrice": 2347670,
+      "topPrice": 3626481,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "EX30 CROSS COUNTRY",
+      "entryPrice": 3765989,
+      "topPrice": 3765989,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "EX40",
+      "entryPrice": 3933820,
+      "topPrice": 4777026,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "EX40 BLACK EDITION",
+      "entryPrice": 4073599,
+      "topPrice": 4073599,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "V60",
+      "entryPrice": 5489241,
+      "topPrice": 5489241,
+      "trimCount": 1,
+      "fuelTypes": [
+        "Hibrit"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "XC60",
+      "entryPrice": 6717287,
+      "topPrice": 8579143,
+      "trimCount": 9,
+      "fuelTypes": [
+        "Hibrit",
+        "Plug-in Hibrit"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "XC60 BLACK EDITION",
+      "entryPrice": 7126344,
+      "topPrice": 8088925,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Hibrit",
+        "Plug-in Hibrit"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "XC90",
+      "entryPrice": 10615530,
+      "topPrice": 11610576,
+      "trimCount": 8,
+      "fuelTypes": [
+        "Hibrit",
+        "Plug-in Hibrit"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "model": "XC90 BLACK EDITION",
+      "entryPrice": 10844407,
+      "topPrice": 11839453,
+      "trimCount": 4,
+      "fuelTypes": [
+        "Hibrit",
+        "Plug-in Hibrit"
       ],
       "lastUpdated": "2026-01-28"
     }

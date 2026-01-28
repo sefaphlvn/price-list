@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-28T15:26:23.929Z",
+  "collectedAt": "2026-01-28T15:35:30.463Z",
   "brand": "Fiat",
   "brandId": "fiat",
   "rowCount": 25,
@@ -254,5 +254,7 @@
       "priceNumeric": 575900,
       "brand": "Fiat"
     }
-  ]
+  ],
+  "isFallback": true,
+  "originalDate": "2026-01-28T15:26:23.929Z"
 }

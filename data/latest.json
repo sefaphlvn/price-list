@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-28T13:02:51.365Z",
-  "totalVehicles": 263,
+  "generatedAt": "2026-01-28T15:36:13.203Z",
+  "totalVehicles": 513,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
@@ -2683,6 +2683,2566 @@
           "priceRaw": "3.289.000 TL",
           "priceNumeric": 3289000,
           "brand": "Opel"
+        }
+      ]
+    },
+    "citroen": {
+      "name": "Citroën",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "Elektrikli ë-C3",
+          "trim": "Max",
+          "engine": "83 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.508.000 TL",
+          "priceNumeric": 1508000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "C3 Aircross Hybrid 145",
+          "trim": "Plus",
+          "engine": "1.2 Hybrid 145* -  eDCS6",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "1.954.000 TL",
+          "priceNumeric": 1954000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "C3 Aircross Hybrid 145",
+          "trim": "Max",
+          "engine": "1.2 Hybrid 145* -  eDCS6",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.106.000 TL",
+          "priceNumeric": 2106000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "C3 Aircross Hybrid 145",
+          "trim": "Max - 7 Koltuk",
+          "engine": "1.2 Hybrid 145* -  eDCS6",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.150.000 TL",
+          "priceNumeric": 2150000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Elektrikli ë-C3 Aircross",
+          "trim": "Max",
+          "engine": "83 kW Elektrikli Motor Standart Menzil",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.809.000 TL",
+          "priceNumeric": 1809000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Elektrikli ë-C4",
+          "trim": "Max",
+          "engine": "115 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.202.000 TL",
+          "priceNumeric": 2202000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Elektrikli ë-C4 X",
+          "trim": "Max",
+          "engine": "115 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.167.000 TL",
+          "priceNumeric": 2167000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Yeni C5 Aircross Hybrid 145",
+          "trim": "Plus",
+          "engine": "1.2 Hybrid 145* eDCS6",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.600.000 TL",
+          "priceNumeric": 2600000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Yeni C5 Aircross Hybrid 145",
+          "trim": "Max",
+          "engine": "1.2 Hybrid 145* eDCS6",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.800.000 TL",
+          "priceNumeric": 2800000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Yeni ë-C5 Aircross",
+          "trim": "Plus",
+          "engine": "157 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.380.000 TL",
+          "priceNumeric": 2380000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Berlingo",
+          "trim": "Plus",
+          "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.725.000 TL",
+          "priceNumeric": 1725000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Berlingo",
+          "trim": "Plus",
+          "engine": "1.5 BlueHDi 130 HP - EAT8",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.801.000 TL",
+          "priceNumeric": 1801000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Berlingo",
+          "trim": "Max",
+          "engine": "1.5 BlueHDi 130 HP - EAT8",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.939.000 TL",
+          "priceNumeric": 1939000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Berlingo Van",
+          "trim": "Van",
+          "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.343.000 TL",
+          "priceNumeric": 1343000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Berlingo Van",
+          "trim": "Van",
+          "engine": "1.5 BlueHDi 130 HP - EAT8",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.420.000 TL",
+          "priceNumeric": 1420000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Spacetourer",
+          "trim": "8+1",
+          "engine": "2.2 BlueHDi 180 HP - EAT8",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "2.444.000 TL",
+          "priceNumeric": 2444000,
+          "brand": "Citroën"
+        },
+        {
+          "model": "Ami",
+          "trim": "Ami",
+          "engine": "6 kW Elektrik Motor",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "581.000 TL",
+          "priceNumeric": 581000,
+          "brand": "Citroën"
+        }
+      ]
+    },
+    "bmw": {
+      "name": "BMW",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "BMW 120",
+          "trim": "Sport Line",
+          "engine": "1.499L 156+20 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "3.550.400 TL",
+          "priceNumeric": 3550400,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 120",
+          "trim": "M Sport",
+          "engine": "1.499L 156+20 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "4.037.900 TL",
+          "priceNumeric": 4037900,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 220 Gran Coupé",
+          "trim": "Sport Line",
+          "engine": "1.499L 156+20 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "3.987.700 TL",
+          "priceNumeric": 3987700,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 220 Gran Coupé",
+          "trim": "M Sport",
+          "engine": "1.499L 156+20 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "4.252.100 TL",
+          "priceNumeric": 4252100,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 230e xDrive Active Tourer",
+          "trim": "Luxury Line",
+          "engine": "1.499L 150+177 HP",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "4.769.800 TL",
+          "priceNumeric": 4769800,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 230e xDrive Active Tourer",
+          "trim": "M Sport",
+          "engine": "1.499L 150+177 HP",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "5.099.200 TL",
+          "priceNumeric": 5099200,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 320i Sedan",
+          "trim": "Sport Line",
+          "engine": "1.597L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "5.137.900 TL",
+          "priceNumeric": 5137900,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 320i Sedan",
+          "trim": "M Sport",
+          "engine": "1.597L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "5.564.500 TL",
+          "priceNumeric": 5564500,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 420i Coupé",
+          "trim": "M Sport",
+          "engine": "1.597L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "6.361.300 TL",
+          "priceNumeric": 6361300,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 420i Coupé",
+          "trim": "Edition M Sport",
+          "engine": "1.597L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.159.300 TL",
+          "priceNumeric": 7159300,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 430i xDrive Cabrio",
+          "trim": "M Sport",
+          "engine": "1.998L 245 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "9.298.700 TL",
+          "priceNumeric": 9298700,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 420i Gran Coupé",
+          "trim": "M Sport",
+          "engine": "1.597L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "6.183.800 TL",
+          "priceNumeric": 6183800,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 420i Gran Coupé",
+          "trim": "Edition M Sport",
+          "engine": "1.597L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "6.994.100 TL",
+          "priceNumeric": 6994100,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i4 eDrive40",
+          "trim": "M Sport",
+          "engine": "160L 218 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "5.568.200 TL",
+          "priceNumeric": 5568200,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i4 eDrive40",
+          "trim": "Edition M Sport",
+          "engine": "160L 218 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "6.148.600 TL",
+          "priceNumeric": 6148600,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 520i Sedan",
+          "trim": "M Sport",
+          "engine": "1.597L 190+11 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "7.958.200 TL",
+          "priceNumeric": 7958200,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 520i Sedan",
+          "trim": "Edition M Sport",
+          "engine": "1.597L 190+11 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "8.460.000 TL",
+          "priceNumeric": 8460000,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 520d xDrive Sedan",
+          "trim": "M Sport",
+          "engine": "1.995L 197+11 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "10.462.700 TL",
+          "priceNumeric": 10462700,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 520d xDrive Sedan",
+          "trim": "Edition M Sport",
+          "engine": "1.995L 197+11 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "11.513.600 TL",
+          "priceNumeric": 11513600,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 eDrive40",
+          "trim": "M Sport",
+          "engine": "160L 218 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "6.628.000 TL",
+          "priceNumeric": 6628000,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 eDrive40",
+          "trim": "Edition M Sport",
+          "engine": "160L 218 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "7.029.700 TL",
+          "priceNumeric": 7029700,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 xDrive40",
+          "trim": "M Sport",
+          "engine": "290L 394 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "7.435.700 TL",
+          "priceNumeric": 7435700,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 xDrive40",
+          "trim": "Edition M Sport",
+          "engine": "290L 394 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "7.820.300 TL",
+          "priceNumeric": 7820300,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 xDrive40 Touring",
+          "trim": "M Sport",
+          "engine": "290L 394 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "7.587.100 TL",
+          "priceNumeric": 7587100,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 xDrive40 Touring",
+          "trim": "Edition M Sport",
+          "engine": "290L 394 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "7.971.800 TL",
+          "priceNumeric": 7971800,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 M60 xDrive",
+          "trim": "M",
+          "engine": "442L 601 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "9.509.800 TL",
+          "priceNumeric": 9509800,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 M60 xDrive Touring",
+          "trim": "M",
+          "engine": "442L 601 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "9.608.100 TL",
+          "priceNumeric": 9608100,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 740d xDrive Sedan",
+          "trim": "Pure Excellence",
+          "engine": "2.993L 286+18 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "19.489.600 TL",
+          "priceNumeric": 19489600,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 740d xDrive Sedan",
+          "trim": "M Excellence",
+          "engine": "2.993L 286+18 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "20.469.100 TL",
+          "priceNumeric": 20469100,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i7 xDrive60",
+          "trim": "Pure Excellence",
+          "engine": "400L 544 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "13.267.900 TL",
+          "priceNumeric": 13267900,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i7 xDrive60",
+          "trim": "M Excellence",
+          "engine": "400L 544 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "13.752.200 TL",
+          "priceNumeric": 13752200,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i7 M70",
+          "trim": "M",
+          "engine": "485L 659 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "15.205.500 TL",
+          "priceNumeric": 15205500,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 840i xDrive Coupe",
+          "trim": "M Sport",
+          "engine": "2.998L 333 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "19.585.200 TL",
+          "priceNumeric": 19585200,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 840i xDrive Cabrio",
+          "trim": "M Sport",
+          "engine": "2.998L 333 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "20.316.900 TL",
+          "priceNumeric": 20316900,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW 840i xDrive Gran Coupe",
+          "trim": "M Sport",
+          "engine": "2.998L 333 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "20.129.400 TL",
+          "priceNumeric": 20129400,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW X1 sDrive20i",
+          "trim": "X-Line",
+          "engine": "1.499L 156+20 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "4.467.000 TL",
+          "priceNumeric": 4467000,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW X1 sDrive20i",
+          "trim": "M Sport",
+          "engine": "1.499L 156+20 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "4.713.000 TL",
+          "priceNumeric": 4713000,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW X1 xDrive25e",
+          "trim": "X-Line",
+          "engine": "1.499L 136+109 HP",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "5.196.100 TL",
+          "priceNumeric": 5196100,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW X1 xDrive25e",
+          "trim": "M Sport",
+          "engine": "1.499L 136+109 HP",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "5.369.600 TL",
+          "priceNumeric": 5369600,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW iX1 eDrive20",
+          "trim": "Sport Line",
+          "engine": "150L 204 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.819.500 TL",
+          "priceNumeric": 3819500,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW iX1 eDrive20",
+          "trim": "X-Line",
+          "engine": "150L 204 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.020.500 TL",
+          "priceNumeric": 4020500,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW iX1 eDrive20",
+          "trim": "M Sport",
+          "engine": "150L 204 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.116.100 TL",
+          "priceNumeric": 4116100,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW X2 sDrive20i",
+          "trim": "M Sport",
+          "engine": "1.499L 156+20 HP",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "5.212.100 TL",
+          "priceNumeric": 5212100,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW iX2 eDrive20",
+          "trim": "Sport Line",
+          "engine": "150L 204 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.876.800 TL",
+          "priceNumeric": 3876800,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW iX2 eDrive20",
+          "trim": "M Sport",
+          "engine": "150L 204 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.228.600 TL",
+          "priceNumeric": 4228600,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW Z4 sDrive30i",
+          "trim": "M Sport",
+          "engine": "1.998L 258 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.880.000 TL",
+          "priceNumeric": 7880000,
+          "brand": "BMW"
+        },
+        {
+          "model": "Yeni BMW M2",
+          "trim": "M",
+          "engine": "2.993L 480 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "13.757.700 TL",
+          "priceNumeric": 13757700,
+          "brand": "BMW"
+        },
+        {
+          "model": "Yeni BMW M3 Sedan Competition M xDrive",
+          "trim": "M",
+          "engine": "2.993L 530 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "17.806.000 TL",
+          "priceNumeric": 17806000,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW M3 Touring M xDrive",
+          "trim": "M",
+          "engine": "2.993L 530 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "18.087.800 TL",
+          "priceNumeric": 18087800,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW M4 Competition Coupé M xDrive",
+          "trim": "M",
+          "engine": "2.993L 530 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "18.451.700 TL",
+          "priceNumeric": 18451700,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW M4 Competition Cabrio M xDrive",
+          "trim": "M",
+          "engine": "2.993L 530 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "18.818.000 TL",
+          "priceNumeric": 18818000,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW M5 Sedan",
+          "trim": "M",
+          "engine": "4.395L 585+197 HP",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "22.699.500 TL",
+          "priceNumeric": 22699500,
+          "brand": "BMW"
+        },
+        {
+          "model": "Yeni BMW M5 Touring",
+          "trim": "M",
+          "engine": "4.395L 585+197 HP",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "22.836.200 TL",
+          "priceNumeric": 22836200,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 M60 xDrive",
+          "trim": "M",
+          "engine": "601 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "9.509.800 TL",
+          "priceNumeric": 9509800,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i5 M60 xDrive Touring",
+          "trim": "M",
+          "engine": "601 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "9.608.100 TL",
+          "priceNumeric": 9608100,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW i7 M70",
+          "trim": "M",
+          "engine": "659 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "15.205.500 TL",
+          "priceNumeric": 15205500,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW X1 M35i xDrive",
+          "trim": "M",
+          "engine": "1.998L 300 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.786.900 TL",
+          "priceNumeric": 7786900,
+          "brand": "BMW"
+        },
+        {
+          "model": "BMW X2 M35i xDrive",
+          "trim": "M",
+          "engine": "1.998L 300 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.882.700 TL",
+          "priceNumeric": 7882700,
+          "brand": "BMW"
+        },
+        {
+          "model": "Yeni BMW iX M70 xDrive",
+          "trim": "M",
+          "engine": "659 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "10.714.500 TL",
+          "priceNumeric": 10714500,
+          "brand": "BMW"
+        },
+        {
+          "model": "Yeni BMW iX xDrive60",
+          "trim": "M Sport",
+          "engine": "400L 544 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "9.614.500 TL",
+          "priceNumeric": 9614500,
+          "brand": "BMW"
+        },
+        {
+          "model": "Yeni BMW iX M70 xDrive",
+          "trim": "M",
+          "engine": "485L 659 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "10.714.500 TL",
+          "priceNumeric": 10714500,
+          "brand": "BMW"
+        }
+      ]
+    },
+    "mercedes": {
+      "name": "Mercedes-Benz",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "A 200",
+          "trim": "AMG",
+          "engine": "1.3L 163 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.159.000 TL",
+          "priceNumeric": 3159000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG A 45 S 4MATIC+",
+          "trim": "Final Edition",
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "6.920.000 TL",
+          "priceNumeric": 6920000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG CLA 45 S 4MATIC+",
+          "trim": "Final Edition",
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.481.000 TL",
+          "priceNumeric": 7481000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG CLA 45 S 4MATIC+ Shooting Brake",
+          "trim": "Final Edition",
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.790.000 TL",
+          "priceNumeric": 7790000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG GT 43 4MATIC+",
+          "trim": "Performance",
+          "engine": "3.0L 367 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "14.064.600 TL",
+          "priceNumeric": 14064600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "C 200 4MATIC",
+          "trim": "AMG",
+          "engine": "1.5L 204 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "5.770.000 TL",
+          "priceNumeric": 5770000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG C 43 4MATIC",
+          "trim": "Performance",
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.815.000 TL",
+          "priceNumeric": 7815000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG C 63 S E PERFORMANCE",
+          "trim": "-",
+          "engine": "2.0L 680 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "12.109.000 TL",
+          "priceNumeric": 12109000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "C 200 4MATIC All-Terrain",
+          "trim": "-",
+          "engine": "1.5L 204 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "5.436.000 TL",
+          "priceNumeric": 5436000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG C 43 4MATIC Estate",
+          "trim": "Performance",
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.928.000 TL",
+          "priceNumeric": 7928000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG C 63 S E PERFORMANCE Estate",
+          "trim": "-",
+          "engine": "2.0L 680 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "12.186.000 TL",
+          "priceNumeric": 12186000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "E 180",
+          "trim": "Exclusive",
+          "engine": "1.5L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.525.000 TL",
+          "priceNumeric": 7525000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "E 180",
+          "trim": "AMG",
+          "engine": "1.5L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.587.000 TL",
+          "priceNumeric": 7587000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "E 220 d 4MATIC",
+          "trim": "Exclusive",
+          "engine": "2.0L 197 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "10.193.000 TL",
+          "priceNumeric": 10193000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "E 220 d 4MATIC",
+          "trim": "AMG",
+          "engine": "2.0L 197 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "10.270.000 TL",
+          "priceNumeric": 10270000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG E 53 Hybrid 4MATIC+",
+          "trim": "Performance",
+          "engine": "3.0L 585 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "19.327.600 TL",
+          "priceNumeric": 19327600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "CLE 300 4MATIC Coupé",
+          "trim": "AMG",
+          "engine": "2.0L 258 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "7.911.000 TL",
+          "priceNumeric": 7911000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG CLE 53 4MATIC+",
+          "trim": "Performance",
+          "engine": "3.0L 449 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "12.910.600 TL",
+          "priceNumeric": 12910600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "CLE 300 4MATIC Cabriolet",
+          "trim": "AMG",
+          "engine": "2.0L 258 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "8.869.000 TL",
+          "priceNumeric": 8869000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "S 450 d 4MATIC L",
+          "trim": "Inspiration",
+          "engine": "2.9L 367 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "19.828.600 TL",
+          "priceNumeric": 19828600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG S 63 E PERFORMANCE",
+          "trim": "-",
+          "engine": "4.0L 802 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "35.229.600 TL",
+          "priceNumeric": 35229600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-Maybach S 580 4MATIC",
+          "trim": "Inspiration+",
+          "engine": "4.0L 503 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "28.635.600 TL",
+          "priceNumeric": 28635600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "EQE 280",
+          "trim": "AMG",
+          "engine": "NaNL 218 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "5.587.700 TL",
+          "priceNumeric": 5587700,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "EQE 350 4MATIC",
+          "trim": "AMG",
+          "engine": "NaNL 292 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "6.384.400 TL",
+          "priceNumeric": 6384400,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG EQE 53 4MATIC+",
+          "trim": "Performance",
+          "engine": "NaNL 625 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "8.204.200 TL",
+          "priceNumeric": 8204200,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "EQS 450 4MATIC",
+          "trim": "Inspiration",
+          "engine": "NaNL 360 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "9.436.200 TL",
+          "priceNumeric": 9436200,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "EQS 580 4MATIC",
+          "trim": "Heritage Edition",
+          "engine": "NaNL 523 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "11.036.200 TL",
+          "priceNumeric": 11036200,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "EQA 250+",
+          "trim": "AMG",
+          "engine": "NaNL 190 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.911.800 TL",
+          "priceNumeric": 3911800,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "EQA 250+",
+          "trim": "Night Edition",
+          "engine": "NaNL 190 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.014.800 TL",
+          "priceNumeric": 4014800,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "GLA 200",
+          "trim": "AMG",
+          "engine": "1.3L 163 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "4.268.000 TL",
+          "priceNumeric": 4268000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "GLB 200",
+          "trim": "Progressive",
+          "engine": "1.3L 163 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "4.586.000 TL",
+          "priceNumeric": 4586000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "GLB 200",
+          "trim": "AMG",
+          "engine": "1.3L 163 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "4.823.000 TL",
+          "priceNumeric": 4823000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "GLC 180",
+          "trim": "AMG",
+          "engine": "1.5L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "6.372.000 TL",
+          "priceNumeric": 6372000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "GLC 300 d 4MATIC",
+          "trim": "AMG",
+          "engine": "2.0L 269 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "8.463.000 TL",
+          "priceNumeric": 8463000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG GLC 43 4MATIC",
+          "trim": "Performance",
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "9.359.000 TL",
+          "priceNumeric": 9359000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG GLC 63 S E PERFORMANCE",
+          "trim": "-",
+          "engine": "2.0L 680 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "13.457.000 TL",
+          "priceNumeric": 13457000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "GLC 180 Coupé",
+          "trim": "AMG",
+          "engine": "1.5L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "6.787.000 TL",
+          "priceNumeric": 6787000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG GLC 43 4MATIC Coupé",
+          "trim": "Performance",
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "9.868.000 TL",
+          "priceNumeric": 9868000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG GLC 63 S E PERFORMANCE Coupé",
+          "trim": "-",
+          "engine": "2.0L 680 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "14.142.000 TL",
+          "priceNumeric": 14142000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "G 580",
+          "trim": "Heritage",
+          "engine": "NaNL 587 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "14.490.200 TL",
+          "priceNumeric": 14490200,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "G 450 d",
+          "trim": "Heritage",
+          "engine": "3.0L 367 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "20.357.600 TL",
+          "priceNumeric": 20357600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "G 500",
+          "trim": "Heritage",
+          "engine": "3.0L 449 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "21.670.600 TL",
+          "priceNumeric": 21670600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG G 63",
+          "trim": "Performance",
+          "engine": "4.0L 585 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "28.153.600 TL",
+          "priceNumeric": 28153600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG G 63",
+          "trim": "Performance",
+          "engine": "4.0L 585 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "25.109.100 TL",
+          "priceNumeric": 25109100,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG SL 43",
+          "trim": "Performance",
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "15.231.000 TL",
+          "priceNumeric": 15231000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG SL 63 4MATIC+",
+          "trim": "Performance",
+          "engine": "4.0L 585 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "25.738.600 TL",
+          "priceNumeric": 25738600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-Maybach SL 680",
+          "trim": "Monogram Series",
+          "engine": "4.0L 585 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "35.187.600 TL",
+          "priceNumeric": 35187600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG GT 43",
+          "trim": "Performance",
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "15.140.000 TL",
+          "priceNumeric": 15140000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG GT 63 4MATIC+",
+          "trim": "Performance",
+          "engine": "4.0L 585 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "26.496.600 TL",
+          "priceNumeric": 26496600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "Mercedes-AMG GT 63 PRO 4MATIC+",
+          "trim": "-",
+          "engine": "4.0L 612 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "30.707.600 TL",
+          "priceNumeric": 30707600,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "CLA 220 4MATIC",
+          "trim": "AMG",
+          "engine": "1.5L 190 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "4.643.000 TL",
+          "priceNumeric": 4643000,
+          "brand": "Mercedes-Benz"
+        },
+        {
+          "model": "CLA 350 4MATIC",
+          "trim": "Edition 1 AMG",
+          "engine": "NaNL 354 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.657.600 TL",
+          "priceNumeric": 4657600,
+          "brand": "Mercedes-Benz"
+        }
+      ]
+    },
+    "ford": {
+      "name": "Ford",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "Yeni Puma",
+          "trim": "Titanium",
+          "engine": "1.0L EcoBoost 125PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "1.842.100 TL",
+          "priceNumeric": 1842100,
+          "brand": "Ford"
+        },
+        {
+          "model": "Yeni Puma",
+          "trim": "Titanium",
+          "engine": "1.0L EcoBoost 125PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "1.897.100 TL",
+          "priceNumeric": 1897100,
+          "brand": "Ford"
+        },
+        {
+          "model": "Yeni Puma",
+          "trim": "ST-Line X",
+          "engine": "1.0L EcoBoost 155PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.076.700 TL",
+          "priceNumeric": 2076700,
+          "brand": "Ford"
+        },
+        {
+          "model": "Yeni Puma",
+          "trim": "ST-Line X",
+          "engine": "1.0L EcoBoost 155PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.138.700 TL",
+          "priceNumeric": 2138700,
+          "brand": "Ford"
+        },
+        {
+          "model": "Focus",
+          "trim": "Yeni Titanium Stil",
+          "engine": "1.5L EcoBlue 115PS",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "2.545.900 TL",
+          "priceNumeric": 2545900,
+          "brand": "Ford"
+        },
+        {
+          "model": "Focus",
+          "trim": "Yeni Titanium X",
+          "engine": "1.5L EcoBlue 115PS",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "2.676.200 TL",
+          "priceNumeric": 2676200,
+          "brand": "Ford"
+        },
+        {
+          "model": "Kuga",
+          "trim": "Titanium",
+          "engine": "1.5L EcoBoost 186PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.379.100 TL",
+          "priceNumeric": 2379100,
+          "brand": "Ford"
+        },
+        {
+          "model": "Kuga",
+          "trim": "Titanium",
+          "engine": "1.5L EcoBoost 186PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.660.500 TL",
+          "priceNumeric": 2660500,
+          "brand": "Ford"
+        },
+        {
+          "model": "Kuga",
+          "trim": "Active X",
+          "engine": "1.5L EcoBoost 186PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.938.500 TL",
+          "priceNumeric": 2938500,
+          "brand": "Ford"
+        },
+        {
+          "model": "Kuga",
+          "trim": "Active X",
+          "engine": "1.5L EcoBoost 186PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.026.300 TL",
+          "priceNumeric": 3026300,
+          "brand": "Ford"
+        },
+        {
+          "model": "Kuga",
+          "trim": "ST-Line",
+          "engine": "1.5L EcoBoost 186PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.026.300 TL",
+          "priceNumeric": 3026300,
+          "brand": "Ford"
+        },
+        {
+          "model": "Kuga",
+          "trim": "ST-Line X",
+          "engine": "1.5L EcoBoost 186PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.209.400 TL",
+          "priceNumeric": 3209400,
+          "brand": "Ford"
+        },
+        {
+          "model": "Kuga",
+          "trim": "ST-Line X",
+          "engine": "1.5L EcoBoost 186PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.305.300 TL",
+          "priceNumeric": 3305300,
+          "brand": "Ford"
+        },
+        {
+          "model": "Yeni Journey Courier",
+          "trim": "Deluxe",
+          "engine": "1.0L EcoBoost 125PS",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "2.192.000 TL",
+          "priceNumeric": 2192000,
+          "brand": "Ford"
+        },
+        {
+          "model": "Yeni Journey Courier",
+          "trim": "Deluxe",
+          "engine": "1.0L EcoBoost 125PS",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "2.257.400 TL",
+          "priceNumeric": 2257400,
+          "brand": "Ford"
+        },
+        {
+          "model": "Yeni Journey Courier",
+          "trim": "Titanium",
+          "engine": "1.0L EcoBoost 125PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.754.900 TL",
+          "priceNumeric": 2754900,
+          "brand": "Ford"
+        },
+        {
+          "model": "Yeni Journey Courier",
+          "trim": "Titanium",
+          "engine": "1.0L EcoBoost 125PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.837.200 TL",
+          "priceNumeric": 2837200,
+          "brand": "Ford"
+        },
+        {
+          "model": "Puma Gen-E",
+          "trim": "Premium",
+          "engine": "123KW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.938.700 TL",
+          "priceNumeric": 1938700,
+          "brand": "Ford"
+        },
+        {
+          "model": "Puma Gen-E",
+          "trim": "Premium",
+          "engine": "123KW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.996.500 TL",
+          "priceNumeric": 1996500,
+          "brand": "Ford"
+        },
+        {
+          "model": "Yeni Elektrikli Journey Courier",
+          "trim": "Titanium",
+          "engine": "100KW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.003.100 TL",
+          "priceNumeric": 2003100,
+          "brand": "Ford"
+        },
+        {
+          "model": "Yeni Elektrikli Journey Courier",
+          "trim": "Titanium",
+          "engine": "100KW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.062.900 TL",
+          "priceNumeric": 2062900,
+          "brand": "Ford"
+        }
+      ]
+    },
+    "dacia": {
+      "name": "Dacia",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "Yeni Sandero",
+          "trim": "Essential",
+          "engine": "essential TCe 100",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.240.000,00",
+          "priceNumeric": 1240000,
+          "brand": "Dacia"
+        },
+        {
+          "model": "Yeni Sandero",
+          "trim": "Expression",
+          "engine": "expression TCe 100",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.340.000,00",
+          "priceNumeric": 1340000,
+          "brand": "Dacia"
+        }
+      ]
+    },
+    "nissan": {
+      "name": "Nissan",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "QASHQAI",
+          "trim": "Designpack",
+          "engine": "1.3 DIG-T Mild Hybrid 158PS",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "2.481.400 TL",
+          "priceNumeric": 2481400,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI",
+          "trim": "Skypack",
+          "engine": "1.3 DIG-T Mild Hybrid 158PS",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "2.962.900 TL",
+          "priceNumeric": 2962900,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI",
+          "trim": "Skypack 4x4",
+          "engine": "1.3 DIG-T Mild Hybrid 158PS",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "3.236.500 TL",
+          "priceNumeric": 3236500,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI",
+          "trim": "Platinum",
+          "engine": "1.3 DIG-T Mild Hybrid 158PS",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "3.330.700 TL",
+          "priceNumeric": 3330700,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI",
+          "trim": "Platinum 4x4",
+          "engine": "1.3 DIG-T Mild Hybrid 158PS",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "3.437.900 TL",
+          "priceNumeric": 3437900,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI",
+          "trim": "Platinum Premium",
+          "engine": "1.3 DIG-T Mild Hybrid 158PS",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "3.464.800 TL",
+          "priceNumeric": 3464800,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI",
+          "trim": "Platinum Premium 4x4",
+          "engine": "1.3 DIG-T Mild Hybrid 158PS",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "3.571.800 TL",
+          "priceNumeric": 3571800,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI e-POWER",
+          "trim": "Skypack",
+          "engine": "e-POWER 190PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.440.100 TL",
+          "priceNumeric": 3440100,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI e-POWER",
+          "trim": "N-Design",
+          "engine": "e-POWER 190PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.607.600 TL",
+          "priceNumeric": 3607600,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI e-POWER",
+          "trim": "Platinum",
+          "engine": "e-POWER 190PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.662.800 TL",
+          "priceNumeric": 3662800,
+          "brand": "Nissan"
+        },
+        {
+          "model": "QASHQAI e-POWER",
+          "trim": "Platinum Premium",
+          "engine": "e-POWER 190PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.785.900 TL",
+          "priceNumeric": 3785900,
+          "brand": "Nissan"
+        },
+        {
+          "model": "JUKE",
+          "trim": "Tekna",
+          "engine": "1.0 DIG-T 115PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.716.400 TL",
+          "priceNumeric": 1716400,
+          "brand": "Nissan"
+        },
+        {
+          "model": "JUKE",
+          "trim": "Tekna",
+          "engine": "1.0 DIG-T 115PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.085.400 TL",
+          "priceNumeric": 2085400,
+          "brand": "Nissan"
+        },
+        {
+          "model": "JUKE",
+          "trim": "Platinum",
+          "engine": "1.0 DIG-T 115PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.171.500 TL",
+          "priceNumeric": 2171500,
+          "brand": "Nissan"
+        },
+        {
+          "model": "JUKE",
+          "trim": "N-Design",
+          "engine": "1.0 DIG-T 115PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.290.900 TL",
+          "priceNumeric": 2290900,
+          "brand": "Nissan"
+        },
+        {
+          "model": "JUKE",
+          "trim": "N-Sport",
+          "engine": "1.0 DIG-T 115PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.290.900 TL",
+          "priceNumeric": 2290900,
+          "brand": "Nissan"
+        },
+        {
+          "model": "JUKE",
+          "trim": "Platinum Premium",
+          "engine": "1.0 DIG-T 115PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.365.600 TL",
+          "priceNumeric": 2365600,
+          "brand": "Nissan"
+        },
+        {
+          "model": "X-TRAIL MILD HYBRID",
+          "trim": "Platinum",
+          "engine": "",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "4.343.000 TL",
+          "priceNumeric": 4343000,
+          "brand": "Nissan"
+        },
+        {
+          "model": "X-TRAIL MILD HYBRID",
+          "trim": "Platinum Premium",
+          "engine": "",
+          "transmission": "Otomatik",
+          "fuel": "Mild Hybrid",
+          "priceRaw": "4.783.500 TL",
+          "priceNumeric": 4783500,
+          "brand": "Nissan"
+        },
+        {
+          "model": "TOWNSTAR VAN",
+          "trim": "Visia",
+          "engine": "1.3 DIG-T 130PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.151.800 TL",
+          "priceNumeric": 1151800,
+          "brand": "Nissan"
+        },
+        {
+          "model": "TOWNSTAR VAN",
+          "trim": "Visia",
+          "engine": "1.3 DIG-T 130PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.317.600 TL",
+          "priceNumeric": 1317600,
+          "brand": "Nissan"
+        },
+        {
+          "model": "TOWNSTAR VAN",
+          "trim": "Visia",
+          "engine": "1.3 DIG-T 130PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.431.700 TL",
+          "priceNumeric": 1431700,
+          "brand": "Nissan"
+        },
+        {
+          "model": "TOWNSTAR VAN",
+          "trim": "Tekna",
+          "engine": "1.3 DIG-T 130PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.503.800 TL",
+          "priceNumeric": 1503800,
+          "brand": "Nissan"
+        },
+        {
+          "model": "TOWNSTAR VAN",
+          "trim": "Tekna",
+          "engine": "",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.099.300 TL",
+          "priceNumeric": 2099300,
+          "brand": "Nissan"
+        },
+        {
+          "model": "TOWNSTAR VAN",
+          "trim": "Tekna",
+          "engine": "",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.078.500 TL",
+          "priceNumeric": 2078500,
+          "brand": "Nissan"
+        },
+        {
+          "model": "TOWNSTAR COMBI EV",
+          "trim": "Designpack",
+          "engine": "",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.367.100 TL",
+          "priceNumeric": 2367100,
+          "brand": "Nissan"
+        },
+        {
+          "model": "TOWNSTAR COMBI EV",
+          "trim": "Platinum",
+          "engine": "",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.417.600 TL",
+          "priceNumeric": 2417600,
+          "brand": "Nissan"
+        }
+      ]
+    },
+    "honda": {
+      "name": "Honda",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "Jazz Hybrid",
+          "trim": "Crosstar",
+          "engine": "1.5L Hibrit Otomatik",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "2.380.000 TL",
+          "priceNumeric": 2380000,
+          "brand": "Honda"
+        },
+        {
+          "model": "HR-V Hybrid",
+          "trim": "Elegance",
+          "engine": "1.5L Hibrit Otomatik",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "2.544.000 TL",
+          "priceNumeric": 2544000,
+          "brand": "Honda"
+        },
+        {
+          "model": "HR-V Hybrid",
+          "trim": "Advance",
+          "engine": "1.5L Hibrit Otomatik",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "2.675.000 TL",
+          "priceNumeric": 2675000,
+          "brand": "Honda"
+        },
+        {
+          "model": "HR-V Hybrid",
+          "trim": "Style+",
+          "engine": "1.5L Hibrit Otomatik",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "2.955.000 TL",
+          "priceNumeric": 2955000,
+          "brand": "Honda"
+        },
+        {
+          "model": "Type R",
+          "trim": "Type R",
+          "engine": "2.0L VTEC Turbo Benzin Manuel",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "5.500.000 TL",
+          "priceNumeric": 5500000,
+          "brand": "Honda"
+        },
+        {
+          "model": "CR-V Hybrid",
+          "trim": "Advance",
+          "engine": "2.0L Hibrit Otomatik",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "6.160.000 TL",
+          "priceNumeric": 6160000,
+          "brand": "Honda"
+        }
+      ]
+    },
+    "seat": {
+      "name": "SEAT",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "Ibiza",
+          "trim": "Style",
+          "engine": "1.0 EcoTSI 115 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Benzin",
+          "priceRaw": "1.601.646 TL",
+          "priceNumeric": 1601646,
+          "brand": "SEAT"
+        },
+        {
+          "model": "Ibiza",
+          "trim": "FR",
+          "engine": "1.0 EcoTSI 115 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Benzin",
+          "priceRaw": "1.721.846 TL",
+          "priceNumeric": 1721846,
+          "brand": "SEAT"
+        },
+        {
+          "model": "Arona",
+          "trim": "Style",
+          "engine": "1.0 EcoTSI 115 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Benzin",
+          "priceRaw": "1.691.796 TL",
+          "priceNumeric": 1691796,
+          "brand": "SEAT"
+        },
+        {
+          "model": "Arona",
+          "trim": "FR",
+          "engine": "1.0 EcoTSI 115 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Benzin",
+          "priceRaw": "1.801.979 TL",
+          "priceNumeric": 1801979,
+          "brand": "SEAT"
+        },
+        {
+          "model": "Leon",
+          "trim": "FR",
+          "engine": "1.5 eHybrid 204 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Hibrit",
+          "priceRaw": "2.363.910 TL",
+          "priceNumeric": 2363910,
+          "brand": "SEAT"
+        },
+        {
+          "model": "Ateca",
+          "trim": "Style Plus",
+          "engine": "1.5 EcoTSI ACT 150 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Benzin",
+          "priceRaw": "2.382.942 TL",
+          "priceNumeric": 2382942,
+          "brand": "SEAT"
+        },
+        {
+          "model": "Ateca",
+          "trim": "Xperience",
+          "engine": "1.5 EcoTSI ACT 150 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Benzin",
+          "priceRaw": "2.583.275 TL",
+          "priceNumeric": 2583275,
+          "brand": "SEAT"
+        },
+        {
+          "model": "Ateca",
+          "trim": "FR Dark Edition",
+          "engine": "1.5 EcoTSI ACT 150 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Benzin",
+          "priceRaw": "2.838.700 TL",
+          "priceNumeric": 2838700,
+          "brand": "SEAT"
+        }
+      ]
+    },
+    "kia": {
+      "name": "Kia",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "Stonic",
+          "trim": "Cool",
+          "engine": "100 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.999.000 TL",
+          "priceNumeric": 1999000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Picanto",
+          "trim": "Feel",
+          "engine": "63 PS",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.290.000 TL",
+          "priceNumeric": 1290000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Picanto",
+          "trim": "Cool",
+          "engine": "79 PS",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.390.000 TL",
+          "priceNumeric": 1390000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Picanto",
+          "trim": "Cool",
+          "engine": "68 PS",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.335.000 TL",
+          "priceNumeric": 1335000,
+          "brand": "Kia"
+        },
+        {
+          "model": "CEE",
+          "trim": "Elegance",
+          "engine": "140 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.070.000 TL",
+          "priceNumeric": 2070000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Stonic",
+          "trim": "Cool",
+          "engine": "100 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.740.000 TL",
+          "priceNumeric": 1740000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Stonic",
+          "trim": "Elegance",
+          "engine": "100 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.800.000 TL",
+          "priceNumeric": 1800000,
+          "brand": "Kia"
+        },
+        {
+          "model": "XCEED",
+          "trim": "Cool",
+          "engine": "115 PS",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "1.790.000 TL",
+          "priceNumeric": 1790000,
+          "brand": "Kia"
+        },
+        {
+          "model": "XCEED",
+          "trim": "Elegance",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.175.000 TL",
+          "priceNumeric": 2175000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Sportage",
+          "trim": "Cool",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.370.000 TL",
+          "priceNumeric": 2370000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Sportage",
+          "trim": "Elegance",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.820.000 TL",
+          "priceNumeric": 2820000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Sportage",
+          "trim": "Prestige",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.085.000 TL",
+          "priceNumeric": 3085000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Sportage",
+          "trim": "GT-Line",
+          "engine": "180 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.325.000 TL",
+          "priceNumeric": 3325000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Sorento",
+          "trim": "Prestige Smart",
+          "engine": "215 PS",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "5.990.000 TL",
+          "priceNumeric": 5990000,
+          "brand": "Kia"
+        },
+        {
+          "model": "Sorento",
+          "trim": "Prestige Smart",
+          "engine": "215 PS",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "6.130.000 TL",
+          "priceNumeric": 6130000,
+          "brand": "Kia"
+        },
+        {
+          "model": "EV3",
+          "trim": "Elegance Standard Range",
+          "engine": "150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.095.000 TL",
+          "priceNumeric": 2095000,
+          "brand": "Kia"
+        },
+        {
+          "model": "EV3",
+          "trim": "Elegance Long Range",
+          "engine": "150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.445.000 TL",
+          "priceNumeric": 2445000,
+          "brand": "Kia"
+        },
+        {
+          "model": "EV3",
+          "trim": "Prestige Standard Range",
+          "engine": "150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.345.000 TL",
+          "priceNumeric": 2345000,
+          "brand": "Kia"
+        },
+        {
+          "model": "EV3",
+          "trim": "GT-Line Long Range",
+          "engine": "150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.500.000 TL",
+          "priceNumeric": 3500000,
+          "brand": "Kia"
+        },
+        {
+          "model": "EV6 PE",
+          "trim": "Elegance Standard Range",
+          "engine": "125 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.500.000 TL",
+          "priceNumeric": 3500000,
+          "brand": "Kia"
+        },
+        {
+          "model": "EV9",
+          "trim": "Prestige",
+          "engine": "149 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "6.360.000 TL",
+          "priceNumeric": 6360000,
+          "brand": "Kia"
+        },
+        {
+          "model": "EV9",
+          "trim": "GT-Line",
+          "engine": "283 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "7.630.000 TL",
+          "priceNumeric": 7630000,
+          "brand": "Kia"
+        }
+      ]
+    },
+    "volvo": {
+      "name": "Volvo",
+      "date": "2026-01-28",
+      "vehicles": [
+        {
+          "model": "EX30",
+          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
+          "engine": "150 kW / 204 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.347.670 TL",
+          "priceNumeric": 2347670,
+          "brand": "Volvo"
+        },
+        {
+          "model": "EX30",
+          "trim": "TWIN MOTOR, ULTRA",
+          "engine": "315 kW / 428 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.626.481 TL",
+          "priceNumeric": 3626481,
+          "brand": "Volvo"
+        },
+        {
+          "model": "EX30 CROSS COUNTRY",
+          "trim": "TWIN MOTOR PERFORMANCE, ULTRA",
+          "engine": "315 kW / 428 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.765.989 TL",
+          "priceNumeric": 3765989,
+          "brand": "Volvo"
+        },
+        {
+          "model": "EX40",
+          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
+          "engine": "150 kW / 204 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.933.820 TL",
+          "priceNumeric": 3933820,
+          "brand": "Volvo"
+        },
+        {
+          "model": "EX40 BLACK EDITION",
+          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
+          "engine": "150 kW / 204 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.073.599 TL",
+          "priceNumeric": 4073599,
+          "brand": "Volvo"
+        },
+        {
+          "model": "EX40",
+          "trim": "TWIN MOTOR, ULTRA",
+          "engine": "300 kW / 408 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.777.026 TL",
+          "priceNumeric": 4777026,
+          "brand": "Volvo"
+        },
+        {
+          "model": "EC40",
+          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
+          "engine": "150 kW / 204 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.020.576 TL",
+          "priceNumeric": 4020576,
+          "brand": "Volvo"
+        },
+        {
+          "model": "EC40 BLACK EDITION",
+          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
+          "engine": "150 kW / 204 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.160.355 TL",
+          "priceNumeric": 4160355,
+          "brand": "Volvo"
+        },
+        {
+          "model": "EC40",
+          "trim": "TWIN MOTOR, ULTRA",
+          "engine": "300 kW / 408 hp",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "4.874.625 TL",
+          "priceNumeric": 4874625,
+          "brand": "Volvo"
+        },
+        {
+          "model": "V60",
+          "trim": "B4 FWD MILD HYBRID, PLUS, DARK",
+          "engine": "1.969 cc 197 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "5.489.241 TL",
+          "priceNumeric": 5489241,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60",
+          "trim": "B5 AWD MILD HYBRID, PLUS, BRIGHT",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "6.717.287 TL",
+          "priceNumeric": 6717287,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60",
+          "trim": "B5 AWD MILD HYBRID, PLUS, DARK",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "6.717.287 TL",
+          "priceNumeric": 6717287,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60",
+          "trim": "B5 AWD MILD HYBRID, ULTRA, BRIGHT",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "6.998.108 TL",
+          "priceNumeric": 6998108,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60",
+          "trim": "B5 AWD MILD HYBRID, ULTRA, DARK",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "6.998.108 TL",
+          "priceNumeric": 6998108,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60 BLACK EDITION",
+          "trim": "B5 AWD MILD HYBRID, PLUS",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "7.126.344 TL",
+          "priceNumeric": 7126344,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60",
+          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, BRIGHT",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "7.353.597 TL",
+          "priceNumeric": 7353597,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60",
+          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, DARK",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "7.353.597 TL",
+          "priceNumeric": 7353597,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60",
+          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA, BRIGHT",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "7.634.418 TL",
+          "priceNumeric": 7634418,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60",
+          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA, DARK",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "7.634.418 TL",
+          "priceNumeric": 7634418,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60 BLACK EDITION",
+          "trim": "T8 AWD PLUG-IN HYBRID, PLUS",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "7.762.654 TL",
+          "priceNumeric": 7762654,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60 BLACK EDITION",
+          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "8.088.925 TL",
+          "priceNumeric": 8088925,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC60",
+          "trim": "T8 AWD PLUG-IN HYBRID, POLESTAR ENGINEERED",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "8.579.143 TL",
+          "priceNumeric": 8579143,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90",
+          "trim": "B5 AWD MILD HYBRID, PLUS, BRIGHT",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "10.615.530 TL",
+          "priceNumeric": 10615530,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90",
+          "trim": "B5 AWD MILD HYBRID, PLUS, DARK",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "10.615.530 TL",
+          "priceNumeric": 10615530,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90",
+          "trim": "B5 AWD MILD HYBRID, ULTRA, BRIGHT",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "10.948.295 TL",
+          "priceNumeric": 10948295,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90",
+          "trim": "B5 AWD MILD HYBRID, ULTRA, DARK",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "10.948.295 TL",
+          "priceNumeric": 10948295,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90 BLACK EDITION",
+          "trim": "B5 AWD MILD HYBRID, PLUS",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "10.844.407 TL",
+          "priceNumeric": 10844407,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90 BLACK EDITION",
+          "trim": "B5 AWD MILD HYBRID, ULTRA",
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit",
+          "priceRaw": "11.177.171 TL",
+          "priceNumeric": 11177171,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90",
+          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, BRIGHT",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "11.277.812 TL",
+          "priceNumeric": 11277812,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90",
+          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, DARK",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "11.277.812 TL",
+          "priceNumeric": 11277812,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90",
+          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA, BRIGHT",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "11.610.576 TL",
+          "priceNumeric": 11610576,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90",
+          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA, DARK",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "11.610.576 TL",
+          "priceNumeric": 11610576,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90 BLACK EDITION",
+          "trim": "T8 AWD PLUG-IN HYBRID, PLUS",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "11.506.689 TL",
+          "priceNumeric": 11506689,
+          "brand": "Volvo"
+        },
+        {
+          "model": "XC90 BLACK EDITION",
+          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit",
+          "priceRaw": "11.839.453 TL",
+          "priceNumeric": 11839453,
+          "brand": "Volvo"
         }
       ]
     }
