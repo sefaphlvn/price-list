@@ -37,7 +37,7 @@ export default function Footer() {
 
         <Space split={<span style={{ color: tokens.colors.gray[300] }}>|</span>}>
           <Text type="secondary" style={{ fontSize: 12 }}>
-            © {currentYear} Price List
+            © {currentYear} OtoFiyatList
           </Text>
           <Text type="secondary" style={{ fontSize: 12 }}>
             {t('footer.copyright')}

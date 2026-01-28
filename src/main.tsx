@@ -19,7 +19,7 @@ function AppWithProviders() {
   return (
     <ErrorBoundary>
       <ConfigProvider theme={antdTheme} locale={locale}>
-        <HashRouter>
+        <HashRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <App />
         </HashRouter>
       </ConfigProvider>

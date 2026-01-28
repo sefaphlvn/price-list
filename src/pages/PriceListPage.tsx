@@ -764,7 +764,7 @@ export default function PriceListPage() {
             padding: tokens.spacing['2xl'],
           }}
         >
-          <Spin tip={t('common.loading')} size="large" />
+          <Spin size="large" />
         </motion.div>
       )}
 

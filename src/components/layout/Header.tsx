@@ -277,7 +277,7 @@ export default function Header({ onOpenTracking }: HeaderProps) {
                 fontSize: 14,
               }}
             >
-              PL
+              OFL
             </div>
             <Text
               strong
@@ -288,7 +288,7 @@ export default function Header({ onOpenTracking }: HeaderProps) {
               }}
               className="logo-text"
             >
-              Price List
+              OtoFiyatList
             </Text>
           </motion.div>
         </Link>

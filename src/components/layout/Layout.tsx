@@ -16,7 +16,6 @@ import TrackedVehiclesDrawer from '../tracking/TrackedVehiclesDrawer';
 import { OfflineBanner, InstallPrompt } from '../../pwa';
 import { CommandPalette } from '../search';
 import { useCommandPalette } from '../../hooks/useCommandPalette';
-import WhatsNewModal from '../common/WhatsNewModal';
 
 interface LatestVehicle {
   brand: string;
@@ -49,6 +48,10 @@ export default function Layout() {
         const response = await fetch('./data/latest.json');
         if (!response.ok) return;
 
+        // Check if response is actually JSON (not HTML from SPA fallback)
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) return;
+
         const data = await response.json();
         if (data && Array.isArray(data.vehicles)) {
           setVehicles(data.vehicles.map((v: any) => ({
@@ -62,8 +65,8 @@ export default function Layout() {
             priceFormatted: v.priceRaw || v.priceFormatted || '',
           })));
         }
-      } catch (error) {
-        console.error('Failed to fetch vehicles for search:', error);
+      } catch {
+        // Silently fail - latest.json may not exist in dev mode
       }
     };
 
@@ -209,7 +212,6 @@ export default function Layout() {
         onClose={commandPalette.close}
         vehicles={vehicles}
       />
-      <WhatsNewModal />
     </div>
   );
 }

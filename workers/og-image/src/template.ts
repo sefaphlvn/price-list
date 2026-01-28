@@ -53,10 +53,10 @@ export function generateSVG(params: OGParams): string {
 
   <!-- Logo area -->
   <rect x="60" y="50" width="60" height="60" rx="12" fill="#3b82f6"/>
-  <text x="90" y="92" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">PL</text>
+  <text x="90" y="92" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">OFL</text>
 
   <!-- Site name -->
-  <text x="140" y="92" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="600" fill="#6b7280">Fiyat Listesi</text>
+  <text x="140" y="92" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="600" fill="#6b7280">OtoFiyatList</text>
 
   <!-- Brand & Model (main title) -->
   <text x="60" y="220" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#ffffff">

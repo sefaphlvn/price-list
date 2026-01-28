@@ -216,8 +216,8 @@ export default function CommandPalette({ isOpen, onClose, vehicles }: CommandPal
       styles={{
         body: { padding: 0 },
         content: { borderRadius: tokens.borderRadius.lg, overflow: 'hidden' },
+        mask: { backgroundColor: 'rgba(0, 0, 0, 0.6)', backdropFilter: 'blur(4px)' },
       }}
-      maskStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', backdropFilter: 'blur(4px)' }}
     >
       <div style={{ background: '#fff' }}>
         {/* Search Input */}

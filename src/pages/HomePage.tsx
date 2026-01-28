@@ -114,7 +114,7 @@ export default function HomePage() {
           }}
         >
           <img
-            src="/price-list/hero.webp"
+            src="/hero.webp"
             alt="Futuristic Cars"
             style={{
               width: '100%',
