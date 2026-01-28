@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-28T18:00:50.411Z",
+  "generatedAt": "2026-01-28T18:06:21.302Z",
   "totalVehicles": 488,
   "overallStats": {
     "avgPrice": 5039996,
@@ -156,21 +156,21 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 206,
-      "percentage": 42.2,
-      "avgPrice": 5003001
+      "count": 209,
+      "percentage": 42.8,
+      "avgPrice": 4963867
     },
     {
       "fuel": "Elektrik",
-      "count": 115,
-      "percentage": 23.6,
-      "avgPrice": 5226005
+      "count": 117,
+      "percentage": 24,
+      "avgPrice": 5197441
     },
     {
-      "fuel": "Hybrid",
-      "count": 47,
-      "percentage": 9.6,
-      "avgPrice": 2569011
+      "fuel": "Hibrit",
+      "count": 90,
+      "percentage": 18.4,
+      "avgPrice": 4434588
     },
     {
       "fuel": "Dizel",
@@ -179,60 +179,30 @@
       "avgPrice": 4348870
     },
     {
-      "fuel": "Mild Hybrid",
-      "count": 22,
-      "percentage": 4.5,
-      "avgPrice": 6372086
-    },
-    {
-      "fuel": "Hibrit",
-      "count": 21,
-      "percentage": 4.3,
-      "avgPrice": 6580167
-    },
-    {
       "fuel": "Plug-in Hibrit",
-      "count": 13,
-      "percentage": 2.7,
-      "avgPrice": 9502282
-    },
-    {
-      "fuel": "Plug-in Hybrid",
-      "count": 10,
-      "percentage": 2,
-      "avgPrice": 8328640
+      "count": 23,
+      "percentage": 4.7,
+      "avgPrice": 8992003
     },
     {
       "fuel": "Bilinmiyor",
       "count": 5,
       "percentage": 1,
       "avgPrice": 3338000
-    },
-    {
-      "fuel": "Benzin-LPG",
-      "count": 3,
-      "percentage": 0.6,
-      "avgPrice": 2276667
-    },
-    {
-      "fuel": "Benzin-Elektrik",
-      "count": 2,
-      "percentage": 0.4,
-      "avgPrice": 3555000
     }
   ],
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 324,
-      "percentage": 66.4,
-      "avgPrice": 6108635
+      "count": 339,
+      "percentage": 69.5,
+      "avgPrice": 6027463
     },
     {
       "transmission": "DSG",
-      "count": 57,
-      "percentage": 11.7,
-      "avgPrice": 3735170
+      "count": 65,
+      "percentage": 13.3,
+      "avgPrice": 3536781
     },
     {
       "transmission": "DCT",
@@ -241,52 +211,16 @@
       "avgPrice": 2121129
     },
     {
+      "transmission": "Manuel",
+      "count": 30,
+      "percentage": 6.1,
+      "avgPrice": 1720447
+    },
+    {
       "transmission": "Bilinmiyor",
       "count": 23,
       "percentage": 4.7,
       "avgPrice": 2997787
-    },
-    {
-      "transmission": "Manuel",
-      "count": 20,
-      "percentage": 4.1,
-      "avgPrice": 1834720
-    },
-    {
-      "transmission": "Automatic",
-      "count": 12,
-      "percentage": 2.5,
-      "avgPrice": 3366750
-    },
-    {
-      "transmission": "Otomatik (DSG)",
-      "count": 8,
-      "percentage": 1.6,
-      "avgPrice": 2123262
-    },
-    {
-      "transmission": "Düz",
-      "count": 6,
-      "percentage": 1.2,
-      "avgPrice": 1585333
-    },
-    {
-      "transmission": "Manual",
-      "count": 4,
-      "percentage": 0.8,
-      "avgPrice": 1351750
-    },
-    {
-      "transmission": "Tiptronik",
-      "count": 2,
-      "percentage": 0.4,
-      "avgPrice": 10722500
-    },
-    {
-      "transmission": "Otomatik Vites",
-      "count": 1,
-      "percentage": 0.2,
-      "avgPrice": 2266000
     }
   ],
   "priceSegments": [

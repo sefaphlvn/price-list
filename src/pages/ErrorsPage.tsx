@@ -2,6 +2,7 @@
  * Errors Page - Displays system errors from data collection and generation
  */
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   Row,
   Col,
@@ -32,6 +33,11 @@ import type { ColumnsType } from 'antd/es/table';
 
 const { Title, Text, Paragraph } = Typography;
 
+// Helper function to get localized date/time based on language
+const getLocaleDateOptions = (language: string) => ({
+  locale: language === 'tr' ? 'tr-TR' : 'en-US',
+});
+
 interface SystemError {
   id: string;
   timestamp: string;
@@ -60,33 +66,27 @@ interface ErrorLog {
   };
 }
 
-const severityConfig = {
-  error: { color: 'red', icon: <ExclamationCircleOutlined />, label: 'Hata' },
-  warning: { color: 'orange', icon: <WarningOutlined />, label: 'Uyari' },
-  info: { color: 'blue', icon: <InfoCircleOutlined />, label: 'Bilgi' },
+const severityIcons = {
+  error: <ExclamationCircleOutlined />,
+  warning: <WarningOutlined />,
+  info: <InfoCircleOutlined />,
 };
 
-const categoryLabels: Record<string, string> = {
-  HTTP_ERROR: 'HTTP Hatasi',
-  PARSE_ERROR: 'Parse Hatasi',
-  VALIDATION_ERROR: 'Dogrulama Hatasi',
-  FILE_ERROR: 'Dosya Hatasi',
-  DATA_QUALITY_ERROR: 'Veri Kalitesi',
-};
-
-const sourceLabels: Record<string, string> = {
-  collection: 'Veri Toplama',
-  generation: 'Uretim',
-  health: 'Saglik Kontrolu',
-  frontend: 'Arayuz',
+const severityColors = {
+  error: 'red',
+  warning: 'orange',
+  info: 'blue',
 };
 
 export default function ErrorsPage() {
+  const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(true);
   const [errorLog, setErrorLog] = useState<ErrorLog | null>(null);
   const [fetchError, setFetchError] = useState<string | null>(null);
   const [selectedError, setSelectedError] = useState<SystemError | null>(null);
   const [detailsModalVisible, setDetailsModalVisible] = useState(false);
+
+  const { locale } = getLocaleDateOptions(i18n.language);
 
   const loadErrors = async () => {
     setLoading(true);
@@ -110,10 +110,10 @@ export default function ErrorsPage() {
           },
         });
       } else {
-        setFetchError('Hata loglari yuklenemedi');
+        setFetchError(t('errors.fetchError'));
       }
     } catch (error) {
-      setFetchError('Hata loglari yuklenemedi');
+      setFetchError(t('errors.fetchError'));
     } finally {
       setLoading(false);
     }
@@ -128,9 +128,12 @@ export default function ErrorsPage() {
     setDetailsModalVisible(true);
   };
 
+  const categoryKeys = ['HTTP_ERROR', 'PARSE_ERROR', 'VALIDATION_ERROR', 'FILE_ERROR', 'DATA_QUALITY_ERROR'];
+  const sourceKeys = ['collection', 'generation', 'health', 'frontend'];
+
   const columns: ColumnsType<SystemError> = [
     {
-      title: 'Zaman',
+      title: t('systemErrors.time'),
       dataIndex: 'timestamp',
       key: 'timestamp',
       width: 180,
@@ -141,7 +144,7 @@ export default function ErrorsPage() {
             <Space size={4}>
               <ClockCircleOutlined style={{ color: '#999' }} />
               <Text type="secondary" style={{ fontSize: 12 }}>
-                {date.toLocaleDateString('tr-TR')} {date.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' })}
+                {date.toLocaleDateString(locale)} {date.toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' })}
               </Text>
             </Space>
           </Tooltip>
@@ -151,49 +154,46 @@ export default function ErrorsPage() {
       defaultSortOrder: 'ascend',
     },
     {
-      title: 'Seviye',
+      title: t('systemErrors.severity'),
       dataIndex: 'severity',
       key: 'severity',
       width: 100,
-      render: (severity: 'error' | 'warning' | 'info') => {
-        const config = severityConfig[severity];
-        return (
-          <Tag color={config.color} icon={config.icon}>
-            {config.label}
-          </Tag>
-        );
-      },
+      render: (severity: 'error' | 'warning' | 'info') => (
+        <Tag color={severityColors[severity]} icon={severityIcons[severity]}>
+          {t(`systemErrors.severityLabels.${severity}`)}
+        </Tag>
+      ),
       filters: [
-        { text: 'Hata', value: 'error' },
-        { text: 'Uyari', value: 'warning' },
-        { text: 'Bilgi', value: 'info' },
+        { text: t('systemErrors.severityLabels.error'), value: 'error' },
+        { text: t('systemErrors.severityLabels.warning'), value: 'warning' },
+        { text: t('systemErrors.severityLabels.info'), value: 'info' },
       ],
       onFilter: (value, record) => record.severity === value,
     },
     {
-      title: 'Kategori',
+      title: t('systemErrors.category'),
       dataIndex: 'category',
       key: 'category',
       width: 150,
       render: (category: string) => (
-        <Tag>{categoryLabels[category] || category}</Tag>
+        <Tag>{t(`systemErrors.categoryLabels.${category}`, category)}</Tag>
       ),
-      filters: Object.entries(categoryLabels).map(([key, label]) => ({ text: label, value: key })),
+      filters: categoryKeys.map(key => ({ text: t(`systemErrors.categoryLabels.${key}`), value: key })),
       onFilter: (value, record) => record.category === value,
     },
     {
-      title: 'Kaynak',
+      title: t('systemErrors.source'),
       dataIndex: 'source',
       key: 'source',
       width: 120,
       render: (source: string) => (
-        <Text type="secondary">{sourceLabels[source] || source}</Text>
+        <Text type="secondary">{t(`systemErrors.sourceLabels.${source}`, source)}</Text>
       ),
-      filters: Object.entries(sourceLabels).map(([key, label]) => ({ text: label, value: key })),
+      filters: sourceKeys.map(key => ({ text: t(`systemErrors.sourceLabels.${key}`), value: key })),
       onFilter: (value, record) => record.source === value,
     },
     {
-      title: 'Kod',
+      title: t('systemErrors.code'),
       dataIndex: 'code',
       key: 'code',
       width: 180,
@@ -202,7 +202,7 @@ export default function ErrorsPage() {
       ),
     },
     {
-      title: 'Mesaj',
+      title: t('systemErrors.message'),
       dataIndex: 'message',
       key: 'message',
       ellipsis: true,
@@ -211,14 +211,14 @@ export default function ErrorsPage() {
           <Text ellipsis={{ tooltip: message }}>{message}</Text>
           {record.recovered && (
             <Tag color="green" style={{ marginTop: 4 }}>
-              <CheckCircleOutlined /> Kurtarildi
+              <CheckCircleOutlined /> {t('systemErrors.recovered')}
             </Tag>
           )}
         </Space>
       ),
     },
     {
-      title: 'Marka',
+      title: t('systemErrors.brand'),
       dataIndex: 'brand',
       key: 'brand',
       width: 100,
@@ -230,7 +230,7 @@ export default function ErrorsPage() {
       width: 80,
       render: (_, record) => (
         <Button size="small" type="link" onClick={() => showDetails(record)}>
-          Detay
+          {t('systemErrors.details')}
         </Button>
       ),
     },
@@ -239,7 +239,7 @@ export default function ErrorsPage() {
   if (loading) {
     return (
       <div style={{ padding: 24, textAlign: 'center' }}>
-        <Spin size="large" tip="Hatalar yukleniyor..." />
+        <Spin size="large" tip={t('common.loading')} />
       </div>
     );
   }
@@ -248,13 +248,13 @@ export default function ErrorsPage() {
     return (
       <div style={{ padding: 24 }}>
         <Alert
-          message="Yukleme Hatasi"
+          message={t('common.error')}
           description={fetchError}
           type="error"
           showIcon
           action={
             <Button size="small" onClick={loadErrors}>
-              Tekrar Dene
+              {t('errors.tryAgain')}
             </Button>
           }
         />
@@ -274,17 +274,17 @@ export default function ErrorsPage() {
             <BugOutlined style={{ fontSize: 28, color: '#1890ff' }} />
             <div>
               <Title level={3} style={{ margin: 0 }}>
-                Sistem Hatalari
+                {t('systemErrors.title')}
               </Title>
               <Text type="secondary">
-                Script ve veri isleme hatalari
+                {t('systemErrors.subtitle')}
               </Text>
             </div>
           </Space>
         </Col>
         <Col>
           <Button icon={<ReloadOutlined />} onClick={loadErrors}>
-            Yenile
+            {t('systemErrors.refresh')}
           </Button>
         </Col>
       </Row>
@@ -294,7 +294,7 @@ export default function ErrorsPage() {
         <Col xs={12} sm={6}>
           <Card size="small">
             <Statistic
-              title="Toplam"
+              title={t('systemErrors.total')}
               value={summary.total}
               prefix={<ExclamationCircleOutlined />}
             />
@@ -303,7 +303,7 @@ export default function ErrorsPage() {
         <Col xs={12} sm={6}>
           <Card size="small">
             <Statistic
-              title="Hatalar"
+              title={t('systemErrors.errors')}
               value={summary.bySeverity?.error || 0}
               valueStyle={{ color: '#ff4d4f' }}
               prefix={<ExclamationCircleOutlined />}
@@ -313,7 +313,7 @@ export default function ErrorsPage() {
         <Col xs={12} sm={6}>
           <Card size="small">
             <Statistic
-              title="Uyarilar"
+              title={t('systemErrors.warnings')}
               value={summary.bySeverity?.warning || 0}
               valueStyle={{ color: '#faad14' }}
               prefix={<WarningOutlined />}
@@ -323,7 +323,7 @@ export default function ErrorsPage() {
         <Col xs={12} sm={6}>
           <Card size="small">
             <Statistic
-              title="Bilgi"
+              title={t('systemErrors.info')}
               value={summary.bySeverity?.info || 0}
               valueStyle={{ color: '#1890ff' }}
               prefix={<InfoCircleOutlined />}
@@ -336,10 +336,10 @@ export default function ErrorsPage() {
       {Object.keys(summary.byCategory).length > 0 && (
         <Card size="small" style={{ marginBottom: 16 }}>
           <Space wrap>
-            <Text type="secondary">Kategoriler:</Text>
+            <Text type="secondary">{t('systemErrors.categories')}:</Text>
             {Object.entries(summary.byCategory).map(([cat, count]) => (
               <Badge key={cat} count={count} showZero>
-                <Tag>{categoryLabels[cat] || cat}</Tag>
+                <Tag>{t(`systemErrors.categoryLabels.${cat}`, cat)}</Tag>
               </Badge>
             ))}
           </Space>
@@ -352,11 +352,11 @@ export default function ErrorsPage() {
           message={
             <Space>
               <Text type="secondary">
-                Son guncelleme: {new Date(errorLog.generatedAt).toLocaleString('tr-TR')}
+                {t('systemErrors.lastUpdate')}: {new Date(errorLog.generatedAt).toLocaleString(locale)}
               </Text>
               <Text type="secondary">|</Text>
               <Text type="secondary">
-                Temizlenme: {new Date(errorLog.clearedAt).toLocaleString('tr-TR')}
+                {t('systemErrors.cleared')}: {new Date(errorLog.clearedAt).toLocaleString(locale)}
               </Text>
             </Space>
           }
@@ -374,8 +374,8 @@ export default function ErrorsPage() {
             description={
               <Space direction="vertical" align="center">
                 <CheckCircleOutlined style={{ fontSize: 48, color: '#52c41a' }} />
-                <Text>Hata bulunamadi</Text>
-                <Text type="secondary">Sistem sorunsuz calisiyor</Text>
+                <Text>{t('systemErrors.noErrors')}</Text>
+                <Text type="secondary">{t('systemErrors.systemRunning')}</Text>
               </Space>
             }
           />
@@ -390,7 +390,7 @@ export default function ErrorsPage() {
             pagination={{
               pageSize: 20,
               showSizeChanger: true,
-              showTotal: (total, range) => `${range[0]}-${range[1]} / ${total} hata`,
+              showTotal: (total, range) => `${range[0]}-${range[1]} / ${total} ${t('systemErrors.errors').toLowerCase()}`,
             }}
             scroll={{ x: 1000 }}
           />
@@ -401,8 +401,8 @@ export default function ErrorsPage() {
       <Modal
         title={
           <Space>
-            {selectedError && severityConfig[selectedError.severity]?.icon}
-            <span>Hata Detaylari</span>
+            {selectedError && severityIcons[selectedError.severity]}
+            <span>{t('systemErrors.errorDetails')}</span>
           </Space>
         }
         open={detailsModalVisible}
@@ -414,25 +414,25 @@ export default function ErrorsPage() {
           <Space direction="vertical" style={{ width: '100%' }} size="middle">
             <Row gutter={16}>
               <Col span={12}>
-                <Text type="secondary">Kod:</Text>
+                <Text type="secondary">{t('systemErrors.code')}:</Text>
                 <br />
                 <Text code>{selectedError.code}</Text>
               </Col>
               <Col span={12}>
-                <Text type="secondary">Zaman:</Text>
+                <Text type="secondary">{t('systemErrors.time')}:</Text>
                 <br />
-                <Text>{new Date(selectedError.timestamp).toLocaleString('tr-TR')}</Text>
+                <Text>{new Date(selectedError.timestamp).toLocaleString(locale)}</Text>
               </Col>
             </Row>
 
             <div>
-              <Text type="secondary">Mesaj:</Text>
+              <Text type="secondary">{t('systemErrors.message')}:</Text>
               <Paragraph style={{ marginTop: 4 }}>{selectedError.message}</Paragraph>
             </div>
 
             {selectedError.brand && (
               <div>
-                <Text type="secondary">Marka:</Text>
+                <Text type="secondary">{t('systemErrors.brand')}:</Text>
                 <br />
                 <Text>{selectedError.brand} ({selectedError.brandId})</Text>
               </div>
@@ -440,7 +440,7 @@ export default function ErrorsPage() {
 
             {selectedError.recovered && (
               <Alert
-                message="Bu hata kurtarildi"
+                message={t('systemErrors.recovered')}
                 description={selectedError.recoveryMethod}
                 type="success"
                 showIcon
@@ -449,7 +449,7 @@ export default function ErrorsPage() {
 
             {selectedError.details && Object.keys(selectedError.details).length > 0 && (
               <div>
-                <Text type="secondary">Detaylar:</Text>
+                <Text type="secondary">{t('systemErrors.details')}:</Text>
                 <pre style={{
                   background: '#f5f5f5',
                   padding: 12,
@@ -465,7 +465,7 @@ export default function ErrorsPage() {
 
             {selectedError.stack && (
               <div>
-                <Text type="secondary">Stack Trace:</Text>
+                <Text type="secondary">{t('systemErrors.stackTrace')}:</Text>
                 <pre style={{
                   background: '#fff1f0',
                   padding: 12,

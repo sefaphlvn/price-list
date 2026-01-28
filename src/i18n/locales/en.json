@@ -302,7 +302,13 @@
     "deviationExplanation": "Negative = Below segment average",
     "fuelAnalysis": "Value by Fuel Type",
     "topBrandsByDeals": "Top Brands by Deals",
-    "noDealsFound": "No deals found"
+    "noDealsFound": "No deals found",
+    "vehicleCount": "vehicles",
+    "countLabel": "Count",
+    "scoreLabel": "Score",
+    "priceLabel": "Price",
+    "deviationLabel": "Deviation %",
+    "vehicles": "Vehicles"
   },
   "my": {
     "title": "My Dashboard",
@@ -480,7 +486,22 @@
     "confirmClearAll": "Are you sure you want to clear all notifications?",
     "alertsCleared": "Notifications cleared",
     "clearAll": "Clear All",
-    "triggeredHint": "Your rules are automatically checked when prices change"
+    "triggeredHint": "Your rules are automatically checked when prices change",
+    "fieldOptions": {
+      "brand": "Brand",
+      "model": "Model",
+      "price": "Price",
+      "priceChange": "Price Change (%)"
+    },
+    "operators": {
+      "eq": "Equals",
+      "neq": "Not Equals",
+      "contains": "Contains",
+      "gt": "Greater Than",
+      "lt": "Less Than",
+      "gte": "Greater or Equal",
+      "lte": "Less or Equal"
+    }
   },
   "disclaimer": {
     "footerShort": "This site is for informational purposes only and is not an official dealer or distributor website. Prices are compiled from publicly available sources and are non-binding.",

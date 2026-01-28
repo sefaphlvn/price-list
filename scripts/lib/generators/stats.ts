@@ -98,6 +98,86 @@ function calculateMedian(numbers: number[]): number {
   return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
 }
 
+/**
+ * Normalize fuel type names to consolidate similar values
+ * e.g., "Benzin", "Petrol", "TSI" → "Benzin"
+ */
+function normalizeFuel(fuel: string): string {
+  const f = fuel.toLowerCase().trim();
+
+  // Electric
+  if (f.includes('elektrik') || f.includes('electric') || f === 'ev' || f === 'bev') {
+    return 'Elektrik';
+  }
+
+  // Hybrid variants
+  if (f.includes('hybrid') || f.includes('hibrit')) {
+    if (f.includes('plug') || f.includes('phev')) {
+      return 'Plug-in Hibrit';
+    }
+    return 'Hibrit';
+  }
+
+  // Diesel
+  if (f.includes('dizel') || f.includes('diesel') || f.includes('tdi')) {
+    return 'Dizel';
+  }
+
+  // Petrol/Benzin
+  if (f.includes('benzin') || f.includes('petrol') || f.includes('tsi') || f.includes('tgi') || f.includes('tfsi')) {
+    return 'Benzin';
+  }
+
+  // LPG/CNG
+  if (f.includes('lpg') || f.includes('cng')) {
+    return 'LPG';
+  }
+
+  // If nothing matches
+  return fuel.trim() || 'Bilinmiyor';
+}
+
+/**
+ * Normalize transmission names to consolidate similar values
+ * e.g., "Manual", "Manuel", "Düz" → "Manuel"
+ */
+function normalizeTransmission(transmission: string): string {
+  const t = transmission.toLowerCase().trim();
+
+  // DSG specific (keep separate from generic automatic)
+  if (t.includes('dsg')) {
+    return 'DSG';
+  }
+
+  // DCT specific
+  if (t.includes('dct')) {
+    return 'DCT';
+  }
+
+  // CVT specific
+  if (t.includes('cvt')) {
+    return 'CVT';
+  }
+
+  // Tiptronic (automatic variant)
+  if (t.includes('tiptronik') || t.includes('tiptronic')) {
+    return 'Otomatik';
+  }
+
+  // Manual variants
+  if (t.includes('manuel') || t.includes('manual') || t === 'mt' || t.includes('düz')) {
+    return 'Manuel';
+  }
+
+  // Automatic variants (generic)
+  if (t.includes('otomatik') || t.includes('automatic') || t === 'at' || t.includes('auto')) {
+    return 'Otomatik';
+  }
+
+  // If nothing matches, return original with proper casing
+  return transmission.trim() || 'Bilinmiyor';
+}
+
 export async function generateStats(): Promise<PrecomputedStats> {
   console.log('[generateStats] Starting...');
 
@@ -135,15 +215,15 @@ export async function generateStats(): Promise<PrecomputedStats> {
         allPrices.push(row.priceNumeric);
         brandData.get(brandId)!.prices.push(row.priceNumeric);
 
-        // Fuel stats
-        const fuel = row.fuel || 'Bilinmiyor';
+        // Fuel stats (normalized)
+        const fuel = normalizeFuel(row.fuel || 'Bilinmiyor');
         if (!fuelData.has(fuel)) {
           fuelData.set(fuel, []);
         }
         fuelData.get(fuel)!.push(row.priceNumeric);
 
-        // Transmission stats
-        const transmission = row.transmission || 'Bilinmiyor';
+        // Transmission stats (normalized)
+        const transmission = normalizeTransmission(row.transmission || 'Bilinmiyor');
         if (!transmissionData.has(transmission)) {
           transmissionData.set(transmission, []);
         }

@@ -37,35 +37,16 @@ import { tokens } from '../theme/tokens';
 const { Title, Paragraph, Text } = Typography;
 const { Option } = Select;
 
-// Field options for conditions
-const FIELD_OPTIONS = [
-  { value: 'brand', label: 'Marka' },
-  { value: 'model', label: 'Model' },
-  { value: 'price', label: 'Fiyat' },
-  { value: 'priceChange', label: 'Fiyat Değişimi (%)' },
-];
+// Field and operator keys (labels come from i18n)
+const FIELD_KEYS = ['brand', 'model', 'price', 'priceChange'];
+const TEXT_OPERATOR_KEYS = ['eq', 'neq', 'contains'];
+const NUMBER_OPERATOR_KEYS = ['eq', 'neq', 'gt', 'lt', 'gte', 'lte'];
 
-// Operator options based on field type
-const TEXT_OPERATORS = [
-  { value: 'eq', label: 'Eşit' },
-  { value: 'neq', label: 'Eşit Değil' },
-  { value: 'contains', label: 'İçerir' },
-];
-
-const NUMBER_OPERATORS = [
-  { value: 'eq', label: 'Eşit' },
-  { value: 'neq', label: 'Eşit Değil' },
-  { value: 'gt', label: 'Büyük' },
-  { value: 'lt', label: 'Küçük' },
-  { value: 'gte', label: 'Büyük veya Eşit' },
-  { value: 'lte', label: 'Küçük veya Eşit' },
-];
-
-function getOperatorsForField(field: string) {
+function getOperatorKeysForField(field: string) {
   if (field === 'price' || field === 'priceChange') {
-    return NUMBER_OPERATORS;
+    return NUMBER_OPERATOR_KEYS;
   }
-  return TEXT_OPERATORS;
+  return TEXT_OPERATOR_KEYS;
 }
 
 function isNumericField(field: string) {
@@ -84,7 +65,7 @@ interface RuleFormValues {
 }
 
 export default function AlertsPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { alertRules, triggeredAlerts, addAlertRule, updateAlertRule, removeAlertRule, clearTriggeredAlerts } = useAppStore();
   const [activeTab, setActiveTab] = useState('rules');
   const [form] = Form.useForm<RuleFormValues>();
@@ -116,13 +97,12 @@ export default function AlertsPage() {
   }, [removeAlertRule, t]);
 
   const formatCondition = (condition: AlertCondition): string => {
-    const fieldLabel = FIELD_OPTIONS.find(f => f.value === condition.field)?.label || condition.field;
-    const operators = getOperatorsForField(condition.field);
-    const operatorLabel = operators.find(o => o.value === condition.operator)?.label || condition.operator;
+    const fieldLabel = t(`alertsV2.fieldOptions.${condition.field}`, condition.field);
+    const operatorLabel = t(`alertsV2.operators.${condition.operator}`, condition.operator);
 
     let valueStr = String(condition.value);
     if (condition.field === 'price') {
-      valueStr = new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY', maximumFractionDigits: 0 }).format(Number(condition.value));
+      valueStr = new Intl.NumberFormat(i18n.language === 'tr' ? 'tr-TR' : 'en-US', { style: 'currency', currency: 'TRY', maximumFractionDigits: 0 }).format(Number(condition.value));
     } else if (condition.field === 'priceChange') {
       valueStr = `${condition.value}%`;
     }
@@ -150,8 +130,8 @@ export default function AlertsPage() {
                     key="toggle"
                     checked={rule.enabled}
                     onChange={(checked) => updateAlertRule(rule.id, { enabled: checked })}
-                    checkedChildren="Aktif"
-                    unCheckedChildren="Pasif"
+                    checkedChildren={t('alertsV2.active')}
+                    unCheckedChildren={t('alertsV2.inactive')}
                   />,
                   <Popconfirm
                     key="delete"
@@ -262,9 +242,9 @@ export default function AlertsPage() {
                             style={{ marginBottom: 0 }}
                           >
                             <Select placeholder={t('alertsV2.field', 'Alan')}>
-                              {FIELD_OPTIONS.map((opt) => (
-                                <Option key={opt.value} value={opt.value}>
-                                  {opt.label}
+                              {FIELD_KEYS.map((key) => (
+                                <Option key={key} value={key}>
+                                  {t(`alertsV2.fieldOptions.${key}`)}
                                 </Option>
                               ))}
                             </Select>
@@ -276,7 +256,7 @@ export default function AlertsPage() {
                           }>
                             {({ getFieldValue }) => {
                               const field = getFieldValue(['conditions', name, 'field']) || 'brand';
-                              const operators = getOperatorsForField(field);
+                              const operatorKeys = getOperatorKeysForField(field);
                               return (
                                 <Form.Item
                                   {...restField}
@@ -285,9 +265,9 @@ export default function AlertsPage() {
                                   style={{ marginBottom: 0 }}
                                 >
                                   <Select placeholder={t('alertsV2.operator', 'Operatör')}>
-                                    {operators.map((opt) => (
-                                      <Option key={opt.value} value={opt.value}>
-                                        {opt.label}
+                                    {operatorKeys.map((key) => (
+                                      <Option key={key} value={key}>
+                                        {t(`alertsV2.operators.${key}`)}
                                       </Option>
                                     ))}
                                   </Select>

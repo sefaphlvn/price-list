@@ -362,8 +362,8 @@ export default function InsightsPage() {
                   <XAxis dataKey="range" />
                   <YAxis />
                   <Tooltip
-                    formatter={(value: number) => [`${value} arac`, 'Sayi']}
-                    labelFormatter={(label) => `Skor: ${label}`}
+                    formatter={(value: number) => [`${value} ${t('insights.vehicleCount')}`, t('insights.countLabel')]}
+                    labelFormatter={(label) => `${t('insights.scoreLabel')}: ${label}`}
                   />
                   <Bar dataKey="count" radius={[4, 4, 0, 0]}>
                     {scoreDistribution.map((entry, index) => (
@@ -388,7 +388,7 @@ export default function InsightsPage() {
                   <YAxis type="category" dataKey="brand" width={80} />
                   <Tooltip
                     formatter={(value: number, name: string) => {
-                      if (name === 'avgScore') return [`${value}`, 'Ort. Skor'];
+                      if (name === 'avgScore') return [`${value}`, t('insights.avgScore')];
                       return [value, name];
                     }}
                   />
@@ -419,22 +419,22 @@ export default function InsightsPage() {
                   <XAxis
                     type="number"
                     dataKey="price"
-                    name="Fiyat"
+                    name={t('insights.priceLabel')}
                     tickFormatter={(v) => formatPriceShort(v)}
                   />
                   <YAxis
                     type="number"
                     dataKey="deviation"
-                    name="Sapma %"
+                    name={t('insights.deviationLabel')}
                     unit="%"
                     domain={[-50, 50]}
                   />
-                  <ZAxis type="number" dataKey="dealScore" range={[50, 400]} name="Skor" />
+                  <ZAxis type="number" dataKey="dealScore" range={[50, 400]} name={t('insights.scoreLabel')} />
                   <Tooltip
                     cursor={{ strokeDasharray: '3 3' }}
                     formatter={(value: number, name: string) => {
-                      if (name === 'Fiyat') return [formatPrice(value), name];
-                      if (name === 'Sapma %') return [`${value.toFixed(1)}%`, name];
+                      if (name === t('insights.priceLabel')) return [formatPrice(value), name];
+                      if (name === t('insights.deviationLabel')) return [`${value.toFixed(1)}%`, name];
                       return [value, name];
                     }}
                     labelFormatter={(_, payload) => {
@@ -444,7 +444,7 @@ export default function InsightsPage() {
                       return '';
                     }}
                   />
-                  <Scatter name="Araclar" data={priceDeviationData}>
+                  <Scatter name={t('insights.vehicles')} data={priceDeviationData}>
                     {priceDeviationData.map((entry, index) => (
                       <Cell
                         key={`cell-${index}`}

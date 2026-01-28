@@ -302,7 +302,13 @@
     "deviationExplanation": "Negatif = Segment ortalamasinin altinda",
     "fuelAnalysis": "Yakit Tipine Gore Deger",
     "topBrandsByDeals": "En Cok Firsatli Markalar",
-    "noDealsFound": "Firsat bulunamadi"
+    "noDealsFound": "Firsat bulunamadi",
+    "vehicleCount": "arac",
+    "countLabel": "Sayi",
+    "scoreLabel": "Skor",
+    "priceLabel": "Fiyat",
+    "deviationLabel": "Sapma %",
+    "vehicles": "Araclar"
   },
   "my": {
     "title": "Panelim",
@@ -480,7 +486,22 @@
     "confirmClearAll": "Tum bildirimleri temizlemek istediginize emin misiniz?",
     "alertsCleared": "Bildirimler temizlendi",
     "clearAll": "Tumunu Temizle",
-    "triggeredHint": "Kurallariniz fiyat degisikliklerinde otomatik kontrol edilir"
+    "triggeredHint": "Kurallariniz fiyat degisikliklerinde otomatik kontrol edilir",
+    "fieldOptions": {
+      "brand": "Marka",
+      "model": "Model",
+      "price": "Fiyat",
+      "priceChange": "Fiyat Degisimi (%)"
+    },
+    "operators": {
+      "eq": "Esit",
+      "neq": "Esit Degil",
+      "contains": "Icerir",
+      "gt": "Buyuk",
+      "lt": "Kucuk",
+      "gte": "Buyuk veya Esit",
+      "lte": "Kucuk veya Esit"
+    }
   },
   "disclaimer": {
     "footerShort": "Bu site bilgilendirme amaclidir; resmi bayi veya distributor sitesi degildir. Fiyatlar kamuya acik kaynaklardan derlenmekte olup baglayici nitelik tasimaz.",
