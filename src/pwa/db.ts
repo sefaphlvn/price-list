@@ -40,7 +40,7 @@ class PriceListDB extends Dexie {
   searchIndex!: Table<CachedSearchIndex>;
 
   constructor() {
-    super('price-list-db');
+    super('otofiyatlist-db');
     this.version(1).stores({
       vehicles: 'key, brandId, cachedAt',
       index: 'id',

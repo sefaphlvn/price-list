@@ -81,7 +81,7 @@ export function generateSVG(params: OGParams): string {
 
   <!-- Footer -->
   <text x="60" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#6b7280">
-    spehlivan.github.io/price-list
+    otofiyatlist.com
   </text>
 
   <!-- Decorative elements -->

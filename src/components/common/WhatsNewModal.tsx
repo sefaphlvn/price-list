@@ -16,7 +16,7 @@ import { changelog, latestVersion, ChangelogEntry } from '../../data/changelog';
 
 const { Title, Text, Paragraph } = Typography;
 
-const LAST_SEEN_VERSION_KEY = 'price-list-last-seen-version';
+const LAST_SEEN_VERSION_KEY = 'otofiyatlist-last-seen-version';
 
 export default function WhatsNewModal() {
   const { t } = useTranslation();

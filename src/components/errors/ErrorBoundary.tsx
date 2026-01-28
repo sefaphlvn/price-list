@@ -16,7 +16,7 @@ interface State {
 }
 
 // Error log storage (localStorage, max 50 entries)
-const ERROR_LOG_KEY = 'price-list-error-log';
+const ERROR_LOG_KEY = 'otofiyatlist-error-log';
 const MAX_ERROR_LOG_ENTRIES = 50;
 
 interface ErrorLogEntry {

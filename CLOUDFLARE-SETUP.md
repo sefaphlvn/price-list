@@ -12,7 +12,7 @@ Bu rehber, ücretsiz Cloudflare Worker ile CORS proxy kurulumunu anlatıyor.
 1. Cloudflare Dashboard'a giriş yapın
 2. Sol menüden **Workers & Pages** seçin
 3. **Create Application** → **Create Worker** tıklayın
-4. Worker'a bir isim verin (örn: `price-list-proxy`)
+4. Worker'a bir isim verin (örn: `otofiyatlist-proxy`)
 5. **Deploy** butonuna tıklayın
 
 ## Adım 3: Kodu Deploy Edin
@@ -41,7 +41,7 @@ wrangler deploy cloudflare-worker.js
 
 Deploy edildikten sonra worker URL'iniz şöyle olacak:
 ```
-https://price-list-proxy.YOUR_SUBDOMAIN.workers.dev
+https://otofiyatlist-proxy.YOUR_SUBDOMAIN.workers.dev
 ```
 
 ## Adım 5: Projenizde Kullanın
@@ -51,7 +51,7 @@ https://price-list-proxy.YOUR_SUBDOMAIN.workers.dev
 `.env.local` dosyası oluşturun:
 
 ```bash
-VITE_CORS_PROXY=https://price-list-proxy.YOUR_SUBDOMAIN.workers.dev/?url=
+VITE_CORS_PROXY=https://otofiyatlist-proxy.YOUR_SUBDOMAIN.workers.dev/?url=
 ```
 
 ### GitHub Actions için
@@ -59,7 +59,7 @@ VITE_CORS_PROXY=https://price-list-proxy.YOUR_SUBDOMAIN.workers.dev/?url=
 1. GitHub repository'nizde **Settings** → **Secrets and variables** → **Actions**
 2. **New repository secret** tıklayın
 3. Name: `VITE_CORS_PROXY`
-4. Secret: `https://price-list-proxy.YOUR_SUBDOMAIN.workers.dev/?url=`
+4. Secret: `https://otofiyatlist-proxy.YOUR_SUBDOMAIN.workers.dev/?url=`
 5. **Add secret** tıklayın
 
 ### GitHub Actions Workflow'u Güncelleyin
@@ -78,7 +78,7 @@ VITE_CORS_PROXY=https://price-list-proxy.YOUR_SUBDOMAIN.workers.dev/?url=
 Tarayıcınızda şu URL'i açın:
 
 ```
-https://price-list-proxy.YOUR_SUBDOMAIN.workers.dev/?url=https://binekarac2.vw.com.tr/app/local/fiyatlardata/fiyatlar-test.json
+https://otofiyatlist-proxy.YOUR_SUBDOMAIN.workers.dev/?url=https://binekarac2.vw.com.tr/app/local/fiyatlardata/fiyatlar-test.json
 ```
 
 JSON verisi dönüyorsa başarılı! 🎉

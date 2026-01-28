@@ -405,7 +405,7 @@ export const useAppStore = create<AppState>()(
       },
     }),
     {
-      name: 'price-list-storage',
+      name: 'otofiyatlist-storage',
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         favorites: state.favorites,

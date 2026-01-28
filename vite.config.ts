@@ -35,8 +35,8 @@ export default defineConfig({
         theme_color: '#000000',
         background_color: '#ffffff',
         display: 'standalone',
-        start_url: '/price-list/',
-        scope: '/price-list/',
+        start_url: '/',
+        scope: '/',
         icons: [
           {
             src: 'icons/icon-192.png',
@@ -85,5 +85,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/price-list/',
+  base: '/',
 });
