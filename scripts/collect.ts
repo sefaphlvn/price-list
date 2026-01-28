@@ -11,6 +11,7 @@ import { XMLParser } from 'fast-xml-parser';
 // @ts-ignore - pdf.js-extract types are incomplete
 import { PDFExtract, PDFExtractResult, PDFExtractPage } from 'pdf.js-extract';
 import * as cheerio from 'cheerio';
+import { ErrorLogger } from './lib/errorLogger';
 
 // Types
 interface PriceListRow {
@@ -378,6 +379,15 @@ const parseVWData = (data: any, brand: string): PriceListRow[] => {
     });
   } catch (error) {
     console.error('VW parse error:', error);
+    ErrorLogger.logError({
+      category: 'PARSE_ERROR',
+      source: 'collection',
+      brand: 'Volkswagen',
+      brandId: 'volkswagen',
+      code: 'VW_PARSE_FAILED',
+      message: `VW parse error: ${error instanceof Error ? error.message : String(error)}`,
+      details: { error: String(error) },
+    });
   }
   return rows;
 };
@@ -438,6 +448,15 @@ const parseSkodaData = (data: any, brand: string): PriceListRow[] => {
     });
   } catch (error) {
     console.error('Skoda parse error:', error);
+    ErrorLogger.logError({
+      category: 'PARSE_ERROR',
+      source: 'collection',
+      brand: 'Škoda',
+      brandId: 'skoda',
+      code: 'SKODA_PARSE_FAILED',
+      message: `Skoda parse error: ${error instanceof Error ? error.message : String(error)}`,
+      details: { error: String(error) },
+    });
   }
   return rows;
 };
@@ -2720,6 +2739,18 @@ async function collectAllBrands(): Promise<void> {
       const errorMessage = error instanceof Error ? error.message : String(error);
       console.log(`  Error: ${errorMessage}`);
 
+      // Log to ErrorLogger
+      ErrorLogger.logError({
+        category: 'HTTP_ERROR',
+        source: 'collection',
+        brand: brand.name,
+        brandId: brand.id,
+        code: 'COLLECTION_FAILED',
+        message: `Failed to collect ${brand.name}: ${errorMessage}`,
+        details: { error: errorMessage, url: brand.url },
+        recovered: false,
+      });
+
       // Try fallback on error
       console.log(`  Trying fallback...`);
       const previousData = getPreviousData(brand.id, now);
@@ -2730,6 +2761,18 @@ async function collectAllBrands(): Promise<void> {
         updateIndex(index, brand.id, brand.name, dateStr, fallbackData.rowCount);
         console.log(`  Fallback: Using previous data (${fallbackData.rowCount} rows)`);
         results.push({ brand: brand.id, success: true, count: fallbackData.rowCount, usedFallback: true });
+
+        // Update error as recovered
+        ErrorLogger.logWarning({
+          category: 'DATA_QUALITY_ERROR',
+          source: 'collection',
+          brand: brand.name,
+          brandId: brand.id,
+          code: 'USING_FALLBACK_DATA',
+          message: `Using fallback data for ${brand.name} (${fallbackData.rowCount} rows)`,
+          recovered: true,
+          recoveryMethod: 'Used previous day data',
+        });
       } else {
         console.log(`  Error: No fallback data available`);
         results.push({ brand: brand.id, success: false, error: errorMessage });
@@ -2738,6 +2781,9 @@ async function collectAllBrands(): Promise<void> {
 
     console.log('');
   }
+
+  // Save errors before saving index
+  ErrorLogger.saveErrors();
 
   // Save updated index
   saveIndex(index);
@@ -2798,5 +2844,13 @@ async function collectAllBrands(): Promise<void> {
 // Run
 collectAllBrands().catch(error => {
   console.error('Fatal error:', error);
+  ErrorLogger.logError({
+    category: 'FILE_ERROR',
+    source: 'collection',
+    code: 'FATAL_ERROR',
+    message: `Fatal error in collection: ${error instanceof Error ? error.message : String(error)}`,
+    stack: error instanceof Error ? error.stack : undefined,
+  });
+  ErrorLogger.saveErrors();
   process.exit(1);
 });

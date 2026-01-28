@@ -7,6 +7,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { ErrorLogger, safeParseJSON } from './lib/errorLogger';
 
 interface IndexData {
   lastUpdated: string;
@@ -76,11 +77,18 @@ async function main(): Promise<void> {
   if (!fs.existsSync(indexPath)) {
     report.status = 'error';
     report.issues.push('index.json not found');
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'health',
+      code: 'INDEX_NOT_FOUND',
+      message: 'index.json not found',
+    });
+    ErrorLogger.saveErrors();
     outputReport(report);
     process.exit(1);
   }
 
-  const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const index = safeParseJSON<IndexData>(indexPath, { lastUpdated: '', brands: {} }, 'health');
   report.summary.lastUpdate = index.lastUpdated;
 
   const brandIds = Object.keys(index.brands);
@@ -117,8 +125,16 @@ async function main(): Promise<void> {
       brandReport.status = 'error';
       brandReport.issues.push(`Data file not found: ${filePath}`);
       report.issues.push(`${brandInfo.name}: Data file not found`);
+      ErrorLogger.logError({
+        category: 'FILE_ERROR',
+        source: 'health',
+        brand: brandInfo.name,
+        brandId: brandId,
+        code: 'DATA_FILE_NOT_FOUND',
+        message: `Data file not found: ${filePath}`,
+      });
     } else {
-      const storedData: StoredData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+      const storedData = safeParseJSON<StoredData>(filePath, { collectedAt: '', brand: '', brandId: '', rowCount: 0, rows: [] }, 'health');
 
       brandReport.vehicleCount = storedData.rowCount;
       totalVehicles += storedData.rowCount;
@@ -145,6 +161,15 @@ async function main(): Promise<void> {
           brandReport.issues.push(`Suspiciously low price: ${minPrice}`);
           report.warnings.push(`${brandInfo.name}: Suspiciously low price (${minPrice})`);
           if (brandReport.status === 'ok') brandReport.status = 'warning';
+          ErrorLogger.logWarning({
+            category: 'DATA_QUALITY_ERROR',
+            source: 'health',
+            brand: brandInfo.name,
+            brandId: brandId,
+            code: 'SUSPICIOUSLY_LOW_PRICE',
+            message: `Suspiciously low price: ${minPrice}`,
+            details: { minPrice },
+          });
         }
 
         // Warning if max price is suspiciously high
@@ -152,6 +177,15 @@ async function main(): Promise<void> {
           brandReport.issues.push(`Suspiciously high price: ${maxPrice}`);
           report.warnings.push(`${brandInfo.name}: Suspiciously high price (${maxPrice})`);
           if (brandReport.status === 'ok') brandReport.status = 'warning';
+          ErrorLogger.logWarning({
+            category: 'DATA_QUALITY_ERROR',
+            source: 'health',
+            brand: brandInfo.name,
+            brandId: brandId,
+            code: 'SUSPICIOUSLY_HIGH_PRICE',
+            message: `Suspiciously high price: ${maxPrice}`,
+            details: { maxPrice },
+          });
         }
 
         console.log(`  Vehicles: ${brandReport.vehicleCount}`);
@@ -205,6 +239,9 @@ async function main(): Promise<void> {
 
   outputReport(report);
 
+  // Save errors to central error log
+  ErrorLogger.saveErrors();
+
   // Save health report
   const reportPath = path.join(dataDir, 'health-report.json');
   fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf-8');
@@ -240,5 +277,13 @@ function outputReport(report: HealthReport): void {
 
 main().catch(error => {
   console.error('Fatal error:', error);
+  ErrorLogger.logError({
+    category: 'FILE_ERROR',
+    source: 'health',
+    code: 'FATAL_ERROR',
+    message: `Fatal error in health check: ${error instanceof Error ? error.message : String(error)}`,
+    stack: error instanceof Error ? error.stack : undefined,
+  });
+  ErrorLogger.saveErrors();
   process.exit(1);
 });
