@@ -212,16 +212,16 @@ export default function PriceListPage() {
       const dates = indexData.brands[selectedBrand].availableDates;
       setAvailableDates(dates);
 
-      // Set date from URL or auto-select latest
+      // Set date from URL or auto-select latest (dates[0] is newest)
       if (initialUrlState.date && !urlInitialized.current) {
         const urlDate = dayjs(initialUrlState.date);
         if (dates.includes(urlDate.format('YYYY-MM-DD'))) {
           setSelectedDate(urlDate);
         } else if (dates.length > 0) {
-          setSelectedDate(dayjs(dates[dates.length - 1]));
+          setSelectedDate(dayjs(dates[0]));
         }
       } else if (dates.length > 0 && !selectedDate) {
-        setSelectedDate(dayjs(dates[dates.length - 1]));
+        setSelectedDate(dayjs(dates[0]));
       }
 
       urlInitialized.current = true;
