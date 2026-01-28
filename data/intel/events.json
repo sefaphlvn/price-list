@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-01-28T17:16:30.373Z",
+  "date": "",
+  "previousDate": "",
+  "summary": {
+    "totalEvents": 0,
+    "newVehicles": 0,
+    "removedVehicles": 0,
+    "priceIncreases": 0,
+    "priceDecreases": 0,
+    "avgPriceChange": 0,
+    "avgPriceChangePercent": 0
+  },
+  "events": [],
+  "volatility": {
+    "byBrand": [],
+    "byModel": []
+  },
+  "bigMoves": {
+    "topIncreases": [],
+    "topDecreases": []
+  }
+}
