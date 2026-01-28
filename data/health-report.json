@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-01-27T20:13:35.448Z",
+  "timestamp": "2026-01-28T01:31:10.042Z",
   "status": "healthy",
   "summary": {
     "totalBrands": 7,
     "totalVehicles": 230,
-    "lastUpdate": "2026-01-27T20:13:34.198Z",
-    "dataDate": "2026-01-27"
+    "lastUpdate": "2026-01-28T01:31:08.810Z",
+    "dataDate": "2026-01-28"
   },
   "brands": [
     {
@@ -13,7 +13,7 @@
       "name": "Volkswagen",
       "status": "ok",
       "vehicleCount": 46,
-      "latestDate": "2026-01-27",
+      "latestDate": "2026-01-28",
       "issues": []
     },
     {
@@ -21,7 +21,7 @@
       "name": "Renault",
       "status": "ok",
       "vehicleCount": 21,
-      "latestDate": "2026-01-27",
+      "latestDate": "2026-01-28",
       "issues": []
     },
     {
@@ -29,7 +29,7 @@
       "name": "Toyota",
       "status": "ok",
       "vehicleCount": 39,
-      "latestDate": "2026-01-27",
+      "latestDate": "2026-01-28",
       "issues": []
     },
     {
@@ -37,7 +37,7 @@
       "name": "Hyundai",
       "status": "ok",
       "vehicleCount": 47,
-      "latestDate": "2026-01-27",
+      "latestDate": "2026-01-28",
       "issues": []
     },
     {
@@ -45,7 +45,7 @@
       "name": "Škoda",
       "status": "ok",
       "vehicleCount": 22,
-      "latestDate": "2026-01-27",
+      "latestDate": "2026-01-28",
       "issues": []
     },
     {
@@ -53,7 +53,7 @@
       "name": "Fiat",
       "status": "ok",
       "vehicleCount": 25,
-      "latestDate": "2026-01-27",
+      "latestDate": "2026-01-28",
       "issues": []
     },
     {
@@ -61,7 +61,7 @@
       "name": "Peugeot",
       "status": "ok",
       "vehicleCount": 30,
-      "latestDate": "2026-01-27",
+      "latestDate": "2026-01-28",
       "issues": []
     }
   ],
