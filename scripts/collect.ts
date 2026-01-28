@@ -2399,6 +2399,7 @@ async function fetchFiatPdf(url: string): Promise<any> {
         await new Promise(resolve => setTimeout(resolve, delay));
       }
 
+      console.log(`    Connecting to: ${url}`);
       const response = await fetch(url, {
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
@@ -2418,26 +2419,51 @@ async function fetchFiatPdf(url: string): Promise<any> {
         },
       });
 
+      // Log response details
+      console.log(`    Response status: ${response.status} ${response.statusText}`);
+      console.log(`    Response headers: content-type=${response.headers.get('content-type')}, content-length=${response.headers.get('content-length')}`);
+
       if (!response.ok) {
+        // Try to read error body
+        const errorBody = await response.text().catch(() => 'Could not read body');
+        console.log(`    Response body: ${errorBody.substring(0, 500)}`);
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
 
       // Download PDF to temp file and extract with pdf.js-extract
       const tempPath = path.join('/tmp', `fiat-pdf-${Date.now()}.pdf`);
       const buffer = await response.arrayBuffer();
+      console.log(`    Downloaded ${buffer.byteLength} bytes`);
       fs.writeFileSync(tempPath, Buffer.from(buffer));
 
       const pdfExtract = new PDFExtract();
       const pdfData = await pdfExtract.extract(tempPath, {});
+      console.log(`    PDF extracted: ${pdfData.pages?.length || 0} pages`);
 
       // Clean up temp file
       try { fs.unlinkSync(tempPath); } catch {}
 
       console.log(`    Success on attempt ${attempt}`);
       return pdfData;
-    } catch (error) {
+    } catch (error: any) {
       lastError = error instanceof Error ? error : new Error(String(error));
+      // Log detailed error info for debugging
       console.log(`    Attempt ${attempt} failed: ${lastError.message}`);
+      if (error.cause) {
+        console.log(`    Error cause: ${JSON.stringify(error.cause, null, 2)}`);
+      }
+      if (error.code) {
+        console.log(`    Error code: ${error.code}`);
+      }
+      if (error.errno) {
+        console.log(`    Error errno: ${error.errno}`);
+      }
+      if (error.syscall) {
+        console.log(`    Error syscall: ${error.syscall}`);
+      }
+      if (error.hostname) {
+        console.log(`    Error hostname: ${error.hostname}`);
+      }
     }
   }
 

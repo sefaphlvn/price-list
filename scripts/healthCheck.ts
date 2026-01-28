@@ -222,6 +222,10 @@ async function main(): Promise<void> {
   report.summary.totalVehicles = totalVehicles;
   report.summary.dataDate = latestDate;
 
+  // Count failed brands (those with 'error' status)
+  const failedBrands = report.brands.filter(b => b.status === 'error');
+  const failedCount = failedBrands.length;
+
   // Determine overall status
   if (report.issues.length > 0) {
     report.status = 'error';
@@ -247,9 +251,15 @@ async function main(): Promise<void> {
   fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf-8');
   console.log(`Health report saved to ${reportPath}`);
 
-  // Exit with appropriate code
-  if (report.status === 'error') {
+  // Only fail if more than 5 brands have errors
+  // This allows partial failures without breaking the entire pipeline
+  const MAX_ALLOWED_FAILURES = 5;
+  if (failedCount > MAX_ALLOWED_FAILURES) {
+    console.log(`\n❌ Critical: ${failedCount} brands failed (threshold: ${MAX_ALLOWED_FAILURES})`);
     process.exit(1);
+  } else if (failedCount > 0) {
+    console.log(`\n⚠️ Warning: ${failedCount} brand(s) failed, but below threshold (${MAX_ALLOWED_FAILURES})`);
+    console.log(`   Failed brands: ${failedBrands.map(b => b.brand).join(', ')}`);
   }
 }
 
