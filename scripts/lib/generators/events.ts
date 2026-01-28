@@ -132,8 +132,8 @@ export async function generateEvents(): Promise<EventsData> {
 
   const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
   const events: PriceEvent[] = [];
-  const brandStats: Map<string, { changes: number; totalChange: number; increases: number; decreases: number }> = new Map();
-  const modelStats: Map<string, { name: string; changes: number; totalChange: number; increases: number; decreases: number }> = new Map();
+  const brandStats: Map<string, { changes: number; totalAbsChange: number; totalChangePercent: number; increases: number; decreases: number }> = new Map();
+  const modelStats: Map<string, { name: string; changes: number; totalAbsChange: number; totalChangePercent: number; increases: number; decreases: number }> = new Map();
 
   let latestDate = '';
   let previousDate = '';
@@ -175,7 +175,7 @@ export async function generateEvents(): Promise<EventsData> {
 
     // Initialize brand stats
     if (!brandStats.has(brandId)) {
-      brandStats.set(brandId, { changes: 0, totalChange: 0, increases: 0, decreases: 0 });
+      brandStats.set(brandId, { changes: 0, totalAbsChange: 0, totalChangePercent: 0, increases: 0, decreases: 0 });
     }
     const brandStat = brandStats.get(brandId)!;
 
@@ -256,7 +256,8 @@ export async function generateEvents(): Promise<EventsData> {
 
         // Update brand stats
         brandStat.changes++;
-        brandStat.totalChange += Math.abs(changePercent);
+        brandStat.totalAbsChange += Math.abs(change); // TL amount
+        brandStat.totalChangePercent += Math.abs(changePercent); // Percentage
         if (change > 0) {
           brandStat.increases++;
         } else {
@@ -269,14 +270,16 @@ export async function generateEvents(): Promise<EventsData> {
           modelStats.set(modelKey, {
             name: `${currentRow.brand} ${currentRow.model}`,
             changes: 0,
-            totalChange: 0,
+            totalAbsChange: 0,
+            totalChangePercent: 0,
             increases: 0,
             decreases: 0,
           });
         }
         const modelStat = modelStats.get(modelKey)!;
         modelStat.changes++;
-        modelStat.totalChange += Math.abs(changePercent);
+        modelStat.totalAbsChange += Math.abs(change); // TL amount
+        modelStat.totalChangePercent += Math.abs(changePercent); // Percentage
         if (change > 0) {
           modelStat.increases++;
         } else {
@@ -313,8 +316,8 @@ export async function generateEvents(): Promise<EventsData> {
         id: brandId,
         name: index.brands[brandId]?.name || brandId,
         changeCount: stats.changes,
-        avgChange: stats.changes > 0 ? Math.round(stats.totalChange / stats.changes) : 0,
-        avgChangePercent: stats.changes > 0 ? Math.round((stats.totalChange / stats.changes) * 100) / 100 : 0,
+        avgChange: Math.round(stats.totalAbsChange / stats.changes), // Average TL change
+        avgChangePercent: Math.round((stats.totalChangePercent / stats.changes) * 100) / 100, // Average % change
         increaseCount: stats.increases,
         decreaseCount: stats.decreases,
       });
@@ -329,8 +332,8 @@ export async function generateEvents(): Promise<EventsData> {
         id: modelId,
         name: stats.name,
         changeCount: stats.changes,
-        avgChange: stats.changes > 0 ? Math.round(stats.totalChange / stats.changes) : 0,
-        avgChangePercent: stats.changes > 0 ? Math.round((stats.totalChange / stats.changes) * 100) / 100 : 0,
+        avgChange: Math.round(stats.totalAbsChange / stats.changes), // Average TL change
+        avgChangePercent: Math.round((stats.totalChangePercent / stats.changes) * 100) / 100, // Average % change
         increaseCount: stats.increases,
         decreaseCount: stats.decreases,
       });

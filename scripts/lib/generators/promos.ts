@@ -189,7 +189,7 @@ export async function generatePromos(): Promise<PromosData> {
       const currentEntry = history[history.length - 1];
 
       // Check if current price is significantly lower than peak (>5% drop)
-      if (currentEntry.price < peakEntry.price) {
+      if (currentEntry.price < peakEntry.price && peakEntry.price > 0) {
         const dropAmount = peakEntry.price - currentEntry.price;
         const dropPercent = (dropAmount / peakEntry.price) * 100;
 
@@ -231,7 +231,7 @@ export async function generatePromos(): Promise<PromosData> {
         const prev = history[history.length - 2];
         const curr = history[history.length - 1];
 
-        if (curr.price < prev.price) {
+        if (curr.price < prev.price && prev.price > 0) {
           const dropAmount = prev.price - curr.price;
           const dropPercent = (dropAmount / prev.price) * 100;
 

@@ -61,12 +61,15 @@ interface VehicleWithScore {
   engine: string;
   fuel: string;
   transmission: string;
+  vehicleClass: string;
+  priceBand: string;
   price: number;
   priceFormatted: string;
   dealScore: number;
   zScore: number;
   percentile: number;
   segmentAvg: number;
+  segmentSize: number;
   isOutlier: boolean;
   outlierType: 'cheap' | 'expensive' | null;
 }
@@ -97,24 +100,35 @@ export default function InsightsPage() {
   const [selectedFuel, setSelectedFuel] = useState<string>('all');
 
   useEffect(() => {
+    const controller = new AbortController();
+    const { signal } = controller;
+
     const fetchInsights = async () => {
       try {
         setLoading(true);
-        const response = await fetch('./data/insights/latest.json');
+        const response = await fetch('./data/insights/latest.json', { signal });
         if (!response.ok) {
           throw new Error('Failed to load insights data');
         }
         const data: InsightsData = await response.json();
-        setInsights(data);
-        setError(null);
+        if (!signal.aborted) {
+          setInsights(data);
+          setError(null);
+        }
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Unknown error');
+        if ((err as Error).name !== 'AbortError') {
+          setError(err instanceof Error ? err.message : 'Unknown error');
+        }
       } finally {
-        setLoading(false);
+        if (!signal.aborted) {
+          setLoading(false);
+        }
       }
     };
 
     fetchInsights();
+
+    return () => controller.abort();
   }, []);
 
   // Get unique brands and fuels

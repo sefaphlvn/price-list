@@ -148,6 +148,10 @@ export default function PriceListPage() {
   const [trendModalOpen, setTrendModalOpen] = useState(false);
   const [trendVehicle, setTrendVehicle] = useState<PriceListRow | null>(null);
 
+  // Refetch trigger for manual refresh
+  const [refetchTrigger, setRefetchTrigger] = useState(0);
+  const handleRefresh = useCallback(() => setRefetchTrigger((prev) => prev + 1), []);
+
   // Update URL when state changes (debounced)
   const updateUrl = useCallback(() => {
     if (!urlInitialized.current) return;
@@ -193,9 +197,12 @@ export default function PriceListPage() {
 
   // Load index data on mount
   useEffect(() => {
+    const controller = new AbortController();
+    const { signal } = controller;
+
     const loadIndex = async () => {
       try {
-        const response = await fetch('./data/index.json');
+        const response = await fetch('./data/index.json', { signal });
         if (!response.ok) {
           console.warn('Index fetch failed:', response.status, response.statusText);
           return;
@@ -209,12 +216,18 @@ export default function PriceListPage() {
         }
 
         const data: IndexData = await response.json();
-        setIndexData(data);
+        if (!signal.aborted) {
+          setIndexData(data);
+        }
       } catch (error) {
-        console.warn('Failed to load index:', error);
+        if ((error as Error).name !== 'AbortError') {
+          console.warn('Failed to load index:', error);
+        }
       }
     };
     loadIndex();
+
+    return () => controller.abort();
   }, []);
 
   // Update available dates when brand or index changes
@@ -263,91 +276,101 @@ export default function PriceListPage() {
     }
   }, [indexData, selectedBrand]);
 
-  // Fetch data for selected brand and date
-  const fetchData = async () => {
+  // Load data when date changes
+  useEffect(() => {
     if (!selectedDate) {
       setFetchState({ loading: false, error: t('errors.noData'), data: null });
       return;
     }
 
-    setFetchState({ loading: true, error: null, data: null });
+    const controller = new AbortController();
+    const { signal } = controller;
 
-    try {
-      const year = selectedDate.format('YYYY');
-      const month = selectedDate.format('MM');
-      const day = selectedDate.format('DD');
+    const fetchData = async () => {
+      setFetchState({ loading: true, error: null, data: null });
 
-      if (selectedBrand === 'all') {
-        // Fetch all brands in parallel
-        const allRows: PriceListRow[] = [];
-        let latestTimestamp = '';
+      try {
+        const year = selectedDate.format('YYYY');
+        const month = selectedDate.format('MM');
+        const day = selectedDate.format('DD');
 
-        const fetchPromises = BRANDS.map(async (brand) => {
-          try {
-            const url = `./data/${year}/${month}/${brand.id}/${day}.json`;
-            const response = await fetch(url);
-            if (response.ok) {
-              const storedData: StoredData = await response.json();
-              if (storedData.collectedAt > latestTimestamp) {
-                latestTimestamp = storedData.collectedAt;
+        if (selectedBrand === 'all') {
+          // Fetch all brands in parallel
+          const allRows: PriceListRow[] = [];
+          let latestTimestamp = '';
+
+          const fetchPromises = BRANDS.map(async (brand) => {
+            try {
+              const url = `./data/${year}/${month}/${brand.id}/${day}.json`;
+              const response = await fetch(url, { signal });
+              if (response.ok) {
+                const storedData: StoredData = await response.json();
+                if (storedData.collectedAt > latestTimestamp) {
+                  latestTimestamp = storedData.collectedAt;
+                }
+                return storedData.rows;
               }
-              return storedData.rows;
+            } catch (error) {
+              if ((error as Error).name !== 'AbortError') {
+                // Skip failed brands
+              }
             }
-          } catch {
-            // Skip failed brands
+            return [];
+          });
+
+          const results = await Promise.all(fetchPromises);
+          results.forEach((rows) => allRows.push(...rows));
+
+          if (allRows.length === 0) {
+            throw new Error(t('errors.noData'));
           }
-          return [];
-        });
 
-        const results = await Promise.all(fetchPromises);
-        results.forEach((rows) => allRows.push(...rows));
+          if (!signal.aborted) {
+            setFetchState({
+              loading: false,
+              error: null,
+              data: {
+                rows: allRows,
+                lastUpdated: latestTimestamp,
+                brand: t('common.all'),
+              },
+            });
+          }
+        } else {
+          // Fetch single brand
+          const url = `./data/${year}/${month}/${selectedBrand}/${day}.json`;
+          const response = await fetch(url, { signal });
+          if (!response.ok) {
+            throw new Error(t('errors.noData'));
+          }
 
-        if (allRows.length === 0) {
-          throw new Error(t('errors.noData'));
+          const storedData: StoredData = await response.json();
+
+          if (!signal.aborted) {
+            setFetchState({
+              loading: false,
+              error: null,
+              data: {
+                rows: storedData.rows,
+                lastUpdated: storedData.collectedAt,
+                brand: storedData.brand,
+              },
+            });
+          }
         }
-
-        setFetchState({
-          loading: false,
-          error: null,
-          data: {
-            rows: allRows,
-            lastUpdated: latestTimestamp,
-            brand: t('common.all'),
-          },
-        });
-      } else {
-        // Fetch single brand
-        const url = `./data/${year}/${month}/${selectedBrand}/${day}.json`;
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error(t('errors.noData'));
+      } catch (error) {
+        if ((error as Error).name !== 'AbortError' && !signal.aborted) {
+          const errorMessage =
+            error instanceof Error ? error.message : t('errors.fetchError');
+          setFetchState({ loading: false, error: errorMessage, data: null });
         }
-
-        const storedData: StoredData = await response.json();
-
-        setFetchState({
-          loading: false,
-          error: null,
-          data: {
-            rows: storedData.rows,
-            lastUpdated: storedData.collectedAt,
-            brand: storedData.brand,
-          },
-        });
       }
-    } catch (error) {
-      const errorMessage =
-        error instanceof Error ? error.message : t('errors.fetchError');
-      setFetchState({ loading: false, error: errorMessage, data: null });
-    }
-  };
+    };
 
-  // Load data when date changes
-  useEffect(() => {
-    if (selectedDate) {
-      fetchData();
-    }
-  }, [selectedDate, selectedBrand]);
+    fetchData();
+
+    return () => controller.abort();
+  }, [selectedDate, selectedBrand, t, refetchTrigger]);
 
   // Filtered data
   const filteredData = useMemo(() => {
@@ -781,7 +804,7 @@ export default function PriceListPage() {
           </div>
           <Button
             icon={<ReloadOutlined />}
-            onClick={fetchData}
+            onClick={handleRefresh}
             loading={fetchState.loading}
             size="large"
             type="primary"
@@ -831,7 +854,7 @@ export default function PriceListPage() {
             closable
             style={{ marginBottom: tokens.spacing.lg }}
             action={
-              <Button size="small" onClick={fetchData}>
+              <Button size="small" onClick={handleRefresh}>
                 {t('errors.tryAgain')}
               </Button>
             }

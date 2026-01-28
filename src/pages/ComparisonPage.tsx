@@ -55,6 +55,9 @@ export default function ComparisonPage() {
 
   // Fetch vehicle details from historical data
   useEffect(() => {
+    const controller = new AbortController();
+    const { signal } = controller;
+
     const fetchVehicleDetails = async () => {
       const allIds = [...new Set([...favorites, ...compareList].map((v) => v.id))];
       if (allIds.length === 0) {
@@ -67,7 +70,7 @@ export default function ComparisonPage() {
 
       try {
         // First fetch the index to get latest dates
-        const indexResponse = await fetch('./data/index.json');
+        const indexResponse = await fetch('./data/index.json', { signal });
         if (!indexResponse.ok) {
           setLoading(false);
           return;
@@ -97,7 +100,7 @@ export default function ComparisonPage() {
               const [year, month, day] = latestDate.split('-');
               const url = `./data/${year}/${month}/${brandId}/${day}.json`;
 
-              const response = await fetch(url);
+              const response = await fetch(url, { signal });
               if (!response.ok) return;
 
               const storedData: StoredData = await response.json();
@@ -112,19 +115,27 @@ export default function ComparisonPage() {
                 }
               });
             } catch (error) {
-              console.error(`Failed to fetch ${brand.name}:`, error);
+              if ((error as Error).name !== 'AbortError') {
+                console.error(`Failed to fetch ${brand.name}:`, error);
+              }
             }
           })
         );
       } catch (error) {
-        console.error('Failed to fetch index:', error);
+        if ((error as Error).name !== 'AbortError') {
+          console.error('Failed to fetch index:', error);
+        }
       }
 
-      setVehicleData(dataMap);
-      setLoading(false);
+      if (!signal.aborted) {
+        setVehicleData(dataMap);
+        setLoading(false);
+      }
     };
 
     fetchVehicleDetails();
+
+    return () => controller.abort();
   }, [favorites, compareList]);
 
   // Get vehicle row by identifier

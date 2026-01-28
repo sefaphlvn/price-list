@@ -125,14 +125,17 @@ export default function StatisticsPage() {
 
   // Fetch data from historical files
   useEffect(() => {
+    const controller = new AbortController();
+    const { signal } = controller;
+
     const fetchAllBrands = async () => {
       setLoading(true);
       const dataMap = new Map<string, StoredData>();
 
       try {
-        const indexResponse = await fetch('./data/index.json');
+        const indexResponse = await fetch('./data/index.json', { signal });
         if (!indexResponse.ok) {
-          setLoading(false);
+          if (!signal.aborted) setLoading(false);
           return;
         }
 
@@ -146,25 +149,33 @@ export default function StatisticsPage() {
               const [year, month, day] = latestDate.split('-');
               const url = `./data/${year}/${month}/${brandId}/${day}.json`;
 
-              const response = await fetch(url);
+              const response = await fetch(url, { signal });
               if (response.ok) {
                 const storedData: StoredData = await response.json();
                 dataMap.set(brandId, storedData);
               }
             } catch (error) {
-              console.error(`Failed to fetch ${brandId}:`, error);
+              if ((error as Error).name !== 'AbortError') {
+                console.error(`Failed to fetch ${brandId}:`, error);
+              }
             }
           })
         );
       } catch (error) {
-        console.error('Failed to fetch index:', error);
+        if ((error as Error).name !== 'AbortError') {
+          console.error('Failed to fetch index:', error);
+        }
       }
 
-      setAllData(dataMap);
-      setLoading(false);
+      if (!signal.aborted) {
+        setAllData(dataMap);
+        setLoading(false);
+      }
     };
 
     fetchAllBrands();
+
+    return () => controller.abort();
   }, []);
 
   // Combine all rows

@@ -162,30 +162,39 @@ export async function generateStats(): Promise<PrecomputedStats> {
   };
 
   // Calculate brand stats
-  const brandStats: BrandStats[] = Array.from(brandData.entries()).map(([_, data]) => ({
-    name: data.name,
-    vehicleCount: data.prices.length,
-    avgPrice: Math.round(data.prices.reduce((a, b) => a + b, 0) / data.prices.length),
-    minPrice: Math.min(...data.prices),
-    maxPrice: Math.max(...data.prices),
-    medianPrice: calculateMedian(data.prices),
-  })).sort((a, b) => b.vehicleCount - a.vehicleCount);
+  const brandStats: BrandStats[] = Array.from(brandData.entries())
+    .filter(([_, data]) => data.prices.length > 0)
+    .map(([_, data]) => {
+      const prices = data.prices;
+      return {
+        name: data.name,
+        vehicleCount: prices.length,
+        avgPrice: prices.length > 0 ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0,
+        minPrice: prices.length > 0 ? Math.min(...prices) : 0,
+        maxPrice: prices.length > 0 ? Math.max(...prices) : 0,
+        medianPrice: calculateMedian(prices),
+      };
+    }).sort((a, b) => b.vehicleCount - a.vehicleCount);
 
   // Calculate fuel stats
-  const fuelStats: FuelStats[] = Array.from(fuelData.entries()).map(([fuel, prices]) => ({
-    fuel,
-    count: prices.length,
-    percentage: Math.round((prices.length / allPrices.length) * 100 * 10) / 10,
-    avgPrice: Math.round(prices.reduce((a, b) => a + b, 0) / prices.length),
-  })).sort((a, b) => b.count - a.count);
+  const fuelStats: FuelStats[] = Array.from(fuelData.entries())
+    .filter(([_, prices]) => prices.length > 0)
+    .map(([fuel, prices]) => ({
+      fuel,
+      count: prices.length,
+      percentage: allPrices.length > 0 ? Math.round((prices.length / allPrices.length) * 100 * 10) / 10 : 0,
+      avgPrice: prices.length > 0 ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0,
+    })).sort((a, b) => b.count - a.count);
 
   // Calculate transmission stats
-  const transmissionStats: TransmissionStats[] = Array.from(transmissionData.entries()).map(([transmission, prices]) => ({
-    transmission,
-    count: prices.length,
-    percentage: Math.round((prices.length / allPrices.length) * 100 * 10) / 10,
-    avgPrice: Math.round(prices.reduce((a, b) => a + b, 0) / prices.length),
-  })).sort((a, b) => b.count - a.count);
+  const transmissionStats: TransmissionStats[] = Array.from(transmissionData.entries())
+    .filter(([_, prices]) => prices.length > 0)
+    .map(([transmission, prices]) => ({
+      transmission,
+      count: prices.length,
+      percentage: allPrices.length > 0 ? Math.round((prices.length / allPrices.length) * 100 * 10) / 10 : 0,
+      avgPrice: prices.length > 0 ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0,
+    })).sort((a, b) => b.count - a.count);
 
   // Calculate price segments
   const priceSegments: PriceSegmentStats[] = PRICE_SEGMENTS.map(seg => {
@@ -195,7 +204,7 @@ export async function generateStats(): Promise<PrecomputedStats> {
       min: seg.min,
       max: seg.max === Infinity ? 0 : seg.max,
       count,
-      percentage: Math.round((count / allPrices.length) * 100 * 10) / 10,
+      percentage: allPrices.length > 0 ? Math.round((count / allPrices.length) * 100 * 10) / 10 : 0,
     };
   });
 

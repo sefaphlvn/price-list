@@ -26,12 +26,15 @@ interface VehicleWithScore {
   engine: string;
   fuel: string;
   transmission: string;
+  vehicleClass: string;
+  priceBand: string;
   price: number;
   priceFormatted: string;
   dealScore: number;
   zScore: number;
   percentile: number;
   segmentAvg: number;
+  segmentSize: number;
   isOutlier: boolean;
   outlierType: 'cheap' | 'expensive' | null;
 }

@@ -286,9 +286,9 @@ export async function generateGaps(): Promise<GapsData> {
     segments.push({
       segment,
       totalVehicles: segVehicles.length,
-      avgPrice: Math.round(prices.reduce((a, b) => a + b, 0) / prices.length),
-      minPrice: Math.min(...prices),
-      maxPrice: Math.max(...prices),
+      avgPrice: prices.length > 0 ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0,
+      minPrice: prices.length > 0 ? Math.min(...prices) : 0,
+      maxPrice: prices.length > 0 ? Math.max(...prices) : 0,
       brands,
       fuelTypes: fuels,
     });
@@ -305,7 +305,7 @@ export async function generateGaps(): Promise<GapsData> {
   const totalVehicles = vehicles.length;
   const segmentPopularity = new Map<string, number>();
   for (const seg of allSegments) {
-    segmentPopularity.set(seg, (segmentMap.get(seg)?.length || 0) / totalVehicles);
+    segmentPopularity.set(seg, totalVehicles > 0 ? (segmentMap.get(seg)?.length || 0) / totalVehicles : 0);
   }
 
   for (const segment of allSegments) {

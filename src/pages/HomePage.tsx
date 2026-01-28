@@ -78,32 +78,40 @@ export default function HomePage() {
 
   // Fetch quick stats from precomputed stats
   useEffect(() => {
+    const controller = new AbortController();
+    const { signal } = controller;
+
     const loadStats = async () => {
       try {
-        const response = await fetch('./data/stats/precomputed.json');
+        const response = await fetch('./data/stats/precomputed.json', { signal });
         if (response.ok) {
           const data = await response.json();
-          setStats({
-            totalVehicles: data.totalVehicles || 250,
-            lowestPrice: data.overallStats?.minPrice || 800000,
-            highestPrice: data.overallStats?.maxPrice || 8500000,
-            brandsUpdated: BRANDS.length,
-          });
+          if (!signal.aborted) {
+            setStats({
+              totalVehicles: data.totalVehicles || 250,
+              lowestPrice: data.overallStats?.minPrice || 800000,
+              highestPrice: data.overallStats?.maxPrice || 8500000,
+              brandsUpdated: BRANDS.length,
+            });
+          }
         }
-      } catch {
+      } catch (error) {
+        if ((error as Error).name === 'AbortError') return;
         // Fallback to index.json if precomputed stats not available
         try {
-          const indexResponse = await fetch('./data/index.json');
+          const indexResponse = await fetch('./data/index.json', { signal });
           if (indexResponse.ok) {
             const indexData = await indexResponse.json();
             let total = 0;
             Object.values(indexData.brands).forEach((brand: any) => {
               total += brand.totalRecords || 0;
             });
-            setStats((prev) => ({
-              ...prev,
-              totalVehicles: total || 250,
-            }));
+            if (!signal.aborted) {
+              setStats((prev) => ({
+                ...prev,
+                totalVehicles: total || 250,
+              }));
+            }
           }
         } catch {
           // Use default values
@@ -111,6 +119,8 @@ export default function HomePage() {
       }
     };
     loadStats();
+
+    return () => controller.abort();
   }, []);
 
   const features = [
