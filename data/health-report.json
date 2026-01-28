@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-28T20:27:35.467Z",
-  "status": "error",
+  "timestamp": "2026-01-28T20:31:37.436Z",
+  "status": "healthy",
   "summary": {
     "totalBrands": 19,
-    "totalVehicles": 488,
-    "lastUpdate": "2026-01-28T20:27:34.167Z",
+    "totalVehicles": 513,
+    "lastUpdate": "2026-01-28T20:31:36.058Z",
     "dataDate": "2026-01-28"
   },
   "brands": [
@@ -155,16 +155,12 @@
     {
       "id": "fiat",
       "name": "Fiat",
-      "status": "error",
-      "vehicleCount": 0,
+      "status": "ok",
+      "vehicleCount": 25,
       "latestDate": "2026-01-28",
-      "issues": [
-        "Data file not found: /home/runner/work/price-list/price-list/data/2026/01/fiat/28.json"
-      ]
+      "issues": []
     }
   ],
-  "issues": [
-    "Fiat: Data file not found"
-  ],
+  "issues": [],
   "warnings": []
 }

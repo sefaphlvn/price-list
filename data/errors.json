@@ -1,30 +1,11 @@
 {
-  "generatedAt": "2026-01-28T20:27:35.486Z",
-  "clearedAt": "2026-01-28T20:27:35.465Z",
-  "errors": [
-    {
-      "id": "err_1769632055485_jjj6dvd",
-      "timestamp": "2026-01-28T20:27:35.485Z",
-      "severity": "error",
-      "category": "FILE_ERROR",
-      "source": "health",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "code": "DATA_FILE_NOT_FOUND",
-      "message": "Data file not found: /home/runner/work/price-list/price-list/data/2026/01/fiat/28.json",
-      "recovered": false
-    }
-  ],
+  "generatedAt": "2026-01-28T20:31:37.456Z",
+  "clearedAt": "2026-01-28T20:31:37.434Z",
+  "errors": [],
   "summary": {
-    "total": 1,
-    "byCategory": {
-      "FILE_ERROR": 1
-    },
-    "bySeverity": {
-      "error": 1
-    },
-    "bySource": {
-      "health": 1
-    }
+    "total": 0,
+    "byCategory": {},
+    "bySeverity": {},
+    "bySource": {}
   }
 }

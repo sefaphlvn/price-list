@@ -1,13 +1,28 @@
 {
-  "generatedAt": "2026-01-28T20:27:34.903Z",
+  "generatedAt": "2026-01-28T20:31:36.839Z",
   "date": "2026-01-28",
   "summary": {
-    "totalModels": 227,
-    "totalTransitions": 0,
+    "totalModels": 233,
+    "totalTransitions": 1,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
   },
-  "modelYearTransitions": [],
+  "modelYearTransitions": [
+    {
+      "id": "fiat-Topolino-2024-2026",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "oldYear": "2024",
+      "newYear": "2026",
+      "oldEntryPrice": 575900,
+      "newEntryPrice": 649900,
+      "priceDelta": 74000,
+      "priceDeltaPercent": 12.85,
+      "transitionDate": "2026-01-28",
+      "trimCount": 2
+    }
+  ],
   "entryPriceDeltas": [],
   "staleModels": [],
   "allModels": [
@@ -704,6 +719,79 @@
       "trimCount": 2,
       "fuelTypes": [
         "Benzin"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "500e",
+      "entryPrice": 2019900,
+      "topPrice": 2175900,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "600",
+      "entryPrice": 1697900,
+      "topPrice": 1969900,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Cross",
+      "entryPrice": 1379900,
+      "topPrice": 1949900,
+      "trimCount": 7,
+      "fuelTypes": [
+        "Benzin",
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Sedan",
+      "entryPrice": 1569900,
+      "topPrice": 1789900,
+      "trimCount": 5,
+      "fuelTypes": [
+        "Dizel"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "entryPrice": 1499900,
+      "topPrice": 1749900,
+      "trimCount": 3,
+      "fuelTypes": [
+        "Elektrik"
+      ],
+      "lastUpdated": "2026-01-28"
+    },
+    {
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "entryPrice": 575900,
+      "topPrice": 694900,
+      "trimCount": 5,
+      "fuelTypes": [
+        "Elektrik"
       ],
       "lastUpdated": "2026-01-28"
     },
