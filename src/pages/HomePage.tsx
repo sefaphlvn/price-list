@@ -76,31 +76,38 @@ export default function HomePage() {
     brandsUpdated: BRANDS.length,
   });
 
-  // Fetch quick stats from index
+  // Fetch quick stats from precomputed stats
   useEffect(() => {
     const loadStats = async () => {
       try {
-        const response = await fetch('./data/index.json');
+        const response = await fetch('./data/stats/precomputed.json');
         if (response.ok) {
           const data = await response.json();
-          let total = 0;
-          Object.values(data.brands).forEach((brand: any) => {
-            total += brand.totalRecords || 0;
+          setStats({
+            totalVehicles: data.totalVehicles || 250,
+            lowestPrice: data.overallStats?.minPrice || 800000,
+            highestPrice: data.overallStats?.maxPrice || 8500000,
+            brandsUpdated: BRANDS.length,
           });
-          setStats((prev) => ({
-            ...prev,
-            totalVehicles: total || 250,
-            lowestPrice: 800000,
-            highestPrice: 8500000,
-          }));
         }
       } catch {
-        setStats({
-          totalVehicles: 250,
-          lowestPrice: 800000,
-          highestPrice: 8500000,
-          brandsUpdated: BRANDS.length,
-        });
+        // Fallback to index.json if precomputed stats not available
+        try {
+          const indexResponse = await fetch('./data/index.json');
+          if (indexResponse.ok) {
+            const indexData = await indexResponse.json();
+            let total = 0;
+            Object.values(indexData.brands).forEach((brand: any) => {
+              total += brand.totalRecords || 0;
+            });
+            setStats((prev) => ({
+              ...prev,
+              totalVehicles: total || 250,
+            }));
+          }
+        } catch {
+          // Use default values
+        }
       }
     };
     loadStats();
