@@ -29,7 +29,7 @@ interface BrandConfig {
   name: string;
   url: string;
   urls?: string[]; // Multiple URLs for brands with per-model pages (e.g., Opel)
-  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'fiat' | 'peugeot' | 'byd' | 'opel' | 'citroen' | 'bmw' | 'mercedes' | 'ford' | 'generic';
+  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'fiat' | 'peugeot' | 'byd' | 'opel' | 'citroen' | 'bmw' | 'mercedes' | 'ford' | 'nissan' | 'honda' | 'seat' | 'kia' | 'volvo' | 'generic';
   responseType?: 'json' | 'xml' | 'pdf' | 'html';
 }
 
@@ -221,6 +221,54 @@ const BRANDS: BrandConfig[] = [
     ],
     parser: 'mercedes',
     responseType: 'json',
+  },
+  {
+    id: 'ford',
+    name: 'Ford',
+    url: 'https://www.ford.com.tr/fwebapi/main/carPriceListNewUI?searchparam=&cartype=Binek',
+    parser: 'ford',
+    responseType: 'json',
+  },
+  {
+    id: 'dacia',
+    name: 'Dacia',
+    url: 'https://best.renault.com.tr/wp-json/service/v1/CatFiyatData?brand=DACIA&cat=',
+    parser: 'renault', // Same API structure as Renault
+  },
+  {
+    id: 'nissan',
+    name: 'Nissan',
+    url: 'https://www.nissan.com.tr/fiyat-listesi/{year}-price-list.html', // {year} will be replaced dynamically
+    parser: 'nissan',
+    responseType: 'html',
+  },
+  {
+    id: 'honda',
+    name: 'Honda',
+    url: 'https://www.honda.com.tr/otomobil/otomobil-fiyat-listesi-{year}', // {year} will be replaced dynamically
+    parser: 'honda',
+    responseType: 'html',
+  },
+  {
+    id: 'seat',
+    name: 'SEAT',
+    url: 'https://www.seat.com.tr/firsatlar/fiyat-listesi',
+    parser: 'seat',
+    responseType: 'html',
+  },
+  {
+    id: 'kia',
+    name: 'Kia',
+    url: 'https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html',
+    parser: 'kia',
+    responseType: 'html',
+  },
+  {
+    id: 'volvo',
+    name: 'Volvo',
+    url: 'https://www.volvocars.com/tr/l/fiyat-listesi/', // HTML page with dynamic PDF link
+    parser: 'volvo',
+    responseType: 'pdf', // Final response is PDF
   },
 ];
 
@@ -1437,6 +1485,671 @@ const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
   return vehicles;
 };
 
+// Ford parser - parses JSON data from ford.com.tr API
+const parseFordData = (data: any, brand: string): PriceListRow[] => {
+  const vehicles: PriceListRow[] = [];
+
+  try {
+    const carPriceList = data?.carPriceList;
+    if (!Array.isArray(carPriceList)) {
+      console.log('    Warning: No carPriceList array found');
+      return vehicles;
+    }
+
+    for (const model of carPriceList) {
+      const modelName = model.modelName || '';
+      const entities = model.entities;
+
+      if (!Array.isArray(entities)) continue;
+
+      for (const entity of entities) {
+        const series = entity.series || ''; // trim level
+        const engine = entity.engine || '';
+        const fuelType = entity.fuelType || '';
+        const gearbox = entity.gearbox || '';
+        const priceStr = entity.deliveredTurnkeyListPrice || entity.campaignedTurnkeyPrice || '';
+
+        if (!priceStr) continue;
+
+        const priceNumeric = parseInt(priceStr, 10);
+        if (!isValidPrice(priceNumeric)) continue;
+
+        // Map fuel type
+        let fuel = '';
+        const fuelLower = fuelType.toLowerCase();
+        if (fuelLower.includes('elektrik')) {
+          fuel = 'Elektrik';
+        } else if (fuelLower.includes('hibrit') || fuelLower.includes('hybrid')) {
+          fuel = 'Hybrid';
+        } else if (fuelLower.includes('dizel') || fuelLower.includes('diesel')) {
+          fuel = 'Dizel';
+        } else if (fuelLower.includes('benzin')) {
+          fuel = 'Benzin';
+        }
+
+        // Map transmission
+        let transmission = '';
+        const gearboxLower = gearbox.toLowerCase();
+        if (gearboxLower.includes('otomatik') || gearboxLower.includes('powershift') || gearboxLower.includes('selectshift')) {
+          transmission = 'Otomatik';
+        } else if (gearboxLower.includes('manuel') || gearboxLower.includes('manual')) {
+          transmission = 'Manuel';
+        }
+
+        // Check for duplicate
+        const exists = vehicles.find(
+          v => v.model === modelName &&
+               v.trim === series &&
+               v.engine === engine &&
+               v.priceNumeric === priceNumeric
+        );
+
+        if (!exists && modelName && series) {
+          vehicles.push({
+            model: modelName,
+            trim: series,
+            engine,
+            transmission,
+            fuel,
+            priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
+            priceNumeric,
+            brand,
+          });
+        }
+      }
+    }
+  } catch (error) {
+    console.error('Ford parse error:', error);
+  }
+
+  return vehicles;
+};
+
+// Nissan parser - parses HTML data from nissan.com.tr
+const parseNissanData = (html: string, brand: string): PriceListRow[] => {
+  const vehicles: PriceListRow[] = [];
+
+  try {
+    const $ = cheerio.load(html);
+
+    // Collect model names from h2.heading and h3.heading spans (filter out "-" placeholders)
+    const modelNames: string[] = [];
+    $('h2.heading span, h3.heading span').each((_, el) => {
+      const headingText = $(el).text().trim();
+      if (headingText && headingText !== '-' && headingText.toLowerCase().includes('nissan')) {
+        // Clean up model name - remove NISSAN prefix and YENİ prefix
+        const model = headingText
+          .replace(/^(YENİ\s+)?NISSAN\s+/i, '')
+          .replace(/\s+YENİ\s+/i, ' ') // Remove "YENİ" from middle
+          .trim();
+        modelNames.push(model);
+      }
+    });
+
+    // Collect all tables with price data
+    const tables: any[] = [];
+    $('table').each((_, table) => {
+      const $table = $(table);
+      // Check if this table has price data (contains "TL" in cells)
+      const hasPrice = $table.text().includes('TL');
+      if (hasPrice) {
+        tables.push($table);
+      }
+    });
+
+    // Map tables to model names (they appear in order)
+    const modelSections: { model: string; $table: any }[] = [];
+    for (let i = 0; i < tables.length; i++) {
+      const model = modelNames[i] || 'Unknown';
+      modelSections.push({ model, $table: tables[i] });
+    }
+
+    // Process each model section
+    for (const { model, $table } of modelSections) {
+      $table.find('tbody tr').each((_, row) => {
+        const $row = $(row);
+        const cells = $row.find('td');
+
+        if (cells.length < 2) return;
+
+        // First cell: Version name
+        const versionText = $(cells[0]).text().trim();
+        if (!versionText || versionText.includes('Versiyon İsmi')) return; // Skip header
+
+        // Second cell: Liste fiyatı (main price)
+        const priceText = $(cells[1]).text().trim();
+        if (!priceText) return;
+
+        const priceNumeric = parsePrice(priceText);
+        if (!isValidPrice(priceNumeric)) return;
+
+        // Parse version to extract engine, trim, transmission, fuel
+        let engine = '';
+        let trim = '';
+        let transmission = 'Otomatik'; // Default for Nissan
+        let fuel = 'Benzin';
+
+        // Extract engine info
+        const engineMatch = versionText.match(/(\d+\.\d+\s*(?:DIG-T|ePOWER|e-POWER)?(?:\s*(?:Mild Hybrid|Hybrid)?)?\s*\d+PS)/i);
+        if (engineMatch) {
+          engine = engineMatch[1].trim();
+        } else if (versionText.match(/e-?POWER/i)) {
+          const powerMatch = versionText.match(/e-?POWER\s*(\d+PS)/i);
+          engine = powerMatch ? `e-POWER ${powerMatch[1]}` : 'e-POWER';
+        }
+
+        // Extract trim level
+        const trimPatterns = ['Designpack', 'Skypack', 'Platinum Premium', 'Platinum', 'N-Design', 'N-Sport', 'Tekna', 'Acenta', 'Visia'];
+        for (const pattern of trimPatterns) {
+          if (versionText.toLowerCase().includes(pattern.toLowerCase())) {
+            trim = pattern;
+            break;
+          }
+        }
+        if (!trim) {
+          // Use everything after engine info
+          const parts = versionText.split(/\s+(?:Auto|DCT|MT)\s*/i);
+          if (parts.length > 1) {
+            trim = parts[1].trim();
+          } else {
+            trim = versionText;
+          }
+        }
+
+        // Determine fuel type
+        if (versionText.match(/e-?POWER/i)) {
+          fuel = 'Hybrid'; // e-POWER is series hybrid
+        } else if (versionText.match(/Mild Hybrid/i)) {
+          fuel = 'Mild Hybrid';
+        } else if (versionText.match(/EV|Elektrik/i)) {
+          fuel = 'Elektrik';
+        } else if (versionText.match(/Dizel|dCi/i)) {
+          fuel = 'Dizel';
+        }
+
+        // Determine transmission
+        if (versionText.match(/\bMT\b|Manuel/i)) {
+          transmission = 'Manuel';
+        } else if (versionText.match(/\bDCT\b|Auto|Otomatik|CVT/i)) {
+          transmission = 'Otomatik';
+        }
+
+        // Check for 4x4
+        if (versionText.match(/4x4|4WD|AWD/i)) {
+          trim += ' 4x4';
+        }
+
+        // Determine model from version if not set
+        let finalModel = model;
+        if (model === 'Unknown') {
+          if (versionText.match(/Qashqai/i)) finalModel = 'Qashqai';
+          else if (versionText.match(/Juke/i)) finalModel = 'Juke';
+          else if (versionText.match(/X-Trail/i)) finalModel = 'X-Trail';
+          else if (versionText.match(/Townstar/i)) finalModel = 'Townstar';
+          else if (versionText.match(/Navara/i)) finalModel = 'Navara';
+          else if (versionText.match(/Micra/i)) finalModel = 'Micra';
+        }
+
+        // Check for duplicate
+        const exists = vehicles.find(
+          v => v.model === finalModel &&
+               v.trim === trim &&
+               v.engine === engine &&
+               v.priceNumeric === priceNumeric
+        );
+
+        if (!exists && finalModel && trim) {
+          vehicles.push({
+            model: finalModel,
+            trim: trim.trim(),
+            engine,
+            transmission,
+            fuel,
+            priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
+            priceNumeric,
+            brand,
+          });
+        }
+      });
+    }
+  } catch (error) {
+    console.error('Nissan HTML parse error:', error);
+  }
+
+  return vehicles;
+};
+
+// Honda parser - parses HTML data from honda.com.tr
+const parseHondaData = (html: string, brand: string): PriceListRow[] => {
+  const vehicles: PriceListRow[] = [];
+
+  try {
+    const $ = cheerio.load(html);
+
+    // Find all model sections
+    $('li.table-price-list').each((_, el) => {
+      const id = $(el).attr('id') || '';
+      // Extract model name from ID (honda-jazz-hibrit -> Jazz Hibrit)
+      // Clean up common patterns
+      let model = id
+        .replace('honda-', '')
+        .replace(/-/g, ' ')
+        .split(' ')
+        .map(word => {
+          // Handle special cases like HR-V, CR-V
+          if (word.toLowerCase() === 'hr' || word.toLowerCase() === 'cr' || word.toLowerCase() === 'zr') {
+            return word.toUpperCase();
+          }
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        })
+        .join(' ')
+        .replace(/\s+V\s+/g, '-V ')  // Fix HR V -> HR-V
+        .replace(/Hibrit/i, 'Hybrid')
+        .trim();
+
+      // Find all engine sections within this model
+      const engineEls = $(el).find('.tpl__engine-name');
+
+      engineEls.each((_, engineEl) => {
+        const engine = $(engineEl).text().trim();
+
+        // Find the ul.tpl__block that follows this engine
+        const $block = $(engineEl).next('ul.tpl__block');
+
+        // Find all tpl__item (trim variants)
+        $block.find('.tpl__item').each((_, itemEl) => {
+          const $item = $(itemEl);
+
+          // Get trim name
+          const trim = $item.find('.tpl__pack-name').text().trim();
+
+          // Get the first price (recommended sales price, not campaign price)
+          const priceText = $item.find('.dtl__text span').first().text().trim();
+          const priceMatch = priceText.match(/(\d{1,2}\.\d{3}\.\d{3})\s*TL/);
+
+          if (trim && priceMatch) {
+            const priceNumeric = parsePrice(priceMatch[0]);
+            if (!isValidPrice(priceNumeric)) return;
+
+            // Determine fuel type from engine
+            let fuel = 'Benzin';
+            if (engine.toLowerCase().includes('hibrit') || engine.toLowerCase().includes('hybrid')) {
+              fuel = 'Hibrit';
+            } else if (engine.toLowerCase().includes('dizel') || engine.toLowerCase().includes('diesel')) {
+              fuel = 'Dizel';
+            } else if (engine.toLowerCase().includes('elektrik') || engine.toLowerCase().includes('ev')) {
+              fuel = 'Elektrik';
+            }
+
+            // Determine transmission from engine
+            let transmission = 'Otomatik';
+            if (engine.toLowerCase().includes('manuel') || engine.toLowerCase().includes('manual')) {
+              transmission = 'Manuel';
+            }
+
+            // Check for duplicate
+            const exists = vehicles.find(
+              v => v.model === model &&
+                   v.trim === trim &&
+                   v.engine === engine &&
+                   v.priceNumeric === priceNumeric
+            );
+
+            if (!exists) {
+              vehicles.push({
+                model,
+                trim,
+                engine,
+                transmission,
+                fuel,
+                priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
+                priceNumeric,
+                brand,
+              });
+            }
+          }
+        });
+      });
+    });
+  } catch (error) {
+    console.error('Honda HTML parse error:', error);
+  }
+
+  return vehicles;
+};
+
+// SEAT parser - parses HTML data from seat.com.tr
+const parseSeatData = (html: string, brand: string): PriceListRow[] => {
+  const vehicles: PriceListRow[] = [];
+
+  try {
+    const $ = cheerio.load(html);
+
+    // Find all table rows with model data
+    $('.table-row-container .table-row').each((_, row) => {
+      const $row = $(row);
+
+      // Get model name (e.g., "Ibiza 1.0 EcoTSI 115 PS DSG Style")
+      const modelName = $row.find('.model-name').text().trim();
+      if (!modelName) return;
+
+      // Get fuel type (e.g., "Benzinli", "Hibrit")
+      let fuel = $row.find('.model-details').text().trim() || 'Benzin';
+      // Normalize fuel type
+      if (fuel.toLowerCase().includes('hibrit') || fuel.toLowerCase().includes('hybrid')) {
+        fuel = 'Hibrit';
+      } else if (fuel.toLowerCase().includes('dizel') || fuel.toLowerCase().includes('diesel')) {
+        fuel = 'Dizel';
+      } else if (fuel.toLowerCase().includes('elektrik') || fuel.toLowerCase().includes('electric')) {
+        fuel = 'Elektrik';
+      } else {
+        fuel = 'Benzin';
+      }
+
+      // Get the second price (anahtar teslim fiyatı - with notary fee)
+      const $prices = $row.find('.price');
+      if ($prices.length < 2) return;
+
+      const priceText = $($prices[1]).text().trim();
+      const priceMatch = priceText.match(/(\d{1,3}(?:\.\d{3})+)/);
+      if (!priceMatch) return;
+
+      const priceNumeric = parsePrice(priceMatch[0] + ' TL');
+      if (!isValidPrice(priceNumeric)) return;
+
+      // Parse model name to extract components
+      // Example: "Ibiza 1.0 EcoTSI 115 PS DSG Style" or "Leon 1.5 eHybrid 204 PS DSG FR"
+      const parts = modelName.split(/\s+/);
+      const model = parts[0]; // Ibiza, Arona, Leon, Ateca
+
+      // Find engine and power info
+      let engine = '';
+      let trim = '';
+      let transmission = 'Manuel';
+
+      // Find engine spec (e.g., "1.0 EcoTSI 115 PS" or "1.5 eHybrid 204 PS" or "1.5 EcoTSI ACT 150 PS")
+      const engineMatch = modelName.match(/(\d+\.\d+)\s+([\w-]+(?:\s+[\w-]+)?)\s+(\d+)\s*PS/i);
+      if (engineMatch) {
+        engine = `${engineMatch[1]} ${engineMatch[2]} ${engineMatch[3]} PS`;
+      }
+
+      // Check for transmission
+      if (modelName.includes('DSG')) {
+        transmission = 'Otomatik (DSG)';
+      } else if (modelName.match(/\bAT\b|Otomatik/i)) {
+        transmission = 'Otomatik';
+      }
+
+      // Extract trim (everything after PS and transmission)
+      const trimMatch = modelName.match(/PS\s+(?:DSG\s+)?(.+?)(?:'[^']+')?$/i);
+      if (trimMatch) {
+        trim = trimMatch[1].replace(/DSG\s*/i, '').trim();
+        // Handle Dark Edition or other quoted suffixes
+        const quotedMatch = modelName.match(/'([^']+)'/);
+        if (quotedMatch) {
+          trim += ' ' + quotedMatch[1];
+        }
+      }
+
+      // Check for duplicate
+      const exists = vehicles.find(
+        v => v.model === model &&
+             v.trim === trim &&
+             v.engine === engine &&
+             v.priceNumeric === priceNumeric
+      );
+
+      if (!exists && model && trim) {
+        vehicles.push({
+          model,
+          trim: trim.trim(),
+          engine,
+          transmission,
+          fuel,
+          priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
+          priceNumeric,
+          brand,
+        });
+      }
+    });
+  } catch (error) {
+    console.error('SEAT HTML parse error:', error);
+  }
+
+  return vehicles;
+};
+
+// Kia parser - Extract data from embedded JavaScript objects
+const parseKiaData = (html: string, brand: string): PriceListRow[] => {
+  const vehicles: PriceListRow[] = [];
+
+  try {
+    // Kia uses AngularJS with data embedded in JavaScript objects
+    // Pattern: var item = { 'modelName' : "EV3", 'trimDisplayName' : "Elegance", 'turnkeyPrice' : " 2.095.000", ... }
+
+    // Extract all item objects from the HTML
+    const itemPattern = /var\s+item\s*=\s*\{([^}]+)\}/g;
+    let match;
+
+    while ((match = itemPattern.exec(html)) !== null) {
+      const itemContent = match[1];
+
+      // Extract fields from the item object
+      const extractField = (fieldName: string): string => {
+        const regex = new RegExp(`['"]${fieldName}['"]\\s*:\\s*['"]([^'"]*)['"\\s]`, 'i');
+        const fieldMatch = itemContent.match(regex);
+        return fieldMatch ? fieldMatch[1].trim() : '';
+      };
+
+      const modelName = extractField('modelName') || extractField('modelDisplayName');
+      const trimName = extractField('trimDisplayName');
+      const priceStr = extractField('turnkeyPrice');
+      const fuel = extractField('fuelDisplayName');
+      const transmission = extractField('transmissionDisplayName');
+      const power = extractField('moterPower');
+      const powerUnit = extractField('moterPowerUnit') || 'PS';
+      const engineCapacity = extractField('engineCapacity');
+
+      if (!modelName || !priceStr) continue;
+
+      // Parse price
+      const priceNumeric = parsePrice(priceStr + ' TL');
+      if (!isValidPrice(priceNumeric)) continue;
+
+      // Build engine string
+      let engine = '';
+      if (engineCapacity) {
+        engine = `${engineCapacity} cc`;
+      }
+      if (power) {
+        engine += engine ? ` ${power} ${powerUnit}` : `${power} ${powerUnit}`;
+      }
+
+      // Normalize fuel type
+      let normalizedFuel = 'Benzin';
+      if (fuel) {
+        const fuelLower = fuel.toLowerCase();
+        if (fuelLower.includes('elektrik') || fuelLower.includes('electric')) {
+          normalizedFuel = 'Elektrik';
+        } else if (fuelLower.includes('hibrit') || fuelLower.includes('hybrid')) {
+          normalizedFuel = 'Hibrit';
+        } else if (fuelLower.includes('dizel') || fuelLower.includes('diesel')) {
+          normalizedFuel = 'Dizel';
+        } else if (fuelLower.includes('benzin') || fuelLower.includes('petrol')) {
+          normalizedFuel = 'Benzin';
+        }
+      }
+
+      // Normalize transmission
+      let normalizedTransmission = 'Manuel';
+      if (transmission) {
+        const transLower = transmission.toLowerCase();
+        if (transLower.includes('otomatik') || transLower.includes('dct') || transLower.includes('at') || transLower.includes('auto')) {
+          normalizedTransmission = 'Otomatik';
+        }
+      }
+
+      // Check for duplicate
+      const exists = vehicles.find(
+        v => v.model === modelName &&
+             v.trim === trimName &&
+             v.priceNumeric === priceNumeric
+      );
+
+      if (!exists && trimName) {
+        vehicles.push({
+          model: modelName,
+          trim: trimName,
+          engine: engine || '-',
+          transmission: normalizedTransmission,
+          fuel: normalizedFuel,
+          priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
+          priceNumeric,
+          brand,
+        });
+      }
+    }
+  } catch (error) {
+    console.error('Kia HTML parse error:', error);
+  }
+
+  return vehicles;
+};
+
+// Volvo parser - parses PDF data (PDF extracted via pdf.js-extract)
+const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRow[] => {
+  const vehicles: PriceListRow[] = [];
+
+  try {
+    // Volvo PDF has a single page with all models
+    // Row structure: specs row (Y) followed by model name row (Y+2)
+    // Specs: Fuel | Engine | Power | Transmission | prices... | Final Price
+    // Model: "MODEL, TRIM, VARIANT"
+
+    const page = pdfResult.pages[0];
+    if (!page) return vehicles;
+
+    // Group content by Y position (rounded)
+    const rows: { [y: number]: { x: number; str: string }[] } = {};
+    page.content.forEach(item => {
+      const y = Math.round(item.y);
+      if (!rows[y]) rows[y] = [];
+      rows[y].push({ x: item.x, str: item.str });
+    });
+
+    // Sort rows by Y
+    const sortedYs = Object.keys(rows).map(Number).sort((a, b) => a - b);
+
+    // Find data rows (skip header rows - they're before Y=300)
+    const dataYs = sortedYs.filter(y => y >= 310);
+
+    // Process pairs of rows (specs + model name)
+    for (let i = 0; i < dataYs.length - 1; i++) {
+      const specsY = dataYs[i];
+      const modelY = dataYs[i + 1];
+
+      // Check if these are adjacent (within 5 units)
+      if (modelY - specsY > 25) continue;
+
+      // Get specs row text (sorted by X)
+      const specsRow = rows[specsY].sort((a, b) => a.x - b.x).map(c => c.str);
+      const specsText = specsRow.join(' ');
+
+      // Get model row text
+      const modelRow = rows[modelY].sort((a, b) => a.x - b.x).map(c => c.str);
+      const modelText = modelRow.join(' ').trim();
+
+      // Skip if model text looks like specs or headers
+      if (!modelText || modelText.includes('MODEL') || modelText.includes('YAKIT')) continue;
+
+      // Parse model name (e.g., "EX30, SINGLE MOTOR EXTENDED RANGE, ULTRA")
+      const modelParts = modelText.split(',').map(p => p.trim());
+      if (modelParts.length < 2) continue;
+
+      const model = modelParts[0]; // EX30
+      const trim = modelParts.slice(1).join(', '); // SINGLE MOTOR EXTENDED RANGE, ULTRA
+
+      // Extract fuel type from specs and model name
+      let fuel = 'Benzin';
+      const combinedText = (specsText + ' ' + modelText).toLowerCase();
+      // Check for hybrid first (PLUG-IN HYBRID, MILD HYBRID in model name)
+      if (combinedText.includes('plug-in hybrid') || combinedText.includes('plug-in-hybrid')) {
+        fuel = 'Plug-in Hibrit';
+      } else if (combinedText.includes('mild hybrid') || combinedText.includes('hybrid') || combinedText.includes('hibrit')) {
+        fuel = 'Hibrit';
+      } else if (specsText.toLowerCase().includes('elektrik')) {
+        fuel = 'Elektrik';
+      } else if (specsText.toLowerCase().includes('dizel')) {
+        fuel = 'Dizel';
+      }
+
+      // Extract power (e.g., "150kW/204hp" or "197 hp")
+      let engine = '';
+      const powerMatch = specsText.match(/(\d+)\s*kW\s*\/\s*(\d+)\s*hp/i) ||
+                        specsText.match(/(\d+)\s*KW\s*\/\s*(\d+)\s*hp/i) ||
+                        specsText.match(/(\d+)\s*hp/i);
+      if (powerMatch) {
+        if (powerMatch[2]) {
+          engine = `${powerMatch[1]} kW / ${powerMatch[2]} hp`;
+        } else {
+          engine = `${powerMatch[1]} hp`;
+        }
+      }
+
+      // Extract engine capacity if available (e.g., "1.969 cc.")
+      const ccMatch = specsText.match(/(\d[\d.]+)\s*cc/i);
+      if (ccMatch) {
+        engine = `${ccMatch[1]} cc ${engine}`.trim();
+      }
+
+      // Extract transmission
+      let transmission = 'Otomatik';
+      if (specsText.toLowerCase().includes('geartronic') ||
+          specsText.toLowerCase().includes('ileri') ||
+          specsText.toLowerCase().includes('otomatik')) {
+        transmission = 'Otomatik';
+      } else if (specsText.toLowerCase().includes('manuel')) {
+        transmission = 'Manuel';
+      }
+
+      // Find the final price (last price-like number in the row)
+      const priceMatches = specsText.match(/(\d{1,2}[.,]\d{3}[.,]\d{3})/g);
+      if (!priceMatches || priceMatches.length === 0) continue;
+
+      // The last price is the "TAVSİYE EDİLEN ANAHTAR TESLİM FİYAT"
+      const priceStr = priceMatches[priceMatches.length - 1];
+      const priceNumeric = parsePrice(priceStr + ' TL');
+
+      if (!isValidPrice(priceNumeric)) continue;
+
+      // Check for duplicate
+      const exists = vehicles.find(
+        v => v.model === model && v.trim === trim && v.priceNumeric === priceNumeric
+      );
+
+      if (!exists) {
+        vehicles.push({
+          model,
+          trim,
+          engine: engine || '-',
+          transmission,
+          fuel,
+          priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
+          priceNumeric,
+          brand,
+        });
+      }
+
+      // Skip the model row in next iteration
+      i++;
+    }
+  } catch (error) {
+    console.error('Volvo PDF parse error:', error);
+  }
+
+  return vehicles;
+};
+
 // Citroen parser - parses JSON data from talep.citroen.com.tr
 const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
   const vehicles: PriceListRow[] = [];
@@ -1577,6 +2290,12 @@ const parseData = (data: any, brand: string, parserType: string, modelName?: str
     case 'citroen': return parseCitroenData(data, brand);
     case 'bmw': return parseBMWData(data, brand);
     case 'mercedes': return parseMercedesData(data, brand);
+    case 'ford': return parseFordData(data, brand);
+    case 'nissan': return parseNissanData(data, brand);
+    case 'honda': return parseHondaData(data, brand);
+    case 'seat': return parseSeatData(data, brand);
+    case 'kia': return parseKiaData(data, brand);
+    case 'volvo': return parseVolvoData(data, brand);
     default: return [];
   }
 };
@@ -1626,6 +2345,25 @@ async function fetchSingleUrl(url: string, responseType?: string): Promise<any> 
   return response.json();
 }
 
+// Fetch Ford API with special headers
+async function fetchFordUrl(url: string): Promise<any> {
+  const response = await fetch(url, {
+    headers: {
+      'accept': 'application/json, text/plain, */*',
+      'accept-language': 'tr,en;q=0.9',
+      'referer': 'https://www.ford.com.tr/fiyat-listesi/otomobil',
+      'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
+      'cookie': 'CMSPreferredCulture=tr-TR; CMSCookieLevel=200',
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+
+  return response.json();
+}
+
 // Fetch data from URL (handles single and multi-URL brands)
 async function fetchBrandData(brand: BrandConfig): Promise<any> {
   // Handle Citroen's dynamic Next.js URL
@@ -1638,6 +2376,87 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
     const apiUrl = `https://talep.citroen.com.tr/_next/data/${buildId}/fiyat-listesi.json`;
     console.log(`  Using API URL: ${apiUrl}`);
     return fetchSingleUrl(apiUrl, 'json');
+  }
+
+  // Handle Ford's special headers
+  if (brand.parser === 'ford') {
+    console.log(`  Fetching ${brand.name} from ${brand.url}`);
+    return fetchFordUrl(brand.url);
+  }
+
+  // Handle Volvo's dynamic PDF URL (first fetch HTML to find PDF link)
+  if (brand.parser === 'volvo') {
+    console.log(`  Fetching ${brand.name} - extracting PDF URL from ${brand.url}`);
+    const response = await fetch(brand.url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'none',
+        'Sec-Fetch-User': '?1',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: Could not fetch Volvo page`);
+    }
+
+    const html = await response.text();
+
+    // Extract PDF URL from HTML (contentstack CDN pattern)
+    const pdfMatch = html.match(/https:\/\/azure-eu-assets\.contentstack\.com[^"]+\.pdf/);
+    if (!pdfMatch) {
+      throw new Error('Could not find PDF URL in Volvo page');
+    }
+
+    const pdfUrl = pdfMatch[0];
+    console.log(`  Found PDF URL: ${pdfUrl}`);
+
+    // Fetch and parse the PDF
+    return fetchSingleUrl(pdfUrl, 'pdf');
+  }
+
+  // Handle dynamic year URL (Nissan, Honda)
+  if (brand.parser === 'nissan' || brand.parser === 'honda') {
+    const currentYear = new Date().getFullYear();
+    const years = [currentYear, currentYear - 1];
+
+    for (const year of years) {
+      const url = brand.url.replace('{year}', year.toString());
+      console.log(`  Trying ${brand.name} for year ${year}: ${url}`);
+
+      try {
+        const response = await fetch(url, {
+          headers: {
+            'accept': 'text/html',
+            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+          },
+        });
+
+        if (response.ok) {
+          const html = await response.text();
+          // Check if page has actual price content
+          const hasContent = brand.parser === 'honda'
+            ? html.includes('table-price-list')
+            : html.includes('TL');
+
+          if (hasContent) {
+            console.log(`  Found ${brand.name} price list for ${year}`);
+            return html;
+          } else {
+            console.log(`  Page found for ${year} but no price content, trying next...`);
+          }
+        }
+      } catch (error) {
+        // Try next year
+      }
+    }
+    throw new Error(`No valid ${brand.name} price list found for years ${years.join(', ')}`);
   }
 
   console.log(`  Fetching ${brand.name} from ${brand.url}`);

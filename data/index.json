@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-28T14:39:41.576Z",
+  "lastUpdated": "2026-01-28T15:26:37.809Z",
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
@@ -103,6 +103,62 @@
       ],
       "latestDate": "2026-01-28",
       "totalRecords": 52
+    },
+    "ford": {
+      "name": "Ford",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 21
+    },
+    "dacia": {
+      "name": "Dacia",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 2
+    },
+    "nissan": {
+      "name": "Nissan",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 27
+    },
+    "honda": {
+      "name": "Honda",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 6
+    },
+    "seat": {
+      "name": "SEAT",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 8
+    },
+    "kia": {
+      "name": "Kia",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 22
+    },
+    "volvo": {
+      "name": "Volvo",
+      "availableDates": [
+        "2026-01-28"
+      ],
+      "latestDate": "2026-01-28",
+      "totalRecords": 34
     }
   }
 }

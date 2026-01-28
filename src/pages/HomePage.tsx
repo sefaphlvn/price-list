@@ -32,6 +32,15 @@ const brandIcons: { [key: string]: string } = {
   byd: 'BYD',
   opel: 'OP',
   citroen: 'CT',
+  bmw: 'BMW',
+  mercedes: 'MB',
+  ford: 'FD',
+  dacia: 'DC',
+  nissan: 'NS',
+  honda: 'HN',
+  seat: 'ST',
+  kia: 'KIA',
+  volvo: 'VLV',
 };
 
 // Brand colors
@@ -46,6 +55,15 @@ const brandColors: { [key: string]: string } = {
   byd: '#c41230',
   opel: '#f7ff14', // Opel yellow
   citroen: '#ac0f21', // Citroën red
+  bmw: '#0066b1', // BMW blue
+  mercedes: '#00172e', // Mercedes dark
+  ford: '#003478', // Ford blue
+  dacia: '#646b52', // Dacia khaki green
+  nissan: '#c3002f', // Nissan red
+  honda: '#cc0000', // Honda red
+  seat: '#ed6a32', // SEAT orange/copper
+  kia: '#05141f', // Kia dark blue/black
+  volvo: '#003057', // Volvo navy blue
 };
 
 export default function HomePage() {

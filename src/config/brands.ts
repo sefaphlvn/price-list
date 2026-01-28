@@ -18,6 +18,13 @@ export const BRAND_DIRECT_URLS: Record<string, string> = {
   citroen: 'https://talep.citroen.com.tr/fiyat-listesi', // Page URL - uses dynamic build ID
   bmw: 'https://www.borusanotomotiv.com/bmw/stage2/fiyat-listesi/static-fiyat-listesi-v2.aspx',
   mercedes: 'https://pladmin.mercedes-benz.com.tr/api/product/searchByCategoryCode', // Base API URL - multi-URL brand
+  ford: 'https://www.ford.com.tr/fwebapi/main/carPriceListNewUI?searchparam=&cartype=Binek',
+  dacia: 'https://best.renault.com.tr/wp-json/service/v1/CatFiyatData?brand=DACIA&cat=',
+  nissan: 'https://www.nissan.com.tr/fiyat-listesi/{year}-price-list.html', // {year} replaced dynamically
+  honda: 'https://www.honda.com.tr/otomobil/otomobil-fiyat-listesi-{year}', // {year} replaced dynamically
+  seat: 'https://www.seat.com.tr/firsatlar/fiyat-listesi',
+  kia: 'https://www.kia.com/tr/satis-merkezi/fiyat-listesi.html',
+  volvo: 'https://www.volvocars.com/tr/l/fiyat-listesi/', // HTML page with dynamic PDF link
 };
 
 // Multiple URLs for brands with per-model pages
@@ -150,13 +157,54 @@ export const BRANDS: BrandConfig[] = [
     parser: 'mercedes',
     responseType: 'json',
   },
-  // Ford disabled - API requires session cookies which cannot be proxied
-  // {
-  //   id: 'ford',
-  //   name: 'Ford',
-  //   url: `${CORS_PROXY}https://www.ford.com.tr/fwebapi/main/carPriceListNewUI?searchparam=&cartype=Binek`,
-  //   parser: 'ford',
-  // },
+  {
+    id: 'ford',
+    name: 'Ford',
+    url: BRAND_DIRECT_URLS.ford,
+    parser: 'ford',
+    responseType: 'json',
+  },
+  {
+    id: 'dacia',
+    name: 'Dacia',
+    url: `${CORS_PROXY}${BRAND_DIRECT_URLS.dacia}`,
+    parser: 'renault', // Same API structure as Renault
+  },
+  {
+    id: 'nissan',
+    name: 'Nissan',
+    url: BRAND_DIRECT_URLS.nissan,
+    parser: 'nissan',
+    responseType: 'html',
+  },
+  {
+    id: 'honda',
+    name: 'Honda',
+    url: BRAND_DIRECT_URLS.honda,
+    parser: 'honda',
+    responseType: 'html',
+  },
+  {
+    id: 'seat',
+    name: 'SEAT',
+    url: BRAND_DIRECT_URLS.seat,
+    parser: 'seat',
+    responseType: 'html',
+  },
+  {
+    id: 'kia',
+    name: 'Kia',
+    url: BRAND_DIRECT_URLS.kia,
+    parser: 'kia',
+    responseType: 'html',
+  },
+  {
+    id: 'volvo',
+    name: 'Volvo',
+    url: BRAND_DIRECT_URLS.volvo,
+    parser: 'volvo',
+    responseType: 'pdf',
+  },
   // Future brands can be added here:
   // {
   //   id: 'audi',
