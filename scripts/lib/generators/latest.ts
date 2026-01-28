@@ -5,6 +5,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { safeParseJSON } from '../errorLogger';
 
 interface PriceListRow {
   model: string;
@@ -59,7 +60,7 @@ export async function generateLatest(): Promise<LatestData> {
     throw new Error('index.json not found');
   }
 
-  const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const index = safeParseJSON<IndexData>(indexPath, { lastUpdated: '', brands: {} });
   const latest: LatestData = {
     generatedAt: new Date().toISOString(),
     totalVehicles: 0,
@@ -76,7 +77,7 @@ export async function generateLatest(): Promise<LatestData> {
       continue;
     }
 
-    const storedData: StoredData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const storedData = safeParseJSON<StoredData>(filePath, { collectedAt: '', brand: '', brandId: '', rowCount: 0, rows: [] });
 
     latest.brands[brandId] = {
       name: brandInfo.name,

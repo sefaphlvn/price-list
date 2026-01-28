@@ -5,6 +5,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { safeParseJSON } from '../errorLogger';
 
 interface PriceListRow {
   model: string;
@@ -147,7 +148,7 @@ export async function generateArchitecture(): Promise<ArchitectureData> {
     throw new Error('index.json not found');
   }
 
-  const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const index = safeParseJSON<IndexData>(indexPath, { lastUpdated: '', brands: {} });
   const ladders: TrimLadder[] = [];
   const segmentModels: Map<string, CrossBrandEntry[]> = new Map();
   let latestDate = '';
@@ -167,7 +168,7 @@ export async function generateArchitecture(): Promise<ArchitectureData> {
       continue;
     }
 
-    const storedData: StoredData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const storedData = safeParseJSON<StoredData>(filePath, { collectedAt: '', brand: '', brandId: '', rowCount: 0, rows: [] });
 
     // Group by model
     const modelGroups: Map<string, PriceListRow[]> = new Map();

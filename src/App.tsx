@@ -51,6 +51,9 @@ const AlertsPage = lazyWithRetry(() => import('./pages/AlertsPage'));
 // Info pages
 const FAQPage = lazyWithRetry(() => import('./pages/FAQPage'));
 
+// System pages
+const ErrorsPage = lazyWithRetry(() => import('./pages/ErrorsPage'));
+
 // Loading fallback
 function PageLoader() {
   return (
@@ -88,6 +91,8 @@ function App() {
           <Route path="alerts" element={<AlertsPage />} />
           {/* Info pages */}
           <Route path="sss" element={<FAQPage />} />
+          {/* System pages */}
+          <Route path="errors" element={<ErrorsPage />} />
           {/* Redirect old paths if any */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

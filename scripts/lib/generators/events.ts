@@ -5,6 +5,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { safeParseJSON } from '../errorLogger';
 
 interface PriceListRow {
   model: string;
@@ -108,7 +109,7 @@ function loadBrandData(dataDir: string, brandId: string, date: string): StoredDa
     return null;
   }
 
-  return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+  return safeParseJSON<StoredData | null>(filePath, null);
 }
 
 function findPreviousDate(availableDates: string[], currentDate: string): string | null {
@@ -130,7 +131,7 @@ export async function generateEvents(): Promise<EventsData> {
     throw new Error('index.json not found');
   }
 
-  const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const index = safeParseJSON<IndexData>(indexPath, { lastUpdated: '', brands: {} });
   const events: PriceEvent[] = [];
   const brandStats: Map<string, { changes: number; totalAbsChange: number; totalChangePercent: number; increases: number; decreases: number }> = new Map();
   const modelStats: Map<string, { name: string; changes: number; totalAbsChange: number; totalChangePercent: number; increases: number; decreases: number }> = new Map();

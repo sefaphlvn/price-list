@@ -5,6 +5,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { safeParseJSON } from '../errorLogger';
 
 interface PriceListRow {
   model: string;
@@ -125,11 +126,7 @@ function loadBrandData(dataDir: string, brandId: string, date: string): StoredDa
     return null;
   }
 
-  try {
-    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  } catch {
-    return null;
-  }
+  return safeParseJSON<StoredData | null>(filePath, null);
 }
 
 function daysBetween(date1: string, date2: string): number {
@@ -149,7 +146,7 @@ export async function generateLifecycle(): Promise<LifecycleData> {
     throw new Error('index.json not found');
   }
 
-  const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const index = safeParseJSON<IndexData>(indexPath, { lastUpdated: '', brands: {} });
 
   const modelYearTransitions: ModelYearTransition[] = [];
   const entryPriceDeltas: EntryPriceDelta[] = [];
@@ -254,7 +251,8 @@ export async function generateLifecycle(): Promise<LifecycleData> {
           }
 
           for (const [baseModel, rows] of modelGroups.entries()) {
-            const currentEntry = Math.min(...rows.map(r => r.priceNumeric));
+            const prices = rows.map(r => r.priceNumeric);
+            const currentEntry = prices.length > 0 ? Math.min(...prices) : 0;
             const previousEntry = prevModelPrices.get(baseModel);
 
             if (previousEntry && currentEntry !== previousEntry) {
@@ -286,7 +284,8 @@ export async function generateLifecycle(): Promise<LifecycleData> {
     const daysSinceUpdate = daysBetween(brandInfo.latestDate, today.toISOString().split('T')[0]);
     if (daysSinceUpdate >= 14) {
       for (const [baseModel, rows] of modelGroups.entries()) {
-        const entryPrice = Math.min(...rows.map(r => r.priceNumeric));
+        const rowPrices = rows.map(r => r.priceNumeric);
+        const entryPrice = rowPrices.length > 0 ? Math.min(...rowPrices) : 0;
         staleModels.push({
           id: `${brandId}-${baseModel}-stale`,
           brand: rows[0].brand,

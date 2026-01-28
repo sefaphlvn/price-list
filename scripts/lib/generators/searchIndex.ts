@@ -5,6 +5,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { safeParseJSON } from '../errorLogger';
 
 interface PriceListRow {
   model: string;
@@ -81,7 +82,7 @@ export async function generateSearchIndex(): Promise<SearchIndexData> {
     throw new Error('index.json not found');
   }
 
-  const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const index = safeParseJSON<IndexData>(indexPath, { lastUpdated: '', brands: {} });
   const entries: SearchIndexEntry[] = [];
 
   for (const [brandId, brandInfo] of Object.entries(index.brands)) {
@@ -93,7 +94,7 @@ export async function generateSearchIndex(): Promise<SearchIndexData> {
       continue;
     }
 
-    const storedData: StoredData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const storedData = safeParseJSON<StoredData>(filePath, { collectedAt: '', brand: '', brandId: '', rowCount: 0, rows: [] });
 
     for (const row of storedData.rows) {
       const id = createVehicleId(row.brand, row.model, row.trim, row.engine);

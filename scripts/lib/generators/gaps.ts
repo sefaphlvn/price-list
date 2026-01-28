@@ -5,6 +5,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { safeParseJSON } from '../errorLogger';
 
 interface PriceListRow {
   model: string;
@@ -209,11 +210,7 @@ function loadLatestBrandData(dataDir: string, brandId: string, date: string): St
     return null;
   }
 
-  try {
-    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  } catch {
-    return null;
-  }
+  return safeParseJSON<StoredData | null>(filePath, null);
 }
 
 export async function generateGaps(): Promise<GapsData> {
@@ -226,7 +223,7 @@ export async function generateGaps(): Promise<GapsData> {
     throw new Error('index.json not found');
   }
 
-  const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const index = safeParseJSON<IndexData>(indexPath, { lastUpdated: '', brands: {} });
 
   // Collect all vehicles with segment info
   interface ProcessedVehicle {

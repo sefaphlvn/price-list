@@ -5,6 +5,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { safeParseJSON } from '../errorLogger';
 
 interface PriceListRow {
   model: string;
@@ -107,7 +108,7 @@ export async function generateStats(): Promise<PrecomputedStats> {
     throw new Error('index.json not found');
   }
 
-  const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const index = safeParseJSON<IndexData>(indexPath, { lastUpdated: '', brands: {} });
   const allPrices: number[] = [];
   const brandData: Map<string, { name: string; prices: number[] }> = new Map();
   const fuelData: Map<string, number[]> = new Map();
@@ -123,7 +124,7 @@ export async function generateStats(): Promise<PrecomputedStats> {
       continue;
     }
 
-    const storedData: StoredData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const storedData = safeParseJSON<StoredData>(filePath, { collectedAt: '', brand: '', brandId: '', rowCount: 0, rows: [] });
 
     if (!brandData.has(brandId)) {
       brandData.set(brandId, { name: brandInfo.name, prices: [] });

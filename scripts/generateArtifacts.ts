@@ -14,12 +14,16 @@ import { generateArchitecture } from './lib/generators/architecture';
 import { generateGaps } from './lib/generators/gaps';
 import { generatePromos } from './lib/generators/promos';
 import { generateLifecycle } from './lib/generators/lifecycle';
+import { ErrorLogger } from './lib/errorLogger';
 
 async function main(): Promise<void> {
   console.log('='.repeat(60));
   console.log('Generate Artifacts');
   console.log('='.repeat(60));
   console.log('');
+
+  // Clear previous errors at start of each run
+  ErrorLogger.clearErrors();
 
   const startTime = Date.now();
   const results: { name: string; success: boolean; error?: string }[] = [];
@@ -31,6 +35,13 @@ async function main(): Promise<void> {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error('[generateLatest] Error:', msg);
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'generation',
+      code: 'GENERATOR_FAILED',
+      message: `generateLatest failed: ${msg}`,
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     results.push({ name: 'latest.json', success: false, error: msg });
   }
   console.log('');
@@ -42,6 +53,13 @@ async function main(): Promise<void> {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error('[generateSearchIndex] Error:', msg);
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'generation',
+      code: 'GENERATOR_FAILED',
+      message: `generateSearchIndex failed: ${msg}`,
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     results.push({ name: 'search-index.json', success: false, error: msg });
   }
   console.log('');
@@ -53,6 +71,13 @@ async function main(): Promise<void> {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error('[generateStats] Error:', msg);
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'generation',
+      code: 'GENERATOR_FAILED',
+      message: `generateStats failed: ${msg}`,
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     results.push({ name: 'stats/precomputed.json', success: false, error: msg });
   }
   console.log('');
@@ -64,6 +89,13 @@ async function main(): Promise<void> {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error('[generateInsights] Error:', msg);
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'generation',
+      code: 'GENERATOR_FAILED',
+      message: `generateInsights failed: ${msg}`,
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     results.push({ name: 'insights/latest.json', success: false, error: msg });
   }
   console.log('');
@@ -75,6 +107,13 @@ async function main(): Promise<void> {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error('[generateEvents] Error:', msg);
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'generation',
+      code: 'GENERATOR_FAILED',
+      message: `generateEvents failed: ${msg}`,
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     results.push({ name: 'intel/events.json', success: false, error: msg });
   }
   console.log('');
@@ -86,6 +125,13 @@ async function main(): Promise<void> {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error('[generateArchitecture] Error:', msg);
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'generation',
+      code: 'GENERATOR_FAILED',
+      message: `generateArchitecture failed: ${msg}`,
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     results.push({ name: 'intel/architecture.json', success: false, error: msg });
   }
   console.log('');
@@ -97,6 +143,13 @@ async function main(): Promise<void> {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error('[generateGaps] Error:', msg);
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'generation',
+      code: 'GENERATOR_FAILED',
+      message: `generateGaps failed: ${msg}`,
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     results.push({ name: 'intel/gaps.json', success: false, error: msg });
   }
   console.log('');
@@ -108,6 +161,13 @@ async function main(): Promise<void> {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error('[generatePromos] Error:', msg);
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'generation',
+      code: 'GENERATOR_FAILED',
+      message: `generatePromos failed: ${msg}`,
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     results.push({ name: 'intel/promos.json', success: false, error: msg });
   }
   console.log('');
@@ -119,6 +179,13 @@ async function main(): Promise<void> {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error('[generateLifecycle] Error:', msg);
+    ErrorLogger.logError({
+      category: 'FILE_ERROR',
+      source: 'generation',
+      code: 'GENERATOR_FAILED',
+      message: `generateLifecycle failed: ${msg}`,
+      stack: error instanceof Error ? error.stack : undefined,
+    });
     results.push({ name: 'intel/lifecycle.json', success: false, error: msg });
   }
   console.log('');
@@ -140,6 +207,10 @@ async function main(): Promise<void> {
     console.log('\nFailed artifacts:');
     failed.forEach(r => console.log(`  - ${r.name}: ${r.error}`));
   }
+
+  // Save error log to data/errors.json
+  ErrorLogger.saveErrors();
+  console.log(`\nErrors logged: ${ErrorLogger.getErrorCount()}`);
 
   // Exit with error code if any artifact failed
   if (failed.length > 0) {

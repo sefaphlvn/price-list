@@ -6,6 +6,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { safeParseJSON } from '../errorLogger';
 
 interface PriceListRow {
   model: string;
@@ -114,11 +115,8 @@ function loadBrandData(dataDir: string, brandId: string, date: string): StoredDa
     return null;
   }
 
-  try {
-    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  } catch {
-    return null;
-  }
+  const data = safeParseJSON<StoredData | null>(filePath, null);
+  return data;
 }
 
 function daysBetween(date1: string, date2: string): number {
@@ -138,7 +136,7 @@ export async function generatePromos(): Promise<PromosData> {
     throw new Error('index.json not found');
   }
 
-  const index: IndexData = JSON.parse(fs.readFileSync(indexPath, 'utf-8'));
+  const index = safeParseJSON<IndexData>(indexPath, { lastUpdated: '', brands: {} });
 
   const priceDrops: PriceDrop[] = [];
   const recentDrops: RecentDrop[] = [];
@@ -191,7 +189,7 @@ export async function generatePromos(): Promise<PromosData> {
       // Check if current price is significantly lower than peak (>5% drop)
       if (currentEntry.price < peakEntry.price && peakEntry.price > 0) {
         const dropAmount = peakEntry.price - currentEntry.price;
-        const dropPercent = (dropAmount / peakEntry.price) * 100;
+        const dropPercent = peakEntry.price > 0 ? (dropAmount / peakEntry.price) * 100 : 0;
 
         if (dropPercent >= 5) {
           const daysSincePeak = daysBetween(peakEntry.date, currentEntry.date);
@@ -233,7 +231,7 @@ export async function generatePromos(): Promise<PromosData> {
 
         if (curr.price < prev.price && prev.price > 0) {
           const dropAmount = prev.price - curr.price;
-          const dropPercent = (dropAmount / prev.price) * 100;
+          const dropPercent = prev.price > 0 ? (dropAmount / prev.price) * 100 : 0;
 
           if (dropPercent >= 1) { // Even small recent drops are interesting
             recentDrops.push({

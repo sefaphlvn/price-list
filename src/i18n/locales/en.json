@@ -520,5 +520,49 @@
     "a5": "If you notice an incorrect or outdated price, please report it to us at destek@otofiyatlist.com. We will review and attempt to correct it as soon as possible.",
     "q6": "Can brands or institutions request content removal?",
     "a6": "Yes, brand owners or their legal representatives may submit content-related requests to destek@otofiyatlist.com. Each request will be evaluated and responded to within a reasonable timeframe."
+  },
+  "errorsPage": {
+    "title": "System Errors",
+    "subtitle": "Script and data processing errors",
+    "refresh": "Refresh",
+    "total": "Total",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "info": "Info",
+    "categories": "Categories",
+    "lastUpdate": "Last update",
+    "cleared": "Cleared",
+    "noErrors": "No errors found",
+    "systemRunning": "System running smoothly",
+    "time": "Time",
+    "severity": "Severity",
+    "category": "Category",
+    "source": "Source",
+    "code": "Code",
+    "message": "Message",
+    "brand": "Brand",
+    "details": "Details",
+    "errorDetails": "Error Details",
+    "recovered": "Recovered",
+    "recoveryMethod": "Recovery Method",
+    "stackTrace": "Stack Trace",
+    "severityLabels": {
+      "error": "Error",
+      "warning": "Warning",
+      "info": "Info"
+    },
+    "categoryLabels": {
+      "HTTP_ERROR": "HTTP Error",
+      "PARSE_ERROR": "Parse Error",
+      "VALIDATION_ERROR": "Validation Error",
+      "FILE_ERROR": "File Error",
+      "DATA_QUALITY_ERROR": "Data Quality"
+    },
+    "sourceLabels": {
+      "collection": "Data Collection",
+      "generation": "Generation",
+      "health": "Health Check",
+      "frontend": "Frontend"
+    }
   }
 }
