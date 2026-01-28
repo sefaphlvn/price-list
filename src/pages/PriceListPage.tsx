@@ -230,8 +230,15 @@ export default function PriceListPage() {
         } else if (dates.length > 0) {
           setSelectedDate(dayjs(dates[0]));
         }
-      } else if (dates.length > 0 && !selectedDate) {
-        setSelectedDate(dayjs(dates[0]));
+      } else if (dates.length > 0) {
+        // Check if current selected date is valid for this brand
+        const currentDateStr = selectedDate?.format('YYYY-MM-DD');
+        if (!currentDateStr || !dates.includes(currentDateStr)) {
+          // Auto-select latest available date for this brand
+          setSelectedDate(dayjs(dates[0]));
+        }
+      } else {
+        setSelectedDate(null);
       }
 
       urlInitialized.current = true;
