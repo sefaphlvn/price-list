@@ -25,6 +25,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Collect price data
+        run: npx tsx scripts/collect.ts
+
+      - name: Generate artifacts
+        run: npx tsx scripts/generateArtifacts.ts
+
       - name: Build
         env:
           VITE_CORS_PROXY: ${{ secrets.VITE_CORS_PROXY }}
