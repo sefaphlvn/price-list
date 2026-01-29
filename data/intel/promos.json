@@ -1,14 +1,129 @@
 {
-  "generatedAt": "2026-01-28T20:31:36.832Z",
-  "date": "",
+  "generatedAt": "2026-01-29T01:32:56.890Z",
+  "date": "2026-01-29",
   "summary": {
-    "totalPriceDrops": 0,
-    "totalRecentDrops": 0,
-    "avgDropPercent": 0,
-    "maxDropPercent": 0,
-    "brandsWithDrops": 0
+    "totalPriceDrops": 2,
+    "totalRecentDrops": 2,
+    "avgDropPercent": 11.89,
+    "maxDropPercent": 12.96,
+    "brandsWithDrops": 2
   },
-  "priceDrops": [],
-  "recentDrops": [],
-  "brandSummary": []
+  "priceDrops": [
+    {
+      "id": "kia-stonic-cool-100-ps",
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "Stonic",
+      "trim": "Cool",
+      "engine": "100 PS",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "currentPrice": 1740000,
+      "currentPriceFormatted": "₺1.740.000",
+      "peakPrice": 1999000,
+      "peakPriceFormatted": "₺1.999.000",
+      "peakDate": "2026-01-28",
+      "dropAmount": 259000,
+      "dropPercent": 12.96,
+      "daysSincePeak": 1,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 1999000
+        },
+        {
+          "date": "2026-01-28",
+          "price": 1740000
+        },
+        {
+          "date": "2026-01-29",
+          "price": 1999000
+        },
+        {
+          "date": "2026-01-29",
+          "price": 1740000
+        }
+      ]
+    },
+    {
+      "id": "mercedes-mercedes-amg-g-63-performance-4.0l-585-hp",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG G 63",
+      "trim": "Performance",
+      "engine": "4.0L 585 HP",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "currentPrice": 25109100,
+      "currentPriceFormatted": "₺25.109.100",
+      "peakPrice": 28153600,
+      "peakPriceFormatted": "₺28.153.600",
+      "peakDate": "2026-01-28",
+      "dropAmount": 3044500,
+      "dropPercent": 10.81,
+      "daysSincePeak": 1,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 28153600
+        },
+        {
+          "date": "2026-01-28",
+          "price": 25109100
+        },
+        {
+          "date": "2026-01-29",
+          "price": 28153600
+        },
+        {
+          "date": "2026-01-29",
+          "price": 25109100
+        }
+      ]
+    }
+  ],
+  "recentDrops": [
+    {
+      "id": "kia-stonic-cool-100-ps-recent",
+      "brand": "Kia",
+      "brandId": "kia",
+      "model": "Stonic",
+      "trim": "Cool",
+      "engine": "100 PS",
+      "currentPrice": 1740000,
+      "previousPrice": 1999000,
+      "dropAmount": 259000,
+      "dropPercent": 12.96,
+      "date": "2026-01-29",
+      "previousDate": "2026-01-29"
+    },
+    {
+      "id": "mercedes-mercedes-amg-g-63-performance-4.0l-585-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG G 63",
+      "trim": "Performance",
+      "engine": "4.0L 585 HP",
+      "currentPrice": 25109100,
+      "previousPrice": 28153600,
+      "dropAmount": 3044500,
+      "dropPercent": 10.81,
+      "date": "2026-01-29",
+      "previousDate": "2026-01-29"
+    }
+  ],
+  "brandSummary": [
+    {
+      "brandId": "mercedes",
+      "brand": "Mercedes-Benz",
+      "dropCount": 1,
+      "avgDropPercent": 10.81
+    },
+    {
+      "brandId": "kia",
+      "brand": "Kia",
+      "dropCount": 1,
+      "avgDropPercent": 12.96
+    }
+  ]
 }
