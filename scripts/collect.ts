@@ -2438,29 +2438,49 @@ async function fetchFiatPdf(url: string): Promise<any> {
   }
 
   // Try proxy fallback if direct connection failed
-  console.log(`    Direct connection failed, trying proxy...`);
-  const proxyUrls = [
-    `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
-    `https://corsproxy.io/?${encodeURIComponent(url)}`,
+  console.log(`    Direct connection failed, trying proxies...`);
+  const proxyServices = [
+    { name: 'allorigins', url: `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}` },
+    { name: 'corsproxy', url: `https://corsproxy.io/?${encodeURIComponent(url)}` },
+    { name: 'codetabs', url: `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}` },
   ];
 
-  for (const proxyUrl of proxyUrls) {
-    try {
-      console.log(`    Trying proxy: ${proxyUrl.substring(0, 50)}...`);
-      const response = await fetch(proxyUrl, {
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        },
-      });
+  const retriesPerProxy = 2;
 
-      console.log(`    Proxy response: ${response.status} ${response.statusText}`);
+  for (const proxy of proxyServices) {
+    console.log(`    Trying proxy: ${proxy.name}...`);
 
-      if (response.ok) {
-        return await extractPdfFromResponse(response, 'fiat');
+    for (let attempt = 1; attempt <= retriesPerProxy; attempt++) {
+      try {
+        console.log(`      ${proxy.name} attempt ${attempt}/${retriesPerProxy}...`);
+
+        // Add delay between retries
+        if (attempt > 1) {
+          const delay = 2000;
+          console.log(`      Waiting ${delay / 1000}s before retry...`);
+          await new Promise(resolve => setTimeout(resolve, delay));
+        }
+
+        const response = await fetch(proxy.url, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          },
+        });
+
+        console.log(`      Response: ${response.status} ${response.statusText}`);
+
+        if (response.ok) {
+          console.log(`      ${proxy.name} succeeded!`);
+          return await extractPdfFromResponse(response, 'fiat');
+        } else {
+          console.log(`      ${proxy.name} returned HTTP ${response.status}`);
+        }
+      } catch (error: any) {
+        console.log(`      ${proxy.name} attempt ${attempt} failed: ${error.message}`);
       }
-    } catch (error: any) {
-      console.log(`    Proxy failed: ${error.message}`);
     }
+
+    console.log(`    ${proxy.name} exhausted all retries, trying next proxy...`);
   }
 
   throw lastError || new Error('Failed to fetch Fiat PDF after all retries and proxies');
@@ -2504,44 +2524,98 @@ function logFetchError(error: any, attempt: number): void {
   }
 }
 
-// Fetch Peugeot PDF with special headers
+// Fetch Peugeot PDF with special headers and retry (server may block cloud IPs)
 async function fetchPeugeotPdf(url: string): Promise<any> {
-  try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Accept': 'application/pdf,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-        'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Referer': 'https://kampanya.peugeot.com.tr/',
-        'Origin': 'https://kampanya.peugeot.com.tr',
-        'Connection': 'keep-alive',
-        'Sec-Fetch-Dest': 'document',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'same-origin',
-        'Sec-Fetch-User': '?1',
-        'Upgrade-Insecure-Requests': '1',
-      },
-    });
+  const maxRetries = 2;
+  let lastError: Error | null = null;
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  // Try direct connection first
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      console.log(`    Direct attempt ${attempt}/${maxRetries}...`);
+
+      if (attempt > 1) {
+        const delay = Math.pow(2, attempt - 1) * 1000;
+        console.log(`    Waiting ${delay / 1000}s before retry...`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+      }
+
+      const response = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+          'Accept': 'application/pdf,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+          'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Referer': 'https://kampanya.peugeot.com.tr/',
+          'Origin': 'https://kampanya.peugeot.com.tr',
+          'Connection': 'keep-alive',
+          'Sec-Fetch-Dest': 'document',
+          'Sec-Fetch-Mode': 'navigate',
+          'Sec-Fetch-Site': 'same-origin',
+          'Sec-Fetch-User': '?1',
+          'Upgrade-Insecure-Requests': '1',
+        },
+      });
+
+      console.log(`    Response status: ${response.status} ${response.statusText}`);
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      return await extractPdfFromResponse(response, 'peugeot');
+    } catch (error: any) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+      logFetchError(error, attempt);
     }
-
-    return await extractPdfFromResponse(response, 'peugeot');
-  } catch (error: any) {
-    console.log(`    Direct connection failed: ${error.message}, trying proxy...`);
-
-    // Try proxy fallback
-    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
-    const response = await fetch(proxyUrl);
-
-    if (!response.ok) {
-      throw new Error(`Proxy also failed: HTTP ${response.status}`);
-    }
-
-    return await extractPdfFromResponse(response, 'peugeot');
   }
+
+  // Try proxy fallback if direct connection failed
+  console.log(`    Direct connection failed, trying proxies...`);
+  const proxyServices = [
+    { name: 'allorigins', url: `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}` },
+    { name: 'corsproxy', url: `https://corsproxy.io/?${encodeURIComponent(url)}` },
+    { name: 'codetabs', url: `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}` },
+  ];
+
+  const retriesPerProxy = 2;
+
+  for (const proxy of proxyServices) {
+    console.log(`    Trying proxy: ${proxy.name}...`);
+
+    for (let attempt = 1; attempt <= retriesPerProxy; attempt++) {
+      try {
+        console.log(`      ${proxy.name} attempt ${attempt}/${retriesPerProxy}...`);
+
+        if (attempt > 1) {
+          const delay = 2000;
+          console.log(`      Waiting ${delay / 1000}s before retry...`);
+          await new Promise(resolve => setTimeout(resolve, delay));
+        }
+
+        const response = await fetch(proxy.url, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          },
+        });
+
+        console.log(`      Response: ${response.status} ${response.statusText}`);
+
+        if (response.ok) {
+          console.log(`      ${proxy.name} succeeded!`);
+          return await extractPdfFromResponse(response, 'peugeot');
+        } else {
+          console.log(`      ${proxy.name} returned HTTP ${response.status}`);
+        }
+      } catch (error: any) {
+        console.log(`      ${proxy.name} attempt ${attempt} failed: ${error.message}`);
+      }
+    }
+
+    console.log(`    ${proxy.name} exhausted all retries, trying next proxy...`);
+  }
+
+  throw lastError || new Error('Failed to fetch Peugeot PDF after all retries and proxies');
 }
 
 // Fetch data from URL (handles single and multi-URL brands)
