@@ -806,7 +806,7 @@ export default function StatisticsPage() {
                 size="small"
                 scroll={{ x: 600 }}
                 onRow={(record) => ({
-                  onClick: () => navigate(`/fiyat-listesi?brand=${record.brand.toLowerCase()}&q=${record.model}`),
+                  onClick: () => navigate(`/fiyat-listesi?b=${record.brand.toLowerCase()}&q=${record.model}`),
                   style: { cursor: 'pointer' },
                 })}
               />
@@ -830,7 +830,7 @@ export default function StatisticsPage() {
                 size="small"
                 scroll={{ x: 600 }}
                 onRow={(record) => ({
-                  onClick: () => navigate(`/fiyat-listesi?brand=${record.brand.toLowerCase()}&q=${record.model}`),
+                  onClick: () => navigate(`/fiyat-listesi?b=${record.brand.toLowerCase()}&q=${record.model}`),
                   style: { cursor: 'pointer' },
                 })}
               />

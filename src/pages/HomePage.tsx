@@ -307,7 +307,7 @@ export default function HomePage() {
                 >
                   <Card
                     hoverable
-                    onClick={() => navigate(`/fiyat-listesi?brand=${brand.id}`)}
+                    onClick={() => navigate(`/fiyat-listesi?b=${brand.id}`)}
                     style={{
                       textAlign: 'center',
                       borderRadius: tokens.borderRadius.md,
