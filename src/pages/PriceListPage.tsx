@@ -16,6 +16,8 @@ import {
   DatePicker,
   Tooltip,
   message,
+  Tag,
+  Descriptions,
 } from 'antd';
 import {
   DownloadOutlined,
@@ -516,14 +518,21 @@ export default function PriceListPage() {
       title: t('common.model'),
       dataIndex: 'model',
       key: 'model',
-      width: 150,
+      width: 180,
       fixed: 'left',
       sorter: (a, b) => a.model.localeCompare(b.model, 'tr'),
       sortOrder: sortInfo?.column === 'model' ? sortInfo.order : undefined,
-      render: (text) => (
-        <Text strong style={{ color: tokens.colors.accent }}>
-          {text}
-        </Text>
+      render: (text, record) => (
+        <Space size={4}>
+          <Text strong style={{ color: tokens.colors.accent }}>
+            {text}
+          </Text>
+          {record.modelYear && (
+            <Tag color="blue" style={{ marginLeft: 4, fontSize: 10 }}>
+              {record.modelYear}
+            </Tag>
+          )}
+        </Space>
       ),
     },
     {
@@ -604,15 +613,31 @@ export default function PriceListPage() {
       title: t('common.price'),
       dataIndex: 'priceRaw',
       key: 'price',
-      width: 180,
+      width: 200,
       sorter: (a, b) => a.priceNumeric - b.priceNumeric,
       sortOrder: sortInfo?.column === 'price' ? sortInfo.order : undefined,
       defaultSortOrder: 'ascend',
-      render: (text) => (
-        <Text strong style={{ color: tokens.colors.success, fontSize: '14px' }}>
-          {text}
-        </Text>
-      ),
+      render: (text, record) => {
+        // Calculate discount if both list and campaign prices exist
+        const hasDiscount = record.priceListNumeric && record.priceCampaignNumeric &&
+          record.priceListNumeric > record.priceCampaignNumeric;
+        const discountPercent = hasDiscount
+          ? Math.round(((record.priceListNumeric! - record.priceCampaignNumeric!) / record.priceListNumeric!) * 100)
+          : 0;
+
+        return (
+          <Space direction="vertical" size={0}>
+            <Text strong style={{ color: tokens.colors.success, fontSize: '14px' }}>
+              {text}
+            </Text>
+            {hasDiscount && discountPercent > 0 && (
+              <Tag color="green" style={{ fontSize: 10, marginTop: 2 }}>
+                -{discountPercent}% indirim
+              </Tag>
+            )}
+          </Space>
+        );
+      },
     },
     {
       title: '',
@@ -965,6 +990,50 @@ export default function PriceListPage() {
               scroll={{ x: 1200, y: 600 }}
               size="middle"
               virtual
+              expandable={{
+                expandedRowRender: (record) => {
+                  const hasExtendedData = record.otvRate || record.fuelConsumption || record.monthlyLease ||
+                    record.priceListNumeric || record.priceCampaignNumeric;
+                  if (!hasExtendedData) return null;
+
+                  return (
+                    <Descriptions size="small" column={{ xs: 1, sm: 2, md: 3 }} style={{ marginLeft: 48 }}>
+                      {record.otvRate && (
+                        <Descriptions.Item label={t('priceList.otvRate', 'ÖTV Oranı')}>
+                          <Tag color="orange">%{record.otvRate}</Tag>
+                        </Descriptions.Item>
+                      )}
+                      {record.fuelConsumption && (
+                        <Descriptions.Item label={t('priceList.fuelConsumption', 'Yakıt Tüketimi')}>
+                          {record.fuelConsumption}
+                        </Descriptions.Item>
+                      )}
+                      {record.monthlyLease && (
+                        <Descriptions.Item label={t('priceList.monthlyLease', 'Aylık Kira')}>
+                          <Text strong style={{ color: tokens.colors.accent }}>
+                            {record.monthlyLease.toLocaleString('tr-TR')} TL
+                          </Text>
+                        </Descriptions.Item>
+                      )}
+                      {record.priceListNumeric && (
+                        <Descriptions.Item label={t('priceList.listPrice', 'Liste Fiyatı')}>
+                          {record.priceListNumeric.toLocaleString('tr-TR')} TL
+                        </Descriptions.Item>
+                      )}
+                      {record.priceCampaignNumeric && (
+                        <Descriptions.Item label={t('priceList.campaignPrice', 'Kampanya Fiyatı')}>
+                          <Text style={{ color: tokens.colors.success }}>
+                            {record.priceCampaignNumeric.toLocaleString('tr-TR')} TL
+                          </Text>
+                        </Descriptions.Item>
+                      )}
+                    </Descriptions>
+                  );
+                },
+                rowExpandable: (record) =>
+                  !!(record.otvRate || record.fuelConsumption || record.monthlyLease ||
+                    record.priceListNumeric || record.priceCampaignNumeric),
+              }}
             />
           </motion.div>
         </>

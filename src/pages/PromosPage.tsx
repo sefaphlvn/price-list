@@ -113,6 +113,30 @@ export default function PromosPage() {
       defaultSortOrder: 'descend',
     },
     {
+      title: 'Kampanya',
+      key: 'campaign',
+      width: 100,
+      render: (_, record) => {
+        if (record.campaignDiscount && record.campaignDiscount > 0) {
+          return (
+            <div>
+              <Tag color="cyan">-{record.campaignDiscount.toFixed(1)}%</Tag>
+              {record.listPrice && record.campaignPrice && (
+                <>
+                  <br />
+                  <Text type="secondary" style={{ fontSize: 10 }}>
+                    {formatPrice(record.listPrice)} → {formatPrice(record.campaignPrice)}
+                  </Text>
+                </>
+              )}
+            </div>
+          );
+        }
+        return <Text type="secondary">-</Text>;
+      },
+      sorter: (a, b) => (b.campaignDiscount || 0) - (a.campaignDiscount || 0),
+    },
+    {
       title: t('promos.days', 'Gun'),
       dataIndex: 'daysSincePeak',
       key: 'daysSincePeak',
@@ -170,6 +194,18 @@ export default function PromosPage() {
       ),
       sorter: (a, b) => b.dropPercent - a.dropPercent,
       defaultSortOrder: 'descend',
+    },
+    {
+      title: 'Kampanya',
+      key: 'campaign',
+      width: 90,
+      render: (_, record) => {
+        if (record.campaignDiscount && record.campaignDiscount > 0) {
+          return <Tag color="cyan">-{record.campaignDiscount.toFixed(1)}%</Tag>;
+        }
+        return <Text type="secondary">-</Text>;
+      },
+      sorter: (a, b) => (b.campaignDiscount || 0) - (a.campaignDiscount || 0),
     },
     {
       title: t('promos.date', 'Tarih'),

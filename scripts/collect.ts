@@ -15,6 +15,7 @@ import { ErrorLogger } from './lib/errorLogger';
 
 // Types
 interface PriceListRow {
+  // Core fields (required)
   model: string;
   trim: string;
   engine: string;
@@ -23,6 +24,14 @@ interface PriceListRow {
   priceRaw: string;
   priceNumeric: number;
   brand: string;
+
+  // Extended fields (optional - available from some APIs)
+  modelYear?: number | string;
+  otvRate?: number;
+  priceListNumeric?: number;
+  priceCampaignNumeric?: number;
+  fuelConsumption?: string;
+  monthlyLease?: number;
 }
 
 interface BrandConfig {
@@ -294,14 +303,67 @@ const isValidPrice = (price: number): boolean => {
   return price >= MIN_VALID_PRICE && price <= MAX_VALID_PRICE;
 };
 
-// Filter and warn about invalid prices
+// Normalize fuel type to standard Turkish values
+const normalizeFuel = (fuel: string): string => {
+  if (!fuel) return 'Diger';
+  const f = fuel.toLowerCase().trim();
+
+  // Plug-in Hybrid variants (check first - most specific)
+  if (f.includes('plug-in') || f.includes('phev')) {
+    return 'Plug-in Hybrid';
+  }
+
+  // LPG/CNG (check before benzin - "benzin-lpg" should be LPG)
+  if (f.includes('lpg')) return 'LPG';
+  if (f.includes('cng')) return 'CNG';
+
+  // Mild Hybrid variants (check before regular hybrid)
+  if (f.includes('mild')) {
+    return 'Mild Hybrid';
+  }
+
+  // Regular Hybrid variants (including "benzin-elektrik" from Renault)
+  // Note: "elektrik - benzin" (with spaces) from Fiat is Mild Hybrid, handled above
+  if (f.includes('hibrit') || f.includes('hybrid') || f.includes('hev') || f === 'benzin-elektrik') {
+    return 'Hybrid';
+  }
+
+  // Mild Hybrid - "elektrik - benzin" or "elektrik-benzin" patterns (Fiat style)
+  if ((f.includes('elektrik') && f.includes('benzin')) || (f.includes('benzin') && f.includes('elektrik'))) {
+    return 'Mild Hybrid';
+  }
+
+  // Pure Electric
+  if (f.includes('elektrik') || f.includes('electric') || f === 'ev' || f === 'bev') {
+    return 'Elektrik';
+  }
+
+  // Diesel
+  if (f.includes('dizel') || f.includes('diesel')) {
+    return 'Dizel';
+  }
+
+  // Petrol/Benzin (check last - most generic)
+  if (f.includes('benzin') || f.includes('petrol')) {
+    return 'Benzin';
+  }
+
+  // Return original if no match (will be logged for investigation)
+  return fuel;
+};
+
+// Filter and warn about invalid prices, normalize fuel types
 const filterValidRows = (rows: PriceListRow[], brandName: string): PriceListRow[] => {
   const validRows: PriceListRow[] = [];
   const invalidPrices: { model: string; trim: string; price: number }[] = [];
 
   for (const row of rows) {
     if (isValidPrice(row.priceNumeric)) {
-      validRows.push(row);
+      // Normalize fuel type for consistency across all brands
+      validRows.push({
+        ...row,
+        fuel: normalizeFuel(row.fuel),
+      });
     } else if (row.priceNumeric > 0) {
       invalidPrices.push({
         model: row.model,
@@ -345,7 +407,7 @@ const parseVWData = (data: any, brand: string): PriceListRow[] => {
         const subItemArray = item.SubItem;
         if (!Array.isArray(subItemArray)) return;
 
-        let donanim = '', motor = '', sanziman = '', fiyat = '';
+        let donanim = '', motor = '', sanziman = '', fiyat = '', listeFiyat = '', kampanyaFiyat = '';
 
         subItemArray.forEach((detail: any) => {
           const title = detail['-Title'] || '';
@@ -353,8 +415,15 @@ const parseVWData = (data: any, brand: string): PriceListRow[] => {
           if (title === 'Donanım') donanim = value;
           else if (title === 'Motor') motor = value;
           else if (title === 'Şanzıman') sanziman = value;
-          else if (title.includes('Fiyat') && title.includes('Anahtar Teslim') && !title.includes('Noter')) {
-            fiyat = value;
+          else if (title.includes('Fiyat')) {
+            // Capture different price types
+            if (title.includes('Liste') && !title.includes('Noter')) {
+              listeFiyat = value;
+            } else if (title.includes('Kampanya') && !title.includes('Noter')) {
+              kampanyaFiyat = value;
+            } else if (title.includes('Anahtar Teslim') && !title.includes('Noter')) {
+              fiyat = value;
+            }
           }
         });
 
@@ -373,7 +442,21 @@ const parseVWData = (data: any, brand: string): PriceListRow[] => {
         }
 
         if (fiyat) {
-          rows.push({ model: modelName, trim: donanim, engine: motor, transmission: sanziman, fuel: yakit, priceRaw: fiyat, priceNumeric: parsePrice(fiyat), brand });
+          const priceListNumeric = listeFiyat ? parsePrice(listeFiyat) : undefined;
+          const priceCampaignNumeric = kampanyaFiyat ? parsePrice(kampanyaFiyat) : undefined;
+
+          rows.push({
+            model: modelName,
+            trim: donanim,
+            engine: motor,
+            transmission: sanziman,
+            fuel: yakit,
+            priceRaw: fiyat,
+            priceNumeric: parsePrice(fiyat),
+            brand,
+            ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
+            ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+          });
         }
       });
     });
@@ -420,6 +503,9 @@ const parseSkodaData = (data: any, brand: string): PriceListRow[] => {
         tableData.forEach((row: any) => {
           const donanim = row.hardware?.value || '';
           const fiyat = row.currentPrice?.value || '';
+          // Check for additional price fields
+          const listeFiyat = row.listPrice?.value || row.basePrice?.value || '';
+          const kampanyaFiyat = row.campaignPrice?.value || row.discountPrice?.value || '';
 
           let sanziman = '';
           if (donanim.includes('DSG')) sanziman = 'DSG';
@@ -441,7 +527,21 @@ const parseSkodaData = (data: any, brand: string): PriceListRow[] => {
           const motor = donanim.replace(/DSG|Manuel|Otomatik/gi, '').trim();
 
           if (fiyat) {
-            rows.push({ model: modelName, trim: donanim, engine: motor, transmission: sanziman, fuel: yakit, priceRaw: fiyat, priceNumeric: parsePrice(fiyat), brand });
+            const priceListNumeric = listeFiyat ? parsePrice(listeFiyat) : undefined;
+            const priceCampaignNumeric = kampanyaFiyat ? parsePrice(kampanyaFiyat) : undefined;
+
+            rows.push({
+              model: modelName,
+              trim: donanim,
+              engine: motor,
+              transmission: sanziman,
+              fuel: yakit,
+              priceRaw: fiyat,
+              priceNumeric: parsePrice(fiyat),
+              brand,
+              ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
+              ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+            });
           }
         });
       });
@@ -476,8 +576,26 @@ const parseRenaultData = (data: any, brand: string): PriceListRow[] => {
       const fuel = item.YakitTipi || '';
       const priceRaw = item.AntesFiyati ? `₺${parseFloat(item.AntesFiyati).toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : '';
 
+      // Check for additional price fields
+      const listeFiyat = item.ListeFiyati || item.BaseFiyati || '';
+      const kampanyaFiyat = item.KampanyaFiyati || item.IndirimFiyati || '';
+
       if (priceRaw) {
-        rows.push({ model: modelName, trim, engine, transmission, fuel, priceRaw, priceNumeric: parseFloat(item.AntesFiyati) || 0, brand });
+        const priceListNumeric = listeFiyat ? parseFloat(listeFiyat) : undefined;
+        const priceCampaignNumeric = kampanyaFiyat ? parseFloat(kampanyaFiyat) : undefined;
+
+        rows.push({
+          model: modelName,
+          trim,
+          engine,
+          transmission,
+          fuel,
+          priceRaw,
+          priceNumeric: parseFloat(item.AntesFiyati) || 0,
+          brand,
+          ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
+          ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+        });
       }
     });
   } catch (error) {
@@ -510,8 +628,22 @@ const parseToyotaData = (data: any, brand: string): PriceListRow[] => {
         const vitesTipi = item.VitesTipi || '';
         const motorTipi = item.MotorTipi || '';
 
-        let fiyat = item.KampanyaliFiyati2 || item.KampanyaliFiyati1 || item.ListeFiyati2 || item.ListeFiyati1 || '';
-        if (fiyat) fiyat = fiyat.toString().replace(/\s*TL\s*$/i, '').trim();
+        // Extract all price fields
+        const kampanyali1 = item.KampanyaliFiyati1 ? item.KampanyaliFiyati1.toString().replace(/\s*TL\s*$/i, '').trim() : '';
+        const kampanyali2 = item.KampanyaliFiyati2 ? item.KampanyaliFiyati2.toString().replace(/\s*TL\s*$/i, '').trim() : '';
+        const liste1 = item.ListeFiyati1 ? item.ListeFiyati1.toString().replace(/\s*TL\s*$/i, '').trim() : '';
+        const liste2 = item.ListeFiyati2 ? item.ListeFiyati2.toString().replace(/\s*TL\s*$/i, '').trim() : '';
+
+        // Primary price: prefer campaign, fallback to list
+        let fiyat = kampanyali2 || kampanyali1 || liste2 || liste1 || '';
+
+        // List price (original price before campaign)
+        const listeFiyat = liste1 || liste2 || '';
+        const priceListNumeric = listeFiyat ? parsePrice(listeFiyat) : undefined;
+
+        // Campaign price
+        const kampanyaFiyat = kampanyali1 || kampanyali2 || '';
+        const priceCampaignNumeric = kampanyaFiyat ? parsePrice(kampanyaFiyat) : undefined;
 
         let yakit = '';
         const motorTipiLower = motorTipi.toLowerCase();
@@ -521,7 +653,18 @@ const parseToyotaData = (data: any, brand: string): PriceListRow[] => {
         else if (motorTipiLower.includes('elektrik')) yakit = 'Elektrik';
 
         if (fiyat) {
-          rows.push({ model: govde, trim: modelName, engine: motorHacmi, transmission: vitesTipi, fuel: yakit, priceRaw: fiyat, priceNumeric: parsePrice(fiyat), brand });
+          rows.push({
+            model: govde,
+            trim: modelName,
+            engine: motorHacmi,
+            transmission: vitesTipi,
+            fuel: yakit,
+            priceRaw: fiyat,
+            priceNumeric: parsePrice(fiyat),
+            brand,
+            ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
+            ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+          });
         }
       });
     });
@@ -547,14 +690,25 @@ const parseHyundaiData = (data: any, brand: string): PriceListRow[] => {
         const priceDetailList = yearDetail.priceDetailList;
         if (!Array.isArray(priceDetailList)) return;
 
+        // Extract model year from yearDetail
+        const modelYear = yearDetail.year || yearDetail.modelYear || undefined;
+
         priceDetailList.forEach((item: any) => {
           const trimName = item.trimName || '';
           const powertrainName = item.powertrainName || '';
           const transmission = item.transmission || '';
           const fuelName = item.fuelName || '';
-          const price = item.suggestedPrice || item.price || '';
+
+          // Extract both list and campaign prices
+          const listPrice = item.listPrice || item.basePrice || '';
+          const campaignPrice = item.suggestedPrice || item.campaignPrice || '';
+          const price = campaignPrice || listPrice || item.price || '';
 
           if (price && price !== 'N/A') {
+            const priceNumeric = parsePrice(price.toString());
+            const priceListNumeric = listPrice ? parsePrice(listPrice.toString()) : undefined;
+            const priceCampaignNumeric = campaignPrice ? parsePrice(campaignPrice.toString()) : undefined;
+
             rows.push({
               model: productName,
               trim: trimName,
@@ -562,8 +716,11 @@ const parseHyundaiData = (data: any, brand: string): PriceListRow[] => {
               transmission,
               fuel: fuelName,
               priceRaw: price.toString(),
-              priceNumeric: parsePrice(price.toString()),
+              priceNumeric,
               brand,
+              ...(modelYear && { modelYear }),
+              ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
+              ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
             });
           }
         });
@@ -633,15 +790,15 @@ const parseFiatData = (pdfData: PDFExtractResult, brand: string): PriceListRow[]
   const fuels = ['Benzin', 'Benzinli', 'Dizel', 'Elektrik', 'Elektrikli', 'Hybrid', 'Hibrit', 'BEV', 'Elektrikli - Benzinli'];
 
   const enginePatterns = [
-    // Diesel engines
-    /(\d+\.\d+\s*M\.?Jet\s*\d+\s*HP\s*(?:DCT\s*)?GSR[\w\s\+\*]*)/i,
+    // Diesel engines - capture only engine specs, not trailing text
+    /(\d+\.\d+\s*M\.?Jet\s*\d+\s*HP(?:\s*DCT)?(?:\s*GSR\*?)?)/i,
     // Petrol engines
-    /(\d+\.\d+\s*Fire\s*\d+\s*HP\s*(?:GSR)?[\w\s\+\*]*)/i,
+    /(\d+\.\d+\s*Fire\s*\d+\s*HP(?:\s*GSR\*?)?)/i,
     // Electric engines (various formats) - with kW and kWh
     /(\d+\s*kW\s*\/?\s*\d+\s*HP\s*[-–]\s*\d+\.?\d*\s*kWh)/i,
     /(\d+\s*kWh)/i,
     // MHEV hybrid
-    /(\d+\.\d+\s*MHEV?\s*\d+\s*HP\s*(?:e?DCT)?)/i,
+    /(\d+\.\d+\s*MHEV?\s*\d+\s*HP(?:\s*e?DCT)?)/i,
     /(\d+\.\d+\s*\d+\s*hp\s*MHEV)/i,
     // Hybrid engines
     /(\d+\.\d+\s*(?:e-?)?Hybrid\s*\d+\s*HP)/i,
@@ -823,7 +980,14 @@ const parseFiatData = (pdfData: PDFExtractResult, brand: string): PriceListRow[]
 
         // If we found a complete vehicle record
         if (foundTrim && prices.length > 0 && effectiveEngine) {
-          const price = prices[0]; // Use the first price (Liste Fiyatı)
+          // First price is Liste Fiyatı, second (if exists) might be campaign price
+          const priceListNumeric = prices[0];
+          const priceCampaignNumeric = prices.length > 1 ? prices[1] : undefined;
+
+          // Use campaign price if it's lower (valid campaign), otherwise list price
+          const price = (priceCampaignNumeric && priceCampaignNumeric < priceListNumeric)
+            ? priceCampaignNumeric
+            : priceListNumeric;
 
           // Check for duplicate
           const exists = vehicles.find(
@@ -843,6 +1007,8 @@ const parseFiatData = (pdfData: PDFExtractResult, brand: string): PriceListRow[]
               priceRaw: price.toLocaleString('tr-TR') + ' TL',
               priceNumeric: price,
               brand,
+              ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
+              ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
             });
           }
         }
@@ -909,13 +1075,28 @@ const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRo
 
         // Parse vehicle rows - format: "Model Trim Engine | Price1 TL | Price2 TL"
         // Example: "E-208 GT 100kW | 1.999.500 TL | 1.960.000 TL"
+        // First price is usually list price, second is campaign price
         const priceMatches = text.match(/(\d{1,3}(?:\.\d{3})+)\s*TL/g);
         if (!priceMatches || priceMatches.length === 0) continue;
 
-        // Extract first price
+        // Extract first price (list price)
         const firstPriceMatch = priceMatches[0].match(/(\d{1,3}(?:\.\d{3})+)/);
         if (!firstPriceMatch) continue;
-        const priceNumeric = parseInt(firstPriceMatch[1].replace(/\./g, ''), 10);
+        const priceListNumeric = parseInt(firstPriceMatch[1].replace(/\./g, ''), 10);
+
+        // Extract second price (campaign price) if exists
+        let priceCampaignNumeric: number | undefined;
+        if (priceMatches.length > 1) {
+          const secondPriceMatch = priceMatches[1].match(/(\d{1,3}(?:\.\d{3})+)/);
+          if (secondPriceMatch) {
+            priceCampaignNumeric = parseInt(secondPriceMatch[1].replace(/\./g, ''), 10);
+          }
+        }
+
+        // Use campaign price if valid and lower, otherwise list price
+        const priceNumeric = (priceCampaignNumeric && priceCampaignNumeric < priceListNumeric && priceCampaignNumeric >= 500000)
+          ? priceCampaignNumeric
+          : priceListNumeric;
 
         // Skip if price is too low (likely an option price)
         if (priceNumeric < 500000) continue;
@@ -986,6 +1167,8 @@ const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRo
             priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
             priceNumeric,
             brand,
+            ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
+            ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
           });
         }
       }
@@ -1047,6 +1230,13 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
             // Use variant as engine info
             const engine = variant.replace(cleanModel, '').trim() || variant;
 
+            // Parse OTV rate (e.g., "% 10" or "%10" -> 10)
+            let parsedOtvRate: number | undefined;
+            const otvMatch = otvRate.match(/(\d+)/);
+            if (otvMatch) {
+              parsedOtvRate = parseInt(otvMatch[1], 10);
+            }
+
             vehicles.push({
               model: cleanModel,
               trim,
@@ -1056,6 +1246,7 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
               priceRaw: priceText,
               priceNumeric,
               brand,
+              ...(parsedOtvRate && { otvRate: parsedOtvRate }),
             });
           }
         }
@@ -1222,26 +1413,39 @@ const parseOpelData = (html: string, brand: string, modelName?: string): PriceLi
       // Match trims with prices
       // Each trim should have corresponding prices in each column
       trims.forEach((trim, trimIndex) => {
-        // Find the best price: prefer MY26 (last column), then MY25 (first column)
+        // Extract all three price columns:
+        // priceColumns[0] = MY25 price
+        // priceColumns[1] = Campaign price
+        // priceColumns[2] = MY26 price
+        const priceMY25Text = priceColumns[0]?.[trimIndex] || '';
+        const priceCampaignText = priceColumns[1]?.[trimIndex] || '';
+        const priceMY26Text = priceColumns[2]?.[trimIndex] || '';
+
+        // Parse all prices
+        const priceMY25 = priceMY25Text ? parsePrice(priceMY25Text) : 0;
+        const priceCampaign = priceCampaignText ? parsePrice(priceCampaignText) : 0;
+        const priceMY26 = priceMY26Text ? parsePrice(priceMY26Text) : 0;
+
+        // Find the best price: prefer MY26, then campaign, then MY25
         let priceText = '';
+        let priceNumeric = 0;
+        let modelYear: string | undefined;
 
-        // Try MY26 price first (usually last column with prices)
-        if (priceColumns.length > 2 && priceColumns[2][trimIndex]) {
-          priceText = priceColumns[2][trimIndex];
-        }
-        // Fall back to MY25 price
-        if (!priceText && priceColumns[0] && priceColumns[0][trimIndex]) {
-          priceText = priceColumns[0][trimIndex];
-        }
-        // Fall back to campaign price
-        if (!priceText && priceColumns[1] && priceColumns[1][trimIndex]) {
-          priceText = priceColumns[1][trimIndex];
+        if (isValidPrice(priceMY26)) {
+          priceText = priceMY26Text;
+          priceNumeric = priceMY26;
+          modelYear = 'MY26';
+        } else if (isValidPrice(priceCampaign)) {
+          priceText = priceCampaignText;
+          priceNumeric = priceCampaign;
+          modelYear = 'MY25';
+        } else if (isValidPrice(priceMY25)) {
+          priceText = priceMY25Text;
+          priceNumeric = priceMY25;
+          modelYear = 'MY25';
         }
 
-        if (!priceText) return;
-
-        const priceNumeric = parsePrice(priceText);
-        if (!isValidPrice(priceNumeric)) return;
+        if (!priceText || !isValidPrice(priceNumeric)) return;
 
         // Check for duplicate
         const exists = vehicles.find(
@@ -1252,6 +1456,10 @@ const parseOpelData = (html: string, brand: string, modelName?: string): PriceLi
         );
 
         if (!exists) {
+          // Determine list price (MY25 or MY26 original) and campaign price
+          const priceListNumeric = isValidPrice(priceMY25) ? priceMY25 : (isValidPrice(priceMY26) ? priceMY26 : undefined);
+          const priceCampaignNumeric = isValidPrice(priceCampaign) ? priceCampaign : undefined;
+
           vehicles.push({
             model,
             trim,
@@ -1261,6 +1469,9 @@ const parseOpelData = (html: string, brand: string, modelName?: string): PriceLi
             priceRaw: priceText,
             priceNumeric,
             brand,
+            ...(modelYear && { modelYear }),
+            ...(priceListNumeric && { priceListNumeric }),
+            ...(priceCampaignNumeric && { priceCampaignNumeric }),
           });
         }
       });
@@ -1360,8 +1571,18 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
 
         // Build engine info
         let engine = '';
-        if (engineCC && /^\d/.test(engineCC)) {
-          engine = engineCC.replace(',', '.') + 'L';
+        // For electric vehicles, engineCC is kW not displacement, so don't add "L"
+        const isElectric = fuelLower.includes('elektrik') || fuelLower.includes('electric');
+        if (engineCC && /^\d/.test(engineCC) && !isElectric) {
+          // Only add "L" for non-electric vehicles where this is actual displacement
+          const ccValue = parseFloat(engineCC.replace(',', '.'));
+          if (ccValue >= 0.8 && ccValue <= 8) {
+            // Already in liters (e.g., "2.0")
+            engine = ccValue.toFixed(1) + 'L';
+          } else if (ccValue >= 800 && ccValue <= 8000) {
+            // In cc, convert to liters
+            engine = (ccValue / 1000).toFixed(1) + 'L';
+          }
         }
         if (engineHP) {
           // Clean HP: "156 + 20* bg" -> "156+20 HP"
@@ -1375,15 +1596,39 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
           mappedTransmission = 'Manuel';
         }
 
-        // Check for duplicate
+        // Check for duplicate (by model+trim+price, not engine - engine can vary slightly)
         const exists = vehicles.find(
           v => v.model === model &&
                v.trim === trim &&
-               v.engine === engine &&
                v.priceNumeric === priceNumeric
         );
 
         if (!exists && model && trim) {
+          // Extract additional fields from HTML columns
+          // cells[7] = Yakıt Tüketimi
+          // cells[8] = ÖTV Oranı
+          // cells[10] = Aylık Kiralama
+          const fuelConsumptionRaw = cells[7]?.trim() || '';
+          const otvRaw = cells[8]?.trim() || '';
+          const monthlyLeaseRaw = cells[10]?.trim() || '';
+
+          // Parse OTV rate (e.g., "% 60" -> 60)
+          let otvRate: number | undefined;
+          const otvMatch = otvRaw.match(/(\d+)/);
+          if (otvMatch) {
+            otvRate = parseInt(otvMatch[1], 10);
+          }
+
+          // Parse monthly lease (e.g., "42.500" -> 42500)
+          let monthlyLease: number | undefined;
+          if (monthlyLeaseRaw && /^\d/.test(monthlyLeaseRaw)) {
+            monthlyLease = parsePrice(monthlyLeaseRaw);
+            if (!monthlyLease || monthlyLease < 1000) monthlyLease = undefined;
+          }
+
+          // Fuel consumption is already a string (e.g., "6.2 L/100km")
+          const fuelConsumption = fuelConsumptionRaw && fuelConsumptionRaw.length > 0 ? fuelConsumptionRaw : undefined;
+
           vehicles.push({
             model,
             trim,
@@ -1393,6 +1638,9 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
             priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
             priceNumeric,
             brand,
+            ...(fuelConsumption && { fuelConsumption }),
+            ...(otvRate && { otvRate }),
+            ...(monthlyLease && { monthlyLease }),
           });
         }
       });
@@ -1466,15 +1714,20 @@ const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
       if (engineCC) {
         // Format: "1.332" -> "1.3L" or "1991" -> "2.0L"
         const ccNum = parseFloat(engineCC.replace(',', '.'));
-        if (ccNum > 100) {
-          // It's in cc, convert to liters
-          engine = (ccNum / 1000).toFixed(1) + 'L';
-        } else {
-          engine = ccNum.toFixed(1) + 'L';
+        // Only add displacement if it's a valid number (electric vehicles don't have this)
+        if (!isNaN(ccNum) && ccNum > 0) {
+          if (ccNum > 100) {
+            // It's in cc, convert to liters
+            engine = (ccNum / 1000).toFixed(1) + 'L';
+          } else {
+            engine = ccNum.toFixed(1) + 'L';
+          }
         }
       }
       if (engineHP) {
-        engine = engine ? `${engine} ${engineHP} HP` : `${engineHP} HP`;
+        // For electric vehicles, just show HP without displacement
+        const hpValue = engineHP.replace(/[^0-9]/g, '');
+        engine = engine ? `${engine} ${hpValue} HP` : `${hpValue} HP`;
       }
 
       // Check for duplicate
@@ -1485,6 +1738,10 @@ const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
       );
 
       if (!exists && modelName) {
+        // Extract OTV rate from item (TaxRatio field in API response)
+        const taxRatio = item.TaxRatio;
+        const otvRate = typeof taxRatio === 'number' && taxRatio > 0 ? taxRatio : undefined;
+
         vehicles.push({
           model: modelName,
           trim: trim || modelYear,
@@ -1494,6 +1751,7 @@ const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
           priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
           priceNumeric,
           brand,
+          ...(otvRate && { otvRate }),
         });
       }
     }
@@ -1526,12 +1784,20 @@ const parseFordData = (data: any, brand: string): PriceListRow[] => {
         const engine = entity.engine || '';
         const fuelType = entity.fuelType || '';
         const gearbox = entity.gearbox || '';
-        const priceStr = entity.deliveredTurnkeyListPrice || entity.campaignedTurnkeyPrice || '';
+
+        // Extract both list and campaign prices
+        const listPriceStr = entity.deliveredTurnkeyListPrice || '';
+        const campaignPriceStr = entity.campaignedTurnkeyPrice || '';
+        const priceStr = campaignPriceStr || listPriceStr;
 
         if (!priceStr) continue;
 
         const priceNumeric = parseInt(priceStr, 10);
         if (!isValidPrice(priceNumeric)) continue;
+
+        // Parse list and campaign prices separately
+        const priceListNumeric = listPriceStr ? parseInt(listPriceStr, 10) : undefined;
+        const priceCampaignNumeric = campaignPriceStr ? parseInt(campaignPriceStr, 10) : undefined;
 
         // Map fuel type
         let fuel = '';
@@ -1573,6 +1839,8 @@ const parseFordData = (data: any, brand: string): PriceListRow[] => {
             priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
             priceNumeric,
             brand,
+            ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
+            ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
           });
         }
       }
@@ -1625,7 +1893,8 @@ const parseNissanData = (html: string, brand: string): PriceListRow[] => {
 
     // Process each model section
     for (const { model, $table } of modelSections) {
-      $table.find('tbody tr').each((_, row) => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      $table.find('tbody tr').each((_: number, row: any) => {
         const $row = $(row);
         const cells = $row.find('td');
 
@@ -1636,10 +1905,20 @@ const parseNissanData = (html: string, brand: string): PriceListRow[] => {
         if (!versionText || versionText.includes('Versiyon İsmi')) return; // Skip header
 
         // Second cell: Liste fiyatı (main price)
-        const priceText = $(cells[1]).text().trim();
-        if (!priceText) return;
+        const listPriceText = $(cells[1]).text().trim();
+        if (!listPriceText) return;
 
-        const priceNumeric = parsePrice(priceText);
+        // Third cell (if exists): Campaign price or turnkey price
+        const campaignPriceText = cells.length > 2 ? $(cells[2]).text().trim() : '';
+
+        const priceListNumeric = parsePrice(listPriceText);
+        const priceCampaignNumeric = campaignPriceText ? parsePrice(campaignPriceText) : undefined;
+
+        // Use campaign price if valid, otherwise list price
+        const priceNumeric = (priceCampaignNumeric && isValidPrice(priceCampaignNumeric))
+          ? priceCampaignNumeric
+          : priceListNumeric;
+
         if (!isValidPrice(priceNumeric)) return;
 
         // Parse version to extract engine, trim, transmission, fuel
@@ -1727,6 +2006,8 @@ const parseNissanData = (html: string, brand: string): PriceListRow[] => {
             priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
             priceNumeric,
             brand,
+            ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
+            ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
           });
         }
       });
@@ -1782,12 +2063,23 @@ const parseHondaData = (html: string, brand: string): PriceListRow[] => {
           // Get trim name
           const trim = $item.find('.tpl__pack-name').text().trim();
 
-          // Get the first price (recommended sales price, not campaign price)
-          const priceText = $item.find('.dtl__text span').first().text().trim();
-          const priceMatch = priceText.match(/(\d{1,2}\.\d{3}\.\d{3})\s*TL/);
+          // Get all price spans - first is list price, second (if exists) is campaign price
+          const priceSpans = $item.find('.dtl__text span');
+          const listPriceText = priceSpans.eq(0).text().trim();
+          const campaignPriceText = priceSpans.length > 1 ? priceSpans.eq(1).text().trim() : '';
 
-          if (trim && priceMatch) {
-            const priceNumeric = parsePrice(priceMatch[0]);
+          const listPriceMatch = listPriceText.match(/(\d{1,2}\.\d{3}\.\d{3})\s*TL/);
+          const campaignPriceMatch = campaignPriceText.match(/(\d{1,2}\.\d{3}\.\d{3})\s*TL/);
+
+          if (trim && listPriceMatch) {
+            const priceListNumeric = parsePrice(listPriceMatch[0]);
+            const priceCampaignNumeric = campaignPriceMatch ? parsePrice(campaignPriceMatch[0]) : undefined;
+
+            // Use campaign price if available, otherwise list price
+            const priceNumeric = (priceCampaignNumeric && isValidPrice(priceCampaignNumeric))
+              ? priceCampaignNumeric
+              : priceListNumeric;
+
             if (!isValidPrice(priceNumeric)) return;
 
             // Determine fuel type from engine
@@ -1824,6 +2116,8 @@ const parseHondaData = (html: string, brand: string): PriceListRow[] => {
                 priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
                 priceNumeric,
                 brand,
+                ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
+                ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
               });
             }
           }
@@ -1865,16 +2159,24 @@ const parseSeatData = (html: string, brand: string): PriceListRow[] => {
         fuel = 'Benzin';
       }
 
-      // Get the second price (anahtar teslim fiyatı - with notary fee)
+      // Get both prices: first is list price (without notary), second is turnkey price (with notary)
       const $prices = $row.find('.price');
       if ($prices.length < 2) return;
 
+      // First price: list price (tavsiye edilen satış fiyatı)
+      const listPriceText = $($prices[0]).text().trim();
+      const listPriceMatch = listPriceText.match(/(\d{1,3}(?:\.\d{3})+)/);
+
+      // Second price: turnkey price (anahtar teslim fiyatı - with notary fee)
       const priceText = $($prices[1]).text().trim();
       const priceMatch = priceText.match(/(\d{1,3}(?:\.\d{3})+)/);
       if (!priceMatch) return;
 
       const priceNumeric = parsePrice(priceMatch[0] + ' TL');
       if (!isValidPrice(priceNumeric)) return;
+
+      // Parse list price if available
+      const priceListNumeric = listPriceMatch ? parsePrice(listPriceMatch[0] + ' TL') : undefined;
 
       // Parse model name to extract components
       // Example: "Ibiza 1.0 EcoTSI 115 PS DSG Style" or "Leon 1.5 eHybrid 204 PS DSG FR"
@@ -1928,6 +2230,7 @@ const parseSeatData = (html: string, brand: string): PriceListRow[] => {
           priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
           priceNumeric,
           brand,
+          ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
         });
       }
     });
@@ -1963,6 +2266,7 @@ const parseKiaData = (html: string, brand: string): PriceListRow[] => {
       const modelName = extractField('modelName') || extractField('modelDisplayName');
       const trimName = extractField('trimDisplayName');
       const priceStr = extractField('turnkeyPrice');
+      const listPriceStr = extractField('listPrice') || extractField('suggestedPrice') || extractField('basePrice');
       const fuel = extractField('fuelDisplayName');
       const transmission = extractField('transmissionDisplayName');
       const power = extractField('moterPower');
@@ -2016,6 +2320,9 @@ const parseKiaData = (html: string, brand: string): PriceListRow[] => {
       );
 
       if (!exists && trimName) {
+        // Parse list price if available
+        const priceListNumeric = listPriceStr ? parsePrice(listPriceStr + ' TL') : undefined;
+
         vehicles.push({
           model: modelName,
           trim: trimName,
@@ -2025,6 +2332,7 @@ const parseKiaData = (html: string, brand: string): PriceListRow[] => {
           priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
           priceNumeric,
           brand,
+          ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
         });
       }
     }
@@ -2131,15 +2439,18 @@ const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRo
         transmission = 'Manuel';
       }
 
-      // Find the final price (last price-like number in the row)
+      // Find all prices in the row
       const priceMatches = specsText.match(/(\d{1,2}[.,]\d{3}[.,]\d{3})/g);
       if (!priceMatches || priceMatches.length === 0) continue;
 
-      // The last price is the "TAVSİYE EDİLEN ANAHTAR TESLİM FİYAT"
-      const priceStr = priceMatches[priceMatches.length - 1];
-      const priceNumeric = parsePrice(priceStr + ' TL');
+      // Parse all prices
+      const allPrices = priceMatches.map(p => parsePrice(p + ' TL')).filter(p => isValidPrice(p));
+      if (allPrices.length === 0) continue;
 
-      if (!isValidPrice(priceNumeric)) continue;
+      // The last price is the "TAVSİYE EDİLEN ANAHTAR TESLİM FİYAT" (turnkey price)
+      // First valid price might be list price if there are multiple
+      const priceNumeric = allPrices[allPrices.length - 1];
+      const priceListNumeric = allPrices.length > 1 ? allPrices[0] : undefined;
 
       // Check for duplicate
       const exists = vehicles.find(
@@ -2156,6 +2467,7 @@ const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRo
           priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
           priceNumeric,
           brand,
+          ...(priceListNumeric && { priceListNumeric }),
         });
       }
 
@@ -2221,7 +2533,7 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
         modelName = modelCode
           .replace(/-/g, ' ')
           .replace(/\b(ec3|e c3)\b/gi, 'E-C3')
-          .replace(/\b(c3|c4|c5)\b/gi, (m) => m.toUpperCase())
+          .replace(/\b(c3|c4|c5)\b/gi, (m: string) => m.toUpperCase())
           .split(' ')
           .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
           .join(' ')
@@ -2275,6 +2587,10 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
       );
 
       if (!exists) {
+        // Parse list and campaign prices separately
+        const priceListNum = listPrice ? parsePrice(listPrice) : undefined;
+        const priceCampaignNum = campaignPrice ? parsePrice(campaignPrice) : undefined;
+
         vehicles.push({
           model: modelName,
           trim: donanim,
@@ -2284,6 +2600,8 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
           priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
           priceNumeric,
           brand,
+          ...(priceListNum && isValidPrice(priceListNum) && { priceListNumeric: priceListNum }),
+          ...(priceCampaignNum && isValidPrice(priceCampaignNum) && { priceCampaignNumeric: priceCampaignNum }),
         });
       }
     }

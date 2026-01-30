@@ -13,6 +13,8 @@ import {
   BarChartOutlined,
   PieChartOutlined,
   UnorderedListOutlined,
+  PercentageOutlined,
+  CalendarOutlined,
 } from '@ant-design/icons';
 import {
   BarChart,
@@ -356,6 +358,111 @@ export default function StatisticsPage() {
         priceRaw: row.priceRaw,
         fuel: row.fuel,
       }));
+  }, [allRows]);
+
+  // OTV statistics
+  const otvStats = useMemo(() => {
+    const otvData: { rate: number; price: number; brand: string }[] = [];
+
+    allRows.forEach((row) => {
+      if (row.otvRate && row.otvRate > 0) {
+        otvData.push({
+          rate: row.otvRate,
+          price: row.priceNumeric,
+          brand: row.brand,
+        });
+      }
+    });
+
+    if (otvData.length === 0) return null;
+
+    // Group by OTV rate
+    const rateGroups = new Map<number, { prices: number[]; count: number }>();
+    const brandOtvData = new Map<string, { rates: number[]; count: number }>();
+
+    for (const d of otvData) {
+      // Rate distribution
+      if (!rateGroups.has(d.rate)) {
+        rateGroups.set(d.rate, { prices: [], count: 0 });
+      }
+      const group = rateGroups.get(d.rate)!;
+      group.prices.push(d.price);
+      group.count++;
+
+      // Brand OTV
+      if (!brandOtvData.has(d.brand)) {
+        brandOtvData.set(d.brand, { rates: [], count: 0 });
+      }
+      const brandGroup = brandOtvData.get(d.brand)!;
+      brandGroup.rates.push(d.rate);
+      brandGroup.count++;
+    }
+
+    const avgOtvRate = otvData.reduce((sum, d) => sum + d.rate, 0) / otvData.length;
+
+    const distribution = Array.from(rateGroups.entries())
+      .map(([rate, data]) => ({
+        rate: `%${rate}`,
+        rateNum: rate,
+        count: data.count,
+        percentage: Math.round((data.count / otvData.length) * 100 * 10) / 10,
+        avgPrice: data.prices.length > 0
+          ? Math.round(data.prices.reduce((a, b) => a + b, 0) / data.prices.length)
+          : 0,
+      }))
+      .sort((a, b) => a.rateNum - b.rateNum);
+
+    const byBrand = Array.from(brandOtvData.entries())
+      .map(([brand, data]) => ({
+        brand,
+        avgOtvRate: Math.round((data.rates.reduce((a, b) => a + b, 0) / data.rates.length) * 10) / 10,
+        count: data.count,
+      }))
+      .sort((a, b) => b.count - a.count);
+
+    return {
+      totalWithOtv: otvData.length,
+      avgOtvRate: Math.round(avgOtvRate * 10) / 10,
+      distribution,
+      byBrand,
+    };
+  }, [allRows]);
+
+  // Model year statistics
+  const modelYearStats = useMemo(() => {
+    const yearData = new Map<string, { prices: number[]; count: number }>();
+
+    allRows.forEach((row) => {
+      if (row.modelYear) {
+        const year = String(row.modelYear);
+        if (!yearData.has(year)) {
+          yearData.set(year, { prices: [], count: 0 });
+        }
+        const group = yearData.get(year)!;
+        group.prices.push(row.priceNumeric);
+        group.count++;
+      }
+    });
+
+    if (yearData.size === 0) return null;
+
+    const totalWithYear = Array.from(yearData.values()).reduce((sum, d) => sum + d.count, 0);
+
+    const distribution = Array.from(yearData.entries())
+      .map(([year, data]) => ({
+        year,
+        count: data.count,
+        percentage: Math.round((data.count / totalWithYear) * 100 * 10) / 10,
+        avgPrice: data.prices.length > 0
+          ? Math.round(data.prices.reduce((a, b) => a + b, 0) / data.prices.length)
+          : 0,
+      }))
+      .sort((a, b) => b.year.localeCompare(a.year)); // Sort by year descending
+
+    return {
+      totalWithYear,
+      distribution,
+    };
   }, [allRows]);
 
   // Brand fuel breakdown (with normalization)
@@ -954,6 +1061,237 @@ export default function StatisticsPage() {
         </Row>
       ),
     },
+    // OTV Analysis Tab
+    ...(otvStats ? [{
+      key: 'otv',
+      label: (
+        <span>
+          <PercentageOutlined /> ÖTV Analizi
+        </span>
+      ),
+      children: (
+        <Row gutter={[24, 24]}>
+          {/* OTV Summary */}
+          <Col span={24}>
+            <Row gutter={[16, 16]}>
+              <Col xs={12} sm={8} md={6}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="ÖTV Verisi Olan Araç"
+                    value={otvStats.totalWithOtv}
+                    suffix={`/ ${summaryStats?.total || 0}`}
+                  />
+                </Card>
+              </Col>
+              <Col xs={12} sm={8} md={6}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="Ortalama ÖTV Oranı"
+                    value={otvStats.avgOtvRate}
+                    suffix="%"
+                    valueStyle={{ color: tokens.colors.warning }}
+                  />
+                </Card>
+              </Col>
+            </Row>
+          </Col>
+
+          {/* OTV Distribution Chart */}
+          <Col xs={24} lg={12}>
+            <Card
+              title="ÖTV Oranı Dağılımı"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <ResponsiveContainer width="100%" height={350}>
+                <BarChart data={otvStats.distribution}>
+                  <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
+                  <XAxis dataKey="rate" />
+                  <YAxis />
+                  <Tooltip
+                    formatter={(value: number, name: string) => {
+                      if (name === 'count') return [`${value} araç`, 'Sayı'];
+                      if (name === 'avgPrice') return [formatPrice(value), 'Ort. Fiyat'];
+                      return [value, name];
+                    }}
+                  />
+                  <Bar dataKey="count" fill={tokens.colors.warning} radius={[4, 4, 0, 0]} name="count" />
+                </BarChart>
+              </ResponsiveContainer>
+            </Card>
+          </Col>
+
+          {/* OTV Average Price by Rate */}
+          <Col xs={24} lg={12}>
+            <Card
+              title="ÖTV Oranına Göre Ortalama Fiyat"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <ResponsiveContainer width="100%" height={350}>
+                <ComposedChart data={otvStats.distribution}>
+                  <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
+                  <XAxis dataKey="rate" />
+                  <YAxis tickFormatter={(v) => formatPriceShort(v)} />
+                  <Tooltip
+                    formatter={(value: number) => [formatPrice(value), 'Ort. Fiyat']}
+                  />
+                  <Bar dataKey="avgPrice" fill={tokens.colors.accent} radius={[4, 4, 0, 0]} />
+                  <Line type="monotone" dataKey="avgPrice" stroke={tokens.colors.primary} strokeWidth={2} dot />
+                </ComposedChart>
+              </ResponsiveContainer>
+            </Card>
+          </Col>
+
+          {/* Brand OTV Comparison */}
+          <Col span={24}>
+            <Card
+              title="Marka Bazlı Ortalama ÖTV Oranı"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <ResponsiveContainer width="100%" height={Math.max(300, otvStats.byBrand.length * 30)}>
+                <BarChart data={otvStats.byBrand} layout="vertical">
+                  <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
+                  <XAxis type="number" domain={[0, 100]} tickFormatter={(v) => `%${v}`} />
+                  <YAxis type="category" dataKey="brand" width={100} />
+                  <Tooltip
+                    formatter={(value: number, name: string) => {
+                      if (name === 'avgOtvRate') return [`%${value}`, 'Ort. ÖTV'];
+                      if (name === 'count') return [`${value} araç`, 'Sayı'];
+                      return [value, name];
+                    }}
+                  />
+                  <Bar dataKey="avgOtvRate" fill={tokens.colors.warning} radius={[0, 4, 4, 0]} name="avgOtvRate" />
+                </BarChart>
+              </ResponsiveContainer>
+            </Card>
+          </Col>
+        </Row>
+      ),
+    }] : []),
+    // Model Year Tab
+    ...(modelYearStats ? [{
+      key: 'modelYear',
+      label: (
+        <span>
+          <CalendarOutlined /> Model Yılı
+        </span>
+      ),
+      children: (
+        <Row gutter={[24, 24]}>
+          {/* Model Year Summary */}
+          <Col span={24}>
+            <Row gutter={[16, 16]}>
+              <Col xs={12} sm={8} md={6}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="Model Yılı Verisi Olan"
+                    value={modelYearStats.totalWithYear}
+                    suffix={`/ ${summaryStats?.total || 0}`}
+                  />
+                </Card>
+              </Col>
+              <Col xs={12} sm={8} md={6}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="Farklı Model Yılı"
+                    value={modelYearStats.distribution.length}
+                  />
+                </Card>
+              </Col>
+            </Row>
+          </Col>
+
+          {/* Year Distribution Chart */}
+          <Col xs={24} lg={12}>
+            <Card
+              title="Model Yılı Dağılımı"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <ResponsiveContainer width="100%" height={350}>
+                <BarChart data={[...modelYearStats.distribution].reverse()}>
+                  <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
+                  <XAxis dataKey="year" />
+                  <YAxis />
+                  <Tooltip
+                    formatter={(value: number, name: string) => {
+                      if (name === 'count') return [`${value} araç`, 'Sayı'];
+                      return [value, name];
+                    }}
+                  />
+                  <Bar dataKey="count" fill={tokens.colors.primary} radius={[4, 4, 0, 0]} name="count" />
+                </BarChart>
+              </ResponsiveContainer>
+            </Card>
+          </Col>
+
+          {/* Average Price by Year */}
+          <Col xs={24} lg={12}>
+            <Card
+              title="Model Yılına Göre Ortalama Fiyat"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <ResponsiveContainer width="100%" height={350}>
+                <ComposedChart data={[...modelYearStats.distribution].reverse()}>
+                  <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
+                  <XAxis dataKey="year" />
+                  <YAxis tickFormatter={(v) => formatPriceShort(v)} />
+                  <Tooltip
+                    formatter={(value: number) => [formatPrice(value), 'Ort. Fiyat']}
+                  />
+                  <Bar dataKey="avgPrice" fill={tokens.colors.success} radius={[4, 4, 0, 0]} />
+                  <Line type="monotone" dataKey="avgPrice" stroke={tokens.colors.error} strokeWidth={2} dot />
+                </ComposedChart>
+              </ResponsiveContainer>
+            </Card>
+          </Col>
+
+          {/* Year Details Table */}
+          <Col span={24}>
+            <Card
+              title="Model Yılı Detayları"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <Table
+                dataSource={modelYearStats.distribution.map((d, i) => ({ key: i, ...d }))}
+                columns={[
+                  {
+                    title: 'Model Yılı',
+                    dataIndex: 'year',
+                    key: 'year',
+                    render: (year: string) => <Tag color="blue">{year}</Tag>,
+                  },
+                  {
+                    title: 'Araç Sayısı',
+                    dataIndex: 'count',
+                    key: 'count',
+                    sorter: (a, b) => a.count - b.count,
+                  },
+                  {
+                    title: 'Oran',
+                    dataIndex: 'percentage',
+                    key: 'percentage',
+                    render: (pct: number) => (
+                      <Progress percent={pct} size="small" style={{ width: 100 }} />
+                    ),
+                    sorter: (a, b) => a.percentage - b.percentage,
+                  },
+                  {
+                    title: 'Ortalama Fiyat',
+                    dataIndex: 'avgPrice',
+                    key: 'avgPrice',
+                    render: (price: number) => (
+                      <Text strong style={{ color: tokens.colors.success }}>{formatPrice(price)}</Text>
+                    ),
+                    sorter: (a, b) => a.avgPrice - b.avgPrice,
+                  },
+                ]}
+                pagination={false}
+                size="small"
+              />
+            </Card>
+          </Col>
+        </Row>
+      ),
+    }] : []),
   ];
 
   return (

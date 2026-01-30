@@ -1,14 +1,7 @@
-// Generic types for multi-brand price list system
-
-export interface BrandConfig {
-  id: string;
-  name: string;
-  url: string;
-  parser: 'vw' | 'skoda' | 'renault' | 'toyota' | 'hyundai' | 'ford' | 'fiat' | 'peugeot' | 'byd' | 'opel' | 'citroen' | 'bmw' | 'mercedes' | 'nissan' | 'honda' | 'seat' | 'kia' | 'volvo' | 'generic'; // Parser strategy
-  responseType?: 'json' | 'xml' | 'pdf' | 'html'; // Response type (default: json)
-  urls?: string[]; // Multiple URLs for brands with per-model pages (e.g., Opel)
-  logo?: string;
-}
+/**
+ * Shared types for data pipeline
+ * Used by both collect.ts and all generators
+ */
 
 export interface PriceListRow {
   // Core fields (required)
@@ -32,19 +25,6 @@ export interface PriceListRow {
   [key: string]: string | number | undefined; // Allow additional fields
 }
 
-export interface ParsedData {
-  rows: PriceListRow[];
-  lastUpdated?: string;
-  brand: string;
-}
-
-export interface FetchState {
-  loading: boolean;
-  error: string | null;
-  data: ParsedData | null;
-}
-
-// Historical data types
 export interface StoredData {
   collectedAt: string;
   brand: string;
@@ -66,5 +46,3 @@ export interface IndexData {
     [brandId: string]: BrandIndexData;
   };
 }
-
-export type DataSource = 'live' | 'historical';

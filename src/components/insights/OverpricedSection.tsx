@@ -34,6 +34,12 @@ interface VehicleWithScore {
   segmentSize: number;
   isOutlier: boolean;
   outlierType: 'cheap' | 'expensive' | null;
+  // Optional extended fields
+  campaignDiscount?: number;
+  otvRate?: number;
+  modelYear?: number | string;
+  fuelConsumption?: string;
+  monthlyLease?: number;
 }
 
 interface OverpricedSectionProps {
@@ -105,7 +111,7 @@ export default function OverpricedSection({ vehicles }: OverpricedSectionProps) 
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 {/* Left: Vehicle Info */}
                 <div style={{ flex: 1 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: tokens.spacing.sm, marginBottom: tokens.spacing.xs }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: tokens.spacing.sm, marginBottom: tokens.spacing.xs, flexWrap: 'wrap' }}>
                     <RiseOutlined style={{ color: tokens.colors.error, fontSize: 18 }} />
                     <Title level={5} style={{ marginBottom: 0 }}>
                       {vehicle.brand} {vehicle.model}
@@ -113,6 +119,11 @@ export default function OverpricedSection({ vehicles }: OverpricedSectionProps) 
                     <Tag color="red">
                       +{getOverpricePercent(vehicle)}%
                     </Tag>
+                    {vehicle.otvRate && vehicle.otvRate >= 60 && (
+                      <Tooltip title="Yüksek ÖTV oranı fiyatı etkiliyor olabilir">
+                        <Tag color="orange">ÖTV %{vehicle.otvRate}</Tag>
+                      </Tooltip>
+                    )}
                   </div>
 
                   <Text type="secondary" style={{ display: 'block', marginBottom: tokens.spacing.sm }}>

@@ -37,6 +37,12 @@ interface VehicleWithScore {
   segmentSize: number;
   isOutlier: boolean;
   outlierType: 'cheap' | 'expensive' | null;
+  // Optional extended fields
+  campaignDiscount?: number;
+  otvRate?: number;
+  modelYear?: number | string;
+  fuelConsumption?: string;
+  monthlyLease?: number;
 }
 
 interface TodaysDealsProps {
@@ -133,7 +139,7 @@ export default function TodaysDeals({ vehicles }: TodaysDealsProps) {
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 {/* Left: Vehicle Info */}
                 <div style={{ flex: 1 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: tokens.spacing.sm, marginBottom: tokens.spacing.xs }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: tokens.spacing.sm, marginBottom: tokens.spacing.xs, flexWrap: 'wrap' }}>
                     <FallOutlined style={{ color: tokens.colors.success, fontSize: 18 }} />
                     <Title level={5} style={{ marginBottom: 0 }}>
                       {vehicle.brand} {vehicle.model}
@@ -141,6 +147,12 @@ export default function TodaysDeals({ vehicles }: TodaysDealsProps) {
                     <Tag color="green">
                       -{getSavingsPercent(vehicle)}%
                     </Tag>
+                    {vehicle.campaignDiscount && vehicle.campaignDiscount > 0 && (
+                      <Tag color="cyan">Kampanya -%{vehicle.campaignDiscount.toFixed(1)}</Tag>
+                    )}
+                    {vehicle.otvRate && (
+                      <Tag color="orange">ÖTV %{vehicle.otvRate}</Tag>
+                    )}
                   </div>
 
                   <Text type="secondary" style={{ display: 'block', marginBottom: tokens.spacing.sm }}>

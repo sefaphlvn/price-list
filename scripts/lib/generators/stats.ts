@@ -6,37 +6,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
-
-interface PriceListRow {
-  model: string;
-  trim: string;
-  engine: string;
-  transmission: string;
-  fuel: string;
-  priceRaw: string;
-  priceNumeric: number;
-  brand: string;
-}
-
-interface StoredData {
-  collectedAt: string;
-  brand: string;
-  brandId: string;
-  rowCount: number;
-  rows: PriceListRow[];
-}
-
-interface IndexData {
-  lastUpdated: string;
-  brands: {
-    [brandId: string]: {
-      name: string;
-      availableDates: string[];
-      latestDate: string;
-      totalRecords: number;
-    };
-  };
-}
+import { PriceListRow, StoredData, IndexData } from '../types';
 
 interface BrandStats {
   name: string;
@@ -69,6 +39,32 @@ interface PriceSegmentStats {
   percentage: number;
 }
 
+interface OtvRateStats {
+  rate: number;
+  count: number;
+  percentage: number;
+  avgPrice: number;
+}
+
+interface OtvBrandStats {
+  brand: string;
+  avgOtvRate: number;
+  count: number;
+}
+
+interface ModelYearStats {
+  year: string;
+  count: number;
+  percentage: number;
+  avgPrice: number;
+}
+
+interface FuelConsumptionStats {
+  fuel: string;
+  avgConsumption: number;
+  count: number;
+}
+
 interface PrecomputedStats {
   generatedAt: string;
   totalVehicles: number;
@@ -82,6 +78,18 @@ interface PrecomputedStats {
   fuelStats: FuelStats[];
   transmissionStats: TransmissionStats[];
   priceSegments: PriceSegmentStats[];
+  // New extended stats
+  otvStats?: {
+    avgOtvRate: number;
+    distribution: OtvRateStats[];
+    byBrand: OtvBrandStats[];
+  };
+  modelYearStats?: {
+    distribution: ModelYearStats[];
+  };
+  fuelConsumptionStats?: {
+    byFuel: FuelConsumptionStats[];
+  };
 }
 
 const PRICE_SEGMENTS = [
@@ -199,6 +207,11 @@ export async function generateStats(): Promise<PrecomputedStats> {
   const fuelData: Map<string, number[]> = new Map();
   const transmissionData: Map<string, number[]> = new Map();
 
+  // Extended stats data collectors
+  const otvData: { rate: number; price: number; brand: string }[] = [];
+  const modelYearData: Map<string, number[]> = new Map();
+  const fuelConsumptionData: Map<string, number[]> = new Map();
+
   // Collect all data
   for (const [brandId, brandInfo] of Object.entries(index.brands)) {
     const latestDate = brandInfo.latestDate;
@@ -233,6 +246,39 @@ export async function generateStats(): Promise<PrecomputedStats> {
           transmissionData.set(transmission, []);
         }
         transmissionData.get(transmission)!.push(row.priceNumeric);
+
+        // OTV stats (if available)
+        if (row.otvRate !== undefined && row.otvRate > 0) {
+          otvData.push({
+            rate: row.otvRate,
+            price: row.priceNumeric,
+            brand: brandInfo.name,
+          });
+        }
+
+        // Model year stats (if available)
+        if (row.modelYear) {
+          const year = String(row.modelYear);
+          if (!modelYearData.has(year)) {
+            modelYearData.set(year, []);
+          }
+          modelYearData.get(year)!.push(row.priceNumeric);
+        }
+
+        // Fuel consumption stats (if available)
+        if (row.fuelConsumption) {
+          // Parse consumption value (e.g., "5.2 L/100km" -> 5.2)
+          const match = row.fuelConsumption.match(/(\d+[.,]?\d*)/);
+          if (match) {
+            const consumption = parseFloat(match[1].replace(',', '.'));
+            if (!isNaN(consumption) && consumption > 0) {
+              if (!fuelConsumptionData.has(fuel)) {
+                fuelConsumptionData.set(fuel, []);
+              }
+              fuelConsumptionData.get(fuel)!.push(consumption);
+            }
+          }
+        }
       }
     }
 
@@ -294,6 +340,94 @@ export async function generateStats(): Promise<PrecomputedStats> {
     };
   });
 
+  // Calculate OTV stats (if we have data)
+  let otvStats: PrecomputedStats['otvStats'] = undefined;
+  if (otvData.length > 0) {
+    const avgOtvRate = otvData.reduce((sum, d) => sum + d.rate, 0) / otvData.length;
+
+    // Group by OTV rate
+    const rateGroups = new Map<number, { prices: number[]; count: number }>();
+    const brandOtvData = new Map<string, { rates: number[]; count: number }>();
+
+    for (const d of otvData) {
+      // Rate distribution
+      if (!rateGroups.has(d.rate)) {
+        rateGroups.set(d.rate, { prices: [], count: 0 });
+      }
+      const group = rateGroups.get(d.rate)!;
+      group.prices.push(d.price);
+      group.count++;
+
+      // Brand OTV
+      if (!brandOtvData.has(d.brand)) {
+        brandOtvData.set(d.brand, { rates: [], count: 0 });
+      }
+      const brandGroup = brandOtvData.get(d.brand)!;
+      brandGroup.rates.push(d.rate);
+      brandGroup.count++;
+    }
+
+    const distribution: OtvRateStats[] = Array.from(rateGroups.entries())
+      .map(([rate, data]) => ({
+        rate,
+        count: data.count,
+        percentage: Math.round((data.count / otvData.length) * 100 * 10) / 10,
+        avgPrice: data.prices.length > 0
+          ? Math.round(data.prices.reduce((a, b) => a + b, 0) / data.prices.length)
+          : 0,
+      }))
+      .sort((a, b) => a.rate - b.rate);
+
+    const byBrand: OtvBrandStats[] = Array.from(brandOtvData.entries())
+      .map(([brand, data]) => ({
+        brand,
+        avgOtvRate: Math.round((data.rates.reduce((a, b) => a + b, 0) / data.rates.length) * 10) / 10,
+        count: data.count,
+      }))
+      .sort((a, b) => b.count - a.count);
+
+    otvStats = {
+      avgOtvRate: Math.round(avgOtvRate * 10) / 10,
+      distribution,
+      byBrand,
+    };
+
+    console.log(`  OTV stats: ${otvData.length} vehicles with OTV data, avg rate ${otvStats.avgOtvRate}%`);
+  }
+
+  // Calculate model year stats (if we have data)
+  let modelYearStats: PrecomputedStats['modelYearStats'] = undefined;
+  if (modelYearData.size > 0) {
+    const totalWithYear = Array.from(modelYearData.values()).reduce((sum, prices) => sum + prices.length, 0);
+
+    const distribution: ModelYearStats[] = Array.from(modelYearData.entries())
+      .map(([year, prices]) => ({
+        year,
+        count: prices.length,
+        percentage: Math.round((prices.length / totalWithYear) * 100 * 10) / 10,
+        avgPrice: prices.length > 0 ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0,
+      }))
+      .sort((a, b) => b.year.localeCompare(a.year)); // Sort by year descending
+
+    modelYearStats = { distribution };
+    console.log(`  Model year stats: ${totalWithYear} vehicles with model year data`);
+  }
+
+  // Calculate fuel consumption stats (if we have data)
+  let fuelConsumptionStats: PrecomputedStats['fuelConsumptionStats'] = undefined;
+  if (fuelConsumptionData.size > 0) {
+    const byFuel: FuelConsumptionStats[] = Array.from(fuelConsumptionData.entries())
+      .map(([fuel, consumptions]) => ({
+        fuel,
+        avgConsumption: Math.round((consumptions.reduce((a, b) => a + b, 0) / consumptions.length) * 10) / 10,
+        count: consumptions.length,
+      }))
+      .sort((a, b) => b.count - a.count);
+
+    fuelConsumptionStats = { byFuel };
+    console.log(`  Fuel consumption stats: ${byFuel.length} fuel types with consumption data`);
+  }
+
   const stats: PrecomputedStats = {
     generatedAt: new Date().toISOString(),
     totalVehicles: allPrices.length,
@@ -302,6 +436,9 @@ export async function generateStats(): Promise<PrecomputedStats> {
     fuelStats,
     transmissionStats,
     priceSegments,
+    ...(otvStats && { otvStats }),
+    ...(modelYearStats && { modelYearStats }),
+    ...(fuelConsumptionStats && { fuelConsumptionStats }),
   };
 
   // Save stats

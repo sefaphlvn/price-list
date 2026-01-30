@@ -73,6 +73,12 @@ interface VehicleWithScore {
   segmentSize: number;
   isOutlier: boolean;
   outlierType: 'cheap' | 'expensive' | null;
+  // Optional extended fields
+  campaignDiscount?: number;
+  otvRate?: number;
+  modelYear?: number | string;
+  fuelConsumption?: string;
+  monthlyLease?: number;
 }
 
 interface InsightsData {
@@ -198,6 +204,12 @@ export default function InsightsPage() {
       ? dealsWithSavings.reduce((sum, v) => sum + ((v.segmentAvg - v.price) / v.segmentAvg) * 100, 0) / dealsWithSavings.length
       : 0;
 
+    // Campaign discount stats
+    const vehiclesWithCampaign = filteredVehicles.filter((v) => v.campaignDiscount && v.campaignDiscount > 0);
+    const avgCampaignDiscount = vehiclesWithCampaign.length > 0
+      ? vehiclesWithCampaign.reduce((sum, v) => sum + (v.campaignDiscount || 0), 0) / vehiclesWithCampaign.length
+      : 0;
+
     return {
       totalVehicles: filteredVehicles.length,
       totalSavings,
@@ -207,6 +219,8 @@ export default function InsightsPage() {
       avgSavingsPercent: Math.round(avgSavingsPercent),
       cheapOutliers: filteredCheapOutliers.length,
       expensiveOutliers: filteredExpensiveOutliers.length,
+      vehiclesWithCampaign: vehiclesWithCampaign.length,
+      avgCampaignDiscount: Math.round(avgCampaignDiscount * 10) / 10,
     };
   }, [filteredVehicles, filteredCheapOutliers, filteredExpensiveOutliers]);
 
@@ -643,6 +657,19 @@ export default function InsightsPage() {
               />
             </Card>
           </Col>
+          {(summaryStats?.vehiclesWithCampaign || 0) > 0 && (
+            <Col xs={12} sm={8} md={4}>
+              <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                <Statistic
+                  title="Kampanyalı Araç"
+                  value={summaryStats?.vehiclesWithCampaign || 0}
+                  suffix={summaryStats?.avgCampaignDiscount ? `(Ort. %${summaryStats.avgCampaignDiscount})` : ''}
+                  valueStyle={{ color: '#52c41a' }}
+                  prefix={<PercentageOutlined />}
+                />
+              </Card>
+            </Col>
+          )}
         </Row>
       </motion.div>
 

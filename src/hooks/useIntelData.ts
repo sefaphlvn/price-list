@@ -258,6 +258,11 @@ export interface PriceDrop {
   dropPercent: number;
   daysSincePeak: number;
   priceHistory: { date: string; price: number }[];
+  // Optional extended fields
+  listPrice?: number;
+  campaignPrice?: number;
+  campaignDiscount?: number;
+  otvRate?: number;
 }
 
 export interface RecentDrop {
@@ -273,6 +278,11 @@ export interface RecentDrop {
   dropPercent: number;
   date: string;
   previousDate: string;
+  // Optional extended fields
+  listPrice?: number;
+  campaignPrice?: number;
+  campaignDiscount?: number;
+  otvRate?: number;
 }
 
 export interface PromosData {

@@ -6,37 +6,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
-
-interface PriceListRow {
-  model: string;
-  trim: string;
-  engine: string;
-  transmission: string;
-  fuel: string;
-  priceRaw: string;
-  priceNumeric: number;
-  brand: string;
-}
-
-interface StoredData {
-  collectedAt: string;
-  brand: string;
-  brandId: string;
-  rowCount: number;
-  rows: PriceListRow[];
-}
-
-interface IndexData {
-  lastUpdated: string;
-  brands: {
-    [brandId: string]: {
-      name: string;
-      availableDates: string[];
-      latestDate: string;
-      totalRecords: number;
-    };
-  };
-}
+import { PriceListRow, StoredData, IndexData } from '../types';
 
 interface VehicleWithScore {
   id: string;
@@ -58,6 +28,12 @@ interface VehicleWithScore {
   segmentSize: number;
   isOutlier: boolean;
   outlierType: 'cheap' | 'expensive' | null;
+  // Extended fields (optional)
+  campaignDiscount?: number;        // Percentage discount from list price
+  otvRate?: number;                 // OTV tax rate
+  modelYear?: number | string;      // Model year
+  fuelConsumption?: string;         // Fuel consumption
+  monthlyLease?: number;            // Monthly lease price
 }
 
 interface InsightsData {
@@ -450,6 +426,12 @@ export async function generateInsights(): Promise<InsightsData> {
           dealScore = Math.max(0, Math.min(100, Math.round(100 - percentile)));
         }
 
+        // Calculate campaign discount if both list and campaign prices are available
+        let campaignDiscount: number | undefined;
+        if (row.priceListNumeric && row.priceCampaignNumeric && row.priceListNumeric > row.priceCampaignNumeric) {
+          campaignDiscount = Math.round(((row.priceListNumeric - row.priceCampaignNumeric) / row.priceListNumeric) * 1000) / 10;
+        }
+
         allVehicles.push({
           id: createVehicleId(row.brand, row.model, row.trim, row.engine),
           brand: row.brand,
@@ -470,6 +452,12 @@ export async function generateInsights(): Promise<InsightsData> {
           segmentSize,
           isOutlier,
           outlierType,
+          // Pass through optional fields
+          ...(campaignDiscount && { campaignDiscount }),
+          ...(row.otvRate && { otvRate: row.otvRate }),
+          ...(row.modelYear && { modelYear: row.modelYear }),
+          ...(row.fuelConsumption && { fuelConsumption: row.fuelConsumption }),
+          ...(row.monthlyLease && { monthlyLease: row.monthlyLease }),
         });
       }
     }

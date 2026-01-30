@@ -6,37 +6,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
-
-interface PriceListRow {
-  model: string;
-  trim: string;
-  engine: string;
-  transmission: string;
-  fuel: string;
-  priceRaw: string;
-  priceNumeric: number;
-  brand: string;
-}
-
-interface StoredData {
-  collectedAt: string;
-  brand: string;
-  brandId: string;
-  rowCount: number;
-  rows: PriceListRow[];
-}
-
-interface IndexData {
-  lastUpdated: string;
-  brands: {
-    [brandId: string]: {
-      name: string;
-      availableDates: string[];
-      latestDate: string;
-      totalRecords: number;
-    };
-  };
-}
+import { PriceListRow, StoredData, IndexData } from '../types';
 
 export interface GapCell {
   segment: string;

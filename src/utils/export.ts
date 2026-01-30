@@ -3,7 +3,10 @@ import { PriceListRow } from '../types';
 
 // Export to CSV with UTF-8 BOM for Excel compatibility
 export const exportToCSV = (data: PriceListRow[], filename: string = 'fiyat-listesi.csv') => {
-  const headers = ['Marka', 'Model', 'Donanım', 'Motor', 'Şanzıman', 'Yakıt', 'Fiyat'];
+  const headers = [
+    'Marka', 'Model', 'Donanım', 'Motor', 'Şanzıman', 'Yakıt', 'Fiyat',
+    'Model Yılı', 'ÖTV Oranı', 'Yakıt Tüketimi', 'Aylık Kira', 'Liste Fiyatı', 'Kampanya Fiyatı'
+  ];
   const rows = data.map(row => [
     row.brand,
     row.model,
@@ -12,6 +15,12 @@ export const exportToCSV = (data: PriceListRow[], filename: string = 'fiyat-list
     row.transmission,
     row.fuel,
     row.priceRaw,
+    row.modelYear || '',
+    row.otvRate ? `%${row.otvRate}` : '',
+    row.fuelConsumption || '',
+    row.monthlyLease ? `${row.monthlyLease.toLocaleString('tr-TR')} TL` : '',
+    row.priceListNumeric ? `${row.priceListNumeric.toLocaleString('tr-TR')} TL` : '',
+    row.priceCampaignNumeric ? `${row.priceCampaignNumeric.toLocaleString('tr-TR')} TL` : '',
   ]);
 
   const csvContent = [
@@ -28,7 +37,10 @@ export const exportToCSV = (data: PriceListRow[], filename: string = 'fiyat-list
 // Export to XLSX
 export const exportToXLSX = (data: PriceListRow[], filename: string = 'fiyat-listesi.xlsx') => {
   const worksheetData = [
-    ['Marka', 'Model', 'Donanım', 'Motor', 'Şanzıman', 'Yakıt', 'Fiyat'],
+    [
+      'Marka', 'Model', 'Donanım', 'Motor', 'Şanzıman', 'Yakıt', 'Fiyat',
+      'Model Yılı', 'ÖTV Oranı', 'Yakıt Tüketimi', 'Aylık Kira', 'Liste Fiyatı', 'Kampanya Fiyatı'
+    ],
     ...data.map(row => [
       row.brand,
       row.model,
@@ -37,6 +49,12 @@ export const exportToXLSX = (data: PriceListRow[], filename: string = 'fiyat-lis
       row.transmission,
       row.fuel,
       row.priceRaw,
+      row.modelYear || '',
+      row.otvRate ? `%${row.otvRate}` : '',
+      row.fuelConsumption || '',
+      row.monthlyLease ? `${row.monthlyLease.toLocaleString('tr-TR')} TL` : '',
+      row.priceListNumeric ? `${row.priceListNumeric.toLocaleString('tr-TR')} TL` : '',
+      row.priceCampaignNumeric ? `${row.priceCampaignNumeric.toLocaleString('tr-TR')} TL` : '',
     ]),
   ];
 

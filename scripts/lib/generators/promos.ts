@@ -1,43 +1,13 @@
 /**
  * Promos Generator
  * Tracks price drops and implicit discounts over time
- * Since suggestedPrice doesn't exist, we track historical price drops
+ * Now also tracks list vs campaign price differences
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
-
-interface PriceListRow {
-  model: string;
-  trim: string;
-  engine: string;
-  transmission: string;
-  fuel: string;
-  priceRaw: string;
-  priceNumeric: number;
-  brand: string;
-}
-
-interface StoredData {
-  collectedAt: string;
-  brand: string;
-  brandId: string;
-  rowCount: number;
-  rows: PriceListRow[];
-}
-
-interface IndexData {
-  lastUpdated: string;
-  brands: {
-    [brandId: string]: {
-      name: string;
-      availableDates: string[];
-      latestDate: string;
-      totalRecords: number;
-    };
-  };
-}
+import { PriceListRow, StoredData, IndexData } from '../types';
 
 export interface PriceDrop {
   id: string;
@@ -57,6 +27,11 @@ export interface PriceDrop {
   dropPercent: number;
   daysSincePeak: number;
   priceHistory: { date: string; price: number }[];
+  // Extended fields (optional)
+  listPrice?: number;                 // Original list price
+  campaignPrice?: number;             // Campaign price
+  campaignDiscount?: number;          // Discount percentage
+  otvRate?: number;                   // OTV rate
 }
 
 export interface RecentDrop {
@@ -72,6 +47,10 @@ export interface RecentDrop {
   dropPercent: number;
   date: string;
   previousDate: string;
+  // Extended fields (optional)
+  listPrice?: number;
+  campaignPrice?: number;
+  campaignDiscount?: number;
 }
 
 export interface PromosData {
@@ -235,6 +214,12 @@ export async function generatePromos(): Promise<PromosData> {
         if (dropPercent >= 5) {
           const daysSincePeak = daysBetween(peakEntry.date, currentEntry.date);
 
+          // Calculate campaign discount if list and campaign prices are available
+          let campaignDiscount: number | undefined;
+          if (row.priceListNumeric && row.priceCampaignNumeric && row.priceListNumeric > row.priceCampaignNumeric) {
+            campaignDiscount = Math.round(((row.priceListNumeric - row.priceCampaignNumeric) / row.priceListNumeric) * 1000) / 10;
+          }
+
           priceDrops.push({
             id: `${brandId}-${key}`,
             brand: row.brand,
@@ -253,6 +238,11 @@ export async function generatePromos(): Promise<PromosData> {
             dropPercent: Math.round(dropPercent * 100) / 100,
             daysSincePeak,
             priceHistory: history.slice(-10), // Last 10 data points
+            // Extended fields
+            ...(row.priceListNumeric && { listPrice: row.priceListNumeric }),
+            ...(row.priceCampaignNumeric && { campaignPrice: row.priceCampaignNumeric }),
+            ...(campaignDiscount && { campaignDiscount }),
+            ...(row.otvRate && { otvRate: row.otvRate }),
           });
 
           // Track brand stats
@@ -275,6 +265,12 @@ export async function generatePromos(): Promise<PromosData> {
           const dropPercent = prev.price > 0 ? (dropAmount / prev.price) * 100 : 0;
 
           if (dropPercent >= 1) { // Even small recent drops are interesting
+            // Calculate campaign discount if list and campaign prices are available
+            let recentCampaignDiscount: number | undefined;
+            if (row.priceListNumeric && row.priceCampaignNumeric && row.priceListNumeric > row.priceCampaignNumeric) {
+              recentCampaignDiscount = Math.round(((row.priceListNumeric - row.priceCampaignNumeric) / row.priceListNumeric) * 1000) / 10;
+            }
+
             recentDrops.push({
               id: `${brandId}-${key}-recent`,
               brand: row.brand,
@@ -288,6 +284,10 @@ export async function generatePromos(): Promise<PromosData> {
               dropPercent: Math.round(dropPercent * 100) / 100,
               date: curr.date,
               previousDate: prev.date,
+              // Extended fields
+              ...(row.priceListNumeric && { listPrice: row.priceListNumeric }),
+              ...(row.priceCampaignNumeric && { campaignPrice: row.priceCampaignNumeric }),
+              ...(recentCampaignDiscount && { campaignDiscount: recentCampaignDiscount }),
             });
           }
         }

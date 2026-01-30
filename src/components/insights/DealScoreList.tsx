@@ -36,6 +36,12 @@ interface VehicleWithScore {
   segmentSize: number;
   isOutlier: boolean;
   outlierType: 'cheap' | 'expensive' | null;
+  // Optional extended fields
+  campaignDiscount?: number;
+  otvRate?: number;
+  modelYear?: number | string;
+  fuelConsumption?: string;
+  monthlyLease?: number;
 }
 
 interface DealScoreListProps {
@@ -123,6 +129,12 @@ export default function DealScoreList({ vehicles }: DealScoreListProps) {
                     {vehicle.brand} {vehicle.model}
                   </Title>
                   <Tag color="blue">{vehicle.fuel}</Tag>
+                  {vehicle.campaignDiscount && vehicle.campaignDiscount > 0 && (
+                    <Tag color="green">-{vehicle.campaignDiscount.toFixed(1)}% Kampanya</Tag>
+                  )}
+                  {vehicle.otvRate && (
+                    <Tag color="orange">ÖTV %{vehicle.otvRate}</Tag>
+                  )}
                 </div>
 
                 <Text type="secondary" style={{ display: 'block', marginBottom: tokens.spacing.sm }}>
