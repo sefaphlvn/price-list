@@ -49,9 +49,9 @@ function EventCard({ event }: { event: PriceEvent }) {
       case 'removed':
         return <Tag color="red">{t('marketPulse.removedVehicles', 'Kaldirildi')}</Tag>;
       case 'price_increase':
-        return <Tag color="volcano">+{event.priceChangePercent?.toFixed(1)}%</Tag>;
+        return <Tag color="volcano">+{(event.priceChangePercent ?? 0).toFixed(1)}%</Tag>;
       case 'price_decrease':
-        return <Tag color="cyan">{event.priceChangePercent?.toFixed(1)}%</Tag>;
+        return <Tag color="cyan">{(event.priceChangePercent ?? 0).toFixed(1)}%</Tag>;
       default:
         return null;
     }
@@ -72,13 +72,13 @@ function EventCard({ event }: { event: PriceEvent }) {
             <Text type="secondary">{event.trim} - {event.engine}</Text>
             {event.type === 'price_increase' || event.type === 'price_decrease' ? (
               <Text type="secondary">
-                {event.oldPriceFormatted} → {event.newPriceFormatted}
+                {event.oldPriceFormatted || '-'} → {event.newPriceFormatted || '-'}
                 <Text style={{ marginLeft: 8, color: event.type === 'price_increase' ? tokens.colors.error : tokens.colors.success }}>
                   ({event.priceChange && event.priceChange > 0 ? '+' : ''}{formatPrice(event.priceChange || 0)})
                 </Text>
               </Text>
             ) : (
-              <Text type="secondary">{event.newPriceFormatted || event.oldPriceFormatted}</Text>
+              <Text type="secondary">{event.newPriceFormatted || event.oldPriceFormatted || '-'}</Text>
             )}
           </Space>
         }
@@ -106,7 +106,7 @@ function VolatilityTable({ data }: { data: VolatilityMetric[] }) {
                 <Tag>{item.changeCount} {t('marketPulse.priceChanges', 'degisim')}</Tag>
                 <Tag color="green">{item.increaseCount} artis</Tag>
                 <Tag color="red">{item.decreaseCount} dusus</Tag>
-                <Text type="secondary">Ort: {item.avgChangePercent.toFixed(1)}%</Text>
+                <Text type="secondary">Ort: {isFinite(item.avgChangePercent) ? item.avgChangePercent.toFixed(1) : '-'}%</Text>
               </Space>
             }
           />
@@ -142,7 +142,7 @@ function BigMovesSection({ increases, decreases }: { increases: PriceEvent[]; de
                       <Text strong>#{index + 1}</Text>
                       <Text>{event.brand} {event.model}</Text>
                     </Space>
-                    <Tag color="volcano">+{event.priceChangePercent?.toFixed(1)}%</Tag>
+                    <Tag color="volcano">+{(event.priceChangePercent ?? 0).toFixed(1)}%</Tag>
                   </Space>
                 </List.Item>
               )}
@@ -173,7 +173,7 @@ function BigMovesSection({ increases, decreases }: { increases: PriceEvent[]; de
                       <Text strong>#{index + 1}</Text>
                       <Text>{event.brand} {event.model}</Text>
                     </Space>
-                    <Tag color="cyan">{event.priceChangePercent?.toFixed(1)}%</Tag>
+                    <Tag color="cyan">{(event.priceChangePercent ?? 0).toFixed(1)}%</Tag>
                   </Space>
                 </List.Item>
               )}

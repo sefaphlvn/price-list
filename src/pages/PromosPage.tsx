@@ -1,7 +1,7 @@
 // Promos Page - Implicit discounts and price drop tracker
 import { useTranslation } from 'react-i18next';
 import { Typography, Card, Tabs, Empty, Row, Col, Statistic, Alert, Spin, Table, Tag, Space, Progress } from 'antd';
-import { TagOutlined, FallOutlined, PercentageOutlined, LineChartOutlined } from '@ant-design/icons';
+import { TagOutlined, FallOutlined, LineChartOutlined } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
 import { LineChart, Line, Tooltip, ResponsiveContainer } from 'recharts';
 
@@ -364,7 +364,6 @@ export default function PromosPage() {
               precision={1}
               suffix="%"
               valueStyle={{ color: tokens.colors.success }}
-              prefix={<PercentageOutlined />}
             />
           </Card>
         </Col>

@@ -24,7 +24,13 @@ export async function fetchFreshJson<T>(
     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
   }
 
-  return response.json();
+  // Safe JSON parsing - handles non-JSON responses
+  try {
+    const text = await response.text();
+    return JSON.parse(text) as T;
+  } catch {
+    throw new Error(`Invalid JSON response from ${url}`);
+  }
 }
 
 /**
@@ -40,7 +46,13 @@ export async function fetchCachedJson<T>(
     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
   }
 
-  return response.json();
+  // Safe JSON parsing - handles non-JSON responses
+  try {
+    const text = await response.text();
+    return JSON.parse(text) as T;
+  } catch {
+    throw new Error(`Invalid JSON response from ${url}`);
+  }
 }
 
 /**

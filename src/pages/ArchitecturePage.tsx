@@ -147,7 +147,7 @@ function TrimLadderChart({ ladder }: TrimLadderChartProps) {
               </Space>
               <Space>
                 <Text strong>{formatPrice(trim.price)}</Text>
-                {index > 0 && (
+                {index > 0 && isFinite(trim.stepPercent) && (
                   <Tag color="blue">+{formatPrice(trim.stepFromBase)} (+{trim.stepPercent.toFixed(1)}%)</Tag>
                 )}
               </Space>

@@ -51,10 +51,19 @@ export function useSearch(items: SearchItem[]): UseSearchReturn {
   const [isSearching, setIsSearching] = useState(false);
   const [results, setResults] = useState<SearchResult[]>([]);
   const searchTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const mountedRef = useRef(true);
 
   const fuse = useMemo(() => {
     return new Fuse(items, fuseOptions);
   }, [items]);
+
+  // Track mounted state
+  useEffect(() => {
+    mountedRef.current = true;
+    return () => {
+      mountedRef.current = false;
+    };
+  }, []);
 
   // Use useEffect for search to avoid setState in useMemo
   useEffect(() => {
@@ -73,9 +82,12 @@ export function useSearch(items: SearchItem[]): UseSearchReturn {
 
     // Debounce search for better performance
     searchTimeoutRef.current = setTimeout(() => {
-      const searchResults: FuseResult<SearchItem>[] = fuse.search(query).slice(0, 20);
-      setResults(searchResults);
-      setIsSearching(false);
+      // Only update state if component is still mounted
+      if (mountedRef.current) {
+        const searchResults: FuseResult<SearchItem>[] = fuse.search(query).slice(0, 20);
+        setResults(searchResults);
+        setIsSearching(false);
+      }
     }, 150);
 
     return () => {

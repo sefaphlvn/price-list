@@ -132,13 +132,18 @@ export default function LifecyclePage() {
       width: 120,
       render: (_, record) => {
         const isIncrease = record.delta > 0;
+        const percent = isFinite(record.deltaPercent) ? record.deltaPercent.toFixed(1) : '-';
         return (
           <Tag color={isIncrease ? 'red' : 'green'}>
-            {isIncrease ? '+' : ''}{record.deltaPercent.toFixed(1)}%
+            {isIncrease ? '+' : ''}{percent}%
           </Tag>
         );
       },
-      sorter: (a, b) => Math.abs(b.deltaPercent) - Math.abs(a.deltaPercent),
+      sorter: (a, b) => {
+        const aVal = isFinite(a.deltaPercent) ? Math.abs(a.deltaPercent) : 0;
+        const bVal = isFinite(b.deltaPercent) ? Math.abs(b.deltaPercent) : 0;
+        return bVal - aVal;
+      },
       defaultSortOrder: 'descend',
     },
     {

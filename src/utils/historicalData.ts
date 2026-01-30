@@ -67,16 +67,22 @@ export const fetchBrandData = async (
 
 /**
  * Fetch latest data for all brands
+ * @param signal - Optional AbortSignal for cancellation
  */
-export const fetchAllBrandsLatest = async (): Promise<Map<string, StoredData>> => {
+export const fetchAllBrandsLatest = async (signal?: AbortSignal): Promise<Map<string, StoredData>> => {
   const result = new Map<string, StoredData>();
+
+  // Check if already aborted
+  if (signal?.aborted) return result;
 
   const index = await fetchIndex();
   if (!index) return result;
 
   const fetchPromises = Object.keys(index.brands).map(async (brandId) => {
+    // Check abort before each fetch
+    if (signal?.aborted) return;
     const data = await fetchBrandData(brandId);
-    if (data) {
+    if (data && !signal?.aborted) {
       result.set(brandId, data);
     }
   });
@@ -87,10 +93,14 @@ export const fetchAllBrandsLatest = async (): Promise<Map<string, StoredData>> =
 
 /**
  * Get all rows from all brands (latest data)
+ * @param signal - Optional AbortSignal for cancellation
  */
-export const fetchAllRows = async (): Promise<PriceListRow[]> => {
-  const allData = await fetchAllBrandsLatest();
+export const fetchAllRows = async (signal?: AbortSignal): Promise<PriceListRow[]> => {
+  const allData = await fetchAllBrandsLatest(signal);
   const rows: PriceListRow[] = [];
+
+  // Check if aborted before processing
+  if (signal?.aborted) return rows;
 
   allData.forEach((data) => {
     rows.push(...data.rows);

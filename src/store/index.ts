@@ -279,8 +279,14 @@ export const useAppStore = create<AppState>()(
         set({ priceChangesChecked: checked });
       },
 
-      // Language
-      language: (localStorage.getItem('language') as Language) || 'tr',
+      // Language - wrapped in try-catch for private browsing mode
+      language: (() => {
+        try {
+          return (localStorage.getItem('language') as Language) || 'tr';
+        } catch {
+          return 'tr';
+        }
+      })(),
 
       setLanguage: (lang) => {
         i18n.changeLanguage(lang);
@@ -361,8 +367,15 @@ export const useAppStore = create<AppState>()(
 
       updateAlertRule: (id, updates) => {
         const state = get();
+        // Validate rule exists
+        if (!state.alertRules.find((r) => r.id === id)) {
+          console.warn(`AlertRule with id ${id} not found`);
+          return;
+        }
+        // Exclude id from updates to prevent accidental ID override
+        const { id: _excludedId, ...safeUpdates } = updates as { id?: string } & typeof updates;
         const updated = state.alertRules.map((r) =>
-          r.id === id ? { ...r, ...updates } : r
+          r.id === id ? { ...r, ...safeUpdates } : r
         );
         set({ alertRules: updated });
       },

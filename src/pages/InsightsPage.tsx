@@ -193,11 +193,10 @@ export default function InsightsPage() {
     const dealsOver70 = filteredVehicles.filter((v) => v.dealScore >= 70).length;
     const dealsOver80 = filteredVehicles.filter((v) => v.dealScore >= 80).length;
 
-    const avgSavingsPercent =
-      filteredVehicles
-        .filter((v) => v.segmentAvg > v.price)
-        .reduce((sum, v) => sum + ((v.segmentAvg - v.price) / v.segmentAvg) * 100, 0) /
-      Math.max(filteredVehicles.filter((v) => v.segmentAvg > v.price).length, 1);
+    const dealsWithSavings = filteredVehicles.filter((v) => v.segmentAvg > v.price && v.segmentAvg > 0);
+    const avgSavingsPercent = dealsWithSavings.length > 0
+      ? dealsWithSavings.reduce((sum, v) => sum + ((v.segmentAvg - v.price) / v.segmentAvg) * 100, 0) / dealsWithSavings.length
+      : 0;
 
     return {
       totalVehicles: filteredVehicles.length,
@@ -266,7 +265,7 @@ export default function InsightsPage() {
       brand: v.brand,
       model: `${v.brand} ${v.model}`,
       price: v.price,
-      deviation: ((v.price - v.segmentAvg) / v.segmentAvg) * 100,
+      deviation: v.segmentAvg > 0 ? ((v.price - v.segmentAvg) / v.segmentAvg) * 100 : 0,
       dealScore: v.dealScore,
       segmentAvg: v.segmentAvg,
     }));

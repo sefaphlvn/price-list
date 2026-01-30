@@ -67,23 +67,25 @@ function SegmentHeatmap({ data, segments, priceRanges, selectedFuel, selectedTra
         // Aggregate: sum counts, merge brands, recalculate avg
         const newCount = existing.vehicleCount + cell.vehicleCount;
         const newBrands = [...new Set([...existing.brands, ...cell.brands])];
+        const existingAvg = existing.avgPrice || 0;
+        const cellAvg = cell.avgPrice || 0;
         const newAvgPrice = newCount > 0
-          ? Math.round((existing.avgPrice * existing.vehicleCount + cell.avgPrice * cell.vehicleCount) / newCount)
+          ? Math.round((existingAvg * existing.vehicleCount + cellAvg * cell.vehicleCount) / newCount)
           : 0;
         aggregated.set(key, {
           vehicleCount: newCount,
           brands: newBrands,
           avgPrice: newAvgPrice,
           hasGap: newCount < 2,
-          opportunityScore: Math.max(existing.opportunityScore, cell.opportunityScore),
+          opportunityScore: Math.max(existing.opportunityScore || 0, cell.opportunityScore || 0),
         });
       } else {
         aggregated.set(key, {
           vehicleCount: cell.vehicleCount,
           brands: [...cell.brands],
-          avgPrice: cell.avgPrice,
+          avgPrice: cell.avgPrice || 0,
           hasGap: cell.hasGap,
-          opportunityScore: cell.opportunityScore,
+          opportunityScore: cell.opportunityScore || 0,
         });
       }
     }
