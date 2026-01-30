@@ -1,17 +1,49 @@
 {
-  "generatedAt": "2026-01-30T07:57:35.171Z",
+  "generatedAt": "2026-01-30T08:49:41.460Z",
   "date": "2026-01-30",
   "previousDate": "2026-01-29",
   "summary": {
-    "totalEvents": 1,
+    "totalEvents": 3,
     "newVehicles": 0,
-    "removedVehicles": 0,
+    "removedVehicles": 2,
     "priceIncreases": 1,
     "priceDecreases": 0,
     "avgPriceChange": 3044500,
     "avgPriceChangePercent": 12.13
   },
   "events": [
+    {
+      "id": "opel-astra-gs-1.2-130-hp-benzin-removed-2026-01-30",
+      "type": "removed",
+      "vehicleId": "opel-astra-gs-1.2-130-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Astra",
+      "trim": "GS",
+      "engine": "1.2 130 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "oldPrice": 2215000,
+      "oldPriceFormatted": "2.215.000 TL",
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29"
+    },
+    {
+      "id": "opel-astra-gs-1.5-130-hp-dizel-removed-2026-01-30",
+      "type": "removed",
+      "vehicleId": "opel-astra-gs-1.5-130-hp-dizel",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Astra",
+      "trim": "GS",
+      "engine": "1.5 130 HP Dizel",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "oldPrice": 2571000,
+      "oldPriceFormatted": "2.571.000 TL",
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29"
+    },
     {
       "id": "mercedes-mercedes-amg-g-63-performance-4.0l-585-hp-price_increase-2026-01-30",
       "type": "price_increase",

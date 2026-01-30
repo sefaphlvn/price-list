@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-01-30T07:57:35.239Z",
+  "generatedAt": "2026-01-30T08:49:41.522Z",
   "date": "2026-01-30",
   "summary": {
-    "totalModels": 233,
+    "totalModels": 232,
     "totalTransitions": 1,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
@@ -1827,19 +1827,6 @@
       "trimCount": 2,
       "fuelTypes": [
         "Hafif Hibrit"
-      ],
-      "lastUpdated": "2026-01-30"
-    },
-    {
-      "brand": "Opel",
-      "brandId": "opel",
-      "model": "Astra",
-      "entryPrice": 2215000,
-      "topPrice": 2571000,
-      "trimCount": 2,
-      "fuelTypes": [
-        "Benzin",
-        "Dizel"
       ],
       "lastUpdated": "2026-01-30"
     },

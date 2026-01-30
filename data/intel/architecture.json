@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-30T07:57:35.199Z",
+  "generatedAt": "2026-01-30T08:49:41.485Z",
   "date": "2026-01-30",
   "ladders": [
     {
@@ -3429,39 +3429,6 @@
       "priceSpread": 702000,
       "priceSpreadPercent": 37.03,
       "trimCount": 4
-    },
-    {
-      "id": "opel-astra",
-      "model": "Astra",
-      "brand": "Opel",
-      "brandId": "opel",
-      "trims": [
-        {
-          "trim": "GS",
-          "price": 2215000,
-          "priceFormatted": "2.215.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.2 130 HP Benzin",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "GS",
-          "price": 2571000,
-          "priceFormatted": "2.571.000 TL",
-          "stepFromBase": 356000,
-          "stepPercent": 16.072234762979683,
-          "engine": "1.5 130 HP Dizel",
-          "transmission": "Otomatik",
-          "fuel": "Dizel"
-        }
-      ],
-      "basePrice": 2215000,
-      "topPrice": 2571000,
-      "priceSpread": 356000,
-      "priceSpreadPercent": 16.07,
-      "trimCount": 2
     },
     {
       "id": "opel-astra-elektrik",
@@ -8553,16 +8520,6 @@
           "trimCount": 1
         },
         {
-          "brand": "Opel",
-          "brandId": "opel",
-          "model": "Astra",
-          "basePrice": 2215000,
-          "topPrice": 2571000,
-          "basePriceFormatted": "₺2.215.000",
-          "topPriceFormatted": "₺2.571.000",
-          "trimCount": 2
-        },
-        {
           "brand": "Hyundai",
           "brandId": "hyundai",
           "model": "KONA",
@@ -9523,8 +9480,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8048487,
-      "avgTopPrice": 8255421
+      "avgBasePrice": 8092348,
+      "avgTopPrice": 8298161
     },
     {
       "segment": "SUV",
@@ -10563,9 +10520,9 @@
     }
   ],
   "summary": {
-    "totalModels": 235,
+    "totalModels": 234,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 296838,
-    "avgPriceSpreadPercent": 10.93
+    "avgPriceSpread": 296586,
+    "avgPriceSpreadPercent": 10.91
   }
 }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-01-30T07:57:35.101Z",
-  "totalVehicles": 512,
+  "generatedAt": "2026-01-30T08:49:41.387Z",
+  "totalVehicles": 510,
   "overallStats": {
-    "avgPrice": 4828853,
+    "avgPrice": 4838405,
     "minPrice": 575900,
     "maxPrice": 35229600,
-    "medianPrice": 2837950
+    "medianPrice": 2844850
   },
   "brandStats": [
     {
@@ -105,20 +105,20 @@
       "medianPrice": 2204999.99
     },
     {
-      "name": "Opel",
-      "vehicleCount": 21,
-      "avgPrice": 2290381,
-      "minPrice": 1505000,
-      "maxPrice": 3391000,
-      "medianPrice": 2157000
-    },
-    {
       "name": "Ford",
       "vehicleCount": 21,
       "avgPrice": 2464990,
       "minPrice": 1842100,
       "maxPrice": 3305300,
       "medianPrice": 2379100
+    },
+    {
+      "name": "Opel",
+      "vehicleCount": 19,
+      "avgPrice": 2279579,
+      "minPrice": 1505000,
+      "maxPrice": 3391000,
+      "medianPrice": 2085000
     },
     {
       "name": "Citroën",
@@ -164,14 +164,14 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 208,
+      "count": 207,
       "percentage": 40.6,
-      "avgPrice": 4854947
+      "avgPrice": 4867700
     },
     {
       "fuel": "Elektrik",
       "count": 125,
-      "percentage": 24.4,
+      "percentage": 24.5,
       "avgPrice": 4911740
     },
     {
@@ -182,9 +182,9 @@
     },
     {
       "fuel": "Dizel",
-      "count": 53,
-      "percentage": 10.4,
-      "avgPrice": 3904140
+      "count": 52,
+      "percentage": 10.2,
+      "avgPrice": 3929777
     },
     {
       "fuel": "Plug-in Hibrit",
@@ -214,9 +214,9 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 358,
-      "percentage": 69.9,
-      "avgPrice": 5722471
+      "count": 356,
+      "percentage": 69.8,
+      "avgPrice": 5741176
     },
     {
       "transmission": "DSG",
@@ -227,7 +227,7 @@
     {
       "transmission": "Manuel",
       "count": 35,
-      "percentage": 6.8,
+      "percentage": 6.9,
       "avgPrice": 1689511
     },
     {
@@ -255,22 +255,22 @@
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 239,
-      "percentage": 46.7
+      "count": 237,
+      "percentage": 46.5
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
       "count": 105,
-      "percentage": 20.5
+      "percentage": 20.6
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
       "count": 138,
-      "percentage": 27
+      "percentage": 27.1
     }
   ]
 }
