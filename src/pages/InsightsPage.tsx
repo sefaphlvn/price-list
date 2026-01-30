@@ -46,6 +46,7 @@ import {
 
 import { tokens } from '../theme/tokens';
 import { staggerContainer, staggerItem } from '../theme/animations';
+import { fetchFreshJson } from '../utils/fetchData';
 import DealScoreList from '../components/insights/DealScoreList';
 import TodaysDeals from '../components/insights/TodaysDeals';
 import OverpricedSection from '../components/insights/OverpricedSection';
@@ -100,27 +101,22 @@ export default function InsightsPage() {
   const [selectedFuel, setSelectedFuel] = useState<string>('all');
 
   useEffect(() => {
-    const controller = new AbortController();
-    const { signal } = controller;
+    let cancelled = false;
 
     const fetchInsights = async () => {
       try {
         setLoading(true);
-        const response = await fetch('./data/insights/latest.json', { signal });
-        if (!response.ok) {
-          throw new Error('Failed to load insights data');
-        }
-        const data: InsightsData = await response.json();
-        if (!signal.aborted) {
+        const data = await fetchFreshJson<InsightsData>('./data/insights/latest.json');
+        if (!cancelled) {
           setInsights(data);
           setError(null);
         }
       } catch (err) {
-        if ((err as Error).name !== 'AbortError') {
+        if (!cancelled) {
           setError(err instanceof Error ? err.message : 'Unknown error');
         }
       } finally {
-        if (!signal.aborted) {
+        if (!cancelled) {
           setLoading(false);
         }
       }
@@ -128,7 +124,9 @@ export default function InsightsPage() {
 
     fetchInsights();
 
-    return () => controller.abort();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   // Get unique brands and fuels

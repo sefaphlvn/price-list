@@ -102,6 +102,47 @@ function formatPrice(price: number): string {
   }).format(price);
 }
 
+// Normalize fuel type to Turkish (consistent with other generators)
+function normalizeFuel(fuel: string): string {
+  const f = fuel.toLowerCase().trim();
+
+  // Empty or unknown
+  if (!f) return 'Diger';
+
+  // Hybrid variants (check first as they may contain "benzin" or "elektrik")
+  if (f.includes('hybrid') || f.includes('hibrit') || f === 'benzin-elektrik' || f === 'elektrik - benzin' || f === 'elektrik-benzin') {
+    if (f.includes('plug') || f.includes('phev')) {
+      return 'Plug-in Hibrit';
+    }
+    if (f.includes('mild')) {
+      return 'Hafif Hibrit';
+    }
+    return 'Hibrit';
+  }
+
+  // LPG/CNG (check before benzin as "benzin-lpg" should be LPG)
+  if (f.includes('lpg') || f.includes('cng')) {
+    return 'LPG';
+  }
+
+  // Electric (pure)
+  if (f.includes('elektrik') || f.includes('electric') || f === 'ev' || f === 'bev') {
+    return 'Elektrik';
+  }
+
+  // Diesel
+  if (f.includes('dizel') || f.includes('diesel') || f.includes('tdi')) {
+    return 'Dizel';
+  }
+
+  // Petrol/Benzin
+  if (f.includes('benzin') || f.includes('petrol') || f.includes('tsi') || f.includes('tgi') || f.includes('tfsi')) {
+    return 'Benzin';
+  }
+
+  return 'Diger';
+}
+
 function detectSegment(model: string): string {
   const modelLower = model.toLowerCase();
 
@@ -202,7 +243,7 @@ export async function generateArchitecture(): Promise<ArchitectureData> {
         stepPercent: basePrice > 0 ? ((row.priceNumeric - basePrice) / basePrice) * 100 : 0,
         engine: row.engine,
         transmission: row.transmission,
-        fuel: row.fuel,
+        fuel: normalizeFuel(row.fuel),
       }));
 
       const ladderId = `${brandId}-${model}`.toLowerCase().replace(/\s+/g, '-');

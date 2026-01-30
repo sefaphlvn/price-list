@@ -97,6 +97,115 @@ function calculatePercentile(value: number, sortedValues: number[]): number {
 // Minimum segment size for meaningful comparison
 const MIN_SEGMENT_SIZE = 5;
 
+// Normalize fuel type to Turkish (consistent with stats.ts and gaps.ts)
+function normalizeFuel(fuel: string): string {
+  const f = fuel.toLowerCase().trim();
+
+  // Empty or unknown
+  if (!f) return 'Diger';
+
+  // Hybrid variants (check first as they may contain "benzin" or "elektrik")
+  if (f.includes('hybrid') || f.includes('hibrit') || f === 'benzin-elektrik' || f === 'elektrik - benzin' || f === 'elektrik-benzin') {
+    if (f.includes('plug') || f.includes('phev')) {
+      return 'Plug-in Hibrit';
+    }
+    if (f.includes('mild')) {
+      return 'Hafif Hibrit';
+    }
+    return 'Hibrit';
+  }
+
+  // LPG/CNG (check before benzin as "benzin-lpg" should be LPG)
+  if (f.includes('lpg') || f.includes('cng')) {
+    return 'LPG';
+  }
+
+  // Electric (pure)
+  if (f.includes('elektrik') || f.includes('electric') || f === 'ev' || f === 'bev') {
+    return 'Elektrik';
+  }
+
+  // Diesel
+  if (f.includes('dizel') || f.includes('diesel') || f.includes('tdi')) {
+    return 'Dizel';
+  }
+
+  // Petrol/Benzin
+  if (f.includes('benzin') || f.includes('petrol') || f.includes('tsi') || f.includes('tgi') || f.includes('tfsi')) {
+    return 'Benzin';
+  }
+
+  return 'Diger';
+}
+
+// Normalize transmission to Turkish (consistent with other generators)
+function normalizeTransmission(transmission: string): string {
+  const t = transmission.toLowerCase().trim();
+
+  // Empty or unknown
+  if (!t) return 'Diger';
+
+  // DSG/DCT/CVT are automatic variants
+  if (t.includes('dsg') || t.includes('dct') || t.includes('cvt')) {
+    return 'Otomatik';
+  }
+
+  // Tiptronic
+  if (t.includes('tiptronik') || t.includes('tiptronic')) {
+    return 'Otomatik';
+  }
+
+  // Manual variants
+  if (t.includes('manuel') || t.includes('manual') || t === 'mt' || t.includes('düz')) {
+    return 'Manuel';
+  }
+
+  // Automatic variants
+  if (t.includes('otomatik') || t.includes('automatic') || t === 'at' || t.includes('auto') || t.includes('edc')) {
+    return 'Otomatik';
+  }
+
+  return 'Diger';
+}
+
+// Detect fuel from engine string when raw fuel is not reliable
+function detectFuelFromEngine(engine: unknown, rawFuel: string): string {
+  // Guard against non-string engine values
+  if (typeof engine !== 'string') {
+    return normalizeFuel(rawFuel);
+  }
+  const e = engine.toLowerCase();
+
+  // Check engine for hybrid indicators
+  if (e.includes('mild hybrid') || e.includes('mhev')) {
+    return 'Hafif Hibrit';
+  }
+  if (e.includes('plug-in') || e.includes('phev')) {
+    return 'Plug-in Hibrit';
+  }
+  if (e.includes('hybrid') || e.includes('hibrit') || e.includes('e-tech')) {
+    return 'Hibrit';
+  }
+
+  // Check engine for electric
+  if (e.includes('electric') || e.includes('elektrik') || e.includes('ev') || e.includes('kwh')) {
+    return 'Elektrik';
+  }
+
+  // Fallback to normalizeFuel for raw fuel value
+  return normalizeFuel(rawFuel);
+}
+
+// Format price consistently
+function formatPriceConsistent(price: number): string {
+  return new Intl.NumberFormat('tr-TR', {
+    style: 'currency',
+    currency: 'TRY',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(price);
+}
+
 // Detect vehicle class from model name
 function detectVehicleClass(model: string): string {
   const modelLower = model.toLowerCase();
@@ -266,8 +375,10 @@ export async function generateInsights(): Promise<InsightsData> {
       if (row.priceNumeric > 0) {
         const vehicleClass = detectVehicleClass(row.model);
         const priceBand = getPriceBand(row.priceNumeric);
+        // Detect fuel from engine for more accuracy (e.g., "mild hybrid" in engine)
+        const detectedFuel = detectFuelFromEngine(row.engine, row.fuel);
         // Segment: VehicleClass-Fuel-PriceBand (e.g., "SUV-Dizel-premium")
-        const segment = `${vehicleClass}-${row.fuel || 'unknown'}-${priceBand}`;
+        const segment = `${vehicleClass}-${detectedFuel}-${priceBand}`;
         if (!segmentGroups.has(segment)) {
           segmentGroups.set(segment, []);
         }
@@ -305,7 +416,9 @@ export async function generateInsights(): Promise<InsightsData> {
       if (row.priceNumeric > 0) {
         const vehicleClass = detectVehicleClass(row.model);
         const priceBand = getPriceBand(row.priceNumeric);
-        const segment = `${vehicleClass}-${row.fuel || 'unknown'}-${priceBand}`;
+        // Detect fuel from engine for more accuracy (consistent with first pass)
+        const detectedFuel = detectFuelFromEngine(row.engine, row.fuel);
+        const segment = `${vehicleClass}-${detectedFuel}-${priceBand}`;
         const stats = segmentStats.get(segment);
         if (!stats) continue;
 
@@ -344,12 +457,12 @@ export async function generateInsights(): Promise<InsightsData> {
           model: row.model,
           trim: row.trim,
           engine: row.engine,
-          fuel: row.fuel,
-          transmission: row.transmission,
+          fuel: detectedFuel,
+          transmission: normalizeTransmission(row.transmission),
           vehicleClass,
           priceBand,
           price: row.priceNumeric,
-          priceFormatted: row.priceRaw,
+          priceFormatted: formatPriceConsistent(row.priceNumeric),
           dealScore,
           zScore: Math.round(zScore * 100) / 100,
           percentile,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-30T01:33:33.621Z",
+  "generatedAt": "2026-01-30T07:47:26.941Z",
   "totalVehicles": 512,
   "overallStats": {
     "avgPrice": 4828853,
@@ -164,21 +164,21 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 211,
-      "percentage": 41.2,
-      "avgPrice": 4818289
+      "count": 208,
+      "percentage": 40.6,
+      "avgPrice": 4854947
     },
     {
       "fuel": "Elektrik",
-      "count": 130,
-      "percentage": 25.4,
-      "avgPrice": 4816733
+      "count": 125,
+      "percentage": 24.4,
+      "avgPrice": 4911740
     },
     {
       "fuel": "Hibrit",
-      "count": 90,
-      "percentage": 17.6,
-      "avgPrice": 4434588
+      "count": 73,
+      "percentage": 14.3,
+      "avgPrice": 3714174
     },
     {
       "fuel": "Dizel",
@@ -193,10 +193,22 @@
       "avgPrice": 8992003
     },
     {
-      "fuel": "Bilinmiyor",
+      "fuel": "Hafif Hibrit",
+      "count": 22,
+      "percentage": 4.3,
+      "avgPrice": 6372086
+    },
+    {
+      "fuel": "Diger",
       "count": 5,
       "percentage": 1,
       "avgPrice": 3338000
+    },
+    {
+      "fuel": "LPG",
+      "count": 3,
+      "percentage": 0.6,
+      "avgPrice": 2276667
     }
   ],
   "transmissionStats": [

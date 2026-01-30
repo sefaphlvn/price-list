@@ -105,17 +105,28 @@ function calculateMedian(numbers: number[]): number {
 function normalizeFuel(fuel: string): string {
   const f = fuel.toLowerCase().trim();
 
-  // Electric
-  if (f.includes('elektrik') || f.includes('electric') || f === 'ev' || f === 'bev') {
-    return 'Elektrik';
-  }
+  // Empty or unknown
+  if (!f) return 'Diger';
 
-  // Hybrid variants
-  if (f.includes('hybrid') || f.includes('hibrit')) {
+  // Hybrid variants (check first as they may contain "benzin" or "elektrik")
+  if (f.includes('hybrid') || f.includes('hibrit') || f === 'benzin-elektrik' || f === 'elektrik - benzin' || f === 'elektrik-benzin') {
     if (f.includes('plug') || f.includes('phev')) {
       return 'Plug-in Hibrit';
     }
+    if (f.includes('mild')) {
+      return 'Hafif Hibrit';
+    }
     return 'Hibrit';
+  }
+
+  // LPG/CNG (check before benzin as "benzin-lpg" should be LPG)
+  if (f.includes('lpg') || f.includes('cng')) {
+    return 'LPG';
+  }
+
+  // Electric (pure)
+  if (f.includes('elektrik') || f.includes('electric') || f === 'ev' || f === 'bev') {
+    return 'Elektrik';
   }
 
   // Diesel
@@ -128,13 +139,7 @@ function normalizeFuel(fuel: string): string {
     return 'Benzin';
   }
 
-  // LPG/CNG
-  if (f.includes('lpg') || f.includes('cng')) {
-    return 'LPG';
-  }
-
-  // If nothing matches
-  return fuel.trim() || 'Bilinmiyor';
+  return 'Diger';
 }
 
 /**
