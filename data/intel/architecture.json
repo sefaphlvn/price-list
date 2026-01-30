@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-01-29T01:32:56.862Z",
-  "date": "2026-01-29",
+  "generatedAt": "2026-01-30T01:33:33.697Z",
+  "date": "2026-01-30",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -5891,30 +5891,20 @@
       "trims": [
         {
           "trim": "Performance",
-          "price": 25109100,
-          "priceFormatted": "25.109.100 TL",
+          "price": 28153600,
+          "priceFormatted": "28.153.600 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "4.0L 585 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
-        },
-        {
-          "trim": "Performance",
-          "price": 28153600,
-          "priceFormatted": "28.153.600 TL",
-          "stepFromBase": 3044500,
-          "stepPercent": 12.12508612415419,
-          "engine": "4.0L 585 HP",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
         }
       ],
-      "basePrice": 25109100,
+      "basePrice": 28153600,
       "topPrice": 28153600,
-      "priceSpread": 3044500,
-      "priceSpreadPercent": 12.13,
-      "trimCount": 2
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "mercedes-mercedes-amg-sl-43",
@@ -9465,16 +9455,6 @@
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
-          "model": "Mercedes-AMG G 63",
-          "basePrice": 25109100,
-          "topPrice": 28153600,
-          "basePriceFormatted": "₺25.109.100",
-          "topPriceFormatted": "₺28.153.600",
-          "trimCount": 2
-        },
-        {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
           "model": "Mercedes-AMG SL 63 4MATIC+",
           "basePrice": 25738600,
           "topPrice": 25738600,
@@ -9490,6 +9470,16 @@
           "topPrice": 26496600,
           "basePriceFormatted": "₺26.496.600",
           "topPriceFormatted": "₺26.496.600",
+          "trimCount": 1
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brandId": "mercedes",
+          "model": "Mercedes-AMG G 63",
+          "basePrice": 28153600,
+          "topPrice": 28153600,
+          "basePriceFormatted": "₺28.153.600",
+          "topPriceFormatted": "₺28.153.600",
           "trimCount": 1
         },
         {
@@ -9533,7 +9523,7 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8025767,
+      "avgBasePrice": 8048487,
       "avgTopPrice": 8255421
     },
     {
@@ -10575,7 +10565,7 @@
   "summary": {
     "totalModels": 235,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 309794,
-    "avgPriceSpreadPercent": 10.99
+    "avgPriceSpread": 296838,
+    "avgPriceSpreadPercent": 10.93
   }
 }

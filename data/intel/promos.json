@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-01-29T01:32:56.890Z",
-  "date": "2026-01-29",
+  "generatedAt": "2026-01-30T01:33:33.727Z",
+  "date": "2026-01-30",
   "summary": {
-    "totalPriceDrops": 2,
-    "totalRecentDrops": 2,
-    "avgDropPercent": 11.89,
+    "totalPriceDrops": 1,
+    "totalRecentDrops": 1,
+    "avgDropPercent": 12.96,
     "maxDropPercent": 12.96,
-    "brandsWithDrops": 2
+    "brandsWithDrops": 1
   },
   "priceDrops": [
     {
@@ -25,7 +25,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "daysSincePeak": 1,
+      "daysSincePeak": 2,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -42,42 +42,14 @@
         {
           "date": "2026-01-29",
           "price": 1740000
-        }
-      ]
-    },
-    {
-      "id": "mercedes-mercedes-amg-g-63-performance-4.0l-585-hp",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "Mercedes-AMG G 63",
-      "trim": "Performance",
-      "engine": "4.0L 585 HP",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "currentPrice": 25109100,
-      "currentPriceFormatted": "₺25.109.100",
-      "peakPrice": 28153600,
-      "peakPriceFormatted": "₺28.153.600",
-      "peakDate": "2026-01-28",
-      "dropAmount": 3044500,
-      "dropPercent": 10.81,
-      "daysSincePeak": 1,
-      "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 28153600
         },
         {
-          "date": "2026-01-28",
-          "price": 25109100
+          "date": "2026-01-30",
+          "price": 1999000
         },
         {
-          "date": "2026-01-29",
-          "price": 28153600
-        },
-        {
-          "date": "2026-01-29",
-          "price": 25109100
+          "date": "2026-01-30",
+          "price": 1740000
         }
       ]
     }
@@ -94,31 +66,11 @@
       "previousPrice": 1999000,
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "date": "2026-01-29",
-      "previousDate": "2026-01-29"
-    },
-    {
-      "id": "mercedes-mercedes-amg-g-63-performance-4.0l-585-hp-recent",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "Mercedes-AMG G 63",
-      "trim": "Performance",
-      "engine": "4.0L 585 HP",
-      "currentPrice": 25109100,
-      "previousPrice": 28153600,
-      "dropAmount": 3044500,
-      "dropPercent": 10.81,
-      "date": "2026-01-29",
-      "previousDate": "2026-01-29"
+      "date": "2026-01-30",
+      "previousDate": "2026-01-30"
     }
   ],
   "brandSummary": [
-    {
-      "brandId": "mercedes",
-      "brand": "Mercedes-Benz",
-      "dropCount": 1,
-      "avgDropPercent": 10.81
-    },
     {
       "brandId": "kia",
       "brand": "Kia",

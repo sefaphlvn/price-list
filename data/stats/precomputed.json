@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-01-29T01:32:56.792Z",
-  "totalVehicles": 513,
+  "generatedAt": "2026-01-30T01:33:33.621Z",
+  "totalVehicles": 512,
   "overallStats": {
-    "avgPrice": 4868385,
+    "avgPrice": 4828853,
     "minPrice": 575900,
     "maxPrice": 35229600,
-    "medianPrice": 2838700
+    "medianPrice": 2837950
   },
   "brandStats": [
     {
@@ -18,11 +18,11 @@
     },
     {
       "name": "Mercedes-Benz",
-      "vehicleCount": 52,
-      "avgPrice": 12639019,
+      "vehicleCount": 51,
+      "avgPrice": 12394508,
       "minPrice": 3159000,
       "maxPrice": 35229600,
-      "medianPrice": 9397600
+      "medianPrice": 9359000
     },
     {
       "name": "Hyundai",
@@ -164,26 +164,26 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 212,
-      "percentage": 41.3,
-      "avgPrice": 4914000
+      "count": 211,
+      "percentage": 41.2,
+      "avgPrice": 4818289
     },
     {
       "fuel": "Elektrik",
       "count": 130,
-      "percentage": 25.3,
+      "percentage": 25.4,
       "avgPrice": 4816733
     },
     {
       "fuel": "Hibrit",
       "count": 90,
-      "percentage": 17.5,
+      "percentage": 17.6,
       "avgPrice": 4434588
     },
     {
       "fuel": "Dizel",
       "count": 53,
-      "percentage": 10.3,
+      "percentage": 10.4,
       "avgPrice": 3904140
     },
     {
@@ -202,9 +202,9 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 359,
-      "percentage": 70,
-      "avgPrice": 5776473
+      "count": 358,
+      "percentage": 69.9,
+      "avgPrice": 5722471
     },
     {
       "transmission": "DSG",
@@ -221,7 +221,7 @@
     {
       "transmission": "DCT",
       "count": 31,
-      "percentage": 6,
+      "percentage": 6.1,
       "avgPrice": 2121129
     },
     {
@@ -237,14 +237,14 @@
       "min": 0,
       "max": 1500000,
       "count": 30,
-      "percentage": 5.8
+      "percentage": 5.9
     },
     {
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
       "count": 239,
-      "percentage": 46.6
+      "percentage": 46.7
     },
     {
       "segment": "premium",
@@ -257,8 +257,8 @@
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
-      "count": 139,
-      "percentage": 27.1
+      "count": 138,
+      "percentage": 27
     }
   ]
 }

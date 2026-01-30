@@ -1,23 +1,85 @@
 {
-  "generatedAt": "2026-01-29T01:32:56.823Z",
-  "date": "2026-01-29",
-  "previousDate": "2026-01-28",
+  "generatedAt": "2026-01-30T01:33:33.657Z",
+  "date": "2026-01-30",
+  "previousDate": "2026-01-29",
   "summary": {
-    "totalEvents": 0,
+    "totalEvents": 1,
     "newVehicles": 0,
     "removedVehicles": 0,
-    "priceIncreases": 0,
+    "priceIncreases": 1,
     "priceDecreases": 0,
-    "avgPriceChange": 0,
-    "avgPriceChangePercent": 0
+    "avgPriceChange": 3044500,
+    "avgPriceChangePercent": 12.13
   },
-  "events": [],
+  "events": [
+    {
+      "id": "mercedes-mercedes-amg-g-63-performance-4.0l-585-hp-price_increase-2026-01-30",
+      "type": "price_increase",
+      "vehicleId": "mercedes-benz-mercedes-amg-g-63-performance-4.0l-585-hp",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG G 63",
+      "trim": "Performance",
+      "engine": "4.0L 585 HP",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "oldPrice": 25109100,
+      "newPrice": 28153600,
+      "oldPriceFormatted": "25.109.100 TL",
+      "newPriceFormatted": "28.153.600 TL",
+      "priceChange": 3044500,
+      "priceChangePercent": 12.13,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29"
+    }
+  ],
   "volatility": {
-    "byBrand": [],
-    "byModel": []
+    "byBrand": [
+      {
+        "id": "mercedes",
+        "name": "Mercedes-Benz",
+        "changeCount": 1,
+        "avgChange": 3044500,
+        "avgChangePercent": 12.13,
+        "increaseCount": 1,
+        "decreaseCount": 0
+      }
+    ],
+    "byModel": [
+      {
+        "id": "mercedes-Mercedes-AMG G 63",
+        "name": "Mercedes-Benz Mercedes-AMG G 63",
+        "changeCount": 1,
+        "avgChange": 3044500,
+        "avgChangePercent": 12.13,
+        "increaseCount": 1,
+        "decreaseCount": 0
+      }
+    ]
   },
   "bigMoves": {
-    "topIncreases": [],
+    "topIncreases": [
+      {
+        "id": "mercedes-mercedes-amg-g-63-performance-4.0l-585-hp-price_increase-2026-01-30",
+        "type": "price_increase",
+        "vehicleId": "mercedes-benz-mercedes-amg-g-63-performance-4.0l-585-hp",
+        "brand": "Mercedes-Benz",
+        "brandId": "mercedes",
+        "model": "Mercedes-AMG G 63",
+        "trim": "Performance",
+        "engine": "4.0L 585 HP",
+        "fuel": "Benzin",
+        "transmission": "Otomatik",
+        "oldPrice": 25109100,
+        "newPrice": 28153600,
+        "oldPriceFormatted": "25.109.100 TL",
+        "newPriceFormatted": "28.153.600 TL",
+        "priceChange": 3044500,
+        "priceChangePercent": 12.13,
+        "date": "2026-01-30",
+        "previousDate": "2026-01-29"
+      }
+    ],
     "topDecreases": []
   }
 }
