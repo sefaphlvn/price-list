@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-30T08:47:58.188Z",
+  "collectedAt": "2026-01-30T19:56:59.132Z",
   "brand": "Renault",
   "brandId": "renault",
   "rowCount": 21,
@@ -69,7 +69,7 @@
       "trim": "evolution",
       "engine": "evolution Eco-G 120 hp",
       "transmission": "Manuel",
-      "fuel": "Benzin-LPG",
+      "fuel": "LPG",
       "priceRaw": "₺1.730.000,00",
       "priceNumeric": 1730000,
       "brand": "Renault"
@@ -89,7 +89,7 @@
       "trim": "evolution",
       "engine": "evolution hybrid 4x4 LPG 150 hp",
       "transmission": "Otomatik",
-      "fuel": "Benzin-LPG",
+      "fuel": "LPG",
       "priceRaw": "₺2.535.000,00",
       "priceNumeric": 2535000,
       "brand": "Renault"
@@ -119,7 +119,7 @@
       "trim": "techno",
       "engine": "techno hybrid 4x4 LPG 150 hp",
       "transmission": "Otomatik",
-      "fuel": "Benzin-LPG",
+      "fuel": "LPG",
       "priceRaw": "₺2.565.000,01",
       "priceNumeric": 2565000.01,
       "brand": "Renault"
@@ -199,7 +199,7 @@
       "trim": "esprit alpine",
       "engine": "esprit alpine full hybrid E-tech 200 hp",
       "transmission": "Otomatik",
-      "fuel": "Benzin-Elektrik",
+      "fuel": "Hybrid",
       "priceRaw": "₺3.360.000,01",
       "priceNumeric": 3360000.01,
       "brand": "Renault"
@@ -209,7 +209,7 @@
       "trim": "Esprit Alpine",
       "engine": "esprit alpine full hybrid E-Tech 200 hp",
       "transmission": "Otomatik",
-      "fuel": "Benzin-Elektrik",
+      "fuel": "Hybrid",
       "priceRaw": "₺3.750.000,00",
       "priceNumeric": 3750000,
       "brand": "Renault"

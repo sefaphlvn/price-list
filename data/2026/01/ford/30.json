@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-30T08:47:58.188Z",
+  "collectedAt": "2026-01-30T19:56:59.132Z",
   "brand": "Ford",
   "brandId": "ford",
   "rowCount": 21,
@@ -12,7 +12,8 @@
       "fuel": "Hybrid",
       "priceRaw": "1.842.100 TL",
       "priceNumeric": 1842100,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 1842100
     },
     {
       "model": "Yeni Puma",
@@ -22,7 +23,8 @@
       "fuel": "Hybrid",
       "priceRaw": "1.897.100 TL",
       "priceNumeric": 1897100,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 1897100
     },
     {
       "model": "Yeni Puma",
@@ -32,7 +34,8 @@
       "fuel": "Hybrid",
       "priceRaw": "2.076.700 TL",
       "priceNumeric": 2076700,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2076700
     },
     {
       "model": "Yeni Puma",
@@ -42,7 +45,8 @@
       "fuel": "Hybrid",
       "priceRaw": "2.138.700 TL",
       "priceNumeric": 2138700,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2138700
     },
     {
       "model": "Focus",
@@ -50,9 +54,11 @@
       "engine": "1.5L EcoBlue 115PS",
       "transmission": "Otomatik",
       "fuel": "Dizel",
-      "priceRaw": "2.545.900 TL",
-      "priceNumeric": 2545900,
-      "brand": "Ford"
+      "priceRaw": "2.292.400 TL",
+      "priceNumeric": 2292400,
+      "brand": "Ford",
+      "priceListNumeric": 2545900,
+      "priceCampaignNumeric": 2292400
     },
     {
       "model": "Focus",
@@ -60,9 +66,11 @@
       "engine": "1.5L EcoBlue 115PS",
       "transmission": "Otomatik",
       "fuel": "Dizel",
-      "priceRaw": "2.676.200 TL",
-      "priceNumeric": 2676200,
-      "brand": "Ford"
+      "priceRaw": "2.543.000 TL",
+      "priceNumeric": 2543000,
+      "brand": "Ford",
+      "priceListNumeric": 2676200,
+      "priceCampaignNumeric": 2543000
     },
     {
       "model": "Kuga",
@@ -72,7 +80,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.379.100 TL",
       "priceNumeric": 2379100,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2379100
     },
     {
       "model": "Kuga",
@@ -82,7 +91,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.660.500 TL",
       "priceNumeric": 2660500,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2660500
     },
     {
       "model": "Kuga",
@@ -92,7 +102,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.938.500 TL",
       "priceNumeric": 2938500,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2938500
     },
     {
       "model": "Kuga",
@@ -102,7 +113,8 @@
       "fuel": "Benzin",
       "priceRaw": "3.026.300 TL",
       "priceNumeric": 3026300,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 3026300
     },
     {
       "model": "Kuga",
@@ -112,7 +124,8 @@
       "fuel": "Benzin",
       "priceRaw": "3.026.300 TL",
       "priceNumeric": 3026300,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 3026300
     },
     {
       "model": "Kuga",
@@ -122,7 +135,8 @@
       "fuel": "Benzin",
       "priceRaw": "3.209.400 TL",
       "priceNumeric": 3209400,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 3209400
     },
     {
       "model": "Kuga",
@@ -132,7 +146,8 @@
       "fuel": "Benzin",
       "priceRaw": "3.305.300 TL",
       "priceNumeric": 3305300,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 3305300
     },
     {
       "model": "Yeni Journey Courier",
@@ -142,7 +157,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.192.000 TL",
       "priceNumeric": 2192000,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2192000
     },
     {
       "model": "Yeni Journey Courier",
@@ -152,7 +168,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.257.400 TL",
       "priceNumeric": 2257400,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2257400
     },
     {
       "model": "Yeni Journey Courier",
@@ -162,7 +179,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.754.900 TL",
       "priceNumeric": 2754900,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2754900
     },
     {
       "model": "Yeni Journey Courier",
@@ -172,7 +190,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.837.200 TL",
       "priceNumeric": 2837200,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2837200
     },
     {
       "model": "Puma Gen-E",
@@ -180,9 +199,11 @@
       "engine": "123KW",
       "transmission": "Otomatik",
       "fuel": "Elektrik",
-      "priceRaw": "1.938.700 TL",
-      "priceNumeric": 1938700,
-      "brand": "Ford"
+      "priceRaw": "1.880.900 TL",
+      "priceNumeric": 1880900,
+      "brand": "Ford",
+      "priceListNumeric": 1938700,
+      "priceCampaignNumeric": 1880900
     },
     {
       "model": "Puma Gen-E",
@@ -190,9 +211,11 @@
       "engine": "123KW",
       "transmission": "Otomatik",
       "fuel": "Elektrik",
-      "priceRaw": "1.996.500 TL",
-      "priceNumeric": 1996500,
-      "brand": "Ford"
+      "priceRaw": "1.937.000 TL",
+      "priceNumeric": 1937000,
+      "brand": "Ford",
+      "priceListNumeric": 1996500,
+      "priceCampaignNumeric": 1937000
     },
     {
       "model": "Yeni Elektrikli Journey Courier",
@@ -202,7 +225,8 @@
       "fuel": "Elektrik",
       "priceRaw": "2.003.100 TL",
       "priceNumeric": 2003100,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2003100
     },
     {
       "model": "Yeni Elektrikli Journey Courier",
@@ -212,7 +236,8 @@
       "fuel": "Elektrik",
       "priceRaw": "2.062.900 TL",
       "priceNumeric": 2062900,
-      "brand": "Ford"
+      "brand": "Ford",
+      "priceListNumeric": 2062900
     }
   ]
 }

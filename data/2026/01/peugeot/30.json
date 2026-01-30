@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-30T08:47:58.188Z",
+  "collectedAt": "2026-01-30T19:56:59.132Z",
   "brand": "Peugeot",
   "brandId": "peugeot",
   "rowCount": 30,
@@ -10,9 +10,11 @@
       "engine": "100 kW",
       "transmission": "",
       "fuel": "Elektrik",
-      "priceRaw": "1.999.500 TL",
-      "priceNumeric": 1999500,
-      "brand": "Peugeot"
+      "priceRaw": "1.960.000 TL",
+      "priceNumeric": 1960000,
+      "brand": "Peugeot",
+      "priceListNumeric": 1999500,
+      "priceCampaignNumeric": 1960000
     },
     {
       "model": "E-308",
@@ -22,7 +24,8 @@
       "fuel": "Elektrik",
       "priceRaw": "2.381.000 TL",
       "priceNumeric": 2381000,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 2381000
     },
     {
       "model": "2008",
@@ -32,7 +35,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.181.000 TL",
       "priceNumeric": 2181000,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 2181000
     },
     {
       "model": "2008",
@@ -40,9 +44,11 @@
       "engine": "1.2 Hybrid 145 HP",
       "transmission": "Otomatik",
       "fuel": "Hybrid",
-      "priceRaw": "2.329.000 TL",
-      "priceNumeric": 2329000,
-      "brand": "Peugeot"
+      "priceRaw": "2.283.000 TL",
+      "priceNumeric": 2283000,
+      "brand": "Peugeot",
+      "priceListNumeric": 2329000,
+      "priceCampaignNumeric": 2283000
     },
     {
       "model": "2008",
@@ -50,9 +56,11 @@
       "engine": "1.2 Hybrid 145 HP",
       "transmission": "Otomatik",
       "fuel": "Hybrid",
-      "priceRaw": "2.566.500 TL",
-      "priceNumeric": 2566500,
-      "brand": "Peugeot"
+      "priceRaw": "2.370.000 TL",
+      "priceNumeric": 2370000,
+      "brand": "Peugeot",
+      "priceListNumeric": 2566500,
+      "priceCampaignNumeric": 2370000
     },
     {
       "model": "E-2008",
@@ -62,7 +70,8 @@
       "fuel": "Elektrik",
       "priceRaw": "2.014.000 TL",
       "priceNumeric": 2014000,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 2014000
     },
     {
       "model": "E-2008",
@@ -70,9 +79,11 @@
       "engine": "115 kW",
       "transmission": "",
       "fuel": "Elektrik",
-      "priceRaw": "2.201.500 TL",
-      "priceNumeric": 2201500,
-      "brand": "Peugeot"
+      "priceRaw": "2.074.000 TL",
+      "priceNumeric": 2074000,
+      "brand": "Peugeot",
+      "priceListNumeric": 2201500,
+      "priceCampaignNumeric": 2074000
     },
     {
       "model": "E-2008",
@@ -80,9 +91,11 @@
       "engine": "115 kW",
       "transmission": "",
       "fuel": "Elektrik",
-      "priceRaw": "2.308.500 TL",
-      "priceNumeric": 2308500,
-      "brand": "Peugeot"
+      "priceRaw": "2.214.000 TL",
+      "priceNumeric": 2214000,
+      "brand": "Peugeot",
+      "priceListNumeric": 2308500,
+      "priceCampaignNumeric": 2214000
     },
     {
       "model": "408",
@@ -92,7 +105,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.175.000 TL",
       "priceNumeric": 2175000,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 2175000
     },
     {
       "model": "408",
@@ -102,7 +116,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.255.000 TL",
       "priceNumeric": 2255000,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 2255000
     },
     {
       "model": "408",
@@ -112,7 +127,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.670.000 TL",
       "priceNumeric": 2670000,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 2670000
     },
     {
       "model": "408",
@@ -120,9 +136,11 @@
       "engine": "1.2 Hybrid 145 HP",
       "transmission": "Otomatik",
       "fuel": "Hybrid",
-      "priceRaw": "2.376.000 TL",
-      "priceNumeric": 2376000,
-      "brand": "Peugeot"
+      "priceRaw": "2.336.000 TL",
+      "priceNumeric": 2336000,
+      "brand": "Peugeot",
+      "priceListNumeric": 2376000,
+      "priceCampaignNumeric": 2336000
     },
     {
       "model": "408",
@@ -130,9 +148,11 @@
       "engine": "1.2 Hybrid 145 HP",
       "transmission": "Otomatik",
       "fuel": "Hybrid",
-      "priceRaw": "2.592.000 TL",
-      "priceNumeric": 2592000,
-      "brand": "Peugeot"
+      "priceRaw": "2.545.000 TL",
+      "priceNumeric": 2545000,
+      "brand": "Peugeot",
+      "priceListNumeric": 2592000,
+      "priceCampaignNumeric": 2545000
     },
     {
       "model": "408",
@@ -140,9 +160,11 @@
       "engine": "1.2 Hybrid 145 HP",
       "transmission": "Otomatik",
       "fuel": "Hybrid",
-      "priceRaw": "2.820.500 TL",
-      "priceNumeric": 2820500,
-      "brand": "Peugeot"
+      "priceRaw": "2.710.000 TL",
+      "priceNumeric": 2710000,
+      "brand": "Peugeot",
+      "priceListNumeric": 2820500,
+      "priceCampaignNumeric": 2710000
     },
     {
       "model": "3008",
@@ -150,9 +172,11 @@
       "engine": "1.2 Hybrid 145 HP",
       "transmission": "Otomatik",
       "fuel": "Hybrid",
-      "priceRaw": "2.851.000 TL",
-      "priceNumeric": 2851000,
-      "brand": "Peugeot"
+      "priceRaw": "2.725.000 TL",
+      "priceNumeric": 2725000,
+      "brand": "Peugeot",
+      "priceListNumeric": 2851000,
+      "priceCampaignNumeric": 2725000
     },
     {
       "model": "3008",
@@ -160,9 +184,11 @@
       "engine": "1.2 Hybrid 145 HP",
       "transmission": "Otomatik",
       "fuel": "Hybrid",
-      "priceRaw": "3.259.000 TL",
-      "priceNumeric": 3259000,
-      "brand": "Peugeot"
+      "priceRaw": "2.950.000 TL",
+      "priceNumeric": 2950000,
+      "brand": "Peugeot",
+      "priceListNumeric": 3259000,
+      "priceCampaignNumeric": 2950000
     },
     {
       "model": "E-3008",
@@ -170,9 +196,11 @@
       "engine": "157 kW",
       "transmission": "",
       "fuel": "Elektrik",
-      "priceRaw": "3.318.000 TL",
-      "priceNumeric": 3318000,
-      "brand": "Peugeot"
+      "priceRaw": "3.120.000 TL",
+      "priceNumeric": 3120000,
+      "brand": "Peugeot",
+      "priceListNumeric": 3318000,
+      "priceCampaignNumeric": 3120000
     },
     {
       "model": "E-3008",
@@ -182,7 +210,8 @@
       "fuel": "Elektrik",
       "priceRaw": "3.514.500 TL",
       "priceNumeric": 3514500,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 3514500
     },
     {
       "model": "5008",
@@ -190,9 +219,11 @@
       "engine": "1.2 Hybrid 145 HP",
       "transmission": "Otomatik",
       "fuel": "Hybrid",
-      "priceRaw": "3.290.000 TL",
-      "priceNumeric": 3290000,
-      "brand": "Peugeot"
+      "priceRaw": "3.218.500 TL",
+      "priceNumeric": 3218500,
+      "brand": "Peugeot",
+      "priceListNumeric": 3290000,
+      "priceCampaignNumeric": 3218500
     },
     {
       "model": "5008",
@@ -200,9 +231,11 @@
       "engine": "1.2 Hybrid 145 HP",
       "transmission": "Otomatik",
       "fuel": "Hybrid",
-      "priceRaw": "3.493.000 TL",
-      "priceNumeric": 3493000,
-      "brand": "Peugeot"
+      "priceRaw": "3.422.500 TL",
+      "priceNumeric": 3422500,
+      "brand": "Peugeot",
+      "priceListNumeric": 3493000,
+      "priceCampaignNumeric": 3422500
     },
     {
       "model": "E-5008",
@@ -212,7 +245,8 @@
       "fuel": "Elektrik",
       "priceRaw": "3.502.000 TL",
       "priceNumeric": 3502000,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 3502000
     },
     {
       "model": "E-5008",
@@ -222,7 +256,8 @@
       "fuel": "Elektrik",
       "priceRaw": "3.644.000 TL",
       "priceNumeric": 3644000,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 3644000
     },
     {
       "model": "Rifter",
@@ -230,9 +265,11 @@
       "engine": "1.5 BlueHDi 130 HP",
       "transmission": "Manuel",
       "fuel": "Dizel",
-      "priceRaw": "1.543.500 TL",
-      "priceNumeric": 1543500,
-      "brand": "Peugeot"
+      "priceRaw": "1.506.000 TL",
+      "priceNumeric": 1506000,
+      "brand": "Peugeot",
+      "priceListNumeric": 1543500,
+      "priceCampaignNumeric": 1506000
     },
     {
       "model": "Rifter",
@@ -240,9 +277,11 @@
       "engine": "1.5 BlueHDi 130 HP",
       "transmission": "Otomatik",
       "fuel": "Dizel",
-      "priceRaw": "1.847.000 TL",
-      "priceNumeric": 1847000,
-      "brand": "Peugeot"
+      "priceRaw": "1.801.500 TL",
+      "priceNumeric": 1801500,
+      "brand": "Peugeot",
+      "priceListNumeric": 1847000,
+      "priceCampaignNumeric": 1801500
     },
     {
       "model": "Rifter",
@@ -250,9 +289,11 @@
       "engine": "1.5 BlueHDi 130 HP",
       "transmission": "Otomatik",
       "fuel": "Dizel",
-      "priceRaw": "2.077.000 TL",
-      "priceNumeric": 2077000,
-      "brand": "Peugeot"
+      "priceRaw": "2.026.000 TL",
+      "priceNumeric": 2026000,
+      "brand": "Peugeot",
+      "priceListNumeric": 2077000,
+      "priceCampaignNumeric": 2026000
     },
     {
       "model": "Partner Van",
@@ -262,7 +303,8 @@
       "fuel": "Dizel",
       "priceRaw": "1.237.500 TL",
       "priceNumeric": 1237500,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 1237500
     },
     {
       "model": "Partner Van",
@@ -270,9 +312,11 @@
       "engine": "1.5 BlueHDi 130 HP",
       "transmission": "Manuel",
       "fuel": "Dizel",
-      "priceRaw": "1.330.000 TL",
-      "priceNumeric": 1330000,
-      "brand": "Peugeot"
+      "priceRaw": "1.297.500 TL",
+      "priceNumeric": 1297500,
+      "brand": "Peugeot",
+      "priceListNumeric": 1330000,
+      "priceCampaignNumeric": 1297500
     },
     {
       "model": "Partner Van",
@@ -280,9 +324,11 @@
       "engine": "1.5 BlueHDi 130 HP",
       "transmission": "Otomatik",
       "fuel": "Dizel",
-      "priceRaw": "1.405.000 TL",
-      "priceNumeric": 1405000,
-      "brand": "Peugeot"
+      "priceRaw": "1.371.000 TL",
+      "priceNumeric": 1371000,
+      "brand": "Peugeot",
+      "priceListNumeric": 1405000,
+      "priceCampaignNumeric": 1371000
     },
     {
       "model": "Expert Traveller",
@@ -292,7 +338,8 @@
       "fuel": "Dizel",
       "priceRaw": "2.290.500 TL",
       "priceNumeric": 2290500,
-      "brand": "Peugeot"
+      "brand": "Peugeot",
+      "priceListNumeric": 2290500
     },
     {
       "model": "Expert Traveller",
@@ -300,9 +347,11 @@
       "engine": "2.2 BlueHDi 180 HP",
       "transmission": "Otomatik",
       "fuel": "Dizel",
-      "priceRaw": "2.420.000 TL",
-      "priceNumeric": 2420000,
-      "brand": "Peugeot"
+      "priceRaw": "2.360.500 TL",
+      "priceNumeric": 2360500,
+      "brand": "Peugeot",
+      "priceListNumeric": 2420000,
+      "priceCampaignNumeric": 2360500
     }
   ]
 }

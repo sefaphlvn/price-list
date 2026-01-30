@@ -1,14 +1,119 @@
 {
-  "generatedAt": "2026-01-30T08:49:41.517Z",
+  "generatedAt": "2026-01-30T19:58:52.754Z",
   "date": "2026-01-30",
   "summary": {
-    "totalPriceDrops": 1,
-    "totalRecentDrops": 1,
-    "avgDropPercent": 12.96,
-    "maxDropPercent": 12.96,
-    "brandsWithDrops": 1
+    "totalPriceDrops": 18,
+    "totalRecentDrops": 41,
+    "avgDropPercent": 8.72,
+    "maxDropPercent": 14.18,
+    "brandsWithDrops": 5
   },
   "priceDrops": [
+    {
+      "id": "fiat-topolino-2025-topolino-6-kw/8-hp---5.5kwh",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2025",
+      "trim": "Topolino",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 544900,
+      "currentPriceFormatted": "₺544.900",
+      "peakPrice": 634900,
+      "peakPriceFormatted": "₺634.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 90000,
+      "dropPercent": 14.18,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 634900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 634900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 544900
+        }
+      ],
+      "listPrice": 634900,
+      "campaignPrice": 544900,
+      "campaignDiscount": 14.2
+    },
+    {
+      "id": "fiat-topolino-2026-topolino-6-kw/8-hp---5.5kwh",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2026",
+      "trim": "Topolino",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 559900,
+      "currentPriceFormatted": "₺559.900",
+      "peakPrice": 649900,
+      "peakPriceFormatted": "₺649.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 90000,
+      "dropPercent": 13.85,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 649900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 649900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 559900
+        }
+      ],
+      "listPrice": 649900,
+      "campaignPrice": 559900,
+      "campaignDiscount": 13.8
+    },
+    {
+      "id": "fiat-topolino-2025-topolino-plus-6-kw/8-hp---5.5kwh",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2025",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 589900,
+      "currentPriceFormatted": "₺589.900",
+      "peakPrice": 679900,
+      "peakPriceFormatted": "₺679.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 90000,
+      "dropPercent": 13.24,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 679900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 679900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 589900
+        }
+      ],
+      "listPrice": 679900,
+      "campaignPrice": 589900,
+      "campaignDiscount": 13.2
+    },
     {
       "id": "kia-stonic-cool-100-ps",
       "brand": "Kia",
@@ -52,9 +157,550 @@
           "price": 1740000
         }
       ]
+    },
+    {
+      "id": "fiat-topolino-2026-topolino-plus-6-kw/8-hp---5.5kwh",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2026",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 604900,
+      "currentPriceFormatted": "₺604.900",
+      "peakPrice": 694900,
+      "peakPriceFormatted": "₺694.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 90000,
+      "dropPercent": 12.95,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 694900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 694900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 604900
+        }
+      ],
+      "listPrice": 694900,
+      "campaignPrice": 604900,
+      "campaignDiscount": 13
+    },
+    {
+      "id": "ford-focus-yeni-titanium-stil-1.5l-ecoblue-115ps",
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Focus",
+      "trim": "Yeni Titanium Stil",
+      "engine": "1.5L EcoBlue 115PS",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "currentPrice": 2292400,
+      "currentPriceFormatted": "₺2.292.400",
+      "peakPrice": 2545900,
+      "peakPriceFormatted": "₺2.545.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 253500,
+      "dropPercent": 9.96,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 2545900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 2545900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 2292400
+        }
+      ],
+      "listPrice": 2545900,
+      "campaignPrice": 2292400,
+      "campaignDiscount": 10
+    },
+    {
+      "id": "peugeot-3008-gt-1.2-hybrid-145-hp",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "3008",
+      "trim": "Gt",
+      "engine": "1.2 Hybrid 145 HP",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "currentPrice": 2950000,
+      "currentPriceFormatted": "₺2.950.000",
+      "peakPrice": 3259000,
+      "peakPriceFormatted": "₺3.259.000",
+      "peakDate": "2026-01-28",
+      "dropAmount": 309000,
+      "dropPercent": 9.48,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 3259000
+        },
+        {
+          "date": "2026-01-29",
+          "price": 3259000
+        },
+        {
+          "date": "2026-01-30",
+          "price": 2950000
+        }
+      ],
+      "listPrice": 3259000,
+      "campaignPrice": 2950000,
+      "campaignDiscount": 9.5
+    },
+    {
+      "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-gsr*",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Sedan",
+      "trim": "Urban",
+      "engine": "1.6 M.Jet 130 HP GSR*",
+      "fuel": "Dizel",
+      "transmission": "Manuel",
+      "currentPrice": 1429900,
+      "currentPriceFormatted": "₺1.429.900",
+      "peakPrice": 1569900,
+      "peakPriceFormatted": "₺1.569.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 140000,
+      "dropPercent": 8.92,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 1569900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 1569900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 1429900
+        }
+      ],
+      "listPrice": 1569900,
+      "campaignPrice": 1429900,
+      "campaignDiscount": 8.9
+    },
+    {
+      "id": "peugeot-2008-gt-1.2-hybrid-145-hp",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "2008",
+      "trim": "Gt",
+      "engine": "1.2 Hybrid 145 HP",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "currentPrice": 2370000,
+      "currentPriceFormatted": "₺2.370.000",
+      "peakPrice": 2566500,
+      "peakPriceFormatted": "₺2.566.500",
+      "peakDate": "2026-01-28",
+      "dropAmount": 196500,
+      "dropPercent": 7.66,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 2566500
+        },
+        {
+          "date": "2026-01-29",
+          "price": 2566500
+        },
+        {
+          "date": "2026-01-30",
+          "price": 2370000
+        }
+      ],
+      "listPrice": 2566500,
+      "campaignPrice": 2370000,
+      "campaignDiscount": 7.7
+    },
+    {
+      "id": "fiat-500e-cabrio-87-kw/118-hp---42kwh",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "500e",
+      "trim": "Cabrio",
+      "engine": "87 kW/118 HP - 42kWh",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 1945900,
+      "currentPriceFormatted": "₺1.945.900",
+      "peakPrice": 2075900,
+      "peakPriceFormatted": "₺2.075.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 130000,
+      "dropPercent": 6.26,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 2075900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 2075900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 1945900
+        }
+      ],
+      "listPrice": 2075900,
+      "campaignPrice": 1945900,
+      "campaignDiscount": 6.3
+    },
+    {
+      "id": "fiat-500e-3+1-87-kw/118-hp---42kwh",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "500e",
+      "trim": "3+1",
+      "engine": "87 kW/118 HP - 42kWh",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 1895900,
+      "currentPriceFormatted": "₺1.895.900",
+      "peakPrice": 2019900,
+      "peakPriceFormatted": "₺2.019.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 124000,
+      "dropPercent": 6.14,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 2019900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 2019900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 1895900
+        }
+      ],
+      "listPrice": 2019900,
+      "campaignPrice": 1895900,
+      "campaignDiscount": 6.1
+    },
+    {
+      "id": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik",
+      "brand": "Honda",
+      "brandId": "honda",
+      "model": "HR-V Hybrid",
+      "trim": "Elegance",
+      "engine": "1.5L Hibrit Otomatik",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "currentPrice": 2389000,
+      "currentPriceFormatted": "₺2.389.000",
+      "peakPrice": 2544000,
+      "peakPriceFormatted": "₺2.544.000",
+      "peakDate": "2026-01-28",
+      "dropAmount": 155000,
+      "dropPercent": 6.09,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 2544000
+        },
+        {
+          "date": "2026-01-29",
+          "price": 2544000
+        },
+        {
+          "date": "2026-01-30",
+          "price": 2389000
+        }
+      ],
+      "listPrice": 2544000,
+      "campaignPrice": 2389000,
+      "campaignDiscount": 6.1
+    },
+    {
+      "id": "fiat-grande-panda-icon-1.2-mhev-110hp-edct",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "trim": "Icon",
+      "engine": "1.2 MHEV 110HP eDCT",
+      "fuel": "Hafif Hibrit",
+      "transmission": "Otomatik",
+      "currentPrice": 1549900,
+      "currentPriceFormatted": "₺1.549.900",
+      "peakPrice": 1649900,
+      "peakPriceFormatted": "₺1.649.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 100000,
+      "dropPercent": 6.06,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 1649900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 1649900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 1549900
+        }
+      ],
+      "listPrice": 1649900,
+      "campaignPrice": 1549900,
+      "campaignDiscount": 6.1
+    },
+    {
+      "id": "peugeot-e-3008-allure-157-kw",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-3008",
+      "trim": "Allure",
+      "engine": "157 kW",
+      "fuel": "Elektrik",
+      "transmission": "",
+      "currentPrice": 3120000,
+      "currentPriceFormatted": "₺3.120.000",
+      "peakPrice": 3318000,
+      "peakPriceFormatted": "₺3.318.000",
+      "peakDate": "2026-01-28",
+      "dropAmount": 198000,
+      "dropPercent": 5.97,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 3318000
+        },
+        {
+          "date": "2026-01-29",
+          "price": 3318000
+        },
+        {
+          "date": "2026-01-30",
+          "price": 3120000
+        }
+      ],
+      "listPrice": 3318000,
+      "campaignPrice": 3120000,
+      "campaignDiscount": 6
+    },
+    {
+      "id": "fiat-500e-giorgio-armani-87-kw/118-hp---42kwh",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "500e",
+      "trim": "Giorgio Armani",
+      "engine": "87 kW/118 HP - 42kWh",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 2045900,
+      "currentPriceFormatted": "₺2.045.900",
+      "peakPrice": 2175900,
+      "peakPriceFormatted": "₺2.175.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 130000,
+      "dropPercent": 5.97,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 2175900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 2175900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 2045900
+        }
+      ],
+      "listPrice": 2175900,
+      "campaignPrice": 2045900,
+      "campaignDiscount": 6
+    },
+    {
+      "id": "peugeot-e-2008-allure-115-kw",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-2008",
+      "trim": "Allure",
+      "engine": "115 kW",
+      "fuel": "Elektrik",
+      "transmission": "",
+      "currentPrice": 2074000,
+      "currentPriceFormatted": "₺2.074.000",
+      "peakPrice": 2201500,
+      "peakPriceFormatted": "₺2.201.500",
+      "peakDate": "2026-01-28",
+      "dropAmount": 127500,
+      "dropPercent": 5.79,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 2201500
+        },
+        {
+          "date": "2026-01-29",
+          "price": 2201500
+        },
+        {
+          "date": "2026-01-30",
+          "price": 2074000
+        }
+      ],
+      "listPrice": 2201500,
+      "campaignPrice": 2074000,
+      "campaignDiscount": 5.8
+    },
+    {
+      "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-dct-gsr*",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Sedan",
+      "trim": "Urban",
+      "engine": "1.6 M.Jet 130 HP DCT GSR*",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "currentPrice": 1639900,
+      "currentPriceFormatted": "₺1.639.900",
+      "peakPrice": 1739900,
+      "peakPriceFormatted": "₺1.739.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 100000,
+      "dropPercent": 5.75,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 1739900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 1739900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 1639900
+        }
+      ],
+      "listPrice": 1739900,
+      "campaignPrice": 1639900,
+      "campaignDiscount": 5.7
+    },
+    {
+      "id": "fiat-grande-panda-la-prima-1.2-mhev-110hp-edct",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "trim": "La Prima",
+      "engine": "1.2 MHEV 110HP eDCT",
+      "fuel": "Hafif Hibrit",
+      "transmission": "Otomatik",
+      "currentPrice": 1649900,
+      "currentPriceFormatted": "₺1.649.900",
+      "peakPrice": 1749900,
+      "peakPriceFormatted": "₺1.749.900",
+      "peakDate": "2026-01-28",
+      "dropAmount": 100000,
+      "dropPercent": 5.71,
+      "daysSincePeak": 2,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 1749900
+        },
+        {
+          "date": "2026-01-29",
+          "price": 1749900
+        },
+        {
+          "date": "2026-01-30",
+          "price": 1649900
+        }
+      ],
+      "listPrice": 1749900,
+      "campaignPrice": 1649900,
+      "campaignDiscount": 5.7
     }
   ],
   "recentDrops": [
+    {
+      "id": "fiat-topolino-2025-topolino-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2025",
+      "trim": "Topolino",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 544900,
+      "previousPrice": 634900,
+      "dropAmount": 90000,
+      "dropPercent": 14.18,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 634900,
+      "campaignPrice": 544900,
+      "campaignDiscount": 14.2
+    },
+    {
+      "id": "fiat-topolino-2026-topolino-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2026",
+      "trim": "Topolino",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 559900,
+      "previousPrice": 649900,
+      "dropAmount": 90000,
+      "dropPercent": 13.85,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 649900,
+      "campaignPrice": 559900,
+      "campaignDiscount": 13.8
+    },
+    {
+      "id": "fiat-topolino-2025-topolino-plus-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2025",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 589900,
+      "previousPrice": 679900,
+      "dropAmount": 90000,
+      "dropPercent": 13.24,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 679900,
+      "campaignPrice": 589900,
+      "campaignDiscount": 13.2
+    },
     {
       "id": "kia-stonic-cool-100-ps-recent",
       "brand": "Kia",
@@ -68,9 +714,475 @@
       "dropPercent": 12.96,
       "date": "2026-01-30",
       "previousDate": "2026-01-30"
+    },
+    {
+      "id": "fiat-topolino-2026-topolino-plus-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2026",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 604900,
+      "previousPrice": 694900,
+      "dropAmount": 90000,
+      "dropPercent": 12.95,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 694900,
+      "campaignPrice": 604900,
+      "campaignDiscount": 13
+    },
+    {
+      "id": "ford-focus-yeni-titanium-stil-1.5l-ecoblue-115ps-recent",
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Focus",
+      "trim": "Yeni Titanium Stil",
+      "engine": "1.5L EcoBlue 115PS",
+      "currentPrice": 2292400,
+      "previousPrice": 2545900,
+      "dropAmount": 253500,
+      "dropPercent": 9.96,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2545900,
+      "campaignPrice": 2292400,
+      "campaignDiscount": 10
+    },
+    {
+      "id": "peugeot-3008-gt-1.2-hybrid-145-hp-recent",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "3008",
+      "trim": "Gt",
+      "engine": "1.2 Hybrid 145 HP",
+      "currentPrice": 2950000,
+      "previousPrice": 3259000,
+      "dropAmount": 309000,
+      "dropPercent": 9.48,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 3259000,
+      "campaignPrice": 2950000,
+      "campaignDiscount": 9.5
+    },
+    {
+      "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-gsr*-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Sedan",
+      "trim": "Urban",
+      "engine": "1.6 M.Jet 130 HP GSR*",
+      "currentPrice": 1429900,
+      "previousPrice": 1569900,
+      "dropAmount": 140000,
+      "dropPercent": 8.92,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 1569900,
+      "campaignPrice": 1429900,
+      "campaignDiscount": 8.9
+    },
+    {
+      "id": "peugeot-2008-gt-1.2-hybrid-145-hp-recent",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "2008",
+      "trim": "Gt",
+      "engine": "1.2 Hybrid 145 HP",
+      "currentPrice": 2370000,
+      "previousPrice": 2566500,
+      "dropAmount": 196500,
+      "dropPercent": 7.66,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2566500,
+      "campaignPrice": 2370000,
+      "campaignDiscount": 7.7
+    },
+    {
+      "id": "fiat-500e-cabrio-87-kw/118-hp---42kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "500e",
+      "trim": "Cabrio",
+      "engine": "87 kW/118 HP - 42kWh",
+      "currentPrice": 1945900,
+      "previousPrice": 2075900,
+      "dropAmount": 130000,
+      "dropPercent": 6.26,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2075900,
+      "campaignPrice": 1945900,
+      "campaignDiscount": 6.3
+    },
+    {
+      "id": "fiat-500e-3+1-87-kw/118-hp---42kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "500e",
+      "trim": "3+1",
+      "engine": "87 kW/118 HP - 42kWh",
+      "currentPrice": 1895900,
+      "previousPrice": 2019900,
+      "dropAmount": 124000,
+      "dropPercent": 6.14,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2019900,
+      "campaignPrice": 1895900,
+      "campaignDiscount": 6.1
+    },
+    {
+      "id": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik-recent",
+      "brand": "Honda",
+      "brandId": "honda",
+      "model": "HR-V Hybrid",
+      "trim": "Elegance",
+      "engine": "1.5L Hibrit Otomatik",
+      "currentPrice": 2389000,
+      "previousPrice": 2544000,
+      "dropAmount": 155000,
+      "dropPercent": 6.09,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2544000,
+      "campaignPrice": 2389000,
+      "campaignDiscount": 6.1
+    },
+    {
+      "id": "fiat-grande-panda-icon-1.2-mhev-110hp-edct-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "trim": "Icon",
+      "engine": "1.2 MHEV 110HP eDCT",
+      "currentPrice": 1549900,
+      "previousPrice": 1649900,
+      "dropAmount": 100000,
+      "dropPercent": 6.06,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 1649900,
+      "campaignPrice": 1549900,
+      "campaignDiscount": 6.1
+    },
+    {
+      "id": "peugeot-e-3008-allure-157-kw-recent",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-3008",
+      "trim": "Allure",
+      "engine": "157 kW",
+      "currentPrice": 3120000,
+      "previousPrice": 3318000,
+      "dropAmount": 198000,
+      "dropPercent": 5.97,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 3318000,
+      "campaignPrice": 3120000,
+      "campaignDiscount": 6
+    },
+    {
+      "id": "fiat-500e-giorgio-armani-87-kw/118-hp---42kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "500e",
+      "trim": "Giorgio Armani",
+      "engine": "87 kW/118 HP - 42kWh",
+      "currentPrice": 2045900,
+      "previousPrice": 2175900,
+      "dropAmount": 130000,
+      "dropPercent": 5.97,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2175900,
+      "campaignPrice": 2045900,
+      "campaignDiscount": 6
+    },
+    {
+      "id": "peugeot-e-2008-allure-115-kw-recent",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-2008",
+      "trim": "Allure",
+      "engine": "115 kW",
+      "currentPrice": 2074000,
+      "previousPrice": 2201500,
+      "dropAmount": 127500,
+      "dropPercent": 5.79,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2201500,
+      "campaignPrice": 2074000,
+      "campaignDiscount": 5.8
+    },
+    {
+      "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-dct-gsr*-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Egea Sedan",
+      "trim": "Urban",
+      "engine": "1.6 M.Jet 130 HP DCT GSR*",
+      "currentPrice": 1639900,
+      "previousPrice": 1739900,
+      "dropAmount": 100000,
+      "dropPercent": 5.75,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 1739900,
+      "campaignPrice": 1639900,
+      "campaignDiscount": 5.7
+    },
+    {
+      "id": "fiat-grande-panda-la-prima-1.2-mhev-110hp-edct-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "trim": "La Prima",
+      "engine": "1.2 MHEV 110HP eDCT",
+      "currentPrice": 1649900,
+      "previousPrice": 1749900,
+      "dropAmount": 100000,
+      "dropPercent": 5.71,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 1749900,
+      "campaignPrice": 1649900,
+      "campaignDiscount": 5.7
+    },
+    {
+      "id": "ford-focus-yeni-titanium-x-1.5l-ecoblue-115ps-recent",
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Focus",
+      "trim": "Yeni Titanium X",
+      "engine": "1.5L EcoBlue 115PS",
+      "currentPrice": 2543000,
+      "previousPrice": 2676200,
+      "dropAmount": 133200,
+      "dropPercent": 4.98,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2676200,
+      "campaignPrice": 2543000,
+      "campaignDiscount": 5
+    },
+    {
+      "id": "nissan-juke-platinum-1.0-dig-t-115ps-recent",
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "JUKE",
+      "trim": "Platinum",
+      "engine": "1.0 DIG-T 115PS",
+      "currentPrice": 2071500,
+      "previousPrice": 2171500,
+      "dropAmount": 100000,
+      "dropPercent": 4.61,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2171500,
+      "campaignPrice": 2071500,
+      "campaignDiscount": 4.6
+    },
+    {
+      "id": "peugeot-3008-allure-1.2-hybrid-145-hp-recent",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "3008",
+      "trim": "Allure",
+      "engine": "1.2 Hybrid 145 HP",
+      "currentPrice": 2725000,
+      "previousPrice": 2851000,
+      "dropAmount": 126000,
+      "dropPercent": 4.42,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2851000,
+      "campaignPrice": 2725000,
+      "campaignDiscount": 4.4
+    },
+    {
+      "id": "nissan-juke-n-design-1.0-dig-t-115ps-recent",
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "JUKE",
+      "trim": "N-Design",
+      "engine": "1.0 DIG-T 115PS",
+      "currentPrice": 2190900,
+      "previousPrice": 2290900,
+      "dropAmount": 100000,
+      "dropPercent": 4.37,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2290900,
+      "campaignPrice": 2190900,
+      "campaignDiscount": 4.4
+    },
+    {
+      "id": "nissan-juke-n-sport-1.0-dig-t-115ps-recent",
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "JUKE",
+      "trim": "N-Sport",
+      "engine": "1.0 DIG-T 115PS",
+      "currentPrice": 2190900,
+      "previousPrice": 2290900,
+      "dropAmount": 100000,
+      "dropPercent": 4.37,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2290900,
+      "campaignPrice": 2190900,
+      "campaignDiscount": 4.4
+    },
+    {
+      "id": "nissan-juke-platinum-premium-1.0-dig-t-115ps-recent",
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "JUKE",
+      "trim": "Platinum Premium",
+      "engine": "1.0 DIG-T 115PS",
+      "currentPrice": 2265600,
+      "previousPrice": 2365600,
+      "dropAmount": 100000,
+      "dropPercent": 4.23,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2365600,
+      "campaignPrice": 2265600,
+      "campaignDiscount": 4.2
+    },
+    {
+      "id": "nissan-qashqai-e-power-n-design-e-power-190ps-recent",
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "QASHQAI e-POWER",
+      "trim": "N-Design",
+      "engine": "e-POWER 190PS",
+      "currentPrice": 3457600,
+      "previousPrice": 3607600,
+      "dropAmount": 150000,
+      "dropPercent": 4.16,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 3607600,
+      "campaignPrice": 3457600,
+      "campaignDiscount": 4.2
+    },
+    {
+      "id": "peugeot-e-2008-gt-115-kw-recent",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "E-2008",
+      "trim": "Gt",
+      "engine": "115 kW",
+      "currentPrice": 2214000,
+      "previousPrice": 2308500,
+      "dropAmount": 94500,
+      "dropPercent": 4.09,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2308500,
+      "campaignPrice": 2214000,
+      "campaignDiscount": 4.1
+    },
+    {
+      "id": "nissan-qashqai-designpack-1.3-dig-t-mild-hybrid-158ps-recent",
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "QASHQAI",
+      "trim": "Designpack",
+      "engine": "1.3 DIG-T Mild Hybrid 158PS",
+      "currentPrice": 2381400,
+      "previousPrice": 2481400,
+      "dropAmount": 100000,
+      "dropPercent": 4.03,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2481400,
+      "campaignPrice": 2381400,
+      "campaignDiscount": 4
+    },
+    {
+      "id": "peugeot-408-gt-1.2-hybrid-145-hp-recent",
+      "brand": "Peugeot",
+      "brandId": "peugeot",
+      "model": "408",
+      "trim": "Gt",
+      "engine": "1.2 Hybrid 145 HP",
+      "currentPrice": 2710000,
+      "previousPrice": 2820500,
+      "dropAmount": 110500,
+      "dropPercent": 3.92,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2820500,
+      "campaignPrice": 2710000,
+      "campaignDiscount": 3.9
+    },
+    {
+      "id": "nissan-qashqai-skypack-1.3-dig-t-mild-hybrid-158ps-recent",
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "QASHQAI",
+      "trim": "Skypack",
+      "engine": "1.3 DIG-T Mild Hybrid 158PS",
+      "currentPrice": 2862900,
+      "previousPrice": 2962900,
+      "dropAmount": 100000,
+      "dropPercent": 3.38,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 2962900,
+      "campaignPrice": 2862900,
+      "campaignDiscount": 3.4
+    },
+    {
+      "id": "nissan-townstar-van-tekna-1.3-dig-t-130ps-recent",
+      "brand": "Nissan",
+      "brandId": "nissan",
+      "model": "TOWNSTAR VAN",
+      "trim": "Tekna",
+      "engine": "1.3 DIG-T 130PS",
+      "currentPrice": 1453800,
+      "previousPrice": 1503800,
+      "dropAmount": 50000,
+      "dropPercent": 3.32,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 1503800,
+      "campaignPrice": 1453800,
+      "campaignDiscount": 3.3
     }
   ],
   "brandSummary": [
+    {
+      "brandId": "fiat",
+      "brand": "Fiat",
+      "dropCount": 11,
+      "avgDropPercent": 9
+    },
+    {
+      "brandId": "peugeot",
+      "brand": "Peugeot",
+      "dropCount": 4,
+      "avgDropPercent": 7.22
+    },
+    {
+      "brandId": "ford",
+      "brand": "Ford",
+      "dropCount": 1,
+      "avgDropPercent": 9.96
+    },
+    {
+      "brandId": "honda",
+      "brand": "Honda",
+      "dropCount": 1,
+      "avgDropPercent": 6.09
+    },
     {
       "brandId": "kia",
       "brand": "Kia",

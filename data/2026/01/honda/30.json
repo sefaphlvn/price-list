@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-30T08:47:58.188Z",
+  "collectedAt": "2026-01-30T19:56:59.132Z",
   "brand": "Honda",
   "brandId": "honda",
   "rowCount": 6,
@@ -9,40 +9,45 @@
       "trim": "Crosstar",
       "engine": "1.5L Hibrit Otomatik",
       "transmission": "Otomatik",
-      "fuel": "Hibrit",
+      "fuel": "Hybrid",
       "priceRaw": "2.380.000 TL",
       "priceNumeric": 2380000,
-      "brand": "Honda"
+      "brand": "Honda",
+      "priceListNumeric": 2380000
     },
     {
       "model": "HR-V Hybrid",
       "trim": "Elegance",
       "engine": "1.5L Hibrit Otomatik",
       "transmission": "Otomatik",
-      "fuel": "Hibrit",
-      "priceRaw": "2.544.000 TL",
-      "priceNumeric": 2544000,
-      "brand": "Honda"
+      "fuel": "Hybrid",
+      "priceRaw": "2.389.000 TL",
+      "priceNumeric": 2389000,
+      "brand": "Honda",
+      "priceListNumeric": 2544000,
+      "priceCampaignNumeric": 2389000
     },
     {
       "model": "HR-V Hybrid",
       "trim": "Advance",
       "engine": "1.5L Hibrit Otomatik",
       "transmission": "Otomatik",
-      "fuel": "Hibrit",
+      "fuel": "Hybrid",
       "priceRaw": "2.675.000 TL",
       "priceNumeric": 2675000,
-      "brand": "Honda"
+      "brand": "Honda",
+      "priceListNumeric": 2675000
     },
     {
       "model": "HR-V Hybrid",
       "trim": "Style+",
       "engine": "1.5L Hibrit Otomatik",
       "transmission": "Otomatik",
-      "fuel": "Hibrit",
+      "fuel": "Hybrid",
       "priceRaw": "2.955.000 TL",
       "priceNumeric": 2955000,
-      "brand": "Honda"
+      "brand": "Honda",
+      "priceListNumeric": 2955000
     },
     {
       "model": "Type R",
@@ -52,17 +57,19 @@
       "fuel": "Benzin",
       "priceRaw": "5.500.000 TL",
       "priceNumeric": 5500000,
-      "brand": "Honda"
+      "brand": "Honda",
+      "priceListNumeric": 5500000
     },
     {
       "model": "CR-V Hybrid",
       "trim": "Advance",
       "engine": "2.0L Hibrit Otomatik",
       "transmission": "Otomatik",
-      "fuel": "Hibrit",
+      "fuel": "Hybrid",
       "priceRaw": "6.160.000 TL",
       "priceNumeric": 6160000,
-      "brand": "Honda"
+      "brand": "Honda",
+      "priceListNumeric": 6160000
     }
   ]
 }

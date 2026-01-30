@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-01-30T08:49:41.522Z",
+  "generatedAt": "2026-01-30T19:58:52.760Z",
   "date": "2026-01-30",
   "summary": {
-    "totalModels": 232,
+    "totalModels": 233,
     "totalTransitions": 1,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
@@ -16,9 +16,9 @@
       "oldYear": "2024",
       "newYear": "2026",
       "oldEntryPrice": 575900,
-      "newEntryPrice": 649900,
-      "priceDelta": 74000,
-      "priceDeltaPercent": 12.85,
+      "newEntryPrice": 559900,
+      "priceDelta": -16000,
+      "priceDeltaPercent": -2.78,
       "transitionDate": "2026-01-30",
       "trimCount": 2
     }
@@ -212,7 +212,7 @@
       "model": "BMW i5 M60 xDrive",
       "entryPrice": 9509800,
       "topPrice": 9509800,
-      "trimCount": 2,
+      "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
       ],
@@ -224,7 +224,7 @@
       "model": "BMW i5 M60 xDrive Touring",
       "entryPrice": 9608100,
       "topPrice": 9608100,
-      "trimCount": 2,
+      "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
       ],
@@ -260,7 +260,7 @@
       "model": "BMW i7 M70",
       "entryPrice": 15205500,
       "topPrice": 15205500,
-      "trimCount": 2,
+      "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
       ],
@@ -428,7 +428,7 @@
       "model": "Yeni BMW iX M70 xDrive",
       "entryPrice": 10714500,
       "topPrice": 10714500,
-      "trimCount": 2,
+      "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
       ],
@@ -726,8 +726,8 @@
       "brand": "Fiat",
       "brandId": "fiat",
       "model": "500e",
-      "entryPrice": 2019900,
-      "topPrice": 2175900,
+      "entryPrice": 1895900,
+      "topPrice": 2045900,
       "trimCount": 3,
       "fuelTypes": [
         "Elektrik"
@@ -742,7 +742,8 @@
       "topPrice": 1969900,
       "trimCount": 2,
       "fuelTypes": [
-        "Elektrik"
+        "Elektrik",
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-30"
     },
@@ -750,8 +751,8 @@
       "brand": "Fiat",
       "brandId": "fiat",
       "model": "Egea Cross",
-      "entryPrice": 1379900,
-      "topPrice": 1949900,
+      "entryPrice": 1329900,
+      "topPrice": 1899900,
       "trimCount": 7,
       "fuelTypes": [
         "Benzin",
@@ -763,8 +764,8 @@
       "brand": "Fiat",
       "brandId": "fiat",
       "model": "Egea Sedan",
-      "entryPrice": 1569900,
-      "topPrice": 1789900,
+      "entryPrice": 1429900,
+      "topPrice": 1699900,
       "trimCount": 5,
       "fuelTypes": [
         "Dizel"
@@ -776,10 +777,11 @@
       "brandId": "fiat",
       "model": "Grande Panda",
       "entryPrice": 1499900,
-      "topPrice": 1749900,
+      "topPrice": 1649900,
       "trimCount": 3,
       "fuelTypes": [
-        "Elektrik"
+        "Elektrik",
+        "Hafif Hibrit"
       ],
       "lastUpdated": "2026-01-30"
     },
@@ -787,8 +789,8 @@
       "brand": "Fiat",
       "brandId": "fiat",
       "model": "Topolino",
-      "entryPrice": 575900,
-      "topPrice": 694900,
+      "entryPrice": 544900,
+      "topPrice": 604900,
       "trimCount": 5,
       "fuelTypes": [
         "Elektrik"
@@ -799,8 +801,8 @@
       "brand": "Ford",
       "brandId": "ford",
       "model": "Focus",
-      "entryPrice": 2545900,
-      "topPrice": 2676200,
+      "entryPrice": 2292400,
+      "topPrice": 2543000,
       "trimCount": 2,
       "fuelTypes": [
         "Dizel"
@@ -823,8 +825,8 @@
       "brand": "Ford",
       "brandId": "ford",
       "model": "Puma Gen-E",
-      "entryPrice": 1938700,
-      "topPrice": 1996500,
+      "entryPrice": 1880900,
+      "topPrice": 1937000,
       "trimCount": 2,
       "fuelTypes": [
         "Elektrik"
@@ -883,7 +885,7 @@
       "brand": "Honda",
       "brandId": "honda",
       "model": "HR-V Hybrid",
-      "entryPrice": 2544000,
+      "entryPrice": 2389000,
       "topPrice": 2955000,
       "trimCount": 3,
       "fuelTypes": [
@@ -1761,8 +1763,8 @@
       "brand": "Nissan",
       "brandId": "nissan",
       "model": "JUKE",
-      "entryPrice": 1716400,
-      "topPrice": 2365600,
+      "entryPrice": 1616400,
+      "topPrice": 2265600,
       "trimCount": 6,
       "fuelTypes": [
         "Benzin"
@@ -1773,7 +1775,7 @@
       "brand": "Nissan",
       "brandId": "nissan",
       "model": "QASHQAI",
-      "entryPrice": 2481400,
+      "entryPrice": 2381400,
       "topPrice": 3571800,
       "trimCount": 7,
       "fuelTypes": [
@@ -1785,8 +1787,8 @@
       "brand": "Nissan",
       "brandId": "nissan",
       "model": "QASHQAI e-POWER",
-      "entryPrice": 3440100,
-      "topPrice": 3785900,
+      "entryPrice": 3340100,
+      "topPrice": 3685900,
       "trimCount": 4,
       "fuelTypes": [
         "Hibrit"
@@ -1822,11 +1824,24 @@
       "brand": "Nissan",
       "brandId": "nissan",
       "model": "X-TRAIL MILD HYBRID",
-      "entryPrice": 4343000,
-      "topPrice": 4783500,
+      "entryPrice": 4243000,
+      "topPrice": 4683500,
       "trimCount": 2,
       "fuelTypes": [
         "Hafif Hibrit"
+      ],
+      "lastUpdated": "2026-01-30"
+    },
+    {
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Astra",
+      "entryPrice": 2215000,
+      "topPrice": 2571000,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin",
+        "Dizel"
       ],
       "lastUpdated": "2026-01-30"
     },
@@ -1933,7 +1948,7 @@
       "brandId": "peugeot",
       "model": "",
       "entryPrice": 2181000,
-      "topPrice": 2566500,
+      "topPrice": 2370000,
       "trimCount": 3,
       "fuelTypes": [
         "Benzin",
@@ -1945,8 +1960,8 @@
       "brand": "Peugeot",
       "brandId": "peugeot",
       "model": "3008",
-      "entryPrice": 2851000,
-      "topPrice": 3259000,
+      "entryPrice": 2725000,
+      "topPrice": 2950000,
       "trimCount": 2,
       "fuelTypes": [
         "Hibrit"
@@ -1958,7 +1973,7 @@
       "brandId": "peugeot",
       "model": "408",
       "entryPrice": 2175000,
-      "topPrice": 2820500,
+      "topPrice": 2710000,
       "trimCount": 6,
       "fuelTypes": [
         "Benzin",
@@ -1970,8 +1985,8 @@
       "brand": "Peugeot",
       "brandId": "peugeot",
       "model": "5008",
-      "entryPrice": 3290000,
-      "topPrice": 3493000,
+      "entryPrice": 3218500,
+      "topPrice": 3422500,
       "trimCount": 2,
       "fuelTypes": [
         "Hibrit"
@@ -1983,7 +1998,7 @@
       "brandId": "peugeot",
       "model": "E-",
       "entryPrice": 2014000,
-      "topPrice": 2308500,
+      "topPrice": 2214000,
       "trimCount": 3,
       "fuelTypes": [
         "Elektrik"
@@ -1994,8 +2009,8 @@
       "brand": "Peugeot",
       "brandId": "peugeot",
       "model": "E-208",
-      "entryPrice": 1999500,
-      "topPrice": 1999500,
+      "entryPrice": 1960000,
+      "topPrice": 1960000,
       "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
@@ -2006,7 +2021,7 @@
       "brand": "Peugeot",
       "brandId": "peugeot",
       "model": "E-3008",
-      "entryPrice": 3318000,
+      "entryPrice": 3120000,
       "topPrice": 3514500,
       "trimCount": 2,
       "fuelTypes": [
@@ -2043,7 +2058,7 @@
       "brandId": "peugeot",
       "model": "Expert Traveller",
       "entryPrice": 2290500,
-      "topPrice": 2420000,
+      "topPrice": 2360500,
       "trimCount": 2,
       "fuelTypes": [
         "Dizel"
@@ -2055,7 +2070,7 @@
       "brandId": "peugeot",
       "model": "Partner Van",
       "entryPrice": 1237500,
-      "topPrice": 1405000,
+      "topPrice": 1371000,
       "trimCount": 3,
       "fuelTypes": [
         "Dizel"
@@ -2066,8 +2081,8 @@
       "brand": "Peugeot",
       "brandId": "peugeot",
       "model": "Rifter",
-      "entryPrice": 1543500,
-      "topPrice": 2077000,
+      "entryPrice": 1506000,
+      "topPrice": 2026000,
       "trimCount": 3,
       "fuelTypes": [
         "Dizel"

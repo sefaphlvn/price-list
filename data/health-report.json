@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-30T08:49:42.010Z",
+  "timestamp": "2026-01-30T19:58:53.353Z",
   "status": "healthy",
   "summary": {
     "totalBrands": 19,
-    "totalVehicles": 510,
-    "lastUpdate": "2026-01-30T08:49:40.814Z",
+    "totalVehicles": 508,
+    "lastUpdate": "2026-01-30T19:58:51.929Z",
     "dataDate": "2026-01-30"
   },
   "brands": [
@@ -68,7 +68,7 @@
       "id": "opel",
       "name": "Opel",
       "status": "ok",
-      "vehicleCount": 19,
+      "vehicleCount": 21,
       "latestDate": "2026-01-30",
       "issues": []
     },
@@ -84,7 +84,7 @@
       "id": "bmw",
       "name": "BMW",
       "status": "ok",
-      "vehicleCount": 61,
+      "vehicleCount": 57,
       "latestDate": "2026-01-30",
       "issues": []
     },

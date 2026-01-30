@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-01-30T08:49:41.387Z",
-  "totalVehicles": 510,
+  "generatedAt": "2026-01-30T19:58:52.615Z",
+  "totalVehicles": 508,
   "overallStats": {
-    "avgPrice": 4838405,
-    "minPrice": 575900,
+    "avgPrice": 4766683,
+    "minPrice": 544900,
     "maxPrice": 35229600,
-    "medianPrice": 2844850
+    "medianPrice": 2810000
   },
   "brandStats": [
     {
       "name": "BMW",
-      "vehicleCount": 61,
-      "avgPrice": 9749295,
+      "vehicleCount": 57,
+      "avgPrice": 9643318,
       "minPrice": 3550400,
       "maxPrice": 22836200,
-      "medianPrice": 7880000
+      "medianPrice": 7786900
     },
     {
       "name": "Mercedes-Benz",
@@ -59,26 +59,26 @@
     {
       "name": "Peugeot",
       "vehicleCount": 30,
-      "avgPrice": 2463050,
+      "avgPrice": 2405167,
       "minPrice": 1237500,
       "maxPrice": 3644000,
-      "medianPrice": 2352500
+      "medianPrice": 2313250
     },
     {
       "name": "Nissan",
       "vehicleCount": 27,
-      "avgPrice": 2718407,
+      "avgPrice": 2659148,
       "minPrice": 1151800,
-      "maxPrice": 4783500,
-      "medianPrice": 2417600
+      "maxPrice": 4683500,
+      "medianPrice": 2381400
     },
     {
       "name": "Fiat",
       "vehicleCount": 25,
-      "avgPrice": 1518540,
-      "minPrice": 575900,
-      "maxPrice": 2175900,
-      "medianPrice": 1679900
+      "avgPrice": 1443980,
+      "minPrice": 544900,
+      "maxPrice": 2045900,
+      "medianPrice": 1599900
     },
     {
       "name": "Škoda",
@@ -105,20 +105,20 @@
       "medianPrice": 2204999.99
     },
     {
-      "name": "Ford",
-      "vehicleCount": 21,
-      "avgPrice": 2464990,
-      "minPrice": 1842100,
-      "maxPrice": 3305300,
-      "medianPrice": 2379100
-    },
-    {
       "name": "Opel",
-      "vehicleCount": 19,
-      "avgPrice": 2279579,
+      "vehicleCount": 21,
+      "avgPrice": 2290381,
       "minPrice": 1505000,
       "maxPrice": 3391000,
-      "medianPrice": 2085000
+      "medianPrice": 2157000
+    },
+    {
+      "name": "Ford",
+      "vehicleCount": 21,
+      "avgPrice": 2440990,
+      "minPrice": 1842100,
+      "maxPrice": 3305300,
+      "medianPrice": 2292400
     },
     {
       "name": "Citroën",
@@ -147,7 +147,7 @@
     {
       "name": "Honda",
       "vehicleCount": 6,
-      "avgPrice": 3702333,
+      "avgPrice": 3676500,
       "minPrice": 2380000,
       "maxPrice": 6160000,
       "medianPrice": 2815000
@@ -164,39 +164,39 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 207,
-      "percentage": 40.6,
-      "avgPrice": 4867700
+      "count": 208,
+      "percentage": 40.9,
+      "avgPrice": 4850620
     },
     {
       "fuel": "Elektrik",
-      "count": 125,
-      "percentage": 24.5,
-      "avgPrice": 4911740
+      "count": 121,
+      "percentage": 23.8,
+      "avgPrice": 4690982
     },
     {
       "fuel": "Hibrit",
-      "count": 73,
-      "percentage": 14.3,
-      "avgPrice": 3714174
+      "count": 70,
+      "percentage": 13.8,
+      "avgPrice": 3777357
     },
     {
       "fuel": "Dizel",
-      "count": 52,
-      "percentage": 10.2,
-      "avgPrice": 3929777
+      "count": 53,
+      "percentage": 10.4,
+      "avgPrice": 3877409
+    },
+    {
+      "fuel": "Hafif Hibrit",
+      "count": 25,
+      "percentage": 4.9,
+      "avgPrice": 5787344
     },
     {
       "fuel": "Plug-in Hibrit",
       "count": 23,
       "percentage": 4.5,
       "avgPrice": 8992003
-    },
-    {
-      "fuel": "Hafif Hibrit",
-      "count": 22,
-      "percentage": 4.3,
-      "avgPrice": 6372086
     },
     {
       "fuel": "Diger",
@@ -214,21 +214,21 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 356,
-      "percentage": 69.8,
-      "avgPrice": 5741176
+      "count": 354,
+      "percentage": 69.7,
+      "avgPrice": 5646064
     },
     {
       "transmission": "DSG",
       "count": 65,
-      "percentage": 12.7,
+      "percentage": 12.8,
       "avgPrice": 3536781
     },
     {
       "transmission": "Manuel",
       "count": 35,
       "percentage": 6.9,
-      "avgPrice": 1689511
+      "avgPrice": 1675226
     },
     {
       "transmission": "DCT",
@@ -240,7 +240,7 @@
       "transmission": "Bilinmiyor",
       "count": 23,
       "percentage": 4.5,
-      "avgPrice": 2997787
+      "avgPrice": 2977809
     }
   ],
   "priceSegments": [
@@ -248,29 +248,145 @@
       "segment": "budget",
       "min": 0,
       "max": 1500000,
-      "count": 30,
-      "percentage": 5.9
+      "count": 33,
+      "percentage": 6.5
     },
     {
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
       "count": 237,
-      "percentage": 46.5
+      "percentage": 46.7
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
-      "count": 105,
-      "percentage": 20.6
+      "count": 104,
+      "percentage": 20.5
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
-      "count": 138,
-      "percentage": 27.1
+      "count": 134,
+      "percentage": 26.4
     }
-  ]
+  ],
+  "otvStats": {
+    "avgOtvRate": 124.7,
+    "distribution": [
+      {
+        "rate": 25,
+        "count": 8,
+        "percentage": 6.7,
+        "avgPrice": 2071125
+      },
+      {
+        "rate": 55,
+        "count": 12,
+        "percentage": 10,
+        "avgPrice": 4912525
+      },
+      {
+        "rate": 75,
+        "count": 21,
+        "percentage": 17.5,
+        "avgPrice": 8804629
+      },
+      {
+        "rate": 90,
+        "count": 5,
+        "percentage": 4.2,
+        "avgPrice": 4077280
+      },
+      {
+        "rate": 100,
+        "count": 25,
+        "percentage": 20.8,
+        "avgPrice": 5801744
+      },
+      {
+        "rate": 170,
+        "count": 24,
+        "percentage": 20,
+        "avgPrice": 9998192
+      },
+      {
+        "rate": 220,
+        "count": 25,
+        "percentage": 20.8,
+        "avgPrice": 22030236
+      }
+    ],
+    "byBrand": [
+      {
+        "brand": "BMW",
+        "avgOtvRate": 120.5,
+        "count": 57
+      },
+      {
+        "brand": "Mercedes-Benz",
+        "avgOtvRate": 148.9,
+        "count": 51
+      },
+      {
+        "brand": "BYD",
+        "avgOtvRate": 41.7,
+        "count": 12
+      }
+    ]
+  },
+  "modelYearStats": {
+    "distribution": [
+      {
+        "year": "MY26",
+        "count": 14,
+        "percentage": 20.6,
+        "avgPrice": 2305000
+      },
+      {
+        "year": "MY25",
+        "count": 7,
+        "percentage": 10.3,
+        "avgPrice": 2261143
+      },
+      {
+        "year": "2026",
+        "count": 7,
+        "percentage": 10.3,
+        "avgPrice": 1626929
+      },
+      {
+        "year": "2025",
+        "count": 40,
+        "percentage": 58.8,
+        "avgPrice": 2504363
+      }
+    ]
+  },
+  "fuelConsumptionStats": {
+    "byFuel": [
+      {
+        "fuel": "Elektrik",
+        "avgConsumption": 19.2,
+        "count": 19
+      },
+      {
+        "fuel": "Benzin",
+        "avgConsumption": 8.7,
+        "count": 18
+      },
+      {
+        "fuel": "Hafif Hibrit",
+        "avgConsumption": 5.7,
+        "count": 13
+      },
+      {
+        "fuel": "Plug-in Hibrit",
+        "avgConsumption": 2.6,
+        "count": 6
+      }
+    ]
+  }
 }

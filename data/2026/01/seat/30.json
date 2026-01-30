@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-30T08:47:58.188Z",
+  "collectedAt": "2026-01-30T19:56:59.132Z",
   "brand": "SEAT",
   "brandId": "seat",
   "rowCount": 8,
@@ -12,7 +12,8 @@
       "fuel": "Benzin",
       "priceRaw": "1.601.646 TL",
       "priceNumeric": 1601646,
-      "brand": "SEAT"
+      "brand": "SEAT",
+      "priceListNumeric": 1599000
     },
     {
       "model": "Ibiza",
@@ -22,7 +23,8 @@
       "fuel": "Benzin",
       "priceRaw": "1.721.846 TL",
       "priceNumeric": 1721846,
-      "brand": "SEAT"
+      "brand": "SEAT",
+      "priceListNumeric": 1719000
     },
     {
       "model": "Arona",
@@ -32,7 +34,8 @@
       "fuel": "Benzin",
       "priceRaw": "1.691.796 TL",
       "priceNumeric": 1691796,
-      "brand": "SEAT"
+      "brand": "SEAT",
+      "priceListNumeric": 1689000
     },
     {
       "model": "Arona",
@@ -42,17 +45,19 @@
       "fuel": "Benzin",
       "priceRaw": "1.801.979 TL",
       "priceNumeric": 1801979,
-      "brand": "SEAT"
+      "brand": "SEAT",
+      "priceListNumeric": 1799000
     },
     {
       "model": "Leon",
       "trim": "FR",
       "engine": "1.5 eHybrid 204 PS",
       "transmission": "Otomatik (DSG)",
-      "fuel": "Hibrit",
+      "fuel": "Hybrid",
       "priceRaw": "2.363.910 TL",
       "priceNumeric": 2363910,
-      "brand": "SEAT"
+      "brand": "SEAT",
+      "priceListNumeric": 2360000
     },
     {
       "model": "Ateca",
@@ -62,7 +67,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.382.942 TL",
       "priceNumeric": 2382942,
-      "brand": "SEAT"
+      "brand": "SEAT",
+      "priceListNumeric": 2379000
     },
     {
       "model": "Ateca",
@@ -72,7 +78,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.583.275 TL",
       "priceNumeric": 2583275,
-      "brand": "SEAT"
+      "brand": "SEAT",
+      "priceListNumeric": 2579000
     },
     {
       "model": "Ateca",
@@ -82,7 +89,8 @@
       "fuel": "Benzin",
       "priceRaw": "2.838.700 TL",
       "priceNumeric": 2838700,
-      "brand": "SEAT"
+      "brand": "SEAT",
+      "priceListNumeric": 2834000
     }
   ]
 }
