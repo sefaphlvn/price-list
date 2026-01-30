@@ -185,6 +185,20 @@ function detectSegment(model: string, brand: string): string {
     return 'Hatchback-C';
   }
 
+  // === FIAT MODELS ===
+  if (brandLower === 'fiat') {
+    if (/500x|500l/i.test(modelLower)) return 'SUV-Compact';
+    if (/500(?!x|l)|cinquecento/i.test(modelLower)) return 'Hatchback-B';
+    if (/panda/i.test(modelLower)) return 'Hatchback-B';
+    if (/egea|tipo/i.test(modelLower)) {
+      if (/sedan/i.test(modelLower)) return 'Sedan-C';
+      if (/station|sw|wagon|cross/i.test(modelLower)) return 'Station Wagon';
+      return 'Hatchback-C';
+    }
+    if (/doblo|fiorino|scudo|ducato/i.test(modelLower)) return 'MPV';
+    return 'Hatchback-C';
+  }
+
   // === BYD MODELS ===
   if (brandLower === 'byd') {
     if (/atto|yuan|tang|song/i.test(modelLower)) return 'SUV-Compact';
@@ -321,17 +335,28 @@ function detectSegment(model: string, brand: string): string {
 function normalizeFuel(fuel: string): string {
   const f = fuel.toLowerCase().trim();
 
-  // Electric
-  if (f.includes('elektrik') || f.includes('electric') || f === 'ev' || f === 'bev') {
-    return 'Elektrik';
-  }
+  // Empty or unknown
+  if (!f) return 'Diger';
 
-  // Hybrid variants
-  if (f.includes('hybrid') || f.includes('hibrit')) {
+  // Hybrid variants (check first as they may contain "benzin" or "elektrik")
+  if (f.includes('hybrid') || f.includes('hibrit') || f === 'benzin-elektrik') {
     if (f.includes('plug') || f.includes('phev')) {
       return 'Plug-in Hibrit';
     }
+    if (f.includes('mild')) {
+      return 'Hafif Hibrit';
+    }
     return 'Hibrit';
+  }
+
+  // LPG/CNG (check before benzin as "benzin-lpg" should be LPG)
+  if (f.includes('lpg') || f.includes('cng')) {
+    return 'LPG';
+  }
+
+  // Electric (pure)
+  if (f.includes('elektrik') || f.includes('electric') || f === 'ev' || f === 'bev') {
+    return 'Elektrik';
   }
 
   // Diesel
@@ -342,11 +367,6 @@ function normalizeFuel(fuel: string): string {
   // Petrol/Benzin
   if (f.includes('benzin') || f.includes('petrol') || f.includes('tsi') || f.includes('tgi') || f.includes('tfsi')) {
     return 'Benzin';
-  }
-
-  // LPG/CNG
-  if (f.includes('lpg') || f.includes('cng')) {
-    return 'LPG';
   }
 
   return 'Diger';
@@ -497,7 +517,7 @@ export async function generateGaps(): Promise<GapsData> {
   // Build heatmap data (segment x fuel x transmission x priceRange)
   const heatmapData: GapCell[] = [];
   const allSegments = [...segmentMap.keys()].filter(s => s !== 'Other');
-  const allFuels = ['Benzin', 'Dizel', 'Hibrit', 'Plug-in Hibrit', 'Elektrik'];
+  const allFuels = ['Benzin', 'Dizel', 'Hibrit', 'Hafif Hibrit', 'Plug-in Hibrit', 'Elektrik', 'LPG'];
   const allTransmissions = ['Otomatik', 'Manuel'];
 
   // Calculate market density for opportunity scoring

@@ -4,6 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
 
 interface UseIntelDataOptions {
   enabled?: boolean;
@@ -28,14 +29,9 @@ export function useIntelData<T>(
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const abortControllerRef = useRef<AbortController | null>(null);
+  const cancelledRef = useRef(false);
 
   const fetchData = useCallback(async () => {
-    // Abort previous request if any
-    if (abortControllerRef.current) {
-      abortControllerRef.current.abort();
-    }
-
     if (!enabled) {
       setData(null);
       setLoading(false);
@@ -45,51 +41,36 @@ export function useIntelData<T>(
     const cacheKey = `intel-${dataType}`;
     const cached = dataCache.get(cacheKey);
 
-    // Check cache validity
+    // Check cache validity (in-memory cache for current session)
     if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
       setData(cached.data as T);
       setLoading(false);
       return;
     }
 
-    // Create new AbortController for this request
-    const controller = new AbortController();
-    abortControllerRef.current = controller;
-
+    cancelledRef.current = false;
     setLoading(true);
     setError(null);
 
     try {
-      const response = await fetch(`./data/intel/${dataType}.json`, {
-        signal: controller.signal,
-      });
-
-      if (!response.ok) {
-        throw new Error(`Failed to fetch ${dataType} data: ${response.status}`);
-      }
-
-      const result = await response.json();
+      const result = await fetchFreshJson<T>(DATA_URLS.intel(dataType));
 
       // Update cache
       dataCache.set(cacheKey, { data: result, timestamp: Date.now() });
 
-      // Only update state if not aborted
-      if (!controller.signal.aborted) {
+      // Only update state if not cancelled
+      if (!cancelledRef.current) {
         setData(result);
         setError(null);
       }
     } catch (err) {
-      // Ignore abort errors
-      if (err instanceof Error && err.name === 'AbortError') {
-        return;
-      }
       const message = err instanceof Error ? err.message : 'Unknown error';
-      if (!controller.signal.aborted) {
+      if (!cancelledRef.current) {
         setError(message);
         setData(null);
       }
     } finally {
-      if (!controller.signal.aborted) {
+      if (!cancelledRef.current) {
         setLoading(false);
       }
     }
@@ -98,11 +79,9 @@ export function useIntelData<T>(
   useEffect(() => {
     fetchData();
 
-    // Cleanup: abort on unmount
+    // Cleanup: mark as cancelled on unmount
     return () => {
-      if (abortControllerRef.current) {
-        abortControllerRef.current.abort();
-      }
+      cancelledRef.current = true;
     };
   }, [fetchData]);
 

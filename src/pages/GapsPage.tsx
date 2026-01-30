@@ -39,23 +39,68 @@ interface HeatmapProps {
   selectedTransmission: string;
 }
 
+// Aggregated cell data when "all" filters are selected
+interface AggregatedCell {
+  vehicleCount: number;
+  brands: string[];
+  avgPrice: number;
+  hasGap: boolean;
+  opportunityScore: number;
+}
+
 function SegmentHeatmap({ data, segments, priceRanges, selectedFuel, selectedTransmission }: HeatmapProps) {
   const { t } = useTranslation();
 
-  const filteredData = useMemo(() => {
-    return data.filter(
-      cell =>
-        (selectedFuel === 'all' || cell.fuel === selectedFuel) &&
-        (selectedTransmission === 'all' || cell.transmission === selectedTransmission)
-    );
+  // Aggregate data by segment+priceRange when "all" is selected
+  const aggregatedData = useMemo(() => {
+    const aggregated = new Map<string, AggregatedCell>();
+
+    for (const cell of data) {
+      // Apply filters
+      if (selectedFuel !== 'all' && cell.fuel !== selectedFuel) continue;
+      if (selectedTransmission !== 'all' && cell.transmission !== selectedTransmission) continue;
+
+      const key = `${cell.segment}-${cell.priceRange}`;
+      const existing = aggregated.get(key);
+
+      if (existing) {
+        // Aggregate: sum counts, merge brands, recalculate avg
+        const newCount = existing.vehicleCount + cell.vehicleCount;
+        const newBrands = [...new Set([...existing.brands, ...cell.brands])];
+        const newAvgPrice = newCount > 0
+          ? Math.round((existing.avgPrice * existing.vehicleCount + cell.avgPrice * cell.vehicleCount) / newCount)
+          : 0;
+        aggregated.set(key, {
+          vehicleCount: newCount,
+          brands: newBrands,
+          avgPrice: newAvgPrice,
+          hasGap: newCount < 2,
+          opportunityScore: Math.max(existing.opportunityScore, cell.opportunityScore),
+        });
+      } else {
+        aggregated.set(key, {
+          vehicleCount: cell.vehicleCount,
+          brands: [...cell.brands],
+          avgPrice: cell.avgPrice,
+          hasGap: cell.hasGap,
+          opportunityScore: cell.opportunityScore,
+        });
+      }
+    }
+
+    return aggregated;
   }, [data, selectedFuel, selectedTransmission]);
 
   const maxCount = useMemo(() => {
-    return Math.max(...filteredData.map(c => c.vehicleCount), 1);
-  }, [filteredData]);
+    let max = 1;
+    for (const cell of aggregatedData.values()) {
+      if (cell.vehicleCount > max) max = cell.vehicleCount;
+    }
+    return max;
+  }, [aggregatedData]);
 
-  const getCellData = (segment: string, priceRange: string): GapCell | undefined => {
-    return filteredData.find(c => c.segment === segment && c.priceRange === priceRange);
+  const getCellData = (segment: string, priceRange: string): AggregatedCell | undefined => {
+    return aggregatedData.get(`${segment}-${priceRange}`);
   };
 
   return (
@@ -298,8 +343,10 @@ export default function GapsPage() {
                 { value: 'Benzin', label: t('fuels.petrol', 'Benzin') },
                 { value: 'Dizel', label: t('fuels.diesel', 'Dizel') },
                 { value: 'Hibrit', label: t('fuels.hybrid', 'Hibrit') },
+                { value: 'Hafif Hibrit', label: t('fuels.mhev', 'Hafif Hibrit') },
                 { value: 'Plug-in Hibrit', label: t('fuels.phev', 'Plug-in Hibrit') },
                 { value: 'Elektrik', label: t('fuels.electric', 'Elektrik') },
+                { value: 'LPG', label: t('fuels.lpg', 'LPG') },
               ]}
               placeholder={t('gaps.selectFuel', 'Yakit sec')}
             />
@@ -339,7 +386,7 @@ export default function GapsPage() {
         <Table
           columns={opportunityColumns}
           dataSource={data.topOpportunities}
-          rowKey="id"
+          rowKey={(record) => `${record.segment}-${record.fuel}-${record.transmission}-${record.priceRange}`}
           size="small"
           pagination={{ pageSize: 10 }}
           scroll={{ x: 600 }}
