@@ -17,6 +17,7 @@ import {
 import { BRANDS } from '../config/brands';
 import { tokens } from '../theme/tokens';
 import { staggerContainer, staggerItem, cardHoverVariants } from '../theme/animations';
+import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -78,40 +79,32 @@ export default function HomePage() {
 
   // Fetch quick stats from precomputed stats
   useEffect(() => {
-    const controller = new AbortController();
-    const { signal } = controller;
+    let cancelled = false;
 
     const loadStats = async () => {
       try {
-        const response = await fetch('./data/stats/precomputed.json', { signal });
-        if (response.ok) {
-          const data = await response.json();
-          if (!signal.aborted) {
-            setStats({
-              totalVehicles: data.totalVehicles || 250,
-              lowestPrice: data.overallStats?.minPrice || 800000,
-              highestPrice: data.overallStats?.maxPrice || 8500000,
-              brandsUpdated: BRANDS.length,
-            });
-          }
+        const data = await fetchFreshJson<any>(DATA_URLS.stats);
+        if (!cancelled) {
+          setStats({
+            totalVehicles: data.totalVehicles || 250,
+            lowestPrice: data.overallStats?.minPrice || 800000,
+            highestPrice: data.overallStats?.maxPrice || 8500000,
+            brandsUpdated: BRANDS.length,
+          });
         }
-      } catch (error) {
-        if ((error as Error).name === 'AbortError') return;
+      } catch {
         // Fallback to index.json if precomputed stats not available
         try {
-          const indexResponse = await fetch('./data/index.json', { signal });
-          if (indexResponse.ok) {
-            const indexData = await indexResponse.json();
-            let total = 0;
-            Object.values(indexData.brands).forEach((brand: any) => {
-              total += brand.totalRecords || 0;
-            });
-            if (!signal.aborted) {
-              setStats((prev) => ({
-                ...prev,
-                totalVehicles: total || 250,
-              }));
-            }
+          const indexData = await fetchFreshJson<any>(DATA_URLS.index);
+          let total = 0;
+          Object.values(indexData.brands).forEach((brand: any) => {
+            total += brand.totalRecords || 0;
+          });
+          if (!cancelled) {
+            setStats((prev) => ({
+              ...prev,
+              totalVehicles: total || 250,
+            }));
           }
         } catch {
           // Use default values
@@ -120,7 +113,7 @@ export default function HomePage() {
     };
     loadStats();
 
-    return () => controller.abort();
+    return () => { cancelled = true; };
   }, []);
 
   const features = [

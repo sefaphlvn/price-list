@@ -69,25 +69,65 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
         runtimeCaching: [
-          {
-            urlPattern: /\/data\/.*\.json$/,
-            handler: 'StaleWhileRevalidate',
-            options: {
-              cacheName: 'price-data-cache',
-              expiration: {
-                maxEntries: 100,
-                maxAgeSeconds: 60 * 60 * 24, // 24 hours
-              },
-            },
-          },
+          // IMPORTANT: Specific patterns MUST come before general patterns
+          // Critical data files - always fetch from network first
           {
             urlPattern: /\/data\/index\.json$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'index-cache',
+              networkTimeoutSeconds: 5,
               expiration: {
                 maxEntries: 1,
-                maxAgeSeconds: 60 * 60, // 1 hour
+                maxAgeSeconds: 60 * 5, // 5 minutes
+              },
+            },
+          },
+          {
+            urlPattern: /\/data\/latest\.json$/,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'latest-cache',
+              networkTimeoutSeconds: 5,
+              expiration: {
+                maxEntries: 1,
+                maxAgeSeconds: 60 * 5, // 5 minutes
+              },
+            },
+          },
+          {
+            urlPattern: /\/data\/stats\/.*\.json$/,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'stats-cache',
+              networkTimeoutSeconds: 5,
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 15, // 15 minutes
+              },
+            },
+          },
+          {
+            urlPattern: /\/data\/intel\/.*\.json$/,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'intel-cache',
+              networkTimeoutSeconds: 5,
+              expiration: {
+                maxEntries: 20,
+                maxAgeSeconds: 60 * 15, // 15 minutes
+              },
+            },
+          },
+          // Historical data - can use stale-while-revalidate (data doesn't change)
+          {
+            urlPattern: /\/data\/\d{4}\/\d{2}\/.*\.json$/,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'historical-data-cache',
+              expiration: {
+                maxEntries: 200,
+                maxAgeSeconds: 60 * 60 * 24 * 7, // 7 days
               },
             },
           },

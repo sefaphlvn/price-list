@@ -17,6 +17,7 @@ import TrackedVehiclesDrawer from '../tracking/TrackedVehiclesDrawer';
 import { OfflineBanner, InstallPrompt } from '../../pwa';
 import { CommandPalette } from '../search';
 import { useCommandPalette } from '../../hooks/useCommandPalette';
+import { fetchFreshJson, DATA_URLS } from '../../utils/fetchData';
 
 interface LatestVehicle {
   brand: string;
@@ -46,14 +47,7 @@ export default function Layout() {
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await fetch('./data/latest.json');
-        if (!response.ok) return;
-
-        // Check if response is actually JSON (not HTML from SPA fallback)
-        const contentType = response.headers.get('content-type');
-        if (!contentType || !contentType.includes('application/json')) return;
-
-        const data = await response.json();
+        const data = await fetchFreshJson<any>(DATA_URLS.latest);
         if (data && Array.isArray(data.vehicles)) {
           setVehicles(data.vehicles.map((v: any) => ({
             brand: v.brand || '',
@@ -80,11 +74,8 @@ export default function Layout() {
 
     const checkPriceChanges = async () => {
       try {
-        // Fetch index
-        const indexResponse = await fetch('./data/index.json');
-        if (!indexResponse.ok) return;
-
-        const indexData: IndexData = await indexResponse.json();
+        // Fetch index with fresh data
+        const indexData = await fetchFreshJson<IndexData>(DATA_URLS.index);
         const changes: PriceChange[] = [];
 
         // Group tracked vehicles by brand

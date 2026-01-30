@@ -57,6 +57,7 @@ import {
 } from '../utils/urlState';
 import PriceTrendModal from '../components/pricelist/PriceTrendModal';
 import BrandDisclaimer from '../components/common/BrandDisclaimer';
+import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
 
 const { Title, Text } = Typography;
 const { Search } = Input;
@@ -197,37 +198,23 @@ export default function PriceListPage() {
 
   // Load index data on mount
   useEffect(() => {
-    const controller = new AbortController();
-    const { signal } = controller;
+    let cancelled = false;
 
     const loadIndex = async () => {
       try {
-        const response = await fetch('./data/index.json', { signal });
-        if (!response.ok) {
-          console.warn('Index fetch failed:', response.status, response.statusText);
-          return;
-        }
-
-        // Check content type
-        const contentType = response.headers.get('content-type');
-        if (!contentType || !contentType.includes('application/json')) {
-          console.warn('Index response is not JSON:', contentType);
-          return;
-        }
-
-        const data: IndexData = await response.json();
-        if (!signal.aborted) {
+        const data = await fetchFreshJson<IndexData>(DATA_URLS.index);
+        if (!cancelled) {
           setIndexData(data);
         }
       } catch (error) {
-        if ((error as Error).name !== 'AbortError') {
+        if (!cancelled) {
           console.warn('Failed to load index:', error);
         }
       }
     };
     loadIndex();
 
-    return () => controller.abort();
+    return () => { cancelled = true; };
   }, []);
 
   // Update available dates when brand or index changes

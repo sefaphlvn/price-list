@@ -35,6 +35,7 @@ import { getBrandById } from '../config/brands';
 import { PriceListRow, IndexData, StoredData } from '../types';
 import { tokens } from '../theme/tokens';
 import { staggerContainer, staggerItem } from '../theme/animations';
+import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
 
 const { Title, Text } = Typography;
 
@@ -125,21 +126,14 @@ export default function StatisticsPage() {
 
   // Fetch data from historical files
   useEffect(() => {
-    const controller = new AbortController();
-    const { signal } = controller;
+    let cancelled = false;
 
     const fetchAllBrands = async () => {
       setLoading(true);
       const dataMap = new Map<string, StoredData>();
 
       try {
-        const indexResponse = await fetch('./data/index.json', { signal });
-        if (!indexResponse.ok) {
-          if (!signal.aborted) setLoading(false);
-          return;
-        }
-
-        const indexData: IndexData = await indexResponse.json();
+        const indexData = await fetchFreshJson<IndexData>(DATA_URLS.index);
 
         await Promise.all(
           Object.keys(indexData.brands).map(async (brandId) => {
@@ -149,25 +143,21 @@ export default function StatisticsPage() {
               const [year, month, day] = latestDate.split('-');
               const url = `./data/${year}/${month}/${brandId}/${day}.json`;
 
-              const response = await fetch(url, { signal });
+              const response = await fetch(url);
               if (response.ok) {
                 const storedData: StoredData = await response.json();
                 dataMap.set(brandId, storedData);
               }
             } catch (error) {
-              if ((error as Error).name !== 'AbortError') {
-                console.error(`Failed to fetch ${brandId}:`, error);
-              }
+              console.error(`Failed to fetch ${brandId}:`, error);
             }
           })
         );
       } catch (error) {
-        if ((error as Error).name !== 'AbortError') {
-          console.error('Failed to fetch index:', error);
-        }
+        console.error('Failed to fetch index:', error);
       }
 
-      if (!signal.aborted) {
+      if (!cancelled) {
         setAllData(dataMap);
         setLoading(false);
       }
@@ -175,7 +165,7 @@ export default function StatisticsPage() {
 
     fetchAllBrands();
 
-    return () => controller.abort();
+    return () => { cancelled = true; };
   }, []);
 
   // Combine all rows
