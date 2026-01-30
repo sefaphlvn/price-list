@@ -370,10 +370,10 @@ export default function PriceListPage() {
       const search = searchText.toLowerCase();
       result = result.filter(
         (row) =>
-          row.model.toLowerCase().includes(search) ||
-          row.trim.toLowerCase().includes(search) ||
-          row.engine.toLowerCase().includes(search) ||
-          row.transmission.toLowerCase().includes(search)
+          (row.model || '').toLowerCase().includes(search) ||
+          (row.trim || '').toLowerCase().includes(search) ||
+          (row.engine || '').toLowerCase().includes(search) ||
+          (row.transmission || '').toLowerCase().includes(search)
       );
     }
 

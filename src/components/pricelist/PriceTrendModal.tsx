@@ -19,6 +19,11 @@ import { BRANDS } from '../../config/brands';
 
 const { Title, Text } = Typography;
 
+// Create normalized key for vehicle matching (same as events.ts)
+function createRowKey(model: string, trim: string, engine: string): string {
+  return `${model}-${trim}-${engine}`.toLowerCase().replace(/\s+/g, '-');
+}
+
 interface PriceTrendModalProps {
   open: boolean;
   onClose: () => void;
@@ -95,13 +100,15 @@ export default function PriceTrendModal({ open, onClose, vehicle }: PriceTrendMo
 
             const storedData: StoredData = await response.json();
 
-            // Find matching vehicle
-            const match = storedData.rows.find(
-              (row) =>
-                row.model === vehicle.model &&
-                row.trim === vehicle.trim &&
-                row.engine === vehicle.engine
-            );
+            // Build a Map for consistent matching (last entry wins, same as events.ts)
+            const rowMap = new Map<string, PriceListRow>();
+            for (const row of storedData.rows) {
+              rowMap.set(createRowKey(row.model, row.trim, row.engine), row);
+            }
+
+            // Find matching vehicle using normalized key
+            const vehicleKey = createRowKey(vehicle.model, vehicle.trim, vehicle.engine);
+            const match = rowMap.get(vehicleKey);
 
             if (match && match.priceNumeric > 0) {
               data.push({

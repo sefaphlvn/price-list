@@ -402,7 +402,6 @@ export default function ArchitecturePage() {
             <Statistic
               title={t('architecture.avgSpread', 'Ort. Aralık')}
               value={formatPrice(summary.avgPriceSpread)}
-              valueStyle={{ fontSize: 14 }}
               prefix={<RiseOutlined />}
             />
           </Card>
