@@ -620,30 +620,33 @@ export default function PriceListPage() {
       dataIndex: 'priceRaw',
       key: 'price',
       width: 200,
-      sorter: (a, b) => a.priceNumeric - b.priceNumeric,
+      sorter: (a, b) => {
+        // Sort by list price if available, otherwise by priceNumeric
+        const priceA = a.priceListNumeric || a.priceNumeric;
+        const priceB = b.priceListNumeric || b.priceNumeric;
+        return priceA - priceB;
+      },
       sortOrder: sortInfo?.column === 'price' ? sortInfo.order : undefined,
       defaultSortOrder: 'ascend',
-      render: (text, record) => {
-        // Calculate discount if both list and campaign prices exist
-        // AND the main displayed price (priceNumeric) is close to the campaign price
-        const hasListAndCampaign = record.priceListNumeric && record.priceCampaignNumeric &&
+      render: (_, record) => {
+        // Always show list price if available, otherwise show the main price
+        const displayPrice = record.priceListNumeric || record.priceNumeric;
+        const formattedPrice = displayPrice.toLocaleString('tr-TR') + ' TL';
+
+        // Calculate discount if campaign price is lower than list price
+        const hasDiscount = record.priceListNumeric && record.priceCampaignNumeric &&
           record.priceListNumeric > record.priceCampaignNumeric;
 
-        // Only show discount badge if the main price is close to campaign price (within 5%)
-        // This prevents showing misleading discounts when main price is higher than both
-        const mainPriceMatchesCampaign = hasListAndCampaign &&
-          Math.abs(record.priceNumeric - record.priceCampaignNumeric!) / record.priceCampaignNumeric! < 0.05;
-
-        const discountPercent = hasListAndCampaign
+        const discountPercent = hasDiscount
           ? Math.round(((record.priceListNumeric! - record.priceCampaignNumeric!) / record.priceListNumeric!) * 100)
           : 0;
 
         return (
           <Space direction="vertical" size={0}>
             <Text strong style={{ color: tokens.colors.success, fontSize: '14px' }}>
-              {text}
+              {formattedPrice}
             </Text>
-            {mainPriceMatchesCampaign && discountPercent > 0 && (
+            {hasDiscount && discountPercent > 0 && (
               <Tag color="green" style={{ fontSize: 10, marginTop: 2 }}>
                 -{discountPercent}% indirim
               </Tag>
@@ -1006,12 +1009,30 @@ export default function PriceListPage() {
               expandable={{
                 columnWidth: 32,
                 expandedRowRender: (record) => {
-                  const hasExtendedData = record.otvRate || record.fuelConsumption || record.monthlyLease ||
-                    record.priceListNumeric || record.priceCampaignNumeric;
+                  // Check if there's a discount (campaign price lower than list price)
+                  const hasDiscount = record.priceListNumeric && record.priceCampaignNumeric &&
+                    record.priceListNumeric > record.priceCampaignNumeric;
+                  const discountAmount = hasDiscount
+                    ? record.priceListNumeric! - record.priceCampaignNumeric!
+                    : 0;
+
+                  const hasExtendedData = record.otvRate || record.fuelConsumption || record.monthlyLease || hasDiscount;
                   if (!hasExtendedData) return null;
 
                   return (
-                    <Descriptions size="small" column={{ xs: 1, sm: 2, md: 3 }} style={{ marginLeft: 16 }}>
+                    <Descriptions size="small" column={{ xs: 1, sm: 2, md: 4 }} style={{ marginLeft: 16 }}>
+                      {hasDiscount && (
+                        <Descriptions.Item label={t('priceList.campaignPrice', 'İndirimli Fiyat')}>
+                          <Space direction="vertical" size={0}>
+                            <Text strong style={{ color: tokens.colors.success, fontSize: 16 }}>
+                              {record.priceCampaignNumeric!.toLocaleString('tr-TR')} TL
+                            </Text>
+                            <Text type="secondary" style={{ fontSize: 11 }}>
+                              ({discountAmount.toLocaleString('tr-TR')} TL tasarruf)
+                            </Text>
+                          </Space>
+                        </Descriptions.Item>
+                      )}
                       {record.otvRate && (
                         <Descriptions.Item label={t('priceList.otvRate', 'ÖTV Oranı')}>
                           <Tag color="orange">%{record.otvRate}</Tag>
@@ -1029,24 +1050,14 @@ export default function PriceListPage() {
                           </Text>
                         </Descriptions.Item>
                       )}
-                      {record.priceListNumeric && (
-                        <Descriptions.Item label={t('priceList.listPrice', 'Liste Fiyatı')}>
-                          {record.priceListNumeric.toLocaleString('tr-TR')} TL
-                        </Descriptions.Item>
-                      )}
-                      {record.priceCampaignNumeric && (
-                        <Descriptions.Item label={t('priceList.campaignPrice', 'Kampanya Fiyatı')}>
-                          <Text style={{ color: tokens.colors.success }}>
-                            {record.priceCampaignNumeric.toLocaleString('tr-TR')} TL
-                          </Text>
-                        </Descriptions.Item>
-                      )}
                     </Descriptions>
                   );
                 },
-                rowExpandable: (record) =>
-                  !!(record.otvRate || record.fuelConsumption || record.monthlyLease ||
-                    record.priceListNumeric || record.priceCampaignNumeric),
+                rowExpandable: (record) => {
+                  const hasDiscount = record.priceListNumeric && record.priceCampaignNumeric &&
+                    record.priceListNumeric > record.priceCampaignNumeric;
+                  return !!(record.otvRate || record.fuelConsumption || record.monthlyLease || hasDiscount);
+                },
               }}
             />
           </motion.div>
