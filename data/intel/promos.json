@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-01-31T01:33:05.336Z",
+  "generatedAt": "2026-01-31T19:34:13.261Z",
   "date": "2026-01-31",
   "summary": {
     "totalPriceDrops": 18,
-    "totalRecentDrops": 1,
+    "totalRecentDrops": 8,
     "avgDropPercent": 8.72,
     "maxDropPercent": 14.18,
     "brandsWithDrops": 5
@@ -25,7 +25,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 90000,
       "dropPercent": 14.18,
-      "daysSincePeak": 3,
+      "daysSincePeak": 2,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -37,10 +37,6 @@
         },
         {
           "date": "2026-01-30",
-          "price": 544900
-        },
-        {
-          "date": "2026-01-31",
           "price": 544900
         }
       ],
@@ -64,7 +60,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 90000,
       "dropPercent": 13.85,
-      "daysSincePeak": 3,
+      "daysSincePeak": 2,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -76,10 +72,6 @@
         },
         {
           "date": "2026-01-30",
-          "price": 559900
-        },
-        {
-          "date": "2026-01-31",
           "price": 559900
         }
       ],
@@ -103,7 +95,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 90000,
       "dropPercent": 13.24,
-      "daysSincePeak": 3,
+      "daysSincePeak": 2,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -115,10 +107,6 @@
         },
         {
           "date": "2026-01-30",
-          "price": 589900
-        },
-        {
-          "date": "2026-01-31",
           "price": 589900
         }
       ],
@@ -170,13 +158,12 @@
         },
         {
           "date": "2026-01-31",
-          "price": 1999000
-        },
-        {
-          "date": "2026-01-31",
           "price": 1740000
         }
-      ]
+      ],
+      "listPrice": 822857.14,
+      "campaignPrice": 1740000,
+      "otvRate": 617
     },
     {
       "id": "fiat-topolino-2026-topolino-plus-6-kw/8-hp---5.5kwh",
@@ -194,7 +181,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 90000,
       "dropPercent": 12.95,
-      "daysSincePeak": 3,
+      "daysSincePeak": 2,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -206,10 +193,6 @@
         },
         {
           "date": "2026-01-30",
-          "price": 604900
-        },
-        {
-          "date": "2026-01-31",
           "price": 604900
         }
       ],
@@ -727,18 +710,140 @@
   ],
   "recentDrops": [
     {
-      "id": "kia-stonic-cool-100-ps-recent",
-      "brand": "Kia",
-      "brandId": "kia",
-      "model": "Stonic",
-      "trim": "Cool",
-      "engine": "100 PS",
-      "currentPrice": 1740000,
-      "previousPrice": 1999000,
-      "dropAmount": 259000,
-      "dropPercent": 12.96,
+      "id": "fiat-topolino-2025-topolino-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2025",
+      "trim": "Topolino",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 544900,
+      "previousPrice": 634900,
+      "dropAmount": 90000,
+      "dropPercent": 14.18,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 634900,
+      "campaignPrice": 544900,
+      "campaignDiscount": 14.2
+    },
+    {
+      "id": "fiat-topolino-2026-topolino-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2026",
+      "trim": "Topolino",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 559900,
+      "previousPrice": 649900,
+      "dropAmount": 90000,
+      "dropPercent": 13.85,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 649900,
+      "campaignPrice": 559900,
+      "campaignDiscount": 13.8
+    },
+    {
+      "id": "fiat-topolino-2025-topolino-plus-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2025",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 589900,
+      "previousPrice": 679900,
+      "dropAmount": 90000,
+      "dropPercent": 13.24,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 679900,
+      "campaignPrice": 589900,
+      "campaignDiscount": 13.2
+    },
+    {
+      "id": "fiat-topolino-2026-topolino-plus-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino 2026",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 604900,
+      "previousPrice": 694900,
+      "dropAmount": 90000,
+      "dropPercent": 12.95,
+      "date": "2026-01-30",
+      "previousDate": "2026-01-29",
+      "listPrice": 694900,
+      "campaignPrice": 604900,
+      "campaignDiscount": 13
+    },
+    {
+      "id": "byd-seal-design-byd-160-kw-recent",
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "SEAL",
+      "trim": "Design",
+      "engine": "BYD  160 kW",
+      "currentPrice": 2369000,
+      "previousPrice": 2489000,
+      "dropAmount": 120000,
+      "dropPercent": 4.82,
       "date": "2026-01-31",
-      "previousDate": "2026-01-31"
+      "previousDate": "2026-01-30",
+      "listPrice": 2489000,
+      "campaignPrice": 2369000,
+      "campaignDiscount": 4.8
+    },
+    {
+      "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 589900,
+      "previousPrice": 604900,
+      "dropAmount": 15000,
+      "dropPercent": 2.48,
+      "date": "2026-01-31",
+      "previousDate": "2026-01-31",
+      "listPrice": 694900,
+      "campaignPrice": 604900,
+      "campaignDiscount": 13
+    },
+    {
+      "id": "byd-dolphin-comfort-byd-150-kw-recent",
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "DOLPHIN",
+      "trim": "Comfort",
+      "engine": "BYD  150 kW",
+      "currentPrice": 1719000,
+      "previousPrice": 1749000,
+      "dropAmount": 30000,
+      "dropPercent": 1.72,
+      "date": "2026-01-31",
+      "previousDate": "2026-01-30",
+      "listPrice": 1749000,
+      "campaignPrice": 1719000,
+      "campaignDiscount": 1.7
+    },
+    {
+      "id": "byd-dolphin-design-byd-150-kw-recent",
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "DOLPHIN",
+      "trim": "Design",
+      "engine": "BYD  150 kW",
+      "currentPrice": 1859000,
+      "previousPrice": 1889000,
+      "dropAmount": 30000,
+      "dropPercent": 1.59,
+      "date": "2026-01-31",
+      "previousDate": "2026-01-30",
+      "listPrice": 1889000,
+      "campaignPrice": 1859000,
+      "campaignDiscount": 1.6
     }
   ],
   "brandSummary": [

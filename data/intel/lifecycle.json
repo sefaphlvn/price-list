@@ -1,28 +1,13 @@
 {
-  "generatedAt": "2026-01-31T01:33:05.343Z",
+  "generatedAt": "2026-01-31T19:34:13.267Z",
   "date": "2026-01-31",
   "summary": {
-    "totalModels": 233,
-    "totalTransitions": 1,
+    "totalModels": 227,
+    "totalTransitions": 0,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
   },
-  "modelYearTransitions": [
-    {
-      "id": "fiat-Topolino-2024-2026",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino",
-      "oldYear": "2024",
-      "newYear": "2026",
-      "oldEntryPrice": 575900,
-      "newEntryPrice": 559900,
-      "priceDelta": -16000,
-      "priceDeltaPercent": -2.78,
-      "transitionDate": "2026-01-31",
-      "trimCount": 2
-    }
-  ],
+  "modelYearTransitions": [],
   "entryPriceDeltas": [],
   "staleModels": [],
   "allModels": [
@@ -510,8 +495,8 @@
       "brand": "BYD",
       "brandId": "byd",
       "model": "DOLPHIN",
-      "entryPrice": 1749000,
-      "topPrice": 1889000,
+      "entryPrice": 1719000,
+      "topPrice": 1859000,
       "trimCount": 2,
       "fuelTypes": [
         "Elektrik"
@@ -534,7 +519,7 @@
       "brand": "BYD",
       "brandId": "byd",
       "model": "SEAL",
-      "entryPrice": 2489000,
+      "entryPrice": 2369000,
       "topPrice": 3999000,
       "trimCount": 2,
       "fuelTypes": [
@@ -1101,82 +1086,10 @@
     {
       "brand": "Kia",
       "brandId": "kia",
-      "model": "EV3",
-      "entryPrice": 2095000,
-      "topPrice": 3500000,
-      "trimCount": 4,
-      "fuelTypes": [
-        "Elektrik"
-      ],
-      "lastUpdated": "2026-01-31"
-    },
-    {
-      "brand": "Kia",
-      "brandId": "kia",
-      "model": "EV6 PE",
-      "entryPrice": 3500000,
-      "topPrice": 3500000,
-      "trimCount": 1,
-      "fuelTypes": [
-        "Elektrik"
-      ],
-      "lastUpdated": "2026-01-31"
-    },
-    {
-      "brand": "Kia",
-      "brandId": "kia",
-      "model": "EV9",
-      "entryPrice": 6360000,
-      "topPrice": 7630000,
-      "trimCount": 2,
-      "fuelTypes": [
-        "Elektrik"
-      ],
-      "lastUpdated": "2026-01-31"
-    },
-    {
-      "brand": "Kia",
-      "brandId": "kia",
-      "model": "Picanto",
-      "entryPrice": 1290000,
-      "topPrice": 1390000,
-      "trimCount": 3,
-      "fuelTypes": [
-        "Benzin"
-      ],
-      "lastUpdated": "2026-01-31"
-    },
-    {
-      "brand": "Kia",
-      "brandId": "kia",
-      "model": "Sorento",
-      "entryPrice": 5990000,
-      "topPrice": 6130000,
-      "trimCount": 2,
-      "fuelTypes": [
-        "Hibrit"
-      ],
-      "lastUpdated": "2026-01-31"
-    },
-    {
-      "brand": "Kia",
-      "brandId": "kia",
-      "model": "Sportage",
-      "entryPrice": 2370000,
-      "topPrice": 3325000,
-      "trimCount": 4,
-      "fuelTypes": [
-        "Benzin"
-      ],
-      "lastUpdated": "2026-01-31"
-    },
-    {
-      "brand": "Kia",
-      "brandId": "kia",
       "model": "Stonic",
       "entryPrice": 1740000,
-      "topPrice": 1999000,
-      "trimCount": 3,
+      "topPrice": 1800000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2362,7 +2275,7 @@
       "model": "COROLLA",
       "entryPrice": 1650000,
       "topPrice": 2544000,
-      "trimCount": 7,
+      "trimCount": 8,
       "fuelTypes": [
         "Benzin",
         "Hibrit"
