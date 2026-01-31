@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-31T01:31:25.863Z",
+  "collectedAt": "2026-01-31T19:27:54.219Z",
   "brand": "Mercedes-Benz",
   "brandId": "mercedes",
   "rowCount": 51,
@@ -13,7 +13,11 @@
       "priceRaw": "3.159.000 TL",
       "priceNumeric": 3159000,
       "brand": "Mercedes-Benz",
-      "otvRate": 90
+      "otvRate": 90,
+      "modelYear": "2025",
+      "priceListNumeric": 1385526,
+      "powerHP": 163,
+      "engineDisplacement": "1.3L"
     },
     {
       "model": "Mercedes-AMG A 45 S 4MATIC+",
@@ -24,7 +28,13 @@
       "priceRaw": "6.920.000 TL",
       "priceNumeric": 6920000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 2135802,
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG CLA 45 S 4MATIC+",
@@ -35,7 +45,13 @@
       "priceRaw": "7.481.000 TL",
       "priceNumeric": 7481000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 2308951,
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG CLA 45 S 4MATIC+ Shooting Brake",
@@ -46,7 +62,13 @@
       "priceRaw": "7.790.000 TL",
       "priceNumeric": 7790000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 2404321,
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG GT 43 4MATIC+",
@@ -57,7 +79,13 @@
       "priceRaw": "14.064.600 TL",
       "priceNumeric": 14064600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 3662656,
+      "powerHP": 367,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "C 200 4MATIC",
@@ -68,7 +96,12 @@
       "priceRaw": "5.770.000 TL",
       "priceNumeric": 5770000,
       "brand": "Mercedes-Benz",
-      "otvRate": 100
+      "otvRate": 100,
+      "modelYear": "2025",
+      "priceListNumeric": 2404167,
+      "powerHP": 204,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD"
     },
     {
       "model": "Mercedes-AMG C 43 4MATIC",
@@ -79,7 +112,13 @@
       "priceRaw": "7.815.000 TL",
       "priceNumeric": 7815000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 2412037,
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG C 63 S E PERFORMANCE",
@@ -90,7 +129,13 @@
       "priceRaw": "12.109.000 TL",
       "priceNumeric": 12109000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 3737346,
+      "powerHP": 680,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true,
+      "isAMG": true
     },
     {
       "model": "C 200 4MATIC All-Terrain",
@@ -101,7 +146,12 @@
       "priceRaw": "5.436.000 TL",
       "priceNumeric": 5436000,
       "brand": "Mercedes-Benz",
-      "otvRate": 100
+      "otvRate": 100,
+      "modelYear": "2025",
+      "priceListNumeric": 2265000,
+      "powerHP": 204,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD"
     },
     {
       "model": "Mercedes-AMG C 43 4MATIC Estate",
@@ -112,7 +162,13 @@
       "priceRaw": "7.928.000 TL",
       "priceNumeric": 7928000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 2446914,
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG C 63 S E PERFORMANCE Estate",
@@ -123,7 +179,13 @@
       "priceRaw": "12.186.000 TL",
       "priceNumeric": 12186000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 3761111,
+      "powerHP": 680,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true,
+      "isAMG": true
     },
     {
       "model": "E 180",
@@ -134,7 +196,11 @@
       "priceRaw": "7.525.000 TL",
       "priceNumeric": 7525000,
       "brand": "Mercedes-Benz",
-      "otvRate": 100
+      "otvRate": 100,
+      "modelYear": "2025",
+      "priceListNumeric": 3135417,
+      "powerHP": 170,
+      "engineDisplacement": "1.5L"
     },
     {
       "model": "E 180",
@@ -145,7 +211,11 @@
       "priceRaw": "7.587.000 TL",
       "priceNumeric": 7587000,
       "brand": "Mercedes-Benz",
-      "otvRate": 100
+      "otvRate": 100,
+      "modelYear": "2025",
+      "priceListNumeric": 3161250,
+      "powerHP": 170,
+      "engineDisplacement": "1.5L"
     },
     {
       "model": "E 220 d 4MATIC",
@@ -156,7 +226,12 @@
       "priceRaw": "10.193.000 TL",
       "priceNumeric": 10193000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 3145988,
+      "powerHP": 197,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD"
     },
     {
       "model": "E 220 d 4MATIC",
@@ -167,7 +242,12 @@
       "priceRaw": "10.270.000 TL",
       "priceNumeric": 10270000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 3169753,
+      "powerHP": 197,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD"
     },
     {
       "model": "Mercedes-AMG E 53 Hybrid 4MATIC+",
@@ -178,7 +258,14 @@
       "priceRaw": "19.327.600 TL",
       "priceNumeric": 19327600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 5033229,
+      "powerHP": 585,
+      "engineDisplacement": "3.0L",
+      "isHybrid": true,
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "CLE 300 4MATIC Coupé",
@@ -189,7 +276,12 @@
       "priceRaw": "7.911.000 TL",
       "priceNumeric": 7911000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 2441667,
+      "powerHP": 258,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD"
     },
     {
       "model": "Mercedes-AMG CLE 53 4MATIC+",
@@ -200,7 +292,13 @@
       "priceRaw": "12.910.600 TL",
       "priceNumeric": 12910600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 3362135,
+      "powerHP": 449,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "CLE 300 4MATIC Cabriolet",
@@ -211,7 +309,12 @@
       "priceRaw": "8.869.000 TL",
       "priceNumeric": 8869000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 2737346,
+      "powerHP": 258,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD"
     },
     {
       "model": "S 450 d 4MATIC L",
@@ -222,7 +325,12 @@
       "priceRaw": "19.828.600 TL",
       "priceNumeric": 19828600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 5163698,
+      "powerHP": 367,
+      "engineDisplacement": "2.9L",
+      "driveType": "AWD"
     },
     {
       "model": "Mercedes-AMG S 63 E PERFORMANCE",
@@ -233,7 +341,13 @@
       "priceRaw": "35.229.600 TL",
       "priceNumeric": 35229600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 9174375,
+      "powerHP": 802,
+      "engineDisplacement": "4.0L",
+      "isHybrid": true,
+      "isAMG": true
     },
     {
       "model": "Mercedes-Maybach S 580 4MATIC",
@@ -244,7 +358,12 @@
       "priceRaw": "28.635.600 TL",
       "priceNumeric": 28635600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 7457188,
+      "powerHP": 503,
+      "engineDisplacement": "4.0L",
+      "driveType": "AWD"
     },
     {
       "model": "EQE 280",
@@ -255,7 +374,11 @@
       "priceRaw": "5.587.700 TL",
       "priceNumeric": 5587700,
       "brand": "Mercedes-Benz",
-      "otvRate": 55
+      "otvRate": 55,
+      "modelYear": "2025",
+      "priceListNumeric": 3004140,
+      "powerHP": 218,
+      "isElectric": true
     },
     {
       "model": "EQE 350 4MATIC",
@@ -266,7 +389,12 @@
       "priceRaw": "6.384.400 TL",
       "priceNumeric": 6384400,
       "brand": "Mercedes-Benz",
-      "otvRate": 75
+      "otvRate": 75,
+      "modelYear": "2025",
+      "priceListNumeric": 3040190,
+      "powerHP": 292,
+      "isElectric": true,
+      "driveType": "AWD"
     },
     {
       "model": "Mercedes-AMG EQE 53 4MATIC+",
@@ -277,7 +405,13 @@
       "priceRaw": "8.204.200 TL",
       "priceNumeric": 8204200,
       "brand": "Mercedes-Benz",
-      "otvRate": 75
+      "otvRate": 75,
+      "modelYear": "2025",
+      "priceListNumeric": 3906762,
+      "powerHP": 625,
+      "isElectric": true,
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "EQS 450 4MATIC",
@@ -288,7 +422,12 @@
       "priceRaw": "9.436.200 TL",
       "priceNumeric": 9436200,
       "brand": "Mercedes-Benz",
-      "otvRate": 75
+      "otvRate": 75,
+      "modelYear": "2025",
+      "priceListNumeric": 4493429,
+      "powerHP": 360,
+      "isElectric": true,
+      "driveType": "AWD"
     },
     {
       "model": "EQS 580 4MATIC",
@@ -299,7 +438,12 @@
       "priceRaw": "11.036.200 TL",
       "priceNumeric": 11036200,
       "brand": "Mercedes-Benz",
-      "otvRate": 75
+      "otvRate": 75,
+      "modelYear": "2025",
+      "priceListNumeric": 5255333,
+      "powerHP": 523,
+      "isElectric": true,
+      "driveType": "AWD"
     },
     {
       "model": "EQA 250+",
@@ -310,7 +454,11 @@
       "priceRaw": "3.911.800 TL",
       "priceNumeric": 3911800,
       "brand": "Mercedes-Benz",
-      "otvRate": 55
+      "otvRate": 55,
+      "modelYear": "2025",
+      "priceListNumeric": 2103118,
+      "powerHP": 190,
+      "isElectric": true
     },
     {
       "model": "EQA 250+",
@@ -321,7 +469,11 @@
       "priceRaw": "4.014.800 TL",
       "priceNumeric": 4014800,
       "brand": "Mercedes-Benz",
-      "otvRate": 55
+      "otvRate": 55,
+      "modelYear": "2025",
+      "priceListNumeric": 2158495,
+      "powerHP": 190,
+      "isElectric": true
     },
     {
       "model": "GLA 200",
@@ -332,7 +484,11 @@
       "priceRaw": "4.268.000 TL",
       "priceNumeric": 4268000,
       "brand": "Mercedes-Benz",
-      "otvRate": 90
+      "otvRate": 90,
+      "modelYear": "2025",
+      "priceListNumeric": 1871930,
+      "powerHP": 163,
+      "engineDisplacement": "1.3L"
     },
     {
       "model": "GLB 200",
@@ -343,7 +499,11 @@
       "priceRaw": "4.586.000 TL",
       "priceNumeric": 4586000,
       "brand": "Mercedes-Benz",
-      "otvRate": 90
+      "otvRate": 90,
+      "modelYear": "2025",
+      "priceListNumeric": 2011404,
+      "powerHP": 163,
+      "engineDisplacement": "1.3L"
     },
     {
       "model": "GLB 200",
@@ -354,7 +514,11 @@
       "priceRaw": "4.823.000 TL",
       "priceNumeric": 4823000,
       "brand": "Mercedes-Benz",
-      "otvRate": 90
+      "otvRate": 90,
+      "modelYear": "2025",
+      "priceListNumeric": 2115351,
+      "powerHP": 163,
+      "engineDisplacement": "1.3L"
     },
     {
       "model": "GLC 180",
@@ -365,7 +529,11 @@
       "priceRaw": "6.372.000 TL",
       "priceNumeric": 6372000,
       "brand": "Mercedes-Benz",
-      "otvRate": 100
+      "otvRate": 100,
+      "modelYear": "2025",
+      "priceListNumeric": 2655000,
+      "powerHP": 170,
+      "engineDisplacement": "1.5L"
     },
     {
       "model": "GLC 300 d 4MATIC",
@@ -376,7 +544,12 @@
       "priceRaw": "8.463.000 TL",
       "priceNumeric": 8463000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 2612037,
+      "powerHP": 269,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD"
     },
     {
       "model": "Mercedes-AMG GLC 43 4MATIC",
@@ -387,7 +560,13 @@
       "priceRaw": "9.359.000 TL",
       "priceNumeric": 9359000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 2888580,
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG GLC 63 S E PERFORMANCE",
@@ -398,7 +577,13 @@
       "priceRaw": "13.457.000 TL",
       "priceNumeric": 13457000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 4153395,
+      "powerHP": 680,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true,
+      "isAMG": true
     },
     {
       "model": "GLC 180 Coupé",
@@ -409,7 +594,11 @@
       "priceRaw": "6.787.000 TL",
       "priceNumeric": 6787000,
       "brand": "Mercedes-Benz",
-      "otvRate": 100
+      "otvRate": 100,
+      "modelYear": "2025",
+      "priceListNumeric": 2827917,
+      "powerHP": 170,
+      "engineDisplacement": "1.5L"
     },
     {
       "model": "Mercedes-AMG GLC 43 4MATIC Coupé",
@@ -420,7 +609,13 @@
       "priceRaw": "9.868.000 TL",
       "priceNumeric": 9868000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 3045679,
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG GLC 63 S E PERFORMANCE Coupé",
@@ -431,7 +626,13 @@
       "priceRaw": "14.142.000 TL",
       "priceNumeric": 14142000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 4364815,
+      "powerHP": 680,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true,
+      "isAMG": true
     },
     {
       "model": "G 580",
@@ -442,7 +643,11 @@
       "priceRaw": "14.490.200 TL",
       "priceNumeric": 14490200,
       "brand": "Mercedes-Benz",
-      "otvRate": 75
+      "otvRate": 75,
+      "modelYear": "2025",
+      "priceListNumeric": 6900095,
+      "powerHP": 587,
+      "isElectric": true
     },
     {
       "model": "G 450 d",
@@ -453,7 +658,11 @@
       "priceRaw": "20.357.600 TL",
       "priceNumeric": 20357600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 5301458,
+      "powerHP": 367,
+      "engineDisplacement": "3.0L"
     },
     {
       "model": "G 500",
@@ -464,7 +673,11 @@
       "priceRaw": "21.670.600 TL",
       "priceNumeric": 21670600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 5643385,
+      "powerHP": 449,
+      "engineDisplacement": "3.0L"
     },
     {
       "model": "Mercedes-AMG G 63",
@@ -475,7 +688,12 @@
       "priceRaw": "28.153.600 TL",
       "priceNumeric": 28153600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 7331667,
+      "powerHP": 585,
+      "engineDisplacement": "4.0L",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG SL 43",
@@ -486,7 +704,12 @@
       "priceRaw": "15.231.000 TL",
       "priceNumeric": 15231000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 4700926,
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG SL 63 4MATIC+",
@@ -497,7 +720,13 @@
       "priceRaw": "25.738.600 TL",
       "priceNumeric": 25738600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 6702760,
+      "powerHP": 585,
+      "engineDisplacement": "4.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "Mercedes-Maybach SL 680",
@@ -508,7 +737,11 @@
       "priceRaw": "35.187.600 TL",
       "priceNumeric": 35187600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 9163438,
+      "powerHP": 585,
+      "engineDisplacement": "4.0L"
     },
     {
       "model": "Mercedes-AMG GT 43",
@@ -519,7 +752,12 @@
       "priceRaw": "15.140.000 TL",
       "priceNumeric": 15140000,
       "brand": "Mercedes-Benz",
-      "otvRate": 170
+      "otvRate": 170,
+      "modelYear": "2025",
+      "priceListNumeric": 4672840,
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG GT 63 4MATIC+",
@@ -530,7 +768,13 @@
       "priceRaw": "26.496.600 TL",
       "priceNumeric": 26496600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 6900156,
+      "powerHP": 585,
+      "engineDisplacement": "4.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "Mercedes-AMG GT 63 PRO 4MATIC+",
@@ -541,7 +785,13 @@
       "priceRaw": "30.707.600 TL",
       "priceNumeric": 30707600,
       "brand": "Mercedes-Benz",
-      "otvRate": 220
+      "otvRate": 220,
+      "modelYear": "2025",
+      "priceListNumeric": 7996771,
+      "powerHP": 612,
+      "engineDisplacement": "4.0L",
+      "driveType": "AWD",
+      "isAMG": true
     },
     {
       "model": "CLA 220 4MATIC",
@@ -552,7 +802,12 @@
       "priceRaw": "4.643.000 TL",
       "priceNumeric": 4643000,
       "brand": "Mercedes-Benz",
-      "otvRate": 100
+      "otvRate": 100,
+      "modelYear": "2025",
+      "priceListNumeric": 1934583,
+      "powerHP": 190,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD"
     },
     {
       "model": "CLA 350 4MATIC",
@@ -563,7 +818,12 @@
       "priceRaw": "4.657.600 TL",
       "priceNumeric": 4657600,
       "brand": "Mercedes-Benz",
-      "otvRate": 75
+      "otvRate": 75,
+      "modelYear": "2025",
+      "priceListNumeric": 2217905,
+      "powerHP": 354,
+      "isElectric": true,
+      "driveType": "AWD"
     }
   ]
 }

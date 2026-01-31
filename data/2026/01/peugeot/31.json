@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-31T01:31:25.863Z",
+  "collectedAt": "2026-01-31T19:27:54.219Z",
   "brand": "Peugeot",
   "brandId": "peugeot",
   "rowCount": 30,
@@ -14,7 +14,10 @@
       "priceNumeric": 1960000,
       "brand": "Peugeot",
       "priceListNumeric": 1999500,
-      "priceCampaignNumeric": 1960000
+      "priceCampaignNumeric": 1960000,
+      "powerKW": 100,
+      "isElectric": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "E-308",
@@ -25,7 +28,10 @@
       "priceRaw": "2.381.000 TL",
       "priceNumeric": 2381000,
       "brand": "Peugeot",
-      "priceListNumeric": 2381000
+      "priceListNumeric": 2381000,
+      "powerKW": 115,
+      "isElectric": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "2008",
@@ -36,7 +42,12 @@
       "priceRaw": "2.181.000 TL",
       "priceNumeric": 2181000,
       "brand": "Peugeot",
-      "priceListNumeric": 2181000
+      "priceListNumeric": 2181000,
+      "powerHP": 130,
+      "engineDisplacement": "1.2L",
+      "engineType": "PureTech",
+      "transmissionType": "EAT8",
+      "vehicleCategory": "Binek"
     },
     {
       "model": "2008",
@@ -48,7 +59,13 @@
       "priceNumeric": 2283000,
       "brand": "Peugeot",
       "priceListNumeric": 2329000,
-      "priceCampaignNumeric": 2283000
+      "priceCampaignNumeric": 2283000,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "engineType": "Hybrid",
+      "transmissionType": "eDCS6",
+      "isHybrid": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "2008",
@@ -60,7 +77,13 @@
       "priceNumeric": 2370000,
       "brand": "Peugeot",
       "priceListNumeric": 2566500,
-      "priceCampaignNumeric": 2370000
+      "priceCampaignNumeric": 2370000,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "engineType": "Hybrid",
+      "transmissionType": "eDCS6",
+      "isHybrid": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "E-2008",
@@ -71,7 +94,10 @@
       "priceRaw": "2.014.000 TL",
       "priceNumeric": 2014000,
       "brand": "Peugeot",
-      "priceListNumeric": 2014000
+      "priceListNumeric": 2014000,
+      "powerKW": 100,
+      "isElectric": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "E-2008",
@@ -83,7 +109,10 @@
       "priceNumeric": 2074000,
       "brand": "Peugeot",
       "priceListNumeric": 2201500,
-      "priceCampaignNumeric": 2074000
+      "priceCampaignNumeric": 2074000,
+      "powerKW": 115,
+      "isElectric": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "E-2008",
@@ -95,7 +124,10 @@
       "priceNumeric": 2214000,
       "brand": "Peugeot",
       "priceListNumeric": 2308500,
-      "priceCampaignNumeric": 2214000
+      "priceCampaignNumeric": 2214000,
+      "powerKW": 115,
+      "isElectric": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "408",
@@ -106,7 +138,12 @@
       "priceRaw": "2.175.000 TL",
       "priceNumeric": 2175000,
       "brand": "Peugeot",
-      "priceListNumeric": 2175000
+      "priceListNumeric": 2175000,
+      "powerHP": 130,
+      "engineDisplacement": "1.2L",
+      "engineType": "PureTech",
+      "transmissionType": "EAT8",
+      "vehicleCategory": "Binek"
     },
     {
       "model": "408",
@@ -117,7 +154,13 @@
       "priceRaw": "2.255.000 TL",
       "priceNumeric": 2255000,
       "brand": "Peugeot",
-      "priceListNumeric": 2255000
+      "priceListNumeric": 2255000,
+      "powerHP": 130,
+      "engineDisplacement": "1.2L",
+      "engineType": "PureTech",
+      "transmissionType": "EAT8",
+      "vehicleCategory": "Binek",
+      "hasPanoramicRoof": true
     },
     {
       "model": "408",
@@ -128,7 +171,12 @@
       "priceRaw": "2.670.000 TL",
       "priceNumeric": 2670000,
       "brand": "Peugeot",
-      "priceListNumeric": 2670000
+      "priceListNumeric": 2670000,
+      "powerHP": 130,
+      "engineDisplacement": "1.2L",
+      "engineType": "PureTech",
+      "transmissionType": "EAT8",
+      "vehicleCategory": "Binek"
     },
     {
       "model": "408",
@@ -140,7 +188,13 @@
       "priceNumeric": 2336000,
       "brand": "Peugeot",
       "priceListNumeric": 2376000,
-      "priceCampaignNumeric": 2336000
+      "priceCampaignNumeric": 2336000,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "engineType": "Hybrid",
+      "transmissionType": "eDCS6",
+      "isHybrid": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "408",
@@ -152,7 +206,14 @@
       "priceNumeric": 2545000,
       "brand": "Peugeot",
       "priceListNumeric": 2592000,
-      "priceCampaignNumeric": 2545000
+      "priceCampaignNumeric": 2545000,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "engineType": "Hybrid",
+      "transmissionType": "eDCS6",
+      "isHybrid": true,
+      "vehicleCategory": "Binek",
+      "hasPanoramicRoof": true
     },
     {
       "model": "408",
@@ -164,7 +225,13 @@
       "priceNumeric": 2710000,
       "brand": "Peugeot",
       "priceListNumeric": 2820500,
-      "priceCampaignNumeric": 2710000
+      "priceCampaignNumeric": 2710000,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "engineType": "Hybrid",
+      "transmissionType": "eDCS6",
+      "isHybrid": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "3008",
@@ -176,7 +243,13 @@
       "priceNumeric": 2725000,
       "brand": "Peugeot",
       "priceListNumeric": 2851000,
-      "priceCampaignNumeric": 2725000
+      "priceCampaignNumeric": 2725000,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "engineType": "Hybrid",
+      "transmissionType": "eDCS6",
+      "isHybrid": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "3008",
@@ -188,7 +261,13 @@
       "priceNumeric": 2950000,
       "brand": "Peugeot",
       "priceListNumeric": 3259000,
-      "priceCampaignNumeric": 2950000
+      "priceCampaignNumeric": 2950000,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "engineType": "Hybrid",
+      "transmissionType": "eDCS6",
+      "isHybrid": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "E-3008",
@@ -200,7 +279,11 @@
       "priceNumeric": 3120000,
       "brand": "Peugeot",
       "priceListNumeric": 3318000,
-      "priceCampaignNumeric": 3120000
+      "priceCampaignNumeric": 3120000,
+      "powerKW": 157,
+      "powerHP": 210,
+      "isElectric": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "E-3008",
@@ -211,7 +294,11 @@
       "priceRaw": "3.514.500 TL",
       "priceNumeric": 3514500,
       "brand": "Peugeot",
-      "priceListNumeric": 3514500
+      "priceListNumeric": 3514500,
+      "powerKW": 157,
+      "powerHP": 210,
+      "isElectric": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "5008",
@@ -223,7 +310,13 @@
       "priceNumeric": 3218500,
       "brand": "Peugeot",
       "priceListNumeric": 3290000,
-      "priceCampaignNumeric": 3218500
+      "priceCampaignNumeric": 3218500,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "engineType": "Hybrid",
+      "transmissionType": "eDCS6",
+      "isHybrid": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "5008",
@@ -235,7 +328,13 @@
       "priceNumeric": 3422500,
       "brand": "Peugeot",
       "priceListNumeric": 3493000,
-      "priceCampaignNumeric": 3422500
+      "priceCampaignNumeric": 3422500,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "engineType": "Hybrid",
+      "transmissionType": "eDCS6",
+      "isHybrid": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "E-5008",
@@ -246,7 +345,11 @@
       "priceRaw": "3.502.000 TL",
       "priceNumeric": 3502000,
       "brand": "Peugeot",
-      "priceListNumeric": 3502000
+      "priceListNumeric": 3502000,
+      "powerKW": 157,
+      "powerHP": 210,
+      "isElectric": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "E-5008",
@@ -257,7 +360,11 @@
       "priceRaw": "3.644.000 TL",
       "priceNumeric": 3644000,
       "brand": "Peugeot",
-      "priceListNumeric": 3644000
+      "priceListNumeric": 3644000,
+      "powerKW": 157,
+      "powerHP": 210,
+      "isElectric": true,
+      "vehicleCategory": "Binek"
     },
     {
       "model": "Rifter",
@@ -269,7 +376,12 @@
       "priceNumeric": 1506000,
       "brand": "Peugeot",
       "priceListNumeric": 1543500,
-      "priceCampaignNumeric": 1506000
+      "priceCampaignNumeric": 1506000,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "engineType": "BlueHDi",
+      "transmissionType": "MT6",
+      "vehicleCategory": "Ticari"
     },
     {
       "model": "Rifter",
@@ -281,7 +393,12 @@
       "priceNumeric": 1801500,
       "brand": "Peugeot",
       "priceListNumeric": 1847000,
-      "priceCampaignNumeric": 1801500
+      "priceCampaignNumeric": 1801500,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "engineType": "BlueHDi",
+      "transmissionType": "EAT8",
+      "vehicleCategory": "Ticari"
     },
     {
       "model": "Rifter",
@@ -293,7 +410,12 @@
       "priceNumeric": 2026000,
       "brand": "Peugeot",
       "priceListNumeric": 2077000,
-      "priceCampaignNumeric": 2026000
+      "priceCampaignNumeric": 2026000,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "engineType": "BlueHDi",
+      "transmissionType": "EAT8",
+      "vehicleCategory": "Ticari"
     },
     {
       "model": "Partner Van",
@@ -304,7 +426,12 @@
       "priceRaw": "1.237.500 TL",
       "priceNumeric": 1237500,
       "brand": "Peugeot",
-      "priceListNumeric": 1237500
+      "priceListNumeric": 1237500,
+      "powerHP": 100,
+      "engineDisplacement": "1.5L",
+      "engineType": "BlueHDi",
+      "transmissionType": "MT6",
+      "vehicleCategory": "Ticari"
     },
     {
       "model": "Partner Van",
@@ -316,7 +443,12 @@
       "priceNumeric": 1297500,
       "brand": "Peugeot",
       "priceListNumeric": 1330000,
-      "priceCampaignNumeric": 1297500
+      "priceCampaignNumeric": 1297500,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "engineType": "BlueHDi",
+      "transmissionType": "MT6",
+      "vehicleCategory": "Ticari"
     },
     {
       "model": "Partner Van",
@@ -328,7 +460,12 @@
       "priceNumeric": 1371000,
       "brand": "Peugeot",
       "priceListNumeric": 1405000,
-      "priceCampaignNumeric": 1371000
+      "priceCampaignNumeric": 1371000,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "engineType": "BlueHDi",
+      "transmissionType": "EAT8",
+      "vehicleCategory": "Ticari"
     },
     {
       "model": "Expert Traveller",
@@ -339,7 +476,14 @@
       "priceRaw": "2.290.500 TL",
       "priceNumeric": 2290500,
       "brand": "Peugeot",
-      "priceListNumeric": 2290500
+      "priceListNumeric": 2290500,
+      "powerHP": 180,
+      "engineDisplacement": "2.0L",
+      "engineType": "BlueHDi",
+      "transmissionType": "EAT8",
+      "vehicleCategory": "Ticari",
+      "vehicleLength": "L3",
+      "seatingCapacity": "8+1"
     },
     {
       "model": "Expert Traveller",
@@ -351,7 +495,15 @@
       "priceNumeric": 2360500,
       "brand": "Peugeot",
       "priceListNumeric": 2420000,
-      "priceCampaignNumeric": 2360500
+      "priceCampaignNumeric": 2360500,
+      "powerHP": 180,
+      "engineDisplacement": "2.2L",
+      "engineType": "BlueHDi",
+      "transmissionType": "EAT8",
+      "emissionStandard": "€6eBIS",
+      "vehicleCategory": "Ticari",
+      "vehicleLength": "L3",
+      "seatingCapacity": "8+1"
     }
   ]
 }

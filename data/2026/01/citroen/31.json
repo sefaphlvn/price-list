@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-31T01:31:25.863Z",
+  "collectedAt": "2026-01-31T19:27:54.219Z",
   "brand": "Citroën",
   "brandId": "citroen",
   "rowCount": 17,
@@ -192,5 +192,7 @@
       "brand": "Citroën",
       "priceListNumeric": 581000
     }
-  ]
+  ],
+  "isFallback": true,
+  "originalDate": "2026-01-31T19:27:01.853Z"
 }

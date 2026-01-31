@@ -1,49 +1,9 @@
 {
-  "collectedAt": "2026-01-31T01:31:25.863Z",
+  "collectedAt": "2026-01-31T19:27:54.219Z",
   "brand": "Kia",
   "brandId": "kia",
-  "rowCount": 22,
+  "rowCount": 5,
   "rows": [
-    {
-      "model": "Stonic",
-      "trim": "Cool",
-      "engine": "100 PS",
-      "transmission": "Otomatik",
-      "fuel": "Benzin",
-      "priceRaw": "1.999.000 TL",
-      "priceNumeric": 1999000,
-      "brand": "Kia"
-    },
-    {
-      "model": "Picanto",
-      "trim": "Feel",
-      "engine": "63 PS",
-      "transmission": "Manuel",
-      "fuel": "Benzin",
-      "priceRaw": "1.290.000 TL",
-      "priceNumeric": 1290000,
-      "brand": "Kia"
-    },
-    {
-      "model": "Picanto",
-      "trim": "Cool",
-      "engine": "79 PS",
-      "transmission": "Manuel",
-      "fuel": "Benzin",
-      "priceRaw": "1.390.000 TL",
-      "priceNumeric": 1390000,
-      "brand": "Kia"
-    },
-    {
-      "model": "Picanto",
-      "trim": "Cool",
-      "engine": "68 PS",
-      "transmission": "Manuel",
-      "fuel": "Benzin",
-      "priceRaw": "1.335.000 TL",
-      "priceNumeric": 1335000,
-      "brand": "Kia"
-    },
     {
       "model": "CEE",
       "trim": "Elegance",
@@ -52,7 +12,14 @@
       "fuel": "Benzin",
       "priceRaw": "2.070.000 TL",
       "priceNumeric": 2070000,
-      "brand": "Kia"
+      "brand": "Kia",
+      "priceListNumeric": 951388.89,
+      "priceCampaignNumeric": 2070000,
+      "powerHP": 140,
+      "engineDisplacement": "1.5L",
+      "transmissionType": "DCT",
+      "modelYear": 2025,
+      "otvRate": 761
     },
     {
       "model": "Stonic",
@@ -62,7 +29,14 @@
       "fuel": "Benzin",
       "priceRaw": "1.740.000 TL",
       "priceNumeric": 1740000,
-      "brand": "Kia"
+      "brand": "Kia",
+      "priceListNumeric": 822857.14,
+      "priceCampaignNumeric": 1740000,
+      "powerHP": 100,
+      "engineDisplacement": "1.0L",
+      "transmissionType": "DCT",
+      "modelYear": 2025,
+      "otvRate": 617
     },
     {
       "model": "Stonic",
@@ -72,7 +46,14 @@
       "fuel": "Benzin",
       "priceRaw": "1.800.000 TL",
       "priceNumeric": 1800000,
-      "brand": "Kia"
+      "brand": "Kia",
+      "priceListNumeric": 853380.24,
+      "priceCampaignNumeric": 1800000,
+      "powerHP": 100,
+      "engineDisplacement": "1.0L",
+      "transmissionType": "DCT",
+      "modelYear": 2025,
+      "otvRate": 640
     },
     {
       "model": "XCEED",
@@ -82,7 +63,15 @@
       "fuel": "Hybrid",
       "priceRaw": "1.790.000 TL",
       "priceNumeric": 1790000,
-      "brand": "Kia"
+      "brand": "Kia",
+      "priceListNumeric": 846666.67,
+      "priceCampaignNumeric": 1790000,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "transmissionType": "DCT",
+      "modelYear": 2025,
+      "otvRate": 635,
+      "isHybrid": true
     },
     {
       "model": "XCEED",
@@ -92,137 +81,14 @@
       "fuel": "Benzin",
       "priceRaw": "2.175.000 TL",
       "priceNumeric": 2175000,
-      "brand": "Kia"
-    },
-    {
-      "model": "Sportage",
-      "trim": "Cool",
-      "engine": "150 PS",
-      "transmission": "Otomatik",
-      "fuel": "Benzin",
-      "priceRaw": "2.370.000 TL",
-      "priceNumeric": 2370000,
-      "brand": "Kia"
-    },
-    {
-      "model": "Sportage",
-      "trim": "Elegance",
-      "engine": "150 PS",
-      "transmission": "Otomatik",
-      "fuel": "Benzin",
-      "priceRaw": "2.820.000 TL",
-      "priceNumeric": 2820000,
-      "brand": "Kia"
-    },
-    {
-      "model": "Sportage",
-      "trim": "Prestige",
-      "engine": "150 PS",
-      "transmission": "Otomatik",
-      "fuel": "Benzin",
-      "priceRaw": "3.085.000 TL",
-      "priceNumeric": 3085000,
-      "brand": "Kia"
-    },
-    {
-      "model": "Sportage",
-      "trim": "GT-Line",
-      "engine": "180 PS",
-      "transmission": "Otomatik",
-      "fuel": "Benzin",
-      "priceRaw": "3.325.000 TL",
-      "priceNumeric": 3325000,
-      "brand": "Kia"
-    },
-    {
-      "model": "Sorento",
-      "trim": "Prestige Smart",
-      "engine": "215 PS",
-      "transmission": "Otomatik",
-      "fuel": "Hybrid",
-      "priceRaw": "5.990.000 TL",
-      "priceNumeric": 5990000,
-      "brand": "Kia"
-    },
-    {
-      "model": "Sorento",
-      "trim": "Prestige Smart",
-      "engine": "215 PS",
-      "transmission": "Otomatik",
-      "fuel": "Hybrid",
-      "priceRaw": "6.130.000 TL",
-      "priceNumeric": 6130000,
-      "brand": "Kia"
-    },
-    {
-      "model": "EV3",
-      "trim": "Elegance Standard Range",
-      "engine": "150 kW",
-      "transmission": "Otomatik",
-      "fuel": "Elektrik",
-      "priceRaw": "2.095.000 TL",
-      "priceNumeric": 2095000,
-      "brand": "Kia"
-    },
-    {
-      "model": "EV3",
-      "trim": "Elegance Long Range",
-      "engine": "150 kW",
-      "transmission": "Otomatik",
-      "fuel": "Elektrik",
-      "priceRaw": "2.445.000 TL",
-      "priceNumeric": 2445000,
-      "brand": "Kia"
-    },
-    {
-      "model": "EV3",
-      "trim": "Prestige Standard Range",
-      "engine": "150 kW",
-      "transmission": "Otomatik",
-      "fuel": "Elektrik",
-      "priceRaw": "2.345.000 TL",
-      "priceNumeric": 2345000,
-      "brand": "Kia"
-    },
-    {
-      "model": "EV3",
-      "trim": "GT-Line Long Range",
-      "engine": "150 kW",
-      "transmission": "Otomatik",
-      "fuel": "Elektrik",
-      "priceRaw": "3.500.000 TL",
-      "priceNumeric": 3500000,
-      "brand": "Kia"
-    },
-    {
-      "model": "EV6 PE",
-      "trim": "Elegance Standard Range",
-      "engine": "125 kW",
-      "transmission": "Otomatik",
-      "fuel": "Elektrik",
-      "priceRaw": "3.500.000 TL",
-      "priceNumeric": 3500000,
-      "brand": "Kia"
-    },
-    {
-      "model": "EV9",
-      "trim": "Prestige",
-      "engine": "149 kW",
-      "transmission": "Otomatik",
-      "fuel": "Elektrik",
-      "priceRaw": "6.360.000 TL",
-      "priceNumeric": 6360000,
-      "brand": "Kia"
-    },
-    {
-      "model": "EV9",
-      "trim": "GT-Line",
-      "engine": "283 kW",
-      "transmission": "Otomatik",
-      "fuel": "Elektrik",
-      "priceRaw": "7.630.000 TL",
-      "priceNumeric": 7630000,
-      "brand": "Kia"
+      "brand": "Kia",
+      "priceListNumeric": 1000000,
+      "priceCampaignNumeric": 2175000,
+      "powerHP": 150,
+      "engineDisplacement": "1.6L",
+      "transmissionType": "DCT",
+      "modelYear": 2025,
+      "otvRate": 800
     }
   ]
 }

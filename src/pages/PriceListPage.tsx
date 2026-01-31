@@ -1016,7 +1016,13 @@ export default function PriceListPage() {
                     ? record.priceListNumeric! - record.priceCampaignNumeric!
                     : 0;
 
-                  const hasExtendedData = record.otvRate || record.fuelConsumption || record.monthlyLease || hasDiscount;
+                  // Check for VW-specific extended data
+                  const hasVWExtendedData = record.netPrice || record.otvAmount ||
+                    record.kdvAmount || record.mtvAmount || record.origin ||
+                    (record.optionalEquipment && record.optionalEquipment.length > 0);
+
+                  const hasExtendedData = record.otvRate || record.fuelConsumption ||
+                    record.monthlyLease || hasDiscount || hasVWExtendedData;
                   if (!hasExtendedData) return null;
 
                   return (
@@ -1038,6 +1044,42 @@ export default function PriceListPage() {
                           <Tag color="orange">%{record.otvRate}</Tag>
                         </Descriptions.Item>
                       )}
+                      {record.netPrice && (
+                        <Descriptions.Item label={t('priceList.netPrice', 'Net Fiyat (KDV Hariç)')}>
+                          <Text type="secondary">{record.netPrice.toLocaleString('tr-TR')} TL</Text>
+                        </Descriptions.Item>
+                      )}
+                      {record.otvAmount && (
+                        <Descriptions.Item label={t('priceList.otvAmount', 'ÖTV Tutarı')}>
+                          <Text style={{ color: '#fa8c16' }}>{record.otvAmount.toLocaleString('tr-TR')} TL</Text>
+                        </Descriptions.Item>
+                      )}
+                      {record.kdvAmount && (
+                        <Descriptions.Item label={t('priceList.kdvAmount', 'KDV Tutarı')}>
+                          {record.kdvAmount.toLocaleString('tr-TR')} TL
+                        </Descriptions.Item>
+                      )}
+                      {record.mtvAmount && (
+                        <Descriptions.Item label={t('priceList.mtvAmount', 'MTV')}>
+                          {record.mtvAmount.toLocaleString('tr-TR')} TL
+                        </Descriptions.Item>
+                      )}
+                      {record.origin && (
+                        <Descriptions.Item label={t('priceList.origin', 'Menşei')}>
+                          <Tag color="blue">{record.origin}</Tag>
+                        </Descriptions.Item>
+                      )}
+                      {record.optionalEquipment && record.optionalEquipment.length > 0 && (
+                        <Descriptions.Item label={t('priceList.optionalEquipment', 'Opsiyonel Donanım')} span={2}>
+                          <Space wrap size="small">
+                            {record.optionalEquipment.map((opt, i) => (
+                              <Tag key={i} color="cyan">
+                                {opt.name}: +{opt.price.toLocaleString('tr-TR')} TL
+                              </Tag>
+                            ))}
+                          </Space>
+                        </Descriptions.Item>
+                      )}
                       {record.fuelConsumption && (
                         <Descriptions.Item label={t('priceList.fuelConsumption', 'Yakıt Tüketimi')}>
                           {record.fuelConsumption}
@@ -1056,7 +1098,10 @@ export default function PriceListPage() {
                 rowExpandable: (record) => {
                   const hasDiscount = record.priceListNumeric && record.priceCampaignNumeric &&
                     record.priceListNumeric > record.priceCampaignNumeric;
-                  return !!(record.otvRate || record.fuelConsumption || record.monthlyLease || hasDiscount);
+                  const hasVWExtendedData = record.netPrice || record.otvAmount ||
+                    record.kdvAmount || record.mtvAmount || record.origin ||
+                    (record.optionalEquipment && record.optionalEquipment.length > 0);
+                  return !!(record.otvRate || record.fuelConsumption || record.monthlyLease || hasDiscount || hasVWExtendedData);
                 },
               }}
             />

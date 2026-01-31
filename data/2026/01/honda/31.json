@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-31T01:31:25.863Z",
+  "collectedAt": "2026-01-31T19:27:54.219Z",
   "brand": "Honda",
   "brandId": "honda",
   "rowCount": 6,
@@ -13,7 +13,9 @@
       "priceRaw": "2.380.000 TL",
       "priceNumeric": 2380000,
       "brand": "Honda",
-      "priceListNumeric": 2380000
+      "priceListNumeric": 2380000,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
     },
     {
       "model": "HR-V Hybrid",
@@ -25,7 +27,9 @@
       "priceNumeric": 2389000,
       "brand": "Honda",
       "priceListNumeric": 2544000,
-      "priceCampaignNumeric": 2389000
+      "priceCampaignNumeric": 2389000,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
     },
     {
       "model": "HR-V Hybrid",
@@ -36,7 +40,9 @@
       "priceRaw": "2.675.000 TL",
       "priceNumeric": 2675000,
       "brand": "Honda",
-      "priceListNumeric": 2675000
+      "priceListNumeric": 2675000,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
     },
     {
       "model": "HR-V Hybrid",
@@ -47,7 +53,9 @@
       "priceRaw": "2.955.000 TL",
       "priceNumeric": 2955000,
       "brand": "Honda",
-      "priceListNumeric": 2955000
+      "priceListNumeric": 2955000,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
     },
     {
       "model": "Type R",
@@ -58,7 +66,9 @@
       "priceRaw": "5.500.000 TL",
       "priceNumeric": 5500000,
       "brand": "Honda",
-      "priceListNumeric": 5500000
+      "priceListNumeric": 5500000,
+      "engineDisplacement": "2.0L",
+      "engineType": "VTEC Turbo"
     },
     {
       "model": "CR-V Hybrid",
@@ -69,7 +79,9 @@
       "priceRaw": "6.160.000 TL",
       "priceNumeric": 6160000,
       "brand": "Honda",
-      "priceListNumeric": 6160000
+      "priceListNumeric": 6160000,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true
     }
   ]
 }

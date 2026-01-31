@@ -386,7 +386,7 @@ const filterValidRows = (rows: PriceListRow[], brandName: string): PriceListRow[
   return validRows;
 };
 
-// Volkswagen parser
+// Volkswagen parser - extracts all available data including taxes, optional equipment, origin
 const parseVWData = (data: any, brand: string): PriceListRow[] => {
   const rows: PriceListRow[] = [];
   try {
@@ -398,6 +398,40 @@ const parseVWData = (data: any, brand: string): PriceListRow[] => {
       if (!priceData) return;
 
       const modelName = priceData['-ModelName'] || 'Unknown';
+
+      // Extract model year from DateInfo: "2025 Model..."
+      const dateInfo = priceData.DateInfo || arac.DateInfo || '';
+      const modelYearMatch = dateInfo.match(/(\d{4})\s*Model/i);
+      const modelYear = modelYearMatch ? modelYearMatch[1] : undefined;
+
+      // Extract origin from Notes: "Menşei: Güney Afrika"
+      let origin: string | undefined;
+      const notes = priceData?.Notes?.Item;
+      if (Array.isArray(notes)) {
+        const originNote = notes.find((n: string) => typeof n === 'string' && n.includes('Menşei:'));
+        if (originNote) {
+          const originMatch = originNote.match(/Menşei:\s*(.+)/);
+          if (originMatch) origin = originMatch[1].trim();
+        }
+      }
+
+      // Extract optional equipment prices
+      const optionalEquipment: { name: string; price: number }[] = [];
+      const options = priceData?.Options?.Item;
+      if (options) {
+        const optSubItems = Array.isArray(options.SubItem)
+          ? options.SubItem
+          : options.SubItem ? [options.SubItem] : [];
+        optSubItems.forEach((opt: any) => {
+          if (opt && opt['-Title'] && opt['-Price2']) {
+            optionalEquipment.push({
+              name: opt['-Title'],
+              price: parseInt(opt['-Price2'], 10) || 0,
+            });
+          }
+        });
+      }
+
       const subListItem = priceData?.SubList?.Item;
       if (!subListItem) return;
 
@@ -407,26 +441,53 @@ const parseVWData = (data: any, brand: string): PriceListRow[] => {
         const subItemArray = item.SubItem;
         if (!Array.isArray(subItemArray)) return;
 
-        let donanim = '', motor = '', sanziman = '', fiyat = '', listeFiyat = '', kampanyaFiyat = '';
+        let donanim = '', motor = '', sanziman = '';
+        let fiyat = '', listeFiyat = '', kampanyaFiyat = '', netFiyat = '';
+        let otvTutar = '', kdvTutar = '', mtvTutar = '';
+        let trafikTescil = '', noterHarci = '';
+        let otvRate: number | undefined;
 
         subItemArray.forEach((detail: any) => {
           const title = detail['-Title'] || '';
           const value = detail['-Value'] || '';
+
           if (title === 'Donanım') donanim = value;
           else if (title === 'Motor') motor = value;
           else if (title === 'Şanzıman') sanziman = value;
+          else if (title === 'Net Fiyat') netFiyat = value;
+          else if (title.startsWith('ÖTV')) {
+            otvTutar = value;
+            // Extract OTV rate from title: "ÖTV (%75) (%80) (*5)" → 80
+            const rateMatches = title.match(/\(%(\d+)\)/g);
+            if (rateMatches && rateMatches.length > 0) {
+              // Take the last rate (usually the active one)
+              const lastRate = rateMatches[rateMatches.length - 1];
+              const numMatch = lastRate.match(/(\d+)/);
+              if (numMatch) otvRate = parseInt(numMatch[1], 10);
+            }
+          }
+          else if (title.startsWith('KDV')) kdvTutar = value;
+          else if (title.includes('Motorlu Taşıtlar Vergisi')) mtvTutar = value;
+          else if (title.includes('Trafik') && title.includes('Tescil') && !title.includes('Hizmet')) {
+            trafikTescil = value;
+          }
+          else if (title.includes('Noter') && !title.includes('Dahil')) {
+            noterHarci = value;
+          }
           else if (title.includes('Fiyat')) {
             // Capture different price types
             if (title.includes('Liste') && !title.includes('Noter')) {
               listeFiyat = value;
             } else if (title.includes('Kampanya') && !title.includes('Noter')) {
               kampanyaFiyat = value;
-            } else if (title.includes('Anahtar Teslim') && !title.includes('Noter')) {
-              fiyat = value;
+            } else if (!title.includes('Noter') && !title.includes('Net') && !title.includes('Dahil')) {
+              // Main price (Anahtar Teslim or first Fiyat field)
+              if (!fiyat) fiyat = value;
             }
           }
         });
 
+        // Detect fuel type
         const combinedText = `${modelName} ${motor} ${donanim}`.toLowerCase();
         let yakit = '';
         if (combinedText.includes('e-hybrid') || combinedText.includes('ehybrid') || combinedText.includes('phev')) {
@@ -454,8 +515,20 @@ const parseVWData = (data: any, brand: string): PriceListRow[] => {
             priceRaw: fiyat,
             priceNumeric: parsePrice(fiyat),
             brand,
+            // Existing optional fields
             ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
             ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+            // VW-specific new fields
+            ...(modelYear && { modelYear }),
+            ...(otvRate && { otvRate }),
+            ...(netFiyat && { netPrice: parsePrice(netFiyat) }),
+            ...(otvTutar && { otvAmount: parsePrice(otvTutar) }),
+            ...(kdvTutar && { kdvAmount: parsePrice(kdvTutar) }),
+            ...(mtvTutar && { mtvAmount: parsePrice(mtvTutar) }),
+            ...(trafikTescil && { trafficRegistrationFee: parsePrice(trafikTescil) }),
+            ...(noterHarci && { notaryFee: parsePrice(noterHarci) }),
+            ...(origin && { origin }),
+            ...(optionalEquipment.length > 0 && { optionalEquipment }),
           });
         }
       });
@@ -479,15 +552,19 @@ const parseVWData = (data: any, brand: string): PriceListRow[] => {
 const parseSkodaData = (data: any, brand: string): PriceListRow[] => {
   const rows: PriceListRow[] = [];
   try {
-    // New structure: pageProps.tabs[0].content.priceListData.priceListSections
-    // Old structure: pageProps.priceListSections
+    // Get tabs for model year info
+    const tabs = data?.pageProps?.tabs;
+    let modelYear: string | undefined;
+    if (Array.isArray(tabs) && tabs[0]?.title) {
+      // Extract year from "2025 Model Yılı"
+      const yearMatch = tabs[0].title.match(/(\d{4})/);
+      if (yearMatch) modelYear = yearMatch[1];
+    }
+
+    // Get sections - try new structure first, then old
     let sections = data?.pageProps?.priceListSections;
-    if (!sections) {
-      // Try new structure
-      const tabs = data?.pageProps?.tabs;
-      if (Array.isArray(tabs) && tabs[0]?.content?.priceListData?.priceListSections) {
-        sections = tabs[0].content.priceListData.priceListSections;
-      }
+    if (!sections && tabs?.[0]?.content?.priceListData?.priceListSections) {
+      sections = tabs[0].content.priceListData.priceListSections;
     }
     if (!Array.isArray(sections)) return rows;
 
@@ -497,21 +574,78 @@ const parseSkodaData = (data: any, brand: string): PriceListRow[] => {
 
       items.forEach((item: any) => {
         const modelName = item.title || 'Unknown';
+
+        // Extract origin from description: "Menşei: Çekya"
+        let origin: string | undefined;
+        const description = item.priceListDetailDescription?.children;
+        if (description) {
+          const originMatch = description.match(/Menşei:\s*([^<\s5-9]+)/);
+          if (originMatch) origin = originMatch[1].replace(/&nbsp;/g, '').trim();
+        }
+
+        // Extract optional equipment prices
+        const optionalEquipment: { name: string; price: number }[] = [];
+        const optTable = item.optionalEquipmentPricesTable?.data;
+        if (Array.isArray(optTable)) {
+          optTable.forEach((opt: any) => {
+            const name = opt.optionalEquipment?.value;
+            const priceStr = opt.modelPrice?.value;
+            if (name && priceStr) {
+              optionalEquipment.push({
+                name: name.replace(/\d+-\d+$/, '').trim(), // Remove "3-5" suffix
+                price: parsePrice(priceStr),
+              });
+            }
+          });
+        }
+
         const tableData = item.modelPricesTable?.data;
         if (!Array.isArray(tableData)) return;
 
         tableData.forEach((row: any) => {
           const donanim = row.hardware?.value || '';
           const fiyat = row.currentPrice?.value || '';
-          // Check for additional price fields
-          const listeFiyat = row.listPrice?.value || row.basePrice?.value || '';
-          const kampanyaFiyat = row.campaignPrice?.value || row.discountPrice?.value || '';
+          const kampanyaFiyat = row.discountPrice?.value || '';
+          const childData = row.currentPrice?.child;
 
+          // Extract tax details from child array
+          let netPrice: number | undefined;
+          let otvAmount: number | undefined;
+          let otvRate: number | undefined;
+          let kdvAmount: number | undefined;
+          let mtvAmount: number | undefined;
+          let trafficRegistrationFee: number | undefined;
+
+          if (Array.isArray(childData)) {
+            childData.forEach((childItem: any[]) => {
+              if (!Array.isArray(childItem) || childItem.length < 3) return;
+              const label = childItem[0] || '';
+              const value = childItem[2] || '';
+
+              if (label.includes('Net Fiyat')) {
+                netPrice = parsePrice(value);
+              } else if (label.includes('ÖTV Tutarı')) {
+                otvAmount = parsePrice(value);
+                // Extract rate: "ÖTV Tutarı (%75)" → 75
+                const rateMatch = label.match(/\(%(\d+)\)/);
+                if (rateMatch) otvRate = parseInt(rateMatch[1], 10);
+              } else if (label.includes('KDV Tutarı')) {
+                kdvAmount = parsePrice(value);
+              } else if (label.includes('MTV')) {
+                mtvAmount = parsePrice(value);
+              } else if (label.includes('Trafik') && label.includes('Tescil')) {
+                trafficRegistrationFee = parsePrice(value);
+              }
+            });
+          }
+
+          // Determine transmission
           let sanziman = '';
           if (donanim.includes('DSG')) sanziman = 'DSG';
           else if (donanim.includes('Manuel')) sanziman = 'Manuel';
           else if (donanim.includes('Otomatik')) sanziman = 'Otomatik';
 
+          // Determine fuel type
           const combinedText = `${modelName} ${donanim}`.toLowerCase();
           let yakit = '';
           if (combinedText.includes('elroq') || combinedText.includes('enyaq') || /\d+\s*e-/.test(combinedText)) {
@@ -527,7 +661,7 @@ const parseSkodaData = (data: any, brand: string): PriceListRow[] => {
           const motor = donanim.replace(/DSG|Manuel|Otomatik/gi, '').trim();
 
           if (fiyat) {
-            const priceListNumeric = listeFiyat ? parsePrice(listeFiyat) : undefined;
+            const priceNumeric = parsePrice(fiyat);
             const priceCampaignNumeric = kampanyaFiyat ? parsePrice(kampanyaFiyat) : undefined;
 
             rows.push({
@@ -537,10 +671,24 @@ const parseSkodaData = (data: any, brand: string): PriceListRow[] => {
               transmission: sanziman,
               fuel: yakit,
               priceRaw: fiyat,
-              priceNumeric: parsePrice(fiyat),
+              priceNumeric,
               brand,
-              ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
-              ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+              // Extended fields
+              ...(modelYear && { modelYear }),
+              ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && {
+                priceListNumeric: priceNumeric, // Liste fiyatı = currentPrice
+                priceCampaignNumeric,           // Kampanya fiyatı = discountPrice
+              }),
+              // Tax details (VW-compatible)
+              ...(otvRate && { otvRate }),
+              ...(netPrice && { netPrice }),
+              ...(otvAmount && { otvAmount }),
+              ...(kdvAmount && { kdvAmount }),
+              ...(mtvAmount && { mtvAmount }),
+              ...(trafficRegistrationFee && { trafficRegistrationFee }),
+              // Origin & optional equipment
+              ...(origin && { origin }),
+              ...(optionalEquipment.length > 0 && { optionalEquipment }),
             });
           }
         });
@@ -561,6 +709,59 @@ const parseSkodaData = (data: any, brand: string): PriceListRow[] => {
   return rows;
 };
 
+// Renault/Dacia engine details parser - extracts detailed info from VersiyonAdi
+interface RenaultEngineDetails {
+  powerHP?: number;           // 90, 100, 115
+  engineType?: string;        // "TCe", "dCi", "SCe", "E-TECH"
+  isHybrid?: boolean;
+  isElectric?: boolean;
+}
+
+function parseRenaultEngineDetails(versiyonAdi: string, yakitTipi: string): RenaultEngineDetails {
+  const details: RenaultEngineDetails = {};
+  const fuelLower = yakitTipi.toLowerCase();
+
+  // Power HP - look for numbers like "100", "90", "115", "120hp", "150hp"
+  // Pattern 1: number followed by hp/HP/ps/PS/bg (e.g., "120hp", "150HP")
+  // Pattern 2: number at end or before specific keywords (e.g., "TCe 100", "90 eco-g")
+  const hpSuffixMatch = versiyonAdi.match(/(\d{2,3})\s*(?:hp|ps|bg)\b/i);
+  if (hpSuffixMatch) {
+    details.powerHP = parseInt(hpSuffixMatch[1], 10);
+  } else {
+    const hpMatch = versiyonAdi.match(/\b(\d{2,3})\b(?:\s|$|eco|cvt|edc)/i);
+    if (hpMatch) {
+      details.powerHP = parseInt(hpMatch[1], 10);
+    }
+  }
+
+  // Engine type - TCe, dCi, SCe, E-TECH, EV (for electric)
+  if (/\bTCe\b/i.test(versiyonAdi)) {
+    details.engineType = 'TCe';
+  } else if (/\bdCi\b/i.test(versiyonAdi)) {
+    details.engineType = 'dCi';
+  } else if (/\bSCe\b/i.test(versiyonAdi)) {
+    details.engineType = 'SCe';
+  } else if (/E-TECH/i.test(versiyonAdi) || /E-TECH/i.test(yakitTipi)) {
+    details.engineType = 'E-TECH';
+  } else if (/\bEV\d+\b/i.test(versiyonAdi)) {
+    details.engineType = 'EV';
+  }
+
+  // Hybrid detection (includes mild hybrid)
+  if (fuelLower.includes('hybrid') || fuelLower.includes('hibrit') ||
+      /E-TECH/i.test(versiyonAdi) || /E-TECH/i.test(yakitTipi) ||
+      /mild\s*hybrid/i.test(versiyonAdi)) {
+    details.isHybrid = true;
+  }
+
+  // Electric detection
+  if (fuelLower.includes('elektrik') || fuelLower.includes('electric')) {
+    details.isElectric = true;
+  }
+
+  return details;
+}
+
 // Renault parser
 const parseRenaultData = (data: any, brand: string): PriceListRow[] => {
   const rows: PriceListRow[] = [];
@@ -574,16 +775,44 @@ const parseRenaultData = (data: any, brand: string): PriceListRow[] => {
       const engine = item.VersiyonAdi || '';
       const transmission = item.VitesTipi || '';
       const fuel = item.YakitTipi || '';
-      const priceRaw = item.AntesFiyati ? `₺${parseFloat(item.AntesFiyati).toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : '';
+      const modelYear = item.ModelYili || '';
 
-      // Check for additional price fields
-      const listeFiyat = item.ListeFiyati || item.BaseFiyati || '';
-      const kampanyaFiyat = item.KampanyaFiyati || item.IndirimFiyati || '';
+      // New fields from API
+      const vehicleCategory = item.TicariBinek || undefined;  // "Binek", "Ticari"
+      const hurdaFiyati = parseFloat(item.HurdaFiyati) || 0;
 
-      if (priceRaw) {
-        const priceListNumeric = listeFiyat ? parseFloat(listeFiyat) : undefined;
-        const priceCampaignNumeric = kampanyaFiyat ? parseFloat(kampanyaFiyat) : undefined;
+      // Get engine details using helper
+      const engineDetails = parseRenaultEngineDetails(engine, fuel);
 
+      // Prices
+      const antesFiyati = parseFloat(item.AntesFiyati) || 0;
+      const perFiyati = parseFloat(item.PerFiyati) || 0;
+      const otvOran = parseInt(item.OtvOran, 10) || 0;
+
+      // Calculate tax amounts from net price and ÖTV rate
+      const otvAmount = perFiyati > 0 && otvOran > 0 ? perFiyati * (otvOran / 100) : 0;
+      const kdvAmount = perFiyati > 0 && otvOran > 0 ? (perFiyati + otvAmount) * 0.20 : 0;
+
+      // Format price string
+      const priceRaw = antesFiyati
+        ? `₺${antesFiyati.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+        : '';
+
+      // Extract optional equipment
+      const optionalEquipment: { name: string; price: number }[] = [];
+      const opsiyonlar = item.OtoOpsiyonFiyatList?.OtoOpsiyonFiyat;
+      if (Array.isArray(opsiyonlar)) {
+        opsiyonlar.forEach((opt: any) => {
+          if (opt.OpsiyonAdi && opt.OpsiyonFiyat) {
+            optionalEquipment.push({
+              name: opt.OpsiyonAdi,
+              price: parseInt(opt.OpsiyonFiyat, 10) || 0,
+            });
+          }
+        });
+      }
+
+      if (priceRaw && antesFiyati > 0) {
         rows.push({
           model: modelName,
           trim,
@@ -591,10 +820,24 @@ const parseRenaultData = (data: any, brand: string): PriceListRow[] => {
           transmission,
           fuel,
           priceRaw,
-          priceNumeric: parseFloat(item.AntesFiyati) || 0,
+          priceNumeric: antesFiyati,
           brand,
-          ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
-          ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+          // Extended fields
+          ...(modelYear && { modelYear }),
+          ...(otvOran > 0 && { otvRate: otvOran }),
+          ...(perFiyati > 0 && { netPrice: perFiyati }),
+          ...(otvAmount > 0 && { otvAmount: Math.round(otvAmount * 100) / 100 }),
+          ...(kdvAmount > 0 && { kdvAmount: Math.round(kdvAmount * 100) / 100 }),
+          // Optional equipment
+          ...(optionalEquipment.length > 0 && { optionalEquipment }),
+          // New fields from API
+          ...(vehicleCategory && { vehicleCategory }),
+          ...(hurdaFiyati > 0 && { otvIncentivePrice: hurdaFiyati }),
+          // Engine details from helper
+          ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+          ...(engineDetails.engineType && { engineType: engineDetails.engineType }),
+          ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+          ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
         });
       }
     });
@@ -617,6 +860,14 @@ const parseToyotaData = (data: any, brand: string): PriceListRow[] => {
       if (!modelFiyatArray) return;
       if (!Array.isArray(modelFiyatArray)) modelFiyatArray = [modelFiyatArray];
 
+      // Extract origin from parent Model's Aciklama field (shared across all variants)
+      let modelOrigin: string | undefined;
+      const modelAciklama = model.Aciklama || '';
+      const originMatch = modelAciklama.match(/Menşei\s*:\s*([^<\n\*]+)/i);
+      if (originMatch) {
+        modelOrigin = originMatch[1].trim();
+      }
+
       modelFiyatArray.forEach((item: any) => {
         if (item.Durum !== 1 && item.Durum !== '1') return;
 
@@ -627,15 +878,18 @@ const parseToyotaData = (data: any, brand: string): PriceListRow[] => {
         const motorHacmi = item.MotorHacmi || '';
         const vitesTipi = item.VitesTipi || '';
         const motorTipi = item.MotorTipi || '';
+        const modelYili = item.ModelYili || '';
+        const origin = modelOrigin; // Use parent Model's origin
 
         // Extract all price fields
         const kampanyali1 = item.KampanyaliFiyati1 ? item.KampanyaliFiyati1.toString().replace(/\s*TL\s*$/i, '').trim() : '';
         const kampanyali2 = item.KampanyaliFiyati2 ? item.KampanyaliFiyati2.toString().replace(/\s*TL\s*$/i, '').trim() : '';
         const liste1 = item.ListeFiyati1 ? item.ListeFiyati1.toString().replace(/\s*TL\s*$/i, '').trim() : '';
         const liste2 = item.ListeFiyati2 ? item.ListeFiyati2.toString().replace(/\s*TL\s*$/i, '').trim() : '';
+        const otvTesvikli = item.OTVTesvikli1 ? item.OTVTesvikli1.toString().replace(/\s*TL\s*$/i, '').trim() : '';
 
-        // Primary price: prefer campaign, fallback to list
-        let fiyat = kampanyali2 || kampanyali1 || liste2 || liste1 || '';
+        // Primary price: prefer campaign, fallback to list, then OTV incentive
+        let fiyat = kampanyali2 || kampanyali1 || liste2 || liste1 || otvTesvikli || '';
 
         // List price (original price before campaign)
         const listeFiyat = liste1 || liste2 || '';
@@ -644,6 +898,9 @@ const parseToyotaData = (data: any, brand: string): PriceListRow[] => {
         // Campaign price
         const kampanyaFiyat = kampanyali1 || kampanyali2 || '';
         const priceCampaignNumeric = kampanyaFiyat ? parsePrice(kampanyaFiyat) : undefined;
+
+        // OTV Incentive price (for hybrids - hurda teşvikli fiyat)
+        const otvIncentivePrice = otvTesvikli ? parsePrice(otvTesvikli) : undefined;
 
         let yakit = '';
         const motorTipiLower = motorTipi.toLowerCase();
@@ -662,8 +919,13 @@ const parseToyotaData = (data: any, brand: string): PriceListRow[] => {
             priceRaw: fiyat,
             priceNumeric: parsePrice(fiyat),
             brand,
+            // Extended fields
+            ...(modelYili && { modelYear: modelYili }),
+            ...(origin && { origin }),
             ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
             ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+            // Toyota-specific: OTV incentive price (hurda teşvikli)
+            ...(otvIncentivePrice && isValidPrice(otvIncentivePrice) && { otvIncentivePrice }),
           });
         }
       });
@@ -685,6 +947,15 @@ const parseHyundaiData = (data: any, brand: string): PriceListRow[] => {
       const productName = product.productName || 'Unknown';
       const yearDetailList = product.yearDetailList;
       if (!Array.isArray(yearDetailList)) return;
+
+      // Extract origin from productName (e.g., "i20 - Yerli Üretim" -> "Türkiye")
+      let origin: string | undefined;
+      if (productName.toLowerCase().includes('yerli üretim')) {
+        origin = 'Türkiye';
+      }
+
+      // Clean model name (remove " - Yerli Üretim" suffix for cleaner display)
+      const cleanModelName = productName.replace(/\s*-\s*Yerli Üretim/i, '').trim();
 
       yearDetailList.forEach((yearDetail: any) => {
         const priceDetailList = yearDetail.priceDetailList;
@@ -710,7 +981,7 @@ const parseHyundaiData = (data: any, brand: string): PriceListRow[] => {
             const priceCampaignNumeric = campaignPrice ? parsePrice(campaignPrice.toString()) : undefined;
 
             rows.push({
-              model: productName,
+              model: cleanModelName,
               trim: trimName,
               engine: powertrainName.replace(trimName, '').trim(),
               transmission,
@@ -718,7 +989,9 @@ const parseHyundaiData = (data: any, brand: string): PriceListRow[] => {
               priceRaw: price.toString(),
               priceNumeric,
               brand,
+              // Extended fields
               ...(modelYear && { modelYear }),
+              ...(origin && { origin }),
               ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
               ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
             });
@@ -773,6 +1046,75 @@ function groupByRows(items: PDFItem[], tolerance = 8): PDFItem[][] {
 // Extract text from PDF row
 function rowToText(row: PDFItem[]): string {
   return row.map(item => item.str.trim()).filter(Boolean).join(' ');
+}
+
+// Fiat engine details parser - extracts detailed info from engine strings
+interface FiatEngineDetails {
+  engineDisplacement?: string;   // "1.6L", "1.4L", "1.2L"
+  engineType?: string;           // "M.Jet", "Fire", "MHEV"
+  powerHP?: number;              // 95, 118, 130
+  powerKW?: number;              // 6, 87
+  batteryCapacity?: number;      // 5.5, 42, 44, 54
+  hasGSR?: boolean;              // true/false
+  hasTractionPlus?: boolean;     // true/false
+  isElectric?: boolean;          // true/false
+  isHybrid?: boolean;            // true/false
+}
+
+function parseFiatEngineDetails(engine: string): FiatEngineDetails {
+  const details: FiatEngineDetails = {};
+
+  // Battery capacity (kWh)
+  const batteryMatch = engine.match(/(\d+\.?\d*)\s*kWh/i);
+  if (batteryMatch) {
+    details.batteryCapacity = parseFloat(batteryMatch[1]);
+    details.isElectric = true;
+  }
+
+  // Power kW (electric vehicles) - but not kWh
+  const kwMatch = engine.match(/(\d+)\s*kW(?!h)/i);
+  if (kwMatch) {
+    details.powerKW = parseInt(kwMatch[1], 10);
+  }
+
+  // Power HP (all types)
+  const hpMatch = engine.match(/(\d+)\s*(?:HP|BG|hp)/i);
+  if (hpMatch) {
+    details.powerHP = parseInt(hpMatch[1], 10);
+  }
+
+  // Engine displacement (diesel/petrol)
+  const displacementMatch = engine.match(/^(\d+\.\d+)\s*/);
+  if (displacementMatch) {
+    details.engineDisplacement = displacementMatch[1] + 'L';
+  }
+
+  // Engine type
+  if (/M\.?Jet/i.test(engine)) {
+    details.engineType = 'M.Jet';
+  } else if (/Fire/i.test(engine)) {
+    details.engineType = 'Fire';
+  } else if (/MHEV/i.test(engine)) {
+    details.engineType = 'MHEV';
+    details.isHybrid = true;
+  }
+
+  // Fiat-specific features
+  details.hasGSR = /GSR/i.test(engine);
+  details.hasTractionPlus = /Traction\+?/i.test(engine);
+
+  return details;
+}
+
+// Get Fiat origin based on model
+function getFiatOrigin(model: string): string | undefined {
+  // Egea family is manufactured in Turkey (Bursa/Tofas)
+  if (/^Egea/i.test(model)) {
+    return 'Türkiye';
+  }
+  // Other models are imported (mostly from Italy)
+  // Return undefined since we don't have confirmed info
+  return undefined;
 }
 
 // Fiat parser - parses PDF data
@@ -989,17 +1331,32 @@ const parseFiatData = (pdfData: PDFExtractResult, brand: string): PriceListRow[]
             ? priceCampaignNumeric
             : priceListNumeric;
 
-          // Check for duplicate
+          // Extract model year from model name (e.g., "Topolino 2026" -> 2026)
+          let cleanModel = currentModel;
+          let modelYear: number | undefined;
+          const yearMatch = currentModel.match(/\s*(\d{4})$/);
+          if (yearMatch) {
+            modelYear = parseInt(yearMatch[1], 10);
+            cleanModel = currentModel.replace(/\s*\d{4}$/, '').trim();
+          }
+
+          // Check for duplicate (using cleanModel)
           const exists = vehicles.find(
-            v => v.model === currentModel &&
+            v => v.model === cleanModel &&
                  v.trim === foundTrim &&
                  v.engine === effectiveEngine &&
                  v.priceNumeric === price
           );
 
           if (!exists) {
+            // Parse engine details for extended fields
+            const engineDetails = parseFiatEngineDetails(effectiveEngine);
+
+            // Get origin based on model
+            const origin = getFiatOrigin(cleanModel);
+
             vehicles.push({
-              model: currentModel,
+              model: cleanModel,
               trim: foundTrim,
               engine: effectiveEngine,
               transmission: foundTrans || '',
@@ -1007,8 +1364,21 @@ const parseFiatData = (pdfData: PDFExtractResult, brand: string): PriceListRow[]
               priceRaw: price.toLocaleString('tr-TR') + ' TL',
               priceNumeric: price,
               brand,
+              // Price fields
               ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
               ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+              // New extended fields
+              ...(modelYear && { modelYear }),
+              ...(origin && { origin }),
+              ...(engineDetails.batteryCapacity && { batteryCapacity: engineDetails.batteryCapacity }),
+              ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
+              ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+              ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+              ...(engineDetails.engineType && { engineType: engineDetails.engineType }),
+              ...(engineDetails.hasGSR && { hasGSR: engineDetails.hasGSR }),
+              ...(engineDetails.hasTractionPlus && { hasTractionPlus: engineDetails.hasTractionPlus }),
+              ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
+              ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
             });
           }
         }
@@ -1020,6 +1390,114 @@ const parseFiatData = (pdfData: PDFExtractResult, brand: string): PriceListRow[]
 
   return vehicles;
 };
+
+// === Peugeot Helper Functions ===
+
+interface PeugeotEngineDetails {
+  powerKW?: number;           // 100, 115, 157
+  powerHP?: number;           // 100, 120, 130, 140, 145, 150, 180
+  engineDisplacement?: string; // "1.2L", "1.5L", "2.0L", "2.2L"
+  engineType?: string;        // "PureTech", "BlueHDi", "Hybrid"
+  transmissionType?: string;  // "EAT8", "eDCS6", "MT6"
+  isElectric?: boolean;
+  isHybrid?: boolean;
+  emissionStandard?: string;  // "€6eBIS"
+}
+
+function parsePeugeotEngineDetails(engine: string, modelInfo: string): PeugeotEngineDetails {
+  const details: PeugeotEngineDetails = {};
+  const combined = `${engine} ${modelInfo}`;
+
+  // Power kW (electric)
+  const kwMatch = combined.match(/(\d+)\s*kW(?!h)/i);
+  if (kwMatch) {
+    details.powerKW = parseInt(kwMatch[1], 10);
+    details.isElectric = true;
+  }
+
+  // Power HP (ICE/Hybrid)
+  const hpMatch = combined.match(/(\d+)\s*hp/i);
+  if (hpMatch) {
+    details.powerHP = parseInt(hpMatch[1], 10);
+  }
+
+  // Engine displacement
+  const dispMatch = combined.match(/(\d+\.\d+)\s*(?:PureTech|BlueHDi|Hybrid)/i);
+  if (dispMatch) {
+    details.engineDisplacement = dispMatch[1] + 'L';
+  }
+
+  // Engine type
+  if (/PureTech/i.test(combined)) {
+    details.engineType = 'PureTech';
+  } else if (/BlueHDi/i.test(combined)) {
+    details.engineType = 'BlueHDi';
+  } else if (/Hybrid/i.test(combined)) {
+    details.engineType = 'Hybrid';
+    details.isHybrid = true;
+  }
+
+  // Transmission type
+  if (/EAT8/i.test(combined)) {
+    details.transmissionType = 'EAT8';
+  } else if (/eDCS6/i.test(combined)) {
+    details.transmissionType = 'eDCS6';
+  } else if (/MT6|6MT/i.test(combined)) {
+    details.transmissionType = 'MT6';
+  }
+
+  // Emission standard
+  if (/€6eBIS|E6eBIS|Euro\s*6e\s*BIS/i.test(combined)) {
+    details.emissionStandard = '€6eBIS';
+  }
+
+  return details;
+}
+
+interface PeugeotCommercialDetails {
+  vehicleCategory?: string;   // "Binek", "Ticari"
+  vehicleLength?: string;     // "L2", "L3", "L4H2", "L4H3"
+  cargoVolume?: number;       // 15, 17 (m³)
+  seatingCapacity?: string;   // "8+1", "16+1"
+  hasPanoramicRoof?: boolean; // for 408
+}
+
+function parsePeugeotCommercialDetails(model: string, modelInfo: string): PeugeotCommercialDetails {
+  const details: PeugeotCommercialDetails = {};
+  const combined = `${model} ${modelInfo}`;
+
+  // Vehicle category
+  if (/Van|Traveller|Minibüs|Minibus|Rifter|Partner|Expert|Boxer/i.test(model)) {
+    details.vehicleCategory = 'Ticari';
+  } else {
+    details.vehicleCategory = 'Binek';
+  }
+
+  // Vehicle length (Van sizes)
+  const lengthMatch = combined.match(/\b(L2|L3|L4(?:H[23])?)\b/i);
+  if (lengthMatch) {
+    details.vehicleLength = lengthMatch[1].toUpperCase();
+  }
+
+  // Cargo volume
+  const volumeMatch = combined.match(/(\d+)\s*m[³3]/i);
+  if (volumeMatch) {
+    details.cargoVolume = parseInt(volumeMatch[1], 10);
+  }
+
+  // Seating capacity
+  const seatingMatch = combined.match(/(\d+\+1)/);
+  if (seatingMatch) {
+    details.seatingCapacity = seatingMatch[1];
+  }
+
+  // Panoramic roof (408 specific)
+  if (/Cam Tavan|Panoramik/i.test(combined)) {
+    details.hasPanoramicRoof = true;
+  }
+
+  return details;
+}
 
 // Peugeot parser - parses PDF data
 const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRow[] => {
@@ -1158,6 +1636,10 @@ const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRo
         );
 
         if (!exists) {
+          // Parse engine and commercial details
+          const engineDetails = parsePeugeotEngineDetails(engine, modelInfo);
+          const commercialDetails = parsePeugeotCommercialDetails(currentModel, modelInfo);
+
           vehicles.push({
             model: currentModel,
             trim,
@@ -1167,8 +1649,24 @@ const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRo
             priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
             priceNumeric,
             brand,
+            // Price fields
             ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
             ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+            // Engine/Power fields
+            ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
+            ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+            ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+            ...(engineDetails.engineType && { engineType: engineDetails.engineType }),
+            ...(engineDetails.transmissionType && { transmissionType: engineDetails.transmissionType }),
+            ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
+            ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+            ...(engineDetails.emissionStandard && { emissionStandard: engineDetails.emissionStandard }),
+            // Commercial vehicle fields
+            ...(commercialDetails.vehicleCategory && { vehicleCategory: commercialDetails.vehicleCategory }),
+            ...(commercialDetails.vehicleLength && { vehicleLength: commercialDetails.vehicleLength }),
+            ...(commercialDetails.cargoVolume && { cargoVolume: commercialDetails.cargoVolume }),
+            ...(commercialDetails.seatingCapacity && { seatingCapacity: commercialDetails.seatingCapacity }),
+            ...(commercialDetails.hasPanoramicRoof && { hasPanoramicRoof: commercialDetails.hasPanoramicRoof }),
           });
         }
       }
@@ -1179,6 +1677,83 @@ const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRo
 
   return vehicles;
 };
+
+// === BYD Helper Functions ===
+
+// BYD model specifications lookup table (from official website)
+const BYD_SPECS: Record<string, { batteryCapacity: number; wltpRange: number; fuelConsumption: string }> = {
+  // ATTO 2
+  'ATTO 2-130': { batteryCapacity: 45.3, wltpRange: 312, fuelConsumption: '14.5 kWh/100km' },
+
+  // DOLPHIN
+  'DOLPHIN-150': { batteryCapacity: 60.5, wltpRange: 427, fuelConsumption: '15.9 kWh/100km' },
+
+  // ATTO 3
+  'ATTO 3-150': { batteryCapacity: 60.5, wltpRange: 420, fuelConsumption: '16.0 kWh/100km' },
+
+  // SEAL U EV
+  'SEAL U EV-160': { batteryCapacity: 71.8, wltpRange: 500, fuelConsumption: '20.5 kWh/100km' },
+
+  // SEAL
+  'SEAL-160': { batteryCapacity: 61.4, wltpRange: 460, fuelConsumption: '13.3 kWh/100km' },
+  'SEAL-390': { batteryCapacity: 82.5, wltpRange: 520, fuelConsumption: '15.9 kWh/100km' },
+
+  // SEALION 7
+  'SEALION 7-160': { batteryCapacity: 82.5, wltpRange: 502, fuelConsumption: '16.4 kWh/100km' },
+  'SEALION 7-390': { batteryCapacity: 91.3, wltpRange: 542, fuelConsumption: '16.8 kWh/100km' },
+
+  // HAN
+  'HAN-380': { batteryCapacity: 85.4, wltpRange: 521, fuelConsumption: '18.5 kWh/100km' },
+
+  // TANG
+  'TANG-380': { batteryCapacity: 108.8, wltpRange: 530, fuelConsumption: '24.0 kWh/100km' },
+};
+
+interface BYDEngineDetails {
+  powerKW?: number;
+  isElectric?: boolean;
+  isHybrid?: boolean;
+  driveType?: string;
+}
+
+function parseBYDEngineDetails(engine: string, variant: string): BYDEngineDetails {
+  const details: BYDEngineDetails = {};
+  const combined = `${engine} ${variant}`;
+
+  // Power kW - extract from engine string like "BYD 130 kW" or "390kW AWD"
+  const kwMatch = combined.match(/(\d+)\s*kW/i);
+  if (kwMatch) {
+    details.powerKW = parseInt(kwMatch[1], 10);
+  }
+
+  // Drive type
+  if (/AWD/i.test(combined)) {
+    details.driveType = 'AWD';
+  } else {
+    details.driveType = 'RWD';
+  }
+
+  // Electric vs Hybrid
+  if (/DM-i|DMi|dm-i/i.test(combined)) {
+    details.isHybrid = true;
+    details.isElectric = false;
+  } else {
+    details.isElectric = true;
+  }
+
+  return details;
+}
+
+function getBYDSpecs(model: string, powerKW: number | undefined): {
+  batteryCapacity?: number;
+  wltpRange?: number;
+  fuelConsumption?: string;
+} {
+  if (!powerKW) return {};
+
+  const key = `${model}-${powerKW}`;
+  return BYD_SPECS[key] || {};
+}
 
 // BYD parser - parses HTML data from bydauto.com.tr
 const parseBYDData = (html: string, brand: string): PriceListRow[] => {
@@ -1207,32 +1782,47 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
         if (cells.length >= 4) {
           const variant = $(cells[0]).text().trim();
           const trim = $(cells[1]).text().trim();
-          const otvRate = $(cells[2]).text().trim();
-          const priceText = $(cells[3]).text().trim();
+          const otvRateText = $(cells[2]).text().trim();
+          const listPriceText = $(cells[3]).text().trim();
+          // 5th column is campaign price (if exists)
+          const campaignPriceText = cells.length >= 5 ? $(cells[4]).text().trim() : '';
 
-          // Parse price (Turkish format: 1.234.567 TL or 1.234.567,00 TL)
-          const priceMatch = priceText.match(/[\d.]+(?:,\d+)?/);
-          if (priceMatch) {
-            const priceNumeric = parsePrice(priceMatch[0]);
+          // Parse list price (Turkish format: 1.234.567 TL or 1.234.567,00 TL)
+          const listPriceMatch = listPriceText.match(/[\d.]+(?:,\d+)?/);
+          if (listPriceMatch) {
+            const priceListNumeric = parsePrice(listPriceMatch[0]);
 
             // Skip if price is invalid
-            if (priceNumeric < 100000 || priceNumeric > 50000000) return;
+            if (priceListNumeric < 100000 || priceListNumeric > 50000000) return;
 
-            // Determine fuel type based on model name
-            let fuel = 'Elektrik'; // Default to electric for BYD
-            if (variant.toLowerCase().includes('dm-i') || variant.toLowerCase().includes('dmi')) {
-              fuel = 'Plug-in Hybrid';
+            // Parse campaign price if available
+            let priceCampaignNumeric: number | undefined;
+            const campaignMatch = campaignPriceText.match(/[\d.]+(?:,\d+)?/);
+            if (campaignMatch) {
+              const parsedCampaign = parsePrice(campaignMatch[0]);
+              if (parsedCampaign >= 100000 && parsedCampaign < priceListNumeric) {
+                priceCampaignNumeric = parsedCampaign;
+              }
             }
 
-            // All BYD vehicles are automatic
-            const transmission = 'Otomatik';
+            // Use campaign price if available, otherwise list price
+            const priceNumeric = priceCampaignNumeric || priceListNumeric;
 
             // Use variant as engine info
             const engine = variant.replace(cleanModel, '').trim() || variant;
 
+            // Parse engine details using helper
+            const engineDetails = parseBYDEngineDetails(engine, variant);
+
+            // Get specs from lookup table
+            const specs = getBYDSpecs(cleanModel, engineDetails.powerKW);
+
+            // Determine fuel type based on engine details
+            const fuel = engineDetails.isHybrid ? 'Plug-in Hybrid' : 'Elektrik';
+
             // Parse OTV rate (e.g., "% 10" or "%10" -> 10)
             let parsedOtvRate: number | undefined;
-            const otvMatch = otvRate.match(/(\d+)/);
+            const otvMatch = otvRateText.match(/(\d+)/);
             if (otvMatch) {
               parsedOtvRate = parseInt(otvMatch[1], 10);
             }
@@ -1241,12 +1831,27 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
               model: cleanModel,
               trim,
               engine,
-              transmission,
+              transmission: 'Otomatik',
               fuel,
-              priceRaw: priceText,
+              priceRaw: priceCampaignNumeric ? campaignPriceText : listPriceText,
               priceNumeric,
               brand,
+              // OTV
               ...(parsedOtvRate && { otvRate: parsedOtvRate }),
+              // Price fields
+              ...(priceListNumeric && { priceListNumeric }),
+              ...(priceCampaignNumeric && { priceCampaignNumeric }),
+              // Model year
+              modelYear: 2025,
+              // Engine/Power fields
+              ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
+              ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
+              ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+              ...(engineDetails.driveType && { driveType: engineDetails.driveType }),
+              // Specs from lookup
+              ...(specs.batteryCapacity && { batteryCapacity: specs.batteryCapacity }),
+              ...(specs.wltpRange && { wltpRange: specs.wltpRange }),
+              ...(specs.fuelConsumption && { fuelConsumption: specs.fuelConsumption }),
             });
           }
         }
@@ -1281,10 +1886,10 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
               const variant = cells.length >= 1 ? $(cells[0]).text().trim() : '';
               const trim = cells.length >= 2 ? $(cells[1]).text().trim() : '';
 
-              let fuel = 'Elektrik';
-              if (variant.toLowerCase().includes('dm-i') || variant.toLowerCase().includes('dmi')) {
-                fuel = 'Plug-in Hybrid';
-              }
+              // Parse engine details using helper
+              const engineDetails = parseBYDEngineDetails(variant, '');
+              const specs = getBYDSpecs(cleanModel || variant, engineDetails.powerKW);
+              const fuel = engineDetails.isHybrid ? 'Plug-in Hybrid' : 'Elektrik';
 
               vehicles.push({
                 model: cleanModel || variant,
@@ -1295,6 +1900,14 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
                 priceRaw: lastCell,
                 priceNumeric,
                 brand,
+                modelYear: 2025,
+                ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
+                ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
+                ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+                ...(engineDetails.driveType && { driveType: engineDetails.driveType }),
+                ...(specs.batteryCapacity && { batteryCapacity: specs.batteryCapacity }),
+                ...(specs.wltpRange && { wltpRange: specs.wltpRange }),
+                ...(specs.fuelConsumption && { fuelConsumption: specs.fuelConsumption }),
               });
             }
           }
@@ -1307,6 +1920,70 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
 
   return vehicles;
 };
+
+// Opel engine details parser
+interface OpelEngineDetails {
+  powerHP?: number;           // 100, 130, 136
+  powerKW?: number;           // 100, 115, 157
+  engineDisplacement?: string; // "1.2L", "1.5L"
+  batteryCapacity?: number;   // 44, 54
+  isElectric?: boolean;
+  isHybrid?: boolean;
+  hasLongRange?: boolean;
+}
+
+function parseOpelEngineDetails(engine: string): OpelEngineDetails {
+  const details: OpelEngineDetails = {};
+
+  // Battery capacity (kWh) - check first
+  const batteryMatch = engine.match(/(\d+)\s*kWh/i);
+  if (batteryMatch) {
+    details.batteryCapacity = parseInt(batteryMatch[1], 10);
+    details.isElectric = true;
+  }
+
+  // Power kW (electric vehicles) - but not kWh
+  const kwMatch = engine.match(/(\d+)\s*kW(?!h)/i);
+  if (kwMatch) {
+    details.powerKW = parseInt(kwMatch[1], 10);
+    details.isElectric = true;
+  }
+
+  // Power HP - check for parentheses format first (Hybrid 1.2 145 (136HP))
+  const hpParenMatch = engine.match(/\((\d+)\s*HP\)/i);
+  if (hpParenMatch) {
+    details.powerHP = parseInt(hpParenMatch[1], 10);
+  } else {
+    // Standard HP format: 100 HP, 130 HP
+    const hpMatch = engine.match(/(\d+)\s*HP/i);
+    if (hpMatch) {
+      details.powerHP = parseInt(hpMatch[1], 10);
+    }
+  }
+
+  // Engine displacement - look for patterns like "1.2 100 HP" or "Hybrid 1.2 145"
+  const dispMatch = engine.match(/(\d+\.\d+)\s+\d+/);
+  if (dispMatch) {
+    details.engineDisplacement = dispMatch[1] + 'L';
+  }
+
+  // Hybrid detection
+  if (/Hybrid/i.test(engine)) {
+    details.isHybrid = true;
+  }
+
+  // Electric detection (if not already set)
+  if (/Elektrik/i.test(engine) && !details.isElectric) {
+    details.isElectric = true;
+  }
+
+  // Long range detection
+  if (/Uzun\s*Menzil/i.test(engine)) {
+    details.hasLongRange = true;
+  }
+
+  return details;
+}
 
 // Opel parser - parses HTML data from fiyatlisteleri.opel.com.tr
 // Each model has its own page, so this parser handles a single page
@@ -1460,6 +2137,9 @@ const parseOpelData = (html: string, brand: string, modelName?: string): PriceLi
           const priceListNumeric = isValidPrice(priceMY25) ? priceMY25 : (isValidPrice(priceMY26) ? priceMY26 : undefined);
           const priceCampaignNumeric = isValidPrice(priceCampaign) ? priceCampaign : undefined;
 
+          // Parse engine details using helper
+          const engineDetails = parseOpelEngineDetails(engineSpan);
+
           vehicles.push({
             model,
             trim,
@@ -1472,6 +2152,14 @@ const parseOpelData = (html: string, brand: string, modelName?: string): PriceLi
             ...(modelYear && { modelYear }),
             ...(priceListNumeric && { priceListNumeric }),
             ...(priceCampaignNumeric && { priceCampaignNumeric }),
+            // Engine/Power fields
+            ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+            ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
+            ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+            ...(engineDetails.batteryCapacity && { batteryCapacity: engineDetails.batteryCapacity }),
+            ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
+            ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+            ...(engineDetails.hasLongRange && { hasLongRange: engineDetails.hasLongRange }),
           });
         }
       });
@@ -1482,6 +2170,66 @@ const parseOpelData = (html: string, brand: string, modelName?: string): PriceLi
 
   return vehicles;
 };
+
+// BMW engine details parser
+interface BMWEngineDetails {
+  powerHP?: number;           // 258, 480, 218
+  powerHPSecondary?: number;  // 20, 109, 197 (hybrid secondary)
+  engineDisplacement?: string; // "2.0L", "3.0L", "4.4L"
+  isElectric?: boolean;
+  isHybrid?: boolean;
+  isMildHybrid?: boolean;
+  isPlugInHybrid?: boolean;
+  driveType?: string;         // "AWD", "RWD"
+}
+
+function parseBMWEngineDetails(engine: string, fuel: string, model: string): BMWEngineDetails {
+  const details: BMWEngineDetails = {};
+  const fuelLower = fuel.toLowerCase();
+
+  // Engine displacement - "2.0L", "3.0L", "4.4L"
+  const dispMatch = engine.match(/(\d+\.\d+)L/);
+  if (dispMatch) {
+    details.engineDisplacement = dispMatch[1] + 'L';
+  }
+
+  // Power HP - handle hybrid format "258+20 HP" or standard "258 HP"
+  const hybridHPMatch = engine.match(/(\d+)\+(\d+)\s*HP/i);
+  if (hybridHPMatch) {
+    details.powerHP = parseInt(hybridHPMatch[1], 10);
+    details.powerHPSecondary = parseInt(hybridHPMatch[2], 10);
+  } else {
+    const hpMatch = engine.match(/(\d+)\s*HP/i);
+    if (hpMatch) {
+      details.powerHP = parseInt(hpMatch[1], 10);
+    }
+  }
+
+  // Electric detection
+  if (fuelLower.includes('elektrik') || fuelLower.includes('electric')) {
+    details.isElectric = true;
+  }
+
+  // Hybrid detection
+  if (fuelLower.includes('plug-in hybrid') || fuelLower.includes('plug-in hibrit')) {
+    details.isHybrid = true;
+    details.isPlugInHybrid = true;
+  } else if (fuelLower.includes('mild hybrid') || fuelLower.includes('mild hibrit')) {
+    details.isHybrid = true;
+    details.isMildHybrid = true;
+  } else if (fuelLower.includes('hybrid') || fuelLower.includes('hibrit')) {
+    details.isHybrid = true;
+  }
+
+  // Drive type from model name
+  if (/xDrive/i.test(model)) {
+    details.driveType = 'AWD';
+  } else if (/sDrive/i.test(model)) {
+    details.driveType = 'RWD';
+  }
+
+  return details;
+}
 
 // BMW parser - parses HTML data from borusanotomotiv.com
 const parseBMWData = (html: string, brand: string): PriceListRow[] => {
@@ -1629,6 +2377,9 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
           // Fuel consumption is already a string (e.g., "6.2 L/100km")
           const fuelConsumption = fuelConsumptionRaw && fuelConsumptionRaw.length > 0 ? fuelConsumptionRaw : undefined;
 
+          // Parse engine details using helper
+          const engineDetails = parseBMWEngineDetails(engine, fuel, model);
+
           vehicles.push({
             model,
             trim,
@@ -1641,6 +2392,15 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
             ...(fuelConsumption && { fuelConsumption }),
             ...(otvRate && { otvRate }),
             ...(monthlyLease && { monthlyLease }),
+            // Engine/Power fields
+            ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+            ...(engineDetails.powerHPSecondary && { powerHPSecondary: engineDetails.powerHPSecondary }),
+            ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+            ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
+            ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+            ...(engineDetails.isMildHybrid && { isMildHybrid: engineDetails.isMildHybrid }),
+            ...(engineDetails.isPlugInHybrid && { isPlugInHybrid: engineDetails.isPlugInHybrid }),
+            ...(engineDetails.driveType && { driveType: engineDetails.driveType }),
           });
         }
       });
@@ -1651,6 +2411,74 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
 
   return vehicles;
 };
+
+// Mercedes-Benz extended details helper
+interface MercedesExtendedDetails {
+  powerHP?: number;
+  engineDisplacement?: string;
+  isElectric?: boolean;
+  isHybrid?: boolean;
+  driveType?: string;
+  isAMG?: boolean;
+}
+
+function parseMercedesExtendedDetails(
+  motorGucu: string,
+  motorHacmi: string,
+  fuel: string,
+  model: string
+): MercedesExtendedDetails {
+  const details: MercedesExtendedDetails = {};
+  const fuelLower = fuel.toLowerCase();
+  const modelUpper = model.toUpperCase();
+
+  // Power HP - directly from motor-gucu attribute
+  if (motorGucu) {
+    const hp = parseInt(motorGucu.replace(/[^0-9]/g, ''), 10);
+    if (!isNaN(hp) && hp > 0) {
+      details.powerHP = hp;
+    }
+  }
+
+  // Engine displacement - convert CC to Liters
+  if (motorHacmi) {
+    const cc = parseFloat(motorHacmi.replace(',', '.'));
+    if (!isNaN(cc) && cc > 0) {
+      // Convert CC to liters (e.g., 1332 -> 1.3L, 1991 -> 2.0L)
+      const liters = cc > 100 ? (cc / 1000).toFixed(1) : cc.toFixed(1);
+      details.engineDisplacement = liters + 'L';
+    }
+  }
+
+  // Hybrid detection (check first, as hybrids may have "Elektrik" fuel type in API)
+  const isEPerformance = modelUpper.includes('E PERFORMANCE');
+  const hasHybridInModel = /\bHybrid\b/i.test(model);
+  const isHybridModel = fuelLower.includes('hybrid') || fuelLower.includes('hibrit') ||
+                        isEPerformance || hasHybridInModel;
+  if (isHybridModel) {
+    details.isHybrid = true;
+  }
+
+  // Electric detection - fuel type or EQ model prefix (exclude all hybrids)
+  if (!isHybridModel && (
+      fuelLower.includes('elektrik') || fuelLower.includes('electric') ||
+      modelUpper.startsWith('EQ') || modelUpper.includes('G 580'))) {
+    details.isElectric = true;
+  }
+
+  // Drive type from model name - 4MATIC = AWD
+  if (/4MATIC/i.test(model)) {
+    details.driveType = 'AWD';
+  }
+
+  // AMG detection - actual performance models (not just AMG Line trim)
+  // Matches: AMG A 35, AMG A 45, AMG C 43, AMG C 63, AMG GT 63, Mercedes-AMG, etc.
+  if (/\bAMG\s+\w+\s*\d{2}/i.test(model) || /Mercedes-AMG/i.test(model)) {
+    details.isAMG = true;
+  }
+
+  return details;
+}
 
 // Mercedes-Benz parser - parses JSON data from pladmin.mercedes-benz.com.tr API
 const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
@@ -1673,8 +2501,14 @@ const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
       const priceInfo = item.ProductPrice?.[0];
       if (!priceInfo) continue;
 
-      const priceNumeric = priceInfo.ActualPrice || priceInfo.BasePrice || 0;
+      const actualPrice = priceInfo.ActualPrice || 0;
+      const basePrice = priceInfo.BasePrice || 0;
+      const priceNumeric = actualPrice || basePrice;
       if (!isValidPrice(priceNumeric)) continue;
+
+      // List vs campaign price (only if different)
+      const priceListNumeric = basePrice > 0 && basePrice !== actualPrice ? basePrice : undefined;
+      const priceCampaignNumeric = actualPrice > 0 && basePrice > 0 && actualPrice < basePrice ? actualPrice : undefined;
 
       // Extract attributes from ProductAttribute array
       const attributes: { [key: string]: string } = {};
@@ -1742,6 +2576,11 @@ const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
         const taxRatio = item.TaxRatio;
         const otvRate = typeof taxRatio === 'number' && taxRatio > 0 ? taxRatio : undefined;
 
+        // Get extended details using helper
+        const motorGucu = attributes['motor-gucu'] || '';
+        const motorHacmi = attributes['motor-hacmi'] || '';
+        const extendedDetails = parseMercedesExtendedDetails(motorGucu, motorHacmi, fuel, modelName);
+
         vehicles.push({
           model: modelName,
           trim: trim || modelYear,
@@ -1751,7 +2590,19 @@ const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
           priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
           priceNumeric,
           brand,
+          // Existing fields
           ...(otvRate && { otvRate }),
+          // New fields from API
+          ...(modelYear && { modelYear }),
+          ...(priceListNumeric && { priceListNumeric }),
+          ...(priceCampaignNumeric && { priceCampaignNumeric }),
+          // Extended details
+          ...(extendedDetails.powerHP && { powerHP: extendedDetails.powerHP }),
+          ...(extendedDetails.engineDisplacement && { engineDisplacement: extendedDetails.engineDisplacement }),
+          ...(extendedDetails.isElectric && { isElectric: extendedDetails.isElectric }),
+          ...(extendedDetails.isHybrid && { isHybrid: extendedDetails.isHybrid }),
+          ...(extendedDetails.driveType && { driveType: extendedDetails.driveType }),
+          ...(extendedDetails.isAMG && { isAMG: extendedDetails.isAMG }),
         });
       }
     }
@@ -1761,6 +2612,63 @@ const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
 
   return vehicles;
 };
+
+// Ford engine details helper
+interface FordEngineDetails {
+  powerHP?: number;
+  powerKW?: number;
+  engineDisplacement?: string;
+  engineType?: string;
+  isHybrid?: boolean;
+  isElectric?: boolean;
+}
+
+function parseFordEngineDetails(engine: string, fuel: string): FordEngineDetails {
+  const details: FordEngineDetails = {};
+  const fuelLower = fuel.toLowerCase();
+
+  // Engine displacement - "1.0L", "1.5L", "2.5L"
+  const dispMatch = engine.match(/(\d+\.\d+)L/i);
+  if (dispMatch) {
+    details.engineDisplacement = dispMatch[1] + 'L';
+  }
+
+  // Power HP - "125PS", "150PS" (PS = HP in metric)
+  const hpMatch = engine.match(/(\d+)\s*PS/i);
+  if (hpMatch) {
+    details.powerHP = parseInt(hpMatch[1], 10);
+  } else {
+    // Electric vehicles: "100KW", "123KW" - convert kW to HP (1 kW ≈ 1.34 HP)
+    const kwMatch = engine.match(/(\d+)\s*KW/i);
+    if (kwMatch) {
+      const kw = parseInt(kwMatch[1], 10);
+      details.powerKW = kw;
+      details.powerHP = Math.round(kw * 1.34);
+    }
+  }
+
+  // Engine type - EcoBoost, EcoBlue, Duratec
+  if (/EcoBoost/i.test(engine)) {
+    details.engineType = 'EcoBoost';
+  } else if (/EcoBlue/i.test(engine)) {
+    details.engineType = 'EcoBlue';
+  } else if (/Duratec/i.test(engine)) {
+    details.engineType = 'Duratec';
+  }
+
+  // Hybrid detection - from fuel type or engine string
+  if (fuelLower.includes('hibrit') || fuelLower.includes('hybrid') ||
+      /Hybrid/i.test(engine) || fuelLower === 'benzin/hibrit') {
+    details.isHybrid = true;
+  }
+
+  // Electric detection
+  if (fuelLower.includes('elektrik') || fuelLower.includes('electric')) {
+    details.isElectric = true;
+  }
+
+  return details;
+}
 
 // Ford parser - parses JSON data from ford.com.tr API
 const parseFordData = (data: any, brand: string): PriceListRow[] => {
@@ -1776,6 +2684,7 @@ const parseFordData = (data: any, brand: string): PriceListRow[] => {
     for (const model of carPriceList) {
       const modelName = model.modelName || '';
       const entities = model.entities;
+      const origin = model.carProductionPlace || undefined; // Üretim yeri (menşei)
 
       if (!Array.isArray(entities)) continue;
 
@@ -1784,6 +2693,24 @@ const parseFordData = (data: any, brand: string): PriceListRow[] => {
         const engine = entity.engine || '';
         const fuelType = entity.fuelType || '';
         const gearbox = entity.gearbox || '';
+
+        // New fields from API
+        const modelYear = entity.modelYear || undefined;
+        const vehicleCategory = entity.body || undefined;
+        const emissionStandard = entity.emission || undefined;
+
+        // Parse optional equipment
+        const options = entity.options;
+        let optionalEquipment: { name: string; price: number }[] | undefined;
+        if (Array.isArray(options) && options.length > 0) {
+          optionalEquipment = options
+            .filter((opt: any) => opt.carOption && opt.deliveredTurnkeyPrice)
+            .map((opt: any) => ({
+              name: opt.carOption,
+              price: parseInt(opt.deliveredTurnkeyPrice, 10) || 0,
+            }));
+          if (optionalEquipment.length === 0) optionalEquipment = undefined;
+        }
 
         // Extract both list and campaign prices
         const listPriceStr = entity.deliveredTurnkeyListPrice || '';
@@ -1830,6 +2757,9 @@ const parseFordData = (data: any, brand: string): PriceListRow[] => {
         );
 
         if (!exists && modelName && series) {
+          // Get engine details using helper
+          const engineDetails = parseFordEngineDetails(engine, fuel);
+
           vehicles.push({
             model: modelName,
             trim: series,
@@ -1839,8 +2769,22 @@ const parseFordData = (data: any, brand: string): PriceListRow[] => {
             priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
             priceNumeric,
             brand,
+            // Existing fields
             ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
             ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+            // New fields from API
+            ...(modelYear && { modelYear }),
+            ...(origin && { origin }),
+            ...(vehicleCategory && { vehicleCategory }),
+            ...(emissionStandard && { emissionStandard }),
+            ...(optionalEquipment && { optionalEquipment }),
+            // Engine details from helper
+            ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+            ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
+            ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+            ...(engineDetails.engineType && { engineType: engineDetails.engineType }),
+            ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+            ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
           });
         }
       }
@@ -1851,6 +2795,74 @@ const parseFordData = (data: any, brand: string): PriceListRow[] => {
 
   return vehicles;
 };
+
+// Nissan engine details parser - extracts detailed info from version strings
+interface NissanEngineDetails {
+  powerHP?: number;           // 115, 158, 163, 190
+  engineDisplacement?: string; // "1.0L", "1.3L", "1.5L"
+  engineType?: string;        // "DIG-T", "VC-T", "e-POWER"
+  transmissionType?: string;  // "6MT", "DCT", "CVT", "Auto"
+  isHybrid?: boolean;
+  isMildHybrid?: boolean;
+  isElectric?: boolean;
+}
+
+function parseNissanEngineDetails(versionStr: string, fuelType: string): NissanEngineDetails {
+  const details: NissanEngineDetails = {};
+  const fuelLower = fuelType.toLowerCase();
+
+  // Power HP - "158PS", "190PS", "115PS"
+  const hpMatch = versionStr.match(/(\d{2,3})\s*PS/i);
+  if (hpMatch) {
+    details.powerHP = parseInt(hpMatch[1], 10);
+  }
+
+  // Engine displacement - "1.3", "1.0", "1.5" followed by DIG-T, VC-T, dCi, or space
+  const dispMatch = versionStr.match(/(\d+\.\d+)\s*(?:DIG-T|VC-T|dCi|\s)/i);
+  if (dispMatch) {
+    details.engineDisplacement = dispMatch[1] + 'L';
+  }
+
+  // Engine type - DIG-T, VC-T, e-POWER, dCi
+  if (/DIG-T/i.test(versionStr)) {
+    details.engineType = 'DIG-T';
+  } else if (/VC-T/i.test(versionStr)) {
+    details.engineType = 'VC-T';
+  } else if (/e-POWER/i.test(versionStr)) {
+    details.engineType = 'e-POWER';
+  } else if (/dCi/i.test(versionStr)) {
+    details.engineType = 'dCi';
+  }
+
+  // Transmission type - 6MT, DCT, CVT/X-Tronic, Auto
+  if (/\b6MT\b/i.test(versionStr)) {
+    details.transmissionType = '6MT';
+  } else if (/\bDCT\b/i.test(versionStr)) {
+    details.transmissionType = 'DCT';
+  } else if (/X-Tronic|CVT/i.test(versionStr)) {
+    details.transmissionType = 'CVT';
+  } else if (/\bAuto\b/i.test(versionStr)) {
+    details.transmissionType = 'Auto';
+  }
+
+  // Mild Hybrid detection (check first)
+  if (/Mild\s*Hybrid/i.test(versionStr) || fuelLower.includes('mild hybrid')) {
+    details.isMildHybrid = true;
+    details.isHybrid = true;
+  }
+  // e-POWER hybrid detection
+  else if (/e-POWER/i.test(versionStr) || fuelLower.includes('e-power')) {
+    details.isHybrid = true;
+  }
+
+  // Electric detection (EV models)
+  if (/\bEV\b/i.test(versionStr) || fuelLower.includes('elektrik') ||
+      fuelLower.includes('electric') || fuelLower === 'ev') {
+    details.isElectric = true;
+  }
+
+  return details;
+}
 
 // Nissan parser - parses HTML data from nissan.com.tr
 const parseNissanData = (html: string, brand: string): PriceListRow[] => {
@@ -1997,6 +3009,9 @@ const parseNissanData = (html: string, brand: string): PriceListRow[] => {
         );
 
         if (!exists && finalModel && trim) {
+          // Get engine details using helper
+          const engineDetails = parseNissanEngineDetails(versionText, fuel);
+
           vehicles.push({
             model: finalModel,
             trim: trim.trim(),
@@ -2008,6 +3023,14 @@ const parseNissanData = (html: string, brand: string): PriceListRow[] => {
             brand,
             ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
             ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+            // Engine details from helper
+            ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+            ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+            ...(engineDetails.engineType && { engineType: engineDetails.engineType }),
+            ...(engineDetails.transmissionType && { transmissionType: engineDetails.transmissionType }),
+            ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+            ...(engineDetails.isMildHybrid && { isMildHybrid: engineDetails.isMildHybrid }),
+            ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
           });
         }
       });
@@ -2018,6 +3041,48 @@ const parseNissanData = (html: string, brand: string): PriceListRow[] => {
 
   return vehicles;
 };
+
+// Honda engine details helper
+interface HondaEngineDetails {
+  engineDisplacement?: string; // "1.5L", "2.0L"
+  engineType?: string;         // "VTEC Turbo"
+  isHybrid?: boolean;
+  isElectric?: boolean;
+}
+
+function parseHondaEngineDetails(engineStr: string, fuelType: string): HondaEngineDetails {
+  const details: HondaEngineDetails = {};
+  const engineLower = engineStr.toLowerCase();
+  const fuelLower = fuelType.toLowerCase();
+
+  // Engine displacement - "1.5L", "2.0L"
+  const dispMatch = engineStr.match(/(\d+\.\d+)\s*L/i);
+  if (dispMatch) {
+    details.engineDisplacement = dispMatch[1] + 'L';
+  }
+
+  // Engine type - VTEC Turbo
+  if (/VTEC\s*Turbo/i.test(engineStr)) {
+    details.engineType = 'VTEC Turbo';
+  } else if (/VTEC/i.test(engineStr)) {
+    details.engineType = 'VTEC';
+  }
+
+  // Hybrid detection
+  if (engineLower.includes('hibrit') || engineLower.includes('hybrid') ||
+      fuelLower.includes('hibrit') || fuelLower.includes('hybrid')) {
+    details.isHybrid = true;
+  }
+
+  // Electric detection
+  if (engineLower.includes('elektrik') || engineLower.includes('electric') ||
+      fuelLower.includes('elektrik') || fuelLower.includes('electric') ||
+      /e:ny/i.test(engineStr)) {
+    details.isElectric = true;
+  }
+
+  return details;
+}
 
 // Honda parser - parses HTML data from honda.com.tr
 const parseHondaData = (html: string, brand: string): PriceListRow[] => {
@@ -2107,6 +3172,9 @@ const parseHondaData = (html: string, brand: string): PriceListRow[] => {
             );
 
             if (!exists) {
+              // Get engine details using helper
+              const engineDetails = parseHondaEngineDetails(engine, fuel);
+
               vehicles.push({
                 model,
                 trim,
@@ -2118,6 +3186,11 @@ const parseHondaData = (html: string, brand: string): PriceListRow[] => {
                 brand,
                 ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
                 ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+                // Extended fields from engine details
+                ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+                ...(engineDetails.engineType && { engineType: engineDetails.engineType }),
+                ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+                ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
               });
             }
           }
@@ -2130,6 +3203,52 @@ const parseHondaData = (html: string, brand: string): PriceListRow[] => {
 
   return vehicles;
 };
+
+// SEAT engine details helper
+interface SeatEngineDetails {
+  powerHP?: number;
+  engineDisplacement?: string;  // "1.0L", "1.5L"
+  engineType?: string;          // "EcoTSI", "eHybrid", "EcoTSI ACT"
+  transmissionType?: string;    // "DSG"
+  isHybrid?: boolean;
+  isPlugInHybrid?: boolean;
+}
+
+function parseSeatEngineDetails(engineStr: string, transmissionStr: string): SeatEngineDetails {
+  const details: SeatEngineDetails = {};
+
+  // Power HP - "115 PS", "150 PS", "204 PS"
+  const hpMatch = engineStr.match(/(\d{2,3})\s*PS/i);
+  if (hpMatch) {
+    details.powerHP = parseInt(hpMatch[1], 10);
+  }
+
+  // Engine displacement - "1.0", "1.5"
+  const dispMatch = engineStr.match(/^(\d+\.\d+)/);
+  if (dispMatch) {
+    details.engineDisplacement = dispMatch[1] + 'L';
+  }
+
+  // Engine type - "EcoTSI", "eHybrid", "EcoTSI ACT", "TDI"
+  // Must extract between displacement and PS
+  const typeMatch = engineStr.match(/^\d+\.\d+\s+(.+?)\s+\d+\s*PS/i);
+  if (typeMatch) {
+    details.engineType = typeMatch[1].trim();
+  }
+
+  // Transmission type from transmission string
+  if (transmissionStr.includes('DSG')) {
+    details.transmissionType = 'DSG';
+  }
+
+  // Hybrid detection - eHybrid is plug-in hybrid
+  if (/eHybrid/i.test(engineStr)) {
+    details.isHybrid = true;
+    details.isPlugInHybrid = true;
+  }
+
+  return details;
+}
 
 // SEAT parser - parses HTML data from seat.com.tr
 const parseSeatData = (html: string, brand: string): PriceListRow[] => {
@@ -2221,6 +3340,9 @@ const parseSeatData = (html: string, brand: string): PriceListRow[] => {
       );
 
       if (!exists && model && trim) {
+        // Get engine details using helper
+        const engineDetails = parseSeatEngineDetails(engine, transmission);
+
         vehicles.push({
           model,
           trim: trim.trim(),
@@ -2231,6 +3353,13 @@ const parseSeatData = (html: string, brand: string): PriceListRow[] => {
           priceNumeric,
           brand,
           ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
+          // Extended fields from engine details
+          ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+          ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+          ...(engineDetails.engineType && { engineType: engineDetails.engineType }),
+          ...(engineDetails.transmissionType && { transmissionType: engineDetails.transmissionType }),
+          ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+          ...(engineDetails.isPlugInHybrid && { isPlugInHybrid: engineDetails.isPlugInHybrid }),
         });
       }
     });
@@ -2320,8 +3449,57 @@ const parseKiaData = (html: string, brand: string): PriceListRow[] => {
       );
 
       if (!exists && trimName) {
-        // Parse list price if available
-        const priceListNumeric = listPriceStr ? parsePrice(listPriceStr + ' TL') : undefined;
+        // Extract additional fields
+        const campaignPriceStr = extractField('campaignPrice');
+        const retailPriceStr = extractField('retailPrice');
+        const sctStr = extractField('sct');
+        const tabYear = extractField('tabYear');
+        const engineName = extractField('engineName');
+
+        // Parse list price (retail price has priority, then fallback to listPrice)
+        const priceListNumeric = retailPriceStr ? parsePrice(retailPriceStr + ' TL') :
+                                 listPriceStr ? parsePrice(listPriceStr + ' TL') : undefined;
+
+        // Parse campaign price
+        const priceCampaignNumeric = campaignPriceStr ? parsePrice(campaignPriceStr + ' TL') : undefined;
+
+        // Parse OTV rate
+        const otvRate = sctStr && !isNaN(parseInt(sctStr, 10)) ? parseInt(sctStr, 10) : undefined;
+
+        // Parse model year
+        const modelYear = tabYear && !isNaN(parseInt(tabYear, 10)) ? parseInt(tabYear, 10) : undefined;
+
+        // Parse engine displacement from engineName (e.g., "1.5L", "1.0L")
+        let engineDisplacement: string | undefined;
+        if (engineName && engineName.match(/^\d+\.\d+L?$/i)) {
+          engineDisplacement = engineName.includes('L') ? engineName : engineName + 'L';
+        }
+
+        // Determine power field based on unit (HP vs kW)
+        let powerHP: number | undefined;
+        let powerKW: number | undefined;
+        if (power && !isNaN(parseInt(power, 10))) {
+          const powerNum = parseInt(power, 10);
+          if (powerUnit.toLowerCase() === 'kw') {
+            powerKW = powerNum;
+          } else {
+            powerHP = powerNum;
+          }
+        }
+
+        // Extract transmission type from transmissionDisplayName
+        let transmissionType: string | undefined;
+        if (transmission) {
+          if (transmission.includes('DCT')) {
+            transmissionType = 'DCT';
+          } else if (transmission.toLowerCase().includes('at') || transmission.includes('Otomatik')) {
+            transmissionType = 'AT';
+          }
+        }
+
+        // Detect hybrid/electric
+        const isHybrid = normalizedFuel === 'Hibrit';
+        const isElectric = normalizedFuel === 'Elektrik';
 
         vehicles.push({
           model: modelName,
@@ -2333,6 +3511,16 @@ const parseKiaData = (html: string, brand: string): PriceListRow[] => {
           priceNumeric,
           brand,
           ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
+          ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
+          // Extended fields
+          ...(powerHP && { powerHP }),
+          ...(powerKW && { powerKW }),
+          ...(engineDisplacement && { engineDisplacement }),
+          ...(transmissionType && { transmissionType }),
+          ...(modelYear && { modelYear }),
+          ...(otvRate && { otvRate }),
+          ...(isHybrid && { isHybrid }),
+          ...(isElectric && { isElectric }),
         });
       }
     }
@@ -2342,6 +3530,83 @@ const parseKiaData = (html: string, brand: string): PriceListRow[] => {
 
   return vehicles;
 };
+
+// Volvo engine details parser
+interface VolvoEngineDetails {
+  powerKW?: number;           // 150, 315, 300
+  powerHP?: number;           // 204, 428, 408, 197, 250
+  engineDisplacement?: string; // "2.0L"
+}
+
+function parseVolvoEngineDetails(engineStr: string): VolvoEngineDetails {
+  const details: VolvoEngineDetails = {};
+
+  // Power from "150 kW / 204 hp" pattern (electric)
+  const kwHpMatch = engineStr.match(/(\d+)\s*kW\s*\/\s*(\d+)\s*hp/i);
+  if (kwHpMatch) {
+    details.powerKW = parseInt(kwHpMatch[1], 10);
+    details.powerHP = parseInt(kwHpMatch[2], 10);
+  } else {
+    // Power from "197 hp" pattern only (ICE)
+    const hpMatch = engineStr.match(/(\d+)\s*hp/i);
+    if (hpMatch) {
+      details.powerHP = parseInt(hpMatch[1], 10);
+    }
+  }
+
+  // Engine displacement from "1.969 cc" → "2.0L"
+  // Note: Volvo uses "1.969 cc" format meaning 1.969 liters (1969 cc)
+  const ccMatch = engineStr.match(/(\d[\d.]+)\s*cc/i);
+  if (ccMatch) {
+    const liters = parseFloat(ccMatch[1]); // Already in liters (1.969 = 1969cc)
+    // Round to nearest 0.1L
+    const rounded = Math.round(liters * 10) / 10;
+    details.engineDisplacement = rounded.toFixed(1) + 'L';
+  }
+
+  return details;
+}
+
+// Volvo trim details parser
+interface VolvoTrimDetails {
+  driveType?: string;         // "RWD", "AWD", "FWD"
+  hasLongRange?: boolean;     // EXTENDED RANGE
+  isMildHybrid?: boolean;     // MILD HYBRID
+  isPlugInHybrid?: boolean;   // PLUG-IN HYBRID
+}
+
+function parseVolvoTrimDetails(trimStr: string, modelStr: string): VolvoTrimDetails {
+  const details: VolvoTrimDetails = {};
+  const combined = (trimStr + ' ' + modelStr).toUpperCase();
+
+  // Drive type detection
+  if (combined.includes('SINGLE MOTOR')) {
+    details.driveType = 'RWD'; // Rear-wheel drive (single motor is rear)
+  } else if (combined.includes('TWIN MOTOR')) {
+    details.driveType = 'AWD'; // All-wheel drive (dual motor)
+  } else if (combined.includes('AWD')) {
+    details.driveType = 'AWD';
+  } else if (combined.includes('FWD')) {
+    details.driveType = 'FWD';
+  }
+
+  // Extended range (long range battery)
+  if (combined.includes('EXTENDED RANGE')) {
+    details.hasLongRange = true;
+  }
+
+  // Mild hybrid (48V system)
+  if (combined.includes('MILD HYBRID')) {
+    details.isMildHybrid = true;
+  }
+
+  // Plug-in hybrid
+  if (combined.includes('PLUG-IN HYBRID') || combined.includes('PLUG-IN-HYBRID')) {
+    details.isPlugInHybrid = true;
+  }
+
+  return details;
+}
 
 // Volvo parser - parses PDF data (PDF extracted via pdf.js-extract)
 const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRow[] => {
@@ -2457,6 +3722,14 @@ const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRo
         v => v.model === model && v.trim === trim && v.priceNumeric === priceNumeric
       );
 
+      // Parse extended fields
+      const engineDetails = parseVolvoEngineDetails(engine);
+      const trimDetails = parseVolvoTrimDetails(trim, model);
+
+      // Detect electric/hybrid from fuel (handle both Turkish and English values)
+      const isElectric = fuel === 'Elektrik' || fuel.toLowerCase() === 'electric';
+      const isHybrid = fuel === 'Hibrit' || fuel === 'Hybrid'; // Only true for mild hybrid (not plug-in)
+
       if (!exists) {
         vehicles.push({
           model,
@@ -2468,6 +3741,18 @@ const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRo
           priceNumeric,
           brand,
           ...(priceListNumeric && { priceListNumeric }),
+          // Extended fields - engine
+          ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
+          ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+          ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+          // Extended fields - trim
+          ...(trimDetails.driveType && { driveType: trimDetails.driveType }),
+          ...(trimDetails.hasLongRange && { hasLongRange: trimDetails.hasLongRange }),
+          ...(trimDetails.isMildHybrid && { isMildHybrid: trimDetails.isMildHybrid }),
+          ...(trimDetails.isPlugInHybrid && { isPlugInHybrid: trimDetails.isPlugInHybrid }),
+          // Extended fields - fuel type flags
+          ...(isElectric && { isElectric }),
+          ...(isHybrid && { isHybrid }),
         });
       }
 
@@ -2480,6 +3765,75 @@ const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRo
 
   return vehicles;
 };
+
+// Citroen engine details parser
+interface CitroenEngineDetails {
+  powerHP?: number;           // 110, 130, 145
+  powerKW?: number;           // 83, 100, 136
+  engineDisplacement?: string; // "1.2L", "1.5L", "1.6L"
+  engineType?: string;        // "PureTech", "BlueHDi", "Hybrid"
+  transmissionType?: string;  // "EAT8", "eDCS6", "MT6"
+  isElectric?: boolean;
+  isHybrid?: boolean;
+  hasLongRange?: boolean;     // Uzun Menzil (long range battery)
+}
+
+function parseCitroenEngineDetails(engine: string, model: string): CitroenEngineDetails {
+  const details: CitroenEngineDetails = {};
+
+  // Power kW (electric vehicles) - "83 kW", "6 kW Elektrik Motor"
+  const kwMatch = engine.match(/(\d+)\s*kW/i);
+  if (kwMatch) {
+    details.powerKW = parseInt(kwMatch[1], 10);
+    details.isElectric = true;
+  }
+
+  // Power HP - "145*", "130", "110" (with optional asterisk, typically 2-3 digits followed by * or space/dash)
+  // Match patterns like "Hybrid 145*", "PureTech 130", "BlueHDi 100"
+  const hpMatch = engine.match(/(?:Hybrid|PureTech|BlueHDi)\s+(\d{2,3})\*?/i);
+  if (hpMatch && !details.powerKW) {
+    details.powerHP = parseInt(hpMatch[1], 10);
+  }
+
+  // Engine displacement - "1.2", "1.5", "1.6", "2.0"
+  const dispMatch = engine.match(/(\d+\.\d+)\s+/);
+  if (dispMatch) {
+    details.engineDisplacement = dispMatch[1] + 'L';
+  }
+
+  // Engine type - PureTech, BlueHDi, Hybrid
+  if (/PureTech/i.test(engine)) {
+    details.engineType = 'PureTech';
+  } else if (/BlueHDi/i.test(engine)) {
+    details.engineType = 'BlueHDi';
+  } else if (/Hybrid/i.test(engine)) {
+    details.engineType = 'Hybrid';
+    details.isHybrid = true;
+  }
+
+  // Transmission type - EAT8, eDCS6, MT6, etc.
+  const transMatch = engine.match(/(EAT\d|eDCS\d|MT\d)/i);
+  if (transMatch) {
+    details.transmissionType = transMatch[1].toUpperCase();
+  }
+
+  // Hybrid detection from model name
+  if (/Hybrid/i.test(model) && !details.isHybrid) {
+    details.isHybrid = true;
+  }
+
+  // Electric detection from model name (ë- prefix or "elektrik")
+  if (/ë-|elektrik/i.test(model) && !details.isElectric) {
+    details.isElectric = true;
+  }
+
+  // Long range detection (Uzun Menzil)
+  if (/Uzun\s*Menzil/i.test(engine)) {
+    details.hasLongRange = true;
+  }
+
+  return details;
+}
 
 // Citroen parser - parses JSON data from talep.citroen.com.tr
 const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
@@ -2591,6 +3945,12 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
         const priceListNum = listPrice ? parsePrice(listPrice) : undefined;
         const priceCampaignNum = campaignPrice ? parsePrice(campaignPrice) : undefined;
 
+        // Parse engine details using helper
+        const engineDetails = parseCitroenEngineDetails(engine, modelName);
+
+        // Determine vehicle category (commercial vs passenger)
+        const isCommercial = /Van|Berlingo|Spacetourer/i.test(modelName);
+
         vehicles.push({
           model: modelName,
           trim: donanim,
@@ -2602,6 +3962,17 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
           brand,
           ...(priceListNum && isValidPrice(priceListNum) && { priceListNumeric: priceListNum }),
           ...(priceCampaignNum && isValidPrice(priceCampaignNum) && { priceCampaignNumeric: priceCampaignNum }),
+          // Engine/Power fields
+          ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
+          ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
+          ...(engineDetails.engineDisplacement && { engineDisplacement: engineDetails.engineDisplacement }),
+          ...(engineDetails.engineType && { engineType: engineDetails.engineType }),
+          ...(engineDetails.transmissionType && { transmissionType: engineDetails.transmissionType }),
+          ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
+          ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
+          ...(engineDetails.hasLongRange && { hasLongRange: engineDetails.hasLongRange }),
+          // Vehicle category
+          ...(isCommercial && { vehicleCategory: 'Ticari' }),
         });
       }
     }

@@ -5,7 +5,8 @@ import { PriceListRow } from '../types';
 export const exportToCSV = (data: PriceListRow[], filename: string = 'fiyat-listesi.csv') => {
   const headers = [
     'Marka', 'Model', 'Donanım', 'Motor', 'Şanzıman', 'Yakıt', 'Fiyat',
-    'Model Yılı', 'ÖTV Oranı', 'Yakıt Tüketimi', 'Aylık Kira', 'Liste Fiyatı', 'Kampanya Fiyatı'
+    'Model Yılı', 'ÖTV Oranı', 'Yakıt Tüketimi', 'Aylık Kira', 'Liste Fiyatı', 'Kampanya Fiyatı',
+    'Net Fiyat', 'ÖTV Tutarı', 'KDV Tutarı', 'MTV', 'Menşei'
   ];
   const rows = data.map(row => [
     row.brand,
@@ -21,6 +22,11 @@ export const exportToCSV = (data: PriceListRow[], filename: string = 'fiyat-list
     row.monthlyLease ? `${row.monthlyLease.toLocaleString('tr-TR')} TL` : '',
     row.priceListNumeric ? `${row.priceListNumeric.toLocaleString('tr-TR')} TL` : '',
     row.priceCampaignNumeric ? `${row.priceCampaignNumeric.toLocaleString('tr-TR')} TL` : '',
+    row.netPrice ? `${row.netPrice.toLocaleString('tr-TR')} TL` : '',
+    row.otvAmount ? `${row.otvAmount.toLocaleString('tr-TR')} TL` : '',
+    row.kdvAmount ? `${row.kdvAmount.toLocaleString('tr-TR')} TL` : '',
+    row.mtvAmount ? `${row.mtvAmount.toLocaleString('tr-TR')} TL` : '',
+    row.origin || '',
   ]);
 
   const csvContent = [
@@ -39,7 +45,8 @@ export const exportToXLSX = (data: PriceListRow[], filename: string = 'fiyat-lis
   const worksheetData = [
     [
       'Marka', 'Model', 'Donanım', 'Motor', 'Şanzıman', 'Yakıt', 'Fiyat',
-      'Model Yılı', 'ÖTV Oranı', 'Yakıt Tüketimi', 'Aylık Kira', 'Liste Fiyatı', 'Kampanya Fiyatı'
+      'Model Yılı', 'ÖTV Oranı', 'Yakıt Tüketimi', 'Aylık Kira', 'Liste Fiyatı', 'Kampanya Fiyatı',
+      'Net Fiyat', 'ÖTV Tutarı', 'KDV Tutarı', 'MTV', 'Menşei'
     ],
     ...data.map(row => [
       row.brand,
@@ -55,6 +62,11 @@ export const exportToXLSX = (data: PriceListRow[], filename: string = 'fiyat-lis
       row.monthlyLease ? `${row.monthlyLease.toLocaleString('tr-TR')} TL` : '',
       row.priceListNumeric ? `${row.priceListNumeric.toLocaleString('tr-TR')} TL` : '',
       row.priceCampaignNumeric ? `${row.priceCampaignNumeric.toLocaleString('tr-TR')} TL` : '',
+      row.netPrice ? `${row.netPrice.toLocaleString('tr-TR')} TL` : '',
+      row.otvAmount ? `${row.otvAmount.toLocaleString('tr-TR')} TL` : '',
+      row.kdvAmount ? `${row.kdvAmount.toLocaleString('tr-TR')} TL` : '',
+      row.mtvAmount ? `${row.mtvAmount.toLocaleString('tr-TR')} TL` : '',
+      row.origin || '',
     ]),
   ];
 

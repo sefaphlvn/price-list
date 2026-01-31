@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-01-31T01:31:25.863Z",
+  "collectedAt": "2026-01-31T19:27:54.219Z",
   "brand": "Nissan",
   "brandId": "nissan",
   "rowCount": 27,
@@ -14,7 +14,13 @@
       "priceNumeric": 2381400,
       "brand": "Nissan",
       "priceListNumeric": 2481400,
-      "priceCampaignNumeric": 2381400
+      "priceCampaignNumeric": 2381400,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T",
+      "transmissionType": "Auto",
+      "isHybrid": true,
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -26,7 +32,13 @@
       "priceNumeric": 2862900,
       "brand": "Nissan",
       "priceListNumeric": 2962900,
-      "priceCampaignNumeric": 2862900
+      "priceCampaignNumeric": 2862900,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T",
+      "transmissionType": "Auto",
+      "isHybrid": true,
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -38,7 +50,13 @@
       "priceNumeric": 3236500,
       "brand": "Nissan",
       "priceListNumeric": 3236500,
-      "priceCampaignNumeric": 3236500
+      "priceCampaignNumeric": 3236500,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T",
+      "transmissionType": "Auto",
+      "isHybrid": true,
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -50,7 +68,13 @@
       "priceNumeric": 3330700,
       "brand": "Nissan",
       "priceListNumeric": 3330700,
-      "priceCampaignNumeric": 3330700
+      "priceCampaignNumeric": 3330700,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T",
+      "transmissionType": "Auto",
+      "isHybrid": true,
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -62,7 +86,13 @@
       "priceNumeric": 3437900,
       "brand": "Nissan",
       "priceListNumeric": 3437900,
-      "priceCampaignNumeric": 3437900
+      "priceCampaignNumeric": 3437900,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T",
+      "transmissionType": "Auto",
+      "isHybrid": true,
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -74,7 +104,13 @@
       "priceNumeric": 3464800,
       "brand": "Nissan",
       "priceListNumeric": 3464800,
-      "priceCampaignNumeric": 3464800
+      "priceCampaignNumeric": 3464800,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T",
+      "transmissionType": "Auto",
+      "isHybrid": true,
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -86,7 +122,13 @@
       "priceNumeric": 3571800,
       "brand": "Nissan",
       "priceListNumeric": 3571800,
-      "priceCampaignNumeric": 3571800
+      "priceCampaignNumeric": 3571800,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T",
+      "transmissionType": "Auto",
+      "isHybrid": true,
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI e-POWER",
@@ -98,7 +140,10 @@
       "priceNumeric": 3340100,
       "brand": "Nissan",
       "priceListNumeric": 3440100,
-      "priceCampaignNumeric": 3340100
+      "priceCampaignNumeric": 3340100,
+      "powerHP": 190,
+      "engineType": "e-POWER",
+      "isHybrid": true
     },
     {
       "model": "QASHQAI e-POWER",
@@ -110,7 +155,10 @@
       "priceNumeric": 3457600,
       "brand": "Nissan",
       "priceListNumeric": 3607600,
-      "priceCampaignNumeric": 3457600
+      "priceCampaignNumeric": 3457600,
+      "powerHP": 190,
+      "engineType": "e-POWER",
+      "isHybrid": true
     },
     {
       "model": "QASHQAI e-POWER",
@@ -122,7 +170,10 @@
       "priceNumeric": 3562800,
       "brand": "Nissan",
       "priceListNumeric": 3662800,
-      "priceCampaignNumeric": 3562800
+      "priceCampaignNumeric": 3562800,
+      "powerHP": 190,
+      "engineType": "e-POWER",
+      "isHybrid": true
     },
     {
       "model": "QASHQAI e-POWER",
@@ -134,7 +185,10 @@
       "priceNumeric": 3685900,
       "brand": "Nissan",
       "priceListNumeric": 3785900,
-      "priceCampaignNumeric": 3685900
+      "priceCampaignNumeric": 3685900,
+      "powerHP": 190,
+      "engineType": "e-POWER",
+      "isHybrid": true
     },
     {
       "model": "JUKE",
@@ -146,7 +200,11 @@
       "priceNumeric": 1616400,
       "brand": "Nissan",
       "priceListNumeric": 1716400,
-      "priceCampaignNumeric": 1616400
+      "priceCampaignNumeric": 1616400,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "engineType": "DIG-T",
+      "transmissionType": "6MT"
     },
     {
       "model": "JUKE",
@@ -158,7 +216,11 @@
       "priceNumeric": 1985400,
       "brand": "Nissan",
       "priceListNumeric": 2085400,
-      "priceCampaignNumeric": 1985400
+      "priceCampaignNumeric": 1985400,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "engineType": "DIG-T",
+      "transmissionType": "DCT"
     },
     {
       "model": "JUKE",
@@ -170,7 +232,11 @@
       "priceNumeric": 2071500,
       "brand": "Nissan",
       "priceListNumeric": 2171500,
-      "priceCampaignNumeric": 2071500
+      "priceCampaignNumeric": 2071500,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "engineType": "DIG-T",
+      "transmissionType": "DCT"
     },
     {
       "model": "JUKE",
@@ -182,7 +248,11 @@
       "priceNumeric": 2190900,
       "brand": "Nissan",
       "priceListNumeric": 2290900,
-      "priceCampaignNumeric": 2190900
+      "priceCampaignNumeric": 2190900,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "engineType": "DIG-T",
+      "transmissionType": "DCT"
     },
     {
       "model": "JUKE",
@@ -194,7 +264,11 @@
       "priceNumeric": 2190900,
       "brand": "Nissan",
       "priceListNumeric": 2290900,
-      "priceCampaignNumeric": 2190900
+      "priceCampaignNumeric": 2190900,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "engineType": "DIG-T",
+      "transmissionType": "DCT"
     },
     {
       "model": "JUKE",
@@ -206,7 +280,11 @@
       "priceNumeric": 2265600,
       "brand": "Nissan",
       "priceListNumeric": 2365600,
-      "priceCampaignNumeric": 2265600
+      "priceCampaignNumeric": 2265600,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "engineType": "DIG-T",
+      "transmissionType": "DCT"
     },
     {
       "model": "X-TRAIL MILD HYBRID",
@@ -218,7 +296,13 @@
       "priceNumeric": 4243000,
       "brand": "Nissan",
       "priceListNumeric": 4343000,
-      "priceCampaignNumeric": 4243000
+      "priceCampaignNumeric": 4243000,
+      "powerHP": 163,
+      "engineDisplacement": "1.5L",
+      "engineType": "VC-T",
+      "transmissionType": "Auto",
+      "isHybrid": true,
+      "isMildHybrid": true
     },
     {
       "model": "X-TRAIL MILD HYBRID",
@@ -230,7 +314,13 @@
       "priceNumeric": 4683500,
       "brand": "Nissan",
       "priceListNumeric": 4783500,
-      "priceCampaignNumeric": 4683500
+      "priceCampaignNumeric": 4683500,
+      "powerHP": 163,
+      "engineDisplacement": "1.5L",
+      "engineType": "VC-T",
+      "transmissionType": "Auto",
+      "isHybrid": true,
+      "isMildHybrid": true
     },
     {
       "model": "TOWNSTAR VAN",
@@ -241,7 +331,11 @@
       "priceRaw": "1.151.800 TL",
       "priceNumeric": 1151800,
       "brand": "Nissan",
-      "priceListNumeric": 1151800
+      "priceListNumeric": 1151800,
+      "powerHP": 130,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T",
+      "transmissionType": "6MT"
     },
     {
       "model": "TOWNSTAR VAN",
@@ -253,7 +347,11 @@
       "priceNumeric": 1267600,
       "brand": "Nissan",
       "priceListNumeric": 1317600,
-      "priceCampaignNumeric": 1267600
+      "priceCampaignNumeric": 1267600,
+      "powerHP": 130,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T",
+      "transmissionType": "6MT"
     },
     {
       "model": "TOWNSTAR VAN",
@@ -265,7 +363,10 @@
       "priceNumeric": 1381700,
       "brand": "Nissan",
       "priceListNumeric": 1431700,
-      "priceCampaignNumeric": 1381700
+      "priceCampaignNumeric": 1381700,
+      "powerHP": 130,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T"
     },
     {
       "model": "TOWNSTAR VAN",
@@ -277,7 +378,10 @@
       "priceNumeric": 1453800,
       "brand": "Nissan",
       "priceListNumeric": 1503800,
-      "priceCampaignNumeric": 1453800
+      "priceCampaignNumeric": 1453800,
+      "powerHP": 130,
+      "engineDisplacement": "1.3L",
+      "engineType": "DIG-T"
     },
     {
       "model": "TOWNSTAR VAN",
@@ -288,7 +392,8 @@
       "priceRaw": "2.099.300 TL",
       "priceNumeric": 2099300,
       "brand": "Nissan",
-      "priceListNumeric": 2099300
+      "priceListNumeric": 2099300,
+      "isElectric": true
     },
     {
       "model": "TOWNSTAR VAN",
@@ -299,7 +404,8 @@
       "priceRaw": "2.078.500 TL",
       "priceNumeric": 2078500,
       "brand": "Nissan",
-      "priceListNumeric": 2078500
+      "priceListNumeric": 2078500,
+      "isElectric": true
     },
     {
       "model": "TOWNSTAR COMBI EV",
@@ -310,7 +416,8 @@
       "priceRaw": "2.367.100 TL",
       "priceNumeric": 2367100,
       "brand": "Nissan",
-      "priceListNumeric": 2367100
+      "priceListNumeric": 2367100,
+      "isElectric": true
     },
     {
       "model": "TOWNSTAR COMBI EV",
@@ -321,7 +428,8 @@
       "priceRaw": "2.417.600 TL",
       "priceNumeric": 2417600,
       "brand": "Nissan",
-      "priceListNumeric": 2417600
+      "priceListNumeric": 2417600,
+      "isElectric": true
     }
   ]
 }
