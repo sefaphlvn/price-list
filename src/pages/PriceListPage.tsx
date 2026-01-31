@@ -522,18 +522,24 @@ export default function PriceListPage() {
       fixed: 'left',
       sorter: (a, b) => a.model.localeCompare(b.model, 'tr'),
       sortOrder: sortInfo?.column === 'model' ? sortInfo.order : undefined,
-      render: (text, record) => (
-        <Space size={4}>
-          <Text strong style={{ color: tokens.colors.accent }}>
-            {text}
-          </Text>
-          {record.modelYear && (
-            <Tag color="blue" style={{ marginLeft: 4, fontSize: 10 }}>
-              {record.modelYear}
-            </Tag>
-          )}
-        </Space>
-      ),
+      render: (text, record) => {
+        // Only show year badge if modelYear exists and is NOT already in the model name
+        const yearStr = record.modelYear ? String(record.modelYear) : '';
+        const showYearBadge = record.modelYear && !text.includes(yearStr);
+
+        return (
+          <Space size={4}>
+            <Text strong style={{ color: tokens.colors.accent }}>
+              {text}
+            </Text>
+            {showYearBadge && (
+              <Tag color="blue" style={{ marginLeft: 4, fontSize: 10 }}>
+                {record.modelYear}
+              </Tag>
+            )}
+          </Space>
+        );
+      },
     },
     {
       title: t('common.trim'),
@@ -555,7 +561,7 @@ export default function PriceListPage() {
       title: t('common.transmission'),
       dataIndex: 'transmission',
       key: 'transmission',
-      width: 120,
+      width: 140,
       sorter: (a, b) => a.transmission.localeCompare(b.transmission, 'tr'),
       sortOrder: sortInfo?.column === 'transmission' ? sortInfo.order : undefined,
       render: (text) =>
@@ -619,9 +625,16 @@ export default function PriceListPage() {
       defaultSortOrder: 'ascend',
       render: (text, record) => {
         // Calculate discount if both list and campaign prices exist
-        const hasDiscount = record.priceListNumeric && record.priceCampaignNumeric &&
+        // AND the main displayed price (priceNumeric) is close to the campaign price
+        const hasListAndCampaign = record.priceListNumeric && record.priceCampaignNumeric &&
           record.priceListNumeric > record.priceCampaignNumeric;
-        const discountPercent = hasDiscount
+
+        // Only show discount badge if the main price is close to campaign price (within 5%)
+        // This prevents showing misleading discounts when main price is higher than both
+        const mainPriceMatchesCampaign = hasListAndCampaign &&
+          Math.abs(record.priceNumeric - record.priceCampaignNumeric!) / record.priceCampaignNumeric! < 0.05;
+
+        const discountPercent = hasListAndCampaign
           ? Math.round(((record.priceListNumeric! - record.priceCampaignNumeric!) / record.priceListNumeric!) * 100)
           : 0;
 
@@ -630,7 +643,7 @@ export default function PriceListPage() {
             <Text strong style={{ color: tokens.colors.success, fontSize: '14px' }}>
               {text}
             </Text>
-            {hasDiscount && discountPercent > 0 && (
+            {mainPriceMatchesCampaign && discountPercent > 0 && (
               <Tag color="green" style={{ fontSize: 10, marginTop: 2 }}>
                 -{discountPercent}% indirim
               </Tag>
@@ -991,13 +1004,14 @@ export default function PriceListPage() {
               size="middle"
               virtual
               expandable={{
+                columnWidth: 32,
                 expandedRowRender: (record) => {
                   const hasExtendedData = record.otvRate || record.fuelConsumption || record.monthlyLease ||
                     record.priceListNumeric || record.priceCampaignNumeric;
                   if (!hasExtendedData) return null;
 
                   return (
-                    <Descriptions size="small" column={{ xs: 1, sm: 2, md: 3 }} style={{ marginLeft: 48 }}>
+                    <Descriptions size="small" column={{ xs: 1, sm: 2, md: 3 }} style={{ marginLeft: 16 }}>
                       {record.otvRate && (
                         <Descriptions.Item label={t('priceList.otvRate', 'ÖTV Oranı')}>
                           <Tag color="orange">%{record.otvRate}</Tag>
