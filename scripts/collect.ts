@@ -875,7 +875,7 @@ const parseToyotaData = (data: any, brand: string): PriceListRow[] => {
         if (modelName.includes('%') || modelName.includes('ÖTV') || modelName.toLowerCase().includes('tüm versiyonlarda')) return;
 
         const govde = item.Govde || '';
-        const motorHacmi = item.MotorHacmi || '';
+        const motorHacmi = item.MotorHacmi != null ? String(item.MotorHacmi) : '';
         const vitesTipi = item.VitesTipi || '';
         const motorTipi = item.MotorTipi || '';
         const modelYili = item.ModelYili || '';
@@ -2106,20 +2106,20 @@ const parseOpelData = (html: string, brand: string, modelName?: string): PriceLi
         // Find the best price: prefer MY26, then campaign, then MY25
         let priceText = '';
         let priceNumeric = 0;
-        let modelYear: string | undefined;
+        let modelYear: number | undefined;
 
         if (isValidPrice(priceMY26)) {
           priceText = priceMY26Text;
           priceNumeric = priceMY26;
-          modelYear = 'MY26';
+          modelYear = 2026;
         } else if (isValidPrice(priceCampaign)) {
           priceText = priceCampaignText;
           priceNumeric = priceCampaign;
-          modelYear = 'MY25';
+          modelYear = 2025;
         } else if (isValidPrice(priceMY25)) {
           priceText = priceMY25Text;
           priceNumeric = priceMY25;
-          modelYear = 'MY25';
+          modelYear = 2025;
         }
 
         if (!priceText || !isValidPrice(priceNumeric)) return;
@@ -3463,8 +3463,9 @@ const parseKiaData = (html: string, brand: string): PriceListRow[] => {
         // Parse campaign price
         const priceCampaignNumeric = campaignPriceStr ? parsePrice(campaignPriceStr + ' TL') : undefined;
 
-        // Parse OTV rate
-        const otvRate = sctStr && !isNaN(parseInt(sctStr, 10)) ? parseInt(sctStr, 10) : undefined;
+        // Parse OTV rate - validate range (Turkish OTV max is ~220%, reject values > 300)
+        const rawSct = sctStr && !isNaN(parseInt(sctStr, 10)) ? parseInt(sctStr, 10) : undefined;
+        const otvRate = rawSct && rawSct > 0 && rawSct <= 300 ? rawSct : undefined;
 
         // Parse model year
         const modelYear = tabYear && !isNaN(parseInt(tabYear, 10)) ? parseInt(tabYear, 10) : undefined;

@@ -34,6 +34,21 @@ interface VehicleWithScore {
   modelYear?: number | string;      // Model year
   fuelConsumption?: string;         // Fuel consumption
   monthlyLease?: number;            // Monthly lease price
+  // Powertrain extended fields
+  powerHP?: number;                 // Power in HP
+  powerKW?: number;                 // Power in kW
+  engineDisplacement?: string;      // Engine displacement (e.g., "1.5L")
+  driveType?: string;               // Drive type (AWD, FWD, RWD)
+  wltpRange?: number;               // WLTP range in km (for EVs)
+  batteryCapacity?: number;         // Battery capacity in kWh
+  hasLongRange?: boolean;           // Long range battery version
+  isMildHybrid?: boolean;           // Is mild hybrid (48V)
+  isPlugInHybrid?: boolean;         // Is plug-in hybrid
+  isElectric?: boolean;             // Is electric vehicle
+  isHybrid?: boolean;               // Is hybrid vehicle
+  // Computed value metrics
+  tlPerHP?: number;                 // Price per HP (value metric)
+  tlPerKm?: number;                 // Price per km range (for EVs)
 }
 
 interface InsightsData {
@@ -432,6 +447,14 @@ export async function generateInsights(): Promise<InsightsData> {
           campaignDiscount = Math.round(((row.priceListNumeric - row.priceCampaignNumeric) / row.priceListNumeric) * 1000) / 10;
         }
 
+        // Calculate value metrics
+        const tlPerHP = row.powerHP && row.powerHP > 0
+          ? Math.round(row.priceNumeric / row.powerHP)
+          : undefined;
+        const tlPerKm = row.isElectric && row.wltpRange && row.wltpRange > 0
+          ? Math.round(row.priceNumeric / row.wltpRange)
+          : undefined;
+
         allVehicles.push({
           id: createVehicleId(row.brand, row.model, row.trim, row.engine),
           brand: row.brand,
@@ -458,6 +481,21 @@ export async function generateInsights(): Promise<InsightsData> {
           ...(row.modelYear && { modelYear: row.modelYear }),
           ...(row.fuelConsumption && { fuelConsumption: row.fuelConsumption }),
           ...(row.monthlyLease && { monthlyLease: row.monthlyLease }),
+          // Powertrain extended fields
+          ...(row.powerHP && { powerHP: row.powerHP }),
+          ...(row.powerKW && { powerKW: row.powerKW }),
+          ...(row.engineDisplacement && { engineDisplacement: row.engineDisplacement }),
+          ...(row.driveType && { driveType: row.driveType }),
+          ...(row.wltpRange && { wltpRange: row.wltpRange }),
+          ...(row.batteryCapacity && { batteryCapacity: row.batteryCapacity }),
+          ...(row.hasLongRange && { hasLongRange: row.hasLongRange }),
+          ...(row.isMildHybrid && { isMildHybrid: row.isMildHybrid }),
+          ...(row.isPlugInHybrid && { isPlugInHybrid: row.isPlugInHybrid }),
+          ...(row.isElectric && { isElectric: row.isElectric }),
+          ...(row.isHybrid && { isHybrid: row.isHybrid }),
+          // Computed value metrics
+          ...(tlPerHP && { tlPerHP }),
+          ...(tlPerKm && { tlPerKm }),
         });
       }
     }

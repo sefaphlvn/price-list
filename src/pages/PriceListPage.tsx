@@ -124,6 +124,8 @@ export default function PriceListPage() {
     initialUrlState.transmission || null
   );
   const [fuelFilter, setFuelFilter] = useState<string | null>(initialUrlState.fuel || null);
+  const [powertrainFilter, setPowertrainFilter] = useState<string | null>(initialUrlState.powertrain || null);
+  const [driveTypeFilter, setDriveTypeFilter] = useState<string | null>(initialUrlState.driveType || null);
 
   // Sorting
   const [sortInfo, setSortInfo] = useState<{
@@ -165,6 +167,8 @@ export default function PriceListPage() {
       model: modelFilter || undefined,
       transmission: transmissionFilter || undefined,
       fuel: fuelFilter || undefined,
+      powertrain: powertrainFilter || undefined,
+      driveType: driveTypeFilter || undefined,
       date: selectedDate?.format('YYYY-MM-DD'),
       sort: sortInfo ? `${sortInfo.column}:${sortInfo.order === 'descend' ? 'desc' : 'asc'}` : undefined,
       page: pagination.current,
@@ -183,6 +187,8 @@ export default function PriceListPage() {
     modelFilter,
     transmissionFilter,
     fuelFilter,
+    powertrainFilter,
+    driveTypeFilter,
     selectedDate,
     sortInfo,
     pagination.current,
@@ -372,10 +378,10 @@ export default function PriceListPage() {
       const search = searchText.toLowerCase();
       result = result.filter(
         (row) =>
-          (row.model || '').toLowerCase().includes(search) ||
-          (row.trim || '').toLowerCase().includes(search) ||
-          (row.engine || '').toLowerCase().includes(search) ||
-          (row.transmission || '').toLowerCase().includes(search)
+          String(row.model || '').toLowerCase().includes(search) ||
+          String(row.trim || '').toLowerCase().includes(search) ||
+          String(row.engine || '').toLowerCase().includes(search) ||
+          String(row.transmission || '').toLowerCase().includes(search)
       );
     }
 
@@ -394,8 +400,33 @@ export default function PriceListPage() {
       result = result.filter((row) => row.fuel === fuelFilter);
     }
 
+    // Powertrain filter
+    if (powertrainFilter) {
+      result = result.filter((row) => {
+        switch (powertrainFilter) {
+          case 'electric':
+            return row.isElectric === true;
+          case 'pluginHybrid':
+            return row.isPlugInHybrid === true;
+          case 'mildHybrid':
+            return row.isMildHybrid === true;
+          case 'hybrid':
+            return row.isHybrid === true && !row.isPlugInHybrid && !row.isMildHybrid;
+          case 'ice':
+            return !row.isElectric && !row.isHybrid && !row.isPlugInHybrid && !row.isMildHybrid;
+          default:
+            return true;
+        }
+      });
+    }
+
+    // Drive type filter
+    if (driveTypeFilter) {
+      result = result.filter((row) => row.driveType === driveTypeFilter);
+    }
+
     return result;
-  }, [fetchState.data, searchText, modelFilter, transmissionFilter, fuelFilter]);
+  }, [fetchState.data, searchText, modelFilter, transmissionFilter, fuelFilter, powertrainFilter, driveTypeFilter]);
 
   // Get unique values for filters
   const modelOptions = useMemo(() => {
@@ -414,6 +445,51 @@ export default function PriceListPage() {
     if (!fetchState.data) return [];
     const fuels = [...new Set(fetchState.data.rows.map((row) => row.fuel))];
     return fuels.filter(Boolean).sort();
+  }, [fetchState.data]);
+
+  // Powertrain options based on available data
+  const powertrainOptions = useMemo(() => {
+    if (!fetchState.data) return [];
+    const options: { value: string; label: string; count: number }[] = [];
+
+    const rows = fetchState.data.rows;
+    const electricCount = rows.filter(r => r.isElectric).length;
+    const pluginCount = rows.filter(r => r.isPlugInHybrid).length;
+    const mildCount = rows.filter(r => r.isMildHybrid).length;
+    const hybridCount = rows.filter(r => r.isHybrid && !r.isPlugInHybrid && !r.isMildHybrid).length;
+    const iceCount = rows.filter(r => !r.isElectric && !r.isHybrid && !r.isPlugInHybrid && !r.isMildHybrid).length;
+
+    if (electricCount > 0) options.push({ value: 'electric', label: `Elektrikli (${electricCount})`, count: electricCount });
+    if (pluginCount > 0) options.push({ value: 'pluginHybrid', label: `Plug-in Hybrid (${pluginCount})`, count: pluginCount });
+    if (mildCount > 0) options.push({ value: 'mildHybrid', label: `Mild Hybrid (${mildCount})`, count: mildCount });
+    if (hybridCount > 0) options.push({ value: 'hybrid', label: `Hybrid (${hybridCount})`, count: hybridCount });
+    if (iceCount > 0) options.push({ value: 'ice', label: `Benzin/Dizel (${iceCount})`, count: iceCount });
+
+    return options;
+  }, [fetchState.data]);
+
+  // Drive type options based on available data
+  const driveTypeOptions = useMemo(() => {
+    if (!fetchState.data) return [];
+    const driveTypes: { [key: string]: number } = {};
+
+    fetchState.data.rows.forEach(row => {
+      if (row.driveType) {
+        driveTypes[row.driveType] = (driveTypes[row.driveType] || 0) + 1;
+      }
+    });
+
+    const labels: { [key: string]: string } = {
+      'AWD': '4x4 (AWD)',
+      'FWD': 'Önden Çekiş (FWD)',
+      'RWD': 'Arkadan Çekiş (RWD)',
+    };
+
+    return Object.entries(driveTypes).map(([type, count]) => ({
+      value: type,
+      label: `${labels[type] || type} (${count})`,
+      count,
+    }));
   }, [fetchState.data]);
 
   // Handle favorite toggle
@@ -479,6 +555,8 @@ export default function PriceListPage() {
       model: modelFilter || undefined,
       transmission: transmissionFilter || undefined,
       fuel: fuelFilter || undefined,
+      powertrain: powertrainFilter || undefined,
+      driveType: driveTypeFilter || undefined,
       date: selectedDate?.format('YYYY-MM-DD'),
       sort: sortInfo ? `${sortInfo.column}:${sortInfo.order === 'descend' ? 'desc' : 'asc'}` : undefined,
       page: pagination.current,
@@ -766,6 +844,8 @@ export default function PriceListPage() {
     setModelFilter(null);
     setTransmissionFilter(null);
     setFuelFilter(null);
+    setPowertrainFilter(null);
+    setDriveTypeFilter(null);
   };
 
   return (
@@ -957,6 +1037,28 @@ export default function PriceListPage() {
                 allowClear
                 options={fuelOptions.map((f) => ({ label: f, value: f }))}
               />
+              {powertrainOptions.length > 0 && (
+                <Select
+                  placeholder={t('priceList.filters.selectPowertrain', 'Güç Aktarımı')}
+                  value={powertrainFilter}
+                  onChange={setPowertrainFilter}
+                  style={{ width: 180 }}
+                  size="large"
+                  allowClear
+                  options={powertrainOptions}
+                />
+              )}
+              {driveTypeOptions.length > 0 && (
+                <Select
+                  placeholder={t('priceList.filters.selectDriveType', 'Çekiş Tipi')}
+                  value={driveTypeFilter}
+                  onChange={setDriveTypeFilter}
+                  style={{ width: 180 }}
+                  size="large"
+                  allowClear
+                  options={driveTypeOptions}
+                />
+              )}
             </Space>
           </motion.div>
 
@@ -1021,12 +1123,62 @@ export default function PriceListPage() {
                     record.kdvAmount || record.mtvAmount || record.origin ||
                     (record.optionalEquipment && record.optionalEquipment.length > 0);
 
+                  // Check for powertrain/EV extended data
+                  const hasPowertrainData = record.powerHP || record.powerKW || record.engineDisplacement ||
+                    record.driveType || record.wltpRange || record.batteryCapacity ||
+                    record.hasLongRange || record.isMildHybrid || record.isPlugInHybrid || record.isElectric || record.isHybrid;
+
                   const hasExtendedData = record.otvRate || record.fuelConsumption ||
-                    record.monthlyLease || hasDiscount || hasVWExtendedData;
+                    record.monthlyLease || hasDiscount || hasVWExtendedData || hasPowertrainData;
                   if (!hasExtendedData) return null;
 
                   return (
                     <Descriptions size="small" column={{ xs: 1, sm: 2, md: 4 }} style={{ marginLeft: 16 }}>
+                      {/* Powertrain & EV Section */}
+                      {(record.powerHP || record.powerKW) && (
+                        <Descriptions.Item label={t('priceList.power', 'Güç')}>
+                          <Space size={4}>
+                            {record.powerHP && <Tag color="blue">{record.powerHP} HP</Tag>}
+                            {record.powerKW && <Tag color="geekblue">{record.powerKW} kW</Tag>}
+                          </Space>
+                        </Descriptions.Item>
+                      )}
+                      {record.engineDisplacement && (
+                        <Descriptions.Item label={t('priceList.engineDisplacement', 'Motor Hacmi')}>
+                          <Tag color="purple">{record.engineDisplacement}</Tag>
+                        </Descriptions.Item>
+                      )}
+                      {record.driveType && (
+                        <Descriptions.Item label={t('priceList.driveType', 'Çekiş')}>
+                          <Tag color={record.driveType === 'AWD' ? 'blue' : record.driveType === 'RWD' ? 'orange' : 'green'}>
+                            {record.driveType === 'AWD' ? '4x4 (AWD)' : record.driveType === 'FWD' ? 'Önden Çekiş' : 'Arkadan Çekiş'}
+                          </Tag>
+                        </Descriptions.Item>
+                      )}
+                      {record.wltpRange && (
+                        <Descriptions.Item label={t('priceList.wltpRange', 'WLTP Menzil')}>
+                          <Tag color="green">{record.wltpRange} km</Tag>
+                        </Descriptions.Item>
+                      )}
+                      {record.batteryCapacity && (
+                        <Descriptions.Item label={t('priceList.batteryCapacity', 'Batarya')}>
+                          <Tag color="cyan">{record.batteryCapacity} kWh</Tag>
+                        </Descriptions.Item>
+                      )}
+                      {/* Powertrain type tags */}
+                      {(record.hasLongRange || record.isMildHybrid || record.isPlugInHybrid || record.isElectric || record.isHybrid) && (
+                        <Descriptions.Item label={t('priceList.powertrainType', 'Güç Aktarımı')}>
+                          <Space wrap size="small">
+                            {record.isElectric && <Tag color="green">Elektrikli</Tag>}
+                            {record.isPlugInHybrid && <Tag color="lime">Plug-in Hybrid</Tag>}
+                            {record.isMildHybrid && <Tag color="cyan">Mild Hybrid (48V)</Tag>}
+                            {record.isHybrid && !record.isPlugInHybrid && !record.isMildHybrid && <Tag color="gold">Hybrid</Tag>}
+                            {record.hasLongRange && <Tag color="purple">Uzun Menzil</Tag>}
+                          </Space>
+                        </Descriptions.Item>
+                      )}
+
+                      {/* Price & Tax Section */}
                       {hasDiscount && (
                         <Descriptions.Item label={t('priceList.campaignPrice', 'İndirimli Fiyat')}>
                           <Space direction="vertical" size={0}>
@@ -1101,7 +1253,10 @@ export default function PriceListPage() {
                   const hasVWExtendedData = record.netPrice || record.otvAmount ||
                     record.kdvAmount || record.mtvAmount || record.origin ||
                     (record.optionalEquipment && record.optionalEquipment.length > 0);
-                  return !!(record.otvRate || record.fuelConsumption || record.monthlyLease || hasDiscount || hasVWExtendedData);
+                  const hasPowertrainData = record.powerHP || record.powerKW || record.engineDisplacement ||
+                    record.driveType || record.wltpRange || record.batteryCapacity ||
+                    record.hasLongRange || record.isMildHybrid || record.isPlugInHybrid || record.isElectric || record.isHybrid;
+                  return !!(record.otvRate || record.fuelConsumption || record.monthlyLease || hasDiscount || hasVWExtendedData || hasPowertrainData);
                 },
               }}
             />

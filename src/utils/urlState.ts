@@ -7,6 +7,8 @@ export interface PriceListUrlState {
   model?: string;
   transmission?: string;
   fuel?: string;
+  powertrain?: string; // electric, pluginHybrid, mildHybrid, hybrid, ice
+  driveType?: string; // AWD, FWD, RWD
   date?: string; // YYYY-MM-DD
   sort?: string; // column:direction (e.g., "price:asc")
   page?: number;
@@ -19,6 +21,8 @@ const PARAM_KEYS = {
   model: 'm',
   transmission: 'tr',
   fuel: 'f',
+  powertrain: 'pt',
+  driveType: 'dt',
   date: 'd',
   sort: 's',
   page: 'p',
@@ -48,6 +52,12 @@ export const parseQueryToState = (search: string): PriceListUrlState => {
 
     const fuel = params.get(PARAM_KEYS.fuel);
     if (fuel) state.fuel = fuel;
+
+    const powertrain = params.get(PARAM_KEYS.powertrain);
+    if (powertrain) state.powertrain = powertrain;
+
+    const driveType = params.get(PARAM_KEYS.driveType);
+    if (driveType) state.driveType = driveType;
 
     const date = params.get(PARAM_KEYS.date);
     if (date && /^\d{4}-\d{2}-\d{2}$/.test(date)) {
@@ -88,6 +98,8 @@ export const stateToQuery = (state: PriceListUrlState): string => {
   if (state.model) params.set(PARAM_KEYS.model, state.model);
   if (state.transmission) params.set(PARAM_KEYS.transmission, state.transmission);
   if (state.fuel) params.set(PARAM_KEYS.fuel, state.fuel);
+  if (state.powertrain) params.set(PARAM_KEYS.powertrain, state.powertrain);
+  if (state.driveType) params.set(PARAM_KEYS.driveType, state.driveType);
   if (state.date) params.set(PARAM_KEYS.date, state.date);
   if (state.sort) params.set(PARAM_KEYS.sort, state.sort);
   if (state.page && state.page > 1) params.set(PARAM_KEYS.page, state.page.toString());

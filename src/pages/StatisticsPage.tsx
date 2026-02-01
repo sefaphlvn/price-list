@@ -432,9 +432,21 @@ export default function StatisticsPage() {
   const modelYearStats = useMemo(() => {
     const yearData = new Map<string, { prices: number[]; count: number }>();
 
+    // Normalize model year: "MY25" → "2025", "MY26" → "2026"
+    const normalizeYear = (year: string | number): string => {
+      const str = String(year).toUpperCase();
+      if (str === 'MY25') return '2025';
+      if (str === 'MY26') return '2026';
+      if (str.startsWith('MY') && str.length === 4) {
+        const num = parseInt(str.slice(2), 10);
+        if (!isNaN(num)) return `20${num}`;
+      }
+      return String(year);
+    };
+
     allRows.forEach((row) => {
       if (row.modelYear) {
-        const year = String(row.modelYear);
+        const year = normalizeYear(row.modelYear);
         if (!yearData.has(year)) {
           yearData.set(year, { prices: [], count: 0 });
         }
@@ -462,6 +474,201 @@ export default function StatisticsPage() {
     return {
       totalWithYear,
       distribution,
+    };
+  }, [allRows]);
+
+  // Powertrain distribution (Electric, Plug-in Hybrid, Mild Hybrid, Hybrid, ICE)
+  const powertrainDistribution = useMemo(() => {
+    const counts = {
+      electric: 0,
+      pluginHybrid: 0,
+      mildHybrid: 0,
+      hybrid: 0,
+      ice: 0,
+    };
+    const prices = {
+      electric: [] as number[],
+      pluginHybrid: [] as number[],
+      mildHybrid: [] as number[],
+      hybrid: [] as number[],
+      ice: [] as number[],
+    };
+
+    allRows.forEach((row) => {
+      if (row.isElectric) {
+        counts.electric++;
+        prices.electric.push(row.priceNumeric);
+      } else if (row.isPlugInHybrid) {
+        counts.pluginHybrid++;
+        prices.pluginHybrid.push(row.priceNumeric);
+      } else if (row.isMildHybrid) {
+        counts.mildHybrid++;
+        prices.mildHybrid.push(row.priceNumeric);
+      } else if (row.isHybrid) {
+        counts.hybrid++;
+        prices.hybrid.push(row.priceNumeric);
+      } else {
+        counts.ice++;
+        prices.ice.push(row.priceNumeric);
+      }
+    });
+
+    const total = Object.values(counts).reduce((a, b) => a + b, 0);
+    const hasData = counts.electric > 0 || counts.pluginHybrid > 0 || counts.mildHybrid > 0 || counts.hybrid > 0;
+
+    if (!hasData) return null;
+
+    const calcAvg = (arr: number[]) => arr.length > 0 ? Math.round(arr.reduce((a, b) => a + b, 0) / arr.length) : 0;
+
+    return {
+      distribution: [
+        { name: 'Elektrikli', value: counts.electric, color: tokens.colors.fuel.elektrik, avgPrice: calcAvg(prices.electric) },
+        { name: 'Plug-in Hybrid', value: counts.pluginHybrid, color: '#10b981', avgPrice: calcAvg(prices.pluginHybrid) },
+        { name: 'Mild Hybrid', value: counts.mildHybrid, color: '#8b5cf6', avgPrice: calcAvg(prices.mildHybrid) },
+        { name: 'Hybrid', value: counts.hybrid, color: tokens.colors.fuel.hybrid, avgPrice: calcAvg(prices.hybrid) },
+        { name: 'Benzin/Dizel', value: counts.ice, color: tokens.colors.fuel.benzin, avgPrice: calcAvg(prices.ice) },
+      ].filter((x) => x.value > 0),
+      total,
+      electrifiedCount: counts.electric + counts.pluginHybrid + counts.mildHybrid + counts.hybrid,
+      electrifiedPercent: Math.round(((counts.electric + counts.pluginHybrid + counts.mildHybrid + counts.hybrid) / total) * 100 * 10) / 10,
+    };
+  }, [allRows]);
+
+  // Drive type distribution (AWD, FWD, RWD)
+  const driveTypeDistribution = useMemo(() => {
+    const counts: { [key: string]: { count: number; prices: number[] } } = {};
+
+    allRows.forEach((row) => {
+      if (row.driveType) {
+        if (!counts[row.driveType]) {
+          counts[row.driveType] = { count: 0, prices: [] };
+        }
+        counts[row.driveType].count++;
+        counts[row.driveType].prices.push(row.priceNumeric);
+      }
+    });
+
+    const total = Object.values(counts).reduce((sum, d) => sum + d.count, 0);
+    if (total === 0) return null;
+
+    const labels: { [key: string]: string } = {
+      AWD: '4x4 (AWD)',
+      FWD: 'Önden Çekiş (FWD)',
+      RWD: 'Arkadan Çekiş (RWD)',
+    };
+    const colors: { [key: string]: string } = {
+      AWD: '#3b82f6',
+      FWD: '#22c55e',
+      RWD: '#f97316',
+    };
+
+    return {
+      distribution: Object.entries(counts).map(([type, data]) => ({
+        name: labels[type] || type,
+        type,
+        value: data.count,
+        color: colors[type] || tokens.colors.gray[400],
+        avgPrice: data.prices.length > 0 ? Math.round(data.prices.reduce((a, b) => a + b, 0) / data.prices.length) : 0,
+        percentage: Math.round((data.count / total) * 100 * 10) / 10,
+      })),
+      total,
+    };
+  }, [allRows]);
+
+  // EV range comparison
+  const evRangeStats = useMemo(() => {
+    const evs = allRows.filter((r) => r.isElectric && r.wltpRange && r.wltpRange > 0);
+    if (evs.length === 0) return null;
+
+    const sorted = [...evs].sort((a, b) => (b.wltpRange || 0) - (a.wltpRange || 0));
+    const avgRange = Math.round(evs.reduce((sum, r) => sum + (r.wltpRange || 0), 0) / evs.length);
+    const avgPrice = Math.round(evs.reduce((sum, r) => sum + r.priceNumeric, 0) / evs.length);
+
+    return {
+      count: evs.length,
+      avgRange,
+      avgPrice,
+      avgPricePerKm: avgPrice > 0 && avgRange > 0 ? Math.round(avgPrice / avgRange) : 0,
+      topRange: sorted.slice(0, 10).map((r) => ({
+        brand: r.brand,
+        model: r.model,
+        trim: r.trim,
+        range: r.wltpRange || 0,
+        price: r.priceNumeric,
+        pricePerKm: Math.round(r.priceNumeric / (r.wltpRange || 1)),
+        batteryCapacity: r.batteryCapacity,
+      })),
+      bestValue: [...evs]
+        .map((r) => ({
+          brand: r.brand,
+          model: r.model,
+          trim: r.trim,
+          range: r.wltpRange || 0,
+          price: r.priceNumeric,
+          pricePerKm: Math.round(r.priceNumeric / (r.wltpRange || 1)),
+        }))
+        .sort((a, b) => a.pricePerKm - b.pricePerKm)
+        .slice(0, 10),
+    };
+  }, [allRows]);
+
+  // Power (HP) statistics
+  const powerStats = useMemo(() => {
+    const withPower = allRows.filter((r) => r.powerHP && r.powerHP > 0);
+    if (withPower.length === 0) return null;
+
+    const avgHP = Math.round(withPower.reduce((sum, r) => sum + (r.powerHP || 0), 0) / withPower.length);
+    const avgTLPerHP = Math.round(
+      withPower.reduce((sum, r) => sum + r.priceNumeric / (r.powerHP || 1), 0) / withPower.length
+    );
+
+    const bestValue = [...withPower]
+      .map((r) => ({
+        brand: r.brand,
+        model: r.model,
+        trim: r.trim,
+        powerHP: r.powerHP || 0,
+        powerKW: r.powerKW,
+        price: r.priceNumeric,
+        tlPerHP: Math.round(r.priceNumeric / (r.powerHP || 1)),
+      }))
+      .sort((a, b) => a.tlPerHP - b.tlPerHP)
+      .slice(0, 10);
+
+    const mostPowerful = [...withPower]
+      .sort((a, b) => (b.powerHP || 0) - (a.powerHP || 0))
+      .slice(0, 10)
+      .map((r) => ({
+        brand: r.brand,
+        model: r.model,
+        trim: r.trim,
+        powerHP: r.powerHP || 0,
+        powerKW: r.powerKW,
+        price: r.priceNumeric,
+        tlPerHP: Math.round(r.priceNumeric / (r.powerHP || 1)),
+      }));
+
+    // Power segments (inclusive upper bounds)
+    const segments = [
+      { label: '≤100 HP', min: 0, max: 101, count: 0 },
+      { label: '101-150 HP', min: 101, max: 151, count: 0 },
+      { label: '151-200 HP', min: 151, max: 201, count: 0 },
+      { label: '201-300 HP', min: 201, max: 301, count: 0 },
+      { label: '301-400 HP', min: 301, max: 401, count: 0 },
+      { label: '400+ HP', min: 401, max: Infinity, count: 0 },
+    ];
+    withPower.forEach((r) => {
+      const seg = segments.find((s) => (r.powerHP || 0) >= s.min && (r.powerHP || 0) < s.max);
+      if (seg) seg.count++;
+    });
+
+    return {
+      count: withPower.length,
+      avgHP,
+      avgTLPerHP,
+      bestValue,
+      mostPowerful,
+      segments: segments.filter((s) => s.count > 0),
     };
   }, [allRows]);
 
@@ -1061,6 +1268,357 @@ export default function StatisticsPage() {
         </Row>
       ),
     },
+    // Powertrain Analysis Tab
+    ...(powertrainDistribution ? [{
+      key: 'powertrain',
+      label: (
+        <span>
+          <CarOutlined /> Güç Aktarımı
+        </span>
+      ),
+      children: (
+        <Row gutter={[24, 24]}>
+          {/* Powertrain Summary */}
+          <Col span={24}>
+            <Row gutter={[16, 16]}>
+              <Col xs={12} sm={8} md={6}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="Elektrikli/Hibrit Araç"
+                    value={powertrainDistribution.electrifiedCount}
+                    suffix={`/ ${powertrainDistribution.total}`}
+                    valueStyle={{ color: tokens.colors.fuel.elektrik }}
+                  />
+                </Card>
+              </Col>
+              <Col xs={12} sm={8} md={6}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="Elektrifikasyon Oranı"
+                    value={powertrainDistribution.electrifiedPercent}
+                    suffix="%"
+                    valueStyle={{ color: tokens.colors.success }}
+                  />
+                </Card>
+              </Col>
+            </Row>
+          </Col>
+
+          {/* Powertrain Distribution Pie */}
+          <Col xs={24} lg={12}>
+            <Card
+              title="Güç Aktarımı Dağılımı"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <ResponsiveContainer width="100%" height={350}>
+                <PieChart>
+                  <Pie
+                    data={powertrainDistribution.distribution}
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={60}
+                    outerRadius={100}
+                    paddingAngle={2}
+                    dataKey="value"
+                    label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                  >
+                    {powertrainDistribution.distribution.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.color} />
+                    ))}
+                  </Pie>
+                  <Tooltip />
+                  <Legend />
+                </PieChart>
+              </ResponsiveContainer>
+            </Card>
+          </Col>
+
+          {/* Average Price by Powertrain */}
+          <Col xs={24} lg={12}>
+            <Card
+              title="Güç Aktarımına Göre Ortalama Fiyat"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <ResponsiveContainer width="100%" height={350}>
+                <BarChart data={powertrainDistribution.distribution} layout="vertical">
+                  <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
+                  <XAxis type="number" tickFormatter={(v) => formatPriceShort(v)} />
+                  <YAxis type="category" dataKey="name" width={120} />
+                  <Tooltip formatter={(value: number) => [formatPrice(value), 'Ort. Fiyat']} />
+                  <Bar dataKey="avgPrice" radius={[0, 4, 4, 0]}>
+                    {powertrainDistribution.distribution.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.color} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </Card>
+          </Col>
+
+          {/* Drive Type Distribution */}
+          {driveTypeDistribution && (
+            <>
+              <Col xs={24} lg={12}>
+                <Card
+                  title="Çekiş Tipi Dağılımı"
+                  style={{ borderRadius: tokens.borderRadius.lg }}
+                >
+                  <ResponsiveContainer width="100%" height={300}>
+                    <PieChart>
+                      <Pie
+                        data={driveTypeDistribution.distribution}
+                        cx="50%"
+                        cy="50%"
+                        innerRadius={50}
+                        outerRadius={80}
+                        paddingAngle={2}
+                        dataKey="value"
+                        label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                      >
+                        {driveTypeDistribution.distribution.map((entry, index) => (
+                          <Cell key={`cell-${index}`} fill={entry.color} />
+                        ))}
+                      </Pie>
+                      <Tooltip />
+                    </PieChart>
+                  </ResponsiveContainer>
+                </Card>
+              </Col>
+
+              <Col xs={24} lg={12}>
+                <Card
+                  title="Çekiş Tipine Göre Ortalama Fiyat"
+                  style={{ borderRadius: tokens.borderRadius.lg }}
+                >
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={driveTypeDistribution.distribution}>
+                      <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
+                      <XAxis dataKey="name" />
+                      <YAxis tickFormatter={(v) => formatPriceShort(v)} />
+                      <Tooltip formatter={(value: number) => [formatPrice(value), 'Ort. Fiyat']} />
+                      <Bar dataKey="avgPrice" radius={[4, 4, 0, 0]}>
+                        {driveTypeDistribution.distribution.map((entry, index) => (
+                          <Cell key={`cell-${index}`} fill={entry.color} />
+                        ))}
+                      </Bar>
+                    </BarChart>
+                  </ResponsiveContainer>
+                </Card>
+              </Col>
+            </>
+          )}
+
+          {/* Power Stats */}
+          {powerStats && (
+            <>
+              <Col span={24}>
+                <Row gutter={[16, 16]}>
+                  <Col xs={12} sm={8} md={4}>
+                    <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                      <Statistic
+                        title="Güç Verisi Olan"
+                        value={powerStats.count}
+                        suffix="araç"
+                      />
+                    </Card>
+                  </Col>
+                  <Col xs={12} sm={8} md={4}>
+                    <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                      <Statistic
+                        title="Ortalama Güç"
+                        value={powerStats.avgHP}
+                        suffix="HP"
+                        valueStyle={{ color: tokens.colors.accent }}
+                      />
+                    </Card>
+                  </Col>
+                  <Col xs={12} sm={8} md={4}>
+                    <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                      <Statistic
+                        title="Ortalama TL/HP"
+                        value={powerStats.avgTLPerHP}
+                        formatter={(v) => formatPriceShort(v as number)}
+                        valueStyle={{ color: tokens.colors.warning }}
+                      />
+                    </Card>
+                  </Col>
+                </Row>
+              </Col>
+
+              {/* Power Segments */}
+              <Col xs={24} lg={12}>
+                <Card
+                  title="Güç Segmentleri"
+                  style={{ borderRadius: tokens.borderRadius.lg }}
+                >
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={powerStats.segments}>
+                      <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
+                      <XAxis dataKey="label" />
+                      <YAxis />
+                      <Tooltip formatter={(value: number) => [`${value} araç`, 'Sayı']} />
+                      <Bar dataKey="count" fill={tokens.colors.accent} radius={[4, 4, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </Card>
+              </Col>
+
+              {/* Best HP/TL Value */}
+              <Col xs={24} lg={12}>
+                <Card
+                  title="En İyi Güç/Fiyat Değeri (TL/HP)"
+                  style={{ borderRadius: tokens.borderRadius.lg }}
+                >
+                  <Table
+                    dataSource={powerStats.bestValue.map((r, i) => ({ ...r, key: i, rank: i + 1 }))}
+                    columns={[
+                      { title: '#', dataIndex: 'rank', key: 'rank', width: 40 },
+                      { title: 'Marka', dataIndex: 'brand', key: 'brand', width: 80 },
+                      { title: 'Model', dataIndex: 'model', key: 'model', width: 100 },
+                      { title: 'HP', dataIndex: 'powerHP', key: 'powerHP', width: 60, render: (v: number) => <Tag color="blue">{v} HP</Tag> },
+                      { title: 'TL/HP', dataIndex: 'tlPerHP', key: 'tlPerHP', render: (v: number) => <Text strong style={{ color: tokens.colors.success }}>{v.toLocaleString('tr-TR')}</Text> },
+                    ]}
+                    pagination={false}
+                    size="small"
+                    scroll={{ y: 220 }}
+                  />
+                </Card>
+              </Col>
+            </>
+          )}
+        </Row>
+      ),
+    }] : []),
+    // EV Analysis Tab
+    ...(evRangeStats ? [{
+      key: 'ev',
+      label: (
+        <span>
+          <DashboardOutlined /> EV Analizi
+        </span>
+      ),
+      children: (
+        <Row gutter={[24, 24]}>
+          {/* EV Summary */}
+          <Col span={24}>
+            <Row gutter={[16, 16]}>
+              <Col xs={12} sm={8} md={4}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="Elektrikli Araç"
+                    value={evRangeStats.count}
+                    valueStyle={{ color: tokens.colors.fuel.elektrik }}
+                    prefix={<CarOutlined />}
+                  />
+                </Card>
+              </Col>
+              <Col xs={12} sm={8} md={4}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="Ortalama Menzil"
+                    value={evRangeStats.avgRange}
+                    suffix="km"
+                    valueStyle={{ color: tokens.colors.success }}
+                  />
+                </Card>
+              </Col>
+              <Col xs={12} sm={8} md={4}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="Ortalama Fiyat"
+                    value={evRangeStats.avgPrice}
+                    formatter={(v) => formatPriceShort(v as number)}
+                    valueStyle={{ color: tokens.colors.accent }}
+                  />
+                </Card>
+              </Col>
+              <Col xs={12} sm={8} md={4}>
+                <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
+                  <Statistic
+                    title="Ortalama TL/km"
+                    value={evRangeStats.avgPricePerKm}
+                    formatter={(v) => (v as number).toLocaleString('tr-TR')}
+                    valueStyle={{ color: tokens.colors.warning }}
+                  />
+                </Card>
+              </Col>
+            </Row>
+          </Col>
+
+          {/* Top Range EVs */}
+          <Col xs={24} lg={12}>
+            <Card
+              title="En Uzun Menzilli Elektrikli Araçlar"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <Table
+                dataSource={evRangeStats.topRange.map((r, i) => ({ ...r, key: i, rank: i + 1 }))}
+                columns={[
+                  { title: '#', dataIndex: 'rank', key: 'rank', width: 40 },
+                  { title: 'Marka', dataIndex: 'brand', key: 'brand', width: 80 },
+                  { title: 'Model', dataIndex: 'model', key: 'model', width: 100 },
+                  {
+                    title: 'Menzil',
+                    dataIndex: 'range',
+                    key: 'range',
+                    width: 80,
+                    render: (v: number) => <Tag color="green">{v} km</Tag>,
+                  },
+                  {
+                    title: 'Fiyat',
+                    dataIndex: 'price',
+                    key: 'price',
+                    render: (v: number) => (
+                      <Text style={{ color: tokens.colors.success }}>{formatPriceShort(v)}</Text>
+                    ),
+                  },
+                ]}
+                pagination={false}
+                size="small"
+                scroll={{ y: 280 }}
+              />
+            </Card>
+          </Col>
+
+          {/* Best Value EVs (TL/km) */}
+          <Col xs={24} lg={12}>
+            <Card
+              title="En İyi Değer (TL/km)"
+              style={{ borderRadius: tokens.borderRadius.lg }}
+            >
+              <Table
+                dataSource={evRangeStats.bestValue.map((r, i) => ({ ...r, key: i, rank: i + 1 }))}
+                columns={[
+                  { title: '#', dataIndex: 'rank', key: 'rank', width: 40 },
+                  { title: 'Marka', dataIndex: 'brand', key: 'brand', width: 80 },
+                  { title: 'Model', dataIndex: 'model', key: 'model', width: 100 },
+                  {
+                    title: 'Menzil',
+                    dataIndex: 'range',
+                    key: 'range',
+                    width: 80,
+                    render: (v: number) => <Tag color="green">{v} km</Tag>,
+                  },
+                  {
+                    title: 'TL/km',
+                    dataIndex: 'pricePerKm',
+                    key: 'pricePerKm',
+                    render: (v: number) => (
+                      <Text strong style={{ color: tokens.colors.success }}>{v.toLocaleString('tr-TR')}</Text>
+                    ),
+                  },
+                ]}
+                pagination={false}
+                size="small"
+                scroll={{ y: 280 }}
+              />
+            </Card>
+          </Col>
+
+          {/* EV Range vs Price Scatter would go here - keeping simple for now */}
+        </Row>
+      ),
+    }] : []),
     // OTV Analysis Tab
     ...(otvStats ? [{
       key: 'otv',

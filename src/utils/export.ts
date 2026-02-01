@@ -1,20 +1,37 @@
 import * as XLSX from 'xlsx';
 import { PriceListRow } from '../types';
 
+// Helper to format powertrain type
+const getPowertrainType = (row: PriceListRow): string => {
+  if (row.isElectric) return 'Elektrikli';
+  if (row.isPlugInHybrid) return 'Plug-in Hybrid';
+  if (row.isMildHybrid) return 'Mild Hybrid';
+  if (row.isHybrid) return 'Hybrid';
+  return 'İçten Yanmalı';
+};
+
 // Export to CSV with UTF-8 BOM for Excel compatibility
 export const exportToCSV = (data: PriceListRow[], filename: string = 'fiyat-listesi.csv') => {
   const headers = [
-    'Marka', 'Model', 'Donanım', 'Motor', 'Şanzıman', 'Yakıt', 'Fiyat',
+    'Marka', 'Model', 'Donanım', 'Motor', 'Güç (HP)', 'Güç (kW)', 'Motor Hacmi',
+    'Şanzıman', 'Şanzıman Tipi', 'Yakıt', 'Çekiş', 'Güç Aktarımı', 'Fiyat',
     'Model Yılı', 'ÖTV Oranı', 'Yakıt Tüketimi', 'Aylık Kira', 'Liste Fiyatı', 'Kampanya Fiyatı',
-    'Net Fiyat', 'ÖTV Tutarı', 'KDV Tutarı', 'MTV', 'Menşei'
+    'Net Fiyat', 'ÖTV Tutarı', 'KDV Tutarı', 'MTV', 'Menşei',
+    'Menzil (km)', 'Batarya (kWh)', 'Uzun Menzil'
   ];
   const rows = data.map(row => [
     row.brand,
     row.model,
     row.trim,
     row.engine,
+    row.powerHP || '',
+    row.powerKW || '',
+    row.engineDisplacement || '',
     row.transmission,
+    row.transmissionType || '',
     row.fuel,
+    row.driveType || '',
+    getPowertrainType(row),
     row.priceRaw,
     row.modelYear || '',
     row.otvRate ? `%${row.otvRate}` : '',
@@ -27,6 +44,9 @@ export const exportToCSV = (data: PriceListRow[], filename: string = 'fiyat-list
     row.kdvAmount ? `${row.kdvAmount.toLocaleString('tr-TR')} TL` : '',
     row.mtvAmount ? `${row.mtvAmount.toLocaleString('tr-TR')} TL` : '',
     row.origin || '',
+    row.wltpRange || '',
+    row.batteryCapacity || '',
+    row.hasLongRange ? 'Evet' : '',
   ]);
 
   const csvContent = [
@@ -44,17 +64,25 @@ export const exportToCSV = (data: PriceListRow[], filename: string = 'fiyat-list
 export const exportToXLSX = (data: PriceListRow[], filename: string = 'fiyat-listesi.xlsx') => {
   const worksheetData = [
     [
-      'Marka', 'Model', 'Donanım', 'Motor', 'Şanzıman', 'Yakıt', 'Fiyat',
+      'Marka', 'Model', 'Donanım', 'Motor', 'Güç (HP)', 'Güç (kW)', 'Motor Hacmi',
+      'Şanzıman', 'Şanzıman Tipi', 'Yakıt', 'Çekiş', 'Güç Aktarımı', 'Fiyat',
       'Model Yılı', 'ÖTV Oranı', 'Yakıt Tüketimi', 'Aylık Kira', 'Liste Fiyatı', 'Kampanya Fiyatı',
-      'Net Fiyat', 'ÖTV Tutarı', 'KDV Tutarı', 'MTV', 'Menşei'
+      'Net Fiyat', 'ÖTV Tutarı', 'KDV Tutarı', 'MTV', 'Menşei',
+      'Menzil (km)', 'Batarya (kWh)', 'Uzun Menzil'
     ],
     ...data.map(row => [
       row.brand,
       row.model,
       row.trim,
       row.engine,
+      row.powerHP || '',
+      row.powerKW || '',
+      row.engineDisplacement || '',
       row.transmission,
+      row.transmissionType || '',
       row.fuel,
+      row.driveType || '',
+      getPowertrainType(row),
       row.priceRaw,
       row.modelYear || '',
       row.otvRate ? `%${row.otvRate}` : '',
@@ -67,6 +95,9 @@ export const exportToXLSX = (data: PriceListRow[], filename: string = 'fiyat-lis
       row.kdvAmount ? `${row.kdvAmount.toLocaleString('tr-TR')} TL` : '',
       row.mtvAmount ? `${row.mtvAmount.toLocaleString('tr-TR')} TL` : '',
       row.origin || '',
+      row.wltpRange || '',
+      row.batteryCapacity || '',
+      row.hasLongRange ? 'Evet' : '',
     ]),
   ];
 
