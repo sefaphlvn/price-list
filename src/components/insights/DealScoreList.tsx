@@ -130,10 +130,10 @@ export default function DealScoreList({ vehicles }: DealScoreListProps) {
                   </Title>
                   <Tag color="blue">{vehicle.fuel}</Tag>
                   {vehicle.campaignDiscount && vehicle.campaignDiscount > 0 && (
-                    <Tag color="green">-{vehicle.campaignDiscount.toFixed(1)}% Kampanya</Tag>
+                    <Tag color="green">-{vehicle.campaignDiscount.toFixed(1)}% {t('promos.campaign')}</Tag>
                   )}
                   {vehicle.otvRate && (
-                    <Tag color="orange">ÖTV %{vehicle.otvRate}</Tag>
+                    <Tag color="orange">{t('common.otvRate', { rate: vehicle.otvRate })}</Tag>
                   )}
                 </div>
 

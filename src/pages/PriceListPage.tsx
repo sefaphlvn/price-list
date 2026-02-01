@@ -60,6 +60,7 @@ import {
 import PriceTrendModal from '../components/pricelist/PriceTrendModal';
 import BrandDisclaimer from '../components/common/BrandDisclaimer';
 import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Text } = Typography;
 const { Search } = Input;
@@ -91,6 +92,9 @@ export default function PriceListPage() {
     removeTrackedVehicle,
     isTracked,
   } = useAppStore();
+
+  // Responsive hooks
+  const isMobile = useIsMobile();
 
   // URL state initialization flag
   const urlInitialized = useRef(false);
@@ -480,9 +484,9 @@ export default function PriceListPage() {
     });
 
     const labels: { [key: string]: string } = {
-      'AWD': '4x4 (AWD)',
-      'FWD': 'Önden Çekiş (FWD)',
-      'RWD': 'Arkadan Çekiş (RWD)',
+      'AWD': t('common.driveTypes.awd'),
+      'FWD': t('common.driveTypes.fwd'),
+      'RWD': t('common.driveTypes.rwd'),
     };
 
     return Object.entries(driveTypes).map(([type, count]) => ({
@@ -490,7 +494,7 @@ export default function PriceListPage() {
       label: `${labels[type] || type} (${count})`,
       count,
     }));
-  }, [fetchState.data]);
+  }, [fetchState.data, t]);
 
   // Handle favorite toggle
   const handleFavoriteToggle = (row: PriceListRow) => {
@@ -591,79 +595,91 @@ export default function PriceListPage() {
   };
 
   // Table columns
-  const columns: ColumnsType<PriceListRow> = [
-    {
-      title: t('common.model'),
-      dataIndex: 'model',
-      key: 'model',
-      width: 180,
-      fixed: 'left',
-      sorter: (a, b) => a.model.localeCompare(b.model, 'tr'),
-      sortOrder: sortInfo?.column === 'model' ? sortInfo.order : undefined,
-      render: (text, record) => {
-        // Only show year badge if modelYear exists and is NOT already in the model name
-        const yearStr = record.modelYear ? String(record.modelYear) : '';
-        const showYearBadge = record.modelYear && !text.includes(yearStr);
+  const columns: ColumnsType<PriceListRow> = useMemo(() => {
+    const baseColumns: ColumnsType<PriceListRow> = [
+      {
+        title: t('common.model'),
+        dataIndex: 'model',
+        key: 'model',
+        width: isMobile ? 100 : 180,
+        fixed: isMobile ? undefined : 'left',
+        sorter: (a, b) => a.model.localeCompare(b.model, 'tr'),
+        sortOrder: sortInfo?.column === 'model' ? sortInfo.order : undefined,
+        render: (text, record) => {
+          const yearStr = record.modelYear ? String(record.modelYear) : '';
+          const showYearBadge = record.modelYear && !text.includes(yearStr);
 
-        return (
-          <Space size={4}>
-            <Text strong style={{ color: tokens.colors.accent }}>
-              {text}
-            </Text>
-            {showYearBadge && (
-              <Tag color="blue" style={{ marginLeft: 4, fontSize: 10 }}>
-                {record.modelYear}
-              </Tag>
-            )}
-          </Space>
-        );
+          return (
+            <Space size={4}>
+              <Text strong style={{ color: tokens.colors.accent, fontSize: isMobile ? 12 : 14 }}>
+                {text}
+              </Text>
+              {showYearBadge && !isMobile && (
+                <Tag color="blue" style={{ marginLeft: 4, fontSize: 10 }}>
+                  {record.modelYear}
+                </Tag>
+              )}
+            </Space>
+          );
+        },
       },
-    },
-    {
-      title: t('common.trim'),
-      dataIndex: 'trim',
-      key: 'trim',
-      width: 200,
-      sorter: (a, b) => a.trim.localeCompare(b.trim, 'tr'),
-      sortOrder: sortInfo?.column === 'trim' ? sortInfo.order : undefined,
-    },
-    {
-      title: t('common.engine'),
-      dataIndex: 'engine',
-      key: 'engine',
-      width: 150,
-      sorter: (a, b) => a.engine.localeCompare(b.engine, 'tr'),
-      sortOrder: sortInfo?.column === 'engine' ? sortInfo.order : undefined,
-    },
-    {
-      title: t('common.transmission'),
-      dataIndex: 'transmission',
-      key: 'transmission',
-      width: 140,
-      sorter: (a, b) => a.transmission.localeCompare(b.transmission, 'tr'),
-      sortOrder: sortInfo?.column === 'transmission' ? sortInfo.order : undefined,
-      render: (text) =>
-        text ? (
-          <span
-            style={{
-              background: tokens.colors.gray[100],
-              padding: '2px 8px',
-              borderRadius: tokens.borderRadius.sm,
-              fontSize: '12px',
-              color: tokens.colors.gray[700],
-            }}
-          >
-            {text}
-          </span>
-        ) : (
-          '-'
+      {
+        title: t('common.trim'),
+        dataIndex: 'trim',
+        key: 'trim',
+        width: isMobile ? 120 : 200,
+        sorter: (a, b) => a.trim.localeCompare(b.trim, 'tr'),
+        sortOrder: sortInfo?.column === 'trim' ? sortInfo.order : undefined,
+        render: (text) => (
+          <span style={{ fontSize: isMobile ? 12 : 14 }}>{text}</span>
         ),
-    },
-    {
+      },
+    ];
+
+    // Engine and Transmission columns - hide on mobile
+    if (!isMobile) {
+      baseColumns.push(
+        {
+          title: t('common.engine'),
+          dataIndex: 'engine',
+          key: 'engine',
+          width: 150,
+          sorter: (a, b) => a.engine.localeCompare(b.engine, 'tr'),
+          sortOrder: sortInfo?.column === 'engine' ? sortInfo.order : undefined,
+        },
+        {
+          title: t('common.transmission'),
+          dataIndex: 'transmission',
+          key: 'transmission',
+          width: 140,
+          sorter: (a, b) => a.transmission.localeCompare(b.transmission, 'tr'),
+          sortOrder: sortInfo?.column === 'transmission' ? sortInfo.order : undefined,
+          render: (text) =>
+            text ? (
+              <span
+                style={{
+                  background: tokens.colors.gray[100],
+                  padding: '2px 8px',
+                  borderRadius: tokens.borderRadius.sm,
+                  fontSize: '12px',
+                  color: tokens.colors.gray[700],
+                }}
+              >
+                {text}
+              </span>
+            ) : (
+              '-'
+            ),
+        }
+      );
+    }
+
+    // Fuel column
+    baseColumns.push({
       title: t('common.fuel'),
       dataIndex: 'fuel',
       key: 'fuel',
-      width: 130,
+      width: isMobile ? 80 : 130,
       sorter: (a, b) => a.fuel.localeCompare(b.fuel, 'tr'),
       sortOrder: sortInfo?.column === 'fuel' ? sortInfo.order : undefined,
       render: (text) => {
@@ -675,31 +691,40 @@ export default function PriceListPage() {
           'Plug-in Hybrid': tokens.colors.fuel.pluginHybrid,
           CNG: tokens.colors.fuel.cng,
         };
+        const shortNames: { [key: string]: string } = {
+          Benzin: 'B',
+          Dizel: 'D',
+          Elektrik: 'E',
+          Hybrid: 'H',
+          'Plug-in Hybrid': 'PH',
+          CNG: 'C',
+        };
         return text ? (
           <span
             style={{
               background: fuelColors[text] || tokens.colors.gray[400],
               color: '#fff',
-              padding: '4px 12px',
+              padding: isMobile ? '2px 6px' : '4px 12px',
               borderRadius: tokens.borderRadius.full,
-              fontSize: '12px',
+              fontSize: isMobile ? 10 : 12,
               fontWeight: '500',
             }}
           >
-            {text}
+            {isMobile ? shortNames[text] || text : text}
           </span>
         ) : (
           '-'
         );
       },
-    },
-    {
+    });
+
+    // Price column
+    baseColumns.push({
       title: t('common.price'),
       dataIndex: 'priceRaw',
       key: 'price',
-      width: 200,
+      width: isMobile ? 120 : 200,
       sorter: (a, b) => {
-        // Sort by list price if available, otherwise by priceNumeric
         const priceA = a.priceListNumeric || a.priceNumeric;
         const priceB = b.priceListNumeric || b.priceNumeric;
         return priceA - priceB;
@@ -707,11 +732,11 @@ export default function PriceListPage() {
       sortOrder: sortInfo?.column === 'price' ? sortInfo.order : undefined,
       defaultSortOrder: 'ascend',
       render: (_, record) => {
-        // Always show list price if available, otherwise show the main price
         const displayPrice = record.priceListNumeric || record.priceNumeric;
-        const formattedPrice = displayPrice.toLocaleString('tr-TR') + ' TL';
+        const formattedPrice = isMobile
+          ? (displayPrice / 1000000).toFixed(1) + 'M'
+          : displayPrice.toLocaleString('tr-TR') + ' TL';
 
-        // Calculate discount if campaign price is lower than list price
         const hasDiscount = record.priceListNumeric && record.priceCampaignNumeric &&
           record.priceListNumeric > record.priceCampaignNumeric;
 
@@ -721,10 +746,10 @@ export default function PriceListPage() {
 
         return (
           <Space direction="vertical" size={0}>
-            <Text strong style={{ color: tokens.colors.success, fontSize: '14px' }}>
+            <Text strong style={{ color: tokens.colors.success, fontSize: isMobile ? 12 : 14 }}>
               {formattedPrice}
             </Text>
-            {hasDiscount && discountPercent > 0 && (
+            {hasDiscount && discountPercent > 0 && !isMobile && (
               <Tag color="green" style={{ fontSize: 10, marginTop: 2 }}>
                 -{discountPercent}% indirim
               </Tag>
@@ -732,17 +757,38 @@ export default function PriceListPage() {
           </Space>
         );
       },
-    },
-    {
+    });
+
+    // Actions column
+    baseColumns.push({
       title: '',
       key: 'actions',
-      width: 160,
-      fixed: 'right',
+      width: isMobile ? 70 : 160,
+      fixed: isMobile ? undefined : 'right',
       render: (_, record) => {
         const vehicleId = createVehicleId(record.brand, record.model, record.trim, record.engine);
         const isFav = isFavorite(vehicleId);
         const isComp = isInCompare(vehicleId);
         const isTrack = isTracked(vehicleId);
+
+        if (isMobile) {
+          return (
+            <Space size={0}>
+              <Button
+                type="text"
+                size="small"
+                icon={isFav ? <HeartFilled style={{ color: tokens.colors.error }} /> : <HeartOutlined />}
+                onClick={() => handleFavoriteToggle(record)}
+              />
+              <Button
+                type="text"
+                size="small"
+                icon={<LineChartOutlined />}
+                onClick={() => handleViewTrend(record)}
+              />
+            </Space>
+          );
+        }
 
         return (
           <Space size="small">
@@ -802,8 +848,10 @@ export default function PriceListPage() {
           </Space>
         );
       },
-    },
-  ];
+    });
+
+    return baseColumns;
+  }, [isMobile, sortInfo, t, isFavorite, isInCompare, isTracked, canAddToCompare]);
 
   // Export handlers
   const handleExportCSV = () => {
@@ -877,58 +925,60 @@ export default function PriceListPage() {
           marginBottom: tokens.spacing.lg,
         }}
       >
-        <Space wrap size="middle">
-          <div>
+        <Space wrap size="middle" style={{ width: '100%' }}>
+          <div style={{ minWidth: isMobile ? '100%' : 'auto' }}>
             <Text strong style={{ marginRight: 8, color: tokens.colors.gray[600] }}>
               {t('common.brand')}:
             </Text>
             <Select
               value={selectedBrand}
               onChange={handleBrandChange}
-              style={{ width: 180 }}
-              size="large"
+              style={{ width: isMobile ? '100%' : 180, minWidth: isMobile ? 0 : 180 }}
+              size={isMobile ? 'middle' : 'large'}
               options={[
                 { label: t('common.all'), value: 'all' },
                 ...[...BRANDS].sort((a, b) => a.name.localeCompare(b.name, 'tr')).map((b) => ({ label: b.name, value: b.id }))
               ]}
             />
           </div>
-          <div>
+          <div style={{ minWidth: isMobile ? '100%' : 'auto' }}>
             <Text strong style={{ marginRight: 8, color: tokens.colors.gray[600] }}>
               <CalendarOutlined /> {t('common.date')}:
             </Text>
             <DatePicker
               value={selectedDate}
               onChange={setSelectedDate}
-              size="large"
+              size={isMobile ? 'middle' : 'large'}
               format="DD/MM/YYYY"
               placeholder={t('common.date')}
               disabledDate={(current) => {
                 const dateStr = current.format('YYYY-MM-DD');
                 return !availableDates.includes(dateStr);
               }}
-              style={{ width: 150 }}
+              style={{ width: isMobile ? '100%' : 150 }}
             />
           </div>
           <Button
             icon={<ReloadOutlined />}
             onClick={handleRefresh}
             loading={fetchState.loading}
-            size="large"
+            size={isMobile ? 'middle' : 'large'}
             type="primary"
             disabled={!selectedDate}
           >
-            {t('common.refresh')}
+            {isMobile ? '' : t('common.refresh')}
           </Button>
-          <Tooltip title={t('priceList.copyLink')}>
-            <Button
-              icon={<LinkOutlined />}
-              onClick={handleCopyLink}
-              size="large"
-            >
-              {t('priceList.copyLink')}
-            </Button>
-          </Tooltip>
+          {!isMobile && (
+            <Tooltip title={t('priceList.copyLink')}>
+              <Button
+                icon={<LinkOutlined />}
+                onClick={handleCopyLink}
+                size="large"
+              >
+                {t('priceList.copyLink')}
+              </Button>
+            </Tooltip>
+          )}
         </Space>
 
         {fetchState.data?.lastUpdated && (
@@ -1000,13 +1050,13 @@ export default function PriceListPage() {
             <Text strong style={{ display: 'block', marginBottom: tokens.spacing.sm }}>
               {t('priceList.filters.title')}
             </Text>
-            <Space wrap size="middle">
+            <Space wrap size={isMobile ? 'small' : 'middle'} style={{ width: '100%' }}>
               <Search
                 placeholder={t('priceList.filters.searchPlaceholder')}
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                style={{ width: 300 }}
-                size="large"
+                style={{ width: isMobile ? '100%' : 300, minWidth: isMobile ? 200 : 300 }}
+                size={isMobile ? 'middle' : 'large'}
                 prefix={<SearchOutlined />}
                 allowClear
               />
@@ -1014,8 +1064,8 @@ export default function PriceListPage() {
                 placeholder={t('priceList.filters.selectModel')}
                 value={modelFilter}
                 onChange={setModelFilter}
-                style={{ width: 180 }}
-                size="large"
+                style={{ width: isMobile ? 140 : 180 }}
+                size={isMobile ? 'middle' : 'large'}
                 allowClear
                 options={modelOptions.map((m) => ({ label: m, value: m }))}
               />
@@ -1023,8 +1073,8 @@ export default function PriceListPage() {
                 placeholder={t('priceList.filters.selectTransmission')}
                 value={transmissionFilter}
                 onChange={setTransmissionFilter}
-                style={{ width: 150 }}
-                size="large"
+                style={{ width: isMobile ? 120 : 150 }}
+                size={isMobile ? 'middle' : 'large'}
                 allowClear
                 options={transmissionOptions.map((tr) => ({ label: tr, value: tr }))}
               />
@@ -1032,8 +1082,8 @@ export default function PriceListPage() {
                 placeholder={t('priceList.filters.selectFuel')}
                 value={fuelFilter}
                 onChange={setFuelFilter}
-                style={{ width: 150 }}
-                size="large"
+                style={{ width: isMobile ? 120 : 150 }}
+                size={isMobile ? 'middle' : 'large'}
                 allowClear
                 options={fuelOptions.map((f) => ({ label: f, value: f }))}
               />
@@ -1042,8 +1092,8 @@ export default function PriceListPage() {
                   placeholder={t('priceList.filters.selectPowertrain', 'Güç Aktarımı')}
                   value={powertrainFilter}
                   onChange={setPowertrainFilter}
-                  style={{ width: 180 }}
-                  size="large"
+                  style={{ width: isMobile ? 140 : 180 }}
+                  size={isMobile ? 'middle' : 'large'}
                   allowClear
                   options={powertrainOptions}
                 />
@@ -1053,8 +1103,8 @@ export default function PriceListPage() {
                   placeholder={t('priceList.filters.selectDriveType', 'Çekiş Tipi')}
                   value={driveTypeFilter}
                   onChange={setDriveTypeFilter}
-                  style={{ width: 180 }}
-                  size="large"
+                  style={{ width: isMobile ? 140 : 180 }}
+                  size={isMobile ? 'middle' : 'large'}
                   allowClear
                   options={driveTypeOptions}
                 />
@@ -1076,15 +1126,15 @@ export default function PriceListPage() {
             <Text strong style={{ display: 'block', marginBottom: tokens.spacing.sm }}>
               {t('priceList.export.title')}
             </Text>
-            <Space wrap size="middle">
-              <Button icon={<DownloadOutlined />} onClick={handleExportCSV} size="large">
-                {t('priceList.export.csv')}
+            <Space wrap size={isMobile ? 'small' : 'middle'}>
+              <Button icon={<DownloadOutlined />} onClick={handleExportCSV} size={isMobile ? 'middle' : 'large'}>
+                {isMobile ? 'CSV' : t('priceList.export.csv')}
               </Button>
-              <Button icon={<DownloadOutlined />} onClick={handleExportXLSX} size="large">
-                {t('priceList.export.excel')}
+              <Button icon={<DownloadOutlined />} onClick={handleExportXLSX} size={isMobile ? 'middle' : 'large'}>
+                {isMobile ? 'XLSX' : t('priceList.export.excel')}
               </Button>
-              <Button icon={<CopyOutlined />} onClick={handleCopyMarkdown} size="large">
-                {t('priceList.export.markdown')}
+              <Button icon={<CopyOutlined />} onClick={handleCopyMarkdown} size={isMobile ? 'middle' : 'large'}>
+                {isMobile ? 'MD' : t('priceList.export.markdown')}
               </Button>
             </Space>
           </motion.div>
@@ -1095,7 +1145,7 @@ export default function PriceListPage() {
             style={{
               background: '#fff',
               borderRadius: tokens.borderRadius.lg,
-              overflow: 'hidden',
+              overflow: isMobile ? 'auto' : 'hidden',
               boxShadow: tokens.shadows.sm,
             }}
           >
@@ -1105,9 +1155,9 @@ export default function PriceListPage() {
               rowKey={(record) => `${record.brand}-${record.model}-${record.trim}-${record.engine || 'std'}-${record.transmission || 'auto'}-${record.priceNumeric}`}
               pagination={pagination}
               onChange={handleTableChange}
-              scroll={{ x: 1200, y: 600 }}
-              size="middle"
-              virtual
+              scroll={{ x: isMobile ? 500 : 1200, y: isMobile ? undefined : 600 }}
+              size={isMobile ? 'small' : 'middle'}
+              virtual={!isMobile}
               expandable={{
                 columnWidth: 32,
                 expandedRowRender: (record) => {
@@ -1151,7 +1201,7 @@ export default function PriceListPage() {
                       {record.driveType && (
                         <Descriptions.Item label={t('priceList.driveType', 'Çekiş')}>
                           <Tag color={record.driveType === 'AWD' ? 'blue' : record.driveType === 'RWD' ? 'orange' : 'green'}>
-                            {record.driveType === 'AWD' ? '4x4 (AWD)' : record.driveType === 'FWD' ? 'Önden Çekiş' : 'Arkadan Çekiş'}
+                            {t(`common.driveTypes.${record.driveType.toLowerCase()}`)}
                           </Tag>
                         </Descriptions.Item>
                       )}

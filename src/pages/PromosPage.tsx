@@ -7,6 +7,7 @@ import { LineChart, Line, Tooltip, ResponsiveContainer } from 'recharts';
 
 import { tokens } from '../theme/tokens';
 import { usePromosData, PriceDrop, RecentDrop } from '../hooks/useIntelData';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -53,6 +54,7 @@ function PriceHistoryChart({ data }: PriceHistoryChartProps) {
 
 export default function PromosPage() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const { data, loading, error } = usePromosData();
 
   const priceDropColumns: ColumnsType<PriceDrop> = [
@@ -113,7 +115,7 @@ export default function PromosPage() {
       defaultSortOrder: 'descend',
     },
     {
-      title: 'Kampanya',
+      title: t('promos.campaign'),
       key: 'campaign',
       width: 100,
       render: (_, record) => {
@@ -196,7 +198,7 @@ export default function PromosPage() {
       defaultSortOrder: 'descend',
     },
     {
-      title: 'Kampanya',
+      title: t('promos.campaign'),
       key: 'campaign',
       width: 90,
       render: (_, record) => {
@@ -295,8 +297,8 @@ export default function PromosPage() {
           dataSource={data.priceDrops}
           rowKey="id"
           size="small"
-          pagination={{ pageSize: 10, showSizeChanger: true }}
-          scroll={{ x: 900 }}
+          pagination={{ pageSize: isMobile ? 5 : 10, showSizeChanger: !isMobile }}
+          scroll={{ x: isMobile ? 600 : 900 }}
         />
       ) : (
         <Empty
@@ -319,8 +321,8 @@ export default function PromosPage() {
           dataSource={data.recentDrops}
           rowKey="id"
           size="small"
-          pagination={{ pageSize: 10 }}
-          scroll={{ x: 700 }}
+          pagination={{ pageSize: isMobile ? 5 : 10 }}
+          scroll={{ x: isMobile ? 500 : 700 }}
         />
       ) : (
         <Empty

@@ -178,3 +178,222 @@ body {
 .ant-input:active * {
   transition: none;
 }
+
+/* ================================
+   MOBILE RESPONSIVE STYLES
+   ================================ */
+
+/* Mobile-first responsive utilities */
+@media (max-width: 767px) {
+  /* Reduce padding on mobile */
+  .ant-card-body {
+    padding: 12px !important;
+  }
+
+  /* Make tables more compact */
+  .ant-table-cell {
+    padding: 8px 8px !important;
+    font-size: 13px !important;
+  }
+
+  .ant-table-thead > tr > th {
+    padding: 10px 8px !important;
+    font-size: 12px !important;
+  }
+
+  /* Smaller statistic cards */
+  .ant-statistic-title {
+    font-size: 11px !important;
+    margin-bottom: 2px !important;
+  }
+
+  .ant-statistic-content {
+    font-size: 18px !important;
+  }
+
+  .ant-statistic-content-suffix {
+    font-size: 12px !important;
+  }
+
+  /* Filter controls */
+  .ant-select {
+    min-width: 100px !important;
+  }
+
+  /* Tabs overflow scroll */
+  .ant-tabs-nav-list {
+    flex-wrap: nowrap;
+  }
+
+  .ant-tabs-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Hide scrollbar for tabs on mobile */
+  .ant-tabs-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Make modals full width on mobile */
+  .ant-modal {
+    max-width: calc(100vw - 32px) !important;
+    margin: 16px auto !important;
+  }
+
+  /* Touch-friendly buttons */
+  .ant-btn {
+    min-height: 40px;
+    min-width: 40px;
+  }
+
+  .ant-btn-icon-only {
+    min-width: 36px;
+    min-height: 36px;
+  }
+
+  /* Improve touch targets for tags */
+  .ant-tag {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  /* Stack descriptions vertically */
+  .ant-descriptions-item-label {
+    font-size: 12px !important;
+  }
+
+  .ant-descriptions-item-content {
+    font-size: 13px !important;
+  }
+
+  /* Smaller titles on mobile */
+  .ant-typography h1 {
+    font-size: 24px !important;
+  }
+
+  .ant-typography h2 {
+    font-size: 20px !important;
+  }
+
+  .ant-typography h3 {
+    font-size: 18px !important;
+  }
+
+  /* List items more compact */
+  .ant-list-item {
+    padding: 12px 0 !important;
+  }
+
+  /* Progress bars */
+  .ant-progress-line {
+    width: 60px !important;
+  }
+}
+
+/* Extra small screens (< 375px) */
+@media (max-width: 374px) {
+  .ant-card-body {
+    padding: 8px !important;
+  }
+
+  .ant-table-cell {
+    padding: 6px 4px !important;
+    font-size: 12px !important;
+  }
+
+  .ant-statistic-content {
+    font-size: 16px !important;
+  }
+
+  .ant-btn-sm {
+    padding: 0 8px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* Tablet styles (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ant-card-body {
+    padding: 16px !important;
+  }
+
+  .ant-table-cell {
+    padding: 10px 12px !important;
+  }
+}
+
+/* Hide on mobile utility */
+.hide-on-mobile {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+/* Show only on mobile utility */
+.show-on-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .show-on-mobile {
+    display: block !important;
+  }
+}
+
+/* Mobile card view for tables */
+.mobile-card-list .ant-list-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 12px !important;
+  background: #fff;
+}
+
+/* Responsive chart container */
+.chart-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Filter drawer styles */
+.filter-drawer .ant-drawer-body {
+  padding: 16px;
+}
+
+.filter-drawer .ant-form-item {
+  margin-bottom: 12px;
+}
+
+/* Sticky filter bar on mobile */
+@media (max-width: 767px) {
+  .sticky-filter-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    padding: 8px;
+    margin: -8px -8px 8px -8px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+/* Horizontal scroll indicator for tables */
+.table-scroll-hint {
+  text-align: center;
+  padding: 8px;
+  color: #737373;
+  font-size: 12px;
+  background: linear-gradient(to right, transparent, #f5f5f5, transparent);
+}
+
+@media (min-width: 768px) {
+  .table-scroll-hint {
+    display: none;
+  }
+}

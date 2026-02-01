@@ -120,8 +120,8 @@ export default function OverpricedSection({ vehicles }: OverpricedSectionProps) 
                       +{getOverpricePercent(vehicle)}%
                     </Tag>
                     {vehicle.otvRate && vehicle.otvRate >= 60 && (
-                      <Tooltip title="Yüksek ÖTV oranı fiyatı etkiliyor olabilir">
-                        <Tag color="orange">ÖTV %{vehicle.otvRate}</Tag>
+                      <Tooltip title={t('common.highOtvNote')}>
+                        <Tag color="orange">{t('common.otvRate', { rate: vehicle.otvRate })}</Tag>
                       </Tooltip>
                     )}
                   </div>

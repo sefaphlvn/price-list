@@ -43,6 +43,11 @@ export interface EventsData {
   generatedAt: string;
   date: string;
   previousDate: string;
+  dateRange: {
+    start: string;
+    end: string;
+    totalDays: number;
+  };
   summary: {
     totalEvents: number;
     newVehicles: number;
@@ -133,7 +138,7 @@ function findPreviousDate(availableDates: string[], currentDate: string): string
 }
 
 export async function generateEvents(): Promise<EventsData> {
-  console.log('[generateEvents] Starting...');
+  console.log('[generateEvents] Starting - analyzing ALL historical dates...');
 
   const dataDir = path.join(process.cwd(), 'data');
   const indexPath = path.join(dataDir, 'index.json');
@@ -149,40 +154,25 @@ export async function generateEvents(): Promise<EventsData> {
 
   let latestDate = '';
   let previousDate = '';
+  let earliestDate = '';
 
-  // Process each brand
+  // Process each brand - iterate through ALL date pairs
   for (const [brandId, brandInfo] of Object.entries(index.brands)) {
-    const currentDate = brandInfo.latestDate;
-    const prevDate = findPreviousDate(brandInfo.availableDates, currentDate);
+    // Sort dates chronologically
+    const sortedDates = [...brandInfo.availableDates].sort();
 
-    if (!prevDate) {
-      console.log(`  ${brandInfo.name}: no previous date available`);
+    if (sortedDates.length < 2) {
+      console.log(`  ${brandInfo.name}: not enough dates for comparison`);
       continue;
     }
 
-    if (!latestDate || currentDate > latestDate) {
-      latestDate = currentDate;
-      previousDate = prevDate;
+    // Track earliest and latest dates
+    if (!earliestDate || sortedDates[0] < earliestDate) {
+      earliestDate = sortedDates[0];
     }
-
-    const currentData = loadBrandData(dataDir, brandId, currentDate);
-    const previousData = loadBrandData(dataDir, brandId, prevDate);
-
-    if (!currentData || !previousData) {
-      console.log(`  ${brandInfo.name}: missing data files`);
-      continue;
-    }
-
-    // Create maps for comparison
-    const currentMap = new Map<string, PriceListRow>();
-    const previousMap = new Map<string, PriceListRow>();
-
-    for (const row of currentData.rows) {
-      currentMap.set(createRowKey(row), row);
-    }
-
-    for (const row of previousData.rows) {
-      previousMap.set(createRowKey(row), row);
+    if (!latestDate || sortedDates[sortedDates.length - 1] > latestDate) {
+      latestDate = sortedDates[sortedDates.length - 1];
+      previousDate = sortedDates.length >= 2 ? sortedDates[sortedDates.length - 2] : '';
     }
 
     // Initialize brand stats
@@ -191,116 +181,145 @@ export async function generateEvents(): Promise<EventsData> {
     }
     const brandStat = brandStats.get(brandId)!;
 
-    // Find new vehicles
-    for (const [key, row] of currentMap.entries()) {
-      if (!previousMap.has(key)) {
-        events.push({
-          id: `${brandId}-${key}-new-${currentDate}`,
-          type: 'new',
-          vehicleId: createVehicleId(row.brand, row.model, row.trim, row.engine),
-          brand: row.brand,
-          brandId,
-          model: row.model,
-          trim: row.trim,
-          engine: row.engine,
-          fuel: normalizeFuel(row.fuel),
-          transmission: row.transmission,
-          newPrice: row.priceNumeric,
-          newPriceFormatted: row.priceRaw,
-          date: currentDate,
-        });
+    let processedPairs = 0;
+
+    // Iterate through all consecutive date pairs
+    for (let i = 1; i < sortedDates.length; i++) {
+      const currentDate = sortedDates[i];
+      const prevDate = sortedDates[i - 1];
+
+      const currentData = loadBrandData(dataDir, brandId, currentDate);
+      const previousData = loadBrandData(dataDir, brandId, prevDate);
+
+      if (!currentData || !previousData) {
+        continue;
       }
-    }
 
-    // Find removed vehicles
-    for (const [key, row] of previousMap.entries()) {
-      if (!currentMap.has(key)) {
-        events.push({
-          id: `${brandId}-${key}-removed-${currentDate}`,
-          type: 'removed',
-          vehicleId: createVehicleId(row.brand, row.model, row.trim, row.engine),
-          brand: row.brand,
-          brandId,
-          model: row.model,
-          trim: row.trim,
-          engine: row.engine,
-          fuel: normalizeFuel(row.fuel),
-          transmission: row.transmission,
-          oldPrice: row.priceNumeric,
-          oldPriceFormatted: row.priceRaw,
-          date: currentDate,
-          previousDate: prevDate,
-        });
+      // Create maps for comparison
+      const currentMap = new Map<string, PriceListRow>();
+      const previousMap = new Map<string, PriceListRow>();
+
+      for (const row of currentData.rows) {
+        currentMap.set(createRowKey(row), row);
       }
-    }
 
-    // Find price changes
-    for (const [key, currentRow] of currentMap.entries()) {
-      const previousRow = previousMap.get(key);
-      if (previousRow && currentRow.priceNumeric !== previousRow.priceNumeric) {
-        const change = currentRow.priceNumeric - previousRow.priceNumeric;
-        const changePercent = previousRow.priceNumeric > 0
-          ? (change / previousRow.priceNumeric) * 100
-          : 0;
+      for (const row of previousData.rows) {
+        previousMap.set(createRowKey(row), row);
+      }
 
-        const eventType = change > 0 ? 'price_increase' : 'price_decrease';
-
-        events.push({
-          id: `${brandId}-${key}-${eventType}-${currentDate}`,
-          type: eventType,
-          vehicleId: createVehicleId(currentRow.brand, currentRow.model, currentRow.trim, currentRow.engine),
-          brand: currentRow.brand,
-          brandId,
-          model: currentRow.model,
-          trim: currentRow.trim,
-          engine: currentRow.engine,
-          fuel: normalizeFuel(currentRow.fuel),
-          transmission: currentRow.transmission,
-          oldPrice: previousRow.priceNumeric,
-          newPrice: currentRow.priceNumeric,
-          oldPriceFormatted: previousRow.priceRaw,
-          newPriceFormatted: currentRow.priceRaw,
-          priceChange: change,
-          priceChangePercent: Math.round(changePercent * 100) / 100,
-          date: currentDate,
-          previousDate: prevDate,
-        });
-
-        // Update brand stats
-        brandStat.changes++;
-        brandStat.totalAbsChange += Math.abs(change); // TL amount
-        brandStat.totalChangePercent += Math.abs(changePercent); // Percentage
-        if (change > 0) {
-          brandStat.increases++;
-        } else {
-          brandStat.decreases++;
-        }
-
-        // Update model stats
-        const modelKey = `${brandId}-${currentRow.model}`;
-        if (!modelStats.has(modelKey)) {
-          modelStats.set(modelKey, {
-            name: `${currentRow.brand} ${currentRow.model}`,
-            changes: 0,
-            totalAbsChange: 0,
-            totalChangePercent: 0,
-            increases: 0,
-            decreases: 0,
+      // Find new vehicles
+      for (const [key, row] of currentMap.entries()) {
+        if (!previousMap.has(key)) {
+          events.push({
+            id: `${brandId}-${key}-new-${currentDate}`,
+            type: 'new',
+            vehicleId: createVehicleId(row.brand, row.model, row.trim, row.engine),
+            brand: row.brand,
+            brandId,
+            model: row.model,
+            trim: row.trim,
+            engine: row.engine,
+            fuel: normalizeFuel(row.fuel),
+            transmission: row.transmission,
+            newPrice: row.priceNumeric,
+            newPriceFormatted: row.priceRaw,
+            date: currentDate,
           });
         }
-        const modelStat = modelStats.get(modelKey)!;
-        modelStat.changes++;
-        modelStat.totalAbsChange += Math.abs(change); // TL amount
-        modelStat.totalChangePercent += Math.abs(changePercent); // Percentage
-        if (change > 0) {
-          modelStat.increases++;
-        } else {
-          modelStat.decreases++;
+      }
+
+      // Find removed vehicles
+      for (const [key, row] of previousMap.entries()) {
+        if (!currentMap.has(key)) {
+          events.push({
+            id: `${brandId}-${key}-removed-${currentDate}`,
+            type: 'removed',
+            vehicleId: createVehicleId(row.brand, row.model, row.trim, row.engine),
+            brand: row.brand,
+            brandId,
+            model: row.model,
+            trim: row.trim,
+            engine: row.engine,
+            fuel: normalizeFuel(row.fuel),
+            transmission: row.transmission,
+            oldPrice: row.priceNumeric,
+            oldPriceFormatted: row.priceRaw,
+            date: currentDate,
+            previousDate: prevDate,
+          });
         }
       }
+
+      // Find price changes
+      for (const [key, currentRow] of currentMap.entries()) {
+        const previousRow = previousMap.get(key);
+        if (previousRow && currentRow.priceNumeric !== previousRow.priceNumeric) {
+          const change = currentRow.priceNumeric - previousRow.priceNumeric;
+          const changePercent = previousRow.priceNumeric > 0
+            ? (change / previousRow.priceNumeric) * 100
+            : 0;
+
+          const eventType = change > 0 ? 'price_increase' : 'price_decrease';
+
+          events.push({
+            id: `${brandId}-${key}-${eventType}-${currentDate}`,
+            type: eventType,
+            vehicleId: createVehicleId(currentRow.brand, currentRow.model, currentRow.trim, currentRow.engine),
+            brand: currentRow.brand,
+            brandId,
+            model: currentRow.model,
+            trim: currentRow.trim,
+            engine: currentRow.engine,
+            fuel: normalizeFuel(currentRow.fuel),
+            transmission: currentRow.transmission,
+            oldPrice: previousRow.priceNumeric,
+            newPrice: currentRow.priceNumeric,
+            oldPriceFormatted: previousRow.priceRaw,
+            newPriceFormatted: currentRow.priceRaw,
+            priceChange: change,
+            priceChangePercent: Math.round(changePercent * 100) / 100,
+            date: currentDate,
+            previousDate: prevDate,
+          });
+
+          // Update brand stats
+          brandStat.changes++;
+          brandStat.totalAbsChange += Math.abs(change);
+          brandStat.totalChangePercent += Math.abs(changePercent);
+          if (change > 0) {
+            brandStat.increases++;
+          } else {
+            brandStat.decreases++;
+          }
+
+          // Update model stats
+          const modelKey = `${brandId}-${currentRow.model}`;
+          if (!modelStats.has(modelKey)) {
+            modelStats.set(modelKey, {
+              name: `${currentRow.brand} ${currentRow.model}`,
+              changes: 0,
+              totalAbsChange: 0,
+              totalChangePercent: 0,
+              increases: 0,
+              decreases: 0,
+            });
+          }
+          const modelStat = modelStats.get(modelKey)!;
+          modelStat.changes++;
+          modelStat.totalAbsChange += Math.abs(change);
+          modelStat.totalChangePercent += Math.abs(changePercent);
+          if (change > 0) {
+            modelStat.increases++;
+          } else {
+            modelStat.decreases++;
+          }
+        }
+      }
+
+      processedPairs++;
     }
 
-    console.log(`  ${brandInfo.name}: processed (${currentData.rowCount} current, ${previousData.rowCount} previous)`);
+    console.log(`  ${brandInfo.name}: processed ${processedPairs} date pairs (${sortedDates.length} dates)`);
   }
 
   // Calculate summary
@@ -367,10 +386,23 @@ export async function generateEvents(): Promise<EventsData> {
 
   const now = new Date();
 
+  // Calculate total days in date range
+  const startDateObj = new Date(earliestDate);
+  const endDateObj = new Date(latestDate);
+  const totalDays = Math.ceil((endDateObj.getTime() - startDateObj.getTime()) / (1000 * 60 * 60 * 24)) + 1;
+
+  // Sort events by date (most recent first)
+  events.sort((a, b) => b.date.localeCompare(a.date));
+
   const eventsData: EventsData = {
     generatedAt: now.toISOString(),
     date: latestDate,
     previousDate,
+    dateRange: {
+      start: earliestDate,
+      end: latestDate,
+      totalDays,
+    },
     summary,
     events,
     volatility: {

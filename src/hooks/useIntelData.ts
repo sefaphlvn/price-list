@@ -93,6 +93,11 @@ export interface EventsData {
   generatedAt: string;
   date: string;
   previousDate: string;
+  dateRange: {
+    start: string;
+    end: string;
+    totalDays: number;
+  };
   summary: {
     totalEvents: number;
     newVehicles: number;

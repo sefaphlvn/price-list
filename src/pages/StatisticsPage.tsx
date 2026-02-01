@@ -38,6 +38,8 @@ import { PriceListRow, IndexData, StoredData } from '../types';
 import { tokens } from '../theme/tokens';
 import { staggerContainer, staggerItem } from '../theme/animations';
 import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
+import { ChartInfoTooltip, chartDescriptions } from '../components/common/ChartInfoTooltip';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Text } = Typography;
 
@@ -122,6 +124,7 @@ const TRANSMISSION_COLORS: { [key: string]: string } = {
 export default function StatisticsPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const isMobile = useIsMobile();
   const [loading, setLoading] = useState(true);
   const [allData, setAllData] = useState<Map<string, StoredData>>(new Map());
   const [activeTab, setActiveTab] = useState('overview');
@@ -552,9 +555,9 @@ export default function StatisticsPage() {
     if (total === 0) return null;
 
     const labels: { [key: string]: string } = {
-      AWD: '4x4 (AWD)',
-      FWD: 'Önden Çekiş (FWD)',
-      RWD: 'Arkadan Çekiş (RWD)',
+      AWD: t('common.driveTypes.awd'),
+      FWD: t('common.driveTypes.fwd'),
+      RWD: t('common.driveTypes.rwd'),
     };
     const colors: { [key: string]: string } = {
       AWD: '#3b82f6',
@@ -573,7 +576,7 @@ export default function StatisticsPage() {
       })),
       total,
     };
-  }, [allRows]);
+  }, [allRows, t]);
 
   // EV range comparison
   const evRangeStats = useMemo(() => {
@@ -864,14 +867,14 @@ export default function StatisticsPage() {
               title={t('statistics.priceDistribution', 'Fiyat Dagilimi')}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={350}>
+              <ResponsiveContainer width="100%" height={isMobile ? 250 : 350}>
                 <BarChart data={priceHistogram}>
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis dataKey="label" />
-                  <YAxis />
+                  <XAxis dataKey="label" angle={isMobile ? -45 : 0} textAnchor={isMobile ? 'end' : 'middle'} height={isMobile ? 60 : 30} fontSize={isMobile ? 10 : 12} />
+                  <YAxis fontSize={isMobile ? 10 : 12} />
                   <Tooltip
-                    formatter={(value: number) => [`${value} arac`, 'Sayi']}
-                    labelFormatter={(label) => `Fiyat: ${label} TL`}
+                    formatter={(value: number) => [`${value} ${t('common.vehicle')}`, t('common.count')]}
+                    labelFormatter={(label) => `${t('common.price')}: ${label} TL`}
                   />
                   <Bar dataKey="count" fill={tokens.colors.accent} radius={[4, 4, 0, 0]} />
                 </BarChart>
@@ -911,25 +914,27 @@ export default function StatisticsPage() {
           <Col xs={24} md={12}>
             <Card
               title={t('statistics.fuelDistribution', 'Yakit Dagilimi')}
+              extra={<ChartInfoTooltip {...chartDescriptions.fuelDistribution} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={300}>
+              <ResponsiveContainer width="100%" height={isMobile ? 220 : 300}>
                 <PieChart>
                   <Pie
                     data={fuelDistribution}
                     cx="50%"
                     cy="50%"
-                    innerRadius={60}
-                    outerRadius={100}
+                    innerRadius={isMobile ? 40 : 60}
+                    outerRadius={isMobile ? 70 : 100}
                     paddingAngle={2}
                     dataKey="value"
-                    label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                    label={isMobile ? false : ({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
                   >
                     {fuelDistribution.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
                   </Pie>
                   <Tooltip />
+                  {isMobile && <Legend />}
                 </PieChart>
               </ResponsiveContainer>
             </Card>
@@ -938,25 +943,27 @@ export default function StatisticsPage() {
           <Col xs={24} md={12}>
             <Card
               title={t('statistics.transmissionDistribution', 'Sanziman Dagilimi')}
+              extra={<ChartInfoTooltip {...chartDescriptions.transmissionDistribution} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={300}>
+              <ResponsiveContainer width="100%" height={isMobile ? 220 : 300}>
                 <PieChart>
                   <Pie
                     data={transmissionDistribution}
                     cx="50%"
                     cy="50%"
-                    innerRadius={60}
-                    outerRadius={100}
+                    innerRadius={isMobile ? 40 : 60}
+                    outerRadius={isMobile ? 70 : 100}
                     paddingAngle={2}
                     dataKey="value"
-                    label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                    label={isMobile ? false : ({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
                   >
                     {transmissionDistribution.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
                   </Pie>
                   <Tooltip />
+                  {isMobile && <Legend />}
                 </PieChart>
               </ResponsiveContainer>
             </Card>
@@ -977,18 +984,20 @@ export default function StatisticsPage() {
           <Col xs={24} lg={14}>
             <Card
               title={t('statistics.priceComparison.avgByBrand')}
+              extra={<ChartInfoTooltip {...chartDescriptions.brandPriceComparison} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={Math.max(400, brandAverages.length * 35)}>
+              <ResponsiveContainer width="100%" height={Math.max(isMobile ? 300 : 400, brandAverages.length * (isMobile ? 25 : 35))}>
                 <BarChart data={brandAverages} layout="vertical">
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
                   <XAxis
                     type="number"
                     tickFormatter={(value) => formatPriceShort(value)}
+                    fontSize={isMobile ? 10 : 12}
                   />
-                  <YAxis type="category" dataKey="brand" width={90} />
+                  <YAxis type="category" dataKey="brand" width={isMobile ? 60 : 90} fontSize={isMobile ? 10 : 12} />
                   <Tooltip
-                    formatter={(value: number) => [formatPrice(value), 'Ortalama']}
+                    formatter={(value: number) => [formatPrice(value), t('common.average')]}
                     labelStyle={{ color: tokens.colors.gray[700] }}
                   />
                   <Bar dataKey="average" fill={tokens.colors.accent} radius={[0, 4, 4, 0]} />
@@ -1001,14 +1010,15 @@ export default function StatisticsPage() {
           <Col xs={24} lg={10}>
             <Card
               title={t('statistics.modelCount', 'Model Sayisi')}
+              extra={<ChartInfoTooltip {...chartDescriptions.modelCount} />}
               style={{ borderRadius: tokens.borderRadius.lg, marginBottom: tokens.spacing.lg }}
             >
-              <ResponsiveContainer width="100%" height={300}>
+              <ResponsiveContainer width="100%" height={isMobile ? 220 : 300}>
                 <BarChart data={brandModelCounts.slice(0, 10)} layout="vertical">
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis type="number" />
-                  <YAxis type="category" dataKey="brand" width={90} />
-                  <Tooltip formatter={(value: number) => [`${value} model`, 'Sayi']} />
+                  <XAxis type="number" fontSize={isMobile ? 10 : 12} />
+                  <YAxis type="category" dataKey="brand" width={isMobile ? 60 : 90} fontSize={isMobile ? 10 : 12} />
+                  <Tooltip formatter={(value: number) => [`${value} ${t('common.model').toLowerCase()}`, t('common.count')]} />
                   <Bar dataKey="count" fill={tokens.colors.primary} radius={[0, 4, 4, 0]} />
                 </BarChart>
               </ResponsiveContainer>
@@ -1030,7 +1040,7 @@ export default function StatisticsPage() {
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Text strong>{item.brand}</Text>
-                    <Text type="secondary" style={{ fontSize: 12 }}>{item.count} model</Text>
+                    <Text type="secondary" style={{ fontSize: 12 }}>{item.count} {t('common.model').toLowerCase()}</Text>
                   </div>
                   <div
                     style={{
@@ -1043,7 +1053,7 @@ export default function StatisticsPage() {
                       <span style={{ color: tokens.colors.success }}>{formatPriceShort(item.min)}</span>
                     </Text>
                     <Text type="secondary" style={{ fontSize: 12 }}>
-                      Ort: {formatPriceShort(item.average)}
+                      {t('common.avg')}: {formatPriceShort(item.average)}
                     </Text>
                     <Text type="secondary" style={{ fontSize: 12 }}>
                       <span style={{ color: tokens.colors.error }}>{formatPriceShort(item.max)}</span>
@@ -1058,18 +1068,19 @@ export default function StatisticsPage() {
           <Col span={24}>
             <Card
               title={t('statistics.brandPricePositioning', 'Marka Fiyat Konumlandirmasi')}
+              extra={<ChartInfoTooltip {...chartDescriptions.brandPriceComparison} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={400}>
+              <ResponsiveContainer width="100%" height={isMobile ? 300 : 400}>
                 <ComposedChart data={brandPriceScatter}>
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis dataKey="brand" angle={-45} textAnchor="end" height={80} interval={0} fontSize={11} />
-                  <YAxis tickFormatter={(v) => formatPriceShort(v)} />
+                  <XAxis dataKey="brand" angle={-45} textAnchor="end" height={isMobile ? 60 : 80} interval={0} fontSize={isMobile ? 9 : 11} />
+                  <YAxis tickFormatter={(v) => formatPriceShort(v)} fontSize={isMobile ? 10 : 12} />
                   <Tooltip
                     formatter={(value: number, name: string) => {
-                      if (name === 'y') return [formatPrice(value), 'Ortalama'];
-                      if (name === 'min') return [formatPrice(value), 'Minimum'];
-                      if (name === 'max') return [formatPrice(value), 'Maksimum'];
+                      if (name === 'y') return [formatPrice(value), t('common.average')];
+                      if (name === 'min') return [formatPrice(value), t('common.minimum')];
+                      if (name === 'max') return [formatPrice(value), t('common.maximum')];
                       return [value, name];
                     }}
                   />
@@ -1158,7 +1169,7 @@ export default function StatisticsPage() {
               title={t('statistics.brandFuelBreakdown', 'Marka Bazli Yakit Dagilimi')}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={Math.max(400, brandFuelBreakdown.length * 30)}>
+              <ResponsiveContainer width="100%" height={Math.max(isMobile ? 300 : 400, brandFuelBreakdown.length * (isMobile ? 22 : 30))}>
                 <BarChart data={brandFuelBreakdown} layout="vertical">
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
                   <XAxis type="number" />
@@ -1210,7 +1221,7 @@ export default function StatisticsPage() {
                       <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
                       <XAxis type="number" tickFormatter={(v) => formatPriceShort(v)} />
                       <YAxis type="category" dataKey="fuel" width={100} />
-                      <Tooltip formatter={(value: number) => [formatPrice(value), 'Ortalama']} />
+                      <Tooltip formatter={(value: number) => [formatPrice(value), t('common.average')]} />
                       <Bar dataKey="avg" fill={tokens.colors.accent} radius={[0, 4, 4, 0]}>
                         {fuelAvgData.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={entry.color} />
@@ -1253,7 +1264,7 @@ export default function StatisticsPage() {
                       <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
                       <XAxis type="number" tickFormatter={(v) => formatPriceShort(v)} />
                       <YAxis type="category" dataKey="transmission" width={100} />
-                      <Tooltip formatter={(value: number) => [formatPrice(value), 'Ortalama']} />
+                      <Tooltip formatter={(value: number) => [formatPrice(value), t('common.average')]} />
                       <Bar dataKey="avg" fill={tokens.colors.primary} radius={[0, 4, 4, 0]}>
                         {transAvgData.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={entry.color} />
@@ -1273,7 +1284,7 @@ export default function StatisticsPage() {
       key: 'powertrain',
       label: (
         <span>
-          <CarOutlined /> Güç Aktarımı
+          <CarOutlined /> {t('statistics.powertrainTab')}
         </span>
       ),
       children: (
@@ -1284,7 +1295,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={6}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="Elektrikli/Hibrit Araç"
+                    title={t('statistics.electrifiedVehicles')}
                     value={powertrainDistribution.electrifiedCount}
                     suffix={`/ ${powertrainDistribution.total}`}
                     valueStyle={{ color: tokens.colors.fuel.elektrik }}
@@ -1294,7 +1305,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={6}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="Elektrifikasyon Oranı"
+                    title={t('statistics.electrificationRate')}
                     value={powertrainDistribution.electrifiedPercent}
                     suffix="%"
                     valueStyle={{ color: tokens.colors.success }}
@@ -1307,20 +1318,21 @@ export default function StatisticsPage() {
           {/* Powertrain Distribution Pie */}
           <Col xs={24} lg={12}>
             <Card
-              title="Güç Aktarımı Dağılımı"
+              title={t('statistics.powertrainDistribution')}
+              extra={<ChartInfoTooltip {...chartDescriptions.powertrainDistribution} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={350}>
+              <ResponsiveContainer width="100%" height={isMobile ? 250 : 350}>
                 <PieChart>
                   <Pie
                     data={powertrainDistribution.distribution}
                     cx="50%"
                     cy="50%"
-                    innerRadius={60}
-                    outerRadius={100}
+                    innerRadius={isMobile ? 40 : 60}
+                    outerRadius={isMobile ? 70 : 100}
                     paddingAngle={2}
                     dataKey="value"
-                    label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                    label={isMobile ? false : ({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
                   >
                     {powertrainDistribution.distribution.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
@@ -1336,15 +1348,16 @@ export default function StatisticsPage() {
           {/* Average Price by Powertrain */}
           <Col xs={24} lg={12}>
             <Card
-              title="Güç Aktarımına Göre Ortalama Fiyat"
+              title={t('statistics.avgPriceByPowertrain')}
+              extra={<ChartInfoTooltip {...chartDescriptions.avgPriceByPowertrain} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={350}>
+              <ResponsiveContainer width="100%" height={isMobile ? 250 : 350}>
                 <BarChart data={powertrainDistribution.distribution} layout="vertical">
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis type="number" tickFormatter={(v) => formatPriceShort(v)} />
-                  <YAxis type="category" dataKey="name" width={120} />
-                  <Tooltip formatter={(value: number) => [formatPrice(value), 'Ort. Fiyat']} />
+                  <XAxis type="number" tickFormatter={(v) => formatPriceShort(v)} fontSize={isMobile ? 10 : 12} />
+                  <YAxis type="category" dataKey="name" width={isMobile ? 80 : 120} fontSize={isMobile ? 10 : 12} />
+                  <Tooltip formatter={(value: number) => [formatPrice(value), t('statistics.avgPrice')]} />
                   <Bar dataKey="avgPrice" radius={[0, 4, 4, 0]}>
                     {powertrainDistribution.distribution.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
@@ -1360,26 +1373,28 @@ export default function StatisticsPage() {
             <>
               <Col xs={24} lg={12}>
                 <Card
-                  title="Çekiş Tipi Dağılımı"
+                  title={t('statistics.driveTypeDistribution')}
+                  extra={<ChartInfoTooltip {...chartDescriptions.driveTypeDistribution} />}
                   style={{ borderRadius: tokens.borderRadius.lg }}
                 >
-                  <ResponsiveContainer width="100%" height={300}>
+                  <ResponsiveContainer width="100%" height={isMobile ? 220 : 300}>
                     <PieChart>
                       <Pie
                         data={driveTypeDistribution.distribution}
                         cx="50%"
                         cy="50%"
-                        innerRadius={50}
-                        outerRadius={80}
+                        innerRadius={isMobile ? 35 : 50}
+                        outerRadius={isMobile ? 60 : 80}
                         paddingAngle={2}
                         dataKey="value"
-                        label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                        label={isMobile ? false : ({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
                       >
                         {driveTypeDistribution.distribution.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={entry.color} />
                         ))}
                       </Pie>
                       <Tooltip />
+                      {isMobile && <Legend />}
                     </PieChart>
                   </ResponsiveContainer>
                 </Card>
@@ -1387,15 +1402,16 @@ export default function StatisticsPage() {
 
               <Col xs={24} lg={12}>
                 <Card
-                  title="Çekiş Tipine Göre Ortalama Fiyat"
+                  title={t('statistics.avgPriceByDriveType')}
+                  extra={<ChartInfoTooltip {...chartDescriptions.avgPriceByDriveType} />}
                   style={{ borderRadius: tokens.borderRadius.lg }}
                 >
-                  <ResponsiveContainer width="100%" height={300}>
+                  <ResponsiveContainer width="100%" height={isMobile ? 220 : 300}>
                     <BarChart data={driveTypeDistribution.distribution}>
                       <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                      <XAxis dataKey="name" />
-                      <YAxis tickFormatter={(v) => formatPriceShort(v)} />
-                      <Tooltip formatter={(value: number) => [formatPrice(value), 'Ort. Fiyat']} />
+                      <XAxis dataKey="name" fontSize={isMobile ? 10 : 12} />
+                      <YAxis tickFormatter={(v) => formatPriceShort(v)} fontSize={isMobile ? 10 : 12} />
+                      <Tooltip formatter={(value: number) => [formatPrice(value), t('statistics.avgPrice')]} />
                       <Bar dataKey="avgPrice" radius={[4, 4, 0, 0]}>
                         {driveTypeDistribution.distribution.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={entry.color} />
@@ -1416,16 +1432,16 @@ export default function StatisticsPage() {
                   <Col xs={12} sm={8} md={4}>
                     <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                       <Statistic
-                        title="Güç Verisi Olan"
+                        title={t('statistics.withPowerData')}
                         value={powerStats.count}
-                        suffix="araç"
+                        suffix={t('common.vehicle')}
                       />
                     </Card>
                   </Col>
                   <Col xs={12} sm={8} md={4}>
                     <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                       <Statistic
-                        title="Ortalama Güç"
+                        title={t('statistics.avgPower')}
                         value={powerStats.avgHP}
                         suffix="HP"
                         valueStyle={{ color: tokens.colors.accent }}
@@ -1435,7 +1451,7 @@ export default function StatisticsPage() {
                   <Col xs={12} sm={8} md={4}>
                     <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                       <Statistic
-                        title="Ortalama TL/HP"
+                        title={t('statistics.avgTlPerHp')}
                         value={powerStats.avgTLPerHP}
                         formatter={(v) => formatPriceShort(v as number)}
                         valueStyle={{ color: tokens.colors.warning }}
@@ -1448,15 +1464,16 @@ export default function StatisticsPage() {
               {/* Power Segments */}
               <Col xs={24} lg={12}>
                 <Card
-                  title="Güç Segmentleri"
+                  title={t('statistics.powerSegments')}
+                  extra={<ChartInfoTooltip {...chartDescriptions.powerSegments} />}
                   style={{ borderRadius: tokens.borderRadius.lg }}
                 >
-                  <ResponsiveContainer width="100%" height={300}>
+                  <ResponsiveContainer width="100%" height={isMobile ? 220 : 300}>
                     <BarChart data={powerStats.segments}>
                       <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                      <XAxis dataKey="label" />
-                      <YAxis />
-                      <Tooltip formatter={(value: number) => [`${value} araç`, 'Sayı']} />
+                      <XAxis dataKey="label" angle={isMobile ? -45 : 0} textAnchor={isMobile ? 'end' : 'middle'} height={isMobile ? 60 : 30} fontSize={isMobile ? 9 : 12} />
+                      <YAxis fontSize={isMobile ? 10 : 12} />
+                      <Tooltip formatter={(value: number) => [`${value} ${t('common.vehicle')}`, t('common.count')]} />
                       <Bar dataKey="count" fill={tokens.colors.accent} radius={[4, 4, 0, 0]} />
                     </BarChart>
                   </ResponsiveContainer>
@@ -1466,15 +1483,16 @@ export default function StatisticsPage() {
               {/* Best HP/TL Value */}
               <Col xs={24} lg={12}>
                 <Card
-                  title="En İyi Güç/Fiyat Değeri (TL/HP)"
+                  title={t('statistics.bestPowerValue')}
+                  extra={<ChartInfoTooltip {...chartDescriptions.bestHpValue} />}
                   style={{ borderRadius: tokens.borderRadius.lg }}
                 >
                   <Table
                     dataSource={powerStats.bestValue.map((r, i) => ({ ...r, key: i, rank: i + 1 }))}
                     columns={[
                       { title: '#', dataIndex: 'rank', key: 'rank', width: 40 },
-                      { title: 'Marka', dataIndex: 'brand', key: 'brand', width: 80 },
-                      { title: 'Model', dataIndex: 'model', key: 'model', width: 100 },
+                      { title: t('common.brand'), dataIndex: 'brand', key: 'brand', width: 80 },
+                      { title: t('common.model'), dataIndex: 'model', key: 'model', width: 100 },
                       { title: 'HP', dataIndex: 'powerHP', key: 'powerHP', width: 60, render: (v: number) => <Tag color="blue">{v} HP</Tag> },
                       { title: 'TL/HP', dataIndex: 'tlPerHP', key: 'tlPerHP', render: (v: number) => <Text strong style={{ color: tokens.colors.success }}>{v.toLocaleString('tr-TR')}</Text> },
                     ]}
@@ -1494,7 +1512,7 @@ export default function StatisticsPage() {
       key: 'ev',
       label: (
         <span>
-          <DashboardOutlined /> EV Analizi
+          <DashboardOutlined /> {t('statistics.evAnalysisTab')}
         </span>
       ),
       children: (
@@ -1505,7 +1523,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={4}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="Elektrikli Araç"
+                    title={t('statistics.electricVehicles')}
                     value={evRangeStats.count}
                     valueStyle={{ color: tokens.colors.fuel.elektrik }}
                     prefix={<CarOutlined />}
@@ -1515,7 +1533,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={4}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="Ortalama Menzil"
+                    title={t('statistics.avgRange')}
                     value={evRangeStats.avgRange}
                     suffix="km"
                     valueStyle={{ color: tokens.colors.success }}
@@ -1525,7 +1543,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={4}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="Ortalama Fiyat"
+                    title={t('statistics.avgPrice')}
                     value={evRangeStats.avgPrice}
                     formatter={(v) => formatPriceShort(v as number)}
                     valueStyle={{ color: tokens.colors.accent }}
@@ -1535,7 +1553,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={4}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="Ortalama TL/km"
+                    title={t('statistics.avgTlPerKm')}
                     value={evRangeStats.avgPricePerKm}
                     formatter={(v) => (v as number).toLocaleString('tr-TR')}
                     valueStyle={{ color: tokens.colors.warning }}
@@ -1548,24 +1566,25 @@ export default function StatisticsPage() {
           {/* Top Range EVs */}
           <Col xs={24} lg={12}>
             <Card
-              title="En Uzun Menzilli Elektrikli Araçlar"
+              title={t('statistics.topRangeEvs')}
+              extra={<ChartInfoTooltip {...chartDescriptions.evTopRange} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
               <Table
                 dataSource={evRangeStats.topRange.map((r, i) => ({ ...r, key: i, rank: i + 1 }))}
                 columns={[
                   { title: '#', dataIndex: 'rank', key: 'rank', width: 40 },
-                  { title: 'Marka', dataIndex: 'brand', key: 'brand', width: 80 },
-                  { title: 'Model', dataIndex: 'model', key: 'model', width: 100 },
+                  { title: t('common.brand'), dataIndex: 'brand', key: 'brand', width: 80 },
+                  { title: t('common.model'), dataIndex: 'model', key: 'model', width: 100 },
                   {
-                    title: 'Menzil',
+                    title: t('statistics.avgRange'),
                     dataIndex: 'range',
                     key: 'range',
                     width: 80,
                     render: (v: number) => <Tag color="green">{v} km</Tag>,
                   },
                   {
-                    title: 'Fiyat',
+                    title: t('common.price'),
                     dataIndex: 'price',
                     key: 'price',
                     render: (v: number) => (
@@ -1583,24 +1602,25 @@ export default function StatisticsPage() {
           {/* Best Value EVs (TL/km) */}
           <Col xs={24} lg={12}>
             <Card
-              title="En İyi Değer (TL/km)"
+              title={t('statistics.bestEvValue')}
+              extra={<ChartInfoTooltip {...chartDescriptions.evBestValue} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
               <Table
                 dataSource={evRangeStats.bestValue.map((r, i) => ({ ...r, key: i, rank: i + 1 }))}
                 columns={[
                   { title: '#', dataIndex: 'rank', key: 'rank', width: 40 },
-                  { title: 'Marka', dataIndex: 'brand', key: 'brand', width: 80 },
-                  { title: 'Model', dataIndex: 'model', key: 'model', width: 100 },
+                  { title: t('common.brand'), dataIndex: 'brand', key: 'brand', width: 80 },
+                  { title: t('common.model'), dataIndex: 'model', key: 'model', width: 100 },
                   {
-                    title: 'Menzil',
+                    title: t('statistics.range'),
                     dataIndex: 'range',
                     key: 'range',
                     width: 80,
                     render: (v: number) => <Tag color="green">{v} km</Tag>,
                   },
                   {
-                    title: 'TL/km',
+                    title: t('statistics.tlPerKm'),
                     dataIndex: 'pricePerKm',
                     key: 'pricePerKm',
                     render: (v: number) => (
@@ -1624,7 +1644,7 @@ export default function StatisticsPage() {
       key: 'otv',
       label: (
         <span>
-          <PercentageOutlined /> ÖTV Analizi
+          <PercentageOutlined /> {t('statistics.otvAnalysisTab')}
         </span>
       ),
       children: (
@@ -1635,7 +1655,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={6}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="ÖTV Verisi Olan Araç"
+                    title={t('statistics.withOtvData')}
                     value={otvStats.totalWithOtv}
                     suffix={`/ ${summaryStats?.total || 0}`}
                   />
@@ -1644,7 +1664,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={6}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="Ortalama ÖTV Oranı"
+                    title={t('statistics.avgOtvRate')}
                     value={otvStats.avgOtvRate}
                     suffix="%"
                     valueStyle={{ color: tokens.colors.warning }}
@@ -1657,18 +1677,19 @@ export default function StatisticsPage() {
           {/* OTV Distribution Chart */}
           <Col xs={24} lg={12}>
             <Card
-              title="ÖTV Oranı Dağılımı"
+              title={t('statistics.otvDistribution')}
+              extra={<ChartInfoTooltip {...chartDescriptions.otvDistribution} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={350}>
+              <ResponsiveContainer width="100%" height={isMobile ? 250 : 350}>
                 <BarChart data={otvStats.distribution}>
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis dataKey="rate" />
-                  <YAxis />
+                  <XAxis dataKey="rate" fontSize={isMobile ? 10 : 12} />
+                  <YAxis fontSize={isMobile ? 10 : 12} />
                   <Tooltip
                     formatter={(value: number, name: string) => {
-                      if (name === 'count') return [`${value} araç`, 'Sayı'];
-                      if (name === 'avgPrice') return [formatPrice(value), 'Ort. Fiyat'];
+                      if (name === 'count') return [`${value} ${t('common.vehicle')}`, t('common.count')];
+                      if (name === 'avgPrice') return [formatPrice(value), t('statistics.avgPrice')];
                       return [value, name];
                     }}
                   />
@@ -1681,16 +1702,17 @@ export default function StatisticsPage() {
           {/* OTV Average Price by Rate */}
           <Col xs={24} lg={12}>
             <Card
-              title="ÖTV Oranına Göre Ortalama Fiyat"
+              title={t('statistics.avgPriceByOtv')}
+              extra={<ChartInfoTooltip {...chartDescriptions.avgPriceByOtv} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={350}>
+              <ResponsiveContainer width="100%" height={isMobile ? 250 : 350}>
                 <ComposedChart data={otvStats.distribution}>
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis dataKey="rate" />
-                  <YAxis tickFormatter={(v) => formatPriceShort(v)} />
+                  <XAxis dataKey="rate" fontSize={isMobile ? 10 : 12} />
+                  <YAxis tickFormatter={(v) => formatPriceShort(v)} fontSize={isMobile ? 10 : 12} />
                   <Tooltip
-                    formatter={(value: number) => [formatPrice(value), 'Ort. Fiyat']}
+                    formatter={(value: number) => [formatPrice(value), t('statistics.avgPrice')]}
                   />
                   <Bar dataKey="avgPrice" fill={tokens.colors.accent} radius={[4, 4, 0, 0]} />
                   <Line type="monotone" dataKey="avgPrice" stroke={tokens.colors.primary} strokeWidth={2} dot />
@@ -1702,18 +1724,19 @@ export default function StatisticsPage() {
           {/* Brand OTV Comparison */}
           <Col span={24}>
             <Card
-              title="Marka Bazlı Ortalama ÖTV Oranı"
+              title={t('statistics.brandOtvComparison')}
+              extra={<ChartInfoTooltip {...chartDescriptions.brandOtvComparison} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={Math.max(300, otvStats.byBrand.length * 30)}>
+              <ResponsiveContainer width="100%" height={Math.max(isMobile ? 220 : 300, otvStats.byBrand.length * (isMobile ? 22 : 30))}>
                 <BarChart data={otvStats.byBrand} layout="vertical">
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis type="number" domain={[0, 100]} tickFormatter={(v) => `%${v}`} />
-                  <YAxis type="category" dataKey="brand" width={100} />
+                  <XAxis type="number" domain={[0, 100]} tickFormatter={(v) => `%${v}`} fontSize={isMobile ? 10 : 12} />
+                  <YAxis type="category" dataKey="brand" width={isMobile ? 60 : 100} fontSize={isMobile ? 10 : 12} />
                   <Tooltip
                     formatter={(value: number, name: string) => {
-                      if (name === 'avgOtvRate') return [`%${value}`, 'Ort. ÖTV'];
-                      if (name === 'count') return [`${value} araç`, 'Sayı'];
+                      if (name === 'avgOtvRate') return [`%${value}`, t('statistics.avgOtv')];
+                      if (name === 'count') return [`${value} ${t('common.vehicle')}`, t('common.count')];
                       return [value, name];
                     }}
                   />
@@ -1730,7 +1753,7 @@ export default function StatisticsPage() {
       key: 'modelYear',
       label: (
         <span>
-          <CalendarOutlined /> Model Yılı
+          <CalendarOutlined /> {t('statistics.modelYearTab')}
         </span>
       ),
       children: (
@@ -1741,7 +1764,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={6}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="Model Yılı Verisi Olan"
+                    title={t('statistics.withModelYearData')}
                     value={modelYearStats.totalWithYear}
                     suffix={`/ ${summaryStats?.total || 0}`}
                   />
@@ -1750,7 +1773,7 @@ export default function StatisticsPage() {
               <Col xs={12} sm={8} md={6}>
                 <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                   <Statistic
-                    title="Farklı Model Yılı"
+                    title={t('statistics.uniqueModelYears')}
                     value={modelYearStats.distribution.length}
                   />
                 </Card>
@@ -1761,17 +1784,18 @@ export default function StatisticsPage() {
           {/* Year Distribution Chart */}
           <Col xs={24} lg={12}>
             <Card
-              title="Model Yılı Dağılımı"
+              title={t('statistics.modelYearDistribution')}
+              extra={<ChartInfoTooltip {...chartDescriptions.modelYearDistribution} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={350}>
+              <ResponsiveContainer width="100%" height={isMobile ? 250 : 350}>
                 <BarChart data={[...modelYearStats.distribution].reverse()}>
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis dataKey="year" />
-                  <YAxis />
+                  <XAxis dataKey="year" fontSize={isMobile ? 10 : 12} />
+                  <YAxis fontSize={isMobile ? 10 : 12} />
                   <Tooltip
                     formatter={(value: number, name: string) => {
-                      if (name === 'count') return [`${value} araç`, 'Sayı'];
+                      if (name === 'count') return [`${value} ${t('common.vehicle')}`, t('common.count')];
                       return [value, name];
                     }}
                   />
@@ -1784,16 +1808,17 @@ export default function StatisticsPage() {
           {/* Average Price by Year */}
           <Col xs={24} lg={12}>
             <Card
-              title="Model Yılına Göre Ortalama Fiyat"
+              title={t('statistics.avgPriceByModelYear')}
+              extra={<ChartInfoTooltip {...chartDescriptions.avgPriceByModelYear} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={350}>
+              <ResponsiveContainer width="100%" height={isMobile ? 250 : 350}>
                 <ComposedChart data={[...modelYearStats.distribution].reverse()}>
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis dataKey="year" />
-                  <YAxis tickFormatter={(v) => formatPriceShort(v)} />
+                  <XAxis dataKey="year" fontSize={isMobile ? 10 : 12} />
+                  <YAxis tickFormatter={(v) => formatPriceShort(v)} fontSize={isMobile ? 10 : 12} />
                   <Tooltip
-                    formatter={(value: number) => [formatPrice(value), 'Ort. Fiyat']}
+                    formatter={(value: number) => [formatPrice(value), t('statistics.avgPrice')]}
                   />
                   <Bar dataKey="avgPrice" fill={tokens.colors.success} radius={[4, 4, 0, 0]} />
                   <Line type="monotone" dataKey="avgPrice" stroke={tokens.colors.error} strokeWidth={2} dot />
@@ -1805,26 +1830,26 @@ export default function StatisticsPage() {
           {/* Year Details Table */}
           <Col span={24}>
             <Card
-              title="Model Yılı Detayları"
+              title={t('statistics.modelYearDetails')}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
               <Table
                 dataSource={modelYearStats.distribution.map((d, i) => ({ key: i, ...d }))}
                 columns={[
                   {
-                    title: 'Model Yılı',
+                    title: t('statistics.modelYear'),
                     dataIndex: 'year',
                     key: 'year',
                     render: (year: string) => <Tag color="blue">{year}</Tag>,
                   },
                   {
-                    title: 'Araç Sayısı',
+                    title: t('statistics.vehicleCount'),
                     dataIndex: 'count',
                     key: 'count',
                     sorter: (a, b) => a.count - b.count,
                   },
                   {
-                    title: 'Oran',
+                    title: t('statistics.percentage'),
                     dataIndex: 'percentage',
                     key: 'percentage',
                     render: (pct: number) => (
@@ -1833,7 +1858,7 @@ export default function StatisticsPage() {
                     sorter: (a, b) => a.percentage - b.percentage,
                   },
                   {
-                    title: 'Ortalama Fiyat',
+                    title: t('statistics.avgPriceColumn'),
                     dataIndex: 'avgPrice',
                     key: 'avgPrice',
                     render: (price: number) => (

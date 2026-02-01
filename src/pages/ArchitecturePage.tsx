@@ -20,6 +20,7 @@ import {
 
 import { tokens } from '../theme/tokens';
 import { useArchitectureData, TrimLadder, SegmentComparison, TrimStep } from '../hooks/useIntelData';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -40,6 +41,7 @@ interface TrimLadderChartProps {
 
 function TrimLadderChart({ ladder }: TrimLadderChartProps) {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
 
   const chartData = ladder.trims.map((trim: TrimStep, index: number) => ({
     name: trim.trim.length > 15 ? trim.trim.substring(0, 15) + '...' : trim.trim,
@@ -95,11 +97,11 @@ function TrimLadderChart({ ladder }: TrimLadderChartProps) {
         </Col>
       </Row>
 
-      <ResponsiveContainer width="100%" height={Math.max(300, ladder.trims.length * 50)}>
+      <ResponsiveContainer width="100%" height={Math.max(isMobile ? 220 : 300, ladder.trims.length * (isMobile ? 35 : 50))}>
         <BarChart
           data={chartData}
           layout="vertical"
-          margin={{ top: 20, right: 30, left: 120, bottom: 5 }}
+          margin={{ top: 20, right: isMobile ? 10 : 30, left: isMobile ? 80 : 120, bottom: 5 }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
@@ -165,6 +167,7 @@ interface CrossBrandComparisonProps {
 
 function CrossBrandComparison({ comparison }: CrossBrandComparisonProps) {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
 
   const chartData = comparison.models.map((model, index) => ({
     name: `${model.brand} ${model.model}`.length > 20
@@ -209,25 +212,26 @@ function CrossBrandComparison({ comparison }: CrossBrandComparisonProps) {
         </Col>
       </Row>
 
-      <ResponsiveContainer width="100%" height={Math.max(300, comparison.models.length * 40)}>
+      <ResponsiveContainer width="100%" height={Math.max(isMobile ? 220 : 300, comparison.models.length * (isMobile ? 30 : 40))}>
         <BarChart
           data={chartData}
           layout="vertical"
-          margin={{ top: 20, right: 30, left: 150, bottom: 5 }}
+          margin={{ top: 20, right: isMobile ? 10 : 30, left: isMobile ? 100 : 150, bottom: 5 }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
             type="number"
             tickFormatter={(value) => formatPrice(value)}
+            fontSize={isMobile ? 10 : 12}
           />
           <YAxis
             type="category"
             dataKey="name"
-            width={140}
-            tick={{ fontSize: 11 }}
+            width={isMobile ? 90 : 140}
+            tick={{ fontSize: isMobile ? 9 : 11 }}
           />
           <Tooltip
-            formatter={(value: number, name: string) => [formatPrice(value), name === 'basePrice' ? 'Giriş' : 'Tepe']}
+            formatter={(value: number, name: string) => [formatPrice(value), name === 'basePrice' ? t('architecture.base') : t('architecture.top')]}
             labelFormatter={(label: string) => label}
           />
           <Bar dataKey="basePrice" name={t('architecture.basePrice', 'Giriş')} fill={tokens.colors.success} />

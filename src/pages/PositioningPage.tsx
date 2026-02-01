@@ -41,6 +41,8 @@ import {
 import Fuse from 'fuse.js';
 
 import { tokens } from '../theme/tokens';
+import { ChartInfoTooltip, chartDescriptions } from '../components/common/ChartInfoTooltip';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -172,6 +174,7 @@ function createVehicleId(vehicle: Vehicle): string {
 
 export default function PositioningPage() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [vehicles, setVehicles] = useState<VehicleWithId[]>([]);
@@ -541,6 +544,7 @@ export default function PositioningPage() {
                     {t('positioning.pricePercentile', 'Fiyat Yuzdeligi')}
                   </Space>
                 }
+                extra={<ChartInfoTooltip {...chartDescriptions.pricePercentile} />}
               >
                 {pricePercentile && (
                   <Space direction="vertical" style={{ width: '100%' }} size="large">
@@ -632,6 +636,7 @@ export default function PositioningPage() {
                     {t('positioning.similarVehicles', 'Benzer Araclar')}
                   </Space>
                 }
+                extra={<ChartInfoTooltip {...chartDescriptions.similarVehicles} />}
               >
                 {similarVehicles.length > 0 ? (
                   <Table
@@ -659,20 +664,22 @@ export default function PositioningPage() {
                     {t('positioning.priceBands', 'Fiyat Bantlari')}
                   </Space>
                 }
+                extra={<ChartInfoTooltip {...chartDescriptions.priceBands} />}
               >
                 {priceBandsData.length > 0 ? (
-                  <ResponsiveContainer width="100%" height={300}>
-                    <BarChart data={priceBandsData} margin={{ top: 20, right: 30, left: 20, bottom: 60 }}>
+                  <ResponsiveContainer width="100%" height={isMobile ? 220 : 300}>
+                    <BarChart data={priceBandsData} margin={{ top: 20, right: isMobile ? 10 : 30, left: isMobile ? 10 : 20, bottom: isMobile ? 70 : 60 }}>
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis
                         dataKey="name"
                         angle={-45}
                         textAnchor="end"
-                        height={80}
-                        fontSize={11}
+                        height={isMobile ? 70 : 80}
+                        fontSize={isMobile ? 9 : 11}
                       />
                       <YAxis
-                        label={{
+                        fontSize={isMobile ? 10 : 12}
+                        label={isMobile ? undefined : {
                           value: t('positioning.vehicleCount', 'Arac Sayisi'),
                           angle: -90,
                           position: 'insideLeft',

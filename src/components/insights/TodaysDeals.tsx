@@ -148,10 +148,10 @@ export default function TodaysDeals({ vehicles }: TodaysDealsProps) {
                       -{getSavingsPercent(vehicle)}%
                     </Tag>
                     {vehicle.campaignDiscount && vehicle.campaignDiscount > 0 && (
-                      <Tag color="cyan">Kampanya -%{vehicle.campaignDiscount.toFixed(1)}</Tag>
+                      <Tag color="cyan">{t('promos.campaign')} -%{vehicle.campaignDiscount.toFixed(1)}</Tag>
                     )}
                     {vehicle.otvRate && (
-                      <Tag color="orange">ÖTV %{vehicle.otvRate}</Tag>
+                      <Tag color="orange">{t('common.otvRate', { rate: vehicle.otvRate })}</Tag>
                     )}
                   </div>
 

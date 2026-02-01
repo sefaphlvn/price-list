@@ -50,6 +50,8 @@ import { fetchFreshJson } from '../utils/fetchData';
 import DealScoreList from '../components/insights/DealScoreList';
 import TodaysDeals from '../components/insights/TodaysDeals';
 import OverpricedSection from '../components/insights/OverpricedSection';
+import { ChartInfoTooltip, chartDescriptions } from '../components/common/ChartInfoTooltip';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Text } = Typography;
 
@@ -100,6 +102,7 @@ const getScoreColor = (score: number): string => {
 
 export default function InsightsPage() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [insights, setInsights] = useState<InsightsData | null>(null);
@@ -365,13 +368,14 @@ export default function InsightsPage() {
           <Col xs={24} lg={12}>
             <Card
               title={t('insights.scoreDistribution', 'Fiyat Skoru Dagilimi')}
+              extra={<ChartInfoTooltip {...chartDescriptions.scoreDistribution} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={300}>
+              <ResponsiveContainer width="100%" height={isMobile ? 220 : 300}>
                 <BarChart data={scoreDistribution}>
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis dataKey="range" />
-                  <YAxis />
+                  <XAxis dataKey="range" fontSize={isMobile ? 10 : 12} />
+                  <YAxis fontSize={isMobile ? 10 : 12} />
                   <Tooltip
                     formatter={(value: number) => [`${value} ${t('insights.vehicleCount')}`, t('insights.countLabel')]}
                     labelFormatter={(label) => `${t('insights.scoreLabel')}: ${label}`}
@@ -390,13 +394,14 @@ export default function InsightsPage() {
           <Col xs={24} lg={12}>
             <Card
               title={t('insights.brandLeaderboard', 'Marka Deger Siralaması')}
+              extra={<ChartInfoTooltip {...chartDescriptions.brandLeaderboard} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={300}>
+              <ResponsiveContainer width="100%" height={isMobile ? 220 : 300}>
                 <BarChart data={brandAnalysis.slice(0, 10)} layout="vertical">
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
-                  <XAxis type="number" domain={[0, 100]} />
-                  <YAxis type="category" dataKey="brand" width={80} />
+                  <XAxis type="number" domain={[0, 100]} fontSize={isMobile ? 10 : 12} />
+                  <YAxis type="category" dataKey="brand" width={isMobile ? 60 : 80} fontSize={isMobile ? 10 : 12} />
                   <Tooltip
                     formatter={(value: number, name: string) => {
                       if (name === 'avgScore') return [`${value}`, t('insights.avgScore')];
@@ -418,27 +423,32 @@ export default function InsightsPage() {
             <Card
               title={t('insights.priceDeviation', 'Fiyat Sapma Analizi')}
               extra={
-                <Text type="secondary" style={{ fontSize: 12 }}>
-                  {t('insights.deviationExplanation', 'Negatif = Segment ortalamasinin altinda')}
-                </Text>
+                <Space>
+                  <Text type="secondary" style={{ fontSize: 12 }}>
+                    {t('insights.deviationExplanation', 'Negatif = Segment ortalamasinin altinda')}
+                  </Text>
+                  <ChartInfoTooltip {...chartDescriptions.priceDeviation} />
+                </Space>
               }
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
-              <ResponsiveContainer width="100%" height={400}>
-                <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
+              <ResponsiveContainer width="100%" height={isMobile ? 280 : 400}>
+                <ScatterChart margin={{ top: 20, right: isMobile ? 10 : 20, bottom: 20, left: isMobile ? 10 : 20 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke={tokens.colors.gray[200]} />
                   <XAxis
                     type="number"
                     dataKey="price"
                     name={t('insights.priceLabel')}
                     tickFormatter={(v) => formatPriceShort(v)}
+                    fontSize={isMobile ? 10 : 12}
                   />
                   <YAxis
                     type="number"
                     dataKey="deviation"
                     name={t('insights.deviationLabel')}
-                    unit="%"
+                    tickFormatter={(v) => `${Math.round(v)}%`}
                     domain={[-50, 50]}
+                    fontSize={isMobile ? 10 : 12}
                   />
                   <ZAxis type="number" dataKey="dealScore" range={[50, 400]} name={t('insights.scoreLabel')} />
                   <Tooltip
@@ -473,6 +483,7 @@ export default function InsightsPage() {
           <Col xs={24} md={12}>
             <Card
               title={t('insights.fuelAnalysis', 'Yakit Tipine Gore Deger')}
+              extra={<ChartInfoTooltip {...chartDescriptions.fuelAnalysis} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
               {fuelAnalysis.map((item, index) => (
@@ -494,7 +505,7 @@ export default function InsightsPage() {
                     <Text>{item.fuel}</Text>
                   </div>
                   <Text type="secondary">
-                    {item.deals} / {item.total} firsat
+                    {item.deals} / {item.total} {t('insights.opportunity')}
                   </Text>
                 </div>
               ))}
@@ -505,6 +516,7 @@ export default function InsightsPage() {
           <Col xs={24} md={12}>
             <Card
               title={t('insights.topBrandsByDeals', 'En Cok Firsatli Markalar')}
+              extra={<ChartInfoTooltip {...chartDescriptions.topBrandsByDeals} />}
               style={{ borderRadius: tokens.borderRadius.lg }}
             >
               {brandAnalysis
@@ -529,7 +541,7 @@ export default function InsightsPage() {
                       <Text>{item.brand}</Text>
                     </div>
                     <div>
-                      <Tag color="green">{item.deals} firsat</Tag>
+                      <Tag color="green">{item.deals} {t('insights.opportunity')}</Tag>
                       <Text type="secondary" style={{ marginLeft: 8 }}>
                         (%{item.dealPercent})
                       </Text>
@@ -661,7 +673,7 @@ export default function InsightsPage() {
             <Col xs={12} sm={8} md={4}>
               <Card size="small" style={{ borderRadius: tokens.borderRadius.md }}>
                 <Statistic
-                  title="Kampanyalı Araç"
+                  title={t('insights.campaignVehicles')}
                   value={summaryStats?.vehiclesWithCampaign || 0}
                   suffix={summaryStats?.avgCampaignDiscount ? `(Ort. %${summaryStats.avgCampaignDiscount})` : ''}
                   valueStyle={{ color: '#52c41a' }}
