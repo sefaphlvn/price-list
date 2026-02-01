@@ -1,0 +1,755 @@
+{
+  "collectedAt": "2026-02-01T01:31:51.712Z",
+  "brand": "Renault",
+  "brandId": "renault",
+  "rowCount": 21,
+  "rows": [
+    {
+      "model": "R5 E-Tech ELEKTRİKLİ",
+      "trim": "Techno",
+      "engine": "Techno EV40 120hp",
+      "transmission": "Otomatik",
+      "fuel": "Elektrik",
+      "priceRaw": "₺1.887.999,99",
+      "priceNumeric": 1887999.99,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 25,
+      "netPrice": 1228368.33,
+      "otvAmount": 307092.08,
+      "kdvAmount": 307092.08,
+      "optionalEquipment": [
+        {
+          "name": "Çift Renk Tavan",
+          "price": 13000
+        },
+        {
+          "name": "Harman Kardon Ses Sistemi",
+          "price": 39000
+        },
+        {
+          "name": "Chrono Jant Tasarımı",
+          "price": 12000
+        },
+        {
+          "name": "Özel Renk",
+          "price": 39000
+        },
+        {
+          "name": "Kırmızı Tavan Çizgisi",
+          "price": 8000
+        },
+        {
+          "name": "Altın Tavan Çizgisi",
+          "price": 8000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 19000
+        },
+        {
+          "name": "Gelişmiş Sürüş Paketi",
+          "price": 27000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1888000,
+      "powerHP": 120,
+      "engineType": "EV",
+      "isElectric": true
+    },
+    {
+      "model": "R5 E-Tech ELEKTRİKLİ",
+      "trim": "Techno",
+      "engine": "Techno EV52 150hp",
+      "transmission": "Otomatik",
+      "fuel": "Elektrik",
+      "priceRaw": "₺1.940.000,01",
+      "priceNumeric": 1940000.01,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 25,
+      "netPrice": 1262016.5,
+      "otvAmount": 315504.13,
+      "kdvAmount": 315504.13,
+      "optionalEquipment": [
+        {
+          "name": "Çift Renk Tavan",
+          "price": 13000
+        },
+        {
+          "name": "Harman Kardon Ses Sistemi",
+          "price": 39000
+        },
+        {
+          "name": "Chrono Jant Tasarımı",
+          "price": 12000
+        },
+        {
+          "name": "Özel Renk",
+          "price": 39000
+        },
+        {
+          "name": "Kırmızı Tavan Çizgisi",
+          "price": 8000
+        },
+        {
+          "name": "Altın Tavan Çizgisi",
+          "price": 8000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 19000
+        },
+        {
+          "name": "Gelişmiş Sürüş Paketi",
+          "price": 27000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1940050,
+      "powerHP": 150,
+      "engineType": "EV",
+      "isElectric": true
+    },
+    {
+      "model": "Clio",
+      "trim": "evolution",
+      "engine": "evolution 1.0 TCe X-Tronic 90 hp",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.580.000,00",
+      "priceNumeric": 1580000,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 75,
+      "netPrice": 724646.67,
+      "otvAmount": 543485,
+      "kdvAmount": 253626.33,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        },
+        {
+          "name": "Yedek Lastik",
+          "price": 12000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1580000,
+      "powerHP": 90,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Clio",
+      "trim": "evolution",
+      "engine": "evolution 1.0 TCe X-Tronic 90 hp",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.625.000,00",
+      "priceNumeric": 1625000,
+      "brand": "Renault",
+      "modelYear": "2026",
+      "otvRate": 75,
+      "netPrice": 746075.24,
+      "otvAmount": 559556.43,
+      "kdvAmount": 261126.33,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        },
+        {
+          "name": "Yedek Lastik",
+          "price": 12000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1625000,
+      "powerHP": 90,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Clio",
+      "trim": "techno esprit alpine",
+      "engine": "techno esprit alpine 1.0 TCe x-tronic 90hp",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.728.000,01",
+      "priceNumeric": 1728000.01,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 75,
+      "netPrice": 795122.86,
+      "otvAmount": 596342.15,
+      "kdvAmount": 278293,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        },
+        {
+          "name": "Yedek Lastik",
+          "price": 12000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1728000.01,
+      "powerHP": 90,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Captur",
+      "trim": "techno",
+      "engine": "techno mild hybrid EDC 140 hp",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺2.065.000,00",
+      "priceNumeric": 2065000,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 80,
+      "netPrice": 927312.5,
+      "otvAmount": 741850,
+      "kdvAmount": 333832.5,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        },
+        {
+          "name": "Yedek Lastik (hacim kazanımlı)",
+          "price": 14000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2065000,
+      "powerHP": 140,
+      "isHybrid": true
+    },
+    {
+      "model": "Yeni Duster",
+      "trim": "evolution",
+      "engine": "evolution Eco-G 120 hp",
+      "transmission": "Manuel",
+      "fuel": "LPG",
+      "priceRaw": "₺1.730.000,00",
+      "priceNumeric": 1730000,
+      "brand": "Renault",
+      "modelYear": "2026",
+      "otvRate": 75,
+      "netPrice": 796075.24,
+      "otvAmount": 597056.43,
+      "kdvAmount": 278626.33,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1730000,
+      "powerHP": 120
+    },
+    {
+      "model": "Yeni Duster",
+      "trim": "evolution",
+      "engine": "evolution Turbo Tce EDC 145 hp",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.859.999,99",
+      "priceNumeric": 1859999.99,
+      "brand": "Renault",
+      "modelYear": "2026",
+      "otvRate": 75,
+      "netPrice": 856759.52,
+      "otvAmount": 642569.64,
+      "kdvAmount": 299865.83,
+      "optionalEquipment": [
+        {
+          "name": "Yedek Lastik",
+          "price": 14000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        },
+        {
+          "name": "Modüler Tavan Barı",
+          "price": 7000
+        },
+        {
+          "name": "Sis Farı",
+          "price": 3500
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1859999.99,
+      "powerHP": 145,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Yeni Duster",
+      "trim": "evolution",
+      "engine": "evolution hybrid 4x4 LPG 150 hp",
+      "transmission": "Otomatik",
+      "fuel": "LPG",
+      "priceRaw": "₺2.535.000,00",
+      "priceNumeric": 2535000,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 90,
+      "netPrice": 1084718.42,
+      "otvAmount": 976246.58,
+      "kdvAmount": 412193,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2535000,
+      "powerHP": 150
+    },
+    {
+      "model": "Yeni Duster",
+      "trim": "techno",
+      "engine": "techno Turbo Tce EDC 145 hp",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.905.000,02",
+      "priceNumeric": 1905000.02,
+      "brand": "Renault",
+      "modelYear": "2026",
+      "otvRate": 75,
+      "netPrice": 878188.1,
+      "otvAmount": 658641.07,
+      "kdvAmount": 307365.83,
+      "optionalEquipment": [
+        {
+          "name": "Ön ve yan park sensörü",
+          "price": 10000
+        },
+        {
+          "name": "Multiview kamera",
+          "price": 28000
+        },
+        {
+          "name": "Kör nokta uyarı sistemi",
+          "price": 20000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        },
+        {
+          "name": "18'' Elmas Kesim Aluminyum Jant",
+          "price": 32000
+        },
+        {
+          "name": "18'' Yarı Elmas Kesim Aluminyum jant",
+          "price": 32000
+        },
+        {
+          "name": "Yedek Lastik",
+          "price": 14000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1905000.02,
+      "powerHP": 145,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Yeni Duster",
+      "trim": "techno",
+      "engine": "techno Full hybrid E-Tech 160 hp",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺2.429.999,99",
+      "priceNumeric": 2429999.99,
+      "brand": "Renault",
+      "modelYear": "2026",
+      "otvRate": 70,
+      "netPrice": 1159697.79,
+      "otvAmount": 811788.45,
+      "kdvAmount": 394297.25,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2430000,
+      "powerHP": 160,
+      "engineType": "E-TECH",
+      "isHybrid": true
+    },
+    {
+      "model": "Yeni Duster",
+      "trim": "techno",
+      "engine": "techno hybrid 4x4 LPG 150 hp",
+      "transmission": "Otomatik",
+      "fuel": "LPG",
+      "priceRaw": "₺2.565.000,01",
+      "priceNumeric": 2565000.01,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 90,
+      "netPrice": 1097876.32,
+      "otvAmount": 988088.69,
+      "kdvAmount": 417193,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2565000.01,
+      "powerHP": 150
+    },
+    {
+      "model": "Megane E-Tech ELEKTRİKLİ",
+      "trim": "Techno",
+      "engine": "Techno EV60 220 hp",
+      "transmission": "Otomatik",
+      "fuel": "Elektrik",
+      "priceRaw": "₺2.274.999,99",
+      "priceNumeric": 2274999.99,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 25,
+      "netPrice": 1482791.33,
+      "otvAmount": 370697.83,
+      "kdvAmount": 370697.83,
+      "optionalEquipment": [
+        {
+          "name": "Çift Renk Tavan",
+          "price": 12000
+        },
+        {
+          "name": "Koltuk Isıtma Paketi",
+          "price": 23000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        },
+        {
+          "name": "Isıtmalı Direksiyon",
+          "price": 7000
+        },
+        {
+          "name": "20'' Elmas Kesim Alüminyum Alaşım Jantlar",
+          "price": 23000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2275000,
+      "powerHP": 220,
+      "engineType": "EV",
+      "isElectric": true
+    },
+    {
+      "model": "Megane E-Tech ELEKTRİKLİ",
+      "trim": "Esprit Alpine",
+      "engine": "Esprit Alpine EV60 220 hp",
+      "transmission": "Otomatik",
+      "fuel": "Elektrik",
+      "priceRaw": "₺2.375.000,00",
+      "priceNumeric": 2375000,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 25,
+      "netPrice": 1549458,
+      "otvAmount": 387364.5,
+      "kdvAmount": 387364.5,
+      "optionalEquipment": [
+        {
+          "name": "Çift Renk Tavan",
+          "price": 12000
+        },
+        {
+          "name": "Özel Renk",
+          "price": 13000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2375000,
+      "powerHP": 220,
+      "engineType": "EV",
+      "isElectric": true
+    },
+    {
+      "model": "Megane Sedan",
+      "trim": "Touch",
+      "engine": "Touch 1.3 TCe EDC 140 bg",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺2.050.000,01",
+      "priceNumeric": 2050000.01,
+      "brand": "Renault",
+      "modelYear": "2026",
+      "otvRate": 80,
+      "netPrice": 920368.06,
+      "otvAmount": 736294.45,
+      "kdvAmount": 331332.5,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        },
+        {
+          "name": "Yedek Lastik",
+          "price": 16000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2050000.01,
+      "powerHP": 140,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Megane Sedan",
+      "trim": "Icon",
+      "engine": "Icon 1.3 TCe EDC 140 bg",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺2.204.999,99",
+      "priceNumeric": 2204999.99,
+      "brand": "Renault",
+      "modelYear": "2026",
+      "otvRate": 80,
+      "netPrice": 992127.31,
+      "otvAmount": 793701.85,
+      "kdvAmount": 357165.83,
+      "optionalEquipment": [
+        {
+          "name": "Elektrikli Açılır Panoramik Cam Tavan",
+          "price": 115000
+        },
+        {
+          "name": "Eller Serbest Bagaj Kapağı",
+          "price": 10000
+        },
+        {
+          "name": "(ACC) Adaptif Cruise Control (Stop&Go)",
+          "price": 30000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        },
+        {
+          "name": "Yedek Lastik",
+          "price": 16000
+        },
+        {
+          "name": "Ekran Paketi",
+          "price": 21000
+        },
+        {
+          "name": "Isıtmalı sürücü ve yolcu koltukları",
+          "price": 17000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2204999.99,
+      "powerHP": 140,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Megane Sedan",
+      "trim": "Icon",
+      "engine": "Icon 1.5 Blue dCi EDC 115 bg",
+      "transmission": "Otomatik",
+      "fuel": "Dizel",
+      "priceRaw": "₺2.390.000,00",
+      "priceNumeric": 2390000,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 80,
+      "netPrice": 1077775.46,
+      "otvAmount": 862220.37,
+      "kdvAmount": 387999.17,
+      "optionalEquipment": [
+        {
+          "name": "Yedek Lastik",
+          "price": 21000
+        },
+        {
+          "name": "Elektrikli Açılır Panoramik Cam Tavan",
+          "price": 115000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 15000
+        },
+        {
+          "name": "18\" Elmas Kesim Alüminyum Alaşımlı Jantlar",
+          "price": 42000
+        },
+        {
+          "name": "Isıtmalı sürücü ve yolcu koltukları",
+          "price": 17000
+        },
+        {
+          "name": "Eller Serbest Bagaj Kapağı",
+          "price": 10000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2390000,
+      "powerHP": 115,
+      "engineType": "dCi"
+    },
+    {
+      "model": "Yeni Austral",
+      "trim": "techno",
+      "engine": "techno mild hybrid 150 hp auto",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺2.365.000,00",
+      "priceNumeric": 2365000,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 80,
+      "netPrice": 1066201.39,
+      "otvAmount": 852961.11,
+      "kdvAmount": 383832.5,
+      "optionalEquipment": [
+        {
+          "name": "Panoramik Cam Tavan",
+          "price": 65000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 17500
+        },
+        {
+          "name": "Yedek Lastik Paketi",
+          "price": 21500
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2365000,
+      "powerHP": 150,
+      "isHybrid": true
+    },
+    {
+      "model": "Yeni Austral",
+      "trim": "esprit alpine",
+      "engine": "esprit alpine mild hybrid 150 hp auto",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺2.928.000,00",
+      "priceNumeric": 2928000,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 90,
+      "netPrice": 1255962.72,
+      "otvAmount": 1130366.45,
+      "kdvAmount": 477265.83,
+      "optionalEquipment": [
+        {
+          "name": "Çift Renk Tavan",
+          "price": 38000
+        },
+        {
+          "name": "Gelişmiş Park Paketi",
+          "price": 61000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 17500
+        },
+        {
+          "name": "Harman Kardon Premium Ses Sistemi",
+          "price": 69000
+        },
+        {
+          "name": "Yedek Lastik Paketi",
+          "price": 21500
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 2928000,
+      "powerHP": 150,
+      "isHybrid": true
+    },
+    {
+      "model": "Yeni Austral",
+      "trim": "esprit alpine",
+      "engine": "esprit alpine full hybrid E-tech 200 hp",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "₺3.360.000,01",
+      "priceNumeric": 3360000.01,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 90,
+      "netPrice": 1446560.53,
+      "otvAmount": 1301904.48,
+      "kdvAmount": 549693,
+      "optionalEquipment": [
+        {
+          "name": "Çift Renk Tavan",
+          "price": 38000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 17500
+        },
+        {
+          "name": "Harman Kardon Premium Ses Sistemi",
+          "price": 69000
+        },
+        {
+          "name": "Gelişmiş Park Paketi",
+          "price": 61000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 3360000.01,
+      "powerHP": 200,
+      "engineType": "E-TECH",
+      "isHybrid": true,
+      "isElectric": true
+    },
+    {
+      "model": "Rafale",
+      "trim": "Esprit Alpine",
+      "engine": "esprit alpine full hybrid E-Tech 200 hp",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "₺3.750.000,00",
+      "priceNumeric": 3750000,
+      "brand": "Renault",
+      "modelYear": "2025",
+      "otvRate": 90,
+      "netPrice": 1617613.16,
+      "otvAmount": 1455851.84,
+      "kdvAmount": 614693,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 21000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 3750000,
+      "powerHP": 200,
+      "engineType": "E-TECH",
+      "isHybrid": true,
+      "isElectric": true
+    }
+  ]
+}
