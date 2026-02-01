@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-01T01:33:09.426Z",
+  "generatedAt": "2026-02-01T05:41:36.874Z",
   "date": "2026-02-01",
   "topDeals": [
     {
@@ -38,14 +38,64 @@
       "priceBand": "mid",
       "price": 2076700,
       "priceFormatted": "₺2.076.700",
-      "dealScore": 99,
-      "zScore": -1.5,
-      "percentile": 1,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 98,
+      "zScore": -1.53,
+      "percentile": 2,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 155,
+      "engineDisplacement": "1.0L",
+      "isHybrid": true,
+      "tlPerHP": 13398
+    },
+    {
+      "id": "toyota-corolla-1.5-dream-x-pack-multidrive-s-1.5",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "COROLLA",
+      "trim": "1.5 Dream X-Pack Multidrive S",
+      "engine": "1.5",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "vehicleClass": "Other",
+      "priceBand": "mid",
+      "price": 2030000,
+      "priceFormatted": "₺2.030.000",
+      "dealScore": 97,
+      "zScore": -1.19,
+      "percentile": 3,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
+      "isOutlier": false,
+      "outlierType": null,
+      "campaignDiscount": 19.7,
+      "modelYear": 2026
+    },
+    {
+      "id": "toyota-proace-city-cargo-1.5-d-100-hp-vision-1.5",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "PROACE CITY CARGO",
+      "trim": "1.5 D 100 HP Vision",
+      "engine": "1.5",
+      "fuel": "Dizel",
+      "transmission": "Manuel",
+      "vehicleClass": "MPV",
+      "priceBand": "budget",
+      "price": 1222000,
+      "priceFormatted": "₺1.222.000",
+      "dealScore": 97,
+      "zScore": -1.76,
+      "percentile": 3,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
+      "isOutlier": false,
+      "outlierType": null,
+      "campaignDiscount": 2.5,
+      "modelYear": 2026
     },
     {
       "id": "hyundai-i20---yerli-üretim-1.2-jump-1.2-mpi-79-ps-jump",
@@ -132,7 +182,11 @@
       "segmentAvg": 4089745,
       "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 210,
+      "powerKW": 157,
+      "isElectric": true,
+      "tlPerHP": 16676
     },
     {
       "id": "bmw-bmw-420i-gran-coupé-m-sport-1.6l-170-hp",
@@ -156,7 +210,10 @@
       "outlierType": null,
       "otvRate": 100,
       "fuelConsumption": "7,8",
-      "monthlyLease": 164264
+      "monthlyLease": 164264,
+      "powerHP": 170,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 36375
     },
     {
       "id": "bmw-bmw-i4-edrive40-edition-m-sport-218-hp",
@@ -179,75 +236,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "fuelConsumption": "18,6"
-    },
-    {
-      "id": "kia-cee-elegance-140-ps",
-      "brand": "Kia",
-      "brandId": "kia",
-      "model": "CEE",
-      "trim": "Elegance",
-      "engine": "140 PS",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "vehicleClass": "Other",
-      "priceBand": "mid",
-      "price": 2070000,
-      "priceFormatted": "₺2.070.000",
-      "dealScore": 97,
-      "zScore": -1.13,
-      "percentile": 3,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
-      "isOutlier": false,
-      "outlierType": null,
-      "otvRate": 761,
-      "modelYear": 2025
-    },
-    {
-      "id": "toyota-yeni̇-toyota-c-hr-1.8-hybrid-flame-e-cvt**-1.8",
-      "brand": "Toyota",
-      "brandId": "toyota",
-      "model": "YENİ TOYOTA C-HR",
-      "trim": "1.8 Hybrid Flame e-CVT**",
-      "engine": 1.8,
-      "fuel": "Hibrit",
-      "transmission": "Otomatik",
-      "vehicleClass": "SUV",
-      "priceBand": "mid",
-      "price": 2090000,
-      "priceFormatted": "₺2.090.000",
-      "dealScore": 96,
-      "zScore": -1.46,
-      "percentile": 4,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
-      "isOutlier": false,
-      "outlierType": null,
-      "modelYear": 2026
-    },
-    {
-      "id": "toyota-proace-city-cargo-1.5-d-100-hp-vision-1.5",
-      "brand": "Toyota",
-      "brandId": "toyota",
-      "model": "PROACE CITY CARGO",
-      "trim": "1.5 D 100 HP Vision",
-      "engine": 1.5,
-      "fuel": "Dizel",
-      "transmission": "Manuel",
-      "vehicleClass": "MPV",
-      "priceBand": "budget",
-      "price": 1183000,
-      "priceFormatted": "₺1.183.000",
-      "dealScore": 96,
-      "zScore": -1.72,
-      "percentile": 4,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
-      "isOutlier": false,
-      "outlierType": null,
-      "campaignDiscount": 2.8,
-      "modelYear": 2025
+      "fuelConsumption": "18,6",
+      "powerHP": 218,
+      "isElectric": true,
+      "tlPerHP": 28205
     },
     {
       "id": "peugeot-e-2008-allure-100-kw",
@@ -268,7 +260,9 @@
       "segmentAvg": 2722034,
       "segmentSize": 14,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerKW": 100,
+      "isElectric": true
     },
     {
       "id": "nissan-juke-platinum-1.0-dig-t-115ps",
@@ -290,7 +284,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4.6
+      "campaignDiscount": 4.6,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 18013
     },
     {
       "id": "honda-cr-v-hybrid-advance-2.0l-hibrit-otomatik",
@@ -311,7 +308,9 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true
     },
     {
       "id": "volvo-xc60-t8-awd-plug-in-hybrid,-plus,-bright-1.969-cc-145-hp",
@@ -332,7 +331,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 50714
     },
     {
       "id": "volvo-xc60-t8-awd-plug-in-hybrid,-plus,-dark-1.969-cc-145-hp",
@@ -353,7 +357,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 50714
     },
     {
       "id": "volkswagen-golf-impression-1.5-tsi-116-ps",
@@ -401,6 +410,27 @@
       "campaignDiscount": 1.3
     },
     {
+      "id": "citroën-c3-aircross-hybrid-145-max-1.2-hybrid-145*---edcs6",
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "C3 Aircross Hybrid 145",
+      "trim": "Max",
+      "engine": "1.2 Hybrid 145* -  eDCS6",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "vehicleClass": "SUV",
+      "priceBand": "mid",
+      "price": 2106000,
+      "priceFormatted": "₺2.106.000",
+      "dealScore": 95,
+      "zScore": -1.46,
+      "percentile": 5,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
+      "isOutlier": false,
+      "outlierType": null
+    },
+    {
       "id": "renault-captur-techno-techno-mild-hybrid-edc-140-hp",
       "brand": "Renault",
       "brandId": "renault",
@@ -421,7 +451,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 140,
+      "isHybrid": true,
+      "tlPerHP": 14750
     },
     {
       "id": "hyundai-ioniq-9-calligraphy-226,1-kw-4x4",
@@ -488,7 +521,12 @@
       "segmentAvg": 4477150,
       "segmentSize": 8,
       "isOutlier": true,
-      "outlierType": "cheap"
+      "outlierType": "cheap",
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 22606
     }
   ],
   "expensiveOutliers": [
@@ -514,7 +552,13 @@
       "outlierType": "expensive",
       "otvRate": 75,
       "modelYear": 2025,
-      "fuelConsumption": "24.0 kWh/100km"
+      "fuelConsumption": "24.0 kWh/100km",
+      "powerKW": 380,
+      "driveType": "AWD",
+      "wltpRange": 530,
+      "batteryCapacity": 108.8,
+      "isElectric": true,
+      "tlPerKm": 10026
     },
     {
       "id": "mercedes-benz-mercedes-amg-s-63-e-performance---4.0l-802-hp",
@@ -537,7 +581,11 @@
       "isOutlier": true,
       "outlierType": "expensive",
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 802,
+      "engineDisplacement": "4.0L",
+      "isHybrid": true,
+      "tlPerHP": 43927
     },
     {
       "id": "mercedes-benz-mercedes-maybach-sl-680-monogram-series-4.0l-585-hp",
@@ -560,7 +608,10 @@
       "isOutlier": true,
       "outlierType": "expensive",
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 585,
+      "engineDisplacement": "4.0L",
+      "tlPerHP": 60150
     },
     {
       "id": "bmw-bmw-i7-m70-m-659-hp",
@@ -583,7 +634,10 @@
       "isOutlier": true,
       "outlierType": "expensive",
       "otvRate": 75,
-      "fuelConsumption": "23,7"
+      "fuelConsumption": "23,7",
+      "powerHP": 659,
+      "isElectric": true,
+      "tlPerHP": 23074
     },
     {
       "id": "volkswagen-tayron-life-1.5-etsi-act-150-ps",
@@ -599,10 +653,10 @@
       "price": 3481000,
       "priceFormatted": "₺3.481.000",
       "dealScore": 3,
-      "zScore": 2.03,
+      "zScore": 2.14,
       "percentile": 97,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": true,
       "outlierType": "expensive",
       "otvRate": 100,
@@ -646,11 +700,11 @@
       "priceBand": "mid",
       "price": 2102000,
       "priceFormatted": "₺2.102.000",
-      "dealScore": 91,
-      "zScore": -1.06,
-      "percentile": 9,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 86,
+      "zScore": -1.03,
+      "percentile": 14,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
@@ -670,10 +724,10 @@
       "price": 2349000,
       "priceFormatted": "₺2.349.000",
       "dealScore": 53,
-      "zScore": -0.51,
+      "zScore": -0.46,
       "percentile": 47,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
@@ -692,11 +746,11 @@
       "priceBand": "mid",
       "price": 2626000,
       "priceFormatted": "₺2.626.000",
-      "dealScore": 47,
-      "zScore": 0.11,
-      "percentile": 53,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 42,
+      "zScore": 0.17,
+      "percentile": 58,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
@@ -715,11 +769,11 @@
       "priceBand": "mid",
       "price": 2727000,
       "priceFormatted": "₺2.727.000",
-      "dealScore": 34,
-      "zScore": 0.34,
-      "percentile": 66,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 31,
+      "zScore": 0.41,
+      "percentile": 69,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
@@ -1198,11 +1252,11 @@
       "priceBand": "mid",
       "price": 3390000,
       "priceFormatted": "₺3.390.000",
-      "dealScore": 9,
-      "zScore": 1.83,
-      "percentile": 91,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 8,
+      "zScore": 1.93,
+      "percentile": 92,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
@@ -1222,10 +1276,10 @@
       "price": 3481000,
       "priceFormatted": "₺3.481.000",
       "dealScore": 3,
-      "zScore": 2.03,
+      "zScore": 2.14,
       "percentile": 97,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": true,
       "outlierType": "expensive",
       "otvRate": 100,
@@ -2209,7 +2263,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 25,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 120,
+      "isElectric": true,
+      "tlPerHP": 15733
     },
     {
       "id": "renault-r5-e-tech-elektri̇kli̇-techno-techno-ev52-150hp",
@@ -2232,7 +2289,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 25,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 150,
+      "isElectric": true,
+      "tlPerHP": 12933
     },
     {
       "id": "renault-clio-evolution-evolution-1.0-tce-x-tronic-90-hp",
@@ -2255,7 +2315,9 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 90,
+      "tlPerHP": 17556
     },
     {
       "id": "renault-clio-evolution-evolution-1.0-tce-x-tronic-90-hp",
@@ -2278,7 +2340,9 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 90,
+      "tlPerHP": 18056
     },
     {
       "id": "renault-clio-techno-esprit-alpine-techno-esprit-alpine-1.0-tce-x-tronic-90hp",
@@ -2301,7 +2365,9 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 90,
+      "tlPerHP": 19200
     },
     {
       "id": "renault-captur-techno-techno-mild-hybrid-edc-140-hp",
@@ -2324,7 +2390,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 140,
+      "isHybrid": true,
+      "tlPerHP": 14750
     },
     {
       "id": "renault-yeni-duster-evolution-evolution-eco-g-120-hp",
@@ -2347,7 +2416,9 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 120,
+      "tlPerHP": 14417
     },
     {
       "id": "renault-yeni-duster-evolution-evolution-turbo-tce-edc-145-hp",
@@ -2370,7 +2441,9 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 145,
+      "tlPerHP": 12828
     },
     {
       "id": "renault-yeni-duster-evolution-evolution-hybrid-4x4-lpg-150-hp",
@@ -2385,15 +2458,17 @@
       "priceBand": "mid",
       "price": 2535000,
       "priceFormatted": "₺2.535.000",
-      "dealScore": 60,
-      "zScore": -0.35,
-      "percentile": 40,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 62,
+      "zScore": -0.39,
+      "percentile": 38,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 90,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 150,
+      "tlPerHP": 16900
     },
     {
       "id": "renault-yeni-duster-techno-techno-turbo-tce-edc-145-hp",
@@ -2416,7 +2491,9 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 145,
+      "tlPerHP": 13138
     },
     {
       "id": "renault-yeni-duster-techno-techno-full-hybrid-e-tech-160-hp",
@@ -2431,15 +2508,18 @@
       "priceBand": "mid",
       "price": 2429999.99,
       "priceFormatted": "₺2.430.000",
-      "dealScore": 69,
-      "zScore": -0.61,
-      "percentile": 31,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 71,
+      "zScore": -0.65,
+      "percentile": 29,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 70,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 160,
+      "isHybrid": true,
+      "tlPerHP": 15187
     },
     {
       "id": "renault-yeni-duster-techno-techno-hybrid-4x4-lpg-150-hp",
@@ -2454,15 +2534,17 @@
       "priceBand": "mid",
       "price": 2565000.01,
       "priceFormatted": "₺2.565.000",
-      "dealScore": 54,
-      "zScore": -0.28,
-      "percentile": 46,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 59,
+      "zScore": -0.31,
+      "percentile": 41,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 90,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 150,
+      "tlPerHP": 17100
     },
     {
       "id": "renault-megane-e-tech-elektri̇kli̇-techno-techno-ev60-220-hp",
@@ -2485,7 +2567,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 25,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 220,
+      "isElectric": true,
+      "tlPerHP": 10341
     },
     {
       "id": "renault-megane-e-tech-elektri̇kli̇-esprit-alpine-esprit-alpine-ev60-220-hp",
@@ -2508,7 +2593,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 25,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 220,
+      "isElectric": true,
+      "tlPerHP": 10795
     },
     {
       "id": "renault-megane-sedan-touch-touch-1.3-tce-edc-140-bg",
@@ -2531,7 +2619,9 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 140,
+      "tlPerHP": 14643
     },
     {
       "id": "renault-megane-sedan-icon-icon-1.3-tce-edc-140-bg",
@@ -2554,7 +2644,9 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 140,
+      "tlPerHP": 15750
     },
     {
       "id": "renault-megane-sedan-icon-icon-1.5-blue-dci-edc-115-bg",
@@ -2577,7 +2669,9 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 115,
+      "tlPerHP": 20783
     },
     {
       "id": "renault-yeni-austral-techno-techno-mild-hybrid-150-hp-auto",
@@ -2600,7 +2694,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 80,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 150,
+      "isHybrid": true,
+      "tlPerHP": 15767
     },
     {
       "id": "renault-yeni-austral-esprit-alpine-esprit-alpine-mild-hybrid-150-hp-auto",
@@ -2623,7 +2720,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 90,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 150,
+      "isHybrid": true,
+      "tlPerHP": 19520
     },
     {
       "id": "renault-yeni-austral-esprit-alpine-esprit-alpine-full-hybrid-e-tech-200-hp",
@@ -2638,15 +2738,19 @@
       "priceBand": "mid",
       "price": 3360000.01,
       "priceFormatted": "₺3.360.000",
-      "dealScore": 7,
-      "zScore": 1.71,
-      "percentile": 93,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 8,
+      "zScore": 1.67,
+      "percentile": 92,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 90,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 200,
+      "isElectric": true,
+      "isHybrid": true,
+      "tlPerHP": 16800
     },
     {
       "id": "renault-rafale-esprit-alpine-esprit-alpine-full-hybrid-e-tech-200-hp",
@@ -2669,7 +2773,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 90,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 200,
+      "isElectric": true,
+      "isHybrid": true,
+      "tlPerHP": 18750
     },
     {
       "id": "toyota-corolla-1.5-vision-plus-multidrive-s-1.5",
@@ -2677,21 +2785,21 @@
       "brandId": "toyota",
       "model": "COROLLA",
       "trim": "1.5 Vision Plus Multidrive S",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Benzin",
       "transmission": "Manuel",
       "vehicleClass": "Other",
       "priceBand": "budget",
-      "price": 1650000,
-      "priceFormatted": "₺1.650.000",
-      "dealScore": 64,
-      "zScore": 0,
-      "percentile": 36,
-      "segmentAvg": 1649143,
-      "segmentSize": 7,
+      "price": 1699000,
+      "priceFormatted": "₺1.699.000",
+      "dealScore": 58,
+      "zScore": 0.29,
+      "percentile": 42,
+      "segmentAvg": 1626500,
+      "segmentSize": 6,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 17.1,
+      "campaignDiscount": 18.9,
       "modelYear": 2026
     },
     {
@@ -2700,21 +2808,21 @@
       "brandId": "toyota",
       "model": "COROLLA",
       "trim": "1.5 Dream Multidrive S",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Benzin",
       "transmission": "Otomatik",
       "vehicleClass": "Other",
       "priceBand": "budget",
-      "price": 1850000,
-      "priceFormatted": "₺1.850.000",
-      "dealScore": 21,
-      "zScore": 0.83,
-      "percentile": 79,
-      "segmentAvg": 1649143,
-      "segmentSize": 7,
+      "price": 1940000,
+      "priceFormatted": "₺1.940.000",
+      "dealScore": 8,
+      "zScore": 1.25,
+      "percentile": 92,
+      "segmentAvg": 1626500,
+      "segmentSize": 6,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 14.5,
+      "campaignDiscount": 14.8,
       "modelYear": 2026
     },
     {
@@ -2723,21 +2831,21 @@
       "brandId": "toyota",
       "model": "COROLLA",
       "trim": "1.5 Dream X-Pack Multidrive S",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Benzin",
       "transmission": "Otomatik",
       "vehicleClass": "Other",
-      "priceBand": "budget",
-      "price": 1924000,
-      "priceFormatted": "₺1.924.000",
-      "dealScore": 7,
-      "zScore": 1.14,
-      "percentile": 93,
-      "segmentAvg": 1649143,
-      "segmentSize": 7,
+      "priceBand": "mid",
+      "price": 2030000,
+      "priceFormatted": "₺2.030.000",
+      "dealScore": 97,
+      "zScore": -1.19,
+      "percentile": 3,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 16.4,
+      "campaignDiscount": 19.7,
       "modelYear": 2026
     },
     {
@@ -2746,21 +2854,44 @@
       "brandId": "toyota",
       "model": "COROLLA",
       "trim": "1.5 Flame X-Pack Multidrive S",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Benzin",
       "transmission": "Otomatik",
       "vehicleClass": "Other",
       "priceBand": "mid",
-      "price": 2159500,
-      "priceFormatted": "₺2.159.500",
-      "dealScore": 84,
-      "zScore": -0.93,
-      "percentile": 16,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "price": 2225000,
+      "priceFormatted": "₺2.225.000",
+      "dealScore": 69,
+      "zScore": -0.75,
+      "percentile": 31,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 15.8,
+      "campaignDiscount": 18.2,
+      "modelYear": 2026
+    },
+    {
+      "id": "toyota-corolla-1.5-passion-x-pack-multidrive-s-1.5",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "COROLLA",
+      "trim": "1.5 Passion X-Pack Multidrive S",
+      "engine": "1.5",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "vehicleClass": "Other",
+      "priceBand": "mid",
+      "price": 2600000,
+      "priceFormatted": "₺2.600.000",
+      "dealScore": 47,
+      "zScore": 0.11,
+      "percentile": 53,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
+      "isOutlier": false,
+      "outlierType": null,
+      "campaignDiscount": 9.4,
       "modelYear": 2026
     },
     {
@@ -2769,17 +2900,17 @@
       "brandId": "toyota",
       "model": "COROLLA",
       "trim": "1.8 Hybrid Dream e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Manuel",
       "vehicleClass": "Other",
       "priceBand": "mid",
-      "price": 2377000,
-      "priceFormatted": "₺2.377.000",
+      "price": 2495000,
+      "priceFormatted": "₺2.495.000",
       "dealScore": 50,
-      "zScore": -0.14,
+      "zScore": 0.12,
       "percentile": 50,
-      "segmentAvg": 2399889,
+      "segmentAvg": 2470500,
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
@@ -2791,17 +2922,17 @@
       "brandId": "toyota",
       "model": "COROLLA",
       "trim": "1.8 Hybrid Dream-X-Pack e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "Other",
       "priceBand": "mid",
-      "price": 2266000,
-      "priceFormatted": "₺2.266.000",
-      "dealScore": 83,
-      "zScore": -0.83,
-      "percentile": 17,
-      "segmentAvg": 2399889,
+      "price": 2379000,
+      "priceFormatted": "₺2.379.000",
+      "dealScore": 61,
+      "zScore": -0.46,
+      "percentile": 39,
+      "segmentAvg": 2470500,
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
@@ -2813,17 +2944,17 @@
       "brandId": "toyota",
       "model": "COROLLA",
       "trim": "1.8 Hybrid Flame X-Pack e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "Other",
       "priceBand": "mid",
-      "price": 2379000,
-      "priceFormatted": "₺2.379.000",
+      "price": 2498000,
+      "priceFormatted": "₺2.498.000",
       "dealScore": 39,
-      "zScore": -0.13,
+      "zScore": 0.14,
       "percentile": 61,
-      "segmentAvg": 2399889,
+      "segmentAvg": 2470500,
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
@@ -2835,17 +2966,17 @@
       "brandId": "toyota",
       "model": "COROLLA",
       "trim": "1.8 Hybrid Passion X-Pack e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "Other",
       "priceBand": "mid",
-      "price": 2544000,
-      "priceFormatted": "₺2.544.000",
-      "dealScore": 28,
-      "zScore": 0.9,
-      "percentile": 72,
-      "segmentAvg": 2399889,
+      "price": 2829500,
+      "priceFormatted": "₺2.829.500",
+      "dealScore": 6,
+      "zScore": 1.81,
+      "percentile": 94,
+      "segmentAvg": 2470500,
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
@@ -2857,18 +2988,18 @@
       "brandId": "toyota",
       "model": "COROLLA CROSS",
       "trim": "1.8 Hybrid Flame e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
       "priceBand": "mid",
-      "price": 2484000,
-      "priceFormatted": "₺2.484.000",
-      "dealScore": 66,
-      "zScore": -0.48,
-      "percentile": 34,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "price": 2534000,
+      "priceFormatted": "₺2.534.000",
+      "dealScore": 65,
+      "zScore": -0.39,
+      "percentile": 35,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": 2025
@@ -2879,18 +3010,18 @@
       "brandId": "toyota",
       "model": "COROLLA CROSS",
       "trim": "1.8 Hybrid Passion e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
       "priceBand": "mid",
-      "price": 2720000,
-      "priceFormatted": "₺2.720.000",
-      "dealScore": 43,
-      "zScore": 0.11,
-      "percentile": 57,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "price": 2775000,
+      "priceFormatted": "₺2.775.000",
+      "dealScore": 38,
+      "zScore": 0.21,
+      "percentile": 62,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": 2025
@@ -2901,18 +3032,18 @@
       "brandId": "toyota",
       "model": "COROLLA CROSS",
       "trim": "1.8 Hybrid Passion X-Pack e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
       "priceBand": "mid",
-      "price": 3157000,
-      "priceFormatted": "₺3.157.000",
-      "dealScore": 16,
-      "zScore": 1.2,
-      "percentile": 84,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "price": 3220000,
+      "priceFormatted": "₺3.220.000",
+      "dealScore": 14,
+      "zScore": 1.32,
+      "percentile": 86,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": 2025
@@ -2923,18 +3054,18 @@
       "brandId": "toyota",
       "model": "YENİ TOYOTA C-HR",
       "trim": "1.8 Hybrid Flame e-CVT**",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
       "priceBand": "mid",
-      "price": 2090000,
-      "priceFormatted": "₺2.090.000",
-      "dealScore": 96,
-      "zScore": -1.46,
-      "percentile": 4,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "price": 2150000,
+      "priceFormatted": "₺2.150.000",
+      "dealScore": 89,
+      "zScore": -1.35,
+      "percentile": 11,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": 2026
@@ -2945,62 +3076,40 @@
       "brandId": "toyota",
       "model": "YENİ TOYOTA C-HR",
       "trim": "1.8 Hybrid Passion e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
       "priceBand": "mid",
-      "price": 2420000,
-      "priceFormatted": "₺2.420.000",
-      "dealScore": 72,
-      "zScore": -0.64,
-      "percentile": 28,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "price": 2460000,
+      "priceFormatted": "₺2.460.000",
+      "dealScore": 68,
+      "zScore": -0.57,
+      "percentile": 32,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": 2026
     },
     {
-      "id": "toyota-yeni̇-toyota-c-hr-1.8-hybrid-passion-x-sport-e-cvt-1.8",
+      "id": "toyota-yeni̇-toyota-c-hr-1.8-hybrid-passion-x-sport-e-cvt***-1.8",
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "YENİ TOYOTA C-HR",
-      "trim": "1.8 Hybrid Passion X-Sport e-CVT",
-      "engine": 1.8,
+      "trim": "1.8 Hybrid Passion X-Sport e-CVT***",
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
       "priceBand": "mid",
-      "price": 2755000,
-      "priceFormatted": "₺2.755.000",
-      "dealScore": 37,
-      "zScore": 0.2,
-      "percentile": 63,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
-      "isOutlier": false,
-      "outlierType": null,
-      "modelYear": 2026
-    },
-    {
-      "id": "toyota-toyota-c-hr-1.8-hybrid-gr-sport-e-cvt-1.8",
-      "brand": "Toyota",
-      "brandId": "toyota",
-      "model": "TOYOTA C-HR",
-      "trim": "1.8 Hybrid GR SPORT e-CVT",
-      "engine": 1.8,
-      "fuel": "Hibrit",
-      "transmission": "Otomatik",
-      "vehicleClass": "SUV",
-      "priceBand": "mid",
-      "price": 2870000,
-      "priceFormatted": "₺2.870.000",
-      "dealScore": 31,
-      "zScore": 0.49,
-      "percentile": 69,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "price": 2850000,
+      "priceFormatted": "₺2.850.000",
+      "dealScore": 32,
+      "zScore": 0.4,
+      "percentile": 68,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": 2026
@@ -3011,18 +3120,62 @@
       "brandId": "toyota",
       "model": "COROLLA HATCHBACK HYBRID",
       "trim": "1.8 Hybrid Flame e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "Hatchback",
       "priceBand": "mid",
       "price": 2115000,
       "priceFormatted": "₺2.115.000",
-      "dealScore": 75,
-      "zScore": -1.04,
-      "percentile": 25,
-      "segmentAvg": 2265750,
-      "segmentSize": 6,
+      "dealScore": 83,
+      "zScore": -1.33,
+      "percentile": 17,
+      "segmentAvg": 2310778,
+      "segmentSize": 9,
+      "isOutlier": false,
+      "outlierType": null,
+      "modelYear": 2025
+    },
+    {
+      "id": "toyota-corolla-hatchback-hybrid-1.8-hybrid-flame-e-cvt-1.8",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "COROLLA HATCHBACK HYBRID",
+      "trim": "1.8 Hybrid Flame e-CVT",
+      "engine": "1.8",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "vehicleClass": "Hatchback",
+      "priceBand": "mid",
+      "price": 2157000,
+      "priceFormatted": "₺2.157.000",
+      "dealScore": 72,
+      "zScore": -1.05,
+      "percentile": 28,
+      "segmentAvg": 2310778,
+      "segmentSize": 9,
+      "isOutlier": false,
+      "outlierType": null,
+      "modelYear": 2026
+    },
+    {
+      "id": "toyota-corolla-hatchback-hybrid-1.8-hybrid-passion-x-pack-e-cvt-1.8",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "COROLLA HATCHBACK HYBRID",
+      "trim": "1.8 Hybrid Passion X-Pack e-CVT",
+      "engine": "1.8",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "vehicleClass": "Hatchback",
+      "priceBand": "mid",
+      "price": 2419500,
+      "priceFormatted": "₺2.419.500",
+      "dealScore": 39,
+      "zScore": 0.74,
+      "percentile": 61,
+      "segmentAvg": 2310778,
+      "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": 2025
@@ -3033,18 +3186,40 @@
       "brandId": "toyota",
       "model": "COROLLA HATCHBACK HYBRID",
       "trim": "1.8 Hybrid Passion X-Pack e-CVT",
-      "engine": 1.8,
+      "engine": "1.8",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "vehicleClass": "Hatchback",
+      "priceBand": "mid",
+      "price": 2468000,
+      "priceFormatted": "₺2.468.000",
+      "dealScore": 17,
+      "zScore": 1.07,
+      "percentile": 83,
+      "segmentAvg": 2310778,
+      "segmentSize": 9,
+      "isOutlier": false,
+      "outlierType": null,
+      "modelYear": 2026
+    },
+    {
+      "id": "toyota-yeni̇-corolla-hatchback-hybrid-1.8-hybrid-gr-sport-e-cvt**-1.8",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "YENİ COROLLA HATCHBACK HYBRID",
+      "trim": "1.8 Hybrid GR SPORT e-CVT**",
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "Hatchback",
       "priceBand": "mid",
       "price": 2419500,
       "priceFormatted": "₺2.419.500",
-      "dealScore": 25,
-      "zScore": 1.06,
-      "percentile": 75,
-      "segmentAvg": 2265750,
-      "segmentSize": 6,
+      "dealScore": 39,
+      "zScore": 0.74,
+      "percentile": 61,
+      "segmentAvg": 2310778,
+      "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": 2025
@@ -3055,21 +3230,21 @@
       "brandId": "toyota",
       "model": "YENİ COROLLA HATCHBACK HYBRID",
       "trim": "1.8 Hybrid GR SPORT e-CVT**",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "Hatchback",
       "priceBand": "mid",
-      "price": 2419500,
-      "priceFormatted": "₺2.419.500",
-      "dealScore": 25,
-      "zScore": 1.06,
-      "percentile": 75,
-      "segmentAvg": 2265750,
-      "segmentSize": 6,
+      "price": 2468000,
+      "priceFormatted": "₺2.468.000",
+      "dealScore": 17,
+      "zScore": 1.07,
+      "percentile": 83,
+      "segmentAvg": 2310778,
+      "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": 2025
+      "modelYear": 2026
     },
     {
       "id": "toyota-yaris-cross-1.5-hybrid-dream-130-hp-e-cvt-1",
@@ -3077,21 +3252,21 @@
       "brandId": "toyota",
       "model": "YARIS CROSS",
       "trim": "1.5 Hybrid Dream 130 HP e-CVT",
-      "engine": 1,
+      "engine": "1",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
       "priceBand": "mid",
-      "price": 2203000,
-      "priceFormatted": "₺2.203.000",
-      "dealScore": 84,
-      "zScore": -1.18,
-      "percentile": 16,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "price": 2269000,
+      "priceFormatted": "₺2.269.000",
+      "dealScore": 83,
+      "zScore": -1.05,
+      "percentile": 17,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": 2025
+      "modelYear": 2026
     },
     {
       "id": "toyota-yaris-cross-1.5-hybrid-flame-130-hp-e-cvt-1.5",
@@ -3099,21 +3274,21 @@
       "brandId": "toyota",
       "model": "YARIS CROSS",
       "trim": "1.5 Hybrid Flame 130 HP e-CVT",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
       "priceBand": "mid",
-      "price": 2531000,
-      "priceFormatted": "₺2.531.000",
-      "dealScore": 63,
-      "zScore": -0.36,
-      "percentile": 37,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "price": 2658000,
+      "priceFormatted": "₺2.658.000",
+      "dealScore": 50,
+      "zScore": -0.08,
+      "percentile": 50,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": 2025
+      "modelYear": 2026
     },
     {
       "id": "toyota-yaris-cross-1.5-hybrid-flame-x-pack-130-hp-e-cvt-1.5",
@@ -3121,21 +3296,21 @@
       "brandId": "toyota",
       "model": "YARIS CROSS",
       "trim": "1.5 Hybrid Flame X-Pack 130 HP e-CVT",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
       "priceBand": "mid",
-      "price": 2555000,
-      "priceFormatted": "₺2.555.000",
-      "dealScore": 57,
-      "zScore": -0.3,
-      "percentile": 43,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "price": 2683000,
+      "priceFormatted": "₺2.683.000",
+      "dealScore": 44,
+      "zScore": -0.02,
+      "percentile": 56,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": 2025
+      "modelYear": 2026
     },
     {
       "id": "toyota-yaris-1.5-hybrid-flame-e-cvt-1.5",
@@ -3143,21 +3318,21 @@
       "brandId": "toyota",
       "model": "YARIS",
       "trim": "1.5 Hybrid Flame e-CVT",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "Hatchback",
       "priceBand": "budget",
-      "price": 1878000,
-      "priceFormatted": "₺1.878.000",
-      "dealScore": 49,
-      "zScore": 0.03,
+      "price": 1934000,
+      "priceFormatted": "₺1.934.000",
+      "dealScore": 37,
+      "zScore": 0.53,
       "percentile": 50,
-      "segmentAvg": 1876000,
+      "segmentAvg": 1894667,
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": 2025
+      "modelYear": 2026
     },
     {
       "id": "toyota-yaris-1.5-hybrid-passion-x-pack-siyah-tavan-e-cvt**-1.5",
@@ -3165,21 +3340,21 @@
       "brandId": "toyota",
       "model": "YARIS",
       "trim": "1.5 Hybrid Passion X-Pack Siyah Tavan e-CVT**",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Hibrit",
       "transmission": "Otomatik",
       "vehicleClass": "Hatchback",
       "priceBand": "mid",
-      "price": 2182500,
-      "priceFormatted": "₺2.182.500",
-      "dealScore": 58,
-      "zScore": -0.58,
-      "percentile": 42,
-      "segmentAvg": 2265750,
-      "segmentSize": 6,
+      "price": 2292000,
+      "priceFormatted": "₺2.292.000",
+      "dealScore": 61,
+      "zScore": -0.13,
+      "percentile": 39,
+      "segmentAvg": 2310778,
+      "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": 2025
+      "modelYear": 2026
     },
     {
       "id": "toyota-land-cruiser-prado-2.8-d-4d-8-a\\t-land-cruiser-prado-2.8",
@@ -3187,7 +3362,7 @@
       "brandId": "toyota",
       "model": "Land Cruiser Prado",
       "trim": "2.8 D-4D 8 A\\T Land Cruiser Prado",
-      "engine": 2.8,
+      "engine": "2.8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
       "vehicleClass": "SUV",
@@ -3205,11 +3380,11 @@
       "modelYear": 2025
     },
     {
-      "id": "toyota-hilux-2.4-d-4d-4x2-hi-cruiser-a/t-",
+      "id": "toyota-hilux-2.4-d-4d-4x2-hi-cruiser-a/t**-",
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "Hilux",
-      "trim": "2.4 D-4D 4x2 Hi-Cruiser A/T",
+      "trim": "2.4 D-4D 4x2 Hi-Cruiser A/T**",
       "engine": "",
       "fuel": "Diger",
       "transmission": "Diger",
@@ -3302,21 +3477,67 @@
       "brandId": "toyota",
       "model": "Proace City",
       "trim": "1.5 D 130 HP Dream A/T",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1544500,
-      "priceFormatted": "₺1.544.500",
-      "dealScore": 62,
-      "zScore": 0,
-      "percentile": 38,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "price": 1494500,
+      "priceFormatted": "₺1.494.500",
+      "dealScore": 70,
+      "zScore": -0.42,
+      "percentile": 30,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 15,
+      "campaignDiscount": 17.8,
+      "modelYear": 2025
+    },
+    {
+      "id": "toyota-proace-city-1.5-d-130-hp-dream-a/t-1.8",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace City",
+      "trim": "1.5 D 130 HP Dream A/T",
+      "engine": "1.8",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "vehicleClass": "MPV",
+      "priceBand": "budget",
+      "price": 1584000,
+      "priceFormatted": "₺1.584.000",
+      "dealScore": 57,
+      "zScore": 0.02,
+      "percentile": 43,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
+      "isOutlier": false,
+      "outlierType": null,
+      "campaignDiscount": 17.7,
+      "modelYear": 2026
+    },
+    {
+      "id": "toyota-proace-city-1.5-d-130-hp-flame-x-pack-a/t-1.8",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace City",
+      "trim": "1.5 D 130 HP Flame X-Pack A/T",
+      "engine": "1.8",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "vehicleClass": "MPV",
+      "priceBand": "budget",
+      "price": 1693000,
+      "priceFormatted": "₺1.693.000",
+      "dealScore": 43,
+      "zScore": 0.56,
+      "percentile": 57,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
+      "isOutlier": false,
+      "outlierType": null,
+      "campaignDiscount": 18.6,
       "modelYear": 2025
     },
     {
@@ -3325,21 +3546,44 @@
       "brandId": "toyota",
       "model": "Proace City",
       "trim": "1.5 D 130 HP Flame X-Pack A/T",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1743000,
-      "priceFormatted": "₺1.743.000",
-      "dealScore": 21,
-      "zScore": 0.94,
-      "percentile": 79,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "price": 1787000,
+      "priceFormatted": "₺1.787.000",
+      "dealScore": 10,
+      "zScore": 1.02,
+      "percentile": 90,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 16.2,
+      "campaignDiscount": 19,
+      "modelYear": 2026
+    },
+    {
+      "id": "toyota-proace-city-1.5-d-130-hp-passion-x-pack-a/t-1.8",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace City",
+      "trim": "1.5 D 130 HP Passion X-Pack A/T",
+      "engine": "1.8",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "vehicleClass": "MPV",
+      "priceBand": "budget",
+      "price": 1782000,
+      "priceFormatted": "₺1.782.000",
+      "dealScore": 17,
+      "zScore": 1,
+      "percentile": 83,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
+      "isOutlier": false,
+      "outlierType": null,
+      "campaignDiscount": 18,
       "modelYear": 2025
     },
     {
@@ -3348,22 +3592,22 @@
       "brandId": "toyota",
       "model": "Proace City",
       "trim": "1.5 D 130 HP Passion X-Pack A/T",
-      "engine": 1.8,
+      "engine": "1.8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1832000,
-      "priceFormatted": "₺1.832.000",
-      "dealScore": 4,
-      "zScore": 1.37,
-      "percentile": 96,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "price": 1878000,
+      "priceFormatted": "₺1.878.000",
+      "dealScore": 3,
+      "zScore": 1.47,
+      "percentile": 97,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 15.7,
-      "modelYear": 2025
+      "campaignDiscount": 18.5,
+      "modelYear": 2026
     },
     {
       "id": "toyota-proace-city-cargo-1.5-d-100-hp-vision-1.5",
@@ -3371,22 +3615,22 @@
       "brandId": "toyota",
       "model": "PROACE CITY CARGO",
       "trim": "1.5 D 100 HP Vision",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Dizel",
       "transmission": "Manuel",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1183000,
-      "priceFormatted": "₺1.183.000",
-      "dealScore": 96,
-      "zScore": -1.72,
-      "percentile": 4,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "price": 1222000,
+      "priceFormatted": "₺1.222.000",
+      "dealScore": 97,
+      "zScore": -1.76,
+      "percentile": 3,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.8,
-      "modelYear": 2025
+      "campaignDiscount": 2.5,
+      "modelYear": 2026
     },
     {
       "id": "toyota-proace-city-cargo-1.5-d-100-hp-dream-1.5",
@@ -3394,44 +3638,90 @@
       "brandId": "toyota",
       "model": "PROACE CITY CARGO",
       "trim": "1.5 D 100 HP Dream",
-      "engine": 1.5,
+      "engine": "1.5",
       "fuel": "Diger",
       "transmission": "Otomatik",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1235000,
-      "priceFormatted": "₺1.235.000",
+      "price": 1276000,
+      "priceFormatted": "₺1.276.000",
       "dealScore": 50,
       "zScore": 0,
       "percentile": 50,
-      "segmentAvg": 1235000,
+      "segmentAvg": 1276000,
       "segmentSize": 1,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.8,
-      "modelYear": 2025
+      "campaignDiscount": 2.5,
+      "modelYear": 2026
     },
     {
-      "id": "toyota-proace-verso-2.2-d-180-hp-passion-a/t-2",
+      "id": "toyota-proace-verso-2.0-d-180-hp-passion-a/t-2",
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "Proace Verso",
-      "trim": "2.2 D 180 HP Passion A/T",
-      "engine": 2,
+      "trim": "2.0 D 180 HP Passion A/T",
+      "engine": "2",
       "fuel": "Dizel",
       "transmission": "Otomatik",
       "vehicleClass": "MPV",
       "priceBand": "mid",
-      "price": 2200000,
-      "priceFormatted": "₺2.200.000",
-      "dealScore": 90,
-      "zScore": -1.34,
-      "percentile": 10,
-      "segmentAvg": 2312000,
-      "segmentSize": 5,
+      "price": 2215000,
+      "priceFormatted": "₺2.215.000",
+      "dealScore": 93,
+      "zScore": -1.48,
+      "percentile": 7,
+      "segmentAvg": 2316357,
+      "segmentSize": 7,
+      "isOutlier": false,
+      "outlierType": null,
+      "campaignDiscount": 4.3,
+      "modelYear": 2025
+    },
+    {
+      "id": "toyota-proace-verso-2.0-d-180-hp-passion-a/t-2",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace Verso",
+      "trim": "2.0 D 180 HP Passion A/T",
+      "engine": "2",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "vehicleClass": "MPV",
+      "priceBand": "mid",
+      "price": 2279000,
+      "priceFormatted": "₺2.279.000",
+      "dealScore": 79,
+      "zScore": -0.55,
+      "percentile": 21,
+      "segmentAvg": 2316357,
+      "segmentSize": 7,
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 4.9,
+      "modelYear": 2026
+    },
+    {
+      "id": "toyota-proace-verso-2.2-d-180-hp-passion-x-pack-a/t-2",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Proace Verso",
+      "trim": "2.2 D 180 HP Passion X-Pack A/T",
+      "engine": "2",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "vehicleClass": "MPV",
+      "priceBand": "mid",
+      "price": 2280000,
+      "priceFormatted": "₺2.280.000",
+      "dealScore": 64,
+      "zScore": -0.53,
+      "percentile": 36,
+      "segmentAvg": 2316357,
+      "segmentSize": 7,
+      "isOutlier": false,
+      "outlierType": null,
+      "campaignDiscount": 4.3,
       "modelYear": 2025
     },
     {
@@ -3440,22 +3730,22 @@
       "brandId": "toyota",
       "model": "Proace Verso",
       "trim": "2.2 D 180 HP Passion X-Pack A/T",
-      "engine": 2,
+      "engine": "2",
       "fuel": "Dizel",
       "transmission": "Otomatik",
       "vehicleClass": "MPV",
       "priceBand": "mid",
-      "price": 2265000,
-      "priceFormatted": "₺2.265.000",
-      "dealScore": 70,
-      "zScore": -0.56,
-      "percentile": 30,
-      "segmentAvg": 2312000,
-      "segmentSize": 5,
+      "price": 2345500,
+      "priceFormatted": "₺2.345.500",
+      "dealScore": 36,
+      "zScore": 0.43,
+      "percentile": 64,
+      "segmentAvg": 2316357,
+      "segmentSize": 7,
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 4.9,
-      "modelYear": 2025
+      "modelYear": 2026
     },
     {
       "id": "toyota-proace-cargo-2.0-d-145-hp-flame-m/t-2",
@@ -3463,21 +3753,21 @@
       "brandId": "toyota",
       "model": "Proace Cargo",
       "trim": "2.0 D 145 HP Flame M/T",
-      "engine": 2,
+      "engine": "2",
       "fuel": "Dizel",
       "transmission": "Manuel",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1569000,
-      "priceFormatted": "₺1.569.000",
-      "dealScore": 54,
-      "zScore": 0.12,
-      "percentile": 46,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "price": 1574000,
+      "priceFormatted": "₺1.574.000",
+      "dealScore": 63,
+      "zScore": -0.03,
+      "percentile": 37,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3.3,
+      "campaignDiscount": 3,
       "modelYear": 2025
     },
     {
@@ -3486,18 +3776,18 @@
       "brandId": "toyota",
       "model": "Proace Max",
       "trim": "2.2 D 140 HP 13M³ M/T",
-      "engine": 2.2,
+      "engine": "2.2",
       "fuel": "Dizel",
       "transmission": "Manuel",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1625000,
-      "priceFormatted": "₺1.625.000",
-      "dealScore": 46,
-      "zScore": 0.38,
-      "percentile": 54,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "price": 1626500,
+      "priceFormatted": "₺1.626.500",
+      "dealScore": 50,
+      "zScore": 0.23,
+      "percentile": 50,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 7.1,
@@ -3509,21 +3799,21 @@
       "brandId": "toyota",
       "model": "Proace Max",
       "trim": "2.2 D 180 HP 15M³ M/T",
-      "engine": 2.2,
+      "engine": "2.2",
       "fuel": "Dizel",
       "transmission": "Manuel",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1695000,
-      "priceFormatted": "₺1.695.000",
+      "price": 1696500,
+      "priceFormatted": "₺1.696.500",
       "dealScore": 37,
-      "zScore": 0.71,
+      "zScore": 0.58,
       "percentile": 63,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 6.9,
+      "campaignDiscount": 6.8,
       "modelYear": 2025
     },
     {
@@ -3532,21 +3822,21 @@
       "brandId": "toyota",
       "model": "Proace Max",
       "trim": "2.2 D 180 HP 17M³ M/T",
-      "engine": 2.2,
+      "engine": "2.2",
       "fuel": "Dizel",
       "transmission": "Manuel",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1745000,
-      "priceFormatted": "₺1.745.000",
-      "dealScore": 12,
-      "zScore": 0.95,
-      "percentile": 88,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "price": 1746500,
+      "priceFormatted": "₺1.746.500",
+      "dealScore": 23,
+      "zScore": 0.82,
+      "percentile": 77,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 6.7,
+      "campaignDiscount": 6.6,
       "modelYear": 2025
     },
     {
@@ -3555,21 +3845,21 @@
       "brandId": "toyota",
       "model": "Proace Max Kamyonet",
       "trim": "2.2 D 140 HP L4 Kasalı M/T",
-      "engine": 2.2,
+      "engine": "2.2",
       "fuel": "Dizel",
       "transmission": "Manuel",
       "vehicleClass": "MPV",
       "priceBand": "budget",
-      "price": 1695000,
-      "priceFormatted": "₺1.695.000",
+      "price": 1696500,
+      "priceFormatted": "₺1.696.500",
       "dealScore": 37,
-      "zScore": 0.71,
+      "zScore": 0.58,
       "percentile": 63,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 8.4,
+      "campaignDiscount": 8.3,
       "modelYear": 2025
     },
     {
@@ -4626,7 +4916,9 @@
       "segmentSize": 10,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2
+      "campaignDiscount": 2,
+      "powerKW": 100,
+      "isElectric": true
     },
     {
       "id": "peugeot-e-308-gt-115-kw",
@@ -4647,7 +4939,9 @@
       "segmentAvg": 2292878,
       "segmentSize": 9,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerKW": 115,
+      "isElectric": true
     },
     {
       "id": "peugeot-2008-allure-1.2-puretech-130-hp",
@@ -4668,7 +4962,10 @@
       "segmentAvg": 2692193,
       "segmentSize": 38,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 130,
+      "engineDisplacement": "1.2L",
+      "tlPerHP": 16777
     },
     {
       "id": "peugeot-2008-allure-1.2-hybrid-145-hp",
@@ -4683,14 +4980,18 @@
       "priceBand": "mid",
       "price": 2283000,
       "priceFormatted": "₺2.283.000",
-      "dealScore": 81,
-      "zScore": -0.98,
-      "percentile": 19,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 80,
+      "zScore": -1.02,
+      "percentile": 20,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2
+      "campaignDiscount": 2,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 15745
     },
     {
       "id": "peugeot-2008-gt-1.2-hybrid-145-hp",
@@ -4705,14 +5006,18 @@
       "priceBand": "mid",
       "price": 2370000,
       "priceFormatted": "₺2.370.000",
-      "dealScore": 78,
-      "zScore": -0.76,
-      "percentile": 22,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 77,
+      "zScore": -0.8,
+      "percentile": 23,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 7.7
+      "campaignDiscount": 7.7,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 16345
     },
     {
       "id": "peugeot-e-2008-allure-100-kw",
@@ -4733,7 +5038,9 @@
       "segmentAvg": 2722034,
       "segmentSize": 14,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerKW": 100,
+      "isElectric": true
     },
     {
       "id": "peugeot-e-2008-allure-115-kw",
@@ -4755,7 +5062,9 @@
       "segmentSize": 14,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 5.8
+      "campaignDiscount": 5.8,
+      "powerKW": 115,
+      "isElectric": true
     },
     {
       "id": "peugeot-e-2008-gt-115-kw",
@@ -4777,7 +5086,9 @@
       "segmentSize": 14,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4.1
+      "campaignDiscount": 4.1,
+      "powerKW": 115,
+      "isElectric": true
     },
     {
       "id": "peugeot-408-allure-1.2-puretech-130-hp",
@@ -4792,13 +5103,16 @@
       "priceBand": "mid",
       "price": 2175000,
       "priceFormatted": "₺2.175.000",
-      "dealScore": 78,
-      "zScore": -0.9,
-      "percentile": 22,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 81,
+      "zScore": -0.86,
+      "percentile": 19,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 130,
+      "engineDisplacement": "1.2L",
+      "tlPerHP": 16731
     },
     {
       "id": "peugeot-408-allure-1.2-puretech-130-hp",
@@ -4813,13 +5127,16 @@
       "priceBand": "mid",
       "price": 2255000,
       "priceFormatted": "₺2.255.000",
-      "dealScore": 66,
-      "zScore": -0.72,
-      "percentile": 34,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 64,
+      "zScore": -0.68,
+      "percentile": 36,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 130,
+      "engineDisplacement": "1.2L",
+      "tlPerHP": 17346
     },
     {
       "id": "peugeot-408-gt-1.2-puretech-130-hp",
@@ -4834,13 +5151,16 @@
       "priceBand": "mid",
       "price": 2670000,
       "priceFormatted": "₺2.670.000",
-      "dealScore": 41,
-      "zScore": 0.21,
-      "percentile": 59,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 36,
+      "zScore": 0.28,
+      "percentile": 64,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 130,
+      "engineDisplacement": "1.2L",
+      "tlPerHP": 20538
     },
     {
       "id": "peugeot-408-allure-1.2-hybrid-145-hp",
@@ -4855,14 +5175,18 @@
       "priceBand": "mid",
       "price": 2336000,
       "priceFormatted": "₺2.336.000",
-      "dealScore": 61,
-      "zScore": -0.4,
-      "percentile": 39,
-      "segmentAvg": 2399889,
+      "dealScore": 72,
+      "zScore": -0.68,
+      "percentile": 28,
+      "segmentAvg": 2470500,
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 1.7
+      "campaignDiscount": 1.7,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 16110
     },
     {
       "id": "peugeot-408-allure-1.2-hybrid-145-hp",
@@ -4877,14 +5201,18 @@
       "priceBand": "mid",
       "price": 2545000,
       "priceFormatted": "₺2.545.000",
-      "dealScore": 17,
-      "zScore": 0.9,
-      "percentile": 83,
-      "segmentAvg": 2399889,
+      "dealScore": 28,
+      "zScore": 0.38,
+      "percentile": 72,
+      "segmentAvg": 2470500,
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 1.8
+      "campaignDiscount": 1.8,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 17552
     },
     {
       "id": "peugeot-408-gt-1.2-hybrid-145-hp",
@@ -4899,14 +5227,18 @@
       "priceBand": "mid",
       "price": 2710000,
       "priceFormatted": "₺2.710.000",
-      "dealScore": 6,
-      "zScore": 1.93,
-      "percentile": 94,
-      "segmentAvg": 2399889,
+      "dealScore": 17,
+      "zScore": 1.21,
+      "percentile": 83,
+      "segmentAvg": 2470500,
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3.9
+      "campaignDiscount": 3.9,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 18690
     },
     {
       "id": "peugeot-3008-allure-1.2-hybrid-145-hp",
@@ -4921,14 +5253,18 @@
       "priceBand": "mid",
       "price": 2725000,
       "priceFormatted": "₺2.725.000",
-      "dealScore": 40,
-      "zScore": 0.12,
-      "percentile": 60,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 41,
+      "zScore": 0.09,
+      "percentile": 59,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4.4
+      "campaignDiscount": 4.4,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 18793
     },
     {
       "id": "peugeot-3008-gt-1.2-hybrid-145-hp",
@@ -4943,14 +5279,18 @@
       "priceBand": "mid",
       "price": 2950000,
       "priceFormatted": "₺2.950.000",
-      "dealScore": 28,
-      "zScore": 0.69,
-      "percentile": 72,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 29,
+      "zScore": 0.65,
+      "percentile": 71,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 9.5
+      "campaignDiscount": 9.5,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 20345
     },
     {
       "id": "peugeot-e-3008-allure-157-kw",
@@ -4972,7 +5312,11 @@
       "segmentSize": 14,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 6
+      "campaignDiscount": 6,
+      "powerHP": 210,
+      "powerKW": 157,
+      "isElectric": true,
+      "tlPerHP": 14857
     },
     {
       "id": "peugeot-e-3008-gt-157-kw",
@@ -4993,7 +5337,11 @@
       "segmentAvg": 4089745,
       "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 210,
+      "powerKW": 157,
+      "isElectric": true,
+      "tlPerHP": 16736
     },
     {
       "id": "peugeot-5008-allure-1.2-hybrid-145-hp",
@@ -5008,14 +5356,18 @@
       "priceBand": "mid",
       "price": 3218500,
       "priceFormatted": "₺3.218.500",
-      "dealScore": 13,
-      "zScore": 1.36,
-      "percentile": 87,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 17,
+      "zScore": 1.32,
+      "percentile": 83,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.2
+      "campaignDiscount": 2.2,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 22197
     },
     {
       "id": "peugeot-5008-gt-1.2-hybrid-145-hp",
@@ -5030,14 +5382,18 @@
       "priceBand": "mid",
       "price": 3422500,
       "priceFormatted": "₺3.422.500",
-      "dealScore": 4,
-      "zScore": 1.87,
-      "percentile": 96,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 5,
+      "zScore": 1.83,
+      "percentile": 95,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2
+      "campaignDiscount": 2,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 23603
     },
     {
       "id": "peugeot-e-5008-allure-157-kw",
@@ -5058,7 +5414,11 @@
       "segmentAvg": 4089745,
       "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 210,
+      "powerKW": 157,
+      "isElectric": true,
+      "tlPerHP": 16676
     },
     {
       "id": "peugeot-e-5008-gt-157-kw",
@@ -5079,7 +5439,11 @@
       "segmentAvg": 4089745,
       "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 210,
+      "powerKW": 157,
+      "isElectric": true,
+      "tlPerHP": 17352
     },
     {
       "id": "peugeot-rifter-allure-1.5-bluehdi-130-hp",
@@ -5101,7 +5465,10 @@
       "segmentSize": 7,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.4
+      "campaignDiscount": 2.4,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 11585
     },
     {
       "id": "peugeot-rifter-allure-1.5-bluehdi-130-hp",
@@ -5123,7 +5490,10 @@
       "segmentSize": 7,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.5
+      "campaignDiscount": 2.5,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 13858
     },
     {
       "id": "peugeot-rifter-gt-1.5-bluehdi-130-hp",
@@ -5145,7 +5515,10 @@
       "segmentSize": 4,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.5
+      "campaignDiscount": 2.5,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 15585
     },
     {
       "id": "peugeot-partner-van-comfort-1.5-bluehdi-100-hp",
@@ -5160,13 +5533,16 @@
       "priceBand": "budget",
       "price": 1237500,
       "priceFormatted": "₺1.237.500",
-      "dealScore": 87,
-      "zScore": -1.46,
-      "percentile": 13,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "dealScore": 90,
+      "zScore": -1.68,
+      "percentile": 10,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 100,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 12375
     },
     {
       "id": "peugeot-partner-van-comfort-1.5-bluehdi-130-hp",
@@ -5181,14 +5557,17 @@
       "priceBand": "budget",
       "price": 1297500,
       "priceFormatted": "₺1.297.500",
-      "dealScore": 79,
-      "zScore": -1.18,
-      "percentile": 21,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "dealScore": 83,
+      "zScore": -1.39,
+      "percentile": 17,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.4
+      "campaignDiscount": 2.4,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 9981
     },
     {
       "id": "peugeot-partner-van-comfort-1.5-bluehdi-130-hp",
@@ -5203,14 +5582,17 @@
       "priceBand": "budget",
       "price": 1371000,
       "priceFormatted": "₺1.371.000",
-      "dealScore": 71,
-      "zScore": -0.83,
-      "percentile": 29,
-      "segmentAvg": 1544792,
-      "segmentSize": 12,
+      "dealScore": 77,
+      "zScore": -1.02,
+      "percentile": 23,
+      "segmentAvg": 1579100,
+      "segmentSize": 15,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.4
+      "campaignDiscount": 2.4,
+      "powerHP": 130,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 10546
     },
     {
       "id": "peugeot-expert-traveller-allure-2.0-bluehdi-180-hp",
@@ -5226,12 +5608,15 @@
       "price": 2290500,
       "priceFormatted": "₺2.290.500",
       "dealScore": 50,
-      "zScore": -0.26,
+      "zScore": -0.38,
       "percentile": 50,
-      "segmentAvg": 2312000,
-      "segmentSize": 5,
+      "segmentAvg": 2316357,
+      "segmentSize": 7,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 180,
+      "engineDisplacement": "2.0L",
+      "tlPerHP": 12725
     },
     {
       "id": "peugeot-expert-traveller-allure-2.2-bluehdi-180-hp",
@@ -5246,14 +5631,17 @@
       "priceBand": "mid",
       "price": 2360500,
       "priceFormatted": "₺2.360.500",
-      "dealScore": 30,
-      "zScore": 0.58,
-      "percentile": 70,
-      "segmentAvg": 2312000,
-      "segmentSize": 5,
+      "dealScore": 21,
+      "zScore": 0.65,
+      "percentile": 79,
+      "segmentAvg": 2316357,
+      "segmentSize": 7,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.5
+      "campaignDiscount": 2.5,
+      "powerHP": 180,
+      "engineDisplacement": "2.2L",
+      "tlPerHP": 13114
     },
     {
       "id": "byd-atto-2-boost-byd-130-kw",
@@ -5277,7 +5665,13 @@
       "outlierType": null,
       "otvRate": 25,
       "modelYear": 2025,
-      "fuelConsumption": "14.5 kWh/100km"
+      "fuelConsumption": "14.5 kWh/100km",
+      "powerKW": 130,
+      "driveType": "RWD",
+      "wltpRange": 312,
+      "batteryCapacity": 45.3,
+      "isElectric": true,
+      "tlPerKm": 5048
     },
     {
       "id": "byd-atto-2-comfort-byd-130-kw",
@@ -5301,7 +5695,13 @@
       "outlierType": null,
       "otvRate": 25,
       "modelYear": 2025,
-      "fuelConsumption": "14.5 kWh/100km"
+      "fuelConsumption": "14.5 kWh/100km",
+      "powerKW": 130,
+      "driveType": "RWD",
+      "wltpRange": 312,
+      "batteryCapacity": 45.3,
+      "isElectric": true,
+      "tlPerKm": 5385
     },
     {
       "id": "byd-dolphin-comfort-byd-150-kw",
@@ -5326,7 +5726,13 @@
       "campaignDiscount": 1.7,
       "otvRate": 25,
       "modelYear": 2025,
-      "fuelConsumption": "15.9 kWh/100km"
+      "fuelConsumption": "15.9 kWh/100km",
+      "powerKW": 150,
+      "driveType": "RWD",
+      "wltpRange": 427,
+      "batteryCapacity": 60.5,
+      "isElectric": true,
+      "tlPerKm": 4026
     },
     {
       "id": "byd-dolphin-design-byd-150-kw",
@@ -5351,7 +5757,13 @@
       "campaignDiscount": 1.6,
       "otvRate": 25,
       "modelYear": 2025,
-      "fuelConsumption": "15.9 kWh/100km"
+      "fuelConsumption": "15.9 kWh/100km",
+      "powerKW": 150,
+      "driveType": "RWD",
+      "wltpRange": 427,
+      "batteryCapacity": 60.5,
+      "isElectric": true,
+      "tlPerKm": 4354
     },
     {
       "id": "byd-atto-3-design-byd-150-kw",
@@ -5375,7 +5787,13 @@
       "outlierType": null,
       "otvRate": 25,
       "modelYear": 2025,
-      "fuelConsumption": "16.0 kWh/100km"
+      "fuelConsumption": "16.0 kWh/100km",
+      "powerKW": 150,
+      "driveType": "RWD",
+      "wltpRange": 420,
+      "batteryCapacity": 60.5,
+      "isElectric": true,
+      "tlPerKm": 5260
     },
     {
       "id": "byd-seal-u-ev-design-byd-160-kw",
@@ -5399,7 +5817,13 @@
       "outlierType": null,
       "otvRate": 25,
       "modelYear": 2025,
-      "fuelConsumption": "20.5 kWh/100km"
+      "fuelConsumption": "20.5 kWh/100km",
+      "powerKW": 160,
+      "driveType": "RWD",
+      "wltpRange": 500,
+      "batteryCapacity": 71.8,
+      "isElectric": true,
+      "tlPerKm": 4978
     },
     {
       "id": "byd-seal-design-byd-160-kw",
@@ -5424,7 +5848,13 @@
       "campaignDiscount": 4.8,
       "otvRate": 25,
       "modelYear": 2025,
-      "fuelConsumption": "13.3 kWh/100km"
+      "fuelConsumption": "13.3 kWh/100km",
+      "powerKW": 160,
+      "driveType": "RWD",
+      "wltpRange": 460,
+      "batteryCapacity": 61.4,
+      "isElectric": true,
+      "tlPerKm": 5150
     },
     {
       "id": "byd-seal-excellence-byd-390-kw-awd",
@@ -5448,7 +5878,13 @@
       "outlierType": null,
       "otvRate": 75,
       "modelYear": 2025,
-      "fuelConsumption": "15.9 kWh/100km"
+      "fuelConsumption": "15.9 kWh/100km",
+      "powerKW": 390,
+      "driveType": "AWD",
+      "wltpRange": 520,
+      "batteryCapacity": 82.5,
+      "isElectric": true,
+      "tlPerKm": 7690
     },
     {
       "id": "byd-sealion-7-design-byd-160kw",
@@ -5472,7 +5908,13 @@
       "outlierType": null,
       "otvRate": 25,
       "modelYear": 2025,
-      "fuelConsumption": "16.4 kWh/100km"
+      "fuelConsumption": "16.4 kWh/100km",
+      "powerKW": 160,
+      "driveType": "RWD",
+      "wltpRange": 502,
+      "batteryCapacity": 82.5,
+      "isElectric": true,
+      "tlPerKm": 4958
     },
     {
       "id": "byd-sealion-7-excellence-byd-390kw-awd",
@@ -5496,7 +5938,13 @@
       "outlierType": null,
       "otvRate": 75,
       "modelYear": 2025,
-      "fuelConsumption": "16.8 kWh/100km"
+      "fuelConsumption": "16.8 kWh/100km",
+      "powerKW": 390,
+      "driveType": "AWD",
+      "wltpRange": 542,
+      "batteryCapacity": 91.3,
+      "isElectric": true,
+      "tlPerKm": 7581
     },
     {
       "id": "byd-han-executive-byd-380-kw-awd",
@@ -5520,7 +5968,13 @@
       "outlierType": null,
       "otvRate": 75,
       "modelYear": 2025,
-      "fuelConsumption": "18.5 kWh/100km"
+      "fuelConsumption": "18.5 kWh/100km",
+      "powerKW": 380,
+      "driveType": "AWD",
+      "wltpRange": 521,
+      "batteryCapacity": 85.4,
+      "isElectric": true,
+      "tlPerKm": 9173
     },
     {
       "id": "byd-tang-flagship-byd-380-kw-awd",
@@ -5544,7 +5998,13 @@
       "outlierType": "expensive",
       "otvRate": 75,
       "modelYear": 2025,
-      "fuelConsumption": "24.0 kWh/100km"
+      "fuelConsumption": "24.0 kWh/100km",
+      "powerKW": 380,
+      "driveType": "AWD",
+      "wltpRange": 530,
+      "batteryCapacity": 108.8,
+      "isElectric": true,
+      "tlPerKm": 10026
     },
     {
       "id": "opel-corsa-edition-1.2-100-hp-benzin",
@@ -5626,10 +6086,10 @@
       "priceBand": "budget",
       "price": 1960000,
       "priceFormatted": "₺1.960.000",
-      "dealScore": 20,
-      "zScore": 1.21,
+      "dealScore": 28,
+      "zScore": 0.87,
       "percentile": 83,
-      "segmentAvg": 1876000,
+      "segmentAvg": 1894667,
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
@@ -5648,11 +6108,11 @@
       "priceBand": "mid",
       "price": 2078000,
       "priceFormatted": "₺2.078.000",
-      "dealScore": 92,
-      "zScore": -1.3,
-      "percentile": 8,
-      "segmentAvg": 2265750,
-      "segmentSize": 6,
+      "dealScore": 94,
+      "zScore": -1.58,
+      "percentile": 6,
+      "segmentAvg": 2310778,
+      "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": "MY26"
@@ -5694,9 +6154,9 @@
       "price": 2157000,
       "priceFormatted": "₺2.157.000",
       "dealScore": 94,
-      "zScore": -1.51,
+      "zScore": -1.58,
       "percentile": 6,
-      "segmentAvg": 2399889,
+      "segmentAvg": 2470500,
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
@@ -5715,10 +6175,10 @@
       "priceBand": "mid",
       "price": 2285000,
       "priceFormatted": "₺2.285.000",
-      "dealScore": 72,
-      "zScore": -0.71,
-      "percentile": 28,
-      "segmentAvg": 2399889,
+      "dealScore": 83,
+      "zScore": -0.94,
+      "percentile": 17,
+      "segmentAvg": 2470500,
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
@@ -5848,11 +6308,11 @@
       "priceBand": "mid",
       "price": 2598000,
       "priceFormatted": "₺2.598.000",
-      "dealScore": 51,
-      "zScore": -0.19,
-      "percentile": 49,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 56,
+      "zScore": -0.23,
+      "percentile": 44,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 8.7,
@@ -5938,11 +6398,11 @@
       "priceBand": "mid",
       "price": 2968000,
       "priceFormatted": "₺2.968.000",
-      "dealScore": 22,
-      "zScore": 0.73,
-      "percentile": 78,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 23,
+      "zScore": 0.69,
+      "percentile": 77,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 2.6,
@@ -5961,11 +6421,11 @@
       "priceBand": "mid",
       "price": 3071000,
       "priceFormatted": "₺3.071.000",
-      "dealScore": 19,
-      "zScore": 0.99,
-      "percentile": 81,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 20,
+      "zScore": 0.95,
+      "percentile": 80,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
       "modelYear": "MY26"
@@ -6070,11 +6530,11 @@
       "priceBand": "mid",
       "price": 2106000,
       "priceFormatted": "₺2.106.000",
-      "dealScore": 93,
-      "zScore": -1.42,
-      "percentile": 7,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 95,
+      "zScore": -1.46,
+      "percentile": 5,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null
     },
@@ -6091,11 +6551,11 @@
       "priceBand": "mid",
       "price": 2150000,
       "priceFormatted": "₺2.150.000",
-      "dealScore": 87,
-      "zScore": -1.31,
-      "percentile": 13,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 89,
+      "zScore": -1.35,
+      "percentile": 11,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null
     },
@@ -6175,11 +6635,11 @@
       "priceBand": "mid",
       "price": 2600000,
       "priceFormatted": "₺2.600.000",
-      "dealScore": 49,
-      "zScore": -0.19,
-      "percentile": 51,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 53,
+      "zScore": -0.23,
+      "percentile": 47,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null
     },
@@ -6196,11 +6656,11 @@
       "priceBand": "mid",
       "price": 2800000,
       "priceFormatted": "₺2.800.000",
-      "dealScore": 34,
-      "zScore": 0.31,
-      "percentile": 66,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 35,
+      "zScore": 0.27,
+      "percentile": 65,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null
     },
@@ -6343,11 +6803,11 @@
       "priceBand": "mid",
       "price": 2444000,
       "priceFormatted": "₺2.444.000",
-      "dealScore": 10,
-      "zScore": 1.58,
-      "percentile": 90,
-      "segmentAvg": 2312000,
-      "segmentSize": 5,
+      "dealScore": 7,
+      "zScore": 1.87,
+      "percentile": 93,
+      "segmentAvg": 2316357,
+      "segmentSize": 7,
       "isOutlier": false,
       "outlierType": null
     },
@@ -6394,7 +6854,12 @@
       "outlierType": null,
       "otvRate": 90,
       "fuelConsumption": "5,9",
-      "monthlyLease": 87782
+      "monthlyLease": 87782,
+      "powerHP": 156,
+      "engineDisplacement": "1.5L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 22759
     },
     {
       "id": "bmw-bmw-120-m-sport-1.5l-156+20-hp",
@@ -6418,7 +6883,12 @@
       "outlierType": null,
       "otvRate": 100,
       "fuelConsumption": "5,9",
-      "monthlyLease": 94861
+      "monthlyLease": 94861,
+      "powerHP": 156,
+      "engineDisplacement": "1.5L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 25884
     },
     {
       "id": "bmw-bmw-220-gran-coupé-sport-line-1.5l-156+20-hp",
@@ -6442,7 +6912,12 @@
       "outlierType": null,
       "otvRate": 100,
       "fuelConsumption": "5,8",
-      "monthlyLease": 85716
+      "monthlyLease": 85716,
+      "powerHP": 156,
+      "engineDisplacement": "1.5L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 25562
     },
     {
       "id": "bmw-bmw-220-gran-coupé-m-sport-1.5l-156+20-hp",
@@ -6466,7 +6941,12 @@
       "outlierType": null,
       "otvRate": 100,
       "fuelConsumption": "5,8",
-      "monthlyLease": 91399
+      "monthlyLease": 91399,
+      "powerHP": 156,
+      "engineDisplacement": "1.5L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 27257
     },
     {
       "id": "bmw-bmw-230e-xdrive-active-tourer-luxury-line-1.5l-150+177-hp",
@@ -6489,7 +6969,13 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "2,9"
+      "fuelConsumption": "2,9",
+      "powerHP": 150,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 31799
     },
     {
       "id": "bmw-bmw-230e-xdrive-active-tourer-m-sport-1.5l-150+177-hp",
@@ -6512,7 +6998,13 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "2,9"
+      "fuelConsumption": "2,9",
+      "powerHP": 150,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 33995
     },
     {
       "id": "bmw-bmw-320i-sedan-sport-line-1.6l-170-hp",
@@ -6536,7 +7028,10 @@
       "outlierType": null,
       "otvRate": 100,
       "fuelConsumption": "7,6",
-      "monthlyLease": 92281
+      "monthlyLease": 92281,
+      "powerHP": 170,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 30223
     },
     {
       "id": "bmw-bmw-320i-sedan-m-sport-1.6l-170-hp",
@@ -6559,7 +7054,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "7,6"
+      "fuelConsumption": "7,6",
+      "powerHP": 170,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 32732
     },
     {
       "id": "bmw-bmw-420i-coupé-m-sport-1.6l-170-hp",
@@ -6582,7 +7080,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "7,7"
+      "fuelConsumption": "7,7",
+      "powerHP": 170,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 37419
     },
     {
       "id": "bmw-bmw-420i-coupé-edition-m-sport-1.6l-170-hp",
@@ -6605,7 +7106,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "7,7"
+      "fuelConsumption": "7,7",
+      "powerHP": 170,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 42114
     },
     {
       "id": "bmw-bmw-430i-xdrive-cabrio-m-sport-2.0l-245-hp",
@@ -6628,7 +7132,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "fuelConsumption": "8,0"
+      "fuelConsumption": "8,0",
+      "powerHP": 245,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 37954
     },
     {
       "id": "bmw-bmw-420i-gran-coupé-m-sport-1.6l-170-hp",
@@ -6652,7 +7160,10 @@
       "outlierType": null,
       "otvRate": 100,
       "fuelConsumption": "7,8",
-      "monthlyLease": 164264
+      "monthlyLease": 164264,
+      "powerHP": 170,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 36375
     },
     {
       "id": "bmw-bmw-420i-gran-coupé-edition-m-sport-1.6l-170-hp",
@@ -6676,7 +7187,10 @@
       "outlierType": null,
       "otvRate": 100,
       "fuelConsumption": "7,8",
-      "monthlyLease": 185788
+      "monthlyLease": 185788,
+      "powerHP": 170,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 41142
     },
     {
       "id": "bmw-bmw-i4-edrive40-m-sport-218-hp",
@@ -6699,7 +7213,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "fuelConsumption": "18,6"
+      "fuelConsumption": "18,6",
+      "powerHP": 218,
+      "isElectric": true,
+      "tlPerHP": 25542
     },
     {
       "id": "bmw-bmw-i4-edrive40-edition-m-sport-218-hp",
@@ -6722,7 +7239,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "fuelConsumption": "18,6"
+      "fuelConsumption": "18,6",
+      "powerHP": 218,
+      "isElectric": true,
+      "tlPerHP": 28205
     },
     {
       "id": "bmw-bmw-520i-sedan-m-sport-1.6l-190+11-hp",
@@ -6746,7 +7266,12 @@
       "outlierType": null,
       "otvRate": 100,
       "fuelConsumption": "7,0",
-      "monthlyLease": 163663
+      "monthlyLease": 163663,
+      "powerHP": 190,
+      "engineDisplacement": "1.6L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 41885
     },
     {
       "id": "bmw-bmw-520i-sedan-edition-m-sport-1.6l-190+11-hp",
@@ -6769,7 +7294,12 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "7,0"
+      "fuelConsumption": "7,0",
+      "powerHP": 190,
+      "engineDisplacement": "1.6L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 44526
     },
     {
       "id": "bmw-bmw-520d-xdrive-sedan-m-sport-2.0l-197+11-hp",
@@ -6793,7 +7323,13 @@
       "outlierType": null,
       "otvRate": 170,
       "fuelConsumption": "5,6",
-      "monthlyLease": 368423
+      "monthlyLease": 368423,
+      "powerHP": 197,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 53110
     },
     {
       "id": "bmw-bmw-520d-xdrive-sedan-edition-m-sport-2.0l-197+11-hp",
@@ -6816,7 +7352,13 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "fuelConsumption": "5,6"
+      "fuelConsumption": "5,6",
+      "powerHP": 197,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 58445
     },
     {
       "id": "bmw-bmw-i5-edrive40-m-sport-218-hp",
@@ -6840,7 +7382,10 @@
       "outlierType": null,
       "otvRate": 55,
       "fuelConsumption": "18,8",
-      "monthlyLease": 175370
+      "monthlyLease": 175370,
+      "powerHP": 218,
+      "isElectric": true,
+      "tlPerHP": 30404
     },
     {
       "id": "bmw-bmw-i5-edrive40-edition-m-sport-218-hp",
@@ -6863,7 +7408,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "fuelConsumption": "18,8"
+      "fuelConsumption": "18,8",
+      "powerHP": 218,
+      "isElectric": true,
+      "tlPerHP": 32246
     },
     {
       "id": "bmw-bmw-i5-xdrive40-m-sport-394-hp",
@@ -6886,7 +7434,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "fuelConsumption": "19,9"
+      "fuelConsumption": "19,9",
+      "powerHP": 394,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 18872
     },
     {
       "id": "bmw-bmw-i5-xdrive40-edition-m-sport-394-hp",
@@ -6909,7 +7461,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "fuelConsumption": "19,9"
+      "fuelConsumption": "19,9",
+      "powerHP": 394,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 19848
     },
     {
       "id": "bmw-bmw-i5-xdrive40-touring-m-sport-394-hp",
@@ -6932,7 +7488,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "fuelConsumption": "19,5"
+      "fuelConsumption": "19,5",
+      "powerHP": 394,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 19257
     },
     {
       "id": "bmw-bmw-i5-xdrive40-touring-edition-m-sport-394-hp",
@@ -6955,7 +7515,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "fuelConsumption": "19,5"
+      "fuelConsumption": "19,5",
+      "powerHP": 394,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 20233
     },
     {
       "id": "bmw-bmw-i5-m60-xdrive-m-601-hp",
@@ -6978,7 +7542,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "fuelConsumption": "20,5"
+      "fuelConsumption": "20,5",
+      "powerHP": 601,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 15823
     },
     {
       "id": "bmw-bmw-i5-m60-xdrive-touring-m-601-hp",
@@ -7001,7 +7569,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "fuelConsumption": "20,8"
+      "fuelConsumption": "20,8",
+      "powerHP": 601,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 15987
     },
     {
       "id": "bmw-bmw-740d-xdrive-sedan-pure-excellence-3.0l-286+18-hp",
@@ -7024,7 +7596,13 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "6,8"
+      "fuelConsumption": "6,8",
+      "powerHP": 286,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 68145
     },
     {
       "id": "bmw-bmw-740d-xdrive-sedan-m-excellence-3.0l-286+18-hp",
@@ -7047,7 +7625,13 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "6,8"
+      "fuelConsumption": "6,8",
+      "powerHP": 286,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 71570
     },
     {
       "id": "bmw-bmw-i7-xdrive60-pure-excellence-544-hp",
@@ -7071,7 +7655,11 @@
       "outlierType": null,
       "otvRate": 75,
       "fuelConsumption": "22,2",
-      "monthlyLease": 692848
+      "monthlyLease": 692848,
+      "powerHP": 544,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 24390
     },
     {
       "id": "bmw-bmw-i7-xdrive60-m-excellence-544-hp",
@@ -7094,7 +7682,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "fuelConsumption": "22,2"
+      "fuelConsumption": "22,2",
+      "powerHP": 544,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 25280
     },
     {
       "id": "bmw-bmw-i7-m70-m-659-hp",
@@ -7117,7 +7709,10 @@
       "isOutlier": true,
       "outlierType": "expensive",
       "otvRate": 75,
-      "fuelConsumption": "23,7"
+      "fuelConsumption": "23,7",
+      "powerHP": 659,
+      "isElectric": true,
+      "tlPerHP": 23074
     },
     {
       "id": "bmw-bmw-840i-xdrive-coupe-m-sport-3.0l-333-hp",
@@ -7140,7 +7735,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "8,9"
+      "fuelConsumption": "8,9",
+      "powerHP": 333,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "tlPerHP": 58814
     },
     {
       "id": "bmw-bmw-840i-xdrive-cabrio-m-sport-3.0l-333-hp",
@@ -7163,7 +7762,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "9,2"
+      "fuelConsumption": "9,2",
+      "powerHP": 333,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "tlPerHP": 61012
     },
     {
       "id": "bmw-bmw-840i-xdrive-gran-coupe-m-sport-3.0l-333-hp",
@@ -7186,7 +7789,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "9,2"
+      "fuelConsumption": "9,2",
+      "powerHP": 333,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "tlPerHP": 60449
     },
     {
       "id": "bmw-bmw-x1-sdrive20i-x-line-1.5l-156+20-hp",
@@ -7209,7 +7816,13 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "2,8"
+      "fuelConsumption": "2,8",
+      "powerHP": 156,
+      "engineDisplacement": "1.5L",
+      "driveType": "RWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 28635
     },
     {
       "id": "bmw-bmw-x1-sdrive20i-m-sport-1.5l-156+20-hp",
@@ -7232,7 +7845,13 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "2,8"
+      "fuelConsumption": "2,8",
+      "powerHP": 156,
+      "engineDisplacement": "1.5L",
+      "driveType": "RWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 30212
     },
     {
       "id": "bmw-bmw-x1-xdrive25e-x-line-1.5l-136+109-hp",
@@ -7256,7 +7875,13 @@
       "outlierType": null,
       "otvRate": 100,
       "fuelConsumption": "2,8",
-      "monthlyLease": 92500
+      "monthlyLease": 92500,
+      "powerHP": 136,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 38207
     },
     {
       "id": "bmw-bmw-x1-xdrive25e-m-sport-1.5l-136+109-hp",
@@ -7279,7 +7904,13 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "2,8"
+      "fuelConsumption": "2,8",
+      "powerHP": 136,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 39482
     },
     {
       "id": "bmw-bmw-ix1-edrive20-sport-line-204-hp",
@@ -7302,7 +7933,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "fuelConsumption": "16,7"
+      "fuelConsumption": "16,7",
+      "powerHP": 204,
+      "isElectric": true,
+      "tlPerHP": 18723
     },
     {
       "id": "bmw-bmw-ix1-edrive20-x-line-204-hp",
@@ -7325,7 +7959,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "fuelConsumption": "16,7"
+      "fuelConsumption": "16,7",
+      "powerHP": 204,
+      "isElectric": true,
+      "tlPerHP": 19708
     },
     {
       "id": "bmw-bmw-ix1-edrive20-m-sport-204-hp",
@@ -7348,7 +7985,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "fuelConsumption": "16,7"
+      "fuelConsumption": "16,7",
+      "powerHP": 204,
+      "isElectric": true,
+      "tlPerHP": 20177
     },
     {
       "id": "bmw-bmw-x2-sdrive20i-m-sport-1.5l-156+20-hp",
@@ -7371,7 +8011,13 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "fuelConsumption": "6,2"
+      "fuelConsumption": "6,2",
+      "powerHP": 156,
+      "engineDisplacement": "1.5L",
+      "driveType": "RWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 33411
     },
     {
       "id": "bmw-bmw-ix2-edrive20-sport-line-204-hp",
@@ -7394,7 +8040,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "fuelConsumption": "16,9"
+      "fuelConsumption": "16,9",
+      "powerHP": 204,
+      "isElectric": true,
+      "tlPerHP": 19004
     },
     {
       "id": "bmw-bmw-ix2-edrive20-m-sport-204-hp",
@@ -7417,7 +8066,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "fuelConsumption": "16,9"
+      "fuelConsumption": "16,9",
+      "powerHP": 204,
+      "isElectric": true,
+      "tlPerHP": 20728
     },
     {
       "id": "bmw-bmw-z4-sdrive30i-m-sport-2.0l-258-hp",
@@ -7440,7 +8092,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "fuelConsumption": "7,4"
+      "fuelConsumption": "7,4",
+      "powerHP": 258,
+      "engineDisplacement": "2.0L",
+      "driveType": "RWD",
+      "tlPerHP": 30543
     },
     {
       "id": "bmw-yeni-bmw-m2-m-3.0l-480-hp",
@@ -7463,7 +8119,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "9,8"
+      "fuelConsumption": "9,8",
+      "powerHP": 480,
+      "engineDisplacement": "3.0L",
+      "tlPerHP": 28662
     },
     {
       "id": "bmw-yeni-bmw-m3-sedan-competition-m-xdrive-m-3.0l-530-hp",
@@ -7486,7 +8145,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "10,1"
+      "fuelConsumption": "10,1",
+      "powerHP": 530,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "tlPerHP": 33596
     },
     {
       "id": "bmw-bmw-m3-touring-m-xdrive-m-3.0l-530-hp",
@@ -7509,7 +8172,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "10,4"
+      "fuelConsumption": "10,4",
+      "powerHP": 530,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "tlPerHP": 34128
     },
     {
       "id": "bmw-bmw-m4-competition-coupé-m-xdrive-m-3.0l-530-hp",
@@ -7532,7 +8199,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "10,1"
+      "fuelConsumption": "10,1",
+      "powerHP": 530,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "tlPerHP": 34815
     },
     {
       "id": "bmw-bmw-m4-competition-cabrio-m-xdrive-m-3.0l-530-hp",
@@ -7555,7 +8226,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "10,3"
+      "fuelConsumption": "10,3",
+      "powerHP": 530,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "tlPerHP": 35506
     },
     {
       "id": "bmw-bmw-m5-sedan-m-4.4l-585+197-hp",
@@ -7578,7 +8253,12 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "1,9"
+      "fuelConsumption": "1,9",
+      "powerHP": 585,
+      "engineDisplacement": "4.4L",
+      "isPlugInHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 38803
     },
     {
       "id": "bmw-yeni-bmw-m5-touring-m-4.4l-585+197-hp",
@@ -7601,7 +8281,12 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "fuelConsumption": "2.0"
+      "fuelConsumption": "2.0",
+      "powerHP": 585,
+      "engineDisplacement": "4.4L",
+      "isPlugInHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 39036
     },
     {
       "id": "bmw-bmw-x1-m35i-xdrive-m-2.0l-300-hp",
@@ -7624,7 +8309,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "fuelConsumption": "8,2"
+      "fuelConsumption": "8,2",
+      "powerHP": 300,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 25956
     },
     {
       "id": "bmw-bmw-x2-m35i-xdrive-m-2.0l-300-hp",
@@ -7647,7 +8336,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "fuelConsumption": "8,2"
+      "fuelConsumption": "8,2",
+      "powerHP": 300,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 26276
     },
     {
       "id": "bmw-yeni-bmw-ix-m70-xdrive-m-659-hp",
@@ -7670,7 +8363,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "fuelConsumption": "-"
+      "fuelConsumption": "-",
+      "powerHP": 659,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 16259
     },
     {
       "id": "bmw-yeni-bmw-ix-xdrive60-m-sport-544-hp",
@@ -7693,7 +8390,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "fuelConsumption": "17,9"
+      "fuelConsumption": "17,9",
+      "powerHP": 544,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 17674
     },
     {
       "id": "mercedes-benz-a-200-amg-1.3l-163-hp",
@@ -7708,15 +8409,18 @@
       "priceBand": "mid",
       "price": 3159000,
       "priceFormatted": "₺3.159.000",
-      "dealScore": 16,
-      "zScore": 1.31,
-      "percentile": 84,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 14,
+      "zScore": 1.4,
+      "percentile": 86,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 90,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 163,
+      "engineDisplacement": "1.3L",
+      "tlPerHP": 19380
     },
     {
       "id": "mercedes-benz-mercedes-amg-a-45-s-4matic+-final-edition-2.0l-421-hp",
@@ -7739,7 +8443,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 16437
     },
     {
       "id": "mercedes-benz-mercedes-amg-cla-45-s-4matic+-final-edition-2.0l-421-hp",
@@ -7762,7 +8470,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 17770
     },
     {
       "id": "mercedes-benz-mercedes-amg-cla-45-s-4matic+-shooting-brake-final-edition-2.0l-421-hp",
@@ -7785,7 +8497,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 18504
     },
     {
       "id": "mercedes-benz-mercedes-amg-gt-43-4matic+-performance-3.0l-367-hp",
@@ -7808,7 +8524,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 367,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "tlPerHP": 38323
     },
     {
       "id": "mercedes-benz-c-200-4matic-amg-1.5l-204-hp",
@@ -7831,7 +8551,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 204,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD",
+      "tlPerHP": 28284
     },
     {
       "id": "mercedes-benz-mercedes-amg-c-43-4matic-performance-2.0l-421-hp",
@@ -7854,7 +8578,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 18563
     },
     {
       "id": "mercedes-benz-mercedes-amg-c-63-s-e-performance---2.0l-680-hp",
@@ -7877,7 +8605,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 680,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true,
+      "tlPerHP": 17807
     },
     {
       "id": "mercedes-benz-c-200-4matic-all-terrain---1.5l-204-hp",
@@ -7900,7 +8632,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 204,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD",
+      "tlPerHP": 26647
     },
     {
       "id": "mercedes-benz-mercedes-amg-c-43-4matic-estate-performance-2.0l-421-hp",
@@ -7923,7 +8659,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 18831
     },
     {
       "id": "mercedes-benz-mercedes-amg-c-63-s-e-performance-estate---2.0l-680-hp",
@@ -7946,7 +8686,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 680,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true,
+      "tlPerHP": 17921
     },
     {
       "id": "mercedes-benz-e-180-exclusive-1.5l-170-hp",
@@ -7969,7 +8713,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 170,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 44265
     },
     {
       "id": "mercedes-benz-e-180-amg-1.5l-170-hp",
@@ -7992,7 +8739,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 170,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 44629
     },
     {
       "id": "mercedes-benz-e-220-d-4matic-exclusive-2.0l-197-hp",
@@ -8015,7 +8765,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 197,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 51741
     },
     {
       "id": "mercedes-benz-e-220-d-4matic-amg-2.0l-197-hp",
@@ -8038,7 +8792,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 197,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 52132
     },
     {
       "id": "mercedes-benz-mercedes-amg-e-53-hybrid-4matic+-performance-3.0l-585-hp",
@@ -8061,7 +8819,12 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 585,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "isHybrid": true,
+      "tlPerHP": 33039
     },
     {
       "id": "mercedes-benz-cle-300-4matic-coupé-amg-2.0l-258-hp",
@@ -8084,7 +8847,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 258,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 30663
     },
     {
       "id": "mercedes-benz-mercedes-amg-cle-53-4matic+-performance-3.0l-449-hp",
@@ -8107,7 +8874,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 449,
+      "engineDisplacement": "3.0L",
+      "driveType": "AWD",
+      "tlPerHP": 28754
     },
     {
       "id": "mercedes-benz-cle-300-4matic-cabriolet-amg-2.0l-258-hp",
@@ -8130,7 +8901,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 258,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 34376
     },
     {
       "id": "mercedes-benz-s-450-d-4matic-l-inspiration-2.9l-367-hp",
@@ -8153,7 +8928,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 367,
+      "engineDisplacement": "2.9L",
+      "driveType": "AWD",
+      "tlPerHP": 54029
     },
     {
       "id": "mercedes-benz-mercedes-amg-s-63-e-performance---4.0l-802-hp",
@@ -8176,7 +8955,11 @@
       "isOutlier": true,
       "outlierType": "expensive",
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 802,
+      "engineDisplacement": "4.0L",
+      "isHybrid": true,
+      "tlPerHP": 43927
     },
     {
       "id": "mercedes-benz-mercedes-maybach-s-580-4matic-inspiration+-4.0l-503-hp",
@@ -8199,7 +8982,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 503,
+      "engineDisplacement": "4.0L",
+      "driveType": "AWD",
+      "tlPerHP": 56930
     },
     {
       "id": "mercedes-benz-eqe-280-amg-218-hp",
@@ -8222,7 +9009,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 218,
+      "isElectric": true,
+      "tlPerHP": 25632
     },
     {
       "id": "mercedes-benz-eqe-350-4matic-amg-292-hp",
@@ -8245,7 +9035,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 292,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 21864
     },
     {
       "id": "mercedes-benz-mercedes-amg-eqe-53-4matic+-performance-625-hp",
@@ -8268,7 +9062,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 625,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 13127
     },
     {
       "id": "mercedes-benz-eqs-450-4matic-inspiration-360-hp",
@@ -8291,7 +9089,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 360,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 26212
     },
     {
       "id": "mercedes-benz-eqs-580-4matic-heritage-edition-523-hp",
@@ -8314,7 +9116,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 523,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 21102
     },
     {
       "id": "mercedes-benz-eqa-250+-amg-190-hp",
@@ -8337,7 +9143,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 190,
+      "isElectric": true,
+      "tlPerHP": 20588
     },
     {
       "id": "mercedes-benz-eqa-250+-night-edition-190-hp",
@@ -8360,7 +9169,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 55,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 190,
+      "isElectric": true,
+      "tlPerHP": 21131
     },
     {
       "id": "mercedes-benz-gla-200-amg-1.3l-163-hp",
@@ -8383,7 +9195,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 90,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 163,
+      "engineDisplacement": "1.3L",
+      "tlPerHP": 26184
     },
     {
       "id": "mercedes-benz-glb-200-progressive-1.3l-163-hp",
@@ -8406,7 +9221,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 90,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 163,
+      "engineDisplacement": "1.3L",
+      "tlPerHP": 28135
     },
     {
       "id": "mercedes-benz-glb-200-amg-1.3l-163-hp",
@@ -8429,7 +9247,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 90,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 163,
+      "engineDisplacement": "1.3L",
+      "tlPerHP": 29589
     },
     {
       "id": "mercedes-benz-glc-180-amg-1.5l-170-hp",
@@ -8452,7 +9273,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 170,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 37482
     },
     {
       "id": "mercedes-benz-glc-300-d-4matic-amg-2.0l-269-hp",
@@ -8475,7 +9299,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 269,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 31461
     },
     {
       "id": "mercedes-benz-mercedes-amg-glc-43-4matic-performance-2.0l-421-hp",
@@ -8498,7 +9326,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 22230
     },
     {
       "id": "mercedes-benz-mercedes-amg-glc-63-s-e-performance---2.0l-680-hp",
@@ -8521,7 +9353,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 680,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true,
+      "tlPerHP": 19790
     },
     {
       "id": "mercedes-benz-glc-180-coupé-amg-1.5l-170-hp",
@@ -8544,7 +9380,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 170,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 39924
     },
     {
       "id": "mercedes-benz-mercedes-amg-glc-43-4matic-coupé-performance-2.0l-421-hp",
@@ -8567,7 +9406,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "tlPerHP": 23439
     },
     {
       "id": "mercedes-benz-mercedes-amg-glc-63-s-e-performance-coupé---2.0l-680-hp",
@@ -8590,7 +9433,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 680,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true,
+      "tlPerHP": 20797
     },
     {
       "id": "mercedes-benz-g-580-heritage-587-hp",
@@ -8613,7 +9460,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 587,
+      "isElectric": true,
+      "tlPerHP": 24685
     },
     {
       "id": "mercedes-benz-g-450-d-heritage-3.0l-367-hp",
@@ -8636,7 +9486,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 367,
+      "engineDisplacement": "3.0L",
+      "tlPerHP": 55470
     },
     {
       "id": "mercedes-benz-g-500-heritage-3.0l-449-hp",
@@ -8659,7 +9512,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 449,
+      "engineDisplacement": "3.0L",
+      "tlPerHP": 48264
     },
     {
       "id": "mercedes-benz-mercedes-amg-g-63-performance-4.0l-585-hp",
@@ -8682,7 +9538,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 585,
+      "engineDisplacement": "4.0L",
+      "tlPerHP": 48126
     },
     {
       "id": "mercedes-benz-mercedes-amg-sl-43-performance-2.0l-421-hp",
@@ -8705,7 +9564,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "tlPerHP": 36178
     },
     {
       "id": "mercedes-benz-mercedes-amg-sl-63-4matic+-performance-4.0l-585-hp",
@@ -8728,7 +9590,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 585,
+      "engineDisplacement": "4.0L",
+      "driveType": "AWD",
+      "tlPerHP": 43998
     },
     {
       "id": "mercedes-benz-mercedes-maybach-sl-680-monogram-series-4.0l-585-hp",
@@ -8751,7 +9617,10 @@
       "isOutlier": true,
       "outlierType": "expensive",
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 585,
+      "engineDisplacement": "4.0L",
+      "tlPerHP": 60150
     },
     {
       "id": "mercedes-benz-mercedes-amg-gt-43-performance-2.0l-421-hp",
@@ -8774,7 +9643,10 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 170,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 421,
+      "engineDisplacement": "2.0L",
+      "tlPerHP": 35962
     },
     {
       "id": "mercedes-benz-mercedes-amg-gt-63-4matic+-performance-4.0l-585-hp",
@@ -8797,7 +9669,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 585,
+      "engineDisplacement": "4.0L",
+      "driveType": "AWD",
+      "tlPerHP": 45293
     },
     {
       "id": "mercedes-benz-mercedes-amg-gt-63-pro-4matic+---4.0l-612-hp",
@@ -8820,7 +9696,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 220,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 612,
+      "engineDisplacement": "4.0L",
+      "driveType": "AWD",
+      "tlPerHP": 50176
     },
     {
       "id": "mercedes-benz-cla-220-4matic-amg-1.5l-190-hp",
@@ -8843,7 +9723,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 100,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 190,
+      "engineDisplacement": "1.5L",
+      "driveType": "AWD",
+      "tlPerHP": 24437
     },
     {
       "id": "mercedes-benz-cla-350-4matic-edition-1-amg-354-hp",
@@ -8866,7 +9750,11 @@
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 75,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 354,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 13157
     },
     {
       "id": "ford-yeni-puma-titanium-1.0l-ecoboost-125ps",
@@ -8888,7 +9776,11 @@
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 125,
+      "engineDisplacement": "1.0L",
+      "isHybrid": true,
+      "tlPerHP": 14737
     },
     {
       "id": "ford-yeni-puma-titanium-1.0l-ecoboost-125ps",
@@ -8910,7 +9802,11 @@
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 125,
+      "engineDisplacement": "1.0L",
+      "isHybrid": true,
+      "tlPerHP": 15177
     },
     {
       "id": "ford-yeni-puma-st-line-x-1.0l-ecoboost-155ps",
@@ -8925,14 +9821,18 @@
       "priceBand": "mid",
       "price": 2076700,
       "priceFormatted": "₺2.076.700",
-      "dealScore": 99,
-      "zScore": -1.5,
-      "percentile": 1,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 98,
+      "zScore": -1.53,
+      "percentile": 2,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 155,
+      "engineDisplacement": "1.0L",
+      "isHybrid": true,
+      "tlPerHP": 13398
     },
     {
       "id": "ford-yeni-puma-st-line-x-1.0l-ecoboost-155ps",
@@ -8947,14 +9847,18 @@
       "priceBand": "mid",
       "price": 2138700,
       "priceFormatted": "₺2.138.700",
-      "dealScore": 90,
-      "zScore": -1.34,
-      "percentile": 10,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 92,
+      "zScore": -1.38,
+      "percentile": 8,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 155,
+      "engineDisplacement": "1.0L",
+      "isHybrid": true,
+      "tlPerHP": 13798
     },
     {
       "id": "ford-focus-yeni-titanium-stil-1.5l-ecoblue-115ps",
@@ -8977,7 +9881,10 @@
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 10,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 115,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 19934
     },
     {
       "id": "ford-focus-yeni-titanium-x-1.5l-ecoblue-115ps",
@@ -9000,7 +9907,10 @@
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 5,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 115,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 22113
     },
     {
       "id": "ford-kuga-titanium-1.5l-ecoboost-186ps",
@@ -9022,7 +9932,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 186,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 12791
     },
     {
       "id": "ford-kuga-titanium-1.5l-ecoboost-186ps",
@@ -9044,7 +9957,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 186,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 14304
     },
     {
       "id": "ford-kuga-active-x-1.5l-ecoboost-186ps",
@@ -9066,7 +9982,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 186,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 15798
     },
     {
       "id": "ford-kuga-active-x-1.5l-ecoboost-186ps",
@@ -9088,7 +10007,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 186,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 16270
     },
     {
       "id": "ford-kuga-st-line-1.5l-ecoboost-186ps",
@@ -9110,7 +10032,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 186,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 16270
     },
     {
       "id": "ford-kuga-st-line-x-1.5l-ecoboost-186ps",
@@ -9132,7 +10057,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 186,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 17255
     },
     {
       "id": "ford-kuga-st-line-x-1.5l-ecoboost-186ps",
@@ -9154,7 +10082,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 186,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 17770
     },
     {
       "id": "ford-yeni-journey-courier-deluxe-1.0l-ecoboost-125ps",
@@ -9169,14 +10100,17 @@
       "priceBand": "mid",
       "price": 2192000,
       "priceFormatted": "₺2.192.000",
-      "dealScore": 72,
-      "zScore": -0.86,
-      "percentile": 28,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 75,
+      "zScore": -0.82,
+      "percentile": 25,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 125,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 17536
     },
     {
       "id": "ford-yeni-journey-courier-deluxe-1.0l-ecoboost-125ps",
@@ -9191,14 +10125,17 @@
       "priceBand": "mid",
       "price": 2257400,
       "priceFormatted": "₺2.257.400",
-      "dealScore": 59,
-      "zScore": -0.71,
-      "percentile": 41,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 58,
+      "zScore": -0.67,
+      "percentile": 42,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 125,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 18059
     },
     {
       "id": "ford-yeni-journey-courier-titanium-1.0l-ecoboost-125ps",
@@ -9213,14 +10150,17 @@
       "priceBand": "mid",
       "price": 2754900,
       "priceFormatted": "₺2.754.900",
-      "dealScore": 28,
-      "zScore": 0.4,
-      "percentile": 72,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 25,
+      "zScore": 0.47,
+      "percentile": 75,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 125,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 22039
     },
     {
       "id": "ford-yeni-journey-courier-titanium-1.0l-ecoboost-125ps",
@@ -9235,14 +10175,17 @@
       "priceBand": "mid",
       "price": 2837200,
       "priceFormatted": "₺2.837.200",
-      "dealScore": 22,
-      "zScore": 0.59,
-      "percentile": 78,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 19,
+      "zScore": 0.66,
+      "percentile": 81,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 125,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 22698
     },
     {
       "id": "ford-puma-gen-e-premium-123kw",
@@ -9265,7 +10208,11 @@
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 3,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 165,
+      "powerKW": 123,
+      "isElectric": true,
+      "tlPerHP": 11399
     },
     {
       "id": "ford-puma-gen-e-premium-123kw",
@@ -9288,7 +10235,11 @@
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 3,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 165,
+      "powerKW": 123,
+      "isElectric": true,
+      "tlPerHP": 11739
     },
     {
       "id": "ford-yeni-elektrikli-journey-courier-titanium-100kw",
@@ -9310,7 +10261,11 @@
       "segmentSize": 5,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 134,
+      "powerKW": 100,
+      "isElectric": true,
+      "tlPerHP": 14949
     },
     {
       "id": "ford-yeni-elektrikli-journey-courier-titanium-100kw",
@@ -9332,7 +10287,11 @@
       "segmentSize": 5,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": "2026"
+      "modelYear": "2026",
+      "powerHP": 134,
+      "powerKW": 100,
+      "isElectric": true,
+      "tlPerHP": 15395
     },
     {
       "id": "dacia-yeni-sandero-essential-essential-tce-100",
@@ -9347,15 +10306,17 @@
       "priceBand": "budget",
       "price": 1240000,
       "priceFormatted": "₺1.240.000",
-      "dealScore": 93,
-      "zScore": -1.69,
-      "percentile": 7,
-      "segmentAvg": 1649143,
-      "segmentSize": 7,
+      "dealScore": 92,
+      "zScore": -1.54,
+      "percentile": 8,
+      "segmentAvg": 1626500,
+      "segmentSize": 6,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 70,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 100,
+      "tlPerHP": 12400
     },
     {
       "id": "dacia-yeni-sandero-expression-expression-tce-100",
@@ -9370,15 +10331,17 @@
       "priceBand": "budget",
       "price": 1340000,
       "priceFormatted": "₺1.340.000",
-      "dealScore": 79,
-      "zScore": -1.28,
-      "percentile": 21,
-      "segmentAvg": 1649143,
-      "segmentSize": 7,
+      "dealScore": 75,
+      "zScore": -1.14,
+      "percentile": 25,
+      "segmentAvg": 1626500,
+      "segmentSize": 6,
       "isOutlier": false,
       "outlierType": null,
       "otvRate": 70,
-      "modelYear": "2025"
+      "modelYear": "2025",
+      "powerHP": 100,
+      "tlPerHP": 13400
     },
     {
       "id": "nissan-qashqai-designpack-1.3-dig-t-mild-hybrid-158ps",
@@ -9400,7 +10363,12 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4
+      "campaignDiscount": 4,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 15072
     },
     {
       "id": "nissan-qashqai-skypack-1.3-dig-t-mild-hybrid-158ps",
@@ -9422,7 +10390,12 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3.4
+      "campaignDiscount": 3.4,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 18120
     },
     {
       "id": "nissan-qashqai-skypack-4x4-1.3-dig-t-mild-hybrid-158ps",
@@ -9443,7 +10416,12 @@
       "segmentAvg": 2896911,
       "segmentSize": 9,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 20484
     },
     {
       "id": "nissan-qashqai-platinum-1.3-dig-t-mild-hybrid-158ps",
@@ -9464,7 +10442,12 @@
       "segmentAvg": 2896911,
       "segmentSize": 9,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 21080
     },
     {
       "id": "nissan-qashqai-platinum-4x4-1.3-dig-t-mild-hybrid-158ps",
@@ -9485,7 +10468,12 @@
       "segmentAvg": 2896911,
       "segmentSize": 9,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 21759
     },
     {
       "id": "nissan-qashqai-platinum-premium-1.3-dig-t-mild-hybrid-158ps",
@@ -9506,7 +10494,12 @@
       "segmentAvg": 2896911,
       "segmentSize": 9,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 21929
     },
     {
       "id": "nissan-qashqai-platinum-premium-4x4-1.3-dig-t-mild-hybrid-158ps",
@@ -9527,7 +10520,12 @@
       "segmentAvg": 4477150,
       "segmentSize": 8,
       "isOutlier": true,
-      "outlierType": "cheap"
+      "outlierType": "cheap",
+      "powerHP": 158,
+      "engineDisplacement": "1.3L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 22606
     },
     {
       "id": "nissan-qashqai-e-power-skypack-e-power-190ps",
@@ -9542,14 +10540,17 @@
       "priceBand": "mid",
       "price": 3340100,
       "priceFormatted": "₺3.340.100",
-      "dealScore": 10,
-      "zScore": 1.66,
-      "percentile": 90,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 11,
+      "zScore": 1.62,
+      "percentile": 89,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.9
+      "campaignDiscount": 2.9,
+      "powerHP": 190,
+      "isHybrid": true,
+      "tlPerHP": 17579
     },
     {
       "id": "nissan-qashqai-e-power-n-design-e-power-190ps",
@@ -9564,14 +10565,17 @@
       "priceBand": "mid",
       "price": 3457600,
       "priceFormatted": "₺3.457.600",
-      "dealScore": 1,
-      "zScore": 1.95,
-      "percentile": 99,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 2,
+      "zScore": 1.91,
+      "percentile": 98,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4.2
+      "campaignDiscount": 4.2,
+      "powerHP": 190,
+      "isHybrid": true,
+      "tlPerHP": 18198
     },
     {
       "id": "nissan-qashqai-e-power-platinum-e-power-190ps",
@@ -9593,7 +10597,10 @@
       "segmentSize": 2,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.7
+      "campaignDiscount": 2.7,
+      "powerHP": 190,
+      "isHybrid": true,
+      "tlPerHP": 18752
     },
     {
       "id": "nissan-qashqai-e-power-platinum-premium-e-power-190ps",
@@ -9615,7 +10622,10 @@
       "segmentSize": 2,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.6
+      "campaignDiscount": 2.6,
+      "powerHP": 190,
+      "isHybrid": true,
+      "tlPerHP": 19399
     },
     {
       "id": "nissan-juke-tekna-1.0-dig-t-115ps",
@@ -9637,7 +10647,10 @@
       "segmentSize": 17,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 5.8
+      "campaignDiscount": 5.8,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 14056
     },
     {
       "id": "nissan-juke-tekna-1.0-dig-t-115ps",
@@ -9659,7 +10672,10 @@
       "segmentSize": 17,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4.8
+      "campaignDiscount": 4.8,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 17264
     },
     {
       "id": "nissan-juke-platinum-1.0-dig-t-115ps",
@@ -9681,7 +10697,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4.6
+      "campaignDiscount": 4.6,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 18013
     },
     {
       "id": "nissan-juke-n-design-1.0-dig-t-115ps",
@@ -9703,7 +10722,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4.4
+      "campaignDiscount": 4.4,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 19051
     },
     {
       "id": "nissan-juke-n-sport-1.0-dig-t-115ps",
@@ -9725,7 +10747,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4.4
+      "campaignDiscount": 4.4,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 19051
     },
     {
       "id": "nissan-juke-platinum-premium-1.0-dig-t-115ps",
@@ -9747,7 +10772,10 @@
       "segmentSize": 38,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 4.2
+      "campaignDiscount": 4.2,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 19701
     },
     {
       "id": "nissan-x-trail-mild-hybrid-platinum-",
@@ -9769,7 +10797,12 @@
       "segmentSize": 8,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.3
+      "campaignDiscount": 2.3,
+      "powerHP": 163,
+      "engineDisplacement": "1.5L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 26031
     },
     {
       "id": "nissan-x-trail-mild-hybrid-platinum-premium-",
@@ -9791,7 +10824,12 @@
       "segmentSize": 8,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.1
+      "campaignDiscount": 2.1,
+      "powerHP": 163,
+      "engineDisplacement": "1.5L",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 28733
     },
     {
       "id": "nissan-townstar-van-visia-1.3-dig-t-130ps",
@@ -9812,7 +10850,10 @@
       "segmentAvg": 1313725,
       "segmentSize": 4,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 130,
+      "engineDisplacement": "1.3L",
+      "tlPerHP": 8860
     },
     {
       "id": "nissan-townstar-van-visia-1.3-dig-t-130ps",
@@ -9834,7 +10875,10 @@
       "segmentSize": 4,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3.8
+      "campaignDiscount": 3.8,
+      "powerHP": 130,
+      "engineDisplacement": "1.3L",
+      "tlPerHP": 9751
     },
     {
       "id": "nissan-townstar-van-visia-1.3-dig-t-130ps",
@@ -9856,7 +10900,10 @@
       "segmentSize": 4,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3.5
+      "campaignDiscount": 3.5,
+      "powerHP": 130,
+      "engineDisplacement": "1.3L",
+      "tlPerHP": 10628
     },
     {
       "id": "nissan-townstar-van-tekna-1.3-dig-t-130ps",
@@ -9878,7 +10925,10 @@
       "segmentSize": 4,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3.3
+      "campaignDiscount": 3.3,
+      "powerHP": 130,
+      "engineDisplacement": "1.3L",
+      "tlPerHP": 11183
     },
     {
       "id": "nissan-townstar-van-tekna-",
@@ -9899,7 +10949,8 @@
       "segmentAvg": 2242267,
       "segmentSize": 3,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "isElectric": true
     },
     {
       "id": "nissan-townstar-van-tekna-",
@@ -9920,7 +10971,8 @@
       "segmentAvg": 2242267,
       "segmentSize": 3,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "isElectric": true
     },
     {
       "id": "nissan-townstar-combi-ev-designpack-",
@@ -9941,7 +10993,8 @@
       "segmentAvg": 2247020,
       "segmentSize": 5,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "isElectric": true
     },
     {
       "id": "nissan-townstar-combi-ev-platinum-",
@@ -9962,7 +11015,8 @@
       "segmentAvg": 2247020,
       "segmentSize": 5,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "isElectric": true
     },
     {
       "id": "honda-jazz-hybrid-crosstar-1.5l-hibrit-otomatik",
@@ -9977,13 +11031,15 @@
       "priceBand": "mid",
       "price": 2380000,
       "priceFormatted": "₺2.380.000",
-      "dealScore": 42,
-      "zScore": 0.79,
-      "percentile": 58,
-      "segmentAvg": 2265750,
-      "segmentSize": 6,
+      "dealScore": 50,
+      "zScore": 0.47,
+      "percentile": 50,
+      "segmentAvg": 2310778,
+      "segmentSize": 9,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
     },
     {
       "id": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik",
@@ -9998,14 +11054,16 @@
       "priceBand": "mid",
       "price": 2389000,
       "priceFormatted": "₺2.389.000",
-      "dealScore": 75,
-      "zScore": -0.72,
-      "percentile": 25,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 74,
+      "zScore": -0.75,
+      "percentile": 26,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 6.1
+      "campaignDiscount": 6.1,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
     },
     {
       "id": "honda-hr-v-hybrid-advance-1.5l-hibrit-otomatik",
@@ -10020,13 +11078,15 @@
       "priceBand": "mid",
       "price": 2675000,
       "priceFormatted": "₺2.675.000",
-      "dealScore": 46,
-      "zScore": 0,
-      "percentile": 54,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 47,
+      "zScore": -0.04,
+      "percentile": 53,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
     },
     {
       "id": "honda-hr-v-hybrid-style+-1.5l-hibrit-otomatik",
@@ -10041,13 +11101,15 @@
       "priceBand": "mid",
       "price": 2955000,
       "priceFormatted": "₺2.955.000",
-      "dealScore": 25,
-      "zScore": 0.7,
-      "percentile": 75,
-      "segmentAvg": 2675562,
-      "segmentSize": 34,
+      "dealScore": 26,
+      "zScore": 0.66,
+      "percentile": 74,
+      "segmentAvg": 2690397,
+      "segmentSize": 33,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
     },
     {
       "id": "honda-type-r-type-r-2.0l-vtec-turbo-benzin-manuel",
@@ -10068,7 +11130,8 @@
       "segmentAvg": 4885375,
       "segmentSize": 8,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "engineDisplacement": "2.0L"
     },
     {
       "id": "honda-cr-v-hybrid-advance-2.0l-hibrit-otomatik",
@@ -10089,7 +11152,9 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true
     },
     {
       "id": "seat-ibiza-style-1.0-ecotsi-115-ps",
@@ -10272,15 +11337,17 @@
       "priceBand": "mid",
       "price": 2070000,
       "priceFormatted": "₺2.070.000",
-      "dealScore": 97,
-      "zScore": -1.13,
-      "percentile": 3,
-      "segmentAvg": 2575313,
-      "segmentSize": 16,
+      "dealScore": 92,
+      "zScore": -1.1,
+      "percentile": 8,
+      "segmentAvg": 2550028,
+      "segmentSize": 18,
       "isOutlier": false,
       "outlierType": null,
-      "otvRate": 761,
-      "modelYear": 2025
+      "modelYear": 2025,
+      "powerHP": 140,
+      "engineDisplacement": "1.5L",
+      "tlPerHP": 14786
     },
     {
       "id": "kia-stonic-cool-100-ps",
@@ -10295,15 +11362,17 @@
       "priceBand": "budget",
       "price": 1740000,
       "priceFormatted": "₺1.740.000",
-      "dealScore": 50,
-      "zScore": 0.38,
-      "percentile": 50,
-      "segmentAvg": 1649143,
-      "segmentSize": 7,
+      "dealScore": 42,
+      "zScore": 0.45,
+      "percentile": 58,
+      "segmentAvg": 1626500,
+      "segmentSize": 6,
       "isOutlier": false,
       "outlierType": null,
-      "otvRate": 617,
-      "modelYear": 2025
+      "modelYear": 2025,
+      "powerHP": 100,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 17400
     },
     {
       "id": "kia-stonic-elegance-100-ps",
@@ -10318,15 +11387,17 @@
       "priceBand": "budget",
       "price": 1800000,
       "priceFormatted": "₺1.800.000",
-      "dealScore": 36,
-      "zScore": 0.62,
-      "percentile": 64,
-      "segmentAvg": 1649143,
-      "segmentSize": 7,
+      "dealScore": 25,
+      "zScore": 0.69,
+      "percentile": 75,
+      "segmentAvg": 1626500,
+      "segmentSize": 6,
       "isOutlier": false,
       "outlierType": null,
-      "otvRate": 640,
-      "modelYear": 2025
+      "modelYear": 2025,
+      "powerHP": 100,
+      "engineDisplacement": "1.0L",
+      "tlPerHP": 18000
     },
     {
       "id": "kia-xceed-cool-115-ps",
@@ -10341,15 +11412,18 @@
       "priceBand": "budget",
       "price": 1790000,
       "priceFormatted": "₺1.790.000",
-      "dealScore": 81,
-      "zScore": -1.24,
+      "dealScore": 85,
+      "zScore": -1.4,
       "percentile": 17,
-      "segmentAvg": 1876000,
+      "segmentAvg": 1894667,
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
-      "otvRate": 635,
-      "modelYear": 2025
+      "modelYear": 2025,
+      "powerHP": 115,
+      "engineDisplacement": "1.0L",
+      "isHybrid": true,
+      "tlPerHP": 15565
     },
     {
       "id": "kia-xceed-elegance-150-ps",
@@ -10371,8 +11445,10 @@
       "segmentSize": 10,
       "isOutlier": false,
       "outlierType": null,
-      "otvRate": 800,
-      "modelYear": 2025
+      "modelYear": 2025,
+      "powerHP": 150,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 14500
     },
     {
       "id": "volvo-ex30-single-motor-extended-range,-ultra-150-kw-/-204-hp",
@@ -10393,7 +11469,13 @@
       "segmentAvg": 2722034,
       "segmentSize": 14,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 204,
+      "powerKW": 150,
+      "driveType": "RWD",
+      "hasLongRange": true,
+      "isElectric": true,
+      "tlPerHP": 11508
     },
     {
       "id": "volvo-ex30-twin-motor,-ultra-315-kw-/-428-hp",
@@ -10414,7 +11496,12 @@
       "segmentAvg": 4089745,
       "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 428,
+      "powerKW": 315,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 8473
     },
     {
       "id": "volvo-ex30-cross-country-twin-motor-performance,-ultra-315-kw-/-428-hp",
@@ -10435,7 +11522,12 @@
       "segmentAvg": 4089745,
       "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 428,
+      "powerKW": 315,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 8799
     },
     {
       "id": "volvo-ex40-single-motor-extended-range,-ultra-150-kw-/-204-hp",
@@ -10456,7 +11548,13 @@
       "segmentAvg": 4089745,
       "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 204,
+      "powerKW": 150,
+      "driveType": "RWD",
+      "hasLongRange": true,
+      "isElectric": true,
+      "tlPerHP": 19283
     },
     {
       "id": "volvo-ex40-black-edition-single-motor-extended-range,-ultra-150-kw-/-204-hp",
@@ -10477,7 +11575,13 @@
       "segmentAvg": 4089745,
       "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 204,
+      "powerKW": 150,
+      "driveType": "RWD",
+      "hasLongRange": true,
+      "isElectric": true,
+      "tlPerHP": 19969
     },
     {
       "id": "volvo-ex40-twin-motor,-ultra-300-kw-/-408-hp",
@@ -10498,7 +11602,12 @@
       "segmentAvg": 4089745,
       "segmentSize": 18,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 408,
+      "powerKW": 300,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 11708
     },
     {
       "id": "volvo-ec40-single-motor-extended-range,-ultra-150-kw-/-204-hp",
@@ -10519,7 +11628,13 @@
       "segmentAvg": 4603511,
       "segmentSize": 5,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 204,
+      "powerKW": 150,
+      "driveType": "RWD",
+      "hasLongRange": true,
+      "isElectric": true,
+      "tlPerHP": 19709
     },
     {
       "id": "volvo-ec40-black-edition-single-motor-extended-range,-ultra-150-kw-/-204-hp",
@@ -10540,7 +11655,13 @@
       "segmentAvg": 4603511,
       "segmentSize": 5,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 204,
+      "powerKW": 150,
+      "driveType": "RWD",
+      "hasLongRange": true,
+      "isElectric": true,
+      "tlPerHP": 20394
     },
     {
       "id": "volvo-ec40-twin-motor,-ultra-300-kw-/-408-hp",
@@ -10561,7 +11682,12 @@
       "segmentAvg": 4603511,
       "segmentSize": 5,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 408,
+      "powerKW": 300,
+      "driveType": "AWD",
+      "isElectric": true,
+      "tlPerHP": 11948
     },
     {
       "id": "volvo-v60-b4-fwd-mild-hybrid,-plus,-dark-1.969-cc-197-hp",
@@ -10582,7 +11708,13 @@
       "segmentAvg": 4619621,
       "segmentSize": 2,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 197,
+      "engineDisplacement": "2.0L",
+      "driveType": "FWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 27864
     },
     {
       "id": "volvo-xc60-b5-awd-mild-hybrid,-plus,-bright-1.969-cc-250-hp",
@@ -10603,7 +11735,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 26869
     },
     {
       "id": "volvo-xc60-b5-awd-mild-hybrid,-plus,-dark-1.969-cc-250-hp",
@@ -10624,7 +11762,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 26869
     },
     {
       "id": "volvo-xc60-b5-awd-mild-hybrid,-ultra,-bright-1.969-cc-250-hp",
@@ -10645,7 +11789,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 27992
     },
     {
       "id": "volvo-xc60-b5-awd-mild-hybrid,-ultra,-dark-1.969-cc-250-hp",
@@ -10666,7 +11816,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 27992
     },
     {
       "id": "volvo-xc60-black-edition-b5-awd-mild-hybrid,-plus-1.969-cc-250-hp",
@@ -10687,7 +11843,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 28505
     },
     {
       "id": "volvo-xc60-t8-awd-plug-in-hybrid,-plus,-bright-1.969-cc-145-hp",
@@ -10708,7 +11870,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 50714
     },
     {
       "id": "volvo-xc60-t8-awd-plug-in-hybrid,-plus,-dark-1.969-cc-145-hp",
@@ -10729,7 +11896,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 50714
     },
     {
       "id": "volvo-xc60-t8-awd-plug-in-hybrid,-ultra,-bright-1.969-cc-145-hp",
@@ -10750,7 +11922,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 52651
     },
     {
       "id": "volvo-xc60-t8-awd-plug-in-hybrid,-ultra,-dark-1.969-cc-145-hp",
@@ -10771,7 +11948,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 52651
     },
     {
       "id": "volvo-xc60-black-edition-t8-awd-plug-in-hybrid,-plus-1.969-cc-145-hp",
@@ -10792,7 +11974,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 53536
     },
     {
       "id": "volvo-xc60-black-edition-t8-awd-plug-in-hybrid,-ultra-1.969-cc-145-hp",
@@ -10813,7 +12000,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 55786
     },
     {
       "id": "volvo-xc60-t8-awd-plug-in-hybrid,-polestar-engineered-1.969-cc-145-hp",
@@ -10834,7 +12026,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 59167
     },
     {
       "id": "volvo-xc90-b5-awd-mild-hybrid,-plus,-bright-1.969-cc-250-hp",
@@ -10855,7 +12052,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 42462
     },
     {
       "id": "volvo-xc90-b5-awd-mild-hybrid,-plus,-dark-1.969-cc-250-hp",
@@ -10876,7 +12079,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 42462
     },
     {
       "id": "volvo-xc90-b5-awd-mild-hybrid,-ultra,-bright-1.969-cc-250-hp",
@@ -10897,7 +12106,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 43793
     },
     {
       "id": "volvo-xc90-b5-awd-mild-hybrid,-ultra,-dark-1.969-cc-250-hp",
@@ -10918,7 +12133,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 43793
     },
     {
       "id": "volvo-xc90-black-edition-b5-awd-mild-hybrid,-plus-1.969-cc-250-hp",
@@ -10939,7 +12160,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 43378
     },
     {
       "id": "volvo-xc90-black-edition-b5-awd-mild-hybrid,-ultra-1.969-cc-250-hp",
@@ -10960,7 +12187,13 @@
       "segmentAvg": 8822197,
       "segmentSize": 12,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 250,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isMildHybrid": true,
+      "isHybrid": true,
+      "tlPerHP": 44709
     },
     {
       "id": "volvo-xc90-t8-awd-plug-in-hybrid,-plus,-bright-1.969-cc-145-hp",
@@ -10981,7 +12214,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 77778
     },
     {
       "id": "volvo-xc90-t8-awd-plug-in-hybrid,-plus,-dark-1.969-cc-145-hp",
@@ -11002,7 +12240,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 77778
     },
     {
       "id": "volvo-xc90-t8-awd-plug-in-hybrid,-ultra,-bright-1.969-cc-145-hp",
@@ -11023,7 +12266,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 80073
     },
     {
       "id": "volvo-xc90-t8-awd-plug-in-hybrid,-ultra,-dark-1.969-cc-145-hp",
@@ -11044,7 +12292,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 80073
     },
     {
       "id": "volvo-xc90-black-edition-t8-awd-plug-in-hybrid,-plus-1.969-cc-145-hp",
@@ -11065,7 +12318,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 79356
     },
     {
       "id": "volvo-xc90-black-edition-t8-awd-plug-in-hybrid,-ultra-1.969-cc-145-hp",
@@ -11086,7 +12344,12 @@
       "segmentAvg": 9502282,
       "segmentSize": 13,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "2.0L",
+      "driveType": "AWD",
+      "isPlugInHybrid": true,
+      "tlPerHP": 81651
     },
     {
       "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-gsr*",
@@ -11108,7 +12371,10 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 8.9
+      "campaignDiscount": 8.9,
+      "powerHP": 130,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 10999
     },
     {
       "id": "fiat-egea-sedan-lounge-1.6-m.jet-130-hp-gsr*",
@@ -11130,7 +12396,10 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 8.6
+      "campaignDiscount": 8.6,
+      "powerHP": 130,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 11461
     },
     {
       "id": "fiat-egea-sedan-easy-1.6-m.jet-130-hp-gsr*",
@@ -11152,7 +12421,10 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 5.9
+      "campaignDiscount": 5.9,
+      "powerHP": 130,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 12307
     },
     {
       "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-dct-gsr*",
@@ -11174,7 +12446,10 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 5.7
+      "campaignDiscount": 5.7,
+      "powerHP": 130,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 12615
     },
     {
       "id": "fiat-egea-sedan-lounge-1.6-m.jet-130-hp-dct-gsr*",
@@ -11196,7 +12471,10 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 5
+      "campaignDiscount": 5,
+      "powerHP": 130,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 13076
     },
     {
       "id": "fiat-egea-cross-urban-1.4-fire-95-hp-gsr",
@@ -11218,7 +12496,10 @@
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3.6
+      "campaignDiscount": 3.6,
+      "powerHP": 95,
+      "engineDisplacement": "1.4L",
+      "tlPerHP": 13999
     },
     {
       "id": "fiat-egea-cross-lounge-1.4-fire-95-hp-gsr",
@@ -11240,7 +12521,10 @@
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3.5
+      "campaignDiscount": 3.5,
+      "powerHP": 95,
+      "engineDisplacement": "1.4L",
+      "tlPerHP": 14631
     },
     {
       "id": "fiat-egea-cross-limited-1.4-fire-95-hp-gsr",
@@ -11262,7 +12546,10 @@
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3.3
+      "campaignDiscount": 3.3,
+      "powerHP": 95,
+      "engineDisplacement": "1.4L",
+      "tlPerHP": 15262
     },
     {
       "id": "fiat-egea-cross-street-1.4-fire-95-hp-gsr",
@@ -11284,7 +12571,10 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 3
+      "campaignDiscount": 3,
+      "powerHP": 95,
+      "engineDisplacement": "1.4L",
+      "tlPerHP": 17157
     },
     {
       "id": "fiat-egea-cross-urban-1.6-m.jet-130-hp-dct-gsr",
@@ -11306,7 +12596,10 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.9
+      "campaignDiscount": 2.9,
+      "powerHP": 130,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 12845
     },
     {
       "id": "fiat-egea-cross-lounge-1.6-m.jet-130-hp-dct-gsr",
@@ -11328,7 +12621,10 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.8
+      "campaignDiscount": 2.8,
+      "powerHP": 130,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 13384
     },
     {
       "id": "fiat-egea-cross-limited-1.6-m.jet-130-hp-dct-gsr",
@@ -11350,7 +12646,10 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 2.6
+      "campaignDiscount": 2.6,
+      "powerHP": 130,
+      "engineDisplacement": "1.6L",
+      "tlPerHP": 14615
     },
     {
       "id": "fiat-topolino-topolino-6-kw/8-hp---5.5kwh",
@@ -11373,7 +12672,12 @@
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 13.8,
-      "modelYear": 2026
+      "modelYear": 2026,
+      "powerHP": 8,
+      "powerKW": 6,
+      "batteryCapacity": 5.5,
+      "isElectric": true,
+      "tlPerHP": 69988
     },
     {
       "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh",
@@ -11396,7 +12700,12 @@
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 13,
-      "modelYear": 2026
+      "modelYear": 2026,
+      "powerHP": 8,
+      "powerKW": 6,
+      "batteryCapacity": 5.5,
+      "isElectric": true,
+      "tlPerHP": 75613
     },
     {
       "id": "fiat-grande-panda-la-prima-44-kwh",
@@ -11417,7 +12726,9 @@
       "segmentAvg": 1732257,
       "segmentSize": 7,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "batteryCapacity": 44,
+      "isElectric": true
     },
     {
       "id": "fiat-grande-panda-icon-1.2-mhev-110hp-edct",
@@ -11439,7 +12750,11 @@
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 6.1
+      "campaignDiscount": 6.1,
+      "powerHP": 110,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 14090
     },
     {
       "id": "fiat-grande-panda-la-prima-1.2-mhev-110hp-edct",
@@ -11461,7 +12776,11 @@
       "segmentSize": 3,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 5.7
+      "campaignDiscount": 5.7,
+      "powerHP": 110,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 14999
     },
     {
       "id": "fiat-600-la-prima-54-kwh",
@@ -11482,7 +12801,9 @@
       "segmentAvg": 1732257,
       "segmentSize": 7,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "batteryCapacity": 54,
+      "isElectric": true
     },
     {
       "id": "fiat-600-easy-1.2-145-hp-mhev",
@@ -11503,7 +12824,11 @@
       "segmentAvg": 1632567,
       "segmentSize": 3,
       "isOutlier": false,
-      "outlierType": null
+      "outlierType": null,
+      "powerHP": 145,
+      "engineDisplacement": "1.2L",
+      "isHybrid": true,
+      "tlPerHP": 11710
     },
     {
       "id": "fiat-500e-3+1-87-kw/118-hp---42kwh",
@@ -11525,7 +12850,12 @@
       "segmentSize": 10,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 6.1
+      "campaignDiscount": 6.1,
+      "powerHP": 118,
+      "powerKW": 87,
+      "batteryCapacity": 42,
+      "isElectric": true,
+      "tlPerHP": 16067
     },
     {
       "id": "fiat-500e-cabrio-87-kw/118-hp---42kwh",
@@ -11547,7 +12877,12 @@
       "segmentSize": 10,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 6.3
+      "campaignDiscount": 6.3,
+      "powerHP": 118,
+      "powerKW": 87,
+      "batteryCapacity": 42,
+      "isElectric": true,
+      "tlPerHP": 16491
     },
     {
       "id": "fiat-500e-giorgio-armani-87-kw/118-hp---42kwh",
@@ -11569,7 +12904,12 @@
       "segmentSize": 9,
       "isOutlier": false,
       "outlierType": null,
-      "campaignDiscount": 6
+      "campaignDiscount": 6,
+      "powerHP": 118,
+      "powerKW": 87,
+      "batteryCapacity": 42,
+      "isElectric": true,
+      "tlPerHP": 17338
     },
     {
       "id": "fiat-topolino-topolino-6-kw/8-hp---5.5kwh",
@@ -11592,7 +12932,12 @@
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 14.2,
-      "modelYear": 2025
+      "modelYear": 2025,
+      "powerHP": 8,
+      "powerKW": 6,
+      "batteryCapacity": 5.5,
+      "isElectric": true,
+      "tlPerHP": 68113
     },
     {
       "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh",
@@ -11615,7 +12960,12 @@
       "isOutlier": false,
       "outlierType": null,
       "campaignDiscount": 13.2,
-      "modelYear": 2025
+      "modelYear": 2025,
+      "powerHP": 8,
+      "powerKW": 6,
+      "batteryCapacity": 5.5,
+      "isElectric": true,
+      "tlPerHP": 73738
     },
     {
       "id": "fiat-topolino-topolino-6-kw/8-hp---5.5kwh",
@@ -11637,7 +12987,12 @@
       "segmentSize": 6,
       "isOutlier": false,
       "outlierType": null,
-      "modelYear": 2024
+      "modelYear": 2024,
+      "powerHP": 8,
+      "powerKW": 6,
+      "batteryCapacity": 5.5,
+      "isElectric": true,
+      "tlPerHP": 71988
     }
   ]
 }

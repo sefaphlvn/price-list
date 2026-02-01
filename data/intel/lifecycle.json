@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-02-01T01:33:09.514Z",
+  "generatedAt": "2026-02-01T05:41:36.963Z",
   "date": "2026-02-01",
   "summary": {
-    "totalModels": 227,
+    "totalModels": 226,
     "totalTransitions": 0,
     "totalStaleModels": 0,
     "avgEntryPriceDelta": 0
@@ -2273,9 +2273,9 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "COROLLA",
-      "entryPrice": 1650000,
-      "topPrice": 2544000,
-      "trimCount": 8,
+      "entryPrice": 1699000,
+      "topPrice": 2829500,
+      "trimCount": 9,
       "fuelTypes": [
         "Benzin",
         "Hibrit"
@@ -2286,8 +2286,8 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "COROLLA CROSS",
-      "entryPrice": 2484000,
-      "topPrice": 3157000,
+      "entryPrice": 2534000,
+      "topPrice": 3220000,
       "trimCount": 3,
       "fuelTypes": [
         "Hibrit"
@@ -2299,8 +2299,8 @@
       "brandId": "toyota",
       "model": "COROLLA HATCHBACK HYBRID",
       "entryPrice": 2115000,
-      "topPrice": 2419500,
-      "trimCount": 2,
+      "topPrice": 2468000,
+      "trimCount": 4,
       "fuelTypes": [
         "Hibrit"
       ],
@@ -2334,8 +2334,8 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "Proace Cargo",
-      "entryPrice": 1569000,
-      "topPrice": 1569000,
+      "entryPrice": 1574000,
+      "topPrice": 1574000,
       "trimCount": 1,
       "fuelTypes": [
         "Dizel"
@@ -2346,9 +2346,9 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "Proace City",
-      "entryPrice": 1544500,
-      "topPrice": 1832000,
-      "trimCount": 3,
+      "entryPrice": 1494500,
+      "topPrice": 1878000,
+      "trimCount": 6,
       "fuelTypes": [
         "Dizel"
       ],
@@ -2358,8 +2358,8 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "PROACE CITY CARGO",
-      "entryPrice": 1183000,
-      "topPrice": 1235000,
+      "entryPrice": 1222000,
+      "topPrice": 1276000,
       "trimCount": 2,
       "fuelTypes": [
         "Dizel",
@@ -2371,8 +2371,8 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "Proace Max",
-      "entryPrice": 1625000,
-      "topPrice": 1745000,
+      "entryPrice": 1626500,
+      "topPrice": 1746500,
       "trimCount": 3,
       "fuelTypes": [
         "Dizel"
@@ -2383,8 +2383,8 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "Proace Max Kamyonet",
-      "entryPrice": 1695000,
-      "topPrice": 1695000,
+      "entryPrice": 1696500,
+      "topPrice": 1696500,
       "trimCount": 1,
       "fuelTypes": [
         "Dizel"
@@ -2395,9 +2395,9 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "Proace Verso",
-      "entryPrice": 2200000,
-      "topPrice": 2265000,
-      "trimCount": 2,
+      "entryPrice": 2215000,
+      "topPrice": 2345500,
+      "trimCount": 4,
       "fuelTypes": [
         "Dizel"
       ],
@@ -2406,21 +2406,9 @@
     {
       "brand": "Toyota",
       "brandId": "toyota",
-      "model": "TOYOTA C-HR",
-      "entryPrice": 2870000,
-      "topPrice": 2870000,
-      "trimCount": 1,
-      "fuelTypes": [
-        "Hibrit"
-      ],
-      "lastUpdated": "2026-02-01"
-    },
-    {
-      "brand": "Toyota",
-      "brandId": "toyota",
       "model": "YARIS",
-      "entryPrice": 1878000,
-      "topPrice": 2182500,
+      "entryPrice": 1934000,
+      "topPrice": 2292000,
       "trimCount": 2,
       "fuelTypes": [
         "Hibrit"
@@ -2431,8 +2419,8 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "YARIS CROSS",
-      "entryPrice": 2203000,
-      "topPrice": 2555000,
+      "entryPrice": 2269000,
+      "topPrice": 2683000,
       "trimCount": 3,
       "fuelTypes": [
         "Hibrit"
@@ -2444,8 +2432,8 @@
       "brandId": "toyota",
       "model": "YENİ COROLLA HATCHBACK HYBRID",
       "entryPrice": 2419500,
-      "topPrice": 2419500,
-      "trimCount": 1,
+      "topPrice": 2468000,
+      "trimCount": 2,
       "fuelTypes": [
         "Hibrit"
       ],
@@ -2455,8 +2443,8 @@
       "brand": "Toyota",
       "brandId": "toyota",
       "model": "YENİ TOYOTA C-HR",
-      "entryPrice": 2090000,
-      "topPrice": 2755000,
+      "entryPrice": 2150000,
+      "topPrice": 2850000,
       "trimCount": 3,
       "fuelTypes": [
         "Hibrit"

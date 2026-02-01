@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-01T01:33:10.106Z",
+  "timestamp": "2026-02-01T05:41:37.538Z",
   "status": "healthy",
   "summary": {
     "totalBrands": 19,
-    "totalVehicles": 492,
-    "lastUpdate": "2026-02-01T01:33:08.678Z",
+    "totalVehicles": 500,
+    "lastUpdate": "2026-02-01T05:41:36.148Z",
     "dataDate": "2026-02-01"
   },
   "brands": [
@@ -36,7 +36,7 @@
       "id": "toyota",
       "name": "Toyota",
       "status": "ok",
-      "vehicleCount": 40,
+      "vehicleCount": 48,
       "latestDate": "2026-02-01",
       "issues": []
     },

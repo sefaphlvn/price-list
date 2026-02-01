@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-01T01:31:51.712Z",
+  "collectedAt": "2026-02-01T05:39:35.460Z",
   "brand": "Fiat",
   "brandId": "fiat",
   "rowCount": 25,
@@ -413,5 +413,7 @@
       "powerHP": 8,
       "isElectric": true
     }
-  ]
+  ],
+  "isFallback": true,
+  "originalDate": "2026-02-01T01:31:51.712Z"
 }

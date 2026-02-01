@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-01T01:31:51.712Z",
+  "collectedAt": "2026-02-01T05:39:35.460Z",
   "brand": "Kia",
   "brandId": "kia",
   "rowCount": 5,
@@ -18,8 +18,7 @@
       "powerHP": 140,
       "engineDisplacement": "1.5L",
       "transmissionType": "DCT",
-      "modelYear": 2025,
-      "otvRate": 761
+      "modelYear": 2025
     },
     {
       "model": "Stonic",
@@ -35,8 +34,7 @@
       "powerHP": 100,
       "engineDisplacement": "1.0L",
       "transmissionType": "DCT",
-      "modelYear": 2025,
-      "otvRate": 617
+      "modelYear": 2025
     },
     {
       "model": "Stonic",
@@ -52,8 +50,7 @@
       "powerHP": 100,
       "engineDisplacement": "1.0L",
       "transmissionType": "DCT",
-      "modelYear": 2025,
-      "otvRate": 640
+      "modelYear": 2025
     },
     {
       "model": "XCEED",
@@ -70,7 +67,6 @@
       "engineDisplacement": "1.0L",
       "transmissionType": "DCT",
       "modelYear": 2025,
-      "otvRate": 635,
       "isHybrid": true
     },
     {
@@ -87,8 +83,7 @@
       "powerHP": 150,
       "engineDisplacement": "1.6L",
       "transmissionType": "DCT",
-      "modelYear": 2025,
-      "otvRate": 800
+      "modelYear": 2025
     }
   ]
 }
