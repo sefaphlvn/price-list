@@ -21,6 +21,7 @@ import {
   ApartmentOutlined,
   ClockCircleOutlined,
   AlertOutlined,
+  CalculatorOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
@@ -92,6 +93,11 @@ export default function Header({ onOpenTracking }: HeaderProps) {
         </Badge>
       ),
       label: t('nav.alerts', 'Uyarilar'),
+    },
+    {
+      key: '/tco',
+      icon: <CalculatorOutlined />,
+      label: t('nav.tco', 'TCO Hesaplayici'),
     },
   ];
 

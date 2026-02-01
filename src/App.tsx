@@ -47,6 +47,7 @@ const PromosPage = lazyWithRetry(() => import('./pages/PromosPage'));
 const ArchitecturePage = lazyWithRetry(() => import('./pages/ArchitecturePage'));
 const LifecyclePage = lazyWithRetry(() => import('./pages/LifecyclePage'));
 const AlertsPage = lazyWithRetry(() => import('./pages/AlertsPage'));
+const TCOCalculatorPage = lazyWithRetry(() => import('./pages/TCOCalculatorPage'));
 
 // Info pages
 const FAQPage = lazyWithRetry(() => import('./pages/FAQPage'));
@@ -89,6 +90,7 @@ function App() {
           <Route path="architecture" element={<ArchitecturePage />} />
           <Route path="lifecycle" element={<LifecyclePage />} />
           <Route path="alerts" element={<AlertsPage />} />
+          <Route path="tco" element={<TCOCalculatorPage />} />
           {/* Info pages */}
           <Route path="sss" element={<FAQPage />} />
           {/* System pages */}

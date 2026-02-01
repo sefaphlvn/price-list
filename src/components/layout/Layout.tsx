@@ -18,6 +18,7 @@ import { OfflineBanner, InstallPrompt } from '../../pwa';
 import { CommandPalette } from '../search';
 import { useCommandPalette } from '../../hooks/useCommandPalette';
 import { fetchFreshJson, DATA_URLS } from '../../utils/fetchData';
+import QuickCompareFAB from '../common/QuickCompareFAB';
 
 interface LatestVehicle {
   brand: string;
@@ -214,6 +215,7 @@ export default function Layout() {
 
       <TrackedVehiclesDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
       <InstallPrompt />
+      <QuickCompareFAB />
       <CommandPalette
         isOpen={commandPalette.isOpen}
         onClose={commandPalette.close}

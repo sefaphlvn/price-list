@@ -67,7 +67,8 @@
     "promos": "Promos",
     "architecture": "Architecture",
     "lifecycle": "Lifecycle",
-    "alerts": "Alerts"
+    "alerts": "Alerts",
+    "tco": "TCO Calculator"
   },
   "home": {
     "title": "Turkey's Vehicle Price Platform",
@@ -108,7 +109,9 @@
       "searchPlaceholder": "Search model, trim, engine...",
       "selectModel": "Select Model",
       "selectTransmission": "Select Transmission",
-      "selectFuel": "Select Fuel"
+      "selectFuel": "Select Fuel",
+      "priceRange": "Price Range",
+      "powerRange": "Power Range"
     },
     "dataSource": {
       "live": "Live Data",
@@ -290,6 +293,12 @@
     "empty": "No tracked vehicles",
     "addHint": "Track vehicles from the price list"
   },
+  "quickCompare": {
+    "title": "Comparison List",
+    "goToCompare": "Go to Comparison",
+    "clearAll": "Clear List",
+    "empty": "Comparison list is empty"
+  },
   "trend": {
     "title": "Price Trend",
     "days30": "30 Days",
@@ -297,7 +306,9 @@
     "days365": "365 Days",
     "noData": "No data for this period",
     "price": "Price",
-    "date": "Date"
+    "date": "Date",
+    "last30Days": "Last 30 Days",
+    "priceChange": "Price Change"
   },
   "fuels": {
     "petrol": "Gasoline",
@@ -363,6 +374,43 @@
     "updateAvailable": "Update Available",
     "updateAvailableDesc": "A new version is available. Refresh to update.",
     "refresh": "Refresh"
+  },
+  "tco": {
+    "title": "Total Cost of Ownership (TCO)",
+    "description": "Calculate the total cost including fuel, taxes, insurance, maintenance and depreciation after purchasing a vehicle.",
+    "vehicleParams": "Vehicle Parameters",
+    "selectVehicle": "Select Vehicle (Optional)",
+    "searchVehicle": "Search vehicle...",
+    "vehiclePrice": "Vehicle Price",
+    "yearlyKm": "Yearly Mileage",
+    "fuelType": "Fuel Type",
+    "fuelPrice": "Fuel Price",
+    "fuelPriceHint": "You can enter the current price",
+    "consumption": "Consumption",
+    "engineSize": "Engine Size (cc)",
+    "years": "Calculation Period",
+    "year": "Year",
+    "segment": "Vehicle Segment",
+    "segments": {
+      "budget": "Budget",
+      "compact": "Compact",
+      "midsize": "Midsize",
+      "luxury": "Luxury",
+      "electric": "Electric"
+    },
+    "fuel": "Fuel",
+    "insurance": "Insurance",
+    "maintenance": "Maintenance",
+    "depreciation": "Depreciation",
+    "total": "Total",
+    "totalCost": "Total Cost",
+    "costPerKm": "Cost per km",
+    "monthlyAvg": "Monthly Average",
+    "totalDepreciation": "Total Depreciation",
+    "breakdown": "Cost Breakdown",
+    "yearlyBreakdown": "Yearly Breakdown",
+    "disclaimer": "Disclaimer",
+    "disclaimerText": "This calculation contains estimated values. Actual costs may vary based on usage patterns, maintenance habits and market conditions."
   },
   "insights": {
     "title": "Price Intelligence",

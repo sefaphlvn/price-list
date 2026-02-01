@@ -18,6 +18,9 @@ import {
   message,
   Tag,
   Descriptions,
+  Slider,
+  Row,
+  Col,
 } from 'antd';
 import {
   DownloadOutlined,
@@ -58,6 +61,7 @@ import {
   PriceListUrlState,
 } from '../utils/urlState';
 import PriceTrendModal from '../components/pricelist/PriceTrendModal';
+import PriceTrendBadge from '../components/pricelist/PriceTrendBadge';
 import BrandDisclaimer from '../components/common/BrandDisclaimer';
 import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
 import { useIsMobile } from '../hooks/useMediaQuery';
@@ -130,6 +134,10 @@ export default function PriceListPage() {
   const [fuelFilter, setFuelFilter] = useState<string | null>(initialUrlState.fuel || null);
   const [powertrainFilter, setPowertrainFilter] = useState<string | null>(initialUrlState.powertrain || null);
   const [driveTypeFilter, setDriveTypeFilter] = useState<string | null>(initialUrlState.driveType || null);
+
+  // Range filters
+  const [priceRange, setPriceRange] = useState<[number, number] | null>(null);
+  const [powerRange, setPowerRange] = useState<[number, number] | null>(null);
 
   // Sorting
   const [sortInfo, setSortInfo] = useState<{
@@ -429,8 +437,24 @@ export default function PriceListPage() {
       result = result.filter((row) => row.driveType === driveTypeFilter);
     }
 
+    // Price range filter
+    if (priceRange) {
+      result = result.filter((row) => {
+        const price = row.priceNumeric || 0;
+        return price >= priceRange[0] && price <= priceRange[1];
+      });
+    }
+
+    // Power range filter
+    if (powerRange) {
+      result = result.filter((row) => {
+        const power = row.powerHP || 0;
+        return power >= powerRange[0] && power <= powerRange[1];
+      });
+    }
+
     return result;
-  }, [fetchState.data, searchText, modelFilter, transmissionFilter, fuelFilter, powertrainFilter, driveTypeFilter]);
+  }, [fetchState.data, searchText, modelFilter, transmissionFilter, fuelFilter, powertrainFilter, driveTypeFilter, priceRange, powerRange]);
 
   // Get unique values for filters
   const modelOptions = useMemo(() => {
@@ -495,6 +519,27 @@ export default function PriceListPage() {
       count,
     }));
   }, [fetchState.data, t]);
+
+  // Price and Power bounds for sliders
+  const priceBounds = useMemo(() => {
+    if (!fetchState.data) return { min: 0, max: 10000000 };
+    const prices = fetchState.data.rows.map(r => r.priceNumeric).filter(p => p > 0);
+    if (prices.length === 0) return { min: 0, max: 10000000 };
+    return {
+      min: Math.floor(Math.min(...prices) / 100000) * 100000,
+      max: Math.ceil(Math.max(...prices) / 100000) * 100000,
+    };
+  }, [fetchState.data]);
+
+  const powerBounds = useMemo(() => {
+    if (!fetchState.data) return { min: 0, max: 500 };
+    const powers = fetchState.data.rows.map(r => r.powerHP || 0).filter(p => p > 0);
+    if (powers.length === 0) return { min: 0, max: 500 };
+    return {
+      min: Math.floor(Math.min(...powers) / 10) * 10,
+      max: Math.ceil(Math.max(...powers) / 10) * 10,
+    };
+  }, [fetchState.data]);
 
   // Handle favorite toggle
   const handleFavoriteToggle = (row: PriceListRow) => {
@@ -746,9 +791,12 @@ export default function PriceListPage() {
 
         return (
           <Space direction="vertical" size={0}>
-            <Text strong style={{ color: tokens.colors.success, fontSize: isMobile ? 12 : 14 }}>
-              {formattedPrice}
-            </Text>
+            <Space size={4}>
+              <Text strong style={{ color: tokens.colors.success, fontSize: isMobile ? 12 : 14 }}>
+                {formattedPrice}
+              </Text>
+              <PriceTrendBadge vehicle={record} compact showSparkline={!isMobile} />
+            </Space>
             {hasDiscount && discountPercent > 0 && !isMobile && (
               <Tag color="green" style={{ fontSize: 10, marginTop: 2 }}>
                 -{discountPercent}% indirim
@@ -1110,6 +1158,54 @@ export default function PriceListPage() {
                 />
               )}
             </Space>
+
+            {/* Range Sliders */}
+            <Row gutter={[16, 8]} style={{ marginTop: tokens.spacing.md }}>
+              <Col xs={24} md={12}>
+                <div style={{ padding: '0 8px' }}>
+                  <Text type="secondary" style={{ fontSize: 12, marginBottom: 4, display: 'block' }}>
+                    {t('priceList.filters.priceRange', 'Fiyat Aralığı')}: {' '}
+                    {priceRange
+                      ? `${(priceRange[0] / 1000000).toFixed(1)}M - ${(priceRange[1] / 1000000).toFixed(1)}M TL`
+                      : t('common.all', 'Hepsi')}
+                  </Text>
+                  <Slider
+                    range
+                    min={priceBounds.min}
+                    max={priceBounds.max}
+                    step={100000}
+                    value={priceRange || [priceBounds.min, priceBounds.max]}
+                    onChange={(value) => setPriceRange(value as [number, number])}
+                    tooltip={{
+                      formatter: (value) => value ? `${(value / 1000000).toFixed(1)}M TL` : '',
+                    }}
+                  />
+                </div>
+              </Col>
+              {powerBounds.max > 0 && (
+                <Col xs={24} md={12}>
+                  <div style={{ padding: '0 8px' }}>
+                    <Text type="secondary" style={{ fontSize: 12, marginBottom: 4, display: 'block' }}>
+                      {t('priceList.filters.powerRange', 'Güç Aralığı')}: {' '}
+                      {powerRange
+                        ? `${powerRange[0]} - ${powerRange[1]} HP`
+                        : t('common.all', 'Hepsi')}
+                    </Text>
+                    <Slider
+                      range
+                      min={powerBounds.min}
+                      max={powerBounds.max}
+                      step={10}
+                      value={powerRange || [powerBounds.min, powerBounds.max]}
+                      onChange={(value) => setPowerRange(value as [number, number])}
+                      tooltip={{
+                        formatter: (value) => value ? `${value} HP` : '',
+                      }}
+                    />
+                  </div>
+                </Col>
+              )}
+            </Row>
           </motion.div>
 
           {/* Export buttons */}

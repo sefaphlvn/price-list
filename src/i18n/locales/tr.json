@@ -67,7 +67,8 @@
     "promos": "Promosyonlar",
     "architecture": "Fiyat Mimarisi",
     "lifecycle": "Yasam Dongusu",
-    "alerts": "Uyarilar"
+    "alerts": "Uyarilar",
+    "tco": "TCO Hesaplayici"
   },
   "home": {
     "title": "Turkiye'nin Arac Fiyat Platformu",
@@ -108,7 +109,9 @@
       "searchPlaceholder": "Model, donanim, motor ara...",
       "selectModel": "Model Secin",
       "selectTransmission": "Sanziman Secin",
-      "selectFuel": "Yakit Secin"
+      "selectFuel": "Yakit Secin",
+      "priceRange": "Fiyat Araligi",
+      "powerRange": "Guc Araligi"
     },
     "dataSource": {
       "live": "Canli Veri",
@@ -290,6 +293,12 @@
     "empty": "Takip edilen arac yok",
     "addHint": "Fiyat listesinden arac takip edin"
   },
+  "quickCompare": {
+    "title": "Karsilastirma Listesi",
+    "goToCompare": "Karsilastirmaya Git",
+    "clearAll": "Listeyi Temizle",
+    "empty": "Karsilastirma listesi bos"
+  },
   "trend": {
     "title": "Fiyat Trendi",
     "days30": "30 Gun",
@@ -297,7 +306,9 @@
     "days365": "365 Gun",
     "noData": "Bu donem icin veri yok",
     "price": "Fiyat",
-    "date": "Tarih"
+    "date": "Tarih",
+    "last30Days": "Son 30 Gun",
+    "priceChange": "Fiyat Degisimi"
   },
   "fuels": {
     "petrol": "Benzin",
@@ -363,6 +374,43 @@
     "updateAvailable": "Guncelleme Mevcut",
     "updateAvailableDesc": "Yeni bir surum mevcut. Guncellemek icin yenileyin.",
     "refresh": "Yenile"
+  },
+  "tco": {
+    "title": "Toplam Sahip Olma Maliyeti (TCO)",
+    "description": "Arac satin alma sonrasi yakit, vergi, sigorta, bakim ve deger kaybi dahil toplam maliyeti hesaplayin.",
+    "vehicleParams": "Arac Parametreleri",
+    "selectVehicle": "Arac Secin (Opsiyonel)",
+    "searchVehicle": "Arac ara...",
+    "vehiclePrice": "Arac Fiyati",
+    "yearlyKm": "Yillik Kilometre",
+    "fuelType": "Yakit Tipi",
+    "fuelPrice": "Yakit Fiyati",
+    "fuelPriceHint": "Guncel fiyati girebilirsiniz",
+    "consumption": "Tuketim",
+    "engineSize": "Motor Hacmi (cc)",
+    "years": "Hesaplama Suresi",
+    "year": "Yil",
+    "segment": "Arac Segmenti",
+    "segments": {
+      "budget": "Ekonomik",
+      "compact": "Kompakt",
+      "midsize": "Orta Sinif",
+      "luxury": "Luks",
+      "electric": "Elektrikli"
+    },
+    "fuel": "Yakit",
+    "insurance": "Sigorta",
+    "maintenance": "Bakim",
+    "depreciation": "Deger Kaybi",
+    "total": "Toplam",
+    "totalCost": "Toplam Maliyet",
+    "costPerKm": "Km Basi Maliyet",
+    "monthlyAvg": "Aylik Ortalama",
+    "totalDepreciation": "Deger Kaybi",
+    "breakdown": "Maliyet Dagilimi",
+    "yearlyBreakdown": "Yillik Detay",
+    "disclaimer": "Bilgilendirme",
+    "disclaimerText": "Bu hesaplama tahmini degerler icerir. Gercek maliyetler kullanim sekli, bakim aliskanliklari ve piyasa kosullarina gore degisebilir."
   },
   "insights": {
     "title": "Fiyat Istihbarati",
