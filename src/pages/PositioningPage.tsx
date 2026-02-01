@@ -365,17 +365,18 @@ export default function PositioningPage() {
     []
   );
 
-  // Similar vehicles table columns
-  const columns = [
+  // Similar vehicles table columns - responsive
+  const columns = useMemo(() => [
     {
       title: t('positioning.vehicle', 'Arac'),
       key: 'vehicle',
+      width: isMobile ? 150 : undefined,
       render: (_: unknown, record: SimilarVehicle) => (
         <Space direction="vertical" size={0}>
-          <Text strong>
+          <Text strong style={{ whiteSpace: isMobile ? 'nowrap' : 'normal' }}>
             {record.brand} {record.model}
           </Text>
-          <Text type="secondary" style={{ fontSize: 12 }}>
+          <Text type="secondary" style={{ fontSize: 12, whiteSpace: isMobile ? 'nowrap' : 'normal' }}>
             {record.trim} - {record.engine}
           </Text>
         </Space>
@@ -385,16 +386,16 @@ export default function PositioningPage() {
       title: t('positioning.price', 'Fiyat'),
       dataIndex: 'priceRaw',
       key: 'price',
-      width: 140,
+      width: isMobile ? 110 : 140,
     },
     {
       title: t('positioning.diff', 'Fark'),
       key: 'diff',
-      width: 120,
+      width: isMobile ? 80 : 120,
       render: (_: unknown, record: SimilarVehicle) => {
         const isHigher = record.priceDiff > 0;
         return (
-          <Space>
+          <Space size={isMobile ? 2 : 4}>
             {isHigher ? (
               <ArrowUpOutlined style={{ color: tokens.colors.error }} />
             ) : (
@@ -408,7 +409,7 @@ export default function PositioningPage() {
         );
       },
     },
-    {
+    ...(!isMobile ? [{
       title: t('positioning.similarity', 'Benzerlik'),
       key: 'similarity',
       width: 100,
@@ -419,8 +420,8 @@ export default function PositioningPage() {
           status={record.similarityScore > 70 ? 'success' : 'normal'}
         />
       ),
-    },
-  ];
+    }] : []),
+  ], [isMobile, t]);
 
   if (loading) {
     return (
@@ -645,7 +646,7 @@ export default function PositioningPage() {
                     rowKey="id"
                     size="small"
                     pagination={false}
-                    scroll={{ y: 300 }}
+                    scroll={{ x: isMobile ? 340 : undefined, y: 300 }}
                   />
                 ) : (
                   <Empty

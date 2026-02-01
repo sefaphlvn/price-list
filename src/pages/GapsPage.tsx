@@ -7,6 +7,7 @@ import type { ColumnsType } from 'antd/es/table';
 
 import { tokens } from '../theme/tokens';
 import { useGapsData, GapCell, SegmentSummary } from '../hooks/useIntelData';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -37,6 +38,7 @@ interface HeatmapProps {
   priceRanges: string[];
   selectedFuel: string;
   selectedTransmission: string;
+  isMobile: boolean;
 }
 
 // Aggregated cell data when "all" filters are selected
@@ -48,7 +50,7 @@ interface AggregatedCell {
   opportunityScore: number;
 }
 
-function SegmentHeatmap({ data, segments, priceRanges, selectedFuel, selectedTransmission }: HeatmapProps) {
+function SegmentHeatmap({ data, segments, priceRanges, selectedFuel, selectedTransmission, isMobile }: HeatmapProps) {
   const { t } = useTranslation();
 
   // Aggregate data by segment+priceRange when "all" is selected
@@ -106,21 +108,22 @@ function SegmentHeatmap({ data, segments, priceRanges, selectedFuel, selectedTra
   };
 
   return (
-    <div style={{ overflowX: 'auto' }}>
-      <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 600 }}>
+    <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: isMobile ? 500 : 600 }}>
         <thead>
           <tr>
-            <th style={{ padding: 8, borderBottom: `2px solid ${tokens.colors.gray[200]}`, textAlign: 'left' }}>
+            <th style={{ padding: isMobile ? 6 : 8, borderBottom: `2px solid ${tokens.colors.gray[200]}`, textAlign: 'left', fontSize: isMobile ? 11 : 14 }}>
               {t('gaps.segment', 'Segment')}
             </th>
             {priceRanges.map(range => (
               <th
                 key={range}
                 style={{
-                  padding: 8,
+                  padding: isMobile ? 4 : 8,
                   borderBottom: `2px solid ${tokens.colors.gray[200]}`,
                   textAlign: 'center',
-                  fontSize: 12,
+                  fontSize: isMobile ? 9 : 12,
+                  whiteSpace: 'nowrap',
                 }}
               >
                 {range}
@@ -131,7 +134,7 @@ function SegmentHeatmap({ data, segments, priceRanges, selectedFuel, selectedTra
         <tbody>
           {segments.map(segment => (
             <tr key={segment}>
-              <td style={{ padding: 8, borderBottom: `1px solid ${tokens.colors.gray[100]}`, fontWeight: 500 }}>
+              <td style={{ padding: isMobile ? 6 : 8, borderBottom: `1px solid ${tokens.colors.gray[100]}`, fontWeight: 500, fontSize: isMobile ? 11 : 14, whiteSpace: 'nowrap' }}>
                 {segment}
               </td>
               {priceRanges.map(range => {
@@ -155,12 +158,13 @@ function SegmentHeatmap({ data, segments, priceRanges, selectedFuel, selectedTra
                   >
                     <td
                       style={{
-                        padding: 8,
+                        padding: isMobile ? 4 : 8,
                         borderBottom: `1px solid ${tokens.colors.gray[100]}`,
                         textAlign: 'center',
                         backgroundColor: getHeatColor(count, maxCount),
                         cursor: 'pointer',
                         position: 'relative',
+                        fontSize: isMobile ? 12 : 14,
                       }}
                     >
                       <Text strong={count > 0}>{count}</Text>
@@ -189,6 +193,7 @@ function SegmentHeatmap({ data, segments, priceRanges, selectedFuel, selectedTra
 
 export default function GapsPage() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const { data, loading, error } = useGapsData();
   const [selectedFuel, setSelectedFuel] = useState<string>('all');
   const [selectedTransmission, setSelectedTransmission] = useState<string>('all');
@@ -203,102 +208,102 @@ export default function GapsPage() {
     return data.priceRanges.map(r => r.label);
   }, [data]);
 
-  const opportunityColumns: ColumnsType<GapCell> = [
+  const opportunityColumns: ColumnsType<GapCell> = useMemo(() => [
     {
       title: t('gaps.segment', 'Segment'),
       dataIndex: 'segment',
       key: 'segment',
-      width: 120,
+      width: isMobile ? 90 : 120,
     },
     {
       title: t('gaps.fuel', 'Yakit'),
       dataIndex: 'fuel',
       key: 'fuel',
-      width: 100,
+      width: isMobile ? 80 : 100,
       render: (fuel: string) => <Tag>{fuel}</Tag>,
     },
-    {
+    ...(!isMobile ? [{
       title: t('gaps.transmission', 'Sanziman'),
       dataIndex: 'transmission',
       key: 'transmission',
       width: 100,
       render: (trans: string) => <Tag>{trans}</Tag>,
-    },
+    }] : []),
     {
       title: t('gaps.priceRange', 'Fiyat Araliği'),
       dataIndex: 'priceRange',
       key: 'priceRange',
-      width: 100,
+      width: isMobile ? 80 : 100,
     },
     {
-      title: t('gaps.vehicleCount', 'Arac Sayisi'),
+      title: isMobile ? '#' : t('gaps.vehicleCount', 'Arac Sayisi'),
       dataIndex: 'vehicleCount',
       key: 'vehicleCount',
-      width: 80,
-      align: 'center',
+      width: isMobile ? 40 : 80,
+      align: 'center' as const,
     },
     {
-      title: t('gaps.opportunityScore', 'Firsat Skoru'),
+      title: isMobile ? 'Skor' : t('gaps.opportunityScore', 'Firsat Skoru'),
       dataIndex: 'opportunityScore',
       key: 'opportunityScore',
-      width: 100,
+      width: isMobile ? 60 : 100,
       render: (score: number) => (
         <Tag color={score > 20 ? 'green' : score > 10 ? 'orange' : 'default'}>
           {score.toFixed(1)}
         </Tag>
       ),
       sorter: (a, b) => b.opportunityScore - a.opportunityScore,
-      defaultSortOrder: 'descend',
+      defaultSortOrder: 'descend' as const,
     },
-  ];
+  ], [isMobile, t]);
 
-  const segmentColumns: ColumnsType<SegmentSummary> = [
+  const segmentColumns: ColumnsType<SegmentSummary> = useMemo(() => [
     {
       title: t('gaps.segment', 'Segment'),
       dataIndex: 'segment',
       key: 'segment',
-      width: 150,
+      width: isMobile ? 100 : 150,
     },
     {
-      title: t('gaps.totalVehicles', 'Toplam Arac'),
+      title: isMobile ? '#' : t('gaps.totalVehicles', 'Toplam Arac'),
       dataIndex: 'totalVehicles',
       key: 'totalVehicles',
-      width: 100,
-      align: 'center',
+      width: isMobile ? 50 : 100,
+      align: 'center' as const,
       sorter: (a, b) => b.totalVehicles - a.totalVehicles,
     },
     {
       title: t('gaps.avgPrice', 'Ort. Fiyat'),
       dataIndex: 'avgPrice',
       key: 'avgPrice',
-      width: 120,
+      width: isMobile ? 100 : 120,
       render: (price: number) => formatPrice(price),
       sorter: (a, b) => a.avgPrice - b.avgPrice,
     },
-    {
+    ...(!isMobile ? [{
       title: t('gaps.priceRange', 'Fiyat Araliği'),
       key: 'range',
       width: 200,
-      render: (_, record) => (
+      render: (_: unknown, record: SegmentSummary) => (
         <Text type="secondary">
           {formatPrice(record.minPrice)} - {formatPrice(record.maxPrice)}
         </Text>
       ),
-    },
+    }] : []),
     {
       title: t('gaps.brands', 'Markalar'),
       dataIndex: 'brands',
       key: 'brands',
       render: (brands: string[]) => (
         <Space wrap size={[0, 4]}>
-          {brands.slice(0, 4).map(b => (
+          {brands.slice(0, isMobile ? 2 : 4).map(b => (
             <Tag key={b}>{b}</Tag>
           ))}
-          {brands.length > 4 && <Tag>+{brands.length - 4}</Tag>}
+          {brands.length > (isMobile ? 2 : 4) && <Tag>+{brands.length - (isMobile ? 2 : 4)}</Tag>}
         </Space>
       ),
     },
-  ];
+  ], [isMobile, t]);
 
   if (loading) {
     return (
@@ -335,9 +340,9 @@ export default function GapsPage() {
       ),
       children: data?.heatmapData && data.heatmapData.length > 0 ? (
         <div>
-          <Space style={{ marginBottom: tokens.spacing.md }}>
+          <Space wrap style={{ marginBottom: tokens.spacing.md }}>
             <Select
-              style={{ width: 150 }}
+              style={{ width: isMobile ? 130 : 150 }}
               value={selectedFuel}
               onChange={setSelectedFuel}
               options={[
@@ -353,7 +358,7 @@ export default function GapsPage() {
               placeholder={t('gaps.selectFuel', 'Yakit sec')}
             />
             <Select
-              style={{ width: 150 }}
+              style={{ width: isMobile ? 130 : 150 }}
               value={selectedTransmission}
               onChange={setSelectedTransmission}
               options={[
@@ -370,6 +375,7 @@ export default function GapsPage() {
             priceRanges={priceRanges}
             selectedFuel={selectedFuel}
             selectedTransmission={selectedTransmission}
+            isMobile={isMobile}
           />
         </div>
       ) : (
@@ -390,8 +396,8 @@ export default function GapsPage() {
           dataSource={data.topOpportunities}
           rowKey={(record) => `${record.segment}-${record.fuel}-${record.transmission}-${record.priceRange}`}
           size="small"
-          pagination={{ pageSize: 10 }}
-          scroll={{ x: 600 }}
+          pagination={{ pageSize: isMobile ? 8 : 10, showSizeChanger: !isMobile }}
+          scroll={{ x: isMobile ? 400 : 600 }}
         />
       ) : (
         <Empty description={t('gaps.noOpportunities', 'Firsat bulunamadi')} style={{ padding: tokens.spacing.xl }} />
@@ -411,8 +417,8 @@ export default function GapsPage() {
           dataSource={data.segments.filter(s => s.segment !== 'Other')}
           rowKey="segment"
           size="small"
-          pagination={{ pageSize: 10 }}
-          scroll={{ x: 800 }}
+          pagination={{ pageSize: isMobile ? 8 : 10, showSizeChanger: !isMobile }}
+          scroll={{ x: isMobile ? 400 : 800 }}
         />
       ) : (
         <Empty description={t('common.noData', 'Veri bulunamadi')} style={{ padding: tokens.spacing.xl }} />

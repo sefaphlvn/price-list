@@ -15,6 +15,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { tokens } from '../theme/tokens';
 import { useAppStore } from '../store';
+import { useIsMobile } from '../hooks/useMediaQuery';
 import PortfolioSummary from '../components/my/PortfolioSummary';
 import TopMovers from '../components/my/TopMovers';
 import FavoritesWidget from '../components/my/FavoritesWidget';
@@ -24,6 +25,7 @@ const { Title, Text } = Typography;
 
 export default function MyPage() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const navigate = useNavigate();
   const { favorites, trackedVehicles, compareList, priceChanges } = useAppStore();
 
@@ -87,15 +89,15 @@ export default function MyPage() {
       </div>
 
       {/* Quick Stats */}
-      <Row gutter={[16, 16]} style={{ marginBottom: tokens.spacing.xl }}>
+      <Row gutter={[isMobile ? 8 : 16, isMobile ? 8 : 16]} style={{ marginBottom: tokens.spacing.xl }}>
         <Col xs={12} sm={6}>
           <Card size="small">
             <div style={{ textAlign: 'center' }}>
-              <HeartOutlined style={{ fontSize: 24, color: tokens.colors.error, marginBottom: 4 }} />
-              <Title level={3} style={{ marginBottom: 0 }}>
+              <HeartOutlined style={{ fontSize: isMobile ? 20 : 24, color: tokens.colors.error, marginBottom: 4 }} />
+              <Title level={isMobile ? 4 : 3} style={{ marginBottom: 0 }}>
                 {favorites.length}
               </Title>
-              <Text type="secondary" style={{ fontSize: 12 }}>
+              <Text type="secondary" style={{ fontSize: isMobile ? 11 : 12 }}>
                 {t('my.favorites', 'Favorites')}
               </Text>
             </div>
@@ -104,11 +106,11 @@ export default function MyPage() {
         <Col xs={12} sm={6}>
           <Card size="small">
             <div style={{ textAlign: 'center' }}>
-              <BellOutlined style={{ fontSize: 24, color: tokens.colors.primary, marginBottom: 4 }} />
-              <Title level={3} style={{ marginBottom: 0 }}>
+              <BellOutlined style={{ fontSize: isMobile ? 20 : 24, color: tokens.colors.primary, marginBottom: 4 }} />
+              <Title level={isMobile ? 4 : 3} style={{ marginBottom: 0 }}>
                 {trackedVehicles.length}
               </Title>
-              <Text type="secondary" style={{ fontSize: 12 }}>
+              <Text type="secondary" style={{ fontSize: isMobile ? 11 : 12 }}>
                 {t('my.tracked', 'Tracked')}
               </Text>
             </div>
@@ -117,11 +119,11 @@ export default function MyPage() {
         <Col xs={12} sm={6}>
           <Card size="small">
             <div style={{ textAlign: 'center' }}>
-              <SwapOutlined style={{ fontSize: 24, color: tokens.colors.accent, marginBottom: 4 }} />
-              <Title level={3} style={{ marginBottom: 0 }}>
+              <SwapOutlined style={{ fontSize: isMobile ? 20 : 24, color: tokens.colors.accent, marginBottom: 4 }} />
+              <Title level={isMobile ? 4 : 3} style={{ marginBottom: 0 }}>
                 {compareList.length}
               </Title>
-              <Text type="secondary" style={{ fontSize: 12 }}>
+              <Text type="secondary" style={{ fontSize: isMobile ? 11 : 12 }}>
                 {t('my.inCompare', 'In Compare')}
               </Text>
             </div>
@@ -131,14 +133,14 @@ export default function MyPage() {
           <Card size="small">
             <div style={{ textAlign: 'center' }}>
               {increasedCount >= decreasedCount ? (
-                <ArrowUpOutlined style={{ fontSize: 24, color: tokens.colors.error, marginBottom: 4 }} />
+                <ArrowUpOutlined style={{ fontSize: isMobile ? 20 : 24, color: tokens.colors.error, marginBottom: 4 }} />
               ) : (
-                <ArrowDownOutlined style={{ fontSize: 24, color: tokens.colors.success, marginBottom: 4 }} />
+                <ArrowDownOutlined style={{ fontSize: isMobile ? 20 : 24, color: tokens.colors.success, marginBottom: 4 }} />
               )}
-              <Title level={3} style={{ marginBottom: 0 }}>
+              <Title level={isMobile ? 4 : 3} style={{ marginBottom: 0 }}>
                 {priceChanges.length}
               </Title>
-              <Text type="secondary" style={{ fontSize: 12 }}>
+              <Text type="secondary" style={{ fontSize: isMobile ? 11 : 12 }}>
                 {t('my.priceChanges', 'Price Changes')}
               </Text>
             </div>
@@ -161,7 +163,7 @@ export default function MyPage() {
       )}
 
       {/* Favorites & Tracked Widgets */}
-      <Row gutter={[16, 16]}>
+      <Row gutter={[isMobile ? 8 : 16, isMobile ? 8 : 16]}>
         <Col xs={24} lg={12}>
           <FavoritesWidget />
         </Col>

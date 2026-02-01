@@ -237,7 +237,39 @@
       "title": "Vehicle Comparison Report"
     },
     "showOnlyDifferences": "Show Only Differences",
-    "allSame": "All values are the same"
+    "allSame": "All values are the same",
+    "categories": {
+      "basic": "Basic Information",
+      "performance": "Performance",
+      "powertrain": "Powertrain",
+      "electrification": "Electric/Hybrid",
+      "price": "Price & Taxes",
+      "other": "Other"
+    },
+    "fields": {
+      "modelYear": "Model Year",
+      "power": "Engine Power",
+      "engineDisplacement": "Engine Displacement",
+      "engineType": "Engine Type",
+      "transmissionType": "Transmission Type",
+      "driveType": "Drive Type",
+      "isElectric": "Electric",
+      "isHybrid": "Hybrid",
+      "isMildHybrid": "Mild Hybrid",
+      "isPlugInHybrid": "Plug-in Hybrid",
+      "batteryCapacity": "Battery Capacity",
+      "wltpRange": "WLTP Range",
+      "hasLongRange": "Long Range",
+      "netPrice": "Net Price",
+      "otvRate": "SCT Rate",
+      "otvAmount": "SCT Amount",
+      "kdvAmount": "VAT Amount",
+      "monthlyLease": "Monthly Lease",
+      "origin": "Origin",
+      "emissionStandard": "Emission Standard",
+      "fuelConsumption": "Fuel Consumption",
+      "vehicleCategory": "Vehicle Category"
+    }
   },
   "tracking": {
     "title": "Tracked Vehicles",

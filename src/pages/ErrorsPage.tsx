@@ -1,7 +1,7 @@
 /**
  * Errors Page - Displays system errors from data collection and generation
  */
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   Row,
@@ -30,6 +30,7 @@ import {
   BugOutlined,
 } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -80,6 +81,7 @@ const severityColors = {
 
 export default function ErrorsPage() {
   const { t, i18n } = useTranslation();
+  const isMobile = useIsMobile();
   const [loading, setLoading] = useState(true);
   const [errorLog, setErrorLog] = useState<ErrorLog | null>(null);
   const [fetchError, setFetchError] = useState<string | null>(null);
@@ -131,37 +133,42 @@ export default function ErrorsPage() {
   const categoryKeys = ['HTTP_ERROR', 'PARSE_ERROR', 'VALIDATION_ERROR', 'FILE_ERROR', 'DATA_QUALITY_ERROR'];
   const sourceKeys = ['collection', 'generation', 'health', 'frontend'];
 
-  const columns: ColumnsType<SystemError> = [
+  const columns: ColumnsType<SystemError> = useMemo(() => [
     {
       title: t('systemErrors.time'),
       dataIndex: 'timestamp',
       key: 'timestamp',
-      width: 180,
+      width: isMobile ? 100 : 180,
       render: (timestamp: string) => {
         const date = new Date(timestamp);
         return (
           <Tooltip title={date.toISOString()}>
             <Space size={4}>
-              <ClockCircleOutlined style={{ color: '#999' }} />
-              <Text type="secondary" style={{ fontSize: 12 }}>
-                {date.toLocaleDateString(locale)} {date.toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' })}
+              {!isMobile && <ClockCircleOutlined style={{ color: '#999' }} />}
+              <Text type="secondary" style={{ fontSize: isMobile ? 10 : 12 }}>
+                {isMobile
+                  ? date.toLocaleDateString(locale, { month: 'short', day: 'numeric' })
+                  : `${date.toLocaleDateString(locale)} ${date.toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' })}`
+                }
               </Text>
             </Space>
           </Tooltip>
         );
       },
       sorter: (a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime(),
-      defaultSortOrder: 'ascend',
+      defaultSortOrder: 'ascend' as const,
     },
     {
-      title: t('systemErrors.severity'),
+      title: isMobile ? '' : t('systemErrors.severity'),
       dataIndex: 'severity',
       key: 'severity',
-      width: 100,
+      width: isMobile ? 40 : 100,
       render: (severity: 'error' | 'warning' | 'info') => (
-        <Tag color={severityColors[severity]} icon={severityIcons[severity]}>
-          {t(`systemErrors.severityLabels.${severity}`)}
-        </Tag>
+        isMobile
+          ? <Tag color={severityColors[severity]} icon={severityIcons[severity]} />
+          : <Tag color={severityColors[severity]} icon={severityIcons[severity]}>
+              {t(`systemErrors.severityLabels.${severity}`)}
+            </Tag>
       ),
       filters: [
         { text: t('systemErrors.severityLabels.error'), value: 'error' },
@@ -170,7 +177,7 @@ export default function ErrorsPage() {
       ],
       onFilter: (value, record) => record.severity === value,
     },
-    {
+    ...(!isMobile ? [{
       title: t('systemErrors.category'),
       dataIndex: 'category',
       key: 'category',
@@ -179,9 +186,9 @@ export default function ErrorsPage() {
         <Tag>{t(`systemErrors.categoryLabels.${category}`, category)}</Tag>
       ),
       filters: categoryKeys.map(key => ({ text: t(`systemErrors.categoryLabels.${key}`), value: key })),
-      onFilter: (value, record) => record.category === value,
-    },
-    {
+      onFilter: (value: React.Key | boolean, record: SystemError) => record.category === value,
+    }] : []),
+    ...(!isMobile ? [{
       title: t('systemErrors.source'),
       dataIndex: 'source',
       key: 'source',
@@ -190,9 +197,9 @@ export default function ErrorsPage() {
         <Text type="secondary">{t(`systemErrors.sourceLabels.${source}`, source)}</Text>
       ),
       filters: sourceKeys.map(key => ({ text: t(`systemErrors.sourceLabels.${key}`), value: key })),
-      onFilter: (value, record) => record.source === value,
-    },
-    {
+      onFilter: (value: React.Key | boolean, record: SystemError) => record.source === value,
+    }] : []),
+    ...(!isMobile ? [{
       title: t('systemErrors.code'),
       dataIndex: 'code',
       key: 'code',
@@ -200,41 +207,42 @@ export default function ErrorsPage() {
       render: (code: string) => (
         <Text code style={{ fontSize: 11 }}>{code}</Text>
       ),
-    },
+    }] : []),
     {
       title: t('systemErrors.message'),
       dataIndex: 'message',
       key: 'message',
       ellipsis: true,
+      width: isMobile ? 180 : undefined,
       render: (message: string, record: SystemError) => (
         <Space direction="vertical" size={0}>
-          <Text ellipsis={{ tooltip: message }}>{message}</Text>
+          <Text ellipsis={{ tooltip: message }} style={{ fontSize: isMobile ? 11 : 14 }}>{message}</Text>
           {record.recovered && (
-            <Tag color="green" style={{ marginTop: 4 }}>
-              <CheckCircleOutlined /> {t('systemErrors.recovered')}
+            <Tag color="green" style={{ marginTop: 4, fontSize: isMobile ? 10 : 12 }}>
+              <CheckCircleOutlined /> {isMobile ? '✓' : t('systemErrors.recovered')}
             </Tag>
           )}
         </Space>
       ),
     },
-    {
+    ...(!isMobile ? [{
       title: t('systemErrors.brand'),
       dataIndex: 'brand',
       key: 'brand',
       width: 100,
       render: (brand?: string) => brand || '-',
-    },
+    }] : []),
     {
       title: '',
       key: 'actions',
-      width: 80,
-      render: (_, record) => (
+      width: isMobile ? 50 : 80,
+      render: (_: unknown, record: SystemError) => (
         <Button size="small" type="link" onClick={() => showDetails(record)}>
-          {t('systemErrors.details')}
+          {isMobile ? '...' : t('systemErrors.details')}
         </Button>
       ),
     },
-  ];
+  ], [isMobile, t, locale]);
 
   if (loading) {
     return (
@@ -388,11 +396,11 @@ export default function ErrorsPage() {
             rowKey="id"
             size="small"
             pagination={{
-              pageSize: 20,
-              showSizeChanger: true,
-              showTotal: (total, range) => `${range[0]}-${range[1]} / ${total} ${t('systemErrors.errors').toLowerCase()}`,
+              pageSize: isMobile ? 10 : 20,
+              showSizeChanger: !isMobile,
+              showTotal: isMobile ? undefined : (total, range) => `${range[0]}-${range[1]} / ${total} ${t('systemErrors.errors').toLowerCase()}`,
             }}
-            scroll={{ x: 1000 }}
+            scroll={{ x: isMobile ? 400 : 1000 }}
           />
         </Card>
       )}

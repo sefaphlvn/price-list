@@ -237,7 +237,39 @@
       "title": "Arac Karsilastirma Raporu"
     },
     "showOnlyDifferences": "Sadece Farklilar",
-    "allSame": "Tum degerler ayni"
+    "allSame": "Tum degerler ayni",
+    "categories": {
+      "basic": "Temel Bilgiler",
+      "performance": "Performans",
+      "powertrain": "Guc Aktarimi",
+      "electrification": "Elektrikli/Hibrit",
+      "price": "Fiyat ve Vergiler",
+      "other": "Diger"
+    },
+    "fields": {
+      "modelYear": "Model Yili",
+      "power": "Motor Gucu",
+      "engineDisplacement": "Motor Hacmi",
+      "engineType": "Motor Tipi",
+      "transmissionType": "Sanziman Tipi",
+      "driveType": "Cekis Tipi",
+      "isElectric": "Elektrikli",
+      "isHybrid": "Hibrit",
+      "isMildHybrid": "Hafif Hibrit",
+      "isPlugInHybrid": "Plug-in Hibrit",
+      "batteryCapacity": "Batarya Kapasitesi",
+      "wltpRange": "WLTP Menzil",
+      "hasLongRange": "Uzun Menzil",
+      "netPrice": "Net Fiyat",
+      "otvRate": "OTV Orani",
+      "otvAmount": "OTV Tutari",
+      "kdvAmount": "KDV Tutari",
+      "monthlyLease": "Aylik Kiralama",
+      "origin": "Mensei",
+      "emissionStandard": "Emisyon Standardi",
+      "fuelConsumption": "Yakit Tuketimi",
+      "vehicleCategory": "Arac Kategorisi"
+    }
   },
   "tracking": {
     "title": "Takip Edilenler",

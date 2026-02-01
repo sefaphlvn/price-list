@@ -397,3 +397,27 @@ body {
     display: none;
   }
 }
+
+/* Comparison page category rows */
+.comparison-category-row {
+  background: linear-gradient(to right, #f0f5ff, #f5f5f5) !important;
+}
+
+.comparison-category-row td {
+  border-bottom: 2px solid #d9d9d9 !important;
+  padding-top: 12px !important;
+  padding-bottom: 8px !important;
+}
+
+.comparison-category-row:hover > td {
+  background: linear-gradient(to right, #e6f0ff, #f0f0f0) !important;
+}
+
+/* Row same values styling */
+.row-same-values {
+  opacity: 0.6;
+}
+
+.row-same-values:hover {
+  opacity: 0.8;
+}

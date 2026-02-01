@@ -33,6 +33,7 @@ import {
 
 import { useAppStore, AlertCondition, AlertRule } from '../store';
 import { tokens } from '../theme/tokens';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Paragraph, Text } = Typography;
 const { Option } = Select;
@@ -66,6 +67,7 @@ interface RuleFormValues {
 
 export default function AlertsPage() {
   const { t, i18n } = useTranslation();
+  const isMobile = useIsMobile();
   const { alertRules, triggeredAlerts, addAlertRule, updateAlertRule, removeAlertRule, clearTriggeredAlerts } = useAppStore();
   const [activeTab, setActiveTab] = useState('rules');
   const [form] = Form.useForm<RuleFormValues>();
@@ -198,8 +200,8 @@ export default function AlertsPage() {
         </Space>
       ),
       children: (
-        <div style={{ maxWidth: 600 }}>
-          <Paragraph type="secondary" style={{ marginBottom: tokens.spacing.md }}>
+        <div style={{ maxWidth: isMobile ? '100%' : 600 }}>
+          <Paragraph type="secondary" style={{ marginBottom: tokens.spacing.md, fontSize: isMobile ? 13 : 14 }}>
             {t('alertsV2.builderDesc', 'Fiyat değişikliklerini takip etmek için özel kurallar oluşturun. Koşullar sağlandığında bildirim alın.')}
           </Paragraph>
 
@@ -233,7 +235,7 @@ export default function AlertsPage() {
                       size="small"
                       style={{ marginBottom: tokens.spacing.sm, backgroundColor: tokens.colors.gray[50] }}
                     >
-                      <Row gutter={[8, 8]} align="middle">
+                      <Row gutter={[isMobile ? 4 : 8, isMobile ? 8 : 8]} align="middle">
                         <Col xs={24} sm={7}>
                           <Form.Item
                             {...restField}
@@ -440,7 +442,7 @@ export default function AlertsPage() {
         </Paragraph>
       </div>
 
-      <Row gutter={[16, 16]} style={{ marginBottom: tokens.spacing.lg }}>
+      <Row gutter={[isMobile ? 8 : 16, isMobile ? 8 : 16]} style={{ marginBottom: tokens.spacing.lg }}>
         <Col xs={12} sm={8}>
           <Card size="small">
             <Statistic

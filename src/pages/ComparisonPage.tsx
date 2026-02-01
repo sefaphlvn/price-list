@@ -33,11 +33,13 @@ import { BRANDS } from '../config/brands';
 import { PriceListRow, IndexData, StoredData } from '../types';
 import { tokens } from '../theme/tokens';
 import { staggerContainer, staggerItem, cardHoverVariants } from '../theme/animations';
+import { useIsMobile } from '../hooks/useMediaQuery';
 
 const { Title, Text } = Typography;
 
 export default function ComparisonPage() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const {
     favorites,
     removeFavorite,
@@ -159,51 +161,157 @@ export default function ComparisonPage() {
     return values.every((val) => val === values[0]);
   };
 
-  // Comparison table data with difference info
+  // Format helper functions
+  const formatPrice = (value: number | undefined): string => {
+    if (!value) return '-';
+    return new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY', maximumFractionDigits: 0 }).format(value);
+  };
+
+  const formatPower = (hp: number | undefined, kw: number | undefined): string => {
+    if (hp && kw) return `${hp} HP (${kw} kW)`;
+    if (hp) return `${hp} HP`;
+    if (kw) return `${kw} kW`;
+    return '-';
+  };
+
+  const formatBoolean = (value: boolean | undefined): string => {
+    if (value === undefined) return '-';
+    return value ? '✓' : '✗';
+  };
+
+  const formatRange = (range: number | undefined): string => {
+    if (!range) return '-';
+    return `${range} km`;
+  };
+
+  const formatBattery = (capacity: number | undefined): string => {
+    if (!capacity) return '-';
+    return `${capacity} kWh`;
+  };
+
+  const formatOtvRate = (rate: number | undefined): string => {
+    if (!rate) return '-';
+    return `%${rate}`;
+  };
+
+  // Comprehensive comparison data with categories
   const comparisonData = useMemo(() => {
     if (compareList.length === 0) return [];
 
-    const features = [
-      { key: 'brand', label: t('common.brand') },
-      { key: 'trim', label: t('common.trim') },
-      { key: 'engine', label: t('common.engine') },
-      { key: 'fuel', label: t('common.fuel') },
-      { key: 'transmission', label: t('common.transmission') },
-      { key: 'price', label: t('common.price') },
+    // Feature definitions with categories
+    const features: Array<{
+      key: string;
+      label: string;
+      category?: string;
+      isCategory?: boolean;
+      getValue: (v: VehicleIdentifier, row: PriceListRow | undefined) => string;
+      getBestType?: 'lowest' | 'highest';
+    }> = [
+      // Basic Info Category
+      { key: 'cat_basic', label: t('comparison.categories.basic', 'Temel Bilgiler'), isCategory: true, getValue: () => '' },
+      { key: 'brand', label: t('common.brand'), category: 'basic', getValue: (v) => v.brand },
+      { key: 'model', label: t('common.model'), category: 'basic', getValue: (v) => v.model },
+      { key: 'trim', label: t('common.trim'), category: 'basic', getValue: (v) => v.trim },
+      { key: 'engine', label: t('common.engine'), category: 'basic', getValue: (v) => v.engine },
+      { key: 'modelYear', label: t('comparison.fields.modelYear', 'Model Yılı'), category: 'basic', getValue: (_, row) => row?.modelYear?.toString() || '-' },
+
+      // Performance Category
+      { key: 'cat_performance', label: t('comparison.categories.performance', 'Performans'), isCategory: true, getValue: () => '' },
+      { key: 'power', label: t('comparison.fields.power', 'Motor Gücü'), category: 'performance', getValue: (_, row) => formatPower(row?.powerHP, row?.powerKW), getBestType: 'highest' },
+      { key: 'engineDisplacement', label: t('comparison.fields.engineDisplacement', 'Motor Hacmi'), category: 'performance', getValue: (_, row) => row?.engineDisplacement || '-' },
+      { key: 'engineType', label: t('comparison.fields.engineType', 'Motor Tipi'), category: 'performance', getValue: (_, row) => row?.engineType || '-' },
+
+      // Powertrain Category
+      { key: 'cat_powertrain', label: t('comparison.categories.powertrain', 'Güç Aktarımı'), isCategory: true, getValue: () => '' },
+      { key: 'fuel', label: t('common.fuel'), category: 'powertrain', getValue: (_, row) => row?.fuel || '-' },
+      { key: 'transmission', label: t('common.transmission'), category: 'powertrain', getValue: (_, row) => row?.transmission || '-' },
+      { key: 'transmissionType', label: t('comparison.fields.transmissionType', 'Şanzıman Tipi'), category: 'powertrain', getValue: (_, row) => row?.transmissionType || '-' },
+      { key: 'driveType', label: t('comparison.fields.driveType', 'Çekiş Tipi'), category: 'powertrain', getValue: (_, row) => row?.driveType || '-' },
+
+      // Electrification Category
+      { key: 'cat_electrification', label: t('comparison.categories.electrification', 'Elektrikli/Hibrit'), isCategory: true, getValue: () => '' },
+      { key: 'isElectric', label: t('comparison.fields.isElectric', 'Elektrikli'), category: 'electrification', getValue: (_, row) => formatBoolean(row?.isElectric) },
+      { key: 'isHybrid', label: t('comparison.fields.isHybrid', 'Hibrit'), category: 'electrification', getValue: (_, row) => formatBoolean(row?.isHybrid) },
+      { key: 'isMildHybrid', label: t('comparison.fields.isMildHybrid', 'Hafif Hibrit'), category: 'electrification', getValue: (_, row) => formatBoolean(row?.isMildHybrid) },
+      { key: 'isPlugInHybrid', label: t('comparison.fields.isPlugInHybrid', 'Plug-in Hibrit'), category: 'electrification', getValue: (_, row) => formatBoolean(row?.isPlugInHybrid) },
+      { key: 'batteryCapacity', label: t('comparison.fields.batteryCapacity', 'Batarya Kapasitesi'), category: 'electrification', getValue: (_, row) => formatBattery(row?.batteryCapacity) },
+      { key: 'wltpRange', label: t('comparison.fields.wltpRange', 'WLTP Menzil'), category: 'electrification', getValue: (_, row) => formatRange(row?.wltpRange), getBestType: 'highest' },
+      { key: 'hasLongRange', label: t('comparison.fields.hasLongRange', 'Uzun Menzil'), category: 'electrification', getValue: (_, row) => formatBoolean(row?.hasLongRange) },
+
+      // Price & Taxes Category
+      { key: 'cat_price', label: t('comparison.categories.price', 'Fiyat ve Vergiler'), isCategory: true, getValue: () => '' },
+      { key: 'price', label: t('common.price'), category: 'price', getValue: (_, row) => row?.priceRaw || '-', getBestType: 'lowest' },
+      { key: 'netPrice', label: t('comparison.fields.netPrice', 'Net Fiyat'), category: 'price', getValue: (_, row) => formatPrice(row?.netPrice), getBestType: 'lowest' },
+      { key: 'otvRate', label: t('comparison.fields.otvRate', 'ÖTV Oranı'), category: 'price', getValue: (_, row) => formatOtvRate(row?.otvRate), getBestType: 'lowest' },
+      { key: 'otvAmount', label: t('comparison.fields.otvAmount', 'ÖTV Tutarı'), category: 'price', getValue: (_, row) => formatPrice(row?.otvAmount) },
+      { key: 'kdvAmount', label: t('comparison.fields.kdvAmount', 'KDV Tutarı'), category: 'price', getValue: (_, row) => formatPrice(row?.kdvAmount) },
+      { key: 'monthlyLease', label: t('comparison.fields.monthlyLease', 'Aylık Kiralama'), category: 'price', getValue: (_, row) => formatPrice(row?.monthlyLease), getBestType: 'lowest' },
+
+      // Other Category
+      { key: 'cat_other', label: t('comparison.categories.other', 'Diğer'), isCategory: true, getValue: () => '' },
+      { key: 'origin', label: t('comparison.fields.origin', 'Menşei'), category: 'other', getValue: (_, row) => row?.origin || '-' },
+      { key: 'emissionStandard', label: t('comparison.fields.emissionStandard', 'Emisyon Standardı'), category: 'other', getValue: (_, row) => row?.emissionStandard || '-' },
+      { key: 'fuelConsumption', label: t('comparison.fields.fuelConsumption', 'Yakıt Tüketimi'), category: 'other', getValue: (_, row) => row?.fuelConsumption || '-' },
+      { key: 'vehicleCategory', label: t('comparison.fields.vehicleCategory', 'Araç Kategorisi'), category: 'other', getValue: (_, row) => row?.vehicleCategory || '-' },
     ];
 
     return features.map((feature) => {
       const row: any = {
         key: feature.key,
         feature: feature.label,
+        isCategory: feature.isCategory || false,
       };
 
-      // Find best price
-      let lowestPrice = Infinity;
+      if (feature.isCategory) {
+        // Category header row
+        compareList.forEach((vehicle) => {
+          row[vehicle.id] = '';
+        });
+        return row;
+      }
+
+      // Track numeric values for best calculation
+      let bestValue: number | null = null;
       let bestId = '';
 
       compareList.forEach((vehicle) => {
         const vehicleRow = getVehicleRow(vehicle);
-        if (feature.key === 'brand') {
-          row[vehicle.id] = vehicle.brand;
-        } else if (feature.key === 'trim') {
-          row[vehicle.id] = vehicle.trim;
-        } else if (feature.key === 'engine') {
-          row[vehicle.id] = vehicle.engine;
-        } else if (feature.key === 'fuel') {
-          row[vehicle.id] = vehicleRow?.fuel || '-';
-        } else if (feature.key === 'transmission') {
-          row[vehicle.id] = vehicleRow?.transmission || '-';
-        } else if (feature.key === 'price') {
-          row[vehicle.id] = vehicleRow?.priceRaw || '-';
-          if (vehicleRow && vehicleRow.priceNumeric < lowestPrice) {
-            lowestPrice = vehicleRow.priceNumeric;
-            bestId = vehicle.id;
+        const value = feature.getValue(vehicle, vehicleRow);
+        row[vehicle.id] = value;
+
+        // Calculate best for price/range comparisons
+        if (feature.getBestType && vehicleRow) {
+          let numericValue: number | undefined;
+          if (feature.key === 'price') {
+            numericValue = vehicleRow.priceNumeric;
+          } else if (feature.key === 'netPrice') {
+            numericValue = vehicleRow.netPrice;
+          } else if (feature.key === 'otvRate') {
+            numericValue = vehicleRow.otvRate;
+          } else if (feature.key === 'wltpRange') {
+            numericValue = vehicleRow.wltpRange;
+          } else if (feature.key === 'monthlyLease') {
+            numericValue = vehicleRow.monthlyLease;
+          } else if (feature.key === 'power') {
+            numericValue = vehicleRow.powerHP;
+          }
+
+          if (numericValue !== undefined && numericValue > 0) {
+            if (bestValue === null) {
+              bestValue = numericValue;
+              bestId = vehicle.id;
+            } else if (feature.getBestType === 'lowest' && numericValue < bestValue) {
+              bestValue = numericValue;
+              bestId = vehicle.id;
+            } else if (feature.getBestType === 'highest' && numericValue > bestValue) {
+              bestValue = numericValue;
+              bestId = vehicle.id;
+            }
           }
         }
       });
 
-      if (feature.key === 'price' && bestId) {
+      if (bestId) {
         row.best = bestId;
       }
 
@@ -220,58 +328,92 @@ export default function ComparisonPage() {
     return comparisonData.filter((row) => !row.allSame);
   }, [comparisonData, showOnlyDifferences]);
 
-  // Comparison table columns
-  const comparisonColumns = [
+  // Comparison table columns - responsive
+  const comparisonColumns = useMemo(() => [
     {
       title: t('comparison.table.feature'),
       dataIndex: 'feature',
       key: 'feature',
-      width: 150,
-      fixed: 'left' as const,
-      render: (text: string, record: any) => (
-        <Text strong style={{ opacity: record.allSame ? 0.5 : 1 }}>
-          {text}
-        </Text>
-      ),
+      width: isMobile ? 120 : 180,
+      fixed: isMobile ? undefined : ('left' as const),
+      render: (text: string, record: any) => {
+        if (record.isCategory) {
+          return (
+            <Text
+              strong
+              style={{
+                fontSize: isMobile ? 12 : 14,
+                color: tokens.colors.primary,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+              }}
+            >
+              {text}
+            </Text>
+          );
+        }
+        return (
+          <Text style={{ opacity: record.allSame ? 0.5 : 1, fontSize: isMobile ? 11 : 13 }}>
+            {text}
+          </Text>
+        );
+      },
     },
     ...compareList.map((vehicle) => ({
       title: (
         <div style={{ textAlign: 'center' }}>
-          <Text strong>{vehicle.model}</Text>
+          <Text strong style={{ fontSize: isMobile ? 11 : 14 }}>{vehicle.model}</Text>
           <br />
-          <Text type="secondary" style={{ fontSize: 12 }}>
+          <Text type="secondary" style={{ fontSize: isMobile ? 10 : 12 }}>
             {vehicle.brand}
           </Text>
         </div>
       ),
       dataIndex: vehicle.id,
       key: vehicle.id,
-      width: 180,
+      width: isMobile ? 130 : 180,
       render: (value: string, record: any) => {
-        const isPrice = record.feature === t('common.price');
+        // Category header - empty cell with background
+        if (record.isCategory) {
+          return <div style={{ height: '100%' }} />;
+        }
+
+        const isPriceField = record.key === 'price' || record.key === 'netPrice' || record.key === 'monthlyLease';
         const isBest = record.best === vehicle.id;
         const isSame = record.allSame;
+        const isCheckmark = value === '✓';
+        const isCross = value === '✗';
 
         return (
           <div style={{ textAlign: 'center', opacity: isSame ? 0.5 : 1 }}>
             <Text
               style={{
-                color: isPrice ? tokens.colors.success : undefined,
-                fontWeight: isPrice ? 600 : 400,
+                color: isPriceField
+                  ? tokens.colors.success
+                  : isCheckmark
+                    ? tokens.colors.success
+                    : isCross
+                      ? tokens.colors.gray[400]
+                      : undefined,
+                fontWeight: isPriceField || isBest ? 600 : 400,
+                fontSize: isMobile ? 11 : 13,
               }}
             >
               {value || '-'}
             </Text>
             {isBest && !isSame && (
-              <Tag color="green" style={{ marginLeft: 4 }}>
-                {t('comparison.table.best')}
+              <Tag
+                color="green"
+                style={{ marginLeft: 4, fontSize: isMobile ? 9 : 11, padding: isMobile ? '0 4px' : '0 6px' }}
+              >
+                {isMobile ? '✓' : t('comparison.table.best')}
               </Tag>
             )}
           </div>
         );
       },
     })),
-  ];
+  ], [compareList, isMobile, t]);
 
   // Generate PDF report
   const handleGeneratePdf = async () => {
@@ -548,10 +690,14 @@ export default function ComparisonPage() {
                   columns={comparisonColumns}
                   dataSource={filteredComparisonData}
                   pagination={false}
-                  scroll={{ x: 'max-content' }}
-                  size="middle"
+                  scroll={{ x: isMobile ? 450 : 'max-content' }}
+                  size={isMobile ? 'small' : 'middle'}
                   loading={loading}
-                  rowClassName={(record) => (record.allSame ? 'row-same-values' : '')}
+                  rowClassName={(record) => {
+                    if (record.isCategory) return 'comparison-category-row';
+                    if (record.allSame) return 'row-same-values';
+                    return '';
+                  }}
                 />
               )}
             </Card>
