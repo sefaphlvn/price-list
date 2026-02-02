@@ -1,232 +1,251 @@
 {
-  "lastUpdated": "2026-02-01T05:41:36.148Z",
+  "lastUpdated": "2026-02-02T01:33:47.583Z",
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 46
     },
     "skoda": {
       "name": "Škoda",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 22
     },
     "renault": {
       "name": "Renault",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 21
     },
     "toyota": {
       "name": "Toyota",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 48
     },
     "hyundai": {
       "name": "Hyundai",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 47
     },
     "peugeot": {
       "name": "Peugeot",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 30
     },
     "byd": {
       "name": "BYD",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
-      "totalRecords": 12
+      "latestDate": "2026-02-02",
+      "totalRecords": 11
     },
     "opel": {
       "name": "Opel",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 21
     },
     "citroen": {
       "name": "Citroën",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 17
     },
     "bmw": {
       "name": "BMW",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 57
     },
     "mercedes": {
       "name": "Mercedes-Benz",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 51
     },
     "ford": {
       "name": "Ford",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 21
     },
     "dacia": {
       "name": "Dacia",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
-      "totalRecords": 2
+      "latestDate": "2026-02-02",
+      "totalRecords": 4
     },
     "nissan": {
       "name": "Nissan",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
-      "totalRecords": 27
+      "latestDate": "2026-02-02",
+      "totalRecords": 17
     },
     "honda": {
       "name": "Honda",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 6
     },
     "seat": {
       "name": "SEAT",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 8
     },
     "kia": {
       "name": "Kia",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
-      "totalRecords": 5
+      "latestDate": "2026-02-02",
+      "totalRecords": 6
     },
     "volvo": {
       "name": "Volvo",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 34
     },
     "fiat": {
       "name": "Fiat",
       "availableDates": [
+        "2026-02-02",
         "2026-02-01",
         "2026-01-31",
         "2026-01-30",
         "2026-01-29",
         "2026-01-28"
       ],
-      "latestDate": "2026-02-01",
+      "latestDate": "2026-02-02",
       "totalRecords": 25
     }
   }

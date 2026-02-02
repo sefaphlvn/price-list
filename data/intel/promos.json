@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-02-01T06:55:55.380Z",
-  "date": "2026-02-01",
+  "generatedAt": "2026-02-02T01:33:48.417Z",
+  "date": "2026-02-02",
   "summary": {
-    "totalPriceDrops": 18,
-    "totalRecentDrops": 5,
-    "avgDropPercent": 8.72,
+    "totalPriceDrops": 19,
+    "totalRecentDrops": 6,
+    "avgDropPercent": 8.78,
     "maxDropPercent": 14.18,
-    "brandsWithDrops": 5
+    "brandsWithDrops": 6
   },
   "priceDrops": [
     {
@@ -130,7 +130,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -163,9 +163,13 @@
         {
           "date": "2026-02-01",
           "price": 1740000
+        },
+        {
+          "date": "2026-02-02",
+          "price": 1740000
         }
       ],
-      "listPrice": 822857.14,
+      "listPrice": 824070.95,
       "campaignPrice": 1740000
     },
     {
@@ -219,7 +223,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 253500,
       "dropPercent": 9.96,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -240,11 +244,61 @@
         {
           "date": "2026-02-01",
           "price": 2292400
+        },
+        {
+          "date": "2026-02-02",
+          "price": 2292400
         }
       ],
       "listPrice": 2545900,
       "campaignPrice": 2292400,
       "campaignDiscount": 10
+    },
+    {
+      "id": "opel-astra-gs-1.5-130-hp-dizel",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Astra",
+      "trim": "GS",
+      "engine": "1.5 130 HP Dizel",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "currentPrice": 2316000,
+      "currentPriceFormatted": "₺2.316.000",
+      "peakPrice": 2571000,
+      "peakPriceFormatted": "₺2.571.000",
+      "peakDate": "2026-01-28",
+      "dropAmount": 255000,
+      "dropPercent": 9.92,
+      "daysSincePeak": 5,
+      "priceHistory": [
+        {
+          "date": "2026-01-28",
+          "price": 2571000
+        },
+        {
+          "date": "2026-01-29",
+          "price": 2571000
+        },
+        {
+          "date": "2026-01-30",
+          "price": 2571000
+        },
+        {
+          "date": "2026-01-31",
+          "price": 2571000
+        },
+        {
+          "date": "2026-02-01",
+          "price": 2571000
+        },
+        {
+          "date": "2026-02-02",
+          "price": 2316000
+        }
+      ],
+      "listPrice": 2343000,
+      "campaignPrice": 2596000
     },
     {
       "id": "peugeot-3008-gt-1.2-hybrid-145-hp",
@@ -262,7 +316,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 309000,
       "dropPercent": 9.48,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -282,6 +336,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 2950000
+        },
+        {
+          "date": "2026-02-02",
           "price": 2950000
         }
       ],
@@ -305,7 +363,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 140000,
       "dropPercent": 8.92,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -325,6 +383,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 1429900
+        },
+        {
+          "date": "2026-02-02",
           "price": 1429900
         }
       ],
@@ -348,7 +410,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 196500,
       "dropPercent": 7.66,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -368,6 +430,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 2370000
+        },
+        {
+          "date": "2026-02-02",
           "price": 2370000
         }
       ],
@@ -391,7 +457,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 130000,
       "dropPercent": 6.26,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -411,6 +477,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 1945900
+        },
+        {
+          "date": "2026-02-02",
           "price": 1945900
         }
       ],
@@ -434,7 +504,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 124000,
       "dropPercent": 6.14,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -454,6 +524,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 1895900
+        },
+        {
+          "date": "2026-02-02",
           "price": 1895900
         }
       ],
@@ -477,7 +551,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 155000,
       "dropPercent": 6.09,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -497,6 +571,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 2389000
+        },
+        {
+          "date": "2026-02-02",
           "price": 2389000
         }
       ],
@@ -520,7 +598,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 100000,
       "dropPercent": 6.06,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -540,6 +618,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 1549900
+        },
+        {
+          "date": "2026-02-02",
           "price": 1549900
         }
       ],
@@ -563,7 +645,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 198000,
       "dropPercent": 5.97,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -583,6 +665,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 3120000
+        },
+        {
+          "date": "2026-02-02",
           "price": 3120000
         }
       ],
@@ -606,7 +692,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 130000,
       "dropPercent": 5.97,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -626,6 +712,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 2045900
+        },
+        {
+          "date": "2026-02-02",
           "price": 2045900
         }
       ],
@@ -649,7 +739,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 127500,
       "dropPercent": 5.79,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -669,6 +759,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 2074000
+        },
+        {
+          "date": "2026-02-02",
           "price": 2074000
         }
       ],
@@ -692,7 +786,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 100000,
       "dropPercent": 5.75,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -712,6 +806,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 1639900
+        },
+        {
+          "date": "2026-02-02",
           "price": 1639900
         }
       ],
@@ -735,7 +833,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 100000,
       "dropPercent": 5.71,
-      "daysSincePeak": 4,
+      "daysSincePeak": 5,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -755,6 +853,10 @@
         },
         {
           "date": "2026-02-01",
+          "price": 1649900
+        },
+        {
+          "date": "2026-02-02",
           "price": 1649900
         }
       ],
@@ -833,6 +935,22 @@
       "campaignDiscount": 13
     },
     {
+      "id": "opel-astra-gs-1.5-130-hp-dizel-recent",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Astra",
+      "trim": "GS",
+      "engine": "1.5 130 HP Dizel",
+      "currentPrice": 2316000,
+      "previousPrice": 2571000,
+      "dropAmount": 255000,
+      "dropPercent": 9.92,
+      "date": "2026-02-02",
+      "previousDate": "2026-02-01",
+      "listPrice": 2343000,
+      "campaignPrice": 2596000
+    },
+    {
       "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh-recent",
       "brand": "Fiat",
       "brandId": "fiat",
@@ -843,8 +961,8 @@
       "previousPrice": 604900,
       "dropAmount": 15000,
       "dropPercent": 2.48,
-      "date": "2026-02-01",
-      "previousDate": "2026-02-01",
+      "date": "2026-02-02",
+      "previousDate": "2026-02-02",
       "listPrice": 694900,
       "campaignPrice": 604900,
       "campaignDiscount": 13
@@ -862,6 +980,12 @@
       "brand": "Peugeot",
       "dropCount": 4,
       "avgDropPercent": 7.22
+    },
+    {
+      "brandId": "opel",
+      "brand": "Opel",
+      "dropCount": 1,
+      "avgDropPercent": 9.92
     },
     {
       "brandId": "ford",
