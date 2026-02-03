@@ -541,24 +541,15 @@ export default function PriceListPage() {
     };
   }, [fetchState.data]);
 
-  // Reset range filters when bounds change significantly (to avoid stale filters)
+  // Reset range filters when bounds change (prevents stale filters)
   useEffect(() => {
-    if (priceRange) {
-      const [min, max] = priceRange;
-      // If the current range is completely outside the new bounds, reset it
-      if (max < priceBounds.min || min > priceBounds.max) {
-        setPriceRange(null);
-      }
-    }
+    // Always reset price range when bounds change to ensure filter consistency
+    setPriceRange(null);
   }, [priceBounds.min, priceBounds.max]);
 
   useEffect(() => {
-    if (powerRange) {
-      const [min, max] = powerRange;
-      if (max < powerBounds.min || min > powerBounds.max) {
-        setPowerRange(null);
-      }
-    }
+    // Always reset power range when bounds change
+    setPowerRange(null);
   }, [powerBounds.min, powerBounds.max]);
 
   // Handle favorite toggle
@@ -790,14 +781,17 @@ export default function PriceListPage() {
       key: 'price',
       width: isMobile ? 120 : 200,
       sorter: (a, b) => {
-        const priceA = a.priceListNumeric || a.priceNumeric;
-        const priceB = b.priceListNumeric || b.priceNumeric;
+        // Use priceNumeric consistently with filtering
+        const priceA = a.priceNumeric;
+        const priceB = b.priceNumeric;
         return priceA - priceB;
       },
       sortOrder: sortInfo?.column === 'price' ? sortInfo.order : undefined,
       defaultSortOrder: 'ascend',
       render: (_, record) => {
-        const displayPrice = record.priceListNumeric || record.priceNumeric;
+        // Always use priceNumeric for display consistency with filtering
+        // priceListNumeric may contain net prices (before taxes) which would cause display/filter mismatch
+        const displayPrice = record.priceNumeric;
         const formattedPrice = isMobile
           ? (displayPrice / 1000000).toFixed(1) + 'M'
           : displayPrice.toLocaleString('tr-TR') + ' TL';
@@ -1272,7 +1266,7 @@ export default function PriceListPage() {
               boxShadow: tokens.shadows.sm,
             }}
           >
-            <Table
+<Table
               columns={columns}
               dataSource={filteredData}
               rowKey={(record) => `${record.brand}-${record.model}-${record.trim}-${record.engine || 'std'}-${record.transmission || 'auto'}-${record.priceNumeric}`}
