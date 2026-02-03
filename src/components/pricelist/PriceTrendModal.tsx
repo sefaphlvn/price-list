@@ -16,6 +16,7 @@ import dayjs from 'dayjs';
 import { PriceListRow, IndexData, StoredData } from '../../types';
 import { tokens } from '../../theme/tokens';
 import { BRANDS } from '../../config/brands';
+import { fetchFreshJson, DATA_URLS } from '../../utils/fetchData';
 
 const { Title, Text } = Typography;
 
@@ -54,15 +55,8 @@ export default function PriceTrendModal({ open, onClose, vehicle }: PriceTrendMo
       const data: TrendDataPoint[] = [];
 
       try {
-        // Get index to find available dates
-        const indexResponse = await fetch('./data/index.json');
-        if (!indexResponse.ok) {
-          setTrendData([]);
-          setLoading(false);
-          return;
-        }
-
-        const indexData: IndexData = await indexResponse.json();
+        // Get index to find available dates (with cache-busting for fresh data)
+        const indexData = await fetchFreshJson<IndexData>(DATA_URLS.index);
 
         // Resolve brandId from display name (e.g., "Citroën" -> "citroen")
         const brandLower = vehicle.brand.toLowerCase();

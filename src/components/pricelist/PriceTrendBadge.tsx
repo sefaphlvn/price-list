@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { PriceListRow, IndexData, StoredData } from '../../types';
 import { BRANDS } from '../../config/brands';
 import { tokens } from '../../theme/tokens';
+import { fetchFreshJson, DATA_URLS } from '../../utils/fetchData';
 
 // Create normalized key for vehicle matching
 function createRowKey(model: string, trim: string, engine: string): string {
@@ -102,15 +103,8 @@ function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: Pri
       const data: TrendDataPoint[] = [];
 
       try {
-        // Get index to find available dates
-        const indexResponse = await fetch('./data/index.json');
-        if (!indexResponse.ok) {
-          setError(true);
-          setLoading(false);
-          return;
-        }
-
-        const indexData: IndexData = await indexResponse.json();
+        // Get index to find available dates (with cache-busting for fresh data)
+        const indexData = await fetchFreshJson<IndexData>(DATA_URLS.index);
 
         // Resolve brandId from display name
         const brandLower = vehicle.brand.toLowerCase();

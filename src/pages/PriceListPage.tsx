@@ -541,6 +541,26 @@ export default function PriceListPage() {
     };
   }, [fetchState.data]);
 
+  // Reset range filters when bounds change significantly (to avoid stale filters)
+  useEffect(() => {
+    if (priceRange) {
+      const [min, max] = priceRange;
+      // If the current range is completely outside the new bounds, reset it
+      if (max < priceBounds.min || min > priceBounds.max) {
+        setPriceRange(null);
+      }
+    }
+  }, [priceBounds.min, priceBounds.max]);
+
+  useEffect(() => {
+    if (powerRange) {
+      const [min, max] = powerRange;
+      if (max < powerBounds.min || min > powerBounds.max) {
+        setPowerRange(null);
+      }
+    }
+  }, [powerBounds.min, powerBounds.max]);
+
   // Handle favorite toggle
   const handleFavoriteToggle = (row: PriceListRow) => {
     const vehicle = createVehicleIdentifier(row.brand, row.model, row.trim, row.engine);
@@ -942,6 +962,8 @@ export default function PriceListPage() {
     setFuelFilter(null);
     setPowertrainFilter(null);
     setDriveTypeFilter(null);
+    setPriceRange(null);
+    setPowerRange(null);
   };
 
   return (
@@ -979,10 +1001,15 @@ export default function PriceListPage() {
               {t('common.brand')}:
             </Text>
             <Select
+              showSearch
               value={selectedBrand}
               onChange={handleBrandChange}
               style={{ width: isMobile ? '100%' : 180, minWidth: isMobile ? 0 : 180 }}
               size={isMobile ? 'middle' : 'large'}
+              optionFilterProp="label"
+              filterOption={(input, option) =>
+                (option?.label ?? '').toString().toLowerCase().includes(input.toLowerCase())
+              }
               options={[
                 { label: t('common.all'), value: 'all' },
                 ...[...BRANDS].sort((a, b) => a.name.localeCompare(b.name, 'tr')).map((b) => ({ label: b.name, value: b.id }))
