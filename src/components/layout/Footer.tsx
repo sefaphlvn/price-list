@@ -1,7 +1,7 @@
 // Footer Component
 import { useTranslation } from 'react-i18next';
 import { Typography, Space, Divider } from 'antd';
-import { GithubOutlined, MailOutlined, QuestionCircleOutlined } from '@ant-design/icons';
+import { MailOutlined, QuestionCircleOutlined } from '@ant-design/icons';
 import { Link as RouterLink } from 'react-router-dom';
 
 import { tokens } from '../../theme/tokens';
@@ -60,20 +60,13 @@ export default function Footer() {
             {t('faq.title')}
           </RouterLink>
           <Link
-            href="mailto:destek@otofiyatlist.com"
+            href="mailto:otofiyatlist@gmail.com"
             style={{ color: tokens.colors.gray[600], fontSize: 12 }}
           >
             <MailOutlined style={{ marginRight: 4 }} />
-            destek@otofiyatlist.com
+            otofiyatlist@gmail.com
           </Link>
-          <Link
-            href="https://github.com"
-            target="_blank"
-            style={{ color: tokens.colors.gray[600], fontSize: 12 }}
-          >
-            <GithubOutlined style={{ marginRight: 4 }} />
-            GitHub
-          </Link>
+
         </Space>
 
         {/* Copyright Row */}

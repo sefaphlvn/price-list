@@ -28,7 +28,7 @@ import {
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
 
-import { useAppStore, VehicleIdentifier } from '../store';
+import { useAppStore, VehicleIdentifier, createVehicleId } from '../store';
 import { BRANDS } from '../config/brands';
 import { PriceListRow, IndexData, StoredData } from '../types';
 import { tokens } from '../theme/tokens';
@@ -107,11 +107,9 @@ export default function ComparisonPage() {
 
               const storedData: StoredData = await response.json();
 
-              // Match vehicles
+              // Match vehicles using consistent ID creation
               storedData.rows.forEach((row) => {
-                const id = `${row.brand}-${row.model}-${row.trim}-${row.engine}`
-                  .toLowerCase()
-                  .replace(/\s+/g, '-');
+                const id = createVehicleId(row.brand, row.model, row.trim, row.engine);
                 if (allIds.includes(id)) {
                   dataMap.set(id, row);
                 }

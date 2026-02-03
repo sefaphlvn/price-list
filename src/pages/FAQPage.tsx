@@ -105,9 +105,9 @@ export default function FAQPage() {
               <Paragraph style={{ fontSize: 13, color: tokens.colors.gray[600], marginBottom: tokens.spacing.sm }}>
                 {t('disclaimer.nonBindingNote')}
               </Paragraph>
-              <Link href="mailto:destek@otofiyatlist.com" style={{ fontSize: 14 }}>
+              <Link href="mailto:otofiyatlist@gmail.com" style={{ fontSize: 14 }}>
                 <MailOutlined style={{ marginRight: 6 }} />
-                destek@otofiyatlist.com
+                otofiyatlist@gmail.com
               </Link>
             </Space>
           </Card>
