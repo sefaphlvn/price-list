@@ -71,8 +71,9 @@ export default defineConfig({
         runtimeCaching: [
           // IMPORTANT: Specific patterns MUST come before general patterns
           // Critical data files - always fetch from network first
+          // Note: patterns allow query strings (e.g., ?_t=timestamp for cache busting)
           {
-            urlPattern: /\/data\/index\.json$/,
+            urlPattern: /\/data\/index\.json(\?.*)?$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'index-cache',
@@ -84,7 +85,7 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: /\/data\/latest\.json$/,
+            urlPattern: /\/data\/latest\.json(\?.*)?$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'latest-cache',
@@ -96,7 +97,7 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: /\/data\/stats\/.*\.json$/,
+            urlPattern: /\/data\/stats\/.*\.json(\?.*)?$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'stats-cache',
@@ -108,7 +109,7 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: /\/data\/intel\/.*\.json$/,
+            urlPattern: /\/data\/intel\/.*\.json(\?.*)?$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'intel-cache',
@@ -119,9 +120,9 @@ export default defineConfig({
               },
             },
           },
-          // Historical data - can use stale-while-revalidate (data doesn't change)
+          // Historical data - can use stale-while-revalidate (data doesn't change once created)
           {
-            urlPattern: /\/data\/\d{4}\/\d{2}\/.*\.json$/,
+            urlPattern: /\/data\/\d{4}\/\d{2}\/.*\.json(\?.*)?$/,
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'historical-data-cache',
