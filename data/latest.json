@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-02T01:33:48.206Z",
-  "totalVehicles": 492,
+  "generatedAt": "2026-02-03T01:33:40.835Z",
+  "totalVehicles": 525,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1985,7 +1985,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "R5 E-Tech ELEKTRİKLİ",
@@ -2234,43 +2234,6 @@
           "vehicleCategory": "Binek",
           "otvIncentivePrice": 1780000,
           "powerHP": 120
-        },
-        {
-          "model": "Yeni Duster",
-          "trim": "evolution",
-          "engine": "evolution Turbo Tce EDC 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Benzin",
-          "priceRaw": "₺1.904.999,99",
-          "priceNumeric": 1904999.99,
-          "brand": "Renault",
-          "modelYear": "2026",
-          "otvRate": 75,
-          "netPrice": 877235.71,
-          "otvAmount": 657926.78,
-          "kdvAmount": 307032.5,
-          "optionalEquipment": [
-            {
-              "name": "Yedek Lastik",
-              "price": 14000
-            },
-            {
-              "name": "Metalik Renk",
-              "price": 15000
-            },
-            {
-              "name": "Modüler Tavan Barı",
-              "price": 7000
-            },
-            {
-              "name": "Sis Farı",
-              "price": 3500
-            }
-          ],
-          "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1904999.99,
-          "powerHP": 145,
-          "engineType": "TCe"
         },
         {
           "model": "Yeni Duster",
@@ -2738,7 +2701,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3287,7 +3250,7 @@
         },
         {
           "model": "Proace Verso",
-          "trim": "2.0 D 180 HP Passion A/T",
+          "trim": "2.2 D 180 HP Passion A/T",
           "engine": "2",
           "transmission": "Otomatik",
           "fuel": "Dizel",
@@ -3301,7 +3264,7 @@
         },
         {
           "model": "Proace Verso",
-          "trim": "2.0 D 180 HP Passion A/T",
+          "trim": "2.2 D 180 HP Passion A/T",
           "engine": "2",
           "transmission": "Otomatik",
           "fuel": "Dizel",
@@ -3415,151 +3378,163 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.2 Jump",
           "engine": "1.2 MPI 79 PS Jump",
           "transmission": "Manual",
           "fuel": "Benzin",
-          "priceRaw": "1313000",
-          "priceNumeric": 1313000,
+          "priceRaw": "1400700",
+          "priceNumeric": 1400700,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1313000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1400700
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Jump",
           "engine": "1.0 T-GDI 90PS Jump",
           "transmission": "Manual",
           "fuel": "Benzin",
-          "priceRaw": "1313000",
-          "priceNumeric": 1313000,
+          "priceRaw": "1400700",
+          "priceNumeric": 1400700,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1313000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1400700
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Jump",
           "engine": "1.0 T-GDI 100 PS Jump",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1502000",
-          "priceNumeric": 1502000,
+          "priceRaw": "1556000",
+          "priceNumeric": 1556000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1502000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1556000
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Jump",
           "engine": "1.0 T-GDI 90PS Jump",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1502000",
-          "priceNumeric": 1502000,
+          "priceRaw": "1556000",
+          "priceNumeric": 1556000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1502000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1556000
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Style",
           "engine": "1.0 T-GDI 100 PS Style",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1596000",
-          "priceNumeric": 1596000,
+          "priceRaw": "1638000",
+          "priceNumeric": 1638000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1596000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1638000
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Style",
           "engine": "1.0 T-GDI 90PS Style",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1596000",
-          "priceNumeric": 1596000,
+          "priceRaw": "1638000",
+          "priceNumeric": 1638000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1596000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1638000
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Elite",
           "engine": "1.0 T-GDI 100 PS Elite",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1700000",
-          "priceNumeric": 1700000,
+          "priceRaw": "1743000",
+          "priceNumeric": 1743000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1700000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1743000
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Elite",
           "engine": "1.0 T-GDI 90PS Elite",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1700000",
-          "priceNumeric": 1700000,
+          "priceRaw": "1743000",
+          "priceNumeric": 1743000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1700000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1743000
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Jump",
           "engine": "1.0 T-GDI 90PS Jump",
           "transmission": "Manual",
           "fuel": "Benzin",
-          "priceRaw": "1334500",
-          "priceNumeric": 1334500,
+          "priceRaw": "1424100",
+          "priceNumeric": 1424100,
           "brand": "Hyundai",
           "modelYear": "2026",
-          "priceCampaignNumeric": 1334500
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1424100
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Jump",
           "engine": "1.0 T-GDI 90PS Jump",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1532000",
-          "priceNumeric": 1532000,
+          "priceRaw": "1587000",
+          "priceNumeric": 1587000,
           "brand": "Hyundai",
           "modelYear": "2026",
-          "priceCampaignNumeric": 1532000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1587000
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Style",
           "engine": "1.0 T-GDI 90PS Style",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1627000",
-          "priceNumeric": 1627000,
+          "priceRaw": "1680000",
+          "priceNumeric": 1680000,
           "brand": "Hyundai",
           "modelYear": "2026",
-          "priceCampaignNumeric": 1627000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1680000
         },
         {
-          "model": "i20 - Yerli Üretim",
+          "model": "i20",
           "trim": "1.0 Elite",
           "engine": "1.0 T-GDI 90PS Elite",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1731000",
-          "priceNumeric": 1731000,
+          "priceRaw": "1785000",
+          "priceNumeric": 1785000,
           "brand": "Hyundai",
           "modelYear": "2026",
-          "priceCampaignNumeric": 1731000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1785000
         },
         {
           "model": "i30",
@@ -3567,11 +3542,11 @@
           "engine": "1.5T-GDI MHEV 140 PS  DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1893000",
-          "priceNumeric": 1893000,
+          "priceRaw": "1930000",
+          "priceNumeric": 1930000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1893000
+          "priceCampaignNumeric": 1930000
         },
         {
           "model": "i30",
@@ -3579,131 +3554,154 @@
           "engine": "1.5T-GDI MHEV 140 PS  DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "2003000",
-          "priceNumeric": 2003000,
+          "priceRaw": "2032000",
+          "priceNumeric": 2032000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2003000
+          "priceCampaignNumeric": 2032000
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
           "trim": "Jump",
           "engine": "1.2 MPI 79 PS",
           "transmission": "Manual",
           "fuel": "Benzin",
-          "priceRaw": "1446500",
-          "priceNumeric": 1446500,
+          "priceRaw": "1490500",
+          "priceNumeric": 1490500,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1446500
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1490500
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
+          "trim": "Jump",
+          "engine": "1.0 T-GDI 90PS",
+          "transmission": "Manual",
+          "fuel": "Benzin",
+          "priceRaw": "1490500",
+          "priceNumeric": 1490500,
+          "brand": "Hyundai",
+          "modelYear": "2025",
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1490500
+        },
+        {
+          "model": "BAYON",
           "trim": "Jump",
           "engine": "1.0 T-GDI 100 PS",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1625000",
-          "priceNumeric": 1625000,
+          "priceRaw": "1672000",
+          "priceNumeric": 1672000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1625000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1672000
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
           "trim": "Jump",
           "engine": "1.0 T-GDI 90PS",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1625000",
-          "priceNumeric": 1625000,
+          "priceRaw": "1672000",
+          "priceNumeric": 1672000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1625000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1672000
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
           "trim": "Style",
           "engine": "1.0 T-GDI 100 PS",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1674000",
-          "priceNumeric": 1674000,
+          "priceRaw": "1716000",
+          "priceNumeric": 1716000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1674000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1716000
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
           "trim": "Style",
           "engine": "1.0 T-GDI 90PS",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1674000",
-          "priceNumeric": 1674000,
+          "priceRaw": "1716000",
+          "priceNumeric": 1716000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1674000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1716000
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
           "trim": "Elite",
           "engine": "1.0 T-GDI 100 PS",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1786000",
-          "priceNumeric": 1786000,
+          "priceRaw": "1826250",
+          "priceNumeric": 1826250,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1786000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1826250
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
           "trim": "Elite",
           "engine": "1.0 T-GDI 90PS",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1786000",
-          "priceNumeric": 1786000,
+          "priceRaw": "1826250",
+          "priceNumeric": 1826250,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1786000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1826250
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
           "trim": "Jump",
           "engine": "1.0 T-GDI 90PS",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1647000",
-          "priceNumeric": 1647000,
+          "priceRaw": "1695000",
+          "priceNumeric": 1695000,
           "brand": "Hyundai",
           "modelYear": "2026",
-          "priceCampaignNumeric": 1647000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1695000
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
           "trim": "Style",
           "engine": "1.0 T-GDI 90PS",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1702000",
-          "priceNumeric": 1702000,
+          "priceRaw": "1750000",
+          "priceNumeric": 1750000,
           "brand": "Hyundai",
           "modelYear": "2026",
-          "priceCampaignNumeric": 1702000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1750000
         },
         {
-          "model": "BAYON - Yerli Üretim",
+          "model": "BAYON",
           "trim": "Elite",
           "engine": "1.0 T-GDI 90PS",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "1815000",
-          "priceNumeric": 1815000,
+          "priceRaw": "1864000",
+          "priceNumeric": 1864000,
           "brand": "Hyundai",
           "modelYear": "2026",
-          "priceCampaignNumeric": 1815000
+          "origin": "Türkiye",
+          "priceCampaignNumeric": 1864000
         },
         {
           "model": "KONA",
@@ -3711,11 +3709,11 @@
           "engine": "1.6 T-GDI 180 PS Prime DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "2231000",
-          "priceNumeric": 2231000,
+          "priceRaw": "2301000",
+          "priceNumeric": 2301000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2231000
+          "priceCampaignNumeric": 2301000
         },
         {
           "model": "TUCSON",
@@ -3723,11 +3721,11 @@
           "engine": "1.6 T-GDI 180 PS  4X2 DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "2384000",
-          "priceNumeric": 2384000,
+          "priceRaw": "2288000",
+          "priceNumeric": 2288000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2384000
+          "priceCampaignNumeric": 2288000
         },
         {
           "model": "TUCSON",
@@ -3735,11 +3733,11 @@
           "engine": "1.6 T-GDI 180 PS  4X2 DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "2674000",
-          "priceNumeric": 2674000,
+          "priceRaw": "2679000",
+          "priceNumeric": 2679000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2674000
+          "priceCampaignNumeric": 2679000
         },
         {
           "model": "TUCSON",
@@ -3747,11 +3745,11 @@
           "engine": "1.6 T-GDI 180 PS  4X2 DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "2759000",
-          "priceNumeric": 2759000,
+          "priceRaw": "2819000",
+          "priceNumeric": 2819000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2759000
+          "priceCampaignNumeric": 2819000
         },
         {
           "model": "TUCSON",
@@ -3759,11 +3757,11 @@
           "engine": "1.6 T-GDI 160 PS  4X2 DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "2998000",
-          "priceNumeric": 2998000,
+          "priceRaw": "3058000",
+          "priceNumeric": 3058000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2998000
+          "priceCampaignNumeric": 3058000
         },
         {
           "model": "TUCSON",
@@ -3771,11 +3769,11 @@
           "engine": "1.6 T-GDI 180 PS  4X2 DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "3021000",
-          "priceNumeric": 3021000,
+          "priceRaw": "3081000",
+          "priceNumeric": 3081000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 3021000
+          "priceCampaignNumeric": 3081000
         },
         {
           "model": "TUCSON",
@@ -3783,11 +3781,11 @@
           "engine": "1.6 T-GDI 160 PS  4X4 DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "3321000",
-          "priceNumeric": 3321000,
+          "priceRaw": "3391000",
+          "priceNumeric": 3391000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 3321000
+          "priceCampaignNumeric": 3391000
         },
         {
           "model": "TUCSON",
@@ -3795,11 +3793,11 @@
           "engine": "1.6 T-GDI 180 PS  4X4 DCT",
           "transmission": "DCT",
           "fuel": "Benzin",
-          "priceRaw": "3342000",
-          "priceNumeric": 3342000,
+          "priceRaw": "3412000",
+          "priceNumeric": 3412000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 3342000
+          "priceCampaignNumeric": 3412000
         },
         {
           "model": "TUCSON",
@@ -3807,11 +3805,11 @@
           "engine": "1.6 CRDI 136 PS  4X2 DCT (LB)",
           "transmission": "DCT",
           "fuel": "Dizel",
-          "priceRaw": "2739000",
-          "priceNumeric": 2739000,
+          "priceRaw": "2799000",
+          "priceNumeric": 2799000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2739000
+          "priceCampaignNumeric": 2799000
         },
         {
           "model": "TUCSON",
@@ -3819,11 +3817,11 @@
           "engine": "1.6 CRDI 136 PS  4X2 DCT",
           "transmission": "DCT",
           "fuel": "Dizel",
-          "priceRaw": "3133000",
-          "priceNumeric": 3133000,
+          "priceRaw": "3203000",
+          "priceNumeric": 3203000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 3133000
+          "priceCampaignNumeric": 3203000
         },
         {
           "model": "TUCSON",
@@ -3831,11 +3829,11 @@
           "engine": "1.6 CRDI 136 PS  4X4 DCT",
           "transmission": "DCT",
           "fuel": "Dizel",
-          "priceRaw": "3437000",
-          "priceNumeric": 3437000,
+          "priceRaw": "3507000",
+          "priceNumeric": 3507000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 3437000
+          "priceCampaignNumeric": 3507000
         },
         {
           "model": "INSTER",
@@ -3843,11 +3841,11 @@
           "engine": "71.1 kW",
           "transmission": "Automatic",
           "fuel": "Elektrik",
-          "priceRaw": "1453000",
-          "priceNumeric": 1453000,
+          "priceRaw": "1510000",
+          "priceNumeric": 1510000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1453000
+          "priceCampaignNumeric": 1510000
         },
         {
           "model": "INSTER",
@@ -3855,11 +3853,11 @@
           "engine": "84.5 kW",
           "transmission": "Automatic",
           "fuel": "Elektrik",
-          "priceRaw": "1682000",
-          "priceNumeric": 1682000,
+          "priceRaw": "1740000",
+          "priceNumeric": 1740000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1682000
+          "priceCampaignNumeric": 1740000
         },
         {
           "model": "INSTER",
@@ -3867,11 +3865,11 @@
           "engine": "Cross  84.5 kW",
           "transmission": "Automatic",
           "fuel": "Elektrik",
-          "priceRaw": "1733000",
-          "priceNumeric": 1733000,
+          "priceRaw": "1790000",
+          "priceNumeric": 1790000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 1733000
+          "priceCampaignNumeric": 1790000
         },
         {
           "model": "KONA Elektrik",
@@ -3879,11 +3877,11 @@
           "engine": "99 kW",
           "transmission": "Automatic",
           "fuel": "Elektrik",
-          "priceRaw": "2184000",
-          "priceNumeric": 2184000,
+          "priceRaw": "2257000",
+          "priceNumeric": 2257000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2184000
+          "priceCampaignNumeric": 2257000
         },
         {
           "model": "IONIQ 5",
@@ -3891,11 +3889,11 @@
           "engine": "Dynamic Vision Roof 125 kW 4x2",
           "transmission": "Automatic",
           "fuel": "Elektrik",
-          "priceRaw": "2435000",
-          "priceNumeric": 2435000,
+          "priceRaw": "2484900",
+          "priceNumeric": 2484900,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2435000
+          "priceCampaignNumeric": 2484900
         },
         {
           "model": "IONIQ 5 N",
@@ -3915,11 +3913,11 @@
           "engine": "Advance 111 kW 4x2",
           "transmission": "Automatic",
           "fuel": "Elektrik",
-          "priceRaw": "2284000",
-          "priceNumeric": 2284000,
+          "priceRaw": "2359000",
+          "priceNumeric": 2359000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2284000
+          "priceCampaignNumeric": 2359000
         },
         {
           "model": "IONIQ 9",
@@ -3927,11 +3925,11 @@
           "engine": "160 kW 4X2",
           "transmission": "Automatic",
           "fuel": "Elektrik",
-          "priceRaw": "5394000",
-          "priceNumeric": 5394000,
+          "priceRaw": "5560000",
+          "priceNumeric": 5560000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 5394000
+          "priceCampaignNumeric": 5560000
         },
         {
           "model": "IONIQ 9",
@@ -3939,11 +3937,11 @@
           "engine": "226,1 kW 4X4",
           "transmission": "Automatic",
           "fuel": "Elektrik",
-          "priceRaw": "6458000",
-          "priceNumeric": 6458000,
+          "priceRaw": "6660000",
+          "priceNumeric": 6660000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 6458000
+          "priceCampaignNumeric": 6660000
         },
         {
           "model": "TUCSON Hibrit",
@@ -3951,11 +3949,11 @@
           "engine": "1.6 T-GDI 215 PS  HEV 4x2 AT",
           "transmission": "Automatic",
           "fuel": "Benzin",
-          "priceRaw": "3498000",
-          "priceNumeric": 3498000,
+          "priceRaw": "3607000",
+          "priceNumeric": 3607000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 3498000
+          "priceCampaignNumeric": 3607000
         },
         {
           "model": "SANTA FE Hibrit",
@@ -3963,11 +3961,11 @@
           "engine": "1.6 T-GDI HEV 215PS 4X4 AT",
           "transmission": "Automatic",
           "fuel": "Benzin",
-          "priceRaw": "5076000",
-          "priceNumeric": 5076000,
+          "priceRaw": "5120000",
+          "priceNumeric": 5120000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 5076000
+          "priceCampaignNumeric": 5120000
         },
         {
           "model": "STARIA Hibrit",
@@ -3975,17 +3973,17 @@
           "engine": "1.6 T-GDI 225 PS HEV  AT 4X2",
           "transmission": "Automatic",
           "fuel": "Benzin",
-          "priceRaw": "2549000",
-          "priceNumeric": 2549000,
+          "priceRaw": "2630000",
+          "priceNumeric": 2630000,
           "brand": "Hyundai",
           "modelYear": "2025",
-          "priceCampaignNumeric": 2549000
+          "priceCampaignNumeric": 2630000
         }
       ]
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "E-208",
@@ -4170,7 +4168,7 @@
           "priceRaw": "2.336.000 TL",
           "priceNumeric": 2336000,
           "brand": "Peugeot",
-          "priceListNumeric": 2376000,
+          "priceListNumeric": 2374500,
           "priceCampaignNumeric": 2336000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
@@ -4258,11 +4256,11 @@
           "engine": "157 kW",
           "transmission": "",
           "fuel": "Elektrik",
-          "priceRaw": "3.120.000 TL",
-          "priceNumeric": 3120000,
+          "priceRaw": "3.199.000 TL",
+          "priceNumeric": 3199000,
           "brand": "Peugeot",
           "priceListNumeric": 3318000,
-          "priceCampaignNumeric": 3120000,
+          "priceCampaignNumeric": 3199000,
           "powerKW": 157,
           "powerHP": 210,
           "isElectric": true,
@@ -4355,11 +4353,11 @@
           "engine": "1.5 BlueHDi 130 HP",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.506.000 TL",
-          "priceNumeric": 1506000,
+          "priceRaw": "1.536.000 TL",
+          "priceNumeric": 1536000,
           "brand": "Peugeot",
-          "priceListNumeric": 1543500,
-          "priceCampaignNumeric": 1506000,
+          "priceListNumeric": 1573500,
+          "priceCampaignNumeric": 1536000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -4372,11 +4370,11 @@
           "engine": "1.5 BlueHDi 130 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.801.500 TL",
-          "priceNumeric": 1801500,
+          "priceRaw": "1.831.500 TL",
+          "priceNumeric": 1831500,
           "brand": "Peugeot",
-          "priceListNumeric": 1847000,
-          "priceCampaignNumeric": 1801500,
+          "priceListNumeric": 1877000,
+          "priceCampaignNumeric": 1831500,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -4406,10 +4404,10 @@
           "engine": "1.5 BlueHDi 100 HP",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.237.500 TL",
-          "priceNumeric": 1237500,
+          "priceRaw": "1.273.500 TL",
+          "priceNumeric": 1273500,
           "brand": "Peugeot",
-          "priceListNumeric": 1237500,
+          "priceListNumeric": 1273500,
           "powerHP": 100,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -4422,11 +4420,11 @@
           "engine": "1.5 BlueHDi 130 HP",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.297.500 TL",
-          "priceNumeric": 1297500,
+          "priceRaw": "1.333.500 TL",
+          "priceNumeric": 1333500,
           "brand": "Peugeot",
-          "priceListNumeric": 1330000,
-          "priceCampaignNumeric": 1297500,
+          "priceListNumeric": 1366000,
+          "priceCampaignNumeric": 1333500,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -4439,11 +4437,11 @@
           "engine": "1.5 BlueHDi 130 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.371.000 TL",
-          "priceNumeric": 1371000,
+          "priceRaw": "1.407.000 TL",
+          "priceNumeric": 1407000,
           "brand": "Peugeot",
-          "priceListNumeric": 1405000,
-          "priceCampaignNumeric": 1371000,
+          "priceListNumeric": 1441000,
+          "priceCampaignNumeric": 1407000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -4456,10 +4454,10 @@
           "engine": "2.0 BlueHDi 180 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "2.290.500 TL",
-          "priceNumeric": 2290500,
+          "priceRaw": "2.360.500 TL",
+          "priceNumeric": 2360500,
           "brand": "Peugeot",
-          "priceListNumeric": 2290500,
+          "priceListNumeric": 2360500,
           "powerHP": 180,
           "engineDisplacement": "2.0L",
           "engineType": "BlueHDi",
@@ -4474,11 +4472,11 @@
           "engine": "2.2 BlueHDi 180 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "2.360.500 TL",
-          "priceNumeric": 2360500,
+          "priceRaw": "2.430.500 TL",
+          "priceNumeric": 2430500,
           "brand": "Peugeot",
-          "priceListNumeric": 2420000,
-          "priceCampaignNumeric": 2360500,
+          "priceListNumeric": 2490000,
+          "priceCampaignNumeric": 2430500,
           "powerHP": 180,
           "engineDisplacement": "2.2L",
           "engineType": "BlueHDi",
@@ -4492,7 +4490,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "ATTO 2",
@@ -4708,7 +4706,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4831,37 +4829,6 @@
           "powerHP": 136,
           "engineDisplacement": "1.2L",
           "isHybrid": true
-        },
-        {
-          "model": "Frontera Elektrik",
-          "trim": "GS",
-          "engine": "44 kWh Batarya",
-          "transmission": "",
-          "fuel": "Elektrik",
-          "priceRaw": "1.857.000 TL",
-          "priceNumeric": 1857000,
-          "brand": "Opel",
-          "modelYear": 2025,
-          "priceListNumeric": 1768000,
-          "priceCampaignNumeric": 1857000,
-          "batteryCapacity": 44,
-          "isElectric": true
-        },
-        {
-          "model": "Frontera Elektrik",
-          "trim": "GS",
-          "engine": "54 kWh Batarya - Uzun Menzil",
-          "transmission": "",
-          "fuel": "Elektrik",
-          "priceRaw": "1.970.000 TL",
-          "priceNumeric": 1970000,
-          "brand": "Opel",
-          "modelYear": 2025,
-          "priceListNumeric": 1875000,
-          "priceCampaignNumeric": 1970000,
-          "batteryCapacity": 54,
-          "isElectric": true,
-          "hasLongRange": true
         },
         {
           "model": "Mokka",
@@ -5029,19 +4996,35 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
+        {
+          "model": "Elektrikli ë-C3",
+          "trim": "Plus",
+          "engine": "83 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.468.000 TL",
+          "priceNumeric": 1468000,
+          "brand": "Citroën",
+          "priceListNumeric": 1488000,
+          "priceCampaignNumeric": 1468000,
+          "powerKW": 83,
+          "isElectric": true
+        },
         {
           "model": "Elektrikli ë-C3",
           "trim": "Max",
           "engine": "83 kW",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.508.000 TL",
-          "priceNumeric": 1508000,
+          "priceRaw": "1.528.000 TL",
+          "priceNumeric": 1528000,
           "brand": "Citroën",
-          "priceListNumeric": 1528000,
-          "priceCampaignNumeric": 1508000
+          "priceListNumeric": 1548000,
+          "priceCampaignNumeric": 1528000,
+          "powerKW": 83,
+          "isElectric": true
         },
         {
           "model": "C3 Aircross Hybrid 145",
@@ -5049,10 +5032,15 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "1.954.000 TL",
-          "priceNumeric": 1954000,
+          "priceRaw": "1.974.000 TL",
+          "priceNumeric": 1974000,
           "brand": "Citroën",
-          "priceListNumeric": 1954000
+          "priceListNumeric": 1974000,
+          "powerHP": 145,
+          "engineDisplacement": "1.2L",
+          "engineType": "Hybrid",
+          "transmissionType": "EDCS6",
+          "isHybrid": true
         },
         {
           "model": "C3 Aircross Hybrid 145",
@@ -5060,10 +5048,15 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.106.000 TL",
-          "priceNumeric": 2106000,
+          "priceRaw": "2.068.000 TL",
+          "priceNumeric": 2068000,
           "brand": "Citroën",
-          "priceListNumeric": 2106000
+          "priceListNumeric": 2068000,
+          "powerHP": 145,
+          "engineDisplacement": "1.2L",
+          "engineType": "Hybrid",
+          "transmissionType": "EDCS6",
+          "isHybrid": true
         },
         {
           "model": "C3 Aircross Hybrid 145",
@@ -5071,10 +5064,28 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.150.000 TL",
-          "priceNumeric": 2150000,
+          "priceRaw": "2.171.000 TL",
+          "priceNumeric": 2171000,
           "brand": "Citroën",
-          "priceListNumeric": 2150000
+          "priceListNumeric": 2171000,
+          "powerHP": 145,
+          "engineDisplacement": "1.2L",
+          "engineType": "Hybrid",
+          "transmissionType": "EDCS6",
+          "isHybrid": true
+        },
+        {
+          "model": "Elektrikli ë-C3 Aircross",
+          "trim": "Max",
+          "engine": "83 kW Elektrikli Motor Standart Menzil",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.665.000 TL",
+          "priceNumeric": 1665000,
+          "brand": "Citroën",
+          "priceListNumeric": 1665000,
+          "powerKW": 83,
+          "isElectric": true
         },
         {
           "model": "Elektrikli ë-C3 Aircross",
@@ -5082,32 +5093,103 @@
           "engine": "83 kW Elektrikli Motor Uzun Menzil",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.809.000 TL",
-          "priceNumeric": 1809000,
+          "priceRaw": "1.776.000 TL",
+          "priceNumeric": 1776000,
           "brand": "Citroën",
-          "priceListNumeric": 1809000
+          "priceListNumeric": 1776000,
+          "powerKW": 83,
+          "isElectric": true,
+          "hasLongRange": true
+        },
+        {
+          "model": "C4",
+          "trim": "You",
+          "engine": "1.2 Hybrid 145* eDCS6",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "1.955.000 TL",
+          "priceNumeric": 1955000,
+          "brand": "Citroën",
+          "priceListNumeric": 1955000,
+          "powerHP": 145,
+          "engineDisplacement": "1.2L",
+          "engineType": "Hybrid",
+          "transmissionType": "EDCS6",
+          "isHybrid": true
+        },
+        {
+          "model": "C4",
+          "trim": "Max",
+          "engine": "1.2 Hybrid 145* eDCS6",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.050.000 TL",
+          "priceNumeric": 2050000,
+          "brand": "Citroën",
+          "priceListNumeric": 2050000,
+          "powerHP": 145,
+          "engineDisplacement": "1.2L",
+          "engineType": "Hybrid",
+          "transmissionType": "EDCS6",
+          "isHybrid": true
         },
         {
           "model": "Elektrikli ë-C4",
           "trim": "Max",
-          "engine": "115 kW",
+          "engine": "115 KW",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
           "priceRaw": "2.202.000 TL",
           "priceNumeric": 2202000,
           "brand": "Citroën",
-          "priceListNumeric": 2202000
+          "priceListNumeric": 2202000,
+          "powerKW": 115,
+          "isElectric": true
+        },
+        {
+          "model": "C4 X",
+          "trim": "You",
+          "engine": "1.2 Hybrid 145* eDCS6",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "1.955.000 TL",
+          "priceNumeric": 1955000,
+          "brand": "Citroën",
+          "priceListNumeric": 1955000,
+          "powerHP": 145,
+          "engineDisplacement": "1.2L",
+          "engineType": "Hybrid",
+          "transmissionType": "EDCS6",
+          "isHybrid": true
+        },
+        {
+          "model": "C4 X",
+          "trim": "Max",
+          "engine": "1.2 Hybrid 145* eDCS6",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.059.000 TL",
+          "priceNumeric": 2059000,
+          "brand": "Citroën",
+          "priceListNumeric": 2059000,
+          "powerHP": 145,
+          "engineDisplacement": "1.2L",
+          "engineType": "Hybrid",
+          "transmissionType": "EDCS6",
+          "isHybrid": true
         },
         {
           "model": "Elektrikli ë-C4 X",
           "trim": "Max",
-          "engine": "115 kW",
+          "engine": "115 KW",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
           "priceRaw": "2.167.000 TL",
           "priceNumeric": 2167000,
           "brand": "Citroën",
-          "priceListNumeric": 2167000
+          "priceListNumeric": 2167000,
+          "powerKW": 115,
+          "isElectric": true
         },
         {
           "model": "Yeni C5 Aircross Hybrid 145",
@@ -5118,7 +5200,12 @@
           "priceRaw": "2.600.000 TL",
           "priceNumeric": 2600000,
           "brand": "Citroën",
-          "priceListNumeric": 2600000
+          "priceListNumeric": 2600000,
+          "powerHP": 145,
+          "engineDisplacement": "1.2L",
+          "engineType": "Hybrid",
+          "transmissionType": "EDCS6",
+          "isHybrid": true
         },
         {
           "model": "Yeni C5 Aircross Hybrid 145",
@@ -5129,7 +5216,12 @@
           "priceRaw": "2.800.000 TL",
           "priceNumeric": 2800000,
           "brand": "Citroën",
-          "priceListNumeric": 2800000
+          "priceListNumeric": 2800000,
+          "powerHP": 145,
+          "engineDisplacement": "1.2L",
+          "engineType": "Hybrid",
+          "transmissionType": "EDCS6",
+          "isHybrid": true
         },
         {
           "model": "Yeni ë-C5 Aircross",
@@ -5140,7 +5232,22 @@
           "priceRaw": "2.380.000 TL",
           "priceNumeric": 2380000,
           "brand": "Citroën",
-          "priceListNumeric": 2380000
+          "priceListNumeric": 2380000,
+          "powerKW": 157,
+          "isElectric": true
+        },
+        {
+          "model": "Yeni ë-C5 Aircross",
+          "trim": "Max",
+          "engine": "157 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.150.000 TL",
+          "priceNumeric": 3150000,
+          "brand": "Citroën",
+          "priceListNumeric": 3150000,
+          "powerKW": 157,
+          "isElectric": true
         },
         {
           "model": "Berlingo",
@@ -5148,10 +5255,14 @@
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.725.000 TL",
-          "priceNumeric": 1725000,
+          "priceRaw": "1.744.000 TL",
+          "priceNumeric": 1744000,
           "brand": "Citroën",
-          "priceListNumeric": 1725000
+          "priceListNumeric": 1744000,
+          "powerHP": 130,
+          "engineDisplacement": "1.5L",
+          "engineType": "BlueHDi",
+          "vehicleCategory": "Ticari"
         },
         {
           "model": "Berlingo",
@@ -5159,10 +5270,15 @@
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.801.000 TL",
-          "priceNumeric": 1801000,
+          "priceRaw": "1.820.000 TL",
+          "priceNumeric": 1820000,
           "brand": "Citroën",
-          "priceListNumeric": 1801000
+          "priceListNumeric": 1820000,
+          "powerHP": 130,
+          "engineDisplacement": "1.5L",
+          "engineType": "BlueHDi",
+          "transmissionType": "EAT8",
+          "vehicleCategory": "Ticari"
         },
         {
           "model": "Berlingo",
@@ -5170,10 +5286,15 @@
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.939.000 TL",
-          "priceNumeric": 1939000,
+          "priceRaw": "1.959.000 TL",
+          "priceNumeric": 1959000,
           "brand": "Citroën",
-          "priceListNumeric": 1939000
+          "priceListNumeric": 1959000,
+          "powerHP": 130,
+          "engineDisplacement": "1.5L",
+          "engineType": "BlueHDi",
+          "transmissionType": "EAT8",
+          "vehicleCategory": "Ticari"
         },
         {
           "model": "Berlingo Van",
@@ -5181,10 +5302,14 @@
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.343.000 TL",
-          "priceNumeric": 1343000,
+          "priceRaw": "1.356.000 TL",
+          "priceNumeric": 1356000,
           "brand": "Citroën",
-          "priceListNumeric": 1343000
+          "priceListNumeric": 1356000,
+          "powerHP": 130,
+          "engineDisplacement": "1.5L",
+          "engineType": "BlueHDi",
+          "vehicleCategory": "Ticari"
         },
         {
           "model": "Berlingo Van",
@@ -5192,21 +5317,151 @@
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.420.000 TL",
-          "priceNumeric": 1420000,
+          "priceRaw": "1.434.000 TL",
+          "priceNumeric": 1434000,
           "brand": "Citroën",
-          "priceListNumeric": 1420000
+          "priceListNumeric": 1434000,
+          "powerHP": 130,
+          "engineDisplacement": "1.5L",
+          "engineType": "BlueHDi",
+          "transmissionType": "EAT8",
+          "vehicleCategory": "Ticari"
         },
         {
           "model": "Spacetourer",
-          "trim": "8+1",
+          "trim": "Spacetourer 8+1",
           "engine": "2.2 BlueHDi 180 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "2.444.000 TL",
-          "priceNumeric": 2444000,
+          "priceRaw": "2.615.000 TL",
+          "priceNumeric": 2615000,
           "brand": "Citroën",
-          "priceListNumeric": 2444000
+          "priceListNumeric": 2615000,
+          "powerHP": 180,
+          "engineDisplacement": "2.2L",
+          "engineType": "BlueHDi",
+          "transmissionType": "EAT8",
+          "vehicleCategory": "Ticari"
+        },
+        {
+          "model": "Jumpy Van",
+          "trim": "Panelvan L2 Standart",
+          "engine": "1.5 BlueHDi 120 HP - 6 İleri Manuel",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.471.000 TL",
+          "priceNumeric": 1471000,
+          "brand": "Citroën",
+          "priceListNumeric": 1471000,
+          "powerHP": 120,
+          "engineDisplacement": "1.5L",
+          "engineType": "BlueHDi",
+          "vehicleCategory": "Ticari"
+        },
+        {
+          "model": "Jumpy Van",
+          "trim": "Panelvan L2 Standart",
+          "engine": "2.2 BlueHDi 180 HP - EAT8",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.593.000 TL",
+          "priceNumeric": 1593000,
+          "brand": "Citroën",
+          "priceListNumeric": 1593000,
+          "powerHP": 180,
+          "engineDisplacement": "2.2L",
+          "engineType": "BlueHDi",
+          "transmissionType": "EAT8",
+          "vehicleCategory": "Ticari"
+        },
+        {
+          "model": "Jumpy Van",
+          "trim": "Panelvan L3 Uzun",
+          "engine": "1.5 BlueHDi 120 HP - 6 İleri Manuel",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.593.000 TL",
+          "priceNumeric": 1593000,
+          "brand": "Citroën",
+          "priceListNumeric": 1593000,
+          "powerHP": 120,
+          "engineDisplacement": "1.5L",
+          "engineType": "BlueHDi",
+          "vehicleCategory": "Ticari"
+        },
+        {
+          "model": "Jumpy Van",
+          "trim": "Panelvan L3 Uzun",
+          "engine": "2.2 BlueHDi 150 HP - 6 İleri Manuel",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.684.000 TL",
+          "priceNumeric": 1684000,
+          "brand": "Citroën",
+          "priceListNumeric": 1684000,
+          "powerHP": 150,
+          "engineDisplacement": "2.2L",
+          "engineType": "BlueHDi",
+          "vehicleCategory": "Ticari"
+        },
+        {
+          "model": "Jumpy Van",
+          "trim": "Panelvan L3 Uzun",
+          "engine": "2.2 BlueHDi 180 HP - EAT8",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.684.000 TL",
+          "priceNumeric": 1684000,
+          "brand": "Citroën",
+          "priceListNumeric": 1684000,
+          "powerHP": 180,
+          "engineDisplacement": "2.2L",
+          "engineType": "BlueHDi",
+          "transmissionType": "EAT8",
+          "vehicleCategory": "Ticari"
+        },
+        {
+          "model": "Jumper",
+          "trim": "3.5T (15M³)",
+          "engine": "2.2 BlueHDi 180 HP - 6 İleri Manuel",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.817.000 TL",
+          "priceNumeric": 1817000,
+          "brand": "Citroën",
+          "priceListNumeric": 1817000,
+          "powerHP": 180,
+          "engineDisplacement": "2.2L",
+          "engineType": "BlueHDi"
+        },
+        {
+          "model": "Jumper",
+          "trim": "3.5T (15M³)",
+          "engine": "2.2 BlueHDi 180 HP - EAT8",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1.936.000 TL",
+          "priceNumeric": 1936000,
+          "brand": "Citroën",
+          "priceListNumeric": 1936000,
+          "powerHP": 180,
+          "engineDisplacement": "2.2L",
+          "engineType": "BlueHDi",
+          "transmissionType": "EAT8"
+        },
+        {
+          "model": "Jumper",
+          "trim": "4.2T (15M³)",
+          "engine": "2.2 BlueHDi 140 HP - 6 İleri Manuel",
+          "transmission": "Manuel",
+          "fuel": "Dizel",
+          "priceRaw": "1.930.000 TL",
+          "priceNumeric": 1930000,
+          "brand": "Citroën",
+          "priceListNumeric": 1930000,
+          "powerHP": 140,
+          "engineDisplacement": "2.2L",
+          "engineType": "BlueHDi"
         },
         {
           "model": "Ami",
@@ -5214,16 +5469,44 @@
           "engine": "6 kW Elektrik Motor",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "581.000 TL",
-          "priceNumeric": 581000,
+          "priceRaw": "585.000 TL",
+          "priceNumeric": 585000,
           "brand": "Citroën",
-          "priceListNumeric": 581000
+          "priceListNumeric": 585000,
+          "powerKW": 6,
+          "isElectric": true
+        },
+        {
+          "model": "Ami",
+          "trim": "Ami Dark Side",
+          "engine": "6 kW Elektrik Motor",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "595.000 TL",
+          "priceNumeric": 595000,
+          "brand": "Citroën",
+          "priceListNumeric": 595000,
+          "powerKW": 6,
+          "isElectric": true
+        },
+        {
+          "model": "Ami",
+          "trim": "Ami Buggy",
+          "engine": "6 kW Elektrik Motor",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "605.000 TL",
+          "priceNumeric": 605000,
+          "brand": "Citroën",
+          "priceListNumeric": 605000,
+          "powerKW": 6,
+          "isElectric": true
         }
       ]
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6128,7 +6411,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "A 200",
@@ -6587,21 +6870,6 @@
           "isElectric": true
         },
         {
-          "model": "EQA 250+",
-          "trim": "Night Edition",
-          "engine": "190 HP",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik",
-          "priceRaw": "4.014.800 TL",
-          "priceNumeric": 4014800,
-          "brand": "Mercedes-Benz",
-          "otvRate": 55,
-          "modelYear": "2025",
-          "priceListNumeric": 2158495,
-          "powerHP": 190,
-          "isElectric": true
-        },
-        {
           "model": "GLA 200",
           "trim": "AMG",
           "engine": "1.3L 163 HP",
@@ -6955,7 +7223,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -7673,7 +7941,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -7811,7 +8079,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -7978,7 +8246,7 @@
           "priceRaw": "3.748.900 TL",
           "priceNumeric": 3748900,
           "brand": "Nissan",
-          "priceListNumeric": 3848900,
+          "priceListNumeric": 4050900,
           "priceCampaignNumeric": 3748900,
           "powerHP": 190,
           "engineType": "e-POWER",
@@ -8099,7 +8367,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -8184,7 +8452,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "Ibiza",
@@ -8192,10 +8460,14 @@
           "engine": "1.0 EcoTSI 115 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin",
-          "priceRaw": "1.601.646 TL",
-          "priceNumeric": 1601646,
+          "priceRaw": "1.649.726 TL",
+          "priceNumeric": 1649726,
           "brand": "SEAT",
-          "priceListNumeric": 1599000
+          "priceListNumeric": 1647000,
+          "powerHP": 115,
+          "engineDisplacement": "1.0L",
+          "engineType": "EcoTSI",
+          "transmissionType": "DSG"
         },
         {
           "model": "Ibiza",
@@ -8203,10 +8475,14 @@
           "engine": "1.0 EcoTSI 115 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin",
-          "priceRaw": "1.721.846 TL",
-          "priceNumeric": 1721846,
+          "priceRaw": "1.773.933 TL",
+          "priceNumeric": 1773933,
           "brand": "SEAT",
-          "priceListNumeric": 1719000
+          "priceListNumeric": 1771000,
+          "powerHP": 115,
+          "engineDisplacement": "1.0L",
+          "engineType": "EcoTSI",
+          "transmissionType": "DSG"
         },
         {
           "model": "Arona",
@@ -8214,10 +8490,14 @@
           "engine": "1.0 EcoTSI 115 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin",
-          "priceRaw": "1.691.796 TL",
-          "priceNumeric": 1691796,
+          "priceRaw": "1.742.881 TL",
+          "priceNumeric": 1742881,
           "brand": "SEAT",
-          "priceListNumeric": 1689000
+          "priceListNumeric": 1740000,
+          "powerHP": 115,
+          "engineDisplacement": "1.0L",
+          "engineType": "EcoTSI",
+          "transmissionType": "DSG"
         },
         {
           "model": "Arona",
@@ -8225,10 +8505,14 @@
           "engine": "1.0 EcoTSI 115 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin",
-          "priceRaw": "1.801.979 TL",
-          "priceNumeric": 1801979,
+          "priceRaw": "1.856.069 TL",
+          "priceNumeric": 1856069,
           "brand": "SEAT",
-          "priceListNumeric": 1799000
+          "priceListNumeric": 1853000,
+          "powerHP": 115,
+          "engineDisplacement": "1.0L",
+          "engineType": "EcoTSI",
+          "transmissionType": "DSG"
         },
         {
           "model": "Leon",
@@ -8236,10 +8520,16 @@
           "engine": "1.5 eHybrid 204 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Hybrid",
-          "priceRaw": "2.363.910 TL",
-          "priceNumeric": 2363910,
+          "priceRaw": "2.934.860 TL",
+          "priceNumeric": 2934860,
           "brand": "SEAT",
-          "priceListNumeric": 2360000
+          "priceListNumeric": 2930000,
+          "powerHP": 204,
+          "engineDisplacement": "1.5L",
+          "engineType": "eHybrid",
+          "transmissionType": "DSG",
+          "isHybrid": true,
+          "isPlugInHybrid": true
         },
         {
           "model": "Ateca",
@@ -8250,7 +8540,11 @@
           "priceRaw": "2.382.942 TL",
           "priceNumeric": 2382942,
           "brand": "SEAT",
-          "priceListNumeric": 2379000
+          "priceListNumeric": 2379000,
+          "powerHP": 150,
+          "engineDisplacement": "1.5L",
+          "engineType": "EcoTSI ACT",
+          "transmissionType": "DSG"
         },
         {
           "model": "Ateca",
@@ -8258,10 +8552,14 @@
           "engine": "1.5 EcoTSI ACT 150 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin",
-          "priceRaw": "2.583.275 TL",
-          "priceNumeric": 2583275,
+          "priceRaw": "2.660.403 TL",
+          "priceNumeric": 2660403,
           "brand": "SEAT",
-          "priceListNumeric": 2579000
+          "priceListNumeric": 2656000,
+          "powerHP": 150,
+          "engineDisplacement": "1.5L",
+          "engineType": "EcoTSI ACT",
+          "transmissionType": "DSG"
         },
         {
           "model": "Ateca",
@@ -8269,17 +8567,52 @@
           "engine": "1.5 EcoTSI ACT 150 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin",
-          "priceRaw": "2.838.700 TL",
-          "priceNumeric": 2838700,
+          "priceRaw": "2.923.842 TL",
+          "priceNumeric": 2923842,
           "brand": "SEAT",
-          "priceListNumeric": 2834000
+          "priceListNumeric": 2919000,
+          "powerHP": 150,
+          "engineDisplacement": "1.5L",
+          "engineType": "EcoTSI ACT",
+          "transmissionType": "DSG"
         }
       ]
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
+        {
+          "model": "Stonic",
+          "trim": "Cool",
+          "engine": "100 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.999.000 TL",
+          "priceNumeric": 1999000,
+          "brand": "Kia",
+          "priceListNumeric": 921087.5,
+          "priceCampaignNumeric": 1999000,
+          "powerHP": 100,
+          "engineDisplacement": "1.0L",
+          "transmissionType": "DCT",
+          "modelYear": 2025
+        },
+        {
+          "model": "Picanto",
+          "trim": "Cool",
+          "engine": "68 PS",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.435.000 TL",
+          "priceNumeric": 1435000,
+          "brand": "Kia",
+          "priceListNumeric": 678832.86,
+          "priceCampaignNumeric": 1435000,
+          "powerHP": 68,
+          "engineDisplacement": "1.0L",
+          "modelYear": 2025
+        },
         {
           "model": "CEE",
           "trim": "Elegance",
@@ -8377,12 +8710,297 @@
           "engineDisplacement": "1.6L",
           "transmissionType": "DCT",
           "modelYear": 2026
+        },
+        {
+          "model": "Sportage",
+          "trim": "Cool",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.370.000 TL",
+          "priceNumeric": 2370000,
+          "brand": "Kia",
+          "priceListNumeric": 1071752.78,
+          "priceCampaignNumeric": 2327000,
+          "powerHP": 150,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "DCT",
+          "modelYear": 2025
+        },
+        {
+          "model": "Sportage",
+          "trim": "Live",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.999.000 TL",
+          "priceNumeric": 1999000,
+          "brand": "Kia",
+          "priceListNumeric": 919900.93,
+          "priceCampaignNumeric": 1999000,
+          "powerHP": 150,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "DCT",
+          "modelYear": 2026
+        },
+        {
+          "model": "Sportage",
+          "trim": "Prestige",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.085.000 TL",
+          "priceNumeric": 3085000,
+          "brand": "Kia",
+          "priceListNumeric": 1347800.88,
+          "priceCampaignNumeric": 3085000,
+          "powerHP": 150,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "DCT",
+          "modelYear": 2025,
+          "otvRate": 1
+        },
+        {
+          "model": "Sportage",
+          "trim": "Cool",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.550.000 TL",
+          "priceNumeric": 2550000,
+          "brand": "Kia",
+          "priceListNumeric": 1099530.56,
+          "priceCampaignNumeric": 2387000,
+          "powerHP": 150,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "DCT",
+          "modelYear": 2026
+        },
+        {
+          "model": "Sportage",
+          "trim": "GT-Line",
+          "engine": "180 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.325.000 TL",
+          "priceNumeric": 3325000,
+          "brand": "Kia",
+          "priceListNumeric": 1453064.04,
+          "priceCampaignNumeric": 3325000,
+          "powerHP": 180,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "DCT",
+          "modelYear": 2025,
+          "otvRate": 1
+        },
+        {
+          "model": "Sportage",
+          "trim": "Elegance",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.880.000 TL",
+          "priceNumeric": 2880000,
+          "brand": "Kia",
+          "priceListNumeric": 1257888.6,
+          "priceCampaignNumeric": 2880000,
+          "powerHP": 150,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "DCT",
+          "modelYear": 2026,
+          "otvRate": 1
+        },
+        {
+          "model": "Sportage",
+          "trim": "Prestige",
+          "engine": "150 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.145.000 TL",
+          "priceNumeric": 3145000,
+          "brand": "Kia",
+          "priceListNumeric": 1374116.67,
+          "priceCampaignNumeric": 3145000,
+          "powerHP": 150,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "DCT",
+          "modelYear": 2026,
+          "otvRate": 1
+        },
+        {
+          "model": "Sportage",
+          "trim": "GT-Line",
+          "engine": "180 PS",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "3.385.000 TL",
+          "priceNumeric": 3385000,
+          "brand": "Kia",
+          "priceListNumeric": 1479379.82,
+          "priceCampaignNumeric": 3385000,
+          "powerHP": 180,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "DCT",
+          "modelYear": 2026,
+          "otvRate": 1
+        },
+        {
+          "model": "Sorento",
+          "trim": "Prestige Smart",
+          "engine": "215 PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "5.990.000 TL",
+          "priceNumeric": 5990000,
+          "brand": "Kia",
+          "priceListNumeric": 2490827.5,
+          "priceCampaignNumeric": 5990000,
+          "powerHP": 215,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "AT",
+          "modelYear": 2025,
+          "otvRate": 2,
+          "isHybrid": true
+        },
+        {
+          "model": "Sorento",
+          "trim": "Prestige Smart",
+          "engine": "215 PS",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "6.130.000 TL",
+          "priceNumeric": 6130000,
+          "brand": "Kia",
+          "priceListNumeric": 2549160.83,
+          "priceCampaignNumeric": 6130000,
+          "powerHP": 215,
+          "engineDisplacement": "1.6L",
+          "transmissionType": "AT",
+          "modelYear": 2025,
+          "otvRate": 2,
+          "isHybrid": true
+        },
+        {
+          "model": "EV3",
+          "trim": "Elegance Standard Range",
+          "engine": "150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.095.000 TL",
+          "priceNumeric": 2095000,
+          "brand": "Kia",
+          "priceListNumeric": 1388481.91,
+          "priceCampaignNumeric": 2095000,
+          "powerKW": 150,
+          "transmissionType": "AT",
+          "modelYear": 2025,
+          "isElectric": true
+        },
+        {
+          "model": "EV3",
+          "trim": "Elegance Long Range",
+          "engine": "150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.445.000 TL",
+          "priceNumeric": 2445000,
+          "brand": "Kia",
+          "priceListNumeric": 1541815.25,
+          "priceCampaignNumeric": 2325000,
+          "powerKW": 150,
+          "transmissionType": "AT",
+          "modelYear": 2025,
+          "isElectric": true
+        },
+        {
+          "model": "EV3",
+          "trim": "Prestige Standard Range",
+          "engine": "150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "2.345.000 TL",
+          "priceNumeric": 2345000,
+          "brand": "Kia",
+          "priceListNumeric": 1555148.58,
+          "priceCampaignNumeric": 2345000,
+          "powerKW": 150,
+          "transmissionType": "AT",
+          "modelYear": 2025,
+          "isElectric": true
+        },
+        {
+          "model": "EV3",
+          "trim": "GT-Line Long Range",
+          "engine": "150 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.500.000 TL",
+          "priceNumeric": 3500000,
+          "brand": "Kia",
+          "priceListNumeric": 1875119.82,
+          "priceCampaignNumeric": 3500000,
+          "powerKW": 150,
+          "transmissionType": "AT",
+          "modelYear": 2025,
+          "otvRate": 1,
+          "isElectric": true
+        },
+        {
+          "model": "EV6 PE",
+          "trim": "Elegance Standard Range",
+          "engine": "125 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "3.500.000 TL",
+          "priceNumeric": 3500000,
+          "brand": "Kia",
+          "priceListNumeric": 1875119.82,
+          "priceCampaignNumeric": 3500000,
+          "powerKW": 125,
+          "transmissionType": "AT",
+          "modelYear": 2025,
+          "otvRate": 1,
+          "isElectric": true
+        },
+        {
+          "model": "EV9",
+          "trim": "Prestige",
+          "engine": "149 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "6.360.000 TL",
+          "priceNumeric": 6360000,
+          "brand": "Kia",
+          "priceListNumeric": 3412754.23,
+          "priceCampaignNumeric": 6360000,
+          "powerKW": 149,
+          "transmissionType": "AT",
+          "modelYear": 2025,
+          "otvRate": 1,
+          "isElectric": true
+        },
+        {
+          "model": "EV9",
+          "trim": "GT-Line",
+          "engine": "283 kW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "7.630.000 TL",
+          "priceNumeric": 7630000,
+          "brand": "Kia",
+          "priceListNumeric": 3615502.74,
+          "priceCampaignNumeric": 7630000,
+          "powerKW": 283,
+          "transmissionType": "AT",
+          "modelYear": 2025,
+          "otvRate": 2,
+          "isElectric": true
         }
       ]
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "EX30",
@@ -8915,7 +9533,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-02-02",
+      "date": "2026-02-03",
       "vehicles": [
         {
           "model": "Egea Sedan",
