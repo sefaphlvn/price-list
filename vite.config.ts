@@ -67,6 +67,11 @@ export default defineConfig({
         ],
       },
       workbox: {
+        // Force immediate update and activation of new service worker
+        skipWaiting: true,
+        clientsClaim: true,
+        // Clean old caches on activate
+        cleanupOutdatedCaches: true,
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
         runtimeCaching: [
           // IMPORTANT: Specific patterns MUST come before general patterns
@@ -77,10 +82,13 @@ export default defineConfig({
             handler: 'NetworkFirst',
             options: {
               cacheName: 'index-cache',
-              networkTimeoutSeconds: 5,
+              networkTimeoutSeconds: 3,
               expiration: {
                 maxEntries: 1,
-                maxAgeSeconds: 60 * 5, // 5 minutes
+                maxAgeSeconds: 60, // 1 minute - critical file, always fresh
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
               },
             },
           },
@@ -89,10 +97,13 @@ export default defineConfig({
             handler: 'NetworkFirst',
             options: {
               cacheName: 'latest-cache',
-              networkTimeoutSeconds: 5,
+              networkTimeoutSeconds: 3,
               expiration: {
                 maxEntries: 1,
-                maxAgeSeconds: 60 * 5, // 5 minutes
+                maxAgeSeconds: 60, // 1 minute
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
               },
             },
           },
