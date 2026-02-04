@@ -119,12 +119,12 @@ export default function Header({ onOpenTracking }: HeaderProps) {
     },
     {
       key: '/karsilastirma',
-      icon: (
-        <Badge count={compareList.length} size="small" offset={[8, 0]}>
-          <SwapOutlined />
+      icon: <SwapOutlined />,
+      label: (
+        <Badge count={compareList.length} size="small" offset={[12, 0]}>
+          {t('nav.comparison')}
         </Badge>
       ),
-      label: t('nav.comparison'),
     },
     {
       key: '/analizler',

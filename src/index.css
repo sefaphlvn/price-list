@@ -110,6 +110,14 @@ body {
   border-bottom: none;
 }
 
+/* Reduce spacing between icon and text in menu items */
+.ant-menu-horizontal .ant-menu-item .anticon + span,
+.ant-menu-horizontal .ant-menu-submenu-title .anticon + span,
+.ant-menu-horizontal .ant-menu-item .ant-menu-item-icon + span,
+.ant-menu-horizontal .ant-menu-submenu-title .ant-menu-item-icon + span {
+  margin-inline-start: 6px !important;
+}
+
 .ant-menu-horizontal > .ant-menu-item-selected {
   color: #000000;
   font-weight: 600;
