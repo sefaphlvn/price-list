@@ -317,19 +317,21 @@ export default function Header({ onOpenTracking }: HeaderProps) {
 
         {/* Right Section */}
         <Space size="middle">
-          {/* Tracking Badge */}
+          {/* Tracking Badge - show price changes count if any, otherwise tracked count */}
           {onOpenTracking && (
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Badge count={priceChanges.length} size="small" color="#ef4444">
-                <Badge count={trackedVehicles.length} size="small" offset={[-8, 0]}>
-                  <Button
-                    type="text"
-                    icon={<BellOutlined style={{ fontSize: 18 }} />}
-                    onClick={onOpenTracking}
-                    style={{ padding: '4px 8px' }}
-                    title={t('tracking.title')}
-                  />
-                </Badge>
+              <Badge
+                count={priceChanges.length > 0 ? priceChanges.length : trackedVehicles.length}
+                size="small"
+                color={priceChanges.length > 0 ? '#ef4444' : undefined}
+              >
+                <Button
+                  type="text"
+                  icon={<BellOutlined style={{ fontSize: 18 }} />}
+                  onClick={onOpenTracking}
+                  style={{ padding: '4px 8px' }}
+                  title={t('tracking.title')}
+                />
               </Badge>
             </motion.div>
           )}
