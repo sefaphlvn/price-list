@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-02-03T01:33:41.041Z",
-  "date": "2026-02-03",
+  "generatedAt": "2026-02-04T01:33:29.160Z",
+  "date": "2026-02-04",
   "summary": {
-    "totalPriceDrops": 19,
-    "totalRecentDrops": 10,
-    "avgDropPercent": 8.89,
+    "totalPriceDrops": 15,
+    "totalRecentDrops": 9,
+    "avgDropPercent": 9.18,
     "maxDropPercent": 14.18,
-    "brandsWithDrops": 7
+    "brandsWithDrops": 6
   },
   "priceDrops": [
     {
@@ -130,16 +130,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "daysSincePeak": 6,
+      "daysSincePeak": 7,
       "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 1740000
-        },
-        {
-          "date": "2026-01-29",
-          "price": 1999000
-        },
         {
           "date": "2026-01-29",
           "price": 1740000
@@ -170,6 +162,14 @@
         },
         {
           "date": "2026-02-03",
+          "price": 1740000
+        },
+        {
+          "date": "2026-02-04",
+          "price": 1999000
+        },
+        {
+          "date": "2026-02-04",
           "price": 1740000
         }
       ],
@@ -227,7 +227,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 253500,
       "dropPercent": 9.96,
-      "daysSincePeak": 6,
+      "daysSincePeak": 7,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -255,62 +255,16 @@
         },
         {
           "date": "2026-02-03",
+          "price": 2292400
+        },
+        {
+          "date": "2026-02-04",
           "price": 2292400
         }
       ],
       "listPrice": 2545900,
       "campaignPrice": 2292400,
       "campaignDiscount": 10
-    },
-    {
-      "id": "opel-astra-gs-1.5-130-hp-dizel",
-      "brand": "Opel",
-      "brandId": "opel",
-      "model": "Astra",
-      "trim": "GS",
-      "engine": "1.5 130 HP Dizel",
-      "fuel": "Dizel",
-      "transmission": "Otomatik",
-      "currentPrice": 2316000,
-      "currentPriceFormatted": "₺2.316.000",
-      "peakPrice": 2571000,
-      "peakPriceFormatted": "₺2.571.000",
-      "peakDate": "2026-01-28",
-      "dropAmount": 255000,
-      "dropPercent": 9.92,
-      "daysSincePeak": 6,
-      "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 2571000
-        },
-        {
-          "date": "2026-01-29",
-          "price": 2571000
-        },
-        {
-          "date": "2026-01-30",
-          "price": 2571000
-        },
-        {
-          "date": "2026-01-31",
-          "price": 2571000
-        },
-        {
-          "date": "2026-02-01",
-          "price": 2571000
-        },
-        {
-          "date": "2026-02-02",
-          "price": 2316000
-        },
-        {
-          "date": "2026-02-03",
-          "price": 2316000
-        }
-      ],
-      "listPrice": 2343000,
-      "campaignPrice": 2596000
     },
     {
       "id": "peugeot-3008-gt-1.2-hybrid-145-hp",
@@ -328,7 +282,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 309000,
       "dropPercent": 9.48,
-      "daysSincePeak": 6,
+      "daysSincePeak": 7,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -356,63 +310,16 @@
         },
         {
           "date": "2026-02-03",
+          "price": 2950000
+        },
+        {
+          "date": "2026-02-04",
           "price": 2950000
         }
       ],
       "listPrice": 3259000,
       "campaignPrice": 2950000,
       "campaignDiscount": 9.5
-    },
-    {
-      "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-gsr*",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Egea Sedan",
-      "trim": "Urban",
-      "engine": "1.6 M.Jet 130 HP GSR*",
-      "fuel": "Dizel",
-      "transmission": "Manuel",
-      "currentPrice": 1429900,
-      "currentPriceFormatted": "₺1.429.900",
-      "peakPrice": 1569900,
-      "peakPriceFormatted": "₺1.569.900",
-      "peakDate": "2026-01-28",
-      "dropAmount": 140000,
-      "dropPercent": 8.92,
-      "daysSincePeak": 6,
-      "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 1569900
-        },
-        {
-          "date": "2026-01-29",
-          "price": 1569900
-        },
-        {
-          "date": "2026-01-30",
-          "price": 1429900
-        },
-        {
-          "date": "2026-01-31",
-          "price": 1429900
-        },
-        {
-          "date": "2026-02-01",
-          "price": 1429900
-        },
-        {
-          "date": "2026-02-02",
-          "price": 1429900
-        },
-        {
-          "date": "2026-02-03",
-          "price": 1429900
-        }
-      ],
-      "listPrice": 1569900,
-      "campaignPrice": 1429900,
-      "campaignDiscount": 8.9
     },
     {
       "id": "citroen-elektrikli-ë-c3-aircross-max-83-kw-elektrikli-motor-standart-menzil",
@@ -430,7 +337,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 144000,
       "dropPercent": 7.96,
-      "daysSincePeak": 6,
+      "daysSincePeak": 7,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -442,6 +349,10 @@
         },
         {
           "date": "2026-02-03",
+          "price": 1665000
+        },
+        {
+          "date": "2026-02-04",
           "price": 1665000
         }
       ],
@@ -463,7 +374,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 196500,
       "dropPercent": 7.66,
-      "daysSincePeak": 6,
+      "daysSincePeak": 7,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -491,6 +402,10 @@
         },
         {
           "date": "2026-02-03",
+          "price": 2370000
+        },
+        {
+          "date": "2026-02-04",
           "price": 2370000
         }
       ],
@@ -499,106 +414,59 @@
       "campaignDiscount": 7.7
     },
     {
-      "id": "fiat-500e-cabrio-87-kw/118-hp---42kwh",
+      "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-gsr*",
       "brand": "Fiat",
       "brandId": "fiat",
-      "model": "500e",
-      "trim": "Cabrio",
-      "engine": "87 kW/118 HP - 42kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 1945900,
-      "currentPriceFormatted": "₺1.945.900",
-      "peakPrice": 2075900,
-      "peakPriceFormatted": "₺2.075.900",
+      "model": "Egea Sedan",
+      "trim": "Urban",
+      "engine": "1.6 M.Jet 130 HP GSR*",
+      "fuel": "Dizel",
+      "transmission": "Manuel",
+      "currentPrice": 1459900,
+      "currentPriceFormatted": "₺1.459.900",
+      "peakPrice": 1569900,
+      "peakPriceFormatted": "₺1.569.900",
       "peakDate": "2026-01-28",
-      "dropAmount": 130000,
-      "dropPercent": 6.26,
-      "daysSincePeak": 6,
+      "dropAmount": 110000,
+      "dropPercent": 7.01,
+      "daysSincePeak": 7,
       "priceHistory": [
         {
           "date": "2026-01-28",
-          "price": 2075900
+          "price": 1569900
         },
         {
           "date": "2026-01-29",
-          "price": 2075900
+          "price": 1569900
         },
         {
           "date": "2026-01-30",
-          "price": 1945900
+          "price": 1429900
         },
         {
           "date": "2026-01-31",
-          "price": 1945900
+          "price": 1429900
         },
         {
           "date": "2026-02-01",
-          "price": 1945900
+          "price": 1429900
         },
         {
           "date": "2026-02-02",
-          "price": 1945900
+          "price": 1429900
         },
         {
           "date": "2026-02-03",
-          "price": 1945900
+          "price": 1429900
+        },
+        {
+          "date": "2026-02-04",
+          "price": 1459900
         }
       ],
-      "listPrice": 2075900,
-      "campaignPrice": 1945900,
-      "campaignDiscount": 6.3
-    },
-    {
-      "id": "fiat-500e-3+1-87-kw/118-hp---42kwh",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "500e",
-      "trim": "3+1",
-      "engine": "87 kW/118 HP - 42kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 1895900,
-      "currentPriceFormatted": "₺1.895.900",
-      "peakPrice": 2019900,
-      "peakPriceFormatted": "₺2.019.900",
-      "peakDate": "2026-01-28",
-      "dropAmount": 124000,
-      "dropPercent": 6.14,
-      "daysSincePeak": 6,
-      "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 2019900
-        },
-        {
-          "date": "2026-01-29",
-          "price": 2019900
-        },
-        {
-          "date": "2026-01-30",
-          "price": 1895900
-        },
-        {
-          "date": "2026-01-31",
-          "price": 1895900
-        },
-        {
-          "date": "2026-02-01",
-          "price": 1895900
-        },
-        {
-          "date": "2026-02-02",
-          "price": 1895900
-        },
-        {
-          "date": "2026-02-03",
-          "price": 1895900
-        }
-      ],
-      "listPrice": 2019900,
-      "campaignPrice": 1895900,
-      "campaignDiscount": 6.1
+      "listPrice": 1569900,
+      "campaignPrice": 1459900,
+      "campaignDiscount": 7
     },
     {
       "id": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik",
@@ -616,7 +484,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 155000,
       "dropPercent": 6.09,
-      "daysSincePeak": 6,
+      "daysSincePeak": 7,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -644,6 +512,10 @@
         },
         {
           "date": "2026-02-03",
+          "price": 2389000
+        },
+        {
+          "date": "2026-02-04",
           "price": 2389000
         }
       ],
@@ -667,7 +539,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 100000,
       "dropPercent": 6.06,
-      "daysSincePeak": 6,
+      "daysSincePeak": 7,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -695,63 +567,16 @@
         },
         {
           "date": "2026-02-03",
+          "price": 1549900
+        },
+        {
+          "date": "2026-02-04",
           "price": 1549900
         }
       ],
       "listPrice": 1649900,
       "campaignPrice": 1549900,
       "campaignDiscount": 6.1
-    },
-    {
-      "id": "fiat-500e-giorgio-armani-87-kw/118-hp---42kwh",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "500e",
-      "trim": "Giorgio Armani",
-      "engine": "87 kW/118 HP - 42kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 2045900,
-      "currentPriceFormatted": "₺2.045.900",
-      "peakPrice": 2175900,
-      "peakPriceFormatted": "₺2.175.900",
-      "peakDate": "2026-01-28",
-      "dropAmount": 130000,
-      "dropPercent": 5.97,
-      "daysSincePeak": 6,
-      "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 2175900
-        },
-        {
-          "date": "2026-01-29",
-          "price": 2175900
-        },
-        {
-          "date": "2026-01-30",
-          "price": 2045900
-        },
-        {
-          "date": "2026-01-31",
-          "price": 2045900
-        },
-        {
-          "date": "2026-02-01",
-          "price": 2045900
-        },
-        {
-          "date": "2026-02-02",
-          "price": 2045900
-        },
-        {
-          "date": "2026-02-03",
-          "price": 2045900
-        }
-      ],
-      "listPrice": 2175900,
-      "campaignPrice": 2045900,
-      "campaignDiscount": 6
     },
     {
       "id": "peugeot-e-2008-allure-115-kw",
@@ -769,7 +594,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 127500,
       "dropPercent": 5.79,
-      "daysSincePeak": 6,
+      "daysSincePeak": 7,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -797,6 +622,10 @@
         },
         {
           "date": "2026-02-03",
+          "price": 2074000
+        },
+        {
+          "date": "2026-02-04",
           "price": 2074000
         }
       ],
@@ -805,106 +634,88 @@
       "campaignDiscount": 5.8
     },
     {
-      "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-dct-gsr*",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Egea Sedan",
-      "trim": "Urban",
-      "engine": "1.6 M.Jet 130 HP DCT GSR*",
+      "id": "citroen-jumpy-van-panelvan-l3-uzun-2.2-bluehdi-150-hp---6-i̇leri-manuel",
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Jumpy Van",
+      "trim": "Panelvan L3 Uzun",
+      "engine": "2.2 BlueHDi 150 HP - 6 İleri Manuel",
       "fuel": "Dizel",
-      "transmission": "Otomatik",
-      "currentPrice": 1639900,
-      "currentPriceFormatted": "₺1.639.900",
-      "peakPrice": 1739900,
-      "peakPriceFormatted": "₺1.739.900",
-      "peakDate": "2026-01-28",
-      "dropAmount": 100000,
-      "dropPercent": 5.75,
-      "daysSincePeak": 6,
+      "transmission": "Manuel",
+      "currentPrice": 1593000,
+      "currentPriceFormatted": "₺1.593.000",
+      "peakPrice": 1684000,
+      "peakPriceFormatted": "₺1.684.000",
+      "peakDate": "2026-02-03",
+      "dropAmount": 91000,
+      "dropPercent": 5.4,
+      "daysSincePeak": 1,
       "priceHistory": [
         {
-          "date": "2026-01-28",
-          "price": 1739900
-        },
-        {
-          "date": "2026-01-29",
-          "price": 1739900
-        },
-        {
-          "date": "2026-01-30",
-          "price": 1639900
-        },
-        {
-          "date": "2026-01-31",
-          "price": 1639900
-        },
-        {
-          "date": "2026-02-01",
-          "price": 1639900
-        },
-        {
-          "date": "2026-02-02",
-          "price": 1639900
-        },
-        {
           "date": "2026-02-03",
-          "price": 1639900
+          "price": 1684000
+        },
+        {
+          "date": "2026-02-04",
+          "price": 1593000
         }
       ],
-      "listPrice": 1739900,
-      "campaignPrice": 1639900,
-      "campaignDiscount": 5.7
+      "listPrice": 1593000
     },
     {
-      "id": "fiat-grande-panda-la-prima-1.2-mhev-110hp-edct",
+      "id": "fiat-500e-cabrio-87-kw/118-hp---42kwh",
       "brand": "Fiat",
       "brandId": "fiat",
-      "model": "Grande Panda",
-      "trim": "La Prima",
-      "engine": "1.2 MHEV 110HP eDCT",
-      "fuel": "Hafif Hibrit",
+      "model": "500e",
+      "trim": "Cabrio",
+      "engine": "87 kW/118 HP - 42kWh",
+      "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "currentPrice": 1649900,
-      "currentPriceFormatted": "₺1.649.900",
-      "peakPrice": 1749900,
-      "peakPriceFormatted": "₺1.749.900",
+      "currentPrice": 1969900,
+      "currentPriceFormatted": "₺1.969.900",
+      "peakPrice": 2075900,
+      "peakPriceFormatted": "₺2.075.900",
       "peakDate": "2026-01-28",
-      "dropAmount": 100000,
-      "dropPercent": 5.71,
-      "daysSincePeak": 6,
+      "dropAmount": 106000,
+      "dropPercent": 5.11,
+      "daysSincePeak": 7,
       "priceHistory": [
         {
           "date": "2026-01-28",
-          "price": 1749900
+          "price": 2075900
         },
         {
           "date": "2026-01-29",
-          "price": 1749900
+          "price": 2075900
         },
         {
           "date": "2026-01-30",
-          "price": 1649900
+          "price": 1945900
         },
         {
           "date": "2026-01-31",
-          "price": 1649900
+          "price": 1945900
         },
         {
           "date": "2026-02-01",
-          "price": 1649900
+          "price": 1945900
         },
         {
           "date": "2026-02-02",
-          "price": 1649900
+          "price": 1945900
         },
         {
           "date": "2026-02-03",
-          "price": 1649900
+          "price": 1945900
+        },
+        {
+          "date": "2026-02-04",
+          "price": 1969900
         }
       ],
-      "listPrice": 1749900,
-      "campaignPrice": 1649900,
-      "campaignDiscount": 5.7
+      "listPrice": 2099900,
+      "campaignPrice": 1969900,
+      "campaignDiscount": 6.2
     }
   ],
   "recentDrops": [
@@ -970,8 +781,8 @@
       "previousPrice": 1999000,
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "date": "2026-02-03",
-      "previousDate": "2026-02-03",
+      "date": "2026-02-04",
+      "previousDate": "2026-02-04",
       "listPrice": 921087.5,
       "campaignPrice": 1999000
     },
@@ -993,34 +804,19 @@
       "campaignDiscount": 13
     },
     {
-      "id": "citroen-elektrikli-ë-c3-aircross-max-83-kw-elektrikli-motor-standart-menzil-recent",
+      "id": "citroen-jumpy-van-panelvan-l3-uzun-2.2-bluehdi-150-hp---6-i̇leri-manuel-recent",
       "brand": "Citroën",
       "brandId": "citroen",
-      "model": "Elektrikli ë-C3 Aircross",
-      "trim": "Max",
-      "engine": "83 kW Elektrikli Motor Standart Menzil",
-      "currentPrice": 1665000,
-      "previousPrice": 1809000,
-      "dropAmount": 144000,
-      "dropPercent": 7.96,
-      "date": "2026-02-03",
-      "previousDate": "2026-01-29",
-      "listPrice": 1665000
-    },
-    {
-      "id": "hyundai-tucson-comfort-1.6-t-gdi-180-ps-4x2-dct-recent",
-      "brand": "Hyundai",
-      "brandId": "hyundai",
-      "model": "TUCSON",
-      "trim": "Comfort",
-      "engine": "1.6 T-GDI 180 PS  4X2 DCT",
-      "currentPrice": 2288000,
-      "previousPrice": 2384000,
-      "dropAmount": 96000,
-      "dropPercent": 4.03,
-      "date": "2026-02-03",
-      "previousDate": "2026-02-02",
-      "campaignPrice": 2288000
+      "model": "Jumpy Van",
+      "trim": "Panelvan L3 Uzun",
+      "engine": "2.2 BlueHDi 150 HP - 6 İleri Manuel",
+      "currentPrice": 1593000,
+      "previousPrice": 1684000,
+      "dropAmount": 91000,
+      "dropPercent": 5.4,
+      "date": "2026-02-04",
+      "previousDate": "2026-02-03",
+      "listPrice": 1593000
     },
     {
       "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh-recent",
@@ -1030,52 +826,52 @@
       "trim": "Topolino Plus",
       "engine": "6 kW/8 HP - 5.5kWh",
       "currentPrice": 589900,
-      "previousPrice": 604900,
-      "dropAmount": 15000,
-      "dropPercent": 2.48,
-      "date": "2026-02-03",
+      "previousPrice": 614900,
+      "dropAmount": 25000,
+      "dropPercent": 4.07,
+      "date": "2026-02-04",
+      "previousDate": "2026-02-04",
+      "listPrice": 704900,
+      "campaignPrice": 614900,
+      "campaignDiscount": 12.8
+    },
+    {
+      "id": "fiat-grande-panda-la-prima-44-kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "trim": "La Prima",
+      "engine": "44 kWh",
+      "currentPrice": 1524900,
+      "previousPrice": 1569900,
+      "dropAmount": 45000,
+      "dropPercent": 2.87,
+      "date": "2026-02-04",
+      "previousDate": "2026-02-04",
+      "listPrice": 1569900
+    },
+    {
+      "id": "citroen-jumpy-van-panelvan-l3-uzun-1.5-bluehdi-120-hp---6-i̇leri-manuel-recent",
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Jumpy Van",
+      "trim": "Panelvan L3 Uzun",
+      "engine": "1.5 BlueHDi 120 HP - 6 İleri Manuel",
+      "currentPrice": 1562000,
+      "previousPrice": 1593000,
+      "dropAmount": 31000,
+      "dropPercent": 1.95,
+      "date": "2026-02-04",
       "previousDate": "2026-02-03",
-      "listPrice": 694900,
-      "campaignPrice": 604900,
-      "campaignDiscount": 13
-    },
-    {
-      "id": "citroen-elektrikli-ë-c3-aircross-max-83-kw-elektrikli-motor-uzun-menzil-recent",
-      "brand": "Citroën",
-      "brandId": "citroen",
-      "model": "Elektrikli ë-C3 Aircross",
-      "trim": "Max",
-      "engine": "83 kW Elektrikli Motor Uzun Menzil",
-      "currentPrice": 1776000,
-      "previousPrice": 1809000,
-      "dropAmount": 33000,
-      "dropPercent": 1.82,
-      "date": "2026-02-03",
-      "previousDate": "2026-02-02",
-      "listPrice": 1776000
-    },
-    {
-      "id": "citroen-c3-aircross-hybrid-145-max-1.2-hybrid-145*---edcs6-recent",
-      "brand": "Citroën",
-      "brandId": "citroen",
-      "model": "C3 Aircross Hybrid 145",
-      "trim": "Max",
-      "engine": "1.2 Hybrid 145* -  eDCS6",
-      "currentPrice": 2068000,
-      "previousPrice": 2106000,
-      "dropAmount": 38000,
-      "dropPercent": 1.8,
-      "date": "2026-02-03",
-      "previousDate": "2026-02-02",
-      "listPrice": 2068000
+      "listPrice": 1562000
     }
   ],
   "brandSummary": [
     {
       "brandId": "fiat",
       "brand": "Fiat",
-      "dropCount": 11,
-      "avgDropPercent": 9
+      "dropCount": 7,
+      "avgDropPercent": 10.34
     },
     {
       "brandId": "peugeot",
@@ -1084,16 +880,10 @@
       "avgDropPercent": 7.64
     },
     {
-      "brandId": "opel",
-      "brand": "Opel",
-      "dropCount": 1,
-      "avgDropPercent": 9.92
-    },
-    {
       "brandId": "citroen",
       "brand": "Citroën",
-      "dropCount": 1,
-      "avgDropPercent": 7.96
+      "dropCount": 2,
+      "avgDropPercent": 6.68
     },
     {
       "brandId": "ford",

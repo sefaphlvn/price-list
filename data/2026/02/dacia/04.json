@@ -1,0 +1,140 @@
+{
+  "collectedAt": "2026-02-04T01:31:51.866Z",
+  "brand": "Dacia",
+  "brandId": "dacia",
+  "rowCount": 4,
+  "rows": [
+    {
+      "model": "Yeni Sandero",
+      "trim": "Essential",
+      "engine": "essential TCe 100",
+      "transmission": "Manuel",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.242.000,00",
+      "priceNumeric": 1242000,
+      "brand": "Dacia",
+      "modelYear": "2025",
+      "otvRate": 70,
+      "netPrice": 579881.37,
+      "otvAmount": 405916.96,
+      "kdvAmount": 197159.67,
+      "optionalEquipment": [
+        {
+          "name": "Yedek Lastik",
+          "price": 12000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        },
+        {
+          "name": "Konfor Paketi:Kol dayamalı orta yüksek konsol,suni deri direksiyon,10'' Multimedya,köpekbalığı anten",
+          "price": 55000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1242000,
+      "powerHP": 100,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Yeni Sandero",
+      "trim": "Essential",
+      "engine": "essential TCe 100",
+      "transmission": "Manuel",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.299.000,01",
+      "priceNumeric": 1299000.01,
+      "brand": "Dacia",
+      "modelYear": "2026",
+      "otvRate": 70,
+      "netPrice": 607822.55,
+      "otvAmount": 425475.79,
+      "kdvAmount": 206659.67,
+      "optionalEquipment": [
+        {
+          "name": "Yedek Lastik",
+          "price": 12000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        },
+        {
+          "name": "Konfor Paketi:Kol dayamalı orta yüksek konsol,suni deri direksiyon,10'' Multimedya,köpekbalığı anten",
+          "price": 55000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1299000.01,
+      "powerHP": 100,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Yeni Sandero",
+      "trim": "Expression",
+      "engine": "expression TCe 100",
+      "transmission": "Manuel",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.342.000,00",
+      "priceNumeric": 1342000,
+      "brand": "Dacia",
+      "modelYear": "2025",
+      "otvRate": 70,
+      "netPrice": 628900.98,
+      "otvAmount": 440230.69,
+      "kdvAmount": 213826.33,
+      "optionalEquipment": [
+        {
+          "name": "Yedek Lastik",
+          "price": 12000
+        },
+        {
+          "name": "Özel Renk",
+          "price": 13000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1342000,
+      "powerHP": 100,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Yeni Sandero",
+      "trim": "Expression",
+      "engine": "expression TCe 100",
+      "transmission": "Manuel",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.429.999,99",
+      "priceNumeric": 1429999.99,
+      "brand": "Dacia",
+      "modelYear": "2026",
+      "otvRate": 75,
+      "netPrice": 652265.71,
+      "otvAmount": 489199.28,
+      "kdvAmount": 228293,
+      "optionalEquipment": [
+        {
+          "name": "Yedek Lastik",
+          "price": 12000
+        },
+        {
+          "name": "Özel Renk",
+          "price": 13000
+        },
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1429999.99,
+      "powerHP": 100,
+      "engineType": "TCe"
+    }
+  ]
+}
