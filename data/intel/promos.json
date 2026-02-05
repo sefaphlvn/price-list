@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-02-04T01:33:29.160Z",
-  "date": "2026-02-04",
+  "generatedAt": "2026-02-05T01:32:53.574Z",
+  "date": "2026-02-05",
   "summary": {
     "totalPriceDrops": 15,
-    "totalRecentDrops": 9,
+    "totalRecentDrops": 7,
     "avgDropPercent": 9.18,
     "maxDropPercent": 14.18,
     "brandsWithDrops": 6
@@ -130,16 +130,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
-        {
-          "date": "2026-01-29",
-          "price": 1740000
-        },
-        {
-          "date": "2026-01-30",
-          "price": 1999000
-        },
         {
           "date": "2026-01-30",
           "price": 1740000
@@ -170,6 +162,14 @@
         },
         {
           "date": "2026-02-04",
+          "price": 1740000
+        },
+        {
+          "date": "2026-02-05",
+          "price": 1999000
+        },
+        {
+          "date": "2026-02-05",
           "price": 1740000
         }
       ],
@@ -227,7 +227,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 253500,
       "dropPercent": 9.96,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -259,6 +259,10 @@
         },
         {
           "date": "2026-02-04",
+          "price": 2292400
+        },
+        {
+          "date": "2026-02-05",
           "price": 2292400
         }
       ],
@@ -282,7 +286,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 309000,
       "dropPercent": 9.48,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -314,6 +318,10 @@
         },
         {
           "date": "2026-02-04",
+          "price": 2950000
+        },
+        {
+          "date": "2026-02-05",
           "price": 2950000
         }
       ],
@@ -337,7 +345,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 144000,
       "dropPercent": 7.96,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -353,6 +361,10 @@
         },
         {
           "date": "2026-02-04",
+          "price": 1665000
+        },
+        {
+          "date": "2026-02-05",
           "price": 1665000
         }
       ],
@@ -374,7 +386,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 196500,
       "dropPercent": 7.66,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -407,6 +419,10 @@
         {
           "date": "2026-02-04",
           "price": 2370000
+        },
+        {
+          "date": "2026-02-05",
+          "price": 2370000
         }
       ],
       "listPrice": 2566500,
@@ -429,7 +445,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 110000,
       "dropPercent": 7.01,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -462,6 +478,10 @@
         {
           "date": "2026-02-04",
           "price": 1459900
+        },
+        {
+          "date": "2026-02-05",
+          "price": 1459900
         }
       ],
       "listPrice": 1569900,
@@ -484,7 +504,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 155000,
       "dropPercent": 6.09,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -516,6 +536,10 @@
         },
         {
           "date": "2026-02-04",
+          "price": 2389000
+        },
+        {
+          "date": "2026-02-05",
           "price": 2389000
         }
       ],
@@ -539,7 +563,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 100000,
       "dropPercent": 6.06,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -571,6 +595,10 @@
         },
         {
           "date": "2026-02-04",
+          "price": 1549900
+        },
+        {
+          "date": "2026-02-05",
           "price": 1549900
         }
       ],
@@ -594,7 +622,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 127500,
       "dropPercent": 5.79,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -626,6 +654,10 @@
         },
         {
           "date": "2026-02-04",
+          "price": 2074000
+        },
+        {
+          "date": "2026-02-05",
           "price": 2074000
         }
       ],
@@ -649,7 +681,7 @@
       "peakDate": "2026-02-03",
       "dropAmount": 91000,
       "dropPercent": 5.4,
-      "daysSincePeak": 1,
+      "daysSincePeak": 2,
       "priceHistory": [
         {
           "date": "2026-02-03",
@@ -657,6 +689,10 @@
         },
         {
           "date": "2026-02-04",
+          "price": 1593000
+        },
+        {
+          "date": "2026-02-05",
           "price": 1593000
         }
       ],
@@ -678,7 +714,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 106000,
       "dropPercent": 5.11,
-      "daysSincePeak": 7,
+      "daysSincePeak": 8,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -710,6 +746,10 @@
         },
         {
           "date": "2026-02-04",
+          "price": 1969900
+        },
+        {
+          "date": "2026-02-05",
           "price": 1969900
         }
       ],
@@ -781,8 +821,8 @@
       "previousPrice": 1999000,
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "date": "2026-02-04",
-      "previousDate": "2026-02-04",
+      "date": "2026-02-05",
+      "previousDate": "2026-02-05",
       "listPrice": 921087.5,
       "campaignPrice": 1999000
     },
@@ -804,21 +844,6 @@
       "campaignDiscount": 13
     },
     {
-      "id": "citroen-jumpy-van-panelvan-l3-uzun-2.2-bluehdi-150-hp---6-i̇leri-manuel-recent",
-      "brand": "Citroën",
-      "brandId": "citroen",
-      "model": "Jumpy Van",
-      "trim": "Panelvan L3 Uzun",
-      "engine": "2.2 BlueHDi 150 HP - 6 İleri Manuel",
-      "currentPrice": 1593000,
-      "previousPrice": 1684000,
-      "dropAmount": 91000,
-      "dropPercent": 5.4,
-      "date": "2026-02-04",
-      "previousDate": "2026-02-03",
-      "listPrice": 1593000
-    },
-    {
       "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh-recent",
       "brand": "Fiat",
       "brandId": "fiat",
@@ -829,8 +854,8 @@
       "previousPrice": 614900,
       "dropAmount": 25000,
       "dropPercent": 4.07,
-      "date": "2026-02-04",
-      "previousDate": "2026-02-04",
+      "date": "2026-02-05",
+      "previousDate": "2026-02-05",
       "listPrice": 704900,
       "campaignPrice": 614900,
       "campaignDiscount": 12.8
@@ -846,24 +871,9 @@
       "previousPrice": 1569900,
       "dropAmount": 45000,
       "dropPercent": 2.87,
-      "date": "2026-02-04",
-      "previousDate": "2026-02-04",
+      "date": "2026-02-05",
+      "previousDate": "2026-02-05",
       "listPrice": 1569900
-    },
-    {
-      "id": "citroen-jumpy-van-panelvan-l3-uzun-1.5-bluehdi-120-hp---6-i̇leri-manuel-recent",
-      "brand": "Citroën",
-      "brandId": "citroen",
-      "model": "Jumpy Van",
-      "trim": "Panelvan L3 Uzun",
-      "engine": "1.5 BlueHDi 120 HP - 6 İleri Manuel",
-      "currentPrice": 1562000,
-      "previousPrice": 1593000,
-      "dropAmount": 31000,
-      "dropPercent": 1.95,
-      "date": "2026-02-04",
-      "previousDate": "2026-02-03",
-      "listPrice": 1562000
     }
   ],
   "brandSummary": [
