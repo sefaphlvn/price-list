@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-02-06T01:33:03.718Z",
-  "date": "2026-02-06",
+  "generatedAt": "2026-02-07T01:33:05.346Z",
+  "date": "2026-02-07",
   "summary": {
-    "totalPriceDrops": 15,
+    "totalPriceDrops": 14,
     "totalRecentDrops": 7,
-    "avgDropPercent": 9.18,
+    "avgDropPercent": 9.12,
     "maxDropPercent": 14.18,
-    "brandsWithDrops": 6
+    "brandsWithDrops": 5
   },
   "priceDrops": [
     {
@@ -130,17 +130,9 @@
       "peakDate": "2026-01-28",
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "daysSincePeak": 9,
+      "daysSincePeak": 10,
       "priceHistory": [
         {
-          "date": "2026-02-01",
-          "price": 1740000
-        },
-        {
-          "date": "2026-02-02",
-          "price": 1740000
-        },
-        {
           "date": "2026-02-03",
           "price": 1999000
         },
@@ -170,6 +162,14 @@
         },
         {
           "date": "2026-02-06",
+          "price": 1740000
+        },
+        {
+          "date": "2026-02-07",
+          "price": 1999000
+        },
+        {
+          "date": "2026-02-07",
           "price": 1740000
         }
       ],
@@ -212,69 +212,6 @@
       "campaignDiscount": 13
     },
     {
-      "id": "ford-focus-yeni-titanium-stil-1.5l-ecoblue-115ps",
-      "brand": "Ford",
-      "brandId": "ford",
-      "model": "Focus",
-      "trim": "Yeni Titanium Stil",
-      "engine": "1.5L EcoBlue 115PS",
-      "fuel": "Dizel",
-      "transmission": "Otomatik",
-      "currentPrice": 2292400,
-      "currentPriceFormatted": "₺2.292.400",
-      "peakPrice": 2545900,
-      "peakPriceFormatted": "₺2.545.900",
-      "peakDate": "2026-01-28",
-      "dropAmount": 253500,
-      "dropPercent": 9.96,
-      "daysSincePeak": 9,
-      "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 2545900
-        },
-        {
-          "date": "2026-01-29",
-          "price": 2545900
-        },
-        {
-          "date": "2026-01-30",
-          "price": 2292400
-        },
-        {
-          "date": "2026-01-31",
-          "price": 2292400
-        },
-        {
-          "date": "2026-02-01",
-          "price": 2292400
-        },
-        {
-          "date": "2026-02-02",
-          "price": 2292400
-        },
-        {
-          "date": "2026-02-03",
-          "price": 2292400
-        },
-        {
-          "date": "2026-02-04",
-          "price": 2292400
-        },
-        {
-          "date": "2026-02-05",
-          "price": 2292400
-        },
-        {
-          "date": "2026-02-06",
-          "price": 2292400
-        }
-      ],
-      "listPrice": 2545900,
-      "campaignPrice": 2292400,
-      "campaignDiscount": 10
-    },
-    {
       "id": "peugeot-3008-gt-1.2-hybrid-145-hp",
       "brand": "Peugeot",
       "brandId": "peugeot",
@@ -290,12 +227,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 309000,
       "dropPercent": 9.48,
-      "daysSincePeak": 9,
+      "daysSincePeak": 10,
       "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 3259000
-        },
         {
           "date": "2026-01-29",
           "price": 3259000
@@ -330,6 +263,10 @@
         },
         {
           "date": "2026-02-06",
+          "price": 2950000
+        },
+        {
+          "date": "2026-02-07",
           "price": 2950000
         }
       ],
@@ -353,7 +290,7 @@
       "peakDate": "2026-01-28",
       "dropAmount": 144000,
       "dropPercent": 7.96,
-      "daysSincePeak": 9,
+      "daysSincePeak": 10,
       "priceHistory": [
         {
           "date": "2026-01-28",
@@ -378,6 +315,10 @@
         {
           "date": "2026-02-06",
           "price": 1665000
+        },
+        {
+          "date": "2026-02-07",
+          "price": 1665000
         }
       ],
       "listPrice": 1665000
@@ -398,12 +339,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 196500,
       "dropPercent": 7.66,
-      "daysSincePeak": 9,
+      "daysSincePeak": 10,
       "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 2566500
-        },
         {
           "date": "2026-01-29",
           "price": 2566500
@@ -438,6 +375,10 @@
         },
         {
           "date": "2026-02-06",
+          "price": 2370000
+        },
+        {
+          "date": "2026-02-07",
           "price": 2370000
         }
       ],
@@ -461,12 +402,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 110000,
       "dropPercent": 7.01,
-      "daysSincePeak": 9,
+      "daysSincePeak": 10,
       "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 1569900
-        },
         {
           "date": "2026-01-29",
           "price": 1569900
@@ -501,6 +438,10 @@
         },
         {
           "date": "2026-02-06",
+          "price": 1459900
+        },
+        {
+          "date": "2026-02-07",
           "price": 1459900
         }
       ],
@@ -524,12 +465,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 155000,
       "dropPercent": 6.09,
-      "daysSincePeak": 9,
+      "daysSincePeak": 10,
       "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 2544000
-        },
         {
           "date": "2026-01-29",
           "price": 2544000
@@ -564,6 +501,10 @@
         },
         {
           "date": "2026-02-06",
+          "price": 2389000
+        },
+        {
+          "date": "2026-02-07",
           "price": 2389000
         }
       ],
@@ -587,12 +528,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 100000,
       "dropPercent": 6.06,
-      "daysSincePeak": 9,
+      "daysSincePeak": 10,
       "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 1649900
-        },
         {
           "date": "2026-01-29",
           "price": 1649900
@@ -627,6 +564,10 @@
         },
         {
           "date": "2026-02-06",
+          "price": 1549900
+        },
+        {
+          "date": "2026-02-07",
           "price": 1549900
         }
       ],
@@ -650,12 +591,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 127500,
       "dropPercent": 5.79,
-      "daysSincePeak": 9,
+      "daysSincePeak": 10,
       "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 2201500
-        },
         {
           "date": "2026-01-29",
           "price": 2201500
@@ -690,6 +627,10 @@
         },
         {
           "date": "2026-02-06",
+          "price": 2074000
+        },
+        {
+          "date": "2026-02-07",
           "price": 2074000
         }
       ],
@@ -713,7 +654,7 @@
       "peakDate": "2026-02-03",
       "dropAmount": 91000,
       "dropPercent": 5.4,
-      "daysSincePeak": 3,
+      "daysSincePeak": 4,
       "priceHistory": [
         {
           "date": "2026-02-03",
@@ -729,6 +670,10 @@
         },
         {
           "date": "2026-02-06",
+          "price": 1593000
+        },
+        {
+          "date": "2026-02-07",
           "price": 1593000
         }
       ],
@@ -750,12 +695,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 106000,
       "dropPercent": 5.11,
-      "daysSincePeak": 9,
+      "daysSincePeak": 10,
       "priceHistory": [
-        {
-          "date": "2026-01-28",
-          "price": 2075900
-        },
         {
           "date": "2026-01-29",
           "price": 2075900
@@ -790,6 +731,10 @@
         },
         {
           "date": "2026-02-06",
+          "price": 1969900
+        },
+        {
+          "date": "2026-02-07",
           "price": 1969900
         }
       ],
@@ -861,8 +806,8 @@
       "previousPrice": 1999000,
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "date": "2026-02-06",
-      "previousDate": "2026-02-06",
+      "date": "2026-02-07",
+      "previousDate": "2026-02-07",
       "listPrice": 921087.5,
       "campaignPrice": 1999000
     },
@@ -894,8 +839,8 @@
       "previousPrice": 614900,
       "dropAmount": 25000,
       "dropPercent": 4.07,
-      "date": "2026-02-06",
-      "previousDate": "2026-02-06",
+      "date": "2026-02-07",
+      "previousDate": "2026-02-07",
       "listPrice": 704900,
       "campaignPrice": 614900,
       "campaignDiscount": 12.8
@@ -911,8 +856,8 @@
       "previousPrice": 1569900,
       "dropAmount": 45000,
       "dropPercent": 2.87,
-      "date": "2026-02-06",
-      "previousDate": "2026-02-06",
+      "date": "2026-02-07",
+      "previousDate": "2026-02-07",
       "listPrice": 1569900
     }
   ],
@@ -934,12 +879,6 @@
       "brand": "Citroën",
       "dropCount": 2,
       "avgDropPercent": 6.68
-    },
-    {
-      "brandId": "ford",
-      "brand": "Ford",
-      "dropCount": 1,
-      "avgDropPercent": 9.96
     },
     {
       "brandId": "honda",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-06T01:33:03.661Z",
-  "date": "2026-02-06",
+  "generatedAt": "2026-02-07T01:33:05.286Z",
+  "date": "2026-02-07",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -3455,59 +3455,6 @@
       "trimCount": 2
     },
     {
-      "id": "opel-mokka",
-      "model": "Mokka",
-      "brand": "Opel",
-      "brandId": "opel",
-      "trims": [
-        {
-          "trim": "Edition",
-          "price": 1988000,
-          "priceFormatted": "1.988.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.2 136 HP Benzin",
-          "transmission": "Manuel",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Edition",
-          "price": 2085000,
-          "priceFormatted": "2.085.000 TL",
-          "stepFromBase": 97000,
-          "stepPercent": 4.879275653923541,
-          "engine": "1.2 130 HP Benzin",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "GS",
-          "price": 2208000,
-          "priceFormatted": "2.208.000 TL",
-          "stepFromBase": 220000,
-          "stepPercent": 11.066398390342053,
-          "engine": "1.2 130 HP Benzin",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "GS",
-          "price": 2650000,
-          "priceFormatted": "2.650.000 TL",
-          "stepFromBase": 662000,
-          "stepPercent": 33.29979879275654,
-          "engine": "Hybrid 1.2 145 (136 HP)²",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        }
-      ],
-      "basePrice": 1988000,
-      "topPrice": 2650000,
-      "priceSpread": 662000,
-      "priceSpreadPercent": 33.3,
-      "trimCount": 4
-    },
-    {
       "id": "opel-astra",
       "model": "Astra",
       "brand": "Opel",
@@ -6413,10 +6360,10 @@
         },
         {
           "trim": "Titanium",
-          "price": 1897100,
-          "priceFormatted": "1.897.100 TL",
-          "stepFromBase": 55000,
-          "stepPercent": 2.9857228163509038,
+          "price": 2009300,
+          "priceFormatted": "2.009.300 TL",
+          "stepFromBase": 167200,
+          "stepPercent": 9.076597361706748,
           "engine": "1.0L EcoBoost 125PS",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
@@ -6433,19 +6380,19 @@
         },
         {
           "trim": "ST-Line X",
-          "price": 2138700,
-          "priceFormatted": "2.138.700 TL",
-          "stepFromBase": 296600,
-          "stepPercent": 16.1011888605396,
+          "price": 2202600,
+          "priceFormatted": "2.202.600 TL",
+          "stepFromBase": 360500,
+          "stepPercent": 19.57005591444547,
           "engine": "1.0L EcoBoost 155PS",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         }
       ],
       "basePrice": 1842100,
-      "topPrice": 2138700,
-      "priceSpread": 296600,
-      "priceSpreadPercent": 16.1,
+      "topPrice": 2202600,
+      "priceSpread": 360500,
+      "priceSpreadPercent": 19.57,
       "trimCount": 4
     },
     {
@@ -6456,8 +6403,8 @@
       "trims": [
         {
           "trim": "Yeni Titanium Stil",
-          "price": 2292400,
-          "priceFormatted": "2.292.400 TL",
+          "price": 2539500,
+          "priceFormatted": "2.539.500 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5L EcoBlue 115PS",
@@ -6466,19 +6413,19 @@
         },
         {
           "trim": "Yeni Titanium X",
-          "price": 2543000,
-          "priceFormatted": "2.543.000 TL",
-          "stepFromBase": 250600,
-          "stepPercent": 10.931774559413714,
+          "price": 2669500,
+          "priceFormatted": "2.669.500 TL",
+          "stepFromBase": 130000,
+          "stepPercent": 5.119117936601693,
           "engine": "1.5L EcoBlue 115PS",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 2292400,
-      "topPrice": 2543000,
-      "priceSpread": 250600,
-      "priceSpreadPercent": 10.93,
+      "basePrice": 2539500,
+      "topPrice": 2669500,
+      "priceSpread": 130000,
+      "priceSpreadPercent": 5.12,
       "trimCount": 2
     },
     {
@@ -6572,8 +6519,8 @@
       "trims": [
         {
           "trim": "Deluxe",
-          "price": 2192000,
-          "priceFormatted": "2.192.000 TL",
+          "price": 2257400,
+          "priceFormatted": "2.257.400 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.0L EcoBoost 125PS",
@@ -6582,51 +6529,51 @@
         },
         {
           "trim": "Deluxe",
-          "price": 2257400,
-          "priceFormatted": "2.257.400 TL",
-          "stepFromBase": 65400,
-          "stepPercent": 2.9835766423357666,
+          "price": 2347300,
+          "priceFormatted": "2.347.300 TL",
+          "stepFromBase": 89900,
+          "stepPercent": 3.98245769469301,
           "engine": "1.0L EcoBoost 125PS",
           "transmission": "Manuel",
           "fuel": "Benzin"
         },
         {
           "trim": "Titanium",
-          "price": 2754900,
-          "priceFormatted": "2.754.900 TL",
-          "stepFromBase": 562900,
-          "stepPercent": 25.67974452554744,
+          "price": 2837200,
+          "priceFormatted": "2.837.200 TL",
+          "stepFromBase": 579800,
+          "stepPercent": 25.684415699477274,
           "engine": "1.0L EcoBoost 125PS",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         },
         {
           "trim": "Titanium",
-          "price": 2837200,
-          "priceFormatted": "2.837.200 TL",
-          "stepFromBase": 645200,
-          "stepPercent": 29.434306569343065,
+          "price": 2950200,
+          "priceFormatted": "2.950.200 TL",
+          "stepFromBase": 692800,
+          "stepPercent": 30.69017453707805,
           "engine": "1.0L EcoBoost 125PS",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 2192000,
-      "topPrice": 2837200,
-      "priceSpread": 645200,
-      "priceSpreadPercent": 29.43,
+      "basePrice": 2257400,
+      "topPrice": 2950200,
+      "priceSpread": 692800,
+      "priceSpreadPercent": 30.69,
       "trimCount": 4
     },
     {
       "id": "ford-puma-gen-e",
-      "model": "Puma Gen-E",
+      "model": "PUMA GEN-E",
       "brand": "Ford",
       "brandId": "ford",
       "trims": [
         {
           "trim": "Premium",
-          "price": 1880900,
-          "priceFormatted": "1.880.900 TL",
+          "price": 1900100,
+          "priceFormatted": "1.900.100 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "123KW",
@@ -6635,52 +6582,52 @@
         },
         {
           "trim": "Premium",
-          "price": 1937000,
-          "priceFormatted": "1.937.000 TL",
-          "stepFromBase": 56100,
-          "stepPercent": 2.9826147057259824,
+          "price": 2015200,
+          "priceFormatted": "2.015.200 TL",
+          "stepFromBase": 115100,
+          "stepPercent": 6.0575759170569965,
           "engine": "123KW",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 1880900,
-      "topPrice": 1937000,
-      "priceSpread": 56100,
-      "priceSpreadPercent": 2.98,
+      "basePrice": 1900100,
+      "topPrice": 2015200,
+      "priceSpread": 115100,
+      "priceSpreadPercent": 6.06,
       "trimCount": 2
     },
     {
-      "id": "ford-yeni-elektrikli-journey-courier",
-      "model": "Yeni Elektrikli Journey Courier",
+      "id": "ford-yeni-journey-courier-bev",
+      "model": "Yeni Journey Courier BEV",
       "brand": "Ford",
       "brandId": "ford",
       "trims": [
-        {
-          "trim": "Titanium",
-          "price": 2003100,
-          "priceFormatted": "2.003.100 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "100KW",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        },
         {
           "trim": "Titanium",
           "price": 2062900,
           "priceFormatted": "2.062.900 TL",
-          "stepFromBase": 59800,
-          "stepPercent": 2.9853726723578453,
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "100KW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Titanium",
+          "price": 2145100,
+          "priceFormatted": "2.145.100 TL",
+          "stepFromBase": 82200,
+          "stepPercent": 3.9846817586892236,
           "engine": "100KW",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 2003100,
-      "topPrice": 2062900,
-      "priceSpread": 59800,
-      "priceSpreadPercent": 2.99,
+      "basePrice": 2062900,
+      "topPrice": 2145100,
+      "priceSpread": 82200,
+      "priceSpreadPercent": 3.98,
       "trimCount": 2
     },
     {
@@ -8597,19 +8544,19 @@
           "brandId": "ford",
           "model": "Yeni Puma",
           "basePrice": 1842100,
-          "topPrice": 2138700,
+          "topPrice": 2202600,
           "basePriceFormatted": "₺1.842.100",
-          "topPriceFormatted": "₺2.138.700",
+          "topPriceFormatted": "₺2.202.600",
           "trimCount": 4
         },
         {
           "brand": "Ford",
           "brandId": "ford",
-          "model": "Puma Gen-E",
-          "basePrice": 1880900,
-          "topPrice": 1937000,
-          "basePriceFormatted": "₺1.880.900",
-          "topPriceFormatted": "₺1.937.000",
+          "model": "PUMA GEN-E",
+          "basePrice": 1900100,
+          "topPrice": 2015200,
+          "basePriceFormatted": "₺1.900.100",
+          "topPriceFormatted": "₺2.015.200",
           "trimCount": 2
         },
         {
@@ -8631,16 +8578,6 @@
           "basePriceFormatted": "₺1.919.900",
           "topPriceFormatted": "₺2.069.900",
           "trimCount": 3
-        },
-        {
-          "brand": "Opel",
-          "brandId": "opel",
-          "model": "Mokka",
-          "basePrice": 1988000,
-          "topPrice": 2650000,
-          "basePriceFormatted": "₺1.988.000",
-          "topPriceFormatted": "₺2.650.000",
-          "trimCount": 4
         },
         {
           "brand": "Volkswagen",
@@ -8713,16 +8650,6 @@
           "trimCount": 2
         },
         {
-          "brand": "Ford",
-          "brandId": "ford",
-          "model": "Yeni Journey Courier",
-          "basePrice": 2192000,
-          "topPrice": 2837200,
-          "basePriceFormatted": "₺2.192.000",
-          "topPriceFormatted": "₺2.837.200",
-          "trimCount": 4
-        },
-        {
           "brand": "Toyota",
           "brandId": "toyota",
           "model": "Proace Verso",
@@ -8751,6 +8678,16 @@
           "basePriceFormatted": "₺2.249.000",
           "topPriceFormatted": "₺2.249.000",
           "trimCount": 1
+        },
+        {
+          "brand": "Ford",
+          "brandId": "ford",
+          "model": "Yeni Journey Courier",
+          "basePrice": 2257400,
+          "topPrice": 2950200,
+          "basePriceFormatted": "₺2.257.400",
+          "topPriceFormatted": "₺2.950.200",
+          "trimCount": 4
         },
         {
           "brand": "Hyundai",
@@ -9703,8 +9640,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8235186,
-      "avgTopPrice": 8447650
+      "avgBasePrice": 8283520,
+      "avgTopPrice": 8493854
     },
     {
       "segment": "SUV",
@@ -10197,16 +10134,6 @@
           "trimCount": 2
         },
         {
-          "brand": "Ford",
-          "brandId": "ford",
-          "model": "Focus",
-          "basePrice": 2292400,
-          "topPrice": 2543000,
-          "basePriceFormatted": "₺2.292.400",
-          "topPriceFormatted": "₺2.543.000",
-          "trimCount": 2
-        },
-        {
           "brand": "Peugeot",
           "brandId": "peugeot",
           "model": "E-308",
@@ -10235,6 +10162,16 @@
           "basePriceFormatted": "₺2.534.000",
           "topPriceFormatted": "₺3.220.000",
           "trimCount": 3
+        },
+        {
+          "brand": "Ford",
+          "brandId": "ford",
+          "model": "Focus",
+          "basePrice": 2539500,
+          "topPrice": 2669500,
+          "basePriceFormatted": "₺2.539.500",
+          "topPriceFormatted": "₺2.669.500",
+          "trimCount": 2
         },
         {
           "brand": "Škoda",
@@ -10347,8 +10284,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5476322,
-      "avgTopPrice": 6104795
+      "avgBasePrice": 5486618,
+      "avgTopPrice": 6110066
     },
     {
       "segment": "Electric",
@@ -10386,11 +10323,11 @@
         {
           "brand": "Ford",
           "brandId": "ford",
-          "model": "Yeni Elektrikli Journey Courier",
-          "basePrice": 2003100,
-          "topPrice": 2062900,
-          "basePriceFormatted": "₺2.003.100",
-          "topPriceFormatted": "₺2.062.900",
+          "model": "Yeni Journey Courier BEV",
+          "basePrice": 2062900,
+          "topPrice": 2145100,
+          "basePriceFormatted": "₺2.062.900",
+          "topPriceFormatted": "₺2.145.100",
           "trimCount": 2
         },
         {
@@ -10524,8 +10461,8 @@
           "trimCount": 2
         }
       ],
-      "avgBasePrice": 3171353,
-      "avgTopPrice": 3420282
+      "avgBasePrice": 3174871,
+      "avgTopPrice": 3425118
     },
     {
       "segment": "Hatchback",
@@ -10763,9 +10700,9 @@
     }
   ],
   "summary": {
-    "totalModels": 235,
+    "totalModels": 234,
     "avgTrimsPerModel": 2.3,
-    "avgPriceSpread": 308109,
-    "avgPriceSpreadPercent": 11.19
+    "avgPriceSpread": 306906,
+    "avgPriceSpreadPercent": 11.1
   }
 }

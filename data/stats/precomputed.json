@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-02-06T01:33:03.528Z",
-  "totalVehicles": 532,
+  "generatedAt": "2026-02-07T01:33:05.141Z",
+  "totalVehicles": 528,
   "overallStats": {
-    "avgPrice": 4729312,
+    "avgPrice": 4750384,
     "minPrice": 544900,
     "maxPrice": 35229600,
-    "medianPrice": 2773500
+    "medianPrice": 2799500
   },
   "brandStats": [
     {
@@ -105,20 +105,20 @@
       "medianPrice": 2269999.99
     },
     {
-      "name": "Opel",
+      "name": "Ford",
       "vehicleCount": 21,
-      "avgPrice": 2352143,
+      "avgPrice": 2495262,
+      "minPrice": 1842100,
+      "maxPrice": 3305300,
+      "medianPrice": 2379100
+    },
+    {
+      "name": "Opel",
+      "vehicleCount": 17,
+      "avgPrice": 2380235,
       "minPrice": 1535000,
       "maxPrice": 3460000,
       "medianPrice": 2178000
-    },
-    {
-      "name": "Ford",
-      "vehicleCount": 21,
-      "avgPrice": 2440990,
-      "minPrice": 1842100,
-      "maxPrice": 3305300,
-      "medianPrice": 2292400
     },
     {
       "name": "Nissan",
@@ -164,27 +164,27 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 210,
-      "percentage": 39.5,
-      "avgPrice": 4915323
+      "count": 207,
+      "percentage": 39.2,
+      "avgPrice": 4957910
     },
     {
       "fuel": "Elektrik",
       "count": 121,
-      "percentage": 22.7,
-      "avgPrice": 4714840
+      "percentage": 22.9,
+      "avgPrice": 4716819
     },
     {
       "fuel": "Hibrit",
-      "count": 78,
-      "percentage": 14.7,
-      "avgPrice": 3643262
+      "count": 77,
+      "percentage": 14.6,
+      "avgPrice": 3658449
     },
     {
       "fuel": "Dizel",
       "count": 66,
-      "percentage": 12.4,
-      "avgPrice": 3502745
+      "percentage": 12.5,
+      "avgPrice": 3508406
     },
     {
       "fuel": "Hafif Hibrit",
@@ -195,7 +195,7 @@
     {
       "fuel": "Plug-in Hibrit",
       "count": 23,
-      "percentage": 4.3,
+      "percentage": 4.4,
       "avgPrice": 9131268
     },
     {
@@ -214,32 +214,32 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 370,
+      "count": 367,
       "percentage": 69.5,
-      "avgPrice": 5596162
+      "avgPrice": 5625671
     },
     {
       "transmission": "DSG",
       "count": 65,
-      "percentage": 12.2,
+      "percentage": 12.3,
       "avgPrice": 3612836
     },
     {
       "transmission": "Manuel",
-      "count": 43,
-      "percentage": 8.1,
-      "avgPrice": 1720777
+      "count": 42,
+      "percentage": 8,
+      "avgPrice": 1718112
     },
     {
       "transmission": "DCT",
       "count": 31,
-      "percentage": 5.8,
+      "percentage": 5.9,
       "avgPrice": 2166565
     },
     {
       "transmission": "Bilinmiyor",
       "count": 23,
-      "percentage": 4.3,
+      "percentage": 4.4,
       "avgPrice": 3018374
     }
   ],
@@ -249,28 +249,28 @@
       "min": 0,
       "max": 1500000,
       "count": 32,
-      "percentage": 6
+      "percentage": 6.1
     },
     {
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 253,
-      "percentage": 47.6
+      "count": 249,
+      "percentage": 47.2
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
       "count": 110,
-      "percentage": 20.7
+      "percentage": 20.8
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
       "count": 137,
-      "percentage": 25.8
+      "percentage": 25.9
     }
   ],
   "otvStats": {
@@ -396,15 +396,15 @@
     "distribution": [
       {
         "year": "2026",
-        "count": 75,
-        "percentage": 23.3,
-        "avgPrice": 2162377
+        "count": 73,
+        "percentage": 23,
+        "avgPrice": 2165475
       },
       {
         "year": "2025",
-        "count": 246,
-        "percentage": 76.4,
-        "avgPrice": 5022002
+        "count": 244,
+        "percentage": 76.7,
+        "avgPrice": 5048032
       },
       {
         "year": "2024",
