@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-07T01:33:05.109Z",
-  "totalVehicles": 528,
+  "generatedAt": "2026-02-08T01:34:11.637Z",
+  "totalVehicles": 532,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1985,7 +1985,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "R5 E-Tech ELEKTRİKLİ",
@@ -2726,7 +2726,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3403,7 +3403,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "i20",
@@ -4008,7 +4008,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "E-208",
@@ -4515,7 +4515,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "ATTO 2",
@@ -4731,7 +4731,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4882,6 +4882,64 @@
           "hasLongRange": true
         },
         {
+          "model": "Mokka",
+          "trim": "Edition",
+          "engine": "1.2 136 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.988.000 TL",
+          "priceNumeric": 1988000,
+          "brand": "Opel",
+          "modelYear": 2026,
+          "priceListNumeric": 1988000,
+          "powerHP": 136,
+          "engineDisplacement": "1.2L"
+        },
+        {
+          "model": "Mokka",
+          "trim": "Edition",
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.085.000 TL",
+          "priceNumeric": 2085000,
+          "brand": "Opel",
+          "modelYear": 2025,
+          "priceListNumeric": 2085000,
+          "powerHP": 130,
+          "engineDisplacement": "1.2L"
+        },
+        {
+          "model": "Mokka",
+          "trim": "GS",
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.208.000 TL",
+          "priceNumeric": 2208000,
+          "brand": "Opel",
+          "modelYear": 2025,
+          "priceListNumeric": 2208000,
+          "powerHP": 130,
+          "engineDisplacement": "1.2L"
+        },
+        {
+          "model": "Mokka",
+          "trim": "GS",
+          "engine": "Hybrid 1.2 145 (136 HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.650.000 TL",
+          "priceNumeric": 2650000,
+          "brand": "Opel",
+          "modelYear": 2026,
+          "priceListNumeric": 2523000,
+          "priceCampaignNumeric": 2184000,
+          "powerHP": 136,
+          "engineDisplacement": "1.2L",
+          "isHybrid": true
+        },
+        {
           "model": "Astra",
           "trim": "GS",
           "engine": "1.2 130 HP Benzin",
@@ -4987,7 +5045,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5497,7 +5555,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6442,7 +6500,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "A 200",
@@ -7254,7 +7312,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -7972,7 +8030,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8110,7 +8168,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8398,7 +8456,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -8483,7 +8541,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Ibiza",
@@ -8611,7 +8669,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Stonic",
@@ -9031,7 +9089,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "EX30",
@@ -9564,7 +9622,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-02-07",
+      "date": "2026-02-08",
       "vehicles": [
         {
           "model": "Egea Sedan",

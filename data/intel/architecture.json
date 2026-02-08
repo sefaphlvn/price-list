@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-07T01:33:05.286Z",
-  "date": "2026-02-07",
+  "generatedAt": "2026-02-08T01:34:11.825Z",
+  "date": "2026-02-08",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -3453,6 +3453,59 @@
       "priceSpread": 113000,
       "priceSpreadPercent": 6.09,
       "trimCount": 2
+    },
+    {
+      "id": "opel-mokka",
+      "model": "Mokka",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "Edition",
+          "price": 1988000,
+          "priceFormatted": "1.988.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "1.2 136 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "Edition",
+          "price": 2085000,
+          "priceFormatted": "2.085.000 TL",
+          "stepFromBase": 97000,
+          "stepPercent": 4.879275653923541,
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "GS",
+          "price": 2208000,
+          "priceFormatted": "2.208.000 TL",
+          "stepFromBase": 220000,
+          "stepPercent": 11.066398390342053,
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "GS",
+          "price": 2650000,
+          "priceFormatted": "2.650.000 TL",
+          "stepFromBase": 662000,
+          "stepPercent": 33.29979879275654,
+          "engine": "Hybrid 1.2 145 (136 HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit"
+        }
+      ],
+      "basePrice": 1988000,
+      "topPrice": 2650000,
+      "priceSpread": 662000,
+      "priceSpreadPercent": 33.3,
+      "trimCount": 4
     },
     {
       "id": "opel-astra",
@@ -8580,6 +8633,16 @@
           "trimCount": 3
         },
         {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Mokka",
+          "basePrice": 1988000,
+          "topPrice": 2650000,
+          "basePriceFormatted": "₺1.988.000",
+          "topPriceFormatted": "₺2.650.000",
+          "trimCount": 4
+        },
+        {
           "brand": "Volkswagen",
           "brandId": "volkswagen",
           "model": "Taigo",
@@ -9640,8 +9703,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8283520,
-      "avgTopPrice": 8493854
+      "avgBasePrice": 8235826,
+      "avgTopPrice": 8449583
     },
     {
       "segment": "SUV",
@@ -10700,9 +10763,9 @@
     }
   ],
   "summary": {
-    "totalModels": 234,
+    "totalModels": 235,
     "avgTrimsPerModel": 2.3,
-    "avgPriceSpread": 306906,
-    "avgPriceSpreadPercent": 11.1
+    "avgPriceSpread": 308417,
+    "avgPriceSpreadPercent": 11.2
   }
 }

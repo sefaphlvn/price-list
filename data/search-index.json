@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-07T01:33:05.124Z",
-  "totalEntries": 528,
+  "generatedAt": "2026-02-08T01:34:11.652Z",
+  "totalEntries": 532,
   "entries": [
     {
       "id": "volkswagen-polo-life-1.0-tsi-95-ps",
@@ -3069,6 +3069,58 @@
       "price": 1970000,
       "priceFormatted": "1.970.000 TL",
       "searchText": "opel frontera elektrik gs 54 kwh batarya uzun menzil elektrik"
+    },
+    {
+      "id": "opel-mokka-edition-1.2-136-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Mokka",
+      "trim": "Edition",
+      "engine": "1.2 136 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Manuel",
+      "price": 1988000,
+      "priceFormatted": "1.988.000 TL",
+      "searchText": "opel mokka edition 1 2 136 hp benzin benzin manuel"
+    },
+    {
+      "id": "opel-mokka-edition-1.2-130-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Mokka",
+      "trim": "Edition",
+      "engine": "1.2 130 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "price": 2085000,
+      "priceFormatted": "2.085.000 TL",
+      "searchText": "opel mokka edition 1 2 130 hp benzin benzin otomatik"
+    },
+    {
+      "id": "opel-mokka-gs-1.2-130-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Mokka",
+      "trim": "GS",
+      "engine": "1.2 130 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "price": 2208000,
+      "priceFormatted": "2.208.000 TL",
+      "searchText": "opel mokka gs 1 2 130 hp benzin benzin otomatik"
+    },
+    {
+      "id": "opel-mokka-gs-hybrid-1.2-145-(136-hp)²",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Mokka",
+      "trim": "GS",
+      "engine": "Hybrid 1.2 145 (136 HP)²",
+      "fuel": "Hybrid",
+      "transmission": "Otomatik",
+      "price": 2650000,
+      "priceFormatted": "2.650.000 TL",
+      "searchText": "opel mokka gs hybrid 1 2 145 136 hp hybrid otomatik"
     },
     {
       "id": "opel-astra-gs-1.2-130-hp-benzin",
