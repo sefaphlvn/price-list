@@ -2888,6 +2888,14 @@ const parseNissanData = (html: string, brand: string): PriceListRow[] => {
   try {
     const $ = cheerio.load(html);
 
+    // Extract model year from page title/heading
+    let nissanModelYear: number | undefined;
+    const nissanPageText = $('title').text() + ' ' + $('h1').text() + ' ' + $('h2.heading span').first().text();
+    const nissanYearMatch = nissanPageText.match(/\b(202[4-9]|203\d)\b/);
+    if (nissanYearMatch) {
+      nissanModelYear = parseInt(nissanYearMatch[1], 10);
+    }
+
     // Collect model names from h2.heading and h3.heading spans (filter out "-" placeholders)
     const modelNames: string[] = [];
     $('h2.heading span, h3.heading span').each((_, el) => {
@@ -3038,6 +3046,7 @@ const parseNissanData = (html: string, brand: string): PriceListRow[] => {
             priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
             priceNumeric,
             brand,
+            ...(nissanModelYear && { modelYear: nissanModelYear }),
             ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
             ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
             // Engine details from helper
@@ -3107,6 +3116,14 @@ const parseHondaData = (html: string, brand: string): PriceListRow[] => {
 
   try {
     const $ = cheerio.load(html);
+
+    // Extract model year from page title/heading
+    let hondaModelYear: number | undefined;
+    const pageText = $('title').text() + ' ' + $('h1').text() + ' ' + $('h2').text();
+    const yearMatch = pageText.match(/\b(202[4-9]|203\d)\b/);
+    if (yearMatch) {
+      hondaModelYear = parseInt(yearMatch[1], 10);
+    }
 
     // Find all model sections
     $('li.table-price-list').each((_, el) => {
@@ -3201,6 +3218,7 @@ const parseHondaData = (html: string, brand: string): PriceListRow[] => {
                 priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
                 priceNumeric,
                 brand,
+                ...(hondaModelYear && { modelYear: hondaModelYear }),
                 ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
                 ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
                 // Extended fields from engine details

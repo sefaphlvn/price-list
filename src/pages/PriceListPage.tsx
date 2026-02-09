@@ -69,6 +69,37 @@ import { useIsMobile } from '../hooks/useMediaQuery';
 const { Title, Text } = Typography;
 const { Search } = Input;
 
+// Pre-computed style objects to avoid re-creating on every render/row
+const iconStyles = {
+  heart: { color: tokens.colors.error } as const,
+  check: { color: tokens.colors.success } as const,
+  accent: { color: tokens.colors.accent } as const,
+};
+
+const transmissionBadgeStyle = {
+  background: tokens.colors.gray[100],
+  padding: '2px 8px',
+  borderRadius: tokens.borderRadius.sm,
+  fontSize: '12px',
+  color: tokens.colors.gray[700],
+} as const;
+
+const discountTagStyle = { fontSize: 10, marginTop: 2 } as const;
+
+const cardStyle = {
+  background: tokens.colors.surface,
+  padding: tokens.spacing.lg,
+  borderRadius: tokens.borderRadius.lg,
+  marginBottom: tokens.spacing.lg,
+} as const;
+
+const labelStyle = { marginRight: 8, color: tokens.colors.gray[600] } as const;
+const sectionTitleStyle = { display: 'block' as const, marginBottom: tokens.spacing.sm } as const;
+const fullWidthStyle = { width: '100%' as const } as const;
+const loadingCenterStyle = { display: 'flex', justifyContent: 'center', padding: tokens.spacing['2xl'] } as const;
+const sliderPadStyle = { padding: '0 8px' } as const;
+const sliderLabelStyle = { fontSize: 12, marginBottom: 4, display: 'block' as const } as const;
+
 interface FetchState {
   loading: boolean;
   error: string | null;
@@ -84,18 +115,26 @@ export default function PriceListPage() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const {
-    addFavorite,
-    removeFavorite,
-    isFavorite,
-    addToCompare,
-    removeFromCompare,
-    isInCompare,
-    canAddToCompare,
-    addTrackedVehicle,
-    removeTrackedVehicle,
-    isTracked,
-  } = useAppStore();
+  const addFavorite = useAppStore((s) => s.addFavorite);
+  const removeFavorite = useAppStore((s) => s.removeFavorite);
+  const favorites = useAppStore((s) => s.favorites);
+  const addToCompare = useAppStore((s) => s.addToCompare);
+  const removeFromCompare = useAppStore((s) => s.removeFromCompare);
+  const compareList = useAppStore((s) => s.compareList);
+  const addTrackedVehicle = useAppStore((s) => s.addTrackedVehicle);
+  const removeTrackedVehicle = useAppStore((s) => s.removeTrackedVehicle);
+  const trackedVehiclesList = useAppStore((s) => s.trackedVehicles);
+
+  const isFavorite = useCallback((id: string) => favorites.some((f) => f.id === id), [favorites]);
+  const isInCompare = useCallback((id: string) => compareList.some((c) => c.id === id), [compareList]);
+  const canAddToCompare = useCallback(() => compareList.length < 4, [compareList]);
+  const isTracked = useCallback((id: string) => trackedVehiclesList.some((t) => t.id === id), [trackedVehiclesList]);
+
+  // Stable rowKey function - avoids recreating per render
+  const getRowKey = useCallback(
+    (record: PriceListRow) => `${record.brand}-${record.model}-${record.trim}-${record.engine || 'std'}-${record.transmission || 'auto'}`,
+    []
+  );
 
   // Responsive hooks
   const isMobile = useIsMobile();
@@ -286,7 +325,12 @@ export default function PriceListPage() {
   // Load data when date changes
   useEffect(() => {
     if (!selectedDate) {
-      setFetchState({ loading: false, error: t('errors.noData'), data: null });
+      // Show loading while index is still being fetched, error only after index loaded
+      if (!indexData) {
+        setFetchState({ loading: true, error: null, data: null });
+      } else {
+        setFetchState({ loading: false, error: t('errors.noData'), data: null });
+      }
       return;
     }
 
@@ -369,7 +413,7 @@ export default function PriceListPage() {
 
     return () => controller.abort();
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedDate, selectedBrand, refetchTrigger]);
+  }, [selectedDate, selectedBrand, refetchTrigger, indexData]);
 
   // Filtered data
   const filteredData = useMemo(() => {
@@ -704,15 +748,7 @@ export default function PriceListPage() {
           sortOrder: sortInfo?.column === 'transmission' ? sortInfo.order : undefined,
           render: (text) =>
             text ? (
-              <span
-                style={{
-                  background: tokens.colors.gray[100],
-                  padding: '2px 8px',
-                  borderRadius: tokens.borderRadius.sm,
-                  fontSize: '12px',
-                  color: tokens.colors.gray[700],
-                }}
-              >
+              <span style={transmissionBadgeStyle}>
                 {text}
               </span>
             ) : (
@@ -804,7 +840,7 @@ export default function PriceListPage() {
               <PriceTrendBadge vehicle={record} compact showSparkline={!isMobile} />
             </Space>
             {hasDiscount && discountPercent > 0 && !isMobile && (
-              <Tag color="green" style={{ fontSize: 10, marginTop: 2 }}>
+              <Tag color="green" style={discountTagStyle}>
                 -{discountPercent}% indirim
               </Tag>
             )}
@@ -831,7 +867,7 @@ export default function PriceListPage() {
               <Button
                 type="text"
                 size="small"
-                icon={isFav ? <HeartFilled style={{ color: tokens.colors.error }} /> : <HeartOutlined />}
+                icon={isFav ? <HeartFilled style={iconStyles.heart} /> : <HeartOutlined />}
                 onClick={() => handleFavoriteToggle(record)}
               />
               <Button
@@ -850,7 +886,7 @@ export default function PriceListPage() {
               <Button
                 type="text"
                 size="small"
-                icon={isFav ? <HeartFilled style={{ color: tokens.colors.error }} /> : <HeartOutlined />}
+                icon={isFav ? <HeartFilled style={iconStyles.heart} /> : <HeartOutlined />}
                 onClick={() => handleFavoriteToggle(record)}
               />
             </Tooltip>
@@ -868,7 +904,7 @@ export default function PriceListPage() {
                 size="small"
                 icon={
                   isComp ? (
-                    <CheckOutlined style={{ color: tokens.colors.success }} />
+                    <CheckOutlined style={iconStyles.check} />
                   ) : (
                     <SwapOutlined />
                   )
@@ -883,7 +919,7 @@ export default function PriceListPage() {
                 size="small"
                 icon={
                   isTrack ? (
-                    <EyeInvisibleOutlined style={{ color: tokens.colors.accent }} />
+                    <EyeInvisibleOutlined style={iconStyles.accent} />
                   ) : (
                     <EyeOutlined />
                   )
@@ -974,16 +1010,11 @@ export default function PriceListPage() {
       {/* Controls */}
       <motion.div
         variants={staggerItem}
-        style={{
-          background: tokens.colors.surface,
-          padding: tokens.spacing.lg,
-          borderRadius: tokens.borderRadius.lg,
-          marginBottom: tokens.spacing.lg,
-        }}
+        style={cardStyle}
       >
-        <Space wrap size="middle" style={{ width: '100%' }}>
+        <Space wrap size="middle" style={fullWidthStyle}>
           <div style={{ minWidth: isMobile ? '100%' : 'auto' }}>
-            <Text strong style={{ marginRight: 8, color: tokens.colors.gray[600] }}>
+            <Text strong style={labelStyle}>
               {t('common.brand')}:
             </Text>
             <Select
@@ -1003,7 +1034,7 @@ export default function PriceListPage() {
             />
           </div>
           <div style={{ minWidth: isMobile ? '100%' : 'auto' }}>
-            <Text strong style={{ marginRight: 8, color: tokens.colors.gray[600] }}>
+            <Text strong style={labelStyle}>
               <CalendarOutlined /> {t('common.date')}:
             </Text>
             <DatePicker
@@ -1063,7 +1094,7 @@ export default function PriceListPage() {
       )}
 
       {/* Error */}
-      {fetchState.error && (
+      {fetchState.error && !fetchState.loading && (
         <motion.div variants={staggerItem}>
           <Alert
             message={t('common.error')}
@@ -1085,11 +1116,7 @@ export default function PriceListPage() {
       {fetchState.loading && (
         <motion.div
           variants={staggerItem}
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            padding: tokens.spacing['2xl'],
-          }}
+          style={loadingCenterStyle}
         >
           <Spin size="large" />
         </motion.div>
@@ -1101,17 +1128,12 @@ export default function PriceListPage() {
           {/* Filters */}
           <motion.div
             variants={staggerItem}
-            style={{
-              background: tokens.colors.surface,
-              padding: tokens.spacing.lg,
-              borderRadius: tokens.borderRadius.lg,
-              marginBottom: tokens.spacing.lg,
-            }}
+            style={cardStyle}
           >
-            <Text strong style={{ display: 'block', marginBottom: tokens.spacing.sm }}>
+            <Text strong style={sectionTitleStyle}>
               {t('priceList.filters.title')}
             </Text>
-            <Space wrap size={isMobile ? 'small' : 'middle'} style={{ width: '100%' }}>
+            <Space wrap size={isMobile ? 'small' : 'middle'} style={fullWidthStyle}>
               <Search
                 placeholder={t('priceList.filters.searchPlaceholder')}
                 value={searchText}
@@ -1175,8 +1197,8 @@ export default function PriceListPage() {
             {/* Range Sliders */}
             <Row gutter={[16, 8]} style={{ marginTop: tokens.spacing.md }}>
               <Col xs={24} md={12}>
-                <div style={{ padding: '0 8px' }}>
-                  <Text type="secondary" style={{ fontSize: 12, marginBottom: 4, display: 'block' }}>
+                <div style={sliderPadStyle}>
+                  <Text type="secondary" style={sliderLabelStyle}>
                     {t('priceList.filters.priceRange', 'Fiyat Aralığı')}: {' '}
                     {priceRange
                       ? `${(priceRange[0] / 1000000).toFixed(1)}M - ${(priceRange[1] / 1000000).toFixed(1)}M TL`
@@ -1232,7 +1254,7 @@ export default function PriceListPage() {
               borderLeft: `4px solid ${tokens.colors.accent}`,
             }}
           >
-            <Text strong style={{ display: 'block', marginBottom: tokens.spacing.sm }}>
+            <Text strong style={sectionTitleStyle}>
               {t('priceList.export.title')}
             </Text>
             <Space wrap size={isMobile ? 'small' : 'middle'}>
@@ -1261,7 +1283,7 @@ export default function PriceListPage() {
 <Table
               columns={columns}
               dataSource={filteredData}
-              rowKey={(record) => `${record.brand}-${record.model}-${record.trim}-${record.engine || 'std'}-${record.transmission || 'auto'}-${record.priceNumeric}`}
+              rowKey={getRowKey}
               pagination={pagination}
               onChange={handleTableChange}
               scroll={{ x: isMobile ? 500 : 1200, y: isMobile ? undefined : 600 }}
