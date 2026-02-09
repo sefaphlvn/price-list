@@ -56,6 +56,30 @@ export async function fetchCachedJson<T>(
 }
 
 /**
+ * URL-level request deduplication.
+ * If the same URL is already being fetched, returns the same promise
+ * instead of making a duplicate request.
+ */
+const pendingRequests = new Map<string, Promise<any>>();
+
+export async function fetchDedup<T>(url: string): Promise<T> {
+  const existing = pendingRequests.get(url);
+  if (existing) return existing as Promise<T>;
+
+  const promise = fetch(url)
+    .then(async (r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json() as T;
+    })
+    .finally(() => {
+      pendingRequests.delete(url);
+    });
+
+  pendingRequests.set(url, promise);
+  return promise;
+}
+
+/**
  * API Base URL
  */
 const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://api.otofiyatlist.com';

@@ -17,7 +17,7 @@ import TrackedVehiclesDrawer from '../tracking/TrackedVehiclesDrawer';
 import { OfflineBanner, InstallPrompt } from '../../pwa';
 import { CommandPalette } from '../search';
 import { useCommandPalette } from '../../hooks/useCommandPalette';
-import { fetchFreshJson, DATA_URLS } from '../../utils/fetchData';
+import { fetchFreshJson, fetchDedup, DATA_URLS } from '../../utils/fetchData';
 import QuickCompareFAB from '../common/QuickCompareFAB';
 
 interface LatestVehicle {
@@ -102,11 +102,7 @@ export default function Layout() {
               const latestDate = indexData.brands[brandId].latestDate;
               const [year, month, day] = latestDate.split('-');
               const url = DATA_URLS.brandData(year, month, brandId, day);
-
-              const response = await fetch(url);
-              if (!response.ok) return;
-
-              const storedData: StoredData = await response.json();
+              const storedData = await fetchDedup<StoredData>(url);
 
               // Check each tracked vehicle
               vehicles.forEach((trackedVehicle) => {

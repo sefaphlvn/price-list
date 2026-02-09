@@ -302,31 +302,22 @@ export default function PriceListPage() {
         const day = selectedDate.format('DD');
 
         if (selectedBrand === 'all') {
-          // Fetch all brands in parallel
+          // Fetch all brands via /latest endpoint (single request)
+          const response = await fetch(DATA_URLS.latest, { signal });
+          if (!response.ok) {
+            throw new Error(t('errors.noData'));
+          }
+
+          const latestData = await response.json();
           const allRows: PriceListRow[] = [];
-          let latestTimestamp = '';
+          let latestTimestamp = latestData.generatedAt || '';
 
-          const fetchPromises = BRANDS.map(async (brand) => {
-            try {
-              const url = DATA_URLS.brandData(year, month, brand.id, day);
-              const response = await fetch(url, { signal });
-              if (response.ok) {
-                const storedData: StoredData = await response.json();
-                if (storedData.collectedAt > latestTimestamp) {
-                  latestTimestamp = storedData.collectedAt;
-                }
-                return storedData.rows;
-              }
-            } catch (error) {
-              if ((error as Error).name !== 'AbortError') {
-                // Skip failed brands
-              }
+          // Extract rows from all brands
+          Object.values(latestData.brands || {}).forEach((brand: any) => {
+            if (brand.vehicles) {
+              allRows.push(...brand.vehicles);
             }
-            return [];
           });
-
-          const results = await Promise.all(fetchPromises);
-          results.forEach((rows) => allRows.push(...rows));
 
           if (allRows.length === 0) {
             throw new Error(t('errors.noData'));
@@ -377,7 +368,8 @@ export default function PriceListPage() {
     fetchData();
 
     return () => controller.abort();
-  }, [selectedDate, selectedBrand, t, refetchTrigger]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedDate, selectedBrand, refetchTrigger]);
 
   // Filtered data
   const filteredData = useMemo(() => {

@@ -16,7 +16,7 @@ import dayjs from 'dayjs';
 import { PriceListRow, IndexData, StoredData } from '../../types';
 import { tokens } from '../../theme/tokens';
 import { BRANDS } from '../../config/brands';
-import { fetchFreshJson, DATA_URLS } from '../../utils/fetchData';
+import { fetchFreshJson, fetchDedup, DATA_URLS } from '../../utils/fetchData';
 
 const { Title, Text } = Typography;
 
@@ -88,11 +88,7 @@ export default function PriceTrendModal({ open, onClose, vehicle }: PriceTrendMo
           try {
             const [year, month, day] = dateStr.split('-');
             const url = DATA_URLS.brandData(year, month, brandId, day);
-            const response = await fetch(url);
-
-            if (!response.ok) continue;
-
-            const storedData: StoredData = await response.json();
+            const storedData = await fetchDedup<StoredData>(url);
 
             // Build a Map for consistent matching (last entry wins, same as events.ts)
             const rowMap = new Map<string, PriceListRow>();

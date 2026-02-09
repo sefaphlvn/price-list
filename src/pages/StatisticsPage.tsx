@@ -34,7 +34,7 @@ import {
 } from 'recharts';
 
 import { getBrandById } from '../config/brands';
-import { PriceListRow, IndexData, StoredData } from '../types';
+import { PriceListRow, StoredData } from '../types';
 import { tokens } from '../theme/tokens';
 import { staggerContainer, staggerItem } from '../theme/animations';
 import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
@@ -129,7 +129,7 @@ export default function StatisticsPage() {
   const [allData, setAllData] = useState<Map<string, StoredData>>(new Map());
   const [activeTab, setActiveTab] = useState('overview');
 
-  // Fetch data from historical files
+  // Fetch all brands via single /latest endpoint
   useEffect(() => {
     let cancelled = false;
 
@@ -138,28 +138,19 @@ export default function StatisticsPage() {
       const dataMap = new Map<string, StoredData>();
 
       try {
-        const indexData = await fetchFreshJson<IndexData>(DATA_URLS.index);
+        const latestData = await fetchFreshJson<any>(DATA_URLS.latest);
 
-        await Promise.all(
-          Object.keys(indexData.brands).map(async (brandId) => {
-            try {
-              const brandInfo = indexData.brands[brandId];
-              const latestDate = brandInfo.latestDate;
-              const [year, month, day] = latestDate.split('-');
-              const url = DATA_URLS.brandData(year, month, brandId, day);
-
-              const response = await fetch(url);
-              if (response.ok) {
-                const storedData: StoredData = await response.json();
-                dataMap.set(brandId, storedData);
-              }
-            } catch (error) {
-              console.error(`Failed to fetch ${brandId}:`, error);
-            }
-          })
-        );
+        Object.entries(latestData.brands || {}).forEach(([brandId, brand]: [string, any]) => {
+          dataMap.set(brandId, {
+            collectedAt: latestData.generatedAt,
+            brand: brand.name,
+            brandId,
+            rowCount: brand.vehicles?.length || 0,
+            rows: brand.vehicles || [],
+          });
+        });
       } catch (error) {
-        console.error('Failed to fetch index:', error);
+        console.error('Failed to fetch latest data:', error);
       }
 
       if (!cancelled) {

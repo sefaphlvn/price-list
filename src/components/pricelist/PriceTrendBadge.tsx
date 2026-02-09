@@ -1,15 +1,15 @@
 // PriceTrendBadge - Compact inline price trend indicator with sparkline
-// Shows 30-day trend with mini chart and percentage change
+// Lazy-loads trend data on hover to avoid request storms
 
-import { useState, useEffect, useMemo, memo } from 'react';
+import { useState, useMemo, useCallback, memo } from 'react';
 import { Tooltip, Tag, Spin } from 'antd';
-import { ArrowUpOutlined, ArrowDownOutlined, MinusOutlined } from '@ant-design/icons';
+import { ArrowUpOutlined, ArrowDownOutlined, MinusOutlined, LineChartOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 
 import { PriceListRow, IndexData, StoredData } from '../../types';
 import { BRANDS } from '../../config/brands';
 import { tokens } from '../../theme/tokens';
-import { fetchFreshJson, DATA_URLS } from '../../utils/fetchData';
+import { fetchFreshJson, fetchDedup, DATA_URLS } from '../../utils/fetchData';
 
 // Create normalized key for vehicle matching
 function createRowKey(model: string, trim: string, engine: string): string {
@@ -76,8 +76,9 @@ Sparkline.displayName = 'Sparkline';
 function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: PriceTrendBadgeProps) {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
-  const [trendData, setTrendData] = useState<TrendDataPoint[]>([]);
+  const [trendData, setTrendData] = useState<TrendDataPoint[] | null>(null);
   const [error, setError] = useState(false);
+  const [fetched, setFetched] = useState(false);
 
   const vehicleKey = useMemo(
     () => createRowKey(vehicle.model, vehicle.trim, vehicle.engine),
@@ -89,91 +90,89 @@ function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: Pri
     [vehicle.brand, vehicleKey]
   );
 
-  useEffect(() => {
-    const fetchTrendData = async () => {
-      // Check cache first
-      const cached = trendCache.get(cacheKey);
-      if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
-        setTrendData(cached.data);
+  // Fetch trend data - called on hover, not on mount
+  const fetchTrendData = useCallback(async () => {
+    if (fetched || loading) return;
+
+    // Check cache first
+    const cached = trendCache.get(cacheKey);
+    if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
+      setTrendData(cached.data);
+      setFetched(true);
+      return;
+    }
+
+    setLoading(true);
+    setError(false);
+    const data: TrendDataPoint[] = [];
+
+    try {
+      // Get index (uses fetchFreshJson which has its own caching)
+      const indexData = await fetchFreshJson<IndexData>(DATA_URLS.index);
+
+      // Resolve brandId from display name
+      const brandLower = vehicle.brand.toLowerCase();
+      const brandConfig = BRANDS.find(
+        (b) => b.name.toLowerCase() === brandLower || b.id === brandLower
+      );
+      const brandId = brandConfig?.id ?? brandLower;
+
+      if (!indexData.brands[brandId]) {
+        setError(true);
+        setLoading(false);
+        setFetched(true);
         return;
       }
 
-      setLoading(true);
-      setError(false);
-      const data: TrendDataPoint[] = [];
+      const availableDates = indexData.brands[brandId].availableDates;
 
-      try {
-        // Get index to find available dates (with cache-busting for fresh data)
-        const indexData = await fetchFreshJson<IndexData>(DATA_URLS.index);
+      // Get last 10 dates of data
+      const recentDates = availableDates.slice(-10);
 
-        // Resolve brandId from display name
-        const brandLower = vehicle.brand.toLowerCase();
-        const brandConfig = BRANDS.find(
-          (b) => b.name.toLowerCase() === brandLower || b.id === brandLower
-        );
-        const brandId = brandConfig?.id ?? brandLower;
+      // Fetch each date's data using dedup to prevent duplicate requests
+      for (const dateStr of recentDates) {
+        try {
+          const [year, month, day] = dateStr.split('-');
+          const url = DATA_URLS.brandData(year, month, brandId, day);
+          const storedData = await fetchDedup<StoredData>(url);
 
-        if (!indexData.brands[brandId]) {
-          setError(true);
-          setLoading(false);
-          return;
-        }
-
-        const availableDates = indexData.brands[brandId].availableDates;
-
-        // Get last 30 days of data (limit to 10 for performance)
-        const recentDates = availableDates.slice(-10);
-
-        // Fetch each date's data
-        for (const dateStr of recentDates) {
-          try {
-            const [year, month, day] = dateStr.split('-');
-            const url = DATA_URLS.brandData(year, month, brandId, day);
-            const response = await fetch(url);
-
-            if (!response.ok) continue;
-
-            const storedData: StoredData = await response.json();
-
-            // Build a Map for consistent matching
-            const rowMap = new Map<string, PriceListRow>();
-            for (const row of storedData.rows) {
-              rowMap.set(createRowKey(row.model, row.trim, row.engine), row);
-            }
-
-            // Find matching vehicle
-            const match = rowMap.get(vehicleKey);
-
-            if (match && match.priceNumeric > 0) {
-              data.push({
-                date: dateStr,
-                price: match.priceNumeric,
-              });
-            }
-          } catch {
-            // Skip failed dates
+          // Build a Map for consistent matching
+          const rowMap = new Map<string, PriceListRow>();
+          for (const row of storedData.rows) {
+            rowMap.set(createRowKey(row.model, row.trim, row.engine), row);
           }
+
+          // Find matching vehicle
+          const match = rowMap.get(vehicleKey);
+
+          if (match && match.priceNumeric > 0) {
+            data.push({
+              date: dateStr,
+              price: match.priceNumeric,
+            });
+          }
+        } catch {
+          // Skip failed dates
         }
-
-        // Sort by date
-        data.sort((a, b) => a.date.localeCompare(b.date));
-
-        // Cache the result
-        trendCache.set(cacheKey, { data, timestamp: Date.now() });
-        setTrendData(data);
-      } catch {
-        setError(true);
       }
 
-      setLoading(false);
-    };
+      // Sort by date
+      data.sort((a, b) => a.date.localeCompare(b.date));
 
-    fetchTrendData();
-  }, [cacheKey, vehicleKey, vehicle.brand]);
+      // Cache the result
+      trendCache.set(cacheKey, { data, timestamp: Date.now() });
+      setTrendData(data);
+    } catch {
+      setError(true);
+    }
+
+    setLoading(false);
+    setFetched(true);
+  }, [fetched, loading, cacheKey, vehicle.brand, vehicleKey]);
 
   // Calculate trend stats
   const stats = useMemo(() => {
-    if (trendData.length < 2) return null;
+    if (!trendData || trendData.length < 2) return null;
 
     const prices = trendData.map(d => d.price);
     const firstPrice = prices[0];
@@ -183,6 +182,21 @@ function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: Pri
 
     return { change, changePercent, prices };
   }, [trendData]);
+
+  // Not yet fetched - show placeholder that fetches on hover
+  if (!fetched && !loading) {
+    return (
+      <Tooltip title={t('trend.hoverToLoad', 'Trend icin ustune gelin')}>
+        <Tag
+          style={{ opacity: 0.4, cursor: 'pointer', fontSize: 11, padding: '0 4px' }}
+          onMouseEnter={fetchTrendData}
+          onClick={fetchTrendData}
+        >
+          <LineChartOutlined />
+        </Tag>
+      </Tooltip>
+    );
+  }
 
   if (loading) {
     return <Spin size="small" />;
@@ -204,7 +218,7 @@ function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: Pri
   const tooltipContent = (
     <div style={{ minWidth: 120 }}>
       <div style={{ marginBottom: 4 }}>
-        <strong>{t('trend.last30Days', 'Son 30 Gün')}</strong>
+        <strong>{t('trend.last30Days', 'Son 30 Gun')}</strong>
       </div>
       {showSparkline && stats.prices.length > 1 && (
         <div style={{ marginBottom: 4 }}>

@@ -21,8 +21,17 @@ func main() {
 
 	// Data directory path (relative to backend/)
 	dataDir := "../data"
-	if len(os.Args) > 1 {
-		dataDir = os.Args[1]
+	for i := 1; i < len(os.Args); i++ {
+		arg := os.Args[i]
+		if arg == "-data" || arg == "--data" {
+			if i+1 < len(os.Args) {
+				dataDir = os.Args[i+1]
+			}
+			break
+		} else if !strings.HasPrefix(arg, "-") {
+			dataDir = arg
+			break
+		}
 	}
 
 	// Resolve absolute path

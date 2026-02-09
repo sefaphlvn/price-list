@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: jhonbrownn/price-list-api
   tag: "latest"
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 service:
   type: NodePort
