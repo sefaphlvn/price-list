@@ -4012,11 +4012,13 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
         transmission = 'Otomatik';
       }
 
-      // Check for duplicate
+      // Check for duplicate (include transmission & fuel to catch all variants)
       const exists = vehicles.find(
         v => v.model === modelName &&
              v.trim === donanim &&
              v.engine === engine &&
+             v.transmission === transmission &&
+             v.fuel === fuel &&
              v.priceNumeric === priceNumeric
       );
 

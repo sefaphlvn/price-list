@@ -100,6 +100,17 @@ const loadingCenterStyle = { display: 'flex', justifyContent: 'center', padding:
 const sliderPadStyle = { padding: '0 8px' } as const;
 const sliderLabelStyle = { fontSize: 12, marginBottom: 4, display: 'block' as const } as const;
 
+/** Remove exact duplicate rows (same model+trim+engine+transmission+fuel+price) */
+function deduplicateRows(rows: PriceListRow[]): PriceListRow[] {
+  const seen = new Set<string>();
+  return rows.filter((row) => {
+    const key = `${row.brand}|${row.model}|${row.trim}|${row.engine}|${row.transmission}|${row.fuel}|${row.priceNumeric}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 interface FetchState {
   loading: boolean;
   error: string | null;
@@ -129,12 +140,6 @@ export default function PriceListPage() {
   const isInCompare = useCallback((id: string) => compareList.some((c) => c.id === id), [compareList]);
   const canAddToCompare = useCallback(() => compareList.length < 4, [compareList]);
   const isTracked = useCallback((id: string) => trackedVehiclesList.some((t) => t.id === id), [trackedVehiclesList]);
-
-  // Stable rowKey function - avoids recreating per render
-  const getRowKey = useCallback(
-    (record: PriceListRow) => `${record.brand}-${record.model}-${record.trim}-${record.engine || 'std'}-${record.transmission || 'auto'}`,
-    []
-  );
 
   // Responsive hooks
   const isMobile = useIsMobile();
@@ -372,7 +377,7 @@ export default function PriceListPage() {
               loading: false,
               error: null,
               data: {
-                rows: allRows,
+                rows: deduplicateRows(allRows),
                 lastUpdated: latestTimestamp,
                 brand: t('common.all'),
               },
@@ -393,7 +398,7 @@ export default function PriceListPage() {
               loading: false,
               error: null,
               data: {
-                rows: storedData.rows,
+                rows: deduplicateRows(storedData.rows),
                 lastUpdated: storedData.collectedAt,
                 brand: storedData.brand,
               },
@@ -1283,7 +1288,7 @@ export default function PriceListPage() {
 <Table
               columns={columns}
               dataSource={filteredData}
-              rowKey={getRowKey}
+              rowKey={(record, index) => `${record.brand}-${record.model}-${record.trim}-${record.engine || 'std'}-${record.transmission || 'auto'}-${index}`}
               pagination={pagination}
               onChange={handleTableChange}
               scroll={{ x: isMobile ? 500 : 1200, y: isMobile ? undefined : 600 }}
