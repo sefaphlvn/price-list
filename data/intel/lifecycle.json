@@ -1,14 +1,40 @@
 {
-  "generatedAt": "2026-02-09T01:33:09.104Z",
+  "generatedAt": "2026-02-09T17:56:14.042Z",
   "date": "2026-02-09",
   "summary": {
     "totalModels": 235,
     "totalTransitions": 0,
     "totalStaleModels": 0,
-    "avgEntryPriceDelta": 3.32
+    "avgEntryPriceDelta": 4.13
   },
   "modelYearTransitions": [],
   "entryPriceDeltas": [
+    {
+      "id": "skoda-Škoda Scala-entry",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Scala",
+      "currentEntryPrice": 2372900,
+      "previousEntryPrice": 1785900,
+      "delta": 587000,
+      "deltaPercent": 32.87,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "skoda-Škoda Octavia-entry",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Octavia",
+      "currentEntryPrice": 3307900,
+      "previousEntryPrice": 2552900,
+      "delta": 755000,
+      "deltaPercent": 29.57,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
     {
       "id": "volkswagen-ID.4-entry",
       "brand": "Volkswagen",
@@ -96,6 +122,136 @@
       "previousEntryPrice": 2444000,
       "delta": 171000,
       "deltaPercent": 7,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-Mercedes-AMG GLC 63 S E PERFORMANCE-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GLC 63 S E PERFORMANCE",
+      "currentEntryPrice": 14260000,
+      "previousEntryPrice": 13457000,
+      "delta": 803000,
+      "deltaPercent": 5.97,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-EQE 350 4MATIC-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "EQE 350 4MATIC",
+      "currentEntryPrice": 6706000,
+      "previousEntryPrice": 6384400,
+      "delta": 321600,
+      "deltaPercent": 5.04,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-Mercedes-AMG C 43 4MATIC Estate-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG C 43 4MATIC Estate",
+      "currentEntryPrice": 8321000,
+      "previousEntryPrice": 7928000,
+      "delta": 393000,
+      "deltaPercent": 4.96,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-Mercedes-AMG C 63 S E PERFORMANCE Estate-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG C 63 S E PERFORMANCE Estate",
+      "currentEntryPrice": 12790000,
+      "previousEntryPrice": 12186000,
+      "delta": 604000,
+      "deltaPercent": 4.96,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-Mercedes-AMG GLC 63 S E PERFORMANCE Coupé-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GLC 63 S E PERFORMANCE Coupé",
+      "currentEntryPrice": 14843000,
+      "previousEntryPrice": 14142000,
+      "delta": 701000,
+      "deltaPercent": 4.96,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-Mercedes-AMG SL 63 4MATIC+-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG SL 63 4MATIC+",
+      "currentEntryPrice": 27015000,
+      "previousEntryPrice": 25738600,
+      "delta": 1276400,
+      "deltaPercent": 4.96,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-Mercedes-Maybach SL 680-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-Maybach SL 680",
+      "currentEntryPrice": 36933000,
+      "previousEntryPrice": 35187600,
+      "delta": 1745400,
+      "deltaPercent": 4.96,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-Mercedes-AMG GT 63 4MATIC+-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GT 63 4MATIC+",
+      "currentEntryPrice": 27811000,
+      "previousEntryPrice": 26496600,
+      "delta": 1314400,
+      "deltaPercent": 4.96,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-Mercedes-AMG GT 63 PRO 4MATIC+-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GT 63 PRO 4MATIC+",
+      "currentEntryPrice": 32230000,
+      "previousEntryPrice": 30707600,
+      "delta": 1522400,
+      "deltaPercent": 4.96,
+      "currentDate": "2026-02-09",
+      "previousDate": "2026-02-02",
+      "daysBetween": 7
+    },
+    {
+      "id": "mercedes-Mercedes-AMG C 63 S E PERFORMANCE-entry",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG C 63 S E PERFORMANCE",
+      "currentEntryPrice": 12709000,
+      "previousEntryPrice": 12109000,
+      "delta": 600000,
+      "deltaPercent": 4.95,
       "currentDate": "2026-02-09",
       "previousDate": "2026-02-02",
       "daysBetween": 7
@@ -239,162 +395,6 @@
       "previousEntryPrice": 3819500,
       "delta": 158700,
       "deltaPercent": 4.15,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW iX2 eDrive20-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW iX2 eDrive20",
-      "currentEntryPrice": 4037500,
-      "previousEntryPrice": 3876800,
-      "delta": 160700,
-      "deltaPercent": 4.15,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW 220 Gran Coupé-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW 220 Gran Coupé",
-      "currentEntryPrice": 4152600,
-      "previousEntryPrice": 3987700,
-      "delta": 164900,
-      "deltaPercent": 4.14,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW 430i xDrive Cabrio-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW 430i xDrive Cabrio",
-      "currentEntryPrice": 9684100,
-      "previousEntryPrice": 9298700,
-      "delta": 385400,
-      "deltaPercent": 4.14,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW i4 eDrive40-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW i4 eDrive40",
-      "currentEntryPrice": 5798800,
-      "previousEntryPrice": 5568200,
-      "delta": 230600,
-      "deltaPercent": 4.14,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW X2 sDrive20i-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW X2 sDrive20i",
-      "currentEntryPrice": 5427800,
-      "previousEntryPrice": 5212100,
-      "delta": 215700,
-      "deltaPercent": 4.14,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW i5 xDrive40-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW i5 xDrive40",
-      "currentEntryPrice": 7741600,
-      "previousEntryPrice": 7435700,
-      "delta": 305900,
-      "deltaPercent": 4.11,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW X1 xDrive25e-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW X1 xDrive25e",
-      "currentEntryPrice": 5409400,
-      "previousEntryPrice": 5196100,
-      "delta": 213300,
-      "deltaPercent": 4.11,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW 230e xDrive Active Tourer-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW 230e xDrive Active Tourer",
-      "currentEntryPrice": 4965100,
-      "previousEntryPrice": 4769800,
-      "delta": 195300,
-      "deltaPercent": 4.09,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW 320i Sedan-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW 320i Sedan",
-      "currentEntryPrice": 5347300,
-      "previousEntryPrice": 5137900,
-      "delta": 209400,
-      "deltaPercent": 4.08,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW X1 M35i xDrive-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW X1 M35i xDrive",
-      "currentEntryPrice": 8104500,
-      "previousEntryPrice": 7786900,
-      "delta": 317600,
-      "deltaPercent": 4.08,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-Yeni BMW iX xDrive60-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "Yeni BMW iX xDrive60",
-      "currentEntryPrice": 10006800,
-      "previousEntryPrice": 9614500,
-      "delta": 392300,
-      "deltaPercent": 4.08,
-      "currentDate": "2026-02-09",
-      "previousDate": "2026-02-02",
-      "daysBetween": 7
-    },
-    {
-      "id": "bmw-BMW Z4 sDrive30i-entry",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "BMW Z4 sDrive30i",
-      "currentEntryPrice": 8200000,
-      "previousEntryPrice": 7880000,
-      "delta": 320000,
-      "deltaPercent": 4.06,
       "currentDate": "2026-02-09",
       "previousDate": "2026-02-02",
       "daysBetween": 7
@@ -1660,8 +1660,8 @@
       "brandId": "mercedes",
       "model": "C 200 4MATIC",
       "entryPrice": 5770000,
-      "topPrice": 5770000,
-      "trimCount": 1,
+      "topPrice": 6170000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1672,8 +1672,8 @@
       "brandId": "mercedes",
       "model": "C 200 4MATIC All-Terrain",
       "entryPrice": 5436000,
-      "topPrice": 5436000,
-      "trimCount": 1,
+      "topPrice": 5825000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1684,8 +1684,8 @@
       "brandId": "mercedes",
       "model": "CLA 220 4MATIC",
       "entryPrice": 4643000,
-      "topPrice": 4643000,
-      "trimCount": 1,
+      "topPrice": 4873000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1708,8 +1708,8 @@
       "brandId": "mercedes",
       "model": "CLE 300 4MATIC Cabriolet",
       "entryPrice": 8869000,
-      "topPrice": 8869000,
-      "trimCount": 1,
+      "topPrice": 9309000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1720,8 +1720,8 @@
       "brandId": "mercedes",
       "model": "CLE 300 4MATIC Coupé",
       "entryPrice": 7911000,
-      "topPrice": 7911000,
-      "trimCount": 1,
+      "topPrice": 8303000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1732,8 +1732,8 @@
       "brandId": "mercedes",
       "model": "E 180",
       "entryPrice": 7525000,
-      "topPrice": 7587000,
-      "trimCount": 2,
+      "topPrice": 7925000,
+      "trimCount": 4,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1744,8 +1744,8 @@
       "brandId": "mercedes",
       "model": "E 220 d 4MATIC",
       "entryPrice": 10193000,
-      "topPrice": 10270000,
-      "trimCount": 2,
+      "topPrice": 10785000,
+      "trimCount": 4,
       "fuelTypes": [
         "Dizel"
       ],
@@ -1756,8 +1756,8 @@
       "brandId": "mercedes",
       "model": "EQA 250+",
       "entryPrice": 3911800,
-      "topPrice": 3911800,
-      "trimCount": 1,
+      "topPrice": 4217000,
+      "trimCount": 3,
       "fuelTypes": [
         "Elektrik"
       ],
@@ -1768,8 +1768,8 @@
       "brandId": "mercedes",
       "model": "EQE 280",
       "entryPrice": 5587700,
-      "topPrice": 5587700,
-      "trimCount": 1,
+      "topPrice": 5869000,
+      "trimCount": 2,
       "fuelTypes": [
         "Elektrik"
       ],
@@ -1779,8 +1779,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "EQE 350 4MATIC",
-      "entryPrice": 6384400,
-      "topPrice": 6384400,
+      "entryPrice": 6706000,
+      "topPrice": 6706000,
       "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
@@ -1792,8 +1792,8 @@
       "brandId": "mercedes",
       "model": "EQS 450 4MATIC",
       "entryPrice": 9436200,
-      "topPrice": 9436200,
-      "trimCount": 1,
+      "topPrice": 9810000,
+      "trimCount": 2,
       "fuelTypes": [
         "Elektrik"
       ],
@@ -1803,8 +1803,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "EQS 580 4MATIC",
-      "entryPrice": 11036200,
-      "topPrice": 11036200,
+      "entryPrice": 11480000,
+      "topPrice": 11480000,
       "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
@@ -1816,8 +1816,8 @@
       "brandId": "mercedes",
       "model": "G 450 d",
       "entryPrice": 20357600,
-      "topPrice": 20357600,
-      "trimCount": 1,
+      "topPrice": 21367000,
+      "trimCount": 2,
       "fuelTypes": [
         "Dizel"
       ],
@@ -1828,8 +1828,8 @@
       "brandId": "mercedes",
       "model": "G 500",
       "entryPrice": 21670600,
-      "topPrice": 21670600,
-      "trimCount": 1,
+      "topPrice": 22745000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1840,8 +1840,8 @@
       "brandId": "mercedes",
       "model": "G 580",
       "entryPrice": 14490200,
-      "topPrice": 14490200,
-      "trimCount": 1,
+      "topPrice": 15209000,
+      "trimCount": 2,
       "fuelTypes": [
         "Elektrik"
       ],
@@ -1852,8 +1852,8 @@
       "brandId": "mercedes",
       "model": "GLA 200",
       "entryPrice": 4268000,
-      "topPrice": 4268000,
-      "trimCount": 1,
+      "topPrice": 4483000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1876,8 +1876,8 @@
       "brandId": "mercedes",
       "model": "GLC 180",
       "entryPrice": 6372000,
-      "topPrice": 6372000,
-      "trimCount": 1,
+      "topPrice": 6752000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1888,8 +1888,8 @@
       "brandId": "mercedes",
       "model": "GLC 180 Coupé",
       "entryPrice": 6787000,
-      "topPrice": 6787000,
-      "trimCount": 1,
+      "topPrice": 7124000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1900,8 +1900,8 @@
       "brandId": "mercedes",
       "model": "GLC 300 d 4MATIC",
       "entryPrice": 8463000,
-      "topPrice": 8463000,
-      "trimCount": 1,
+      "topPrice": 8968000,
+      "trimCount": 2,
       "fuelTypes": [
         "Dizel"
       ],
@@ -1924,8 +1924,8 @@
       "brandId": "mercedes",
       "model": "Mercedes-AMG C 43 4MATIC",
       "entryPrice": 7815000,
-      "topPrice": 7815000,
-      "trimCount": 1,
+      "topPrice": 8202000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -1935,8 +1935,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "Mercedes-AMG C 43 4MATIC Estate",
-      "entryPrice": 7928000,
-      "topPrice": 7928000,
+      "entryPrice": 8321000,
+      "topPrice": 8321000,
       "trimCount": 1,
       "fuelTypes": [
         "Benzin"
@@ -1947,8 +1947,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "Mercedes-AMG C 63 S E PERFORMANCE",
-      "entryPrice": 12109000,
-      "topPrice": 12109000,
+      "entryPrice": 12709000,
+      "topPrice": 12709000,
       "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
@@ -1959,8 +1959,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "Mercedes-AMG C 63 S E PERFORMANCE Estate",
-      "entryPrice": 12186000,
-      "topPrice": 12186000,
+      "entryPrice": 12790000,
+      "topPrice": 12790000,
       "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
@@ -1996,8 +1996,8 @@
       "brandId": "mercedes",
       "model": "Mercedes-AMG CLE 53 4MATIC+",
       "entryPrice": 12910600,
-      "topPrice": 12910600,
-      "trimCount": 1,
+      "topPrice": 13551000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2008,8 +2008,8 @@
       "brandId": "mercedes",
       "model": "Mercedes-AMG E 53 Hybrid 4MATIC+",
       "entryPrice": 19327600,
-      "topPrice": 19327600,
-      "trimCount": 1,
+      "topPrice": 20224000,
+      "trimCount": 2,
       "fuelTypes": [
         "Elektrik"
       ],
@@ -2032,8 +2032,8 @@
       "brandId": "mercedes",
       "model": "Mercedes-AMG G 63",
       "entryPrice": 28153600,
-      "topPrice": 28153600,
-      "trimCount": 1,
+      "topPrice": 29550000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2044,8 +2044,8 @@
       "brandId": "mercedes",
       "model": "Mercedes-AMG GLC 43 4MATIC",
       "entryPrice": 9359000,
-      "topPrice": 9359000,
-      "trimCount": 1,
+      "topPrice": 9917000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2056,8 +2056,8 @@
       "brandId": "mercedes",
       "model": "Mercedes-AMG GLC 43 4MATIC Coupé",
       "entryPrice": 9868000,
-      "topPrice": 9868000,
-      "trimCount": 1,
+      "topPrice": 10357000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2067,8 +2067,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "Mercedes-AMG GLC 63 S E PERFORMANCE",
-      "entryPrice": 13457000,
-      "topPrice": 13457000,
+      "entryPrice": 14260000,
+      "topPrice": 14260000,
       "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
@@ -2079,8 +2079,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "Mercedes-AMG GLC 63 S E PERFORMANCE Coupé",
-      "entryPrice": 14142000,
-      "topPrice": 14142000,
+      "entryPrice": 14843000,
+      "topPrice": 14843000,
       "trimCount": 1,
       "fuelTypes": [
         "Elektrik"
@@ -2092,8 +2092,8 @@
       "brandId": "mercedes",
       "model": "Mercedes-AMG GT 43",
       "entryPrice": 15140000,
-      "topPrice": 15140000,
-      "trimCount": 1,
+      "topPrice": 15891000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2115,8 +2115,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "Mercedes-AMG GT 63 4MATIC+",
-      "entryPrice": 26496600,
-      "topPrice": 26496600,
+      "entryPrice": 27811000,
+      "topPrice": 27811000,
       "trimCount": 1,
       "fuelTypes": [
         "Benzin"
@@ -2127,8 +2127,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "Mercedes-AMG GT 63 PRO 4MATIC+",
-      "entryPrice": 30707600,
-      "topPrice": 30707600,
+      "entryPrice": 32230000,
+      "topPrice": 32230000,
       "trimCount": 1,
       "fuelTypes": [
         "Benzin"
@@ -2138,22 +2138,10 @@
     {
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
-      "model": "Mercedes-AMG S 63 E PERFORMANCE",
-      "entryPrice": 35229600,
-      "topPrice": 35229600,
-      "trimCount": 1,
-      "fuelTypes": [
-        "Elektrik"
-      ],
-      "lastUpdated": "2026-02-09"
-    },
-    {
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
       "model": "Mercedes-AMG SL 43",
       "entryPrice": 15231000,
-      "topPrice": 15231000,
-      "trimCount": 1,
+      "topPrice": 15986000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2163,8 +2151,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "Mercedes-AMG SL 63 4MATIC+",
-      "entryPrice": 25738600,
-      "topPrice": 25738600,
+      "entryPrice": 27015000,
+      "topPrice": 27015000,
       "trimCount": 1,
       "fuelTypes": [
         "Benzin"
@@ -2176,8 +2164,8 @@
       "brandId": "mercedes",
       "model": "Mercedes-Maybach S 580 4MATIC",
       "entryPrice": 28635600,
-      "topPrice": 28635600,
-      "trimCount": 1,
+      "topPrice": 29483000,
+      "trimCount": 2,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2187,8 +2175,8 @@
       "brand": "Mercedes-Benz",
       "brandId": "mercedes",
       "model": "Mercedes-Maybach SL 680",
-      "entryPrice": 35187600,
-      "topPrice": 35187600,
+      "entryPrice": 36933000,
+      "topPrice": 36933000,
       "trimCount": 1,
       "fuelTypes": [
         "Benzin"
@@ -2200,8 +2188,8 @@
       "brandId": "mercedes",
       "model": "S 450 d 4MATIC L",
       "entryPrice": 19828600,
-      "topPrice": 19828600,
-      "trimCount": 1,
+      "topPrice": 20415000,
+      "trimCount": 2,
       "fuelTypes": [
         "Dizel"
       ],
@@ -2589,6 +2577,18 @@
     {
       "brand": "Renault",
       "brandId": "renault",
+      "model": "Yeni Clio",
+      "entryPrice": 1799000,
+      "topPrice": 1895000.01,
+      "trimCount": 2,
+      "fuelTypes": [
+        "Benzin"
+      ],
+      "lastUpdated": "2026-02-09"
+    },
+    {
+      "brand": "Renault",
+      "brandId": "renault",
       "model": "Yeni Duster",
       "entryPrice": 1780000,
       "topPrice": 2567000.01,
@@ -2652,8 +2652,8 @@
       "brandId": "skoda",
       "model": "Škoda Fabia",
       "entryPrice": 1759900,
-      "topPrice": 2134900,
-      "trimCount": 2,
+      "topPrice": 1759900,
+      "trimCount": 1,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2699,9 +2699,9 @@
       "brand": "Škoda",
       "brandId": "skoda",
       "model": "Škoda Octavia",
-      "entryPrice": 2552900,
+      "entryPrice": 3307900,
       "topPrice": 3307900,
-      "trimCount": 3,
+      "trimCount": 1,
       "fuelTypes": [
         "Benzin"
       ],
@@ -2711,9 +2711,9 @@
       "brand": "Škoda",
       "brandId": "skoda",
       "model": "Škoda Scala",
-      "entryPrice": 1785900,
+      "entryPrice": 2372900,
       "topPrice": 2372900,
-      "trimCount": 2,
+      "trimCount": 1,
       "fuelTypes": [
         "Benzin"
       ],

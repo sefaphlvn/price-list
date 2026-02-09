@@ -1,9 +1,67 @@
 {
-  "collectedAt": "2026-02-09T17:16:30.367Z",
+  "collectedAt": "2026-02-09T17:54:42.146Z",
   "brand": "Renault",
   "brandId": "renault",
-  "rowCount": 19,
+  "rowCount": 21,
   "rows": [
+    {
+      "model": "Yeni Clio",
+      "trim": "evolution",
+      "engine": "evolution plus TCe 115 EDC",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.799.000,00",
+      "priceNumeric": 1799000,
+      "brand": "Renault",
+      "modelYear": "2026",
+      "otvRate": 75,
+      "netPrice": 827980,
+      "otvAmount": 620985,
+      "kdvAmount": 289793,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        },
+        {
+          "name": "Yedek Lastik",
+          "price": 12000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1799000,
+      "powerHP": 115,
+      "engineType": "TCe"
+    },
+    {
+      "model": "Yeni Clio",
+      "trim": "esprit alpine",
+      "engine": "esprit alpine TCe 115 EDC",
+      "transmission": "Otomatik",
+      "fuel": "Benzin",
+      "priceRaw": "₺1.895.000,01",
+      "priceNumeric": 1895000.01,
+      "brand": "Renault",
+      "modelYear": "2026",
+      "otvRate": 75,
+      "netPrice": 873694.29,
+      "otvAmount": 655270.72,
+      "kdvAmount": 305793,
+      "optionalEquipment": [
+        {
+          "name": "Metalik Renk",
+          "price": 13000
+        },
+        {
+          "name": "Yedek Lastik",
+          "price": 12000
+        }
+      ],
+      "vehicleCategory": "Binek",
+      "otvIncentivePrice": 1895000.01,
+      "powerHP": 115,
+      "engineType": "TCe"
+    },
     {
       "model": "R5 E-Tech ELEKTRİKLİ",
       "trim": "Techno",
@@ -681,7 +739,5 @@
       "isHybrid": true,
       "isElectric": true
     }
-  ],
-  "isFallback": true,
-  "originalDate": "2026-02-09T01:31:55.561Z"
+  ]
 }

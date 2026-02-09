@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-09T01:31:55.561Z",
+  "collectedAt": "2026-02-09T17:54:42.146Z",
   "brand": "Honda",
   "brandId": "honda",
   "rowCount": 6,
@@ -15,7 +15,8 @@
       "brand": "Honda",
       "priceListNumeric": 2380000,
       "engineDisplacement": "1.5L",
-      "isHybrid": true
+      "isHybrid": true,
+      "modelYear": 2025
     },
     {
       "model": "HR-V Hybrid",
@@ -29,7 +30,8 @@
       "priceListNumeric": 2544000,
       "priceCampaignNumeric": 2389000,
       "engineDisplacement": "1.5L",
-      "isHybrid": true
+      "isHybrid": true,
+      "modelYear": 2025
     },
     {
       "model": "HR-V Hybrid",
@@ -42,7 +44,8 @@
       "brand": "Honda",
       "priceListNumeric": 2675000,
       "engineDisplacement": "1.5L",
-      "isHybrid": true
+      "isHybrid": true,
+      "modelYear": 2025
     },
     {
       "model": "HR-V Hybrid",
@@ -55,7 +58,8 @@
       "brand": "Honda",
       "priceListNumeric": 2955000,
       "engineDisplacement": "1.5L",
-      "isHybrid": true
+      "isHybrid": true,
+      "modelYear": 2025
     },
     {
       "model": "Type R",
@@ -68,7 +72,8 @@
       "brand": "Honda",
       "priceListNumeric": 5500000,
       "engineDisplacement": "2.0L",
-      "engineType": "VTEC Turbo"
+      "engineType": "VTEC Turbo",
+      "modelYear": 2025
     },
     {
       "model": "CR-V Hybrid",
@@ -81,7 +86,8 @@
       "brand": "Honda",
       "priceListNumeric": 6160000,
       "engineDisplacement": "2.0L",
-      "isHybrid": true
+      "isHybrid": true,
+      "modelYear": 2025
     }
   ]
 }

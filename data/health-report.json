@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-09T01:33:09.691Z",
+  "timestamp": "2026-02-09T17:56:15.129Z",
   "status": "healthy",
   "summary": {
     "totalBrands": 19,
-    "totalVehicles": 530,
-    "lastUpdate": "2026-02-09T01:33:08.164Z",
+    "totalVehicles": 557,
+    "lastUpdate": "2026-02-09T17:56:09.041Z",
     "dataDate": "2026-02-09"
   },
   "brands": [
@@ -20,7 +20,7 @@
       "id": "skoda",
       "name": "Škoda",
       "status": "ok",
-      "vehicleCount": 22,
+      "vehicleCount": 18,
       "latestDate": "2026-02-09",
       "issues": []
     },
@@ -28,7 +28,7 @@
       "id": "renault",
       "name": "Renault",
       "status": "ok",
-      "vehicleCount": 19,
+      "vehicleCount": 21,
       "latestDate": "2026-02-09",
       "issues": []
     },
@@ -92,7 +92,7 @@
       "id": "mercedes",
       "name": "Mercedes-Benz",
       "status": "ok",
-      "vehicleCount": 50,
+      "vehicleCount": 79,
       "latestDate": "2026-02-09",
       "issues": []
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-09T01:33:09.029Z",
+  "generatedAt": "2026-02-09T17:56:13.424Z",
   "date": "2026-02-09",
   "ladders": [
     {
@@ -725,23 +725,13 @@
           "engine": "Premium 1.0 TSI 115 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
-        },
-        {
-          "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
-          "price": 2134900,
-          "priceFormatted": "₺2.134.900",
-          "stepFromBase": 375000,
-          "stepPercent": 21.308028865276434,
-          "engine": "Monte Carlo 1.5 TSI 150 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
         }
       ],
       "basePrice": 1759900,
-      "topPrice": 2134900,
-      "priceSpread": 375000,
-      "priceSpreadPercent": 21.31,
-      "trimCount": 2
+      "topPrice": 1759900,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "skoda-škoda-scala",
@@ -750,31 +740,21 @@
       "brandId": "skoda",
       "trims": [
         {
-          "trim": "Elite 1.0 TSI 115 PS DSG",
-          "price": 1785900,
-          "priceFormatted": "₺1.785.900",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "Elite 1.0 TSI 115 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        },
-        {
           "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
           "price": 2372900,
           "priceFormatted": "₺2.372.900",
-          "stepFromBase": 587000,
-          "stepPercent": 32.86858166750658,
+          "stepFromBase": 0,
+          "stepPercent": 0,
           "engine": "Monte Carlo 1.5 TSI 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 1785900,
+      "basePrice": 2372900,
       "topPrice": 2372900,
-      "priceSpread": 587000,
-      "priceSpreadPercent": 32.87,
-      "trimCount": 2
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "skoda-škoda-octavia",
@@ -783,41 +763,21 @@
       "brandId": "skoda",
       "trims": [
         {
-          "trim": "Elite 1.5 TSI mHEV 150 PS DSG",
-          "price": 2552900,
-          "priceFormatted": "₺2.552.900",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "Elite 1.5 TSI mHEV 150 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
-          "price": 2912900,
-          "priceFormatted": "₺2.912.900",
-          "stepFromBase": 360000,
-          "stepPercent": 14.101609933800777,
-          "engine": "Premium 1.5 TSI mHEV 150 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        },
-        {
           "trim": "Combi Sportline 1.5 TSI mHEV 150 PS DSG",
           "price": 3307900,
           "priceFormatted": "₺3.307.900",
-          "stepFromBase": 755000,
-          "stepPercent": 29.574209722276628,
+          "stepFromBase": 0,
+          "stepPercent": 0,
           "engine": "Combi Sportline 1.5 TSI mHEV 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 2552900,
+      "basePrice": 3307900,
       "topPrice": 3307900,
-      "priceSpread": 755000,
-      "priceSpreadPercent": 29.57,
-      "trimCount": 3
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "skoda-škoda-superb",
@@ -826,42 +786,42 @@
       "brandId": "skoda",
       "trims": [
         {
-          "trim": "Premium 1,5 TSI mHEV 150 PS DSG",
+          "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
           "price": 3530400,
           "priceFormatted": "₺3.530.400",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "Premium 1,5 TSI mHEV 150 PS",
+          "engine": "Premium 1.5 TSI mHEV 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         },
         {
-          "trim": "Prestige 1,5 TSI  mHEV 150 PS DSG",
+          "trim": "Prestige 1.5 TSI  mHEV 150 PS DSG",
           "price": 4151900,
           "priceFormatted": "₺4.151.900",
           "stepFromBase": 621500,
           "stepPercent": 17.60423748017222,
-          "engine": "Prestige 1,5 TSI  mHEV 150 PS",
+          "engine": "Prestige 1.5 TSI  mHEV 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         },
         {
-          "trim": "Laurin & Klement Crystal 1,5 TSI mHEV 150 PS DSG",
+          "trim": "L&K Crystal 1.5 TSI mHEV 150 PS DSG",
           "price": 4609900,
           "priceFormatted": "₺4.609.900",
           "stepFromBase": 1079500,
           "stepPercent": 30.5772716972581,
-          "engine": "Laurin & Klement Crystal 1,5 TSI mHEV 150 PS",
+          "engine": "L&K Crystal 1.5 TSI mHEV 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         },
         {
-          "trim": "Laurin & Klement Crystal 2,0 TSI 265 PS DSG 4x4",
+          "trim": "L&K Crystal 2.0 TSI 265 PS DSG 4x4",
           "price": 6675900,
           "priceFormatted": "₺6.675.900",
           "stepFromBase": 3145500,
           "stepPercent": 89.09755268524813,
-          "engine": "Laurin & Klement Crystal 2,0 TSI 265 PS  4x4",
+          "engine": "L&K Crystal 2.0 TSI 265 PS  4x4",
           "transmission": "DSG",
           "fuel": "Benzin"
         }
@@ -879,32 +839,32 @@
       "brandId": "skoda",
       "trims": [
         {
-          "trim": "Elite 1,0 TSI 115 PS DSG",
+          "trim": "Elite 1.0 TSI 115 PS DSG",
           "price": 1900400,
           "priceFormatted": "₺1.900.400",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "Elite 1,0 TSI 115 PS",
+          "engine": "Elite 1.0 TSI 115 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         },
         {
-          "trim": "Premium 1,0 TSI 115 PS DSG",
+          "trim": "Premium 1.0 TSI 115 PS DSG",
           "price": 2197900,
           "priceFormatted": "₺2.197.900",
           "stepFromBase": 297500,
           "stepPercent": 15.654599031782782,
-          "engine": "Premium 1,0 TSI 115 PS",
+          "engine": "Premium 1.0 TSI 115 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         },
         {
-          "trim": "Monte Carlo 1,5 TSI 150 PS DSG",
+          "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
           "price": 2622900,
           "priceFormatted": "₺2.622.900",
           "stepFromBase": 722500,
           "stepPercent": 38.01831193432961,
-          "engine": "Monte Carlo 1,5 TSI 150 PS",
+          "engine": "Monte Carlo 1.5 TSI 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         }
@@ -922,22 +882,22 @@
       "brandId": "skoda",
       "trims": [
         {
-          "trim": "Prestige 1,5 TSI 150 PS DSG",
+          "trim": "Prestige 1.5 TSI 150 PS DSG",
           "price": 3349400,
           "priceFormatted": "₺3.349.400",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "Prestige 1,5 TSI 150 PS",
+          "engine": "Prestige 1.5 TSI 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         },
         {
-          "trim": "Sportline 1,5 TSI 150 PS DSG",
+          "trim": "Sportline 1.5 TSI 150 PS DSG",
           "price": 3454900,
           "priceFormatted": "₺3.454.900",
           "stepFromBase": 105500,
           "stepPercent": 3.1498178778288652,
-          "engine": "Sportline 1,5 TSI 150 PS",
+          "engine": "Sportline 1.5 TSI 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         }
@@ -955,22 +915,22 @@
       "brandId": "skoda",
       "trims": [
         {
-          "trim": "Prestige 1,5 TSI  mHEV 150 PS DSG",
+          "trim": "Prestige 1.5 TSI  mHEV 150 PS DSG",
           "price": 4379900,
           "priceFormatted": "₺4.379.900",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "Prestige 1,5 TSI  mHEV 150 PS",
+          "engine": "Prestige 1.5 TSI  mHEV 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         },
         {
-          "trim": "Sportline 1,5 TSI mHEV 150 PS DSG",
+          "trim": "Sportline 1.5 TSI mHEV 150 PS DSG",
           "price": 4546900,
           "priceFormatted": "₺4.546.900",
           "stepFromBase": 167000,
           "stepPercent": 3.8128724400100458,
-          "engine": "Sportline 1,5 TSI mHEV 150 PS",
+          "engine": "Sportline 1.5 TSI mHEV 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
         }
@@ -979,6 +939,39 @@
       "topPrice": 4546900,
       "priceSpread": 167000,
       "priceSpreadPercent": 3.81,
+      "trimCount": 2
+    },
+    {
+      "id": "renault-yeni-clio",
+      "model": "Yeni Clio",
+      "brand": "Renault",
+      "brandId": "renault",
+      "trims": [
+        {
+          "trim": "evolution",
+          "price": 1799000,
+          "priceFormatted": "₺1.799.000,00",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "evolution plus TCe 115 EDC",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "esprit alpine",
+          "price": 1895000.01,
+          "priceFormatted": "₺1.895.000,01",
+          "stepFromBase": 96000.01000000001,
+          "stepPercent": 5.336298499166204,
+          "engine": "esprit alpine TCe 115 EDC",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        }
+      ],
+      "basePrice": 1799000,
+      "topPrice": 1895000.01,
+      "priceSpread": 96000.01000000001,
+      "priceSpreadPercent": 5.34,
       "trimCount": 2
     },
     {
@@ -5394,13 +5387,23 @@
           "engine": "1.5L 204 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "AMG",
+          "price": 6170000,
+          "priceFormatted": "6.170.000 TL",
+          "stepFromBase": 400000,
+          "stepPercent": 6.932409012131716,
+          "engine": "1.5L 204 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 5770000,
-      "topPrice": 5770000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 6170000,
+      "priceSpread": 400000,
+      "priceSpreadPercent": 6.93,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-c-43-4matic",
@@ -5417,13 +5420,23 @@
           "engine": "2.0L 421 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Performance",
+          "price": 8202000,
+          "priceFormatted": "8.202.000 TL",
+          "stepFromBase": 387000,
+          "stepPercent": 4.952015355086373,
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 7815000,
-      "topPrice": 7815000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 8202000,
+      "priceSpread": 387000,
+      "priceSpreadPercent": 4.95,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-c-63-s-e-performance",
@@ -5433,8 +5446,8 @@
       "trims": [
         {
           "trim": "-",
-          "price": 12109000,
-          "priceFormatted": "12.109.000 TL",
+          "price": 12709000,
+          "priceFormatted": "12.709.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "2.0L 680 HP",
@@ -5442,8 +5455,8 @@
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 12109000,
-      "topPrice": 12109000,
+      "basePrice": 12709000,
+      "topPrice": 12709000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -5463,13 +5476,23 @@
           "engine": "1.5L 204 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "-",
+          "price": 5825000,
+          "priceFormatted": "5.825.000 TL",
+          "stepFromBase": 389000,
+          "stepPercent": 7.155997056659308,
+          "engine": "1.5L 204 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 5436000,
-      "topPrice": 5436000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 5825000,
+      "priceSpread": 389000,
+      "priceSpreadPercent": 7.16,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-c-43-4matic-estate",
@@ -5479,8 +5502,8 @@
       "trims": [
         {
           "trim": "Performance",
-          "price": 7928000,
-          "priceFormatted": "7.928.000 TL",
+          "price": 8321000,
+          "priceFormatted": "8.321.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "2.0L 421 HP",
@@ -5488,8 +5511,8 @@
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 7928000,
-      "topPrice": 7928000,
+      "basePrice": 8321000,
+      "topPrice": 8321000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -5502,8 +5525,8 @@
       "trims": [
         {
           "trim": "-",
-          "price": 12186000,
-          "priceFormatted": "12.186.000 TL",
+          "price": 12790000,
+          "priceFormatted": "12.790.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "2.0L 680 HP",
@@ -5511,8 +5534,8 @@
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 12186000,
-      "topPrice": 12186000,
+      "basePrice": 12790000,
+      "topPrice": 12790000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -5542,13 +5565,33 @@
           "engine": "1.5L 170 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Exclusive",
+          "price": 7860000,
+          "priceFormatted": "7.860.000 TL",
+          "stepFromBase": 335000,
+          "stepPercent": 4.451827242524916,
+          "engine": "1.5L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "AMG",
+          "price": 7925000,
+          "priceFormatted": "7.925.000 TL",
+          "stepFromBase": 400000,
+          "stepPercent": 5.3156146179401995,
+          "engine": "1.5L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 7525000,
-      "topPrice": 7587000,
-      "priceSpread": 62000,
-      "priceSpreadPercent": 0.82,
-      "trimCount": 2
+      "topPrice": 7925000,
+      "priceSpread": 400000,
+      "priceSpreadPercent": 5.32,
+      "trimCount": 4
     },
     {
       "id": "mercedes-e-220-d-4matic",
@@ -5575,13 +5618,33 @@
           "engine": "2.0L 197 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel"
+        },
+        {
+          "trim": "Exclusive",
+          "price": 10705000,
+          "priceFormatted": "10.705.000 TL",
+          "stepFromBase": 512000,
+          "stepPercent": 5.0230550377710195,
+          "engine": "2.0L 197 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel"
+        },
+        {
+          "trim": "AMG",
+          "price": 10785000,
+          "priceFormatted": "10.785.000 TL",
+          "stepFromBase": 592000,
+          "stepPercent": 5.807907387422741,
+          "engine": "2.0L 197 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel"
         }
       ],
       "basePrice": 10193000,
-      "topPrice": 10270000,
-      "priceSpread": 77000,
-      "priceSpreadPercent": 0.76,
-      "trimCount": 2
+      "topPrice": 10785000,
+      "priceSpread": 592000,
+      "priceSpreadPercent": 5.81,
+      "trimCount": 4
     },
     {
       "id": "mercedes-mercedes-amg-e-53-hybrid-4matic+",
@@ -5598,13 +5661,23 @@
           "engine": "3.0L 585 HP",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
+        },
+        {
+          "trim": "Performance",
+          "price": 20224000,
+          "priceFormatted": "20.224.000 TL",
+          "stepFromBase": 896400,
+          "stepPercent": 4.637927109418656,
+          "engine": "3.0L 585 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
         }
       ],
       "basePrice": 19327600,
-      "topPrice": 19327600,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 20224000,
+      "priceSpread": 896400,
+      "priceSpreadPercent": 4.64,
+      "trimCount": 2
     },
     {
       "id": "mercedes-cle-300-4matic-coupé",
@@ -5621,13 +5694,23 @@
           "engine": "2.0L 258 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "AMG",
+          "price": 8303000,
+          "priceFormatted": "8.303.000 TL",
+          "stepFromBase": 392000,
+          "stepPercent": 4.955125774238402,
+          "engine": "2.0L 258 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 7911000,
-      "topPrice": 7911000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 8303000,
+      "priceSpread": 392000,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-cle-53-4matic+",
@@ -5644,13 +5727,23 @@
           "engine": "3.0L 449 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Performance",
+          "price": 13551000,
+          "priceFormatted": "13.551.000 TL",
+          "stepFromBase": 640400,
+          "stepPercent": 4.9602652084333805,
+          "engine": "3.0L 449 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 12910600,
-      "topPrice": 12910600,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 13551000,
+      "priceSpread": 640400,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-cle-300-4matic-cabriolet",
@@ -5667,13 +5760,23 @@
           "engine": "2.0L 258 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "AMG",
+          "price": 9309000,
+          "priceFormatted": "9.309.000 TL",
+          "stepFromBase": 440000,
+          "stepPercent": 4.961100462284361,
+          "engine": "2.0L 258 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 8869000,
-      "topPrice": 8869000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 9309000,
+      "priceSpread": 440000,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-s-450-d-4matic-l",
@@ -5690,36 +5793,23 @@
           "engine": "2.9L 367 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel"
+        },
+        {
+          "trim": "Inspiration",
+          "price": 20415000,
+          "priceFormatted": "20.415.000 TL",
+          "stepFromBase": 586400,
+          "stepPercent": 2.9573444418667982,
+          "engine": "2.9L 367 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel"
         }
       ],
       "basePrice": 19828600,
-      "topPrice": 19828600,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
-      "id": "mercedes-mercedes-amg-s-63-e-performance",
-      "model": "Mercedes-AMG S 63 E PERFORMANCE",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "trims": [
-        {
-          "trim": "-",
-          "price": 35229600,
-          "priceFormatted": "35.229.600 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "4.0L 802 HP",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        }
-      ],
-      "basePrice": 35229600,
-      "topPrice": 35229600,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 20415000,
+      "priceSpread": 586400,
+      "priceSpreadPercent": 2.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-maybach-s-580-4matic",
@@ -5736,13 +5826,23 @@
           "engine": "4.0L 503 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Inspiration+",
+          "price": 29483000,
+          "priceFormatted": "29.483.000 TL",
+          "stepFromBase": 847400,
+          "stepPercent": 2.959253516601713,
+          "engine": "4.0L 503 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 28635600,
-      "topPrice": 28635600,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 29483000,
+      "priceSpread": 847400,
+      "priceSpreadPercent": 2.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-eqe-280",
@@ -5759,13 +5859,23 @@
           "engine": "218 HP",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
+        },
+        {
+          "trim": "AMG",
+          "price": 5869000,
+          "priceFormatted": "5.869.000 TL",
+          "stepFromBase": 281300,
+          "stepPercent": 5.034271703921112,
+          "engine": "218 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
         }
       ],
       "basePrice": 5587700,
-      "topPrice": 5587700,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 5869000,
+      "priceSpread": 281300,
+      "priceSpreadPercent": 5.03,
+      "trimCount": 2
     },
     {
       "id": "mercedes-eqe-350-4matic",
@@ -5775,17 +5885,17 @@
       "trims": [
         {
           "trim": "AMG",
-          "price": 6384400,
-          "priceFormatted": "6.384.400 TL",
+          "price": 6706000,
+          "priceFormatted": "6.706.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "292 HP",
+          "engine": "320 HP",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 6384400,
-      "topPrice": 6384400,
+      "basePrice": 6706000,
+      "topPrice": 6706000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -5828,13 +5938,23 @@
           "engine": "360 HP",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
+        },
+        {
+          "trim": "Inspiration",
+          "price": 9810000,
+          "priceFormatted": "9.810.000 TL",
+          "stepFromBase": 373800,
+          "stepPercent": 3.961340370064221,
+          "engine": "360 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
         }
       ],
       "basePrice": 9436200,
-      "topPrice": 9436200,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 9810000,
+      "priceSpread": 373800,
+      "priceSpreadPercent": 3.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-eqs-580-4matic",
@@ -5844,17 +5964,17 @@
       "trims": [
         {
           "trim": "Heritage Edition",
-          "price": 11036200,
-          "priceFormatted": "11.036.200 TL",
+          "price": 11480000,
+          "priceFormatted": "11.480.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "523 HP",
+          "engine": "544 HP",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 11036200,
-      "topPrice": 11036200,
+      "basePrice": 11480000,
+      "topPrice": 11480000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -5874,13 +5994,33 @@
           "engine": "190 HP",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
+        },
+        {
+          "trim": "Night Edition",
+          "price": 4014800,
+          "priceFormatted": "4.014.800 TL",
+          "stepFromBase": 103000,
+          "stepPercent": 2.6330589498440617,
+          "engine": "190 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Night Edition",
+          "price": 4217000,
+          "priceFormatted": "4.217.000 TL",
+          "stepFromBase": 305200,
+          "stepPercent": 7.8020348688583265,
+          "engine": "190 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
         }
       ],
       "basePrice": 3911800,
-      "topPrice": 3911800,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 4217000,
+      "priceSpread": 305200,
+      "priceSpreadPercent": 7.8,
+      "trimCount": 3
     },
     {
       "id": "mercedes-gla-200",
@@ -5897,13 +6037,23 @@
           "engine": "1.3L 163 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "AMG",
+          "price": 4483000,
+          "priceFormatted": "4.483.000 TL",
+          "stepFromBase": 215000,
+          "stepPercent": 5.037488284910966,
+          "engine": "1.3L 163 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 4268000,
-      "topPrice": 4268000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 4483000,
+      "priceSpread": 215000,
+      "priceSpreadPercent": 5.04,
+      "trimCount": 2
     },
     {
       "id": "mercedes-glb-200",
@@ -5953,13 +6103,23 @@
           "engine": "1.5L 170 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "AMG",
+          "price": 6752000,
+          "priceFormatted": "6.752.000 TL",
+          "stepFromBase": 380000,
+          "stepPercent": 5.963590709353421,
+          "engine": "1.5L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 6372000,
-      "topPrice": 6372000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 6752000,
+      "priceSpread": 380000,
+      "priceSpreadPercent": 5.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-glc-300-d-4matic",
@@ -5976,13 +6136,23 @@
           "engine": "2.0L 269 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel"
+        },
+        {
+          "trim": "AMG",
+          "price": 8968000,
+          "priceFormatted": "8.968.000 TL",
+          "stepFromBase": 505000,
+          "stepPercent": 5.967151128441451,
+          "engine": "2.0L 269 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel"
         }
       ],
       "basePrice": 8463000,
-      "topPrice": 8463000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 8968000,
+      "priceSpread": 505000,
+      "priceSpreadPercent": 5.97,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-glc-43-4matic",
@@ -5999,13 +6169,23 @@
           "engine": "2.0L 421 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Performance",
+          "price": 9917000,
+          "priceFormatted": "9.917.000 TL",
+          "stepFromBase": 558000,
+          "stepPercent": 5.962175446094668,
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 9359000,
-      "topPrice": 9359000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 9917000,
+      "priceSpread": 558000,
+      "priceSpreadPercent": 5.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-glc-63-s-e-performance",
@@ -6015,8 +6195,8 @@
       "trims": [
         {
           "trim": "-",
-          "price": 13457000,
-          "priceFormatted": "13.457.000 TL",
+          "price": 14260000,
+          "priceFormatted": "14.260.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "2.0L 680 HP",
@@ -6024,8 +6204,8 @@
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 13457000,
-      "topPrice": 13457000,
+      "basePrice": 14260000,
+      "topPrice": 14260000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -6045,13 +6225,23 @@
           "engine": "1.5L 170 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "AMG",
+          "price": 7124000,
+          "priceFormatted": "7.124.000 TL",
+          "stepFromBase": 337000,
+          "stepPercent": 4.965374981582437,
+          "engine": "1.5L 170 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 6787000,
-      "topPrice": 6787000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 7124000,
+      "priceSpread": 337000,
+      "priceSpreadPercent": 4.97,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-glc-43-4matic-coupé",
@@ -6068,13 +6258,23 @@
           "engine": "2.0L 421 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Performance",
+          "price": 10357000,
+          "priceFormatted": "10.357.000 TL",
+          "stepFromBase": 489000,
+          "stepPercent": 4.955411430887717,
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 9868000,
-      "topPrice": 9868000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 10357000,
+      "priceSpread": 489000,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-glc-63-s-e-performance-coupé",
@@ -6084,8 +6284,8 @@
       "trims": [
         {
           "trim": "-",
-          "price": 14142000,
-          "priceFormatted": "14.142.000 TL",
+          "price": 14843000,
+          "priceFormatted": "14.843.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "2.0L 680 HP",
@@ -6093,31 +6293,8 @@
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 14142000,
-      "topPrice": 14142000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
-      "id": "mercedes-g-580",
-      "model": "G 580",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "trims": [
-        {
-          "trim": "Heritage",
-          "price": 14490200,
-          "priceFormatted": "14.490.200 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "587 HP",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        }
-      ],
-      "basePrice": 14490200,
-      "topPrice": 14490200,
+      "basePrice": 14843000,
+      "topPrice": 14843000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -6137,13 +6314,23 @@
           "engine": "3.0L 367 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel"
+        },
+        {
+          "trim": "Heritage",
+          "price": 21367000,
+          "priceFormatted": "21.367.000 TL",
+          "stepFromBase": 1009400,
+          "stepPercent": 4.958344795064251,
+          "engine": "3.0L 367 HP",
+          "transmission": "Otomatik",
+          "fuel": "Dizel"
         }
       ],
       "basePrice": 20357600,
-      "topPrice": 20357600,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 21367000,
+      "priceSpread": 1009400,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-g-500",
@@ -6160,13 +6347,56 @@
           "engine": "3.0L 449 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Heritage",
+          "price": 22745000,
+          "priceFormatted": "22.745.000 TL",
+          "stepFromBase": 1074400,
+          "stepPercent": 4.957869186824546,
+          "engine": "3.0L 449 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 21670600,
-      "topPrice": 21670600,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 22745000,
+      "priceSpread": 1074400,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
+    },
+    {
+      "id": "mercedes-g-580",
+      "model": "G 580",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "trims": [
+        {
+          "trim": "Heritage",
+          "price": 14490200,
+          "priceFormatted": "14.490.200 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "587 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Heritage",
+          "price": 15209000,
+          "priceFormatted": "15.209.000 TL",
+          "stepFromBase": 718800,
+          "stepPercent": 4.960594056672786,
+          "engine": "587 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 14490200,
+      "topPrice": 15209000,
+      "priceSpread": 718800,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-g-63",
@@ -6183,13 +6413,23 @@
           "engine": "4.0L 585 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Performance",
+          "price": 29550000,
+          "priceFormatted": "29.550.000 TL",
+          "stepFromBase": 1396400,
+          "stepPercent": 4.959934075926347,
+          "engine": "4.0L 585 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 28153600,
-      "topPrice": 28153600,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 29550000,
+      "priceSpread": 1396400,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-sl-43",
@@ -6206,13 +6446,23 @@
           "engine": "2.0L 421 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Performance",
+          "price": 15986000,
+          "priceFormatted": "15.986.000 TL",
+          "stepFromBase": 755000,
+          "stepPercent": 4.956995601076751,
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 15231000,
-      "topPrice": 15231000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 15986000,
+      "priceSpread": 755000,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-sl-63-4matic+",
@@ -6222,8 +6472,8 @@
       "trims": [
         {
           "trim": "Performance",
-          "price": 25738600,
-          "priceFormatted": "25.738.600 TL",
+          "price": 27015000,
+          "priceFormatted": "27.015.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "4.0L 585 HP",
@@ -6231,8 +6481,8 @@
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 25738600,
-      "topPrice": 25738600,
+      "basePrice": 27015000,
+      "topPrice": 27015000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -6245,8 +6495,8 @@
       "trims": [
         {
           "trim": "Monogram Series",
-          "price": 35187600,
-          "priceFormatted": "35.187.600 TL",
+          "price": 36933000,
+          "priceFormatted": "36.933.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "4.0L 585 HP",
@@ -6254,8 +6504,8 @@
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 35187600,
-      "topPrice": 35187600,
+      "basePrice": 36933000,
+      "topPrice": 36933000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -6275,13 +6525,23 @@
           "engine": "2.0L 421 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "Performance",
+          "price": 15891000,
+          "priceFormatted": "15.891.000 TL",
+          "stepFromBase": 751000,
+          "stepPercent": 4.960369881109643,
+          "engine": "2.0L 421 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 15140000,
-      "topPrice": 15140000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 15891000,
+      "priceSpread": 751000,
+      "priceSpreadPercent": 4.96,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-gt-63-4matic+",
@@ -6291,8 +6551,8 @@
       "trims": [
         {
           "trim": "Performance",
-          "price": 26496600,
-          "priceFormatted": "26.496.600 TL",
+          "price": 27811000,
+          "priceFormatted": "27.811.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "4.0L 585 HP",
@@ -6300,8 +6560,8 @@
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 26496600,
-      "topPrice": 26496600,
+      "basePrice": 27811000,
+      "topPrice": 27811000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -6314,8 +6574,8 @@
       "trims": [
         {
           "trim": "-",
-          "price": 30707600,
-          "priceFormatted": "30.707.600 TL",
+          "price": 32230000,
+          "priceFormatted": "32.230.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "4.0L 612 HP",
@@ -6323,8 +6583,8 @@
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 30707600,
-      "topPrice": 30707600,
+      "basePrice": 32230000,
+      "topPrice": 32230000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -6344,13 +6604,23 @@
           "engine": "1.5L 190 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "AMG",
+          "price": 4873000,
+          "priceFormatted": "4.873.000 TL",
+          "stepFromBase": 230000,
+          "stepPercent": 4.953693732500539,
+          "engine": "1.5L 190 HP",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
         }
       ],
       "basePrice": 4643000,
-      "topPrice": 4643000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "topPrice": 4873000,
+      "priceSpread": 230000,
+      "priceSpreadPercent": 4.95,
+      "trimCount": 2
     },
     {
       "id": "mercedes-cla-350-4matic",
@@ -8877,10 +9147,10 @@
           "brandId": "mercedes",
           "model": "EQA 250+",
           "basePrice": 3911800,
-          "topPrice": 3911800,
+          "topPrice": 4217000,
           "basePriceFormatted": "₺3.911.800",
-          "topPriceFormatted": "₺3.911.800",
-          "trimCount": 1
+          "topPriceFormatted": "₺4.217.000",
+          "trimCount": 3
         },
         {
           "brand": "BMW",
@@ -8897,10 +9167,10 @@
           "brandId": "mercedes",
           "model": "GLA 200",
           "basePrice": 4268000,
-          "topPrice": 4268000,
+          "topPrice": 4483000,
           "basePriceFormatted": "₺4.268.000",
-          "topPriceFormatted": "₺4.268.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺4.483.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
@@ -8917,10 +9187,10 @@
           "brandId": "mercedes",
           "model": "CLA 220 4MATIC",
           "basePrice": 4643000,
-          "topPrice": 4643000,
+          "topPrice": 4873000,
           "basePriceFormatted": "₺4.643.000",
-          "topPriceFormatted": "₺4.643.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺4.873.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
@@ -8977,10 +9247,10 @@
           "brandId": "mercedes",
           "model": "C 200 4MATIC All-Terrain",
           "basePrice": 5436000,
-          "topPrice": 5436000,
+          "topPrice": 5825000,
           "basePriceFormatted": "₺5.436.000",
-          "topPriceFormatted": "₺5.436.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺5.825.000",
+          "trimCount": 2
         },
         {
           "brand": "Volvo",
@@ -9007,20 +9277,20 @@
           "brandId": "mercedes",
           "model": "EQE 280",
           "basePrice": 5587700,
-          "topPrice": 5587700,
+          "topPrice": 5869000,
           "basePriceFormatted": "₺5.587.700",
-          "topPriceFormatted": "₺5.587.700",
-          "trimCount": 1
+          "topPriceFormatted": "₺5.869.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "C 200 4MATIC",
           "basePrice": 5770000,
-          "topPrice": 5770000,
+          "topPrice": 6170000,
           "basePriceFormatted": "₺5.770.000",
-          "topPriceFormatted": "₺5.770.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺6.170.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9047,20 +9317,10 @@
           "brandId": "mercedes",
           "model": "GLC 180",
           "basePrice": 6372000,
-          "topPrice": 6372000,
+          "topPrice": 6752000,
           "basePriceFormatted": "₺6.372.000",
-          "topPriceFormatted": "₺6.372.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
-          "model": "EQE 350 4MATIC",
-          "basePrice": 6384400,
-          "topPrice": 6384400,
-          "basePriceFormatted": "₺6.384.400",
-          "topPriceFormatted": "₺6.384.400",
-          "trimCount": 1
+          "topPriceFormatted": "₺6.752.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9071,6 +9331,16 @@
           "basePriceFormatted": "₺6.627.400",
           "topPriceFormatted": "₺7.458.400",
           "trimCount": 2
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brandId": "mercedes",
+          "model": "EQE 350 4MATIC",
+          "basePrice": 6706000,
+          "topPrice": 6706000,
+          "basePriceFormatted": "₺6.706.000",
+          "topPriceFormatted": "₺6.706.000",
+          "trimCount": 1
         },
         {
           "brand": "Volvo",
@@ -9087,10 +9357,10 @@
           "brandId": "mercedes",
           "model": "GLC 180 Coupé",
           "basePrice": 6787000,
-          "topPrice": 6787000,
+          "topPrice": 7124000,
           "basePriceFormatted": "₺6.787.000",
-          "topPriceFormatted": "₺6.787.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺7.124.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9137,10 +9407,10 @@
           "brandId": "mercedes",
           "model": "E 180",
           "basePrice": 7525000,
-          "topPrice": 7587000,
+          "topPrice": 7925000,
           "basePriceFormatted": "₺7.525.000",
-          "topPriceFormatted": "₺7.587.000",
-          "trimCount": 2
+          "topPriceFormatted": "₺7.925.000",
+          "trimCount": 4
         },
         {
           "brand": "BMW",
@@ -9167,10 +9437,10 @@
           "brandId": "mercedes",
           "model": "Mercedes-AMG C 43 4MATIC",
           "basePrice": 7815000,
-          "topPrice": 7815000,
+          "topPrice": 8202000,
           "basePriceFormatted": "₺7.815.000",
-          "topPriceFormatted": "₺7.815.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺8.202.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9187,20 +9457,10 @@
           "brandId": "mercedes",
           "model": "CLE 300 4MATIC Coupé",
           "basePrice": 7911000,
-          "topPrice": 7911000,
+          "topPrice": 8303000,
           "basePriceFormatted": "₺7.911.000",
-          "topPriceFormatted": "₺7.911.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
-          "model": "Mercedes-AMG C 43 4MATIC Estate",
-          "basePrice": 7928000,
-          "topPrice": 7928000,
-          "basePriceFormatted": "₺7.928.000",
-          "topPriceFormatted": "₺7.928.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺8.303.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9225,42 +9485,52 @@
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
+          "model": "Mercedes-AMG C 43 4MATIC Estate",
+          "basePrice": 8321000,
+          "topPrice": 8321000,
+          "basePriceFormatted": "₺8.321.000",
+          "topPriceFormatted": "₺8.321.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brandId": "mercedes",
           "model": "GLC 300 d 4MATIC",
           "basePrice": 8463000,
-          "topPrice": 8463000,
+          "topPrice": 8968000,
           "basePriceFormatted": "₺8.463.000",
-          "topPriceFormatted": "₺8.463.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺8.968.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "CLE 300 4MATIC Cabriolet",
           "basePrice": 8869000,
-          "topPrice": 8869000,
+          "topPrice": 9309000,
           "basePriceFormatted": "₺8.869.000",
-          "topPriceFormatted": "₺8.869.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺9.309.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-AMG GLC 43 4MATIC",
           "basePrice": 9359000,
-          "topPrice": 9359000,
+          "topPrice": 9917000,
           "basePriceFormatted": "₺9.359.000",
-          "topPriceFormatted": "₺9.359.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺9.917.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "EQS 450 4MATIC",
           "basePrice": 9436200,
-          "topPrice": 9436200,
+          "topPrice": 9810000,
           "basePriceFormatted": "₺9.436.200",
-          "topPriceFormatted": "₺9.436.200",
-          "trimCount": 1
+          "topPriceFormatted": "₺9.810.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9297,10 +9567,10 @@
           "brandId": "mercedes",
           "model": "Mercedes-AMG GLC 43 4MATIC Coupé",
           "basePrice": 9868000,
-          "topPrice": 9868000,
+          "topPrice": 10357000,
           "basePriceFormatted": "₺9.868.000",
-          "topPriceFormatted": "₺9.868.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺10.357.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9317,10 +9587,10 @@
           "brandId": "mercedes",
           "model": "E 220 d 4MATIC",
           "basePrice": 10193000,
-          "topPrice": 10270000,
+          "topPrice": 10785000,
           "basePriceFormatted": "₺10.193.000",
-          "topPriceFormatted": "₺10.270.000",
-          "trimCount": 2
+          "topPriceFormatted": "₺10.785.000",
+          "trimCount": 4
         },
         {
           "brand": "Volvo",
@@ -9366,10 +9636,10 @@
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "EQS 580 4MATIC",
-          "basePrice": 11036200,
-          "topPrice": 11036200,
-          "basePriceFormatted": "₺11.036.200",
-          "topPriceFormatted": "₺11.036.200",
+          "basePrice": 11480000,
+          "topPrice": 11480000,
+          "basePriceFormatted": "₺11.480.000",
+          "topPriceFormatted": "₺11.480.000",
           "trimCount": 1
         },
         {
@@ -9386,20 +9656,20 @@
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-AMG C 63 S E PERFORMANCE",
-          "basePrice": 12109000,
-          "topPrice": 12109000,
-          "basePriceFormatted": "₺12.109.000",
-          "topPriceFormatted": "₺12.109.000",
+          "basePrice": 12709000,
+          "topPrice": 12709000,
+          "basePriceFormatted": "₺12.709.000",
+          "topPriceFormatted": "₺12.709.000",
           "trimCount": 1
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-AMG C 63 S E PERFORMANCE Estate",
-          "basePrice": 12186000,
-          "topPrice": 12186000,
-          "basePriceFormatted": "₺12.186.000",
-          "topPriceFormatted": "₺12.186.000",
+          "basePrice": 12790000,
+          "topPrice": 12790000,
+          "basePriceFormatted": "₺12.790.000",
+          "topPriceFormatted": "₺12.790.000",
           "trimCount": 1
         },
         {
@@ -9407,20 +9677,10 @@
           "brandId": "mercedes",
           "model": "Mercedes-AMG CLE 53 4MATIC+",
           "basePrice": 12910600,
-          "topPrice": 12910600,
+          "topPrice": 13551000,
           "basePriceFormatted": "₺12.910.600",
-          "topPriceFormatted": "₺12.910.600",
-          "trimCount": 1
-        },
-        {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
-          "model": "Mercedes-AMG GLC 63 S E PERFORMANCE",
-          "basePrice": 13457000,
-          "topPrice": 13457000,
-          "basePriceFormatted": "₺13.457.000",
-          "topPriceFormatted": "₺13.457.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺13.551.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9445,11 +9705,11 @@
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
-          "model": "Mercedes-AMG GLC 63 S E PERFORMANCE Coupé",
-          "basePrice": 14142000,
-          "topPrice": 14142000,
-          "basePriceFormatted": "₺14.142.000",
-          "topPriceFormatted": "₺14.142.000",
+          "model": "Mercedes-AMG GLC 63 S E PERFORMANCE",
+          "basePrice": 14260000,
+          "topPrice": 14260000,
+          "basePriceFormatted": "₺14.260.000",
+          "topPriceFormatted": "₺14.260.000",
           "trimCount": 1
         },
         {
@@ -9467,9 +9727,19 @@
           "brandId": "mercedes",
           "model": "G 580",
           "basePrice": 14490200,
-          "topPrice": 14490200,
+          "topPrice": 15209000,
           "basePriceFormatted": "₺14.490.200",
-          "topPriceFormatted": "₺14.490.200",
+          "topPriceFormatted": "₺15.209.000",
+          "trimCount": 2
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brandId": "mercedes",
+          "model": "Mercedes-AMG GLC 63 S E PERFORMANCE Coupé",
+          "basePrice": 14843000,
+          "topPrice": 14843000,
+          "basePriceFormatted": "₺14.843.000",
+          "topPriceFormatted": "₺14.843.000",
           "trimCount": 1
         },
         {
@@ -9477,20 +9747,20 @@
           "brandId": "mercedes",
           "model": "Mercedes-AMG GT 43",
           "basePrice": 15140000,
-          "topPrice": 15140000,
+          "topPrice": 15891000,
           "basePriceFormatted": "₺15.140.000",
-          "topPriceFormatted": "₺15.140.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺15.891.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-AMG SL 43",
           "basePrice": 15231000,
-          "topPrice": 15231000,
+          "topPrice": 15986000,
           "basePriceFormatted": "₺15.231.000",
-          "topPriceFormatted": "₺15.231.000",
-          "trimCount": 1
+          "topPriceFormatted": "₺15.986.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9537,30 +9807,30 @@
           "brandId": "mercedes",
           "model": "Mercedes-AMG E 53 Hybrid 4MATIC+",
           "basePrice": 19327600,
-          "topPrice": 19327600,
+          "topPrice": 20224000,
           "basePriceFormatted": "₺19.327.600",
-          "topPriceFormatted": "₺19.327.600",
-          "trimCount": 1
+          "topPriceFormatted": "₺20.224.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "S 450 d 4MATIC L",
           "basePrice": 19828600,
-          "topPrice": 19828600,
+          "topPrice": 20415000,
           "basePriceFormatted": "₺19.828.600",
-          "topPriceFormatted": "₺19.828.600",
-          "trimCount": 1
+          "topPriceFormatted": "₺20.415.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "G 450 d",
           "basePrice": 20357600,
-          "topPrice": 20357600,
+          "topPrice": 21367000,
           "basePriceFormatted": "₺20.357.600",
-          "topPriceFormatted": "₺20.357.600",
-          "trimCount": 1
+          "topPriceFormatted": "₺21.367.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9597,10 +9867,10 @@
           "brandId": "mercedes",
           "model": "G 500",
           "basePrice": 21670600,
-          "topPrice": 21670600,
+          "topPrice": 22745000,
           "basePriceFormatted": "₺21.670.600",
-          "topPriceFormatted": "₺21.670.600",
-          "trimCount": 1
+          "topPriceFormatted": "₺22.745.000",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9616,20 +9886,20 @@
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-AMG SL 63 4MATIC+",
-          "basePrice": 25738600,
-          "topPrice": 25738600,
-          "basePriceFormatted": "₺25.738.600",
-          "topPriceFormatted": "₺25.738.600",
+          "basePrice": 27015000,
+          "topPrice": 27015000,
+          "basePriceFormatted": "₺27.015.000",
+          "topPriceFormatted": "₺27.015.000",
           "trimCount": 1
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-AMG GT 63 4MATIC+",
-          "basePrice": 26496600,
-          "topPrice": 26496600,
-          "basePriceFormatted": "₺26.496.600",
-          "topPriceFormatted": "₺26.496.600",
+          "basePrice": 27811000,
+          "topPrice": 27811000,
+          "basePriceFormatted": "₺27.811.000",
+          "topPriceFormatted": "₺27.811.000",
           "trimCount": 1
         },
         {
@@ -9637,54 +9907,44 @@
           "brandId": "mercedes",
           "model": "Mercedes-AMG G 63",
           "basePrice": 28153600,
-          "topPrice": 28153600,
+          "topPrice": 29550000,
           "basePriceFormatted": "₺28.153.600",
-          "topPriceFormatted": "₺28.153.600",
-          "trimCount": 1
+          "topPriceFormatted": "₺29.550.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-Maybach S 580 4MATIC",
           "basePrice": 28635600,
-          "topPrice": 28635600,
+          "topPrice": 29483000,
           "basePriceFormatted": "₺28.635.600",
-          "topPriceFormatted": "₺28.635.600",
-          "trimCount": 1
+          "topPriceFormatted": "₺29.483.000",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-AMG GT 63 PRO 4MATIC+",
-          "basePrice": 30707600,
-          "topPrice": 30707600,
-          "basePriceFormatted": "₺30.707.600",
-          "topPriceFormatted": "₺30.707.600",
+          "basePrice": 32230000,
+          "topPrice": 32230000,
+          "basePriceFormatted": "₺32.230.000",
+          "topPriceFormatted": "₺32.230.000",
           "trimCount": 1
         },
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-Maybach SL 680",
-          "basePrice": 35187600,
-          "topPrice": 35187600,
-          "basePriceFormatted": "₺35.187.600",
-          "topPriceFormatted": "₺35.187.600",
-          "trimCount": 1
-        },
-        {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
-          "model": "Mercedes-AMG S 63 E PERFORMANCE",
-          "basePrice": 35229600,
-          "topPrice": 35229600,
-          "basePriceFormatted": "₺35.229.600",
-          "topPriceFormatted": "₺35.229.600",
+          "basePrice": 36933000,
+          "topPrice": 36933000,
+          "basePriceFormatted": "₺36.933.000",
+          "topPriceFormatted": "₺36.933.000",
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8235826,
-      "avgTopPrice": 8449583
+      "avgBasePrice": 8104004,
+      "avgTopPrice": 8435505
     },
     {
       "segment": "SUV",
@@ -10220,11 +10480,11 @@
           "brand": "Škoda",
           "brandId": "skoda",
           "model": "Škoda Octavia",
-          "basePrice": 2552900,
+          "basePrice": 3307900,
           "topPrice": 3307900,
-          "basePriceFormatted": "₺2.552.900",
+          "basePriceFormatted": "₺3.307.900",
           "topPriceFormatted": "₺3.307.900",
-          "trimCount": 3
+          "trimCount": 1
         },
         {
           "brand": "Volkswagen",
@@ -10327,7 +10587,7 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5486618,
+      "avgBasePrice": 5518076,
       "avgTopPrice": 6110066
     },
     {
@@ -10545,19 +10805,19 @@
           "brandId": "skoda",
           "model": "Škoda Fabia",
           "basePrice": 1759900,
-          "topPrice": 2134900,
+          "topPrice": 1759900,
           "basePriceFormatted": "₺1.759.900",
-          "topPriceFormatted": "₺2.134.900",
-          "trimCount": 2
+          "topPriceFormatted": "₺1.759.900",
+          "trimCount": 1
         },
         {
-          "brand": "Škoda",
-          "brandId": "skoda",
-          "model": "Škoda Scala",
-          "basePrice": 1785900,
-          "topPrice": 2372900,
-          "basePriceFormatted": "₺1.785.900",
-          "topPriceFormatted": "₺2.372.900",
+          "brand": "Renault",
+          "brandId": "renault",
+          "model": "Yeni Clio",
+          "basePrice": 1799000,
+          "topPrice": 1895000.01,
+          "basePriceFormatted": "₺1.799.000",
+          "topPriceFormatted": "₺1.895.000",
           "trimCount": 2
         },
         {
@@ -10621,6 +10881,16 @@
           "trimCount": 3
         },
         {
+          "brand": "Škoda",
+          "brandId": "skoda",
+          "model": "Škoda Scala",
+          "basePrice": 2372900,
+          "topPrice": 2372900,
+          "basePriceFormatted": "₺2.372.900",
+          "topPriceFormatted": "₺2.372.900",
+          "trimCount": 1
+        },
+        {
           "brand": "Honda",
           "brandId": "honda",
           "model": "Jazz Hybrid",
@@ -10661,8 +10931,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 2513406,
-      "avgTopPrice": 2755640
+      "avgBasePrice": 2505443,
+      "avgTopPrice": 2678412
     },
     {
       "segment": "MPV",
@@ -10744,8 +11014,8 @@
   ],
   "summary": {
     "totalModels": 235,
-    "avgTrimsPerModel": 2.3,
-    "avgPriceSpread": 307787,
-    "avgPriceSpreadPercent": 11.16
+    "avgTrimsPerModel": 2.4,
+    "avgPriceSpread": 365616,
+    "avgPriceSpreadPercent": 11.41
   }
 }

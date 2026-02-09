@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-02-09T01:33:09.094Z",
+  "generatedAt": "2026-02-09T17:56:13.863Z",
   "date": "2026-02-09",
   "summary": {
-    "totalPriceDrops": 14,
-    "totalRecentDrops": 7,
-    "avgDropPercent": 9.12,
+    "totalPriceDrops": 19,
+    "totalRecentDrops": 36,
+    "avgDropPercent": 8.3,
     "maxDropPercent": 14.18,
-    "brandsWithDrops": 5
+    "brandsWithDrops": 6
   },
   "priceDrops": [
     {
@@ -458,6 +458,130 @@
       "campaignDiscount": 7
     },
     {
+      "id": "mercedes-c-200-4matic-all-terrain---1.5l-204-hp",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "C 200 4MATIC All-Terrain",
+      "trim": "-",
+      "engine": "1.5L 204 HP",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "currentPrice": 5436000,
+      "currentPriceFormatted": "₺5.436.000",
+      "peakPrice": 5825000,
+      "peakPriceFormatted": "₺5.825.000",
+      "peakDate": "2026-02-09",
+      "dropAmount": 389000,
+      "dropPercent": 6.68,
+      "daysSincePeak": 0,
+      "priceHistory": [
+        {
+          "date": "2026-02-01",
+          "price": 5436000
+        },
+        {
+          "date": "2026-02-02",
+          "price": 5436000
+        },
+        {
+          "date": "2026-02-03",
+          "price": 5436000
+        },
+        {
+          "date": "2026-02-04",
+          "price": 5436000
+        },
+        {
+          "date": "2026-02-05",
+          "price": 5436000
+        },
+        {
+          "date": "2026-02-06",
+          "price": 5436000
+        },
+        {
+          "date": "2026-02-07",
+          "price": 5436000
+        },
+        {
+          "date": "2026-02-08",
+          "price": 5436000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 5825000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 5436000
+        }
+      ],
+      "listPrice": 2427083,
+      "otvRate": 100
+    },
+    {
+      "id": "mercedes-c-200-4matic-amg-1.5l-204-hp",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "C 200 4MATIC",
+      "trim": "AMG",
+      "engine": "1.5L 204 HP",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "currentPrice": 5770000,
+      "currentPriceFormatted": "₺5.770.000",
+      "peakPrice": 6170000,
+      "peakPriceFormatted": "₺6.170.000",
+      "peakDate": "2026-02-09",
+      "dropAmount": 400000,
+      "dropPercent": 6.48,
+      "daysSincePeak": 0,
+      "priceHistory": [
+        {
+          "date": "2026-02-01",
+          "price": 5770000
+        },
+        {
+          "date": "2026-02-02",
+          "price": 5770000
+        },
+        {
+          "date": "2026-02-03",
+          "price": 5770000
+        },
+        {
+          "date": "2026-02-04",
+          "price": 5770000
+        },
+        {
+          "date": "2026-02-05",
+          "price": 5770000
+        },
+        {
+          "date": "2026-02-06",
+          "price": 5770000
+        },
+        {
+          "date": "2026-02-07",
+          "price": 5770000
+        },
+        {
+          "date": "2026-02-08",
+          "price": 5770000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 6170000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 5770000
+        }
+      ],
+      "listPrice": 2570833,
+      "otvRate": 100
+    },
+    {
       "id": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik",
       "brand": "Honda",
       "brandId": "honda",
@@ -645,6 +769,192 @@
       "listPrice": 2201500,
       "campaignPrice": 2074000,
       "campaignDiscount": 5.8
+    },
+    {
+      "id": "mercedes-glc-180-amg-1.5l-170-hp",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLC 180",
+      "trim": "AMG",
+      "engine": "1.5L 170 HP",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "currentPrice": 6372000,
+      "currentPriceFormatted": "₺6.372.000",
+      "peakPrice": 6752000,
+      "peakPriceFormatted": "₺6.752.000",
+      "peakDate": "2026-02-09",
+      "dropAmount": 380000,
+      "dropPercent": 5.63,
+      "daysSincePeak": 0,
+      "priceHistory": [
+        {
+          "date": "2026-02-01",
+          "price": 6372000
+        },
+        {
+          "date": "2026-02-02",
+          "price": 6372000
+        },
+        {
+          "date": "2026-02-03",
+          "price": 6372000
+        },
+        {
+          "date": "2026-02-04",
+          "price": 6372000
+        },
+        {
+          "date": "2026-02-05",
+          "price": 6372000
+        },
+        {
+          "date": "2026-02-06",
+          "price": 6372000
+        },
+        {
+          "date": "2026-02-07",
+          "price": 6372000
+        },
+        {
+          "date": "2026-02-08",
+          "price": 6372000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 6752000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 6372000
+        }
+      ],
+      "listPrice": 2813333,
+      "otvRate": 100
+    },
+    {
+      "id": "mercedes-glc-300-d-4matic-amg-2.0l-269-hp",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLC 300 d 4MATIC",
+      "trim": "AMG",
+      "engine": "2.0L 269 HP",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "currentPrice": 8463000,
+      "currentPriceFormatted": "₺8.463.000",
+      "peakPrice": 8968000,
+      "peakPriceFormatted": "₺8.968.000",
+      "peakDate": "2026-02-09",
+      "dropAmount": 505000,
+      "dropPercent": 5.63,
+      "daysSincePeak": 0,
+      "priceHistory": [
+        {
+          "date": "2026-02-01",
+          "price": 8463000
+        },
+        {
+          "date": "2026-02-02",
+          "price": 8463000
+        },
+        {
+          "date": "2026-02-03",
+          "price": 8463000
+        },
+        {
+          "date": "2026-02-04",
+          "price": 8463000
+        },
+        {
+          "date": "2026-02-05",
+          "price": 8463000
+        },
+        {
+          "date": "2026-02-06",
+          "price": 8463000
+        },
+        {
+          "date": "2026-02-07",
+          "price": 8463000
+        },
+        {
+          "date": "2026-02-08",
+          "price": 8463000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 8968000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 8463000
+        }
+      ],
+      "listPrice": 2767901,
+      "otvRate": 170
+    },
+    {
+      "id": "mercedes-mercedes-amg-glc-43-4matic-performance-2.0l-421-hp",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GLC 43 4MATIC",
+      "trim": "Performance",
+      "engine": "2.0L 421 HP",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "currentPrice": 9359000,
+      "currentPriceFormatted": "₺9.359.000",
+      "peakPrice": 9917000,
+      "peakPriceFormatted": "₺9.917.000",
+      "peakDate": "2026-02-09",
+      "dropAmount": 558000,
+      "dropPercent": 5.63,
+      "daysSincePeak": 0,
+      "priceHistory": [
+        {
+          "date": "2026-02-01",
+          "price": 9359000
+        },
+        {
+          "date": "2026-02-02",
+          "price": 9359000
+        },
+        {
+          "date": "2026-02-03",
+          "price": 9359000
+        },
+        {
+          "date": "2026-02-04",
+          "price": 9359000
+        },
+        {
+          "date": "2026-02-05",
+          "price": 9359000
+        },
+        {
+          "date": "2026-02-06",
+          "price": 9359000
+        },
+        {
+          "date": "2026-02-07",
+          "price": 9359000
+        },
+        {
+          "date": "2026-02-08",
+          "price": 9359000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 9917000
+        },
+        {
+          "date": "2026-02-09",
+          "price": 9359000
+        }
+      ],
+      "listPrice": 3060802,
+      "otvRate": 170
     },
     {
       "id": "citroen-jumpy-van-panelvan-l3-uzun-2.2-bluehdi-150-hp---6-i̇leri-manuel",
@@ -845,36 +1155,379 @@
       "campaignDiscount": 13
     },
     {
-      "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh-recent",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino",
-      "trim": "Topolino Plus",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "currentPrice": 589900,
-      "previousPrice": 614900,
-      "dropAmount": 25000,
-      "dropPercent": 4.07,
+      "id": "mercedes-c-200-4matic-all-terrain---1.5l-204-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "C 200 4MATIC All-Terrain",
+      "trim": "-",
+      "engine": "1.5L 204 HP",
+      "currentPrice": 5436000,
+      "previousPrice": 5825000,
+      "dropAmount": 389000,
+      "dropPercent": 6.68,
       "date": "2026-02-09",
       "previousDate": "2026-02-09",
-      "listPrice": 704900,
-      "campaignPrice": 614900,
-      "campaignDiscount": 12.8
+      "listPrice": 2427083
     },
     {
-      "id": "fiat-grande-panda-la-prima-44-kwh-recent",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Grande Panda",
-      "trim": "La Prima",
-      "engine": "44 kWh",
-      "currentPrice": 1524900,
-      "previousPrice": 1569900,
-      "dropAmount": 45000,
-      "dropPercent": 2.87,
+      "id": "mercedes-c-200-4matic-amg-1.5l-204-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "C 200 4MATIC",
+      "trim": "AMG",
+      "engine": "1.5L 204 HP",
+      "currentPrice": 5770000,
+      "previousPrice": 6170000,
+      "dropAmount": 400000,
+      "dropPercent": 6.48,
       "date": "2026-02-09",
       "previousDate": "2026-02-09",
-      "listPrice": 1569900
+      "listPrice": 2570833
+    },
+    {
+      "id": "mercedes-glc-180-amg-1.5l-170-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLC 180",
+      "trim": "AMG",
+      "engine": "1.5L 170 HP",
+      "currentPrice": 6372000,
+      "previousPrice": 6752000,
+      "dropAmount": 380000,
+      "dropPercent": 5.63,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 2813333
+    },
+    {
+      "id": "mercedes-glc-300-d-4matic-amg-2.0l-269-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLC 300 d 4MATIC",
+      "trim": "AMG",
+      "engine": "2.0L 269 HP",
+      "currentPrice": 8463000,
+      "previousPrice": 8968000,
+      "dropAmount": 505000,
+      "dropPercent": 5.63,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 2767901
+    },
+    {
+      "id": "mercedes-mercedes-amg-glc-43-4matic-performance-2.0l-421-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GLC 43 4MATIC",
+      "trim": "Performance",
+      "engine": "2.0L 421 HP",
+      "currentPrice": 9359000,
+      "previousPrice": 9917000,
+      "dropAmount": 558000,
+      "dropPercent": 5.63,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 3060802
+    },
+    {
+      "id": "mercedes-gla-200-amg-1.3l-163-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLA 200",
+      "trim": "AMG",
+      "engine": "1.3L 163 HP",
+      "currentPrice": 4268000,
+      "previousPrice": 4483000,
+      "dropAmount": 215000,
+      "dropPercent": 4.8,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 1966228
+    },
+    {
+      "id": "mercedes-eqe-280-amg-218-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "EQE 280",
+      "trim": "AMG",
+      "engine": "218 HP",
+      "currentPrice": 5587700,
+      "previousPrice": 5869000,
+      "dropAmount": 281300,
+      "dropPercent": 4.79,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 3155376
+    },
+    {
+      "id": "mercedes-eqa-250+-night-edition-190-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "EQA 250+",
+      "trim": "Night Edition",
+      "engine": "190 HP",
+      "currentPrice": 4014800,
+      "previousPrice": 4217000,
+      "dropAmount": 202200,
+      "dropPercent": 4.79,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 2267204
+    },
+    {
+      "id": "mercedes-e-220-d-4matic-exclusive-2.0l-197-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "E 220 d 4MATIC",
+      "trim": "Exclusive",
+      "engine": "2.0L 197 HP",
+      "currentPrice": 10193000,
+      "previousPrice": 10705000,
+      "dropAmount": 512000,
+      "dropPercent": 4.78,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 3304012
+    },
+    {
+      "id": "mercedes-e-220-d-4matic-amg-2.0l-197-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "E 220 d 4MATIC",
+      "trim": "AMG",
+      "engine": "2.0L 197 HP",
+      "currentPrice": 10270000,
+      "previousPrice": 10785000,
+      "dropAmount": 515000,
+      "dropPercent": 4.78,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 3328704
+    },
+    {
+      "id": "mercedes-mercedes-amg-cle-53-4matic+-performance-3.0l-449-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG CLE 53 4MATIC+",
+      "trim": "Performance",
+      "engine": "3.0L 449 HP",
+      "currentPrice": 12910600,
+      "previousPrice": 13551000,
+      "dropAmount": 640400,
+      "dropPercent": 4.73,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 3528906
+    },
+    {
+      "id": "mercedes-cle-300-4matic-cabriolet-amg-2.0l-258-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "CLE 300 4MATIC Cabriolet",
+      "trim": "AMG",
+      "engine": "2.0L 258 HP",
+      "currentPrice": 8869000,
+      "previousPrice": 9309000,
+      "dropAmount": 440000,
+      "dropPercent": 4.73,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 2873148
+    },
+    {
+      "id": "mercedes-glc-180-coupé-amg-1.5l-170-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "GLC 180 Coupé",
+      "trim": "AMG",
+      "engine": "1.5L 170 HP",
+      "currentPrice": 6787000,
+      "previousPrice": 7124000,
+      "dropAmount": 337000,
+      "dropPercent": 4.73,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 2968333
+    },
+    {
+      "id": "mercedes-g-580-heritage-587-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "G 580",
+      "trim": "Heritage",
+      "engine": "587 HP",
+      "currentPrice": 14490200,
+      "previousPrice": 15209000,
+      "dropAmount": 718800,
+      "dropPercent": 4.73,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 7242381
+    },
+    {
+      "id": "mercedes-mercedes-amg-g-63-performance-4.0l-585-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG G 63",
+      "trim": "Performance",
+      "engine": "4.0L 585 HP",
+      "currentPrice": 28153600,
+      "previousPrice": 29550000,
+      "dropAmount": 1396400,
+      "dropPercent": 4.73,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 7695313
+    },
+    {
+      "id": "mercedes-mercedes-amg-gt-43-performance-2.0l-421-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GT 43",
+      "trim": "Performance",
+      "engine": "2.0L 421 HP",
+      "currentPrice": 15140000,
+      "previousPrice": 15891000,
+      "dropAmount": 751000,
+      "dropPercent": 4.73,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 4904630
+    },
+    {
+      "id": "mercedes-mercedes-amg-c-43-4matic-performance-2.0l-421-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG C 43 4MATIC",
+      "trim": "Performance",
+      "engine": "2.0L 421 HP",
+      "currentPrice": 7815000,
+      "previousPrice": 8202000,
+      "dropAmount": 387000,
+      "dropPercent": 4.72,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 2531481
+    },
+    {
+      "id": "mercedes-cle-300-4matic-coupé-amg-2.0l-258-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "CLE 300 4MATIC Coupé",
+      "trim": "AMG",
+      "engine": "2.0L 258 HP",
+      "currentPrice": 7911000,
+      "previousPrice": 8303000,
+      "dropAmount": 392000,
+      "dropPercent": 4.72,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 2562654
+    },
+    {
+      "id": "mercedes-mercedes-amg-glc-43-4matic-coupé-performance-2.0l-421-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG GLC 43 4MATIC Coupé",
+      "trim": "Performance",
+      "engine": "2.0L 421 HP",
+      "currentPrice": 9868000,
+      "previousPrice": 10357000,
+      "dropAmount": 489000,
+      "dropPercent": 4.72,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 3196605
+    },
+    {
+      "id": "mercedes-g-450-d-heritage-3.0l-367-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "G 450 d",
+      "trim": "Heritage",
+      "engine": "3.0L 367 HP",
+      "currentPrice": 20357600,
+      "previousPrice": 21367000,
+      "dropAmount": 1009400,
+      "dropPercent": 4.72,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 5564323
+    },
+    {
+      "id": "mercedes-g-500-heritage-3.0l-449-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "G 500",
+      "trim": "Heritage",
+      "engine": "3.0L 449 HP",
+      "currentPrice": 21670600,
+      "previousPrice": 22745000,
+      "dropAmount": 1074400,
+      "dropPercent": 4.72,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 5923177
+    },
+    {
+      "id": "mercedes-mercedes-amg-sl-43-performance-2.0l-421-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG SL 43",
+      "trim": "Performance",
+      "engine": "2.0L 421 HP",
+      "currentPrice": 15231000,
+      "previousPrice": 15986000,
+      "dropAmount": 755000,
+      "dropPercent": 4.72,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 4933951
+    },
+    {
+      "id": "mercedes-cla-220-4matic-amg-1.5l-190-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "CLA 220 4MATIC",
+      "trim": "AMG",
+      "engine": "1.5L 190 HP",
+      "currentPrice": 4643000,
+      "previousPrice": 4873000,
+      "dropAmount": 230000,
+      "dropPercent": 4.72,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 2030417
+    },
+    {
+      "id": "mercedes-mercedes-amg-e-53-hybrid-4matic+-performance-3.0l-585-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "Mercedes-AMG E 53 Hybrid 4MATIC+",
+      "trim": "Performance",
+      "engine": "3.0L 585 HP",
+      "currentPrice": 19327600,
+      "previousPrice": 20224000,
+      "dropAmount": 896400,
+      "dropPercent": 4.43,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 5266667
+    },
+    {
+      "id": "mercedes-e-180-exclusive-1.5l-170-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "E 180",
+      "trim": "Exclusive",
+      "engine": "1.5L 170 HP",
+      "currentPrice": 7525000,
+      "previousPrice": 7860000,
+      "dropAmount": 335000,
+      "dropPercent": 4.26,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-09",
+      "listPrice": 3275000
     }
   ],
   "brandSummary": [
@@ -883,6 +1536,12 @@
       "brand": "Fiat",
       "dropCount": 7,
       "avgDropPercent": 10.34
+    },
+    {
+      "brandId": "mercedes",
+      "brand": "Mercedes-Benz",
+      "dropCount": 5,
+      "avgDropPercent": 6.01
     },
     {
       "brandId": "peugeot",
