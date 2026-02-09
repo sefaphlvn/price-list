@@ -30,6 +30,27 @@ func NewIntelRepository(db *mongo.Database) *IntelRepository {
 	}
 }
 
+// EnsureIndexes creates the required MongoDB indexes for intel collections
+func (r *IntelRepository) EnsureIndexes(ctx context.Context) error {
+	dateIndex := mongo.IndexModel{
+		Keys: bson.D{{Key: "date", Value: -1}},
+	}
+	generatedAtIndex := mongo.IndexModel{
+		Keys: bson.D{{Key: "generatedAt", Value: -1}},
+	}
+
+	for _, col := range []*mongo.Collection{r.events, r.architecture, r.gaps, r.promos, r.lifecycle, r.insights} {
+		if _, err := col.Indexes().CreateOne(ctx, dateIndex); err != nil {
+			return err
+		}
+	}
+	// errors collection uses generatedAt
+	if _, err := r.errors.Indexes().CreateOne(ctx, generatedAtIndex); err != nil {
+		return err
+	}
+	return nil
+}
+
 var latestSort = options.FindOne().SetSort(bson.D{{Key: "date", Value: -1}})
 
 // getLatestRaw returns the latest document from a collection as raw bson.M

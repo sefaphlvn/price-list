@@ -24,11 +24,12 @@ func NewVehicleRepository(db *mongo.Database) *VehicleRepository {
 // GetIndex builds the index response by aggregating available dates per brand
 func (r *VehicleRepository) GetIndex(ctx context.Context) (*models.IndexData, error) {
 	pipeline := bson.A{
+		bson.D{{Key: "$sort", Value: bson.D{{Key: "date", Value: -1}}}},
 		bson.D{{Key: "$group", Value: bson.D{
 			{Key: "_id", Value: "$brandId"},
 			{Key: "name", Value: bson.D{{Key: "$first", Value: "$brand"}}},
 			{Key: "dates", Value: bson.D{{Key: "$addToSet", Value: "$date"}}},
-			{Key: "totalRecords", Value: bson.D{{Key: "$max", Value: "$rowCount"}}},
+			{Key: "totalRecords", Value: bson.D{{Key: "$first", Value: "$rowCount"}}},
 		}}},
 		bson.D{{Key: "$sort", Value: bson.D{{Key: "_id", Value: 1}}}},
 	}
@@ -75,29 +76,38 @@ func (r *VehicleRepository) GetIndex(ctx context.Context) (*models.IndexData, er
 	}, nil
 }
 
-// GetLatest returns the latest data for all brands
+// GetLatest returns the latest data for all brands (single aggregation query)
 func (r *VehicleRepository) GetLatest(ctx context.Context) (*models.LatestData, error) {
-	// Get all distinct brandIds
-	var brandIDs []string
-	result := r.collection.Distinct(ctx, "brandId", bson.D{})
-	if err := result.Decode(&brandIDs); err != nil {
+	pipeline := bson.A{
+		bson.D{{Key: "$sort", Value: bson.D{
+			{Key: "brandId", Value: 1},
+			{Key: "date", Value: -1},
+		}}},
+		bson.D{{Key: "$group", Value: bson.D{
+			{Key: "_id", Value: "$brandId"},
+			{Key: "doc", Value: bson.D{{Key: "$first", Value: "$$ROOT"}}},
+		}}},
+		bson.D{{Key: "$replaceRoot", Value: bson.D{
+			{Key: "newRoot", Value: "$doc"},
+		}}},
+	}
+
+	cursor, err := r.collection.Aggregate(ctx, pipeline)
+	if err != nil {
 		return nil, err
 	}
+	defer cursor.Close(ctx)
 
 	brands := make(map[string]models.LatestBrandData)
 	totalVehicles := 0
 
-	for _, brandID := range brandIDs {
-
-		// Get the latest document for this brand
-		opts := options.FindOne().SetSort(bson.D{{Key: "date", Value: -1}})
+	for cursor.Next(ctx) {
 		var doc models.VehicleDocument
-		err := r.collection.FindOne(ctx, bson.D{{Key: "brandId", Value: brandID}}, opts).Decode(&doc)
-		if err != nil {
+		if err := cursor.Decode(&doc); err != nil {
 			continue
 		}
 
-		brands[brandID] = models.LatestBrandData{
+		brands[doc.BrandID] = models.LatestBrandData{
 			Name:     doc.Brand,
 			Date:     doc.Date,
 			Vehicles: doc.Rows,
@@ -167,9 +177,14 @@ func (r *VehicleRepository) GetTrend(ctx context.Context, brandID, model, trim, 
 		bson.D{{Key: "$match", Value: bson.D{
 			{Key: "rows.priceNumeric", Value: bson.D{{Key: "$gt", Value: 0}}},
 		}}},
+		// Group by date to get one price point per day (handles duplicate rows e.g. different model years)
+		bson.D{{Key: "$group", Value: bson.D{
+			{Key: "_id", Value: "$date"},
+			{Key: "price", Value: bson.D{{Key: "$max", Value: "$rows.priceNumeric"}}},
+		}}},
 		bson.D{{Key: "$project", Value: bson.D{
-			{Key: "date", Value: 1},
-			{Key: "price", Value: "$rows.priceNumeric"},
+			{Key: "date", Value: "$_id"},
+			{Key: "price", Value: 1},
 			{Key: "_id", Value: 0},
 		}}},
 		bson.D{{Key: "$sort", Value: bson.D{{Key: "date", Value: 1}}}},

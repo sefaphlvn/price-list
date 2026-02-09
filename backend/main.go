@@ -50,7 +50,13 @@ func main() {
 
 	// Ensure indexes
 	if err := vehicleRepo.EnsureIndexes(context.Background()); err != nil {
-		log.Printf("Warning: Failed to ensure indexes: %v", err)
+		log.Printf("Warning: Failed to ensure vehicle indexes: %v", err)
+	}
+	if err := statsRepo.EnsureIndexes(context.Background()); err != nil {
+		log.Printf("Warning: Failed to ensure stats indexes: %v", err)
+	}
+	if err := intelRepo.EnsureIndexes(context.Background()); err != nil {
+		log.Printf("Warning: Failed to ensure intel indexes: %v", err)
 	}
 
 	// Initialize handlers

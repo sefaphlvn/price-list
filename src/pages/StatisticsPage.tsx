@@ -37,7 +37,7 @@ import { getBrandById } from '../config/brands';
 import { PriceListRow, StoredData } from '../types';
 import { tokens } from '../theme/tokens';
 import { staggerContainer, staggerItem } from '../theme/animations';
-import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
+import { fetchDedup, DATA_URLS } from '../utils/fetchData';
 import { ChartInfoTooltip, chartDescriptions } from '../components/common/ChartInfoTooltip';
 import { useIsMobile } from '../hooks/useMediaQuery';
 
@@ -138,7 +138,7 @@ export default function StatisticsPage() {
       const dataMap = new Map<string, StoredData>();
 
       try {
-        const latestData = await fetchFreshJson<any>(DATA_URLS.latest);
+        const latestData = await fetchDedup<any>(DATA_URLS.latest);
 
         Object.entries(latestData.brands || {}).forEach(([brandId, brand]: [string, any]) => {
           dataMap.set(brandId, {
