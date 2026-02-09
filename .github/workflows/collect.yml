@@ -29,12 +29,21 @@ jobs:
 
       - name: Run data collector
         run: npx tsx scripts/collect.ts
+        env:
+          PUSER: ${{ secrets.PUSER }}
+          PPASS: ${{ secrets.PPASS }}
 
       - name: Generate artifacts
         run: npx tsx scripts/generateArtifacts.ts
+        env:
+          PUSER: ${{ secrets.PUSER }}
+          PPASS: ${{ secrets.PPASS }}
 
       - name: Run health check
         run: npx tsx scripts/healthCheck.ts
+        env:
+          PUSER: ${{ secrets.PUSER }}
+          PPASS: ${{ secrets.PPASS }}
 
       - name: Check for changes
         id: git-check

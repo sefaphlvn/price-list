@@ -8,8 +8,8 @@ let client: MongoClient | null = null;
 let db: Db | null = null;
 
 function buildUri(): string {
-  const user = process.env.MONGO_USER || process.env.puser || '';
-  const pass = process.env.MONGO_PASS || process.env.ppass || '';
+  const user = process.env.MONGO_USER || process.env.PUSER || process.env.puser || '';
+  const pass = process.env.MONGO_PASS || process.env.PPASS || process.env.ppass || '';
   const uri = process.env.MONGO_URI || '';
 
   if (uri) return uri;

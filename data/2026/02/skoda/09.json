@@ -1,8 +1,8 @@
 {
-  "collectedAt": "2026-02-09T01:31:55.561Z",
+  "collectedAt": "2026-02-09T17:16:30.367Z",
   "brand": "Škoda",
   "brandId": "skoda",
-  "rowCount": 22,
+  "rowCount": 18,
   "rows": [
     {
       "model": "Yeni Škoda Elroq",
@@ -14,6 +14,8 @@
       "priceNumeric": 2384400,
       "brand": "Škoda",
       "modelYear": "2025",
+      "priceListNumeric": 2384400,
+      "priceCampaignNumeric": 2256000,
       "otvRate": 25,
       "netPrice": 1580119.27,
       "otvAmount": 395029.82,
@@ -42,8 +44,6 @@
       "priceNumeric": 3499400,
       "brand": "Škoda",
       "modelYear": "2025",
-      "priceListNumeric": 3499400,
-      "priceCampaignNumeric": 3412300,
       "otvRate": 55,
       "netPrice": 1873752.11,
       "otvAmount": 1030563.66,
@@ -100,8 +100,6 @@
       "priceNumeric": 3399400,
       "brand": "Škoda",
       "modelYear": "2025",
-      "priceListNumeric": 3399400,
-      "priceCampaignNumeric": 3382500,
       "otvRate": 55,
       "netPrice": 1819988.67,
       "otvAmount": 1000993.77,
@@ -131,7 +129,7 @@
       "brand": "Škoda",
       "modelYear": "2025",
       "priceListNumeric": 1759900,
-      "priceCampaignNumeric": 1733700,
+      "priceCampaignNumeric": 1682800,
       "otvRate": 75,
       "netPrice": 832621.38,
       "otvAmount": 624466.04,
@@ -147,68 +145,6 @@
         {
           "name": "Exclusive Renk",
           "price": 23148
-        }
-      ]
-    },
-    {
-      "model": "Škoda Fabia",
-      "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
-      "engine": "Monte Carlo 1.5 TSI 150 PS",
-      "transmission": "DSG",
-      "fuel": "Benzin",
-      "priceRaw": "₺2.134.900",
-      "priceNumeric": 2134900,
-      "brand": "Škoda",
-      "modelYear": "2025",
-      "priceListNumeric": 2134900,
-      "priceCampaignNumeric": 2103100,
-      "otvRate": 80,
-      "netPrice": 981917.55,
-      "otvAmount": 785534.04,
-      "kdvAmount": 353490.32,
-      "mtvAmount": 6014,
-      "trafficRegistrationFee": 7944.1,
-      "origin": "Çekya",
-      "optionalEquipment": [
-        {
-          "name": "Metalik Renk",
-          "price": 18519
-        },
-        {
-          "name": "Exclusive Renk",
-          "price": 23148
-        }
-      ]
-    },
-    {
-      "model": "Škoda Scala",
-      "trim": "Elite 1.0 TSI 115 PS DSG",
-      "engine": "Elite 1.0 TSI 115 PS",
-      "transmission": "DSG",
-      "fuel": "Benzin",
-      "priceRaw": "₺1.785.900",
-      "priceNumeric": 1785900,
-      "brand": "Škoda",
-      "modelYear": "2025",
-      "otvRate": 75,
-      "netPrice": 845002.33,
-      "otvAmount": 633751.75,
-      "kdvAmount": 295750.82,
-      "mtvAmount": 3451,
-      "trafficRegistrationFee": 7944.1,
-      "origin": "Çekya",
-      "optionalEquipment": [
-        {
-          "name": "Metalik Renk",
-          "price": 18519
-        },
-        {
-          "name": "Exclusive Renk",
-          "price": 23148
-        },
-        {
-          "name": "Panoramik Cam Tavan",
-          "price": 38889
         }
       ]
     },
@@ -248,64 +184,6 @@
     },
     {
       "model": "Škoda Octavia",
-      "trim": "Elite 1.5 TSI mHEV 150 PS DSG",
-      "engine": "Elite 1.5 TSI mHEV 150 PS",
-      "transmission": "DSG",
-      "fuel": "Benzin",
-      "priceRaw": "₺2.552.900",
-      "priceNumeric": 2552900,
-      "brand": "Škoda",
-      "modelYear": "2025",
-      "otvRate": 90,
-      "netPrice": 1113571.01,
-      "otvAmount": 1002213.91,
-      "kdvAmount": 423156.98,
-      "mtvAmount": 6014,
-      "trafficRegistrationFee": 7944.1,
-      "origin": "Çekya",
-      "optionalEquipment": [
-        {
-          "name": "Metalik Renk",
-          "price": 20833
-        },
-        {
-          "name": "Exclusive Renk",
-          "price": 27778
-        }
-      ]
-    },
-    {
-      "model": "Škoda Octavia",
-      "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
-      "engine": "Premium 1.5 TSI mHEV 150 PS",
-      "transmission": "DSG",
-      "fuel": "Benzin",
-      "priceRaw": "₺2.912.900",
-      "priceNumeric": 2912900,
-      "brand": "Škoda",
-      "modelYear": "2025",
-      "priceListNumeric": 2912900,
-      "priceCampaignNumeric": 2797000,
-      "otvRate": 90,
-      "netPrice": 1271465.75,
-      "otvAmount": 1144319.17,
-      "kdvAmount": 483156.98,
-      "mtvAmount": 6014,
-      "trafficRegistrationFee": 7944.1,
-      "origin": "Çekya",
-      "optionalEquipment": [
-        {
-          "name": "Metalik Renk",
-          "price": 20833
-        },
-        {
-          "name": "Exclusive Renk",
-          "price": 27778
-        }
-      ]
-    },
-    {
-      "model": "Škoda Octavia",
       "trim": "Combi Sportline 1.5 TSI mHEV 150 PS DSG",
       "engine": "Combi Sportline 1.5 TSI mHEV 150 PS",
       "transmission": "DSG",
@@ -334,14 +212,16 @@
     },
     {
       "model": "Škoda Superb",
-      "trim": "Premium 1,5 TSI mHEV 150 PS DSG",
-      "engine": "Premium 1,5 TSI mHEV 150 PS",
+      "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Premium 1.5 TSI mHEV 150 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺3.530.400",
       "priceNumeric": 3530400,
       "brand": "Škoda",
       "modelYear": "2025",
+      "priceListNumeric": 3530400,
+      "priceCampaignNumeric": 3372200,
       "otvRate": 90,
       "netPrice": 1542299.08,
       "otvAmount": 1388069.17,
@@ -362,8 +242,8 @@
     },
     {
       "model": "Škoda Superb",
-      "trim": "Prestige 1,5 TSI  mHEV 150 PS DSG",
-      "engine": "Prestige 1,5 TSI  mHEV 150 PS",
+      "trim": "Prestige 1.5 TSI  mHEV 150 PS DSG",
+      "engine": "Prestige 1.5 TSI  mHEV 150 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺4.151.900",
@@ -371,7 +251,7 @@
       "brand": "Škoda",
       "modelYear": "2025",
       "priceListNumeric": 4151900,
-      "priceCampaignNumeric": 3768200,
+      "priceCampaignNumeric": 3599900,
       "otvRate": 100,
       "netPrice": 1724142.46,
       "otvAmount": 1724142.46,
@@ -392,8 +272,8 @@
     },
     {
       "model": "Škoda Superb",
-      "trim": "Laurin & Klement Crystal 1,5 TSI mHEV 150 PS DSG",
-      "engine": "Laurin & Klement Crystal 1,5 TSI mHEV 150 PS",
+      "trim": "L&K Crystal 1.5 TSI mHEV 150 PS DSG",
+      "engine": "L&K Crystal 1.5 TSI mHEV 150 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺4.609.900",
@@ -420,8 +300,8 @@
     },
     {
       "model": "Škoda Superb",
-      "trim": "Laurin & Klement Crystal 2,0 TSI 265 PS DSG 4x4",
-      "engine": "Laurin & Klement Crystal 2,0 TSI 265 PS  4x4",
+      "trim": "L&K Crystal 2.0 TSI 265 PS DSG 4x4",
+      "engine": "L&K Crystal 2.0 TSI 265 PS  4x4",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺6.675.900",
@@ -448,8 +328,8 @@
     },
     {
       "model": "Škoda Kamiq",
-      "trim": "Elite 1,0 TSI 115 PS DSG",
-      "engine": "Elite 1,0 TSI 115 PS",
+      "trim": "Elite 1.0 TSI 115 PS DSG",
+      "engine": "Elite 1.0 TSI 115 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺1.900.400",
@@ -482,8 +362,8 @@
     },
     {
       "model": "Škoda Kamiq",
-      "trim": "Premium 1,0 TSI 115 PS DSG",
-      "engine": "Premium 1,0 TSI 115 PS",
+      "trim": "Premium 1.0 TSI 115 PS DSG",
+      "engine": "Premium 1.0 TSI 115 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺2.197.900",
@@ -491,7 +371,7 @@
       "brand": "Škoda",
       "modelYear": "2025",
       "priceListNumeric": 2197900,
-      "priceCampaignNumeric": 1999900,
+      "priceCampaignNumeric": 1888800,
       "otvRate": 80,
       "netPrice": 1012270.79,
       "otvAmount": 809816.63,
@@ -516,8 +396,8 @@
     },
     {
       "model": "Škoda Kamiq",
-      "trim": "Monte Carlo 1,5 TSI 150 PS DSG",
-      "engine": "Monte Carlo 1,5 TSI 150 PS",
+      "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
+      "engine": "Monte Carlo 1.5 TSI 150 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺2.622.900",
@@ -550,8 +430,8 @@
     },
     {
       "model": "Škoda Karoq",
-      "trim": "Prestige 1,5 TSI 150 PS DSG",
-      "engine": "Prestige 1,5 TSI 150 PS",
+      "trim": "Prestige 1.5 TSI 150 PS DSG",
+      "engine": "Prestige 1.5 TSI 150 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺3.349.400",
@@ -559,7 +439,7 @@
       "brand": "Škoda",
       "modelYear": "2025",
       "priceListNumeric": 3349400,
-      "priceCampaignNumeric": 3232700,
+      "priceCampaignNumeric": 3074300,
       "otvRate": 90,
       "netPrice": 1462913.11,
       "otvAmount": 1316621.8,
@@ -584,8 +464,8 @@
     },
     {
       "model": "Škoda Karoq",
-      "trim": "Sportline 1,5 TSI 150 PS DSG",
-      "engine": "Sportline 1,5 TSI 150 PS",
+      "trim": "Sportline 1.5 TSI 150 PS DSG",
+      "engine": "Sportline 1.5 TSI 150 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺3.454.900",
@@ -593,7 +473,7 @@
       "brand": "Škoda",
       "modelYear": "2025",
       "priceListNumeric": 3454900,
-      "priceCampaignNumeric": 3334500,
+      "priceCampaignNumeric": 3171100,
       "otvRate": 90,
       "netPrice": 1509185.04,
       "otvAmount": 1358266.54,
@@ -618,8 +498,8 @@
     },
     {
       "model": "Škoda Kodiaq",
-      "trim": "Prestige 1,5 TSI  mHEV 150 PS DSG",
-      "engine": "Prestige 1,5 TSI  mHEV 150 PS",
+      "trim": "Prestige 1.5 TSI  mHEV 150 PS DSG",
+      "engine": "Prestige 1.5 TSI  mHEV 150 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺4.379.900",
@@ -652,8 +532,8 @@
     },
     {
       "model": "Škoda Kodiaq",
-      "trim": "Sportline 1,5 TSI mHEV 150 PS DSG",
-      "engine": "Sportline 1,5 TSI mHEV 150 PS",
+      "trim": "Sportline 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Sportline 1.5 TSI mHEV 150 PS",
       "transmission": "DSG",
       "fuel": "Benzin",
       "priceRaw": "₺4.546.900",
@@ -684,7 +564,5 @@
         }
       ]
     }
-  ],
-  "isFallback": true,
-  "originalDate": "2026-02-08T01:32:50.082Z"
+  ]
 }

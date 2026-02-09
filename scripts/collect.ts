@@ -119,7 +119,7 @@ const BRANDS: BrandConfig[] = [
   {
     id: 'skoda',
     name: 'Škoda',
-    url: 'https://www.skoda.com.tr/_next/data/JqOPjpaBnXsRA79zGw7R6/fiyat-listesi.json',
+    url: 'https://www.skoda.com.tr/fiyat-listesi',
     parser: 'skoda',
   },
   {
@@ -4319,6 +4319,18 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
       throw new Error('Could not extract Next.js build ID');
     }
     const apiUrl = `https://talep.citroen.com.tr/_next/data/${buildId}/fiyat-listesi.json`;
+    console.log(`  Using API URL: ${apiUrl}`);
+    return fetchSingleUrl(apiUrl, 'json');
+  }
+
+  // Handle Škoda's dynamic Next.js URL
+  if (brand.parser === 'skoda') {
+    console.log(`  Fetching ${brand.name} - extracting build ID from ${brand.url}`);
+    const buildId = await extractNextJsBuildId(brand.url);
+    if (!buildId) {
+      throw new Error('Could not extract Next.js build ID for Škoda');
+    }
+    const apiUrl = `https://www.skoda.com.tr/_next/data/${buildId}/fiyat-listesi.json`;
     console.log(`  Using API URL: ${apiUrl}`);
     return fetchSingleUrl(apiUrl, 'json');
   }
