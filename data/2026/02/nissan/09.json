@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-09T17:54:42.146Z",
+  "collectedAt": "2026-02-09T18:25:38.201Z",
   "brand": "Nissan",
   "brandId": "nissan",
   "rowCount": 17,
@@ -13,6 +13,7 @@
       "priceRaw": "2.576.900 TL",
       "priceNumeric": 2576900,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 2676900,
       "priceCampaignNumeric": 2576900,
       "powerHP": 158,
@@ -20,8 +21,7 @@
       "engineType": "DIG-T",
       "transmissionType": "Auto",
       "isHybrid": true,
-      "isMildHybrid": true,
-      "modelYear": 2026
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -32,6 +32,7 @@
       "priceRaw": "3.013.500 TL",
       "priceNumeric": 3013500,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 3113500,
       "priceCampaignNumeric": 3013500,
       "powerHP": 158,
@@ -39,8 +40,7 @@
       "engineType": "DIG-T",
       "transmissionType": "Auto",
       "isHybrid": true,
-      "isMildHybrid": true,
-      "modelYear": 2026
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -51,6 +51,7 @@
       "priceRaw": "3.401.000 TL",
       "priceNumeric": 3401000,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 3401000,
       "priceCampaignNumeric": 3401000,
       "powerHP": 158,
@@ -58,8 +59,7 @@
       "engineType": "DIG-T",
       "transmissionType": "Auto",
       "isHybrid": true,
-      "isMildHybrid": true,
-      "modelYear": 2026
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -70,6 +70,7 @@
       "priceRaw": "3.500.000 TL",
       "priceNumeric": 3500000,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 3500000,
       "priceCampaignNumeric": 3500000,
       "powerHP": 158,
@@ -77,8 +78,7 @@
       "engineType": "DIG-T",
       "transmissionType": "Auto",
       "isHybrid": true,
-      "isMildHybrid": true,
-      "modelYear": 2026
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -89,6 +89,7 @@
       "priceRaw": "3.612.600 TL",
       "priceNumeric": 3612600,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 3612600,
       "priceCampaignNumeric": 3612600,
       "powerHP": 158,
@@ -96,8 +97,7 @@
       "engineType": "DIG-T",
       "transmissionType": "Auto",
       "isHybrid": true,
-      "isMildHybrid": true,
-      "modelYear": 2026
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -108,6 +108,7 @@
       "priceRaw": "3.640.800 TL",
       "priceNumeric": 3640800,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 3640800,
       "priceCampaignNumeric": 3640800,
       "powerHP": 158,
@@ -115,8 +116,7 @@
       "engineType": "DIG-T",
       "transmissionType": "Auto",
       "isHybrid": true,
-      "isMildHybrid": true,
-      "modelYear": 2026
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI",
@@ -127,6 +127,7 @@
       "priceRaw": "3.753.200 TL",
       "priceNumeric": 3753200,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 3753200,
       "priceCampaignNumeric": 3753200,
       "powerHP": 158,
@@ -134,8 +135,7 @@
       "engineType": "DIG-T",
       "transmissionType": "Auto",
       "isHybrid": true,
-      "isMildHybrid": true,
-      "modelYear": 2026
+      "isMildHybrid": true
     },
     {
       "model": "QASHQAI e-POWER",
@@ -146,12 +146,12 @@
       "priceRaw": "3.514.900 TL",
       "priceNumeric": 3514900,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 3614900,
       "priceCampaignNumeric": 3514900,
       "powerHP": 190,
       "engineType": "e-POWER",
-      "isHybrid": true,
-      "modelYear": 2026
+      "isHybrid": true
     },
     {
       "model": "QASHQAI e-POWER",
@@ -162,12 +162,12 @@
       "priceRaw": "3.637.100 TL",
       "priceNumeric": 3637100,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 3787100,
       "priceCampaignNumeric": 3637100,
       "powerHP": 190,
       "engineType": "e-POWER",
-      "isHybrid": true,
-      "modelYear": 2026
+      "isHybrid": true
     },
     {
       "model": "QASHQAI e-POWER",
@@ -178,12 +178,12 @@
       "priceRaw": "3.748.900 TL",
       "priceNumeric": 3748900,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 4050900,
       "priceCampaignNumeric": 3748900,
       "powerHP": 190,
       "engineType": "e-POWER",
-      "isHybrid": true,
-      "modelYear": 2026
+      "isHybrid": true
     },
     {
       "model": "QASHQAI e-POWER",
@@ -194,12 +194,12 @@
       "priceRaw": "4.087.000 TL",
       "priceNumeric": 4087000,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 4187000,
       "priceCampaignNumeric": 4087000,
       "powerHP": 190,
       "engineType": "e-POWER",
-      "isHybrid": true,
-      "modelYear": 2026
+      "isHybrid": true
     },
     {
       "model": "JUKE",
@@ -210,13 +210,13 @@
       "priceRaw": "1.700.300 TL",
       "priceNumeric": 1700300,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 1800300,
       "priceCampaignNumeric": 1700300,
       "powerHP": 115,
       "engineDisplacement": "1.0L",
       "engineType": "DIG-T",
-      "transmissionType": "6MT",
-      "modelYear": 2026
+      "transmissionType": "6MT"
     },
     {
       "model": "JUKE",
@@ -227,13 +227,13 @@
       "priceRaw": "2.087.900 TL",
       "priceNumeric": 2087900,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 2187900,
       "priceCampaignNumeric": 2087900,
       "powerHP": 115,
       "engineDisplacement": "1.0L",
       "engineType": "DIG-T",
-      "transmissionType": "DCT",
-      "modelYear": 2026
+      "transmissionType": "DCT"
     },
     {
       "model": "JUKE",
@@ -244,13 +244,13 @@
       "priceRaw": "2.179.000 TL",
       "priceNumeric": 2179000,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 2279000,
       "priceCampaignNumeric": 2179000,
       "powerHP": 115,
       "engineDisplacement": "1.0L",
       "engineType": "DIG-T",
-      "transmissionType": "DCT",
-      "modelYear": 2026
+      "transmissionType": "DCT"
     },
     {
       "model": "JUKE",
@@ -261,13 +261,13 @@
       "priceRaw": "2.303.900 TL",
       "priceNumeric": 2303900,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 2403900,
       "priceCampaignNumeric": 2303900,
       "powerHP": 115,
       "engineDisplacement": "1.0L",
       "engineType": "DIG-T",
-      "transmissionType": "DCT",
-      "modelYear": 2026
+      "transmissionType": "DCT"
     },
     {
       "model": "JUKE",
@@ -278,13 +278,13 @@
       "priceRaw": "2.303.900 TL",
       "priceNumeric": 2303900,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 2403900,
       "priceCampaignNumeric": 2303900,
       "powerHP": 115,
       "engineDisplacement": "1.0L",
       "engineType": "DIG-T",
-      "transmissionType": "DCT",
-      "modelYear": 2026
+      "transmissionType": "DCT"
     },
     {
       "model": "JUKE",
@@ -295,13 +295,13 @@
       "priceRaw": "2.383.000 TL",
       "priceNumeric": 2383000,
       "brand": "Nissan",
+      "modelYear": 2026,
       "priceListNumeric": 2483000,
       "priceCampaignNumeric": 2383000,
       "powerHP": 115,
       "engineDisplacement": "1.0L",
       "engineType": "DIG-T",
-      "transmissionType": "DCT",
-      "modelYear": 2026
+      "transmissionType": "DCT"
     }
   ]
 }
