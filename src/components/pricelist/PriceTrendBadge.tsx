@@ -1,20 +1,15 @@
 // PriceTrendBadge - Compact inline price trend indicator with sparkline
-// Lazy-loads trend data on hover to avoid request storms
+// Uses single backend /trend endpoint instead of fetching N historical dates
 
 import { useState, useMemo, useCallback, memo } from 'react';
 import { Tooltip, Tag, Spin } from 'antd';
 import { ArrowUpOutlined, ArrowDownOutlined, MinusOutlined, LineChartOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 
-import { PriceListRow, IndexData, StoredData } from '../../types';
+import { PriceListRow } from '../../types';
 import { BRANDS } from '../../config/brands';
 import { tokens } from '../../theme/tokens';
-import { fetchFreshJson, fetchDedup, DATA_URLS } from '../../utils/fetchData';
-
-// Create normalized key for vehicle matching
-function createRowKey(model: string, trim: string, engine: string): string {
-  return `${model}-${trim}-${engine}`.toLowerCase().replace(/\s+/g, '-');
-}
+import { fetchDedup, DATA_URLS } from '../../utils/fetchData';
 
 interface PriceTrendBadgeProps {
   vehicle: PriceListRow;
@@ -25,6 +20,10 @@ interface PriceTrendBadgeProps {
 interface TrendDataPoint {
   date: string;
   price: number;
+}
+
+interface TrendResponse {
+  points: TrendDataPoint[] | null;
 }
 
 interface TrendCache {
@@ -44,15 +43,12 @@ const Sparkline = memo(({ data, width = 40, height = 16 }: { data: number[]; wid
   const max = Math.max(...data);
   const range = max - min || 1;
 
-  // Normalize data to 0-1 range
   const normalized = data.map(d => (d - min) / range);
 
-  // Create SVG path
   const stepX = width / (data.length - 1);
   const points = normalized.map((y, i) => `${i * stepX},${height - y * height}`);
   const pathD = `M${points.join(' L')}`;
 
-  // Determine color based on trend
   const isUp = data[data.length - 1] > data[0];
   const isFlat = data[data.length - 1] === data[0];
   const color = isFlat ? tokens.colors.gray[400] : isUp ? tokens.colors.error : tokens.colors.success;
@@ -80,17 +76,16 @@ function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: Pri
   const [error, setError] = useState(false);
   const [fetched, setFetched] = useState(false);
 
-  const vehicleKey = useMemo(
-    () => createRowKey(vehicle.model, vehicle.trim, vehicle.engine),
-    [vehicle.model, vehicle.trim, vehicle.engine]
-  );
+  const cacheKey = useMemo(() => {
+    const brandLower = vehicle.brand.toLowerCase();
+    const brandConfig = BRANDS.find(
+      (b) => b.name.toLowerCase() === brandLower || b.id === brandLower
+    );
+    const brandId = brandConfig?.id ?? brandLower;
+    return `${brandId}-${vehicle.model}-${vehicle.trim}-${vehicle.engine}`;
+  }, [vehicle.brand, vehicle.model, vehicle.trim, vehicle.engine]);
 
-  const cacheKey = useMemo(
-    () => `${vehicle.brand}-${vehicleKey}`,
-    [vehicle.brand, vehicleKey]
-  );
-
-  // Fetch trend data - called on hover, not on mount
+  // Fetch trend data from backend - single API call
   const fetchTrendData = useCallback(async () => {
     if (fetched || loading) return;
 
@@ -104,12 +99,8 @@ function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: Pri
 
     setLoading(true);
     setError(false);
-    const data: TrendDataPoint[] = [];
 
     try {
-      // Get index (uses fetchFreshJson which has its own caching)
-      const indexData = await fetchFreshJson<IndexData>(DATA_URLS.index);
-
       // Resolve brandId from display name
       const brandLower = vehicle.brand.toLowerCase();
       const brandConfig = BRANDS.find(
@@ -117,58 +108,21 @@ function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: Pri
       );
       const brandId = brandConfig?.id ?? brandLower;
 
-      if (!indexData.brands[brandId]) {
-        setError(true);
-        setLoading(false);
-        setFetched(true);
-        return;
-      }
-
-      const availableDates = indexData.brands[brandId].availableDates;
-
-      // Get last 10 dates of data
-      const recentDates = availableDates.slice(-10);
-
-      // Fetch each date's data using dedup to prevent duplicate requests
-      for (const dateStr of recentDates) {
-        try {
-          const [year, month, day] = dateStr.split('-');
-          const url = DATA_URLS.brandData(year, month, brandId, day);
-          const storedData = await fetchDedup<StoredData>(url);
-
-          // Build a Map for consistent matching
-          const rowMap = new Map<string, PriceListRow>();
-          for (const row of storedData.rows) {
-            rowMap.set(createRowKey(row.model, row.trim, row.engine), row);
-          }
-
-          // Find matching vehicle
-          const match = rowMap.get(vehicleKey);
-
-          if (match && match.priceNumeric > 0) {
-            data.push({
-              date: dateStr,
-              price: match.priceNumeric,
-            });
-          }
-        } catch {
-          // Skip failed dates
-        }
-      }
-
-      // Sort by date
-      data.sort((a, b) => a.date.localeCompare(b.date));
+      // Single API call - backend does the aggregation
+      const url = DATA_URLS.trend(brandId, vehicle.model, vehicle.trim, vehicle.engine);
+      const response = await fetchDedup<TrendResponse>(url);
+      const points = response.points || [];
 
       // Cache the result
-      trendCache.set(cacheKey, { data, timestamp: Date.now() });
-      setTrendData(data);
+      trendCache.set(cacheKey, { data: points, timestamp: Date.now() });
+      setTrendData(points);
     } catch {
       setError(true);
     }
 
     setLoading(false);
     setFetched(true);
-  }, [fetched, loading, cacheKey, vehicle.brand, vehicleKey]);
+  }, [fetched, loading, cacheKey, vehicle.brand, vehicle.model, vehicle.trim, vehicle.engine]);
 
   // Calculate trend stats
   const stats = useMemo(() => {

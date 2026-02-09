@@ -1,4 +1,5 @@
 // Price Trend Modal - Shows historical price chart for a vehicle
+// Uses single backend /trend endpoint instead of fetching N historical dates
 import { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Modal, Segmented, Spin, Empty, Typography, Space, Tag } from 'antd';
@@ -13,17 +14,12 @@ import {
 } from 'recharts';
 import dayjs from 'dayjs';
 
-import { PriceListRow, IndexData, StoredData } from '../../types';
+import { PriceListRow } from '../../types';
 import { tokens } from '../../theme/tokens';
 import { BRANDS } from '../../config/brands';
-import { fetchFreshJson, fetchDedup, DATA_URLS } from '../../utils/fetchData';
+import { fetchDedup, DATA_URLS } from '../../utils/fetchData';
 
 const { Title, Text } = Typography;
-
-// Create normalized key for vehicle matching (same as events.ts)
-function createRowKey(model: string, trim: string, engine: string): string {
-  return `${model}-${trim}-${engine}`.toLowerCase().replace(/\s+/g, '-');
-}
 
 interface PriceTrendModalProps {
   open: boolean;
@@ -40,81 +36,43 @@ interface TrendDataPoint {
   priceFormatted: string;
 }
 
+interface TrendResponse {
+  points: { date: string; price: number }[] | null;
+}
+
 export default function PriceTrendModal({ open, onClose, vehicle }: PriceTrendModalProps) {
   const { t } = useTranslation();
   const [period, setPeriod] = useState<PeriodType>('30');
   const [loading, setLoading] = useState(false);
   const [trendData, setTrendData] = useState<TrendDataPoint[]>([]);
 
-  // Fetch historical data for the vehicle
+  // Fetch historical data from backend - single API call
   useEffect(() => {
     if (!open || !vehicle) return;
 
     const fetchTrendData = async () => {
       setLoading(true);
-      const data: TrendDataPoint[] = [];
 
       try {
-        // Get index to find available dates (with cache-busting for fresh data)
-        const indexData = await fetchFreshJson<IndexData>(DATA_URLS.index);
-
-        // Resolve brandId from display name (e.g., "Citroën" -> "citroen")
+        // Resolve brandId from display name
         const brandLower = vehicle.brand.toLowerCase();
         const brandConfig = BRANDS.find(
           (b) => b.name.toLowerCase() === brandLower || b.id === brandLower
         );
         const brandId = brandConfig?.id ?? brandLower;
 
-        if (!indexData.brands[brandId]) {
-          setTrendData([]);
-          setLoading(false);
-          return;
-        }
+        const days = parseInt(period);
+        const url = DATA_URLS.trend(brandId, vehicle.model, vehicle.trim, vehicle.engine, days);
+        const response = await fetchDedup<TrendResponse>(url);
+        const points = response.points || [];
 
-        const availableDates = indexData.brands[brandId].availableDates;
-        const periodDays = parseInt(period);
-        const cutoffDate = dayjs().subtract(periodDays, 'day');
+        const data: TrendDataPoint[] = points.map((p) => ({
+          date: p.date,
+          dateFormatted: dayjs(p.date).format('DD/MM'),
+          price: p.price,
+          priceFormatted: `${p.price.toLocaleString('tr-TR')} TL`,
+        }));
 
-        // Filter dates within the period
-        const datesInPeriod = availableDates.filter((d) =>
-          dayjs(d).isAfter(cutoffDate) || dayjs(d).isSame(cutoffDate)
-        );
-
-        // Limit to reasonable number of dates (max 30 for performance)
-        const datesToFetch = datesInPeriod.slice(-30);
-
-        // Fetch each date's data
-        for (const dateStr of datesToFetch) {
-          try {
-            const [year, month, day] = dateStr.split('-');
-            const url = DATA_URLS.brandData(year, month, brandId, day);
-            const storedData = await fetchDedup<StoredData>(url);
-
-            // Build a Map for consistent matching (last entry wins, same as events.ts)
-            const rowMap = new Map<string, PriceListRow>();
-            for (const row of storedData.rows) {
-              rowMap.set(createRowKey(row.model, row.trim, row.engine), row);
-            }
-
-            // Find matching vehicle using normalized key
-            const vehicleKey = createRowKey(vehicle.model, vehicle.trim, vehicle.engine);
-            const match = rowMap.get(vehicleKey);
-
-            if (match && match.priceNumeric > 0) {
-              data.push({
-                date: dateStr,
-                dateFormatted: dayjs(dateStr).format('DD/MM'),
-                price: match.priceNumeric,
-                priceFormatted: match.priceRaw,
-              });
-            }
-          } catch {
-            // Skip failed dates
-          }
-        }
-
-        // Sort by date
-        data.sort((a, b) => a.date.localeCompare(b.date));
         setTrendData(data);
       } catch (error) {
         console.error('Failed to fetch trend data:', error);

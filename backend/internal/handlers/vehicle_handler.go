@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"net/http"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spehlivan/price-list/backend/internal/repository"
@@ -33,6 +34,36 @@ func (h *VehicleHandler) GetLatest(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusOK, data)
+}
+
+// GetTrend returns price history for a specific vehicle
+func (h *VehicleHandler) GetTrend(c *gin.Context) {
+	brand := c.Query("brand")
+	model := c.Query("model")
+	trim := c.Query("trim")
+	engine := c.Query("engine")
+
+	if brand == "" || model == "" || trim == "" || engine == "" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "brand, model, trim, and engine query parameters are required"})
+		return
+	}
+
+	limit := 10
+	days := 0
+	if d := c.Query("days"); d != "" {
+		if parsed, err := strconv.Atoi(d); err == nil && parsed > 0 {
+			days = parsed
+			limit = parsed // allow up to `days` data points
+		}
+	}
+
+	points, err := h.repo.GetTrend(c.Request.Context(), brand, model, trim, engine, limit, days)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch trend data"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"points": points})
 }
 
 // GetVehicles returns vehicle data for a specific brand and date

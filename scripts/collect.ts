@@ -1527,6 +1527,16 @@ const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRo
   const trims = ['GT', 'Allure', 'ALLURE', 'Active', 'ACTIVE', 'Comfort', 'COMFORT', 'Style', 'STYLE'];
 
   try {
+    // Try to extract model year from PDF header (e.g., "Ocak 2026", "2026 Model Yılı")
+    let pdfModelYear: number | undefined;
+    if (pdfData.pages.length > 0) {
+      const firstPageText = (pdfData.pages[0].content as PDFItem[]).map(i => i.str).join(' ');
+      const yearMatch = firstPageText.match(/\b(202[4-9]|203\d)\b/);
+      if (yearMatch) {
+        pdfModelYear = parseInt(yearMatch[1], 10);
+      }
+    }
+
     for (const page of pdfData.pages) {
       const items = page.content as PDFItem[];
       const rows = groupByRows(items);
@@ -1650,6 +1660,7 @@ const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRo
             priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
             priceNumeric,
             brand,
+            ...(pdfModelYear && { modelYear: pdfModelYear }),
             // Price fields
             ...(isValidPrice(priceListNumeric) && { priceListNumeric }),
             ...(priceCampaignNumeric && isValidPrice(priceCampaignNumeric) && { priceCampaignNumeric }),
@@ -1843,7 +1854,7 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
               ...(priceListNumeric && { priceListNumeric }),
               ...(priceCampaignNumeric && { priceCampaignNumeric }),
               // Model year
-              modelYear: 2025,
+              modelYear: new Date().getFullYear(),
               // Engine/Power fields
               ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
               ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
@@ -1901,7 +1912,7 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
                 priceRaw: lastCell,
                 priceNumeric,
                 brand,
-                modelYear: 2025,
+                modelYear: new Date().getFullYear(),
                 ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
                 ...(engineDetails.isElectric && { isElectric: engineDetails.isElectric }),
                 ...(engineDetails.isHybrid && { isHybrid: engineDetails.isHybrid }),
@@ -2289,6 +2300,7 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
 
         const model = currentModel || seriesName;
         const trim = cells[1] || '';
+        const modelYearRaw = cells[2]?.trim() || '';
         const transmission = cells[3] || '';
         const fuelType = cells[4] || '';
         const engineCC = cells[5] || '';
@@ -2381,6 +2393,9 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
           // Parse engine details using helper
           const engineDetails = parseBMWEngineDetails(engine, fuel, model);
 
+          // Parse model year (e.g., "2025", "2026")
+          const parsedModelYear = modelYearRaw.match(/(\d{4})/) ? parseInt(modelYearRaw.match(/(\d{4})/)![1], 10) : undefined;
+
           vehicles.push({
             model,
             trim,
@@ -2390,6 +2405,7 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
             priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
             priceNumeric,
             brand,
+            ...(parsedModelYear && { modelYear: parsedModelYear }),
             ...(fuelConsumption && { fuelConsumption }),
             ...(otvRate && { otvRate }),
             ...(monthlyLease && { monthlyLease }),
@@ -3259,12 +3275,25 @@ const parseSeatData = (html: string, brand: string): PriceListRow[] => {
     const $ = cheerio.load(html);
 
     // Find all table rows with model data
+    // Try to extract model year from page (title, heading, or data attribute)
+    let seatModelYear: number | undefined;
+    const pageTitle = $('title').text() + ' ' + $('h1, h2').first().text();
+    const seatYearMatch = pageTitle.match(/\b(202[4-9]|203\d)\b/);
+    if (seatYearMatch) {
+      seatModelYear = parseInt(seatYearMatch[1], 10);
+    }
+
     $('.table-row-container .table-row').each((_, row) => {
       const $row = $(row);
 
       // Get model name (e.g., "Ibiza 1.0 EcoTSI 115 PS DSG Style")
       const modelName = $row.find('.model-name').text().trim();
       if (!modelName) return;
+
+      // Check for per-row model year element
+      const rowYearText = $row.find('.model-year, .year').text().trim();
+      const rowYear = rowYearText.match(/\b(202[4-9]|203\d)\b/);
+      const seatRowYear = rowYear ? parseInt(rowYear[1], 10) : seatModelYear;
 
       // Get fuel type (e.g., "Benzinli", "Hibrit")
       let fuel = $row.find('.model-details').text().trim() || 'Benzin';
@@ -3353,6 +3382,7 @@ const parseSeatData = (html: string, brand: string): PriceListRow[] => {
           priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
           priceNumeric,
           brand,
+          ...(seatRowYear && { modelYear: seatRowYear }),
           ...(priceListNumeric && isValidPrice(priceListNumeric) && { priceListNumeric }),
           // Extended fields from engine details
           ...(engineDetails.powerHP && { powerHP: engineDetails.powerHP }),
@@ -3623,6 +3653,14 @@ const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRo
     const page = pdfResult.pages[0];
     if (!page) return vehicles;
 
+    // Try to extract model year from PDF header
+    let volvoPdfYear: number | undefined;
+    const allText = page.content.map((i: any) => i.str).join(' ');
+    const volvoYearMatch = allText.match(/\b(202[4-9]|203\d)\b/);
+    if (volvoYearMatch) {
+      volvoPdfYear = parseInt(volvoYearMatch[1], 10);
+    }
+
     // Group content by Y position (rounded)
     const rows: { [y: number]: { x: number; str: string }[] } = {};
     page.content.forEach(item => {
@@ -3742,6 +3780,7 @@ const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRo
           priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
           priceNumeric,
           brand,
+          ...(volvoPdfYear && { modelYear: volvoPdfYear }),
           ...(priceListNumeric && { priceListNumeric }),
           // Extended fields - engine
           ...(engineDetails.powerKW && { powerKW: engineDetails.powerKW }),
@@ -3849,6 +3888,25 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
       return vehicles;
     }
 
+    // Try to extract model year from pricesAll entry attributes or title
+    let citroenModelYear: number | undefined;
+    const firstEntry = pricesAll[0]?.attributes;
+    if (firstEntry) {
+      // Check common year fields in attributes
+      const yearCandidate = firstEntry.Year || firstEntry.year || firstEntry.ModelYear || firstEntry.modelYear;
+      if (yearCandidate && !isNaN(parseInt(String(yearCandidate), 10))) {
+        citroenModelYear = parseInt(String(yearCandidate), 10);
+      }
+      // Try to extract from Title/Name (e.g., "Fiyat Listesi 2026")
+      if (!citroenModelYear) {
+        const titleStr = firstEntry.Title || firstEntry.Name || '';
+        const yearMatch = String(titleStr).match(/\b(202[4-9]|203\d)\b/);
+        if (yearMatch) {
+          citroenModelYear = parseInt(yearMatch[1], 10);
+        }
+      }
+    }
+
     // Get the models mapping for display names
     const models = data?.pageProps?.models || [];
     const modelMap: { [key: string]: string } = {};
@@ -3874,6 +3932,8 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
       const donanim = item.donanim || '';
       const listPrice = item.list_price || '';
       const campaignPrice = item.campaign_price || '';
+      // Per-item model year (if present in data)
+      const itemYear = item.model_year || item.modelYear || item.year;
 
       // Use campaign price if available, otherwise list price
       const priceStr = campaignPrice || listPrice;
@@ -3953,6 +4013,11 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
         // Determine vehicle category (commercial vs passenger)
         const isCommercial = /Van|Berlingo|Spacetourer/i.test(modelName);
 
+        // Use per-item year if available, otherwise global PDF/page year
+        const resolvedItemYear = itemYear && !isNaN(parseInt(String(itemYear), 10))
+          ? parseInt(String(itemYear), 10)
+          : citroenModelYear;
+
         vehicles.push({
           model: modelName,
           trim: donanim,
@@ -3962,6 +4027,7 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
           priceRaw: priceNumeric.toLocaleString('tr-TR') + ' TL',
           priceNumeric,
           brand,
+          ...(resolvedItemYear && { modelYear: resolvedItemYear }),
           ...(priceListNum && isValidPrice(priceListNum) && { priceListNumeric: priceListNum }),
           ...(priceCampaignNum && isValidPrice(priceCampaignNum) && { priceCampaignNumeric: priceCampaignNum }),
           // Engine/Power fields
@@ -4404,6 +4470,7 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
 
           if (hasContent) {
             console.log(`  Found ${brand.name} price list for ${year}`);
+            (brand as any)._resolvedYear = year;
             return html;
           } else {
             console.log(`  Page found for ${year} but no price content, trying next...`);
@@ -4654,6 +4721,12 @@ async function collectAllBrands(): Promise<void> {
       } else {
         const data = await fetchBrandData(brand);
         rawRows = parseData(data, brand.name, brand.parser);
+      }
+
+      // Fill modelYear from resolved URL year (Honda, Nissan)
+      const resolvedYear = (brand as any)._resolvedYear;
+      if (resolvedYear) {
+        rawRows.forEach(r => { if (!r.modelYear) r.modelYear = resolvedYear; });
       }
 
       const rows = filterValidRows(rawRows, brand.name);

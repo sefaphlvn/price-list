@@ -72,6 +72,7 @@ func main() {
 		v1.GET("/index", vehicleHandler.GetIndex)
 		v1.GET("/latest", vehicleHandler.GetLatest)
 		v1.GET("/vehicles", vehicleHandler.GetVehicles)
+		v1.GET("/trend", vehicleHandler.GetTrend)
 		v1.GET("/stats", statsHandler.GetStats)
 
 		// Intel routes

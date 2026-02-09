@@ -134,6 +134,61 @@ func (r *VehicleRepository) GetByBrandAndDate(ctx context.Context, brandID, date
 	}, nil
 }
 
+// TrendPoint represents a single data point in a price trend
+type TrendPoint struct {
+	Date  string  `json:"date" bson:"date"`
+	Price float64 `json:"price" bson:"price"`
+}
+
+// GetTrend returns price history for a specific vehicle across recent dates.
+// If days > 0, filters to documents within that many days from today.
+// Otherwise uses the limit parameter to cap the number of documents.
+func (r *VehicleRepository) GetTrend(ctx context.Context, brandID, model, trim, engine string, limit int, days int) ([]TrendPoint, error) {
+	if limit <= 0 || limit > 365 {
+		limit = 10
+	}
+
+	matchFilter := bson.D{{Key: "brandId", Value: brandID}}
+	if days > 0 {
+		cutoff := time.Now().AddDate(0, 0, -days).Format("2006-01-02")
+		matchFilter = append(matchFilter, bson.E{Key: "date", Value: bson.D{{Key: "$gte", Value: cutoff}}})
+	}
+
+	pipeline := bson.A{
+		bson.D{{Key: "$match", Value: matchFilter}},
+		bson.D{{Key: "$sort", Value: bson.D{{Key: "date", Value: -1}}}},
+		bson.D{{Key: "$limit", Value: int64(limit)}},
+		bson.D{{Key: "$unwind", Value: "$rows"}},
+		bson.D{{Key: "$match", Value: bson.D{
+			{Key: "rows.model", Value: model},
+			{Key: "rows.trim", Value: trim},
+			{Key: "rows.engine", Value: engine},
+		}}},
+		bson.D{{Key: "$match", Value: bson.D{
+			{Key: "rows.priceNumeric", Value: bson.D{{Key: "$gt", Value: 0}}},
+		}}},
+		bson.D{{Key: "$project", Value: bson.D{
+			{Key: "date", Value: 1},
+			{Key: "price", Value: "$rows.priceNumeric"},
+			{Key: "_id", Value: 0},
+		}}},
+		bson.D{{Key: "$sort", Value: bson.D{{Key: "date", Value: 1}}}},
+	}
+
+	cursor, err := r.collection.Aggregate(ctx, pipeline)
+	if err != nil {
+		return nil, err
+	}
+	defer cursor.Close(ctx)
+
+	var points []TrendPoint
+	if err := cursor.All(ctx, &points); err != nil {
+		return nil, err
+	}
+
+	return points, nil
+}
+
 // EnsureIndexes creates the required MongoDB indexes
 func (r *VehicleRepository) EnsureIndexes(ctx context.Context) error {
 	_, err := r.collection.Indexes().CreateOne(ctx, mongo.IndexModel{

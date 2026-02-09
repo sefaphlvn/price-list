@@ -96,4 +96,6 @@ export const DATA_URLS = {
   intel: (type: string) => `${API_BASE}/api/v1/intel/${type}`,
   brandData: (_year: string, _month: string, brandId: string, day: string) =>
     `${API_BASE}/api/v1/vehicles?brand=${brandId}&date=${_year}-${_month}-${day}`,
+  trend: (brandId: string, model: string, trim: string, engine: string, days?: number) =>
+    `${API_BASE}/api/v1/trend?brand=${encodeURIComponent(brandId)}&model=${encodeURIComponent(model)}&trim=${encodeURIComponent(trim)}&engine=${encodeURIComponent(engine)}${days ? `&days=${days}` : ''}`,
 } as const;

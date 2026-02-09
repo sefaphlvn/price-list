@@ -662,8 +662,8 @@ export default function PriceListPage() {
               <Text strong style={{ color: tokens.colors.accent, fontSize: isMobile ? 12 : 14 }}>
                 {text}
               </Text>
-              {showYearBadge && !isMobile && (
-                <Tag color="blue" style={{ marginLeft: 4, fontSize: 10 }}>
+              {showYearBadge && (
+                <Tag color="blue" style={{ marginLeft: 2, fontSize: isMobile ? 9 : 10, padding: isMobile ? '0 3px' : undefined }}>
                   {record.modelYear}
                 </Tag>
               )}
