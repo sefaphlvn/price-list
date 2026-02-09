@@ -1,22 +1,58 @@
 {
-  "generatedAt": "2026-02-08T01:34:11.794Z",
-  "date": "2026-02-08",
-  "previousDate": "2026-02-07",
+  "generatedAt": "2026-02-09T01:33:09.000Z",
+  "date": "2026-02-09",
+  "previousDate": "2026-02-08",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-02-08",
-    "totalDays": 12
+    "end": "2026-02-09",
+    "totalDays": 13
   },
   "summary": {
-    "totalEvents": 608,
+    "totalEvents": 610,
     "newVehicles": 148,
-    "removedVehicles": 144,
-    "priceIncreases": 260,
+    "removedVehicles": 145,
+    "priceIncreases": 261,
     "priceDecreases": 56,
-    "avgPriceChange": 102551,
+    "avgPriceChange": 102309,
     "avgPriceChangePercent": 1.86
   },
   "events": [
+    {
+      "id": "renault-clio-techno-esprit-alpine-techno-esprit-alpine-1.0-tce-x-tronic-90hp-removed-2026-02-09",
+      "type": "removed",
+      "vehicleId": "renault-clio-techno-esprit-alpine-techno-esprit-alpine-1.0-tce-x-tronic-90hp",
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Clio",
+      "trim": "techno esprit alpine",
+      "engine": "techno esprit alpine 1.0 TCe x-tronic 90hp",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "oldPrice": 1730000.01,
+      "oldPriceFormatted": "₺1.730.000,01",
+      "date": "2026-02-09",
+      "previousDate": "2026-02-08"
+    },
+    {
+      "id": "renault-clio-evolution-evolution-1.0-tce-x-tronic-90-hp-price_increase-2026-02-09",
+      "type": "price_increase",
+      "vehicleId": "renault-clio-evolution-evolution-1.0-tce-x-tronic-90-hp",
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Clio",
+      "trim": "evolution",
+      "engine": "evolution 1.0 TCe X-Tronic 90 hp",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "oldPrice": 1673000,
+      "newPrice": 1698999.99,
+      "oldPriceFormatted": "₺1.673.000,00",
+      "newPriceFormatted": "₺1.698.999,99",
+      "priceChange": 25999.98999999999,
+      "priceChangePercent": 1.55,
+      "date": "2026-02-09",
+      "previousDate": "2026-02-08"
+    },
     {
       "id": "opel-mokka-edition-1.2-136-hp-benzin-new-2026-02-08",
       "type": "new",
@@ -10930,10 +10966,10 @@
       {
         "id": "renault",
         "name": "Renault",
-        "changeCount": 20,
-        "avgChange": 22100,
-        "avgChangePercent": 1.05,
-        "increaseCount": 20,
+        "changeCount": 21,
+        "avgChange": 22286,
+        "avgChangePercent": 1.08,
+        "increaseCount": 21,
         "decreaseCount": 0
       },
       {
@@ -11173,6 +11209,15 @@
         "decreaseCount": 0
       },
       {
+        "id": "renault-Clio",
+        "name": "Renault Clio",
+        "changeCount": 3,
+        "avgChange": 25333,
+        "avgChangePercent": 1.54,
+        "increaseCount": 3,
+        "decreaseCount": 0
+      },
+      {
         "id": "renault-Megane Sedan",
         "name": "Renault Megane Sedan",
         "changeCount": 3,
@@ -11187,15 +11232,6 @@
         "changeCount": 3,
         "avgChange": 28333,
         "avgChangePercent": 1.04,
-        "increaseCount": 3,
-        "decreaseCount": 0
-      },
-      {
-        "id": "toyota-COROLLA CROSS",
-        "name": "Toyota COROLLA CROSS",
-        "changeCount": 3,
-        "avgChange": 56000,
-        "avgChangePercent": 2.01,
         "increaseCount": 3,
         "decreaseCount": 0
       }

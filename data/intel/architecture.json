@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-08T01:34:11.825Z",
-  "date": "2026-02-08",
+  "generatedAt": "2026-02-09T01:33:09.029Z",
+  "date": "2026-02-09",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -1022,40 +1022,20 @@
       "trims": [
         {
           "trim": "evolution",
-          "price": 1582000,
-          "priceFormatted": "₺1.582.000,00",
+          "price": 1698999.99,
+          "priceFormatted": "₺1.698.999,99",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "evolution 1.0 TCe X-Tronic 90 hp",
           "transmission": "Otomatik",
           "fuel": "Benzin"
-        },
-        {
-          "trim": "evolution",
-          "price": 1673000,
-          "priceFormatted": "₺1.673.000,00",
-          "stepFromBase": 91000,
-          "stepPercent": 5.752212389380531,
-          "engine": "evolution 1.0 TCe X-Tronic 90 hp",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "techno esprit alpine",
-          "price": 1730000.01,
-          "priceFormatted": "₺1.730.000,01",
-          "stepFromBase": 148000.01,
-          "stepPercent": 9.355247155499368,
-          "engine": "techno esprit alpine 1.0 TCe x-tronic 90hp",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
         }
       ],
-      "basePrice": 1582000,
-      "topPrice": 1730000.01,
-      "priceSpread": 148000.01,
-      "priceSpreadPercent": 9.36,
-      "trimCount": 3
+      "basePrice": 1698999.99,
+      "topPrice": 1698999.99,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "renault-captur",
@@ -10541,16 +10521,6 @@
           "trimCount": 12
         },
         {
-          "brand": "Renault",
-          "brandId": "renault",
-          "model": "Clio",
-          "basePrice": 1582000,
-          "topPrice": 1730000.01,
-          "basePriceFormatted": "₺1.582.000",
-          "topPriceFormatted": "₺1.730.000",
-          "trimCount": 3
-        },
-        {
           "brand": "SEAT",
           "brandId": "seat",
           "model": "Ibiza",
@@ -10559,6 +10529,16 @@
           "basePriceFormatted": "₺1.649.726",
           "topPriceFormatted": "₺1.773.933",
           "trimCount": 2
+        },
+        {
+          "brand": "Renault",
+          "brandId": "renault",
+          "model": "Clio",
+          "basePrice": 1698999.99,
+          "topPrice": 1698999.99,
+          "basePriceFormatted": "₺1.699.000",
+          "topPriceFormatted": "₺1.699.000",
+          "trimCount": 1
         },
         {
           "brand": "Škoda",
@@ -10681,8 +10661,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 2505606,
-      "avgTopPrice": 2757706
+      "avgBasePrice": 2513406,
+      "avgTopPrice": 2755640
     },
     {
       "segment": "MPV",
@@ -10765,7 +10745,7 @@
   "summary": {
     "totalModels": 235,
     "avgTrimsPerModel": 2.3,
-    "avgPriceSpread": 308417,
-    "avgPriceSpreadPercent": 11.2
+    "avgPriceSpread": 307787,
+    "avgPriceSpreadPercent": 11.16
   }
 }

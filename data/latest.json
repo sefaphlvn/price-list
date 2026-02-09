@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-08T01:34:11.637Z",
-  "totalVehicles": 532,
+  "generatedAt": "2026-02-09T01:33:08.843Z",
+  "totalVehicles": 530,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1985,7 +1985,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "R5 E-Tech ELEKTRİKLİ",
@@ -2101,43 +2101,14 @@
           "engine": "evolution 1.0 TCe X-Tronic 90 hp",
           "transmission": "Otomatik",
           "fuel": "Benzin",
-          "priceRaw": "₺1.582.000,00",
-          "priceNumeric": 1582000,
-          "brand": "Renault",
-          "modelYear": "2025",
-          "otvRate": 75,
-          "netPrice": 724646.67,
-          "otvAmount": 543485,
-          "kdvAmount": 253626.33,
-          "optionalEquipment": [
-            {
-              "name": "Metalik Renk",
-              "price": 13000
-            },
-            {
-              "name": "Yedek Lastik",
-              "price": 12000
-            }
-          ],
-          "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1582000,
-          "powerHP": 90,
-          "engineType": "TCe"
-        },
-        {
-          "model": "Clio",
-          "trim": "evolution",
-          "engine": "evolution 1.0 TCe X-Tronic 90 hp",
-          "transmission": "Otomatik",
-          "fuel": "Benzin",
-          "priceRaw": "₺1.673.000,00",
-          "priceNumeric": 1673000,
+          "priceRaw": "₺1.698.999,99",
+          "priceNumeric": 1698999.99,
           "brand": "Renault",
           "modelYear": "2026",
           "otvRate": 75,
-          "netPrice": 767980,
-          "otvAmount": 575985,
-          "kdvAmount": 268793,
+          "netPrice": 780360.95,
+          "otvAmount": 585270.71,
+          "kdvAmount": 273126.33,
           "optionalEquipment": [
             {
               "name": "Metalik Renk",
@@ -2149,36 +2120,7 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1673000,
-          "powerHP": 90,
-          "engineType": "TCe"
-        },
-        {
-          "model": "Clio",
-          "trim": "techno esprit alpine",
-          "engine": "techno esprit alpine 1.0 TCe x-tronic 90hp",
-          "transmission": "Otomatik",
-          "fuel": "Benzin",
-          "priceRaw": "₺1.730.000,01",
-          "priceNumeric": 1730000.01,
-          "brand": "Renault",
-          "modelYear": "2025",
-          "otvRate": 75,
-          "netPrice": 795122.86,
-          "otvAmount": 596342.15,
-          "kdvAmount": 278293,
-          "optionalEquipment": [
-            {
-              "name": "Metalik Renk",
-              "price": 13000
-            },
-            {
-              "name": "Yedek Lastik",
-              "price": 12000
-            }
-          ],
-          "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1730000.01,
+          "otvIncentivePrice": 1698999.99,
           "powerHP": 90,
           "engineType": "TCe"
         },
@@ -2726,7 +2668,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3403,7 +3345,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "i20",
@@ -4008,7 +3950,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "E-208",
@@ -4515,7 +4457,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "ATTO 2",
@@ -4731,7 +4673,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Corsa",
@@ -5045,7 +4987,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5555,7 +5497,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6500,7 +6442,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "A 200",
@@ -7312,7 +7254,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -8030,7 +7972,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8168,7 +8110,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8456,7 +8398,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -8541,7 +8483,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Ibiza",
@@ -8669,7 +8611,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Stonic",
@@ -9089,7 +9031,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "EX30",
@@ -9622,7 +9564,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-02-08",
+      "date": "2026-02-09",
       "vehicles": [
         {
           "model": "Egea Sedan",
