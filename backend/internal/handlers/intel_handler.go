@@ -74,3 +74,13 @@ func (h *IntelHandler) GetErrors(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, data)
 }
+
+// GetInsights returns the latest deal scores and outlier data
+func (h *IntelHandler) GetInsights(c *gin.Context) {
+	data, err := h.repo.GetInsights(c.Request.Context())
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch insights data"})
+		return
+	}
+	c.JSON(http.StatusOK, data)
+}

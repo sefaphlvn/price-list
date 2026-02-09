@@ -75,17 +75,16 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
         runtimeCaching: [
           // IMPORTANT: Specific patterns MUST come before general patterns
-          // Critical data files - always fetch from network first
-          // Note: patterns allow query strings (e.g., ?_t=timestamp for cache busting)
+          // Critical API endpoints - always fetch from network first
           {
-            urlPattern: /\/data\/index\.json(\?.*)?$/,
+            urlPattern: /\/api\/v1\/index(\?.*)?$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'index-cache',
               networkTimeoutSeconds: 3,
               expiration: {
                 maxEntries: 1,
-                maxAgeSeconds: 60, // 1 minute - critical file, always fresh
+                maxAgeSeconds: 60, // 1 minute - critical, always fresh
               },
               cacheableResponse: {
                 statuses: [0, 200],
@@ -93,7 +92,7 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: /\/data\/latest\.json(\?.*)?$/,
+            urlPattern: /\/api\/v1\/latest(\?.*)?$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'latest-cache',
@@ -108,19 +107,19 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: /\/data\/stats\/.*\.json(\?.*)?$/,
+            urlPattern: /\/api\/v1\/stats(\?.*)?$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'stats-cache',
               networkTimeoutSeconds: 5,
               expiration: {
-                maxEntries: 10,
+                maxEntries: 1,
                 maxAgeSeconds: 60 * 15, // 15 minutes
               },
             },
           },
           {
-            urlPattern: /\/data\/intel\/.*\.json(\?.*)?$/,
+            urlPattern: /\/api\/v1\/intel\/.*(\?.*)?$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'intel-cache',
@@ -131,12 +130,12 @@ export default defineConfig({
               },
             },
           },
-          // Historical data - can use stale-while-revalidate (data doesn't change once created)
+          // Vehicle data - can use stale-while-revalidate (historical data doesn't change)
           {
-            urlPattern: /\/data\/\d{4}\/\d{2}\/.*\.json(\?.*)?$/,
+            urlPattern: /\/api\/v1\/vehicles\?.*$/,
             handler: 'StaleWhileRevalidate',
             options: {
-              cacheName: 'historical-data-cache',
+              cacheName: 'vehicle-data-cache',
               expiration: {
                 maxEntries: 200,
                 maxAgeSeconds: 60 * 60 * 24 * 7, // 7 days

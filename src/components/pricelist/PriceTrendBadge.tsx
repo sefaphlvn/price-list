@@ -128,7 +128,7 @@ function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: Pri
         for (const dateStr of recentDates) {
           try {
             const [year, month, day] = dateStr.split('-');
-            const url = `./data/${year}/${month}/${brandId}/${day}.json`;
+            const url = DATA_URLS.brandData(year, month, brandId, day);
             const response = await fetch(url);
 
             if (!response.ok) continue;

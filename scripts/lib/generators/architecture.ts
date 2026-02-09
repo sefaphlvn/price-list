@@ -6,6 +6,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
+import { saveToMongo } from '../mongodb';
 import { PriceListRow, StoredData, IndexData } from '../types';
 
 export interface TrimStep {
@@ -306,6 +307,7 @@ export async function generateArchitecture(): Promise<ArchitectureData> {
   fs.mkdirSync(intelDir, { recursive: true });
   const outputPath = path.join(intelDir, 'architecture.json');
   fs.writeFileSync(outputPath, JSON.stringify(architectureData, null, 2), 'utf-8');
+  await saveToMongo('intel_architecture', architectureData as unknown as Record<string, unknown>);
 
   console.log(`[generateArchitecture] Saved to ${outputPath}`);
   console.log(`[generateArchitecture] Ladders: ${ladders.length}, Segments: ${crossBrandComparison.length}`);

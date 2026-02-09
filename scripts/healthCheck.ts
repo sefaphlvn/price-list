@@ -83,7 +83,7 @@ async function main(): Promise<void> {
       code: 'INDEX_NOT_FOUND',
       message: 'index.json not found',
     });
-    ErrorLogger.saveErrors();
+    await ErrorLogger.saveErrors();
     outputReport(report);
     process.exit(1);
   }
@@ -244,7 +244,7 @@ async function main(): Promise<void> {
   outputReport(report);
 
   // Save errors to central error log
-  ErrorLogger.saveErrors();
+  await ErrorLogger.saveErrors();
 
   // Save health report
   const reportPath = path.join(dataDir, 'health-report.json');
@@ -285,7 +285,7 @@ function outputReport(report: HealthReport): void {
   console.log('');
 }
 
-main().catch(error => {
+main().catch(async error => {
   console.error('Fatal error:', error);
   ErrorLogger.logError({
     category: 'FILE_ERROR',
@@ -294,6 +294,6 @@ main().catch(error => {
     message: `Fatal error in health check: ${error instanceof Error ? error.message : String(error)}`,
     stack: error instanceof Error ? error.stack : undefined,
   });
-  ErrorLogger.saveErrors();
+  await ErrorLogger.saveErrors();
   process.exit(1);
 });

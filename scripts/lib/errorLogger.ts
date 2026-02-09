@@ -5,6 +5,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { saveToMongo } from './mongodb';
 
 export type ErrorSeverity = 'error' | 'warning' | 'info';
 export type ErrorCategory = 'HTTP_ERROR' | 'PARSE_ERROR' | 'VALIDATION_ERROR' | 'FILE_ERROR' | 'DATA_QUALITY_ERROR';
@@ -155,7 +156,7 @@ class ErrorLoggerClass {
   /**
    * Save errors to JSON file
    */
-  saveErrors(): void {
+  async saveErrors(): Promise<void> {
     // Ensure data directory exists
     if (!fs.existsSync(this.dataDir)) {
       fs.mkdirSync(this.dataDir, { recursive: true });
@@ -169,6 +170,7 @@ class ErrorLoggerClass {
     };
 
     fs.writeFileSync(this.outputPath, JSON.stringify(errorLog, null, 2), 'utf-8');
+    await saveToMongo('errors', errorLog as unknown as Record<string, unknown>);
     console.log(`[ErrorLogger] Saved ${this.errors.length} errors to ${this.outputPath}`);
   }
 

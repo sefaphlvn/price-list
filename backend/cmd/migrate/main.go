@@ -70,7 +70,10 @@ func main() {
 	// 4. Import errors
 	importSingleFile(db, "errors", filepath.Join(absDataDir, "errors.json"))
 
-	// 5. Create indexes
+	// 5. Import insights
+	importSingleFile(db, "insights", filepath.Join(absDataDir, "insights", "latest.json"))
+
+	// 6. Create indexes
 	createIndexes(db)
 
 	log.Println("Migration completed!")

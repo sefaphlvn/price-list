@@ -31,6 +31,7 @@ import {
 } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
 import { useIsMobile } from '../hooks/useMediaQuery';
+import { DATA_URLS } from '../utils/fetchData';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -94,7 +95,7 @@ export default function ErrorsPage() {
     setLoading(true);
     setFetchError(null);
     try {
-      const response = await fetch('./data/errors.json');
+      const response = await fetch(DATA_URLS.errors);
       if (response.ok) {
         const data = await response.json();
         setErrorLog(data);

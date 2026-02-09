@@ -146,7 +146,7 @@ export default function StatisticsPage() {
               const brandInfo = indexData.brands[brandId];
               const latestDate = brandInfo.latestDate;
               const [year, month, day] = latestDate.split('-');
-              const url = `./data/${year}/${month}/${brandId}/${day}.json`;
+              const url = DATA_URLS.brandData(year, month, brandId, day);
 
               const response = await fetch(url);
               if (response.ok) {

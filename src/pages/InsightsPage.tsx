@@ -46,7 +46,7 @@ import {
 
 import { tokens } from '../theme/tokens';
 import { staggerContainer, staggerItem } from '../theme/animations';
-import { fetchFreshJson } from '../utils/fetchData';
+import { fetchFreshJson, DATA_URLS } from '../utils/fetchData';
 import DealScoreList from '../components/insights/DealScoreList';
 import TodaysDeals from '../components/insights/TodaysDeals';
 import OverpricedSection from '../components/insights/OverpricedSection';
@@ -115,7 +115,7 @@ export default function InsightsPage() {
     const fetchInsights = async () => {
       try {
         setLoading(true);
-        const data = await fetchFreshJson<InsightsData>('./data/insights/latest.json');
+        const data = await fetchFreshJson<InsightsData>(DATA_URLS.insights);
         if (!cancelled) {
           setInsights(data);
           setError(null);

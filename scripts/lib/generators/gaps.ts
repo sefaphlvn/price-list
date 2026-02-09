@@ -6,6 +6,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
+import { saveToMongo } from '../mongodb';
 import { PriceListRow, StoredData, IndexData } from '../types';
 
 export interface GapCell {
@@ -579,6 +580,7 @@ export async function generateGaps(): Promise<GapsData> {
   fs.mkdirSync(intelDir, { recursive: true });
   const outputPath = path.join(intelDir, 'gaps.json');
   fs.writeFileSync(outputPath, JSON.stringify(gapsData, null, 2), 'utf-8');
+  await saveToMongo('intel_gaps', gapsData as unknown as Record<string, unknown>);
 
   console.log(`[generateGaps] Saved to ${outputPath}`);
   console.log(`[generateGaps] Segments: ${allSegments.length}, Gaps: ${totalGaps}, Opportunities: ${topOpportunities.length}`);

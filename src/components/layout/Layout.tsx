@@ -101,7 +101,7 @@ export default function Layout() {
             try {
               const latestDate = indexData.brands[brandId].latestDate;
               const [year, month, day] = latestDate.split('-');
-              const url = `./data/${year}/${month}/${brandId}/${day}.json`;
+              const url = DATA_URLS.brandData(year, month, brandId, day);
 
               const response = await fetch(url);
               if (!response.ok) return;

@@ -15,6 +15,7 @@ type IntelRepository struct {
 	promos       *mongo.Collection
 	lifecycle    *mongo.Collection
 	errors       *mongo.Collection
+	insights     *mongo.Collection
 }
 
 func NewIntelRepository(db *mongo.Database) *IntelRepository {
@@ -25,6 +26,7 @@ func NewIntelRepository(db *mongo.Database) *IntelRepository {
 		promos:       db.Collection("intel_promos"),
 		lifecycle:    db.Collection("intel_lifecycle"),
 		errors:       db.Collection("errors"),
+		insights:     db.Collection("insights"),
 	}
 }
 
@@ -65,4 +67,8 @@ func (r *IntelRepository) GetLifecycle(ctx context.Context) (bson.M, error) {
 
 func (r *IntelRepository) GetErrors(ctx context.Context) (bson.M, error) {
 	return getLatestRaw(ctx, r.errors, options.FindOne().SetSort(bson.D{{Key: "generatedAt", Value: -1}}))
+}
+
+func (r *IntelRepository) GetInsights(ctx context.Context) (bson.M, error) {
+	return getLatestRaw(ctx, r.insights, latestSort)
 }

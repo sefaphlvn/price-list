@@ -6,6 +6,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
+import { saveToMongo } from '../mongodb';
 import { PriceListRow, StoredData, IndexData } from '../types';
 
 export interface ModelYearTransition {
@@ -344,6 +345,7 @@ export async function generateLifecycle(): Promise<LifecycleData> {
   fs.mkdirSync(intelDir, { recursive: true });
   const outputPath = path.join(intelDir, 'lifecycle.json');
   fs.writeFileSync(outputPath, JSON.stringify(lifecycleData, null, 2), 'utf-8');
+  await saveToMongo('intel_lifecycle', lifecycleData as unknown as Record<string, unknown>);
 
   console.log(`[generateLifecycle] Saved to ${outputPath}`);
   console.log(`[generateLifecycle] Models: ${allModels.length}, Transitions: ${modelYearTransitions.length}, Stale: ${staleModels.length}`);

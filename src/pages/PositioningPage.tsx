@@ -43,6 +43,7 @@ import Fuse from 'fuse.js';
 import { tokens } from '../theme/tokens';
 import { ChartInfoTooltip, chartDescriptions } from '../components/common/ChartInfoTooltip';
 import { useIsMobile } from '../hooks/useMediaQuery';
+import { DATA_URLS } from '../utils/fetchData';
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -189,7 +190,7 @@ export default function PositioningPage() {
         setLoading(true);
         setError(null);
 
-        const response = await fetch('./data/latest.json', { signal: controller.signal });
+        const response = await fetch(DATA_URLS.latest, { signal: controller.signal });
         if (!response.ok) {
           throw new Error('Veri yuklenemedi');
         }

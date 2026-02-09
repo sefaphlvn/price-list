@@ -308,7 +308,7 @@ export default function PriceListPage() {
 
           const fetchPromises = BRANDS.map(async (brand) => {
             try {
-              const url = `./data/${year}/${month}/${brand.id}/${day}.json`;
+              const url = DATA_URLS.brandData(year, month, brand.id, day);
               const response = await fetch(url, { signal });
               if (response.ok) {
                 const storedData: StoredData = await response.json();
@@ -345,7 +345,7 @@ export default function PriceListPage() {
           }
         } else {
           // Fetch single brand
-          const url = `./data/${year}/${month}/${selectedBrand}/${day}.json`;
+          const url = DATA_URLS.brandData(year, month, selectedBrand, day);
           const response = await fetch(url, { signal });
           if (!response.ok) {
             throw new Error(t('errors.noData'));

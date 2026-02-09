@@ -56,15 +56,20 @@ export async function fetchCachedJson<T>(
 }
 
 /**
+ * API Base URL
+ */
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://api.otofiyatlist.com';
+
+/**
  * Data URLs
  */
 export const DATA_URLS = {
-  index: './data/index.json',
-  latest: './data/latest.json',
-  stats: './data/stats/precomputed.json',
-  errors: './data/errors.json',
-  insights: './data/insights/latest.json',
-  intel: (type: string) => `./data/intel/${type}.json`,
-  brandData: (year: string, month: string, brandId: string, day: string) =>
-    `./data/${year}/${month}/${brandId}/${day}.json`,
+  index: `${API_BASE}/api/v1/index`,
+  latest: `${API_BASE}/api/v1/latest`,
+  stats: `${API_BASE}/api/v1/stats`,
+  errors: `${API_BASE}/api/v1/errors`,
+  insights: `${API_BASE}/api/v1/insights`,
+  intel: (type: string) => `${API_BASE}/api/v1/intel/${type}`,
+  brandData: (_year: string, _month: string, brandId: string, day: string) =>
+    `${API_BASE}/api/v1/vehicles?brand=${brandId}&date=${_year}-${_month}-${day}`,
 } as const;

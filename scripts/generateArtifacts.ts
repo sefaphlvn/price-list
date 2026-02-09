@@ -15,6 +15,7 @@ import { generateGaps } from './lib/generators/gaps';
 import { generatePromos } from './lib/generators/promos';
 import { generateLifecycle } from './lib/generators/lifecycle';
 import { ErrorLogger } from './lib/errorLogger';
+import { disconnectMongo } from './lib/mongodb';
 
 async function main(): Promise<void> {
   console.log('='.repeat(60));
@@ -209,8 +210,11 @@ async function main(): Promise<void> {
   }
 
   // Save error log to data/errors.json
-  ErrorLogger.saveErrors();
+  await ErrorLogger.saveErrors();
   console.log(`\nErrors logged: ${ErrorLogger.getErrorCount()}`);
+
+  // Disconnect MongoDB
+  await disconnectMongo();
 
   // Exit with error code if any artifact failed
   if (failed.length > 0) {

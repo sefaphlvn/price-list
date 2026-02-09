@@ -6,6 +6,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
+import { saveToMongo } from '../mongodb';
 import { PriceListRow, StoredData, IndexData } from '../types';
 
 interface VehicleWithScore {
@@ -539,6 +540,7 @@ export async function generateInsights(): Promise<InsightsData> {
   // Also save as latest insights
   const latestPath = path.join(insightsDir, 'latest.json');
   fs.writeFileSync(latestPath, JSON.stringify(insights, null, 2), 'utf-8');
+  await saveToMongo('insights', insights as unknown as Record<string, unknown>);
 
   console.log(`[generateInsights] Saved to ${outputPath}`);
   console.log(`[generateInsights] Top deals: ${topDeals.length}, Cheap outliers: ${cheapOutliers.length}, Expensive outliers: ${expensiveOutliers.length}`);

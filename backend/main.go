@@ -85,6 +85,7 @@ func main() {
 		}
 
 		v1.GET("/errors", intelHandler.GetErrors)
+		v1.GET("/insights", intelHandler.GetInsights)
 	}
 
 	// Create HTTP server

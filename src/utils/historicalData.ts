@@ -1,9 +1,8 @@
 // Historical Data Utilities
-// Fetches data from pre-collected JSON files (no live API calls)
+// Fetches data from backend API
 
 import { IndexData, StoredData, PriceListRow } from '../types';
-
-const BASE_PATH = './data';
+import { DATA_URLS } from './fetchData';
 
 // Cache for index data
 let indexCache: IndexData | null = null;
@@ -15,7 +14,7 @@ export const fetchIndex = async (): Promise<IndexData | null> => {
   if (indexCache) return indexCache;
 
   try {
-    const response = await fetch(`${BASE_PATH}/index.json`);
+    const response = await fetch(DATA_URLS.index);
     if (!response.ok) return null;
 
     // Check if response is actually JSON (not HTML from SPA fallback)
@@ -50,9 +49,9 @@ export const fetchBrandData = async (
       targetDate = index.brands[brandId].latestDate;
     }
 
-    // Parse date to get path components
+    // Build API URL
     const [year, month, day] = targetDate.split('-');
-    const url = `${BASE_PATH}/${year}/${month}/${brandId}/${day}.json`;
+    const url = DATA_URLS.brandData(year, month, brandId, day);
 
     const response = await fetch(url);
     if (!response.ok) return null;

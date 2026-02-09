@@ -7,6 +7,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
+import { saveToMongo } from '../mongodb';
 import { PriceListRow, StoredData, IndexData } from '../types';
 
 export interface PriceDrop {
@@ -340,6 +341,7 @@ export async function generatePromos(): Promise<PromosData> {
   fs.mkdirSync(intelDir, { recursive: true });
   const outputPath = path.join(intelDir, 'promos.json');
   fs.writeFileSync(outputPath, JSON.stringify(promosData, null, 2), 'utf-8');
+  await saveToMongo('intel_promos', promosData as unknown as Record<string, unknown>);
 
   console.log(`[generatePromos] Saved to ${outputPath}`);
   console.log(`[generatePromos] Price drops: ${priceDrops.length}, Recent drops: ${recentDrops.length}`);

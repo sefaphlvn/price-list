@@ -2,6 +2,7 @@
 // Monitors network status and provides offline state
 
 import { useState, useEffect, useCallback } from 'react';
+import { DATA_URLS } from '../utils/fetchData';
 
 interface OfflineState {
   isOffline: boolean;
@@ -21,7 +22,7 @@ export function useOffline(): OfflineState & {
   const checkConnection = useCallback(async (): Promise<boolean> => {
     try {
       // Try to fetch a small resource to verify actual connectivity
-      const response = await fetch('./data/index.json', {
+      const response = await fetch(DATA_URLS.index, {
         method: 'HEAD',
         cache: 'no-store',
       });

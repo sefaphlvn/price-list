@@ -6,6 +6,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { safeParseJSON } from '../errorLogger';
+import { saveToMongo } from '../mongodb';
 import { PriceListRow, StoredData, IndexData } from '../types';
 
 interface BrandStats {
@@ -446,6 +447,7 @@ export async function generateStats(): Promise<PrecomputedStats> {
   fs.mkdirSync(statsDir, { recursive: true });
   const outputPath = path.join(statsDir, 'precomputed.json');
   fs.writeFileSync(outputPath, JSON.stringify(stats, null, 2), 'utf-8');
+  await saveToMongo('stats', stats as unknown as Record<string, unknown>);
   console.log(`[generateStats] Saved to ${outputPath}`);
 
   return stats;

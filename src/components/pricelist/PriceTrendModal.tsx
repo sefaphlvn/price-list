@@ -87,7 +87,7 @@ export default function PriceTrendModal({ open, onClose, vehicle }: PriceTrendMo
         for (const dateStr of datesToFetch) {
           try {
             const [year, month, day] = dateStr.split('-');
-            const url = `./data/${year}/${month}/${brandId}/${day}.json`;
+            const url = DATA_URLS.brandData(year, month, brandId, day);
             const response = await fetch(url);
 
             if (!response.ok) continue;

@@ -34,6 +34,7 @@ import { PriceListRow, IndexData, StoredData } from '../types';
 import { tokens } from '../theme/tokens';
 import { staggerContainer, staggerItem, cardHoverVariants } from '../theme/animations';
 import { useIsMobile } from '../hooks/useMediaQuery';
+import { DATA_URLS } from '../utils/fetchData';
 
 const { Title, Text } = Typography;
 
@@ -72,7 +73,7 @@ export default function ComparisonPage() {
 
       try {
         // First fetch the index to get latest dates
-        const indexResponse = await fetch('./data/index.json', { signal });
+        const indexResponse = await fetch(DATA_URLS.index, { signal });
         if (!indexResponse.ok) {
           setLoading(false);
           return;
@@ -100,7 +101,7 @@ export default function ComparisonPage() {
             try {
               const latestDate = indexData.brands[brandId].latestDate;
               const [year, month, day] = latestDate.split('-');
-              const url = `./data/${year}/${month}/${brandId}/${day}.json`;
+              const url = DATA_URLS.brandData(year, month, brandId, day);
 
               const response = await fetch(url, { signal });
               if (!response.ok) return;

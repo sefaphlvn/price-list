@@ -12,6 +12,7 @@ import { XMLParser } from 'fast-xml-parser';
 import { PDFExtract, PDFExtractResult, PDFExtractPage } from 'pdf.js-extract';
 import * as cheerio from 'cheerio';
 import { ErrorLogger } from './lib/errorLogger';
+import { saveVehicleToMongo, disconnectMongo } from './lib/mongodb';
 
 // Types
 interface PriceListRow {
@@ -4489,7 +4490,7 @@ async function fetchMultiUrlBrand(brand: BrandConfig): Promise<PriceListRow[]> {
   return allRows;
 }
 
-// Save data to file
+// Save data to file and MongoDB
 function saveData(brandId: string, date: Date, data: StoredData): void {
   const year = date.getFullYear().toString();
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
@@ -4501,9 +4502,13 @@ function saveData(brandId: string, date: Date, data: StoredData): void {
   // Create directory if it doesn't exist
   fs.mkdirSync(dirPath, { recursive: true });
 
-  // Write data
+  // Write data to JSON file
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
   console.log(`  Saved to ${filePath}`);
+
+  // Write to MongoDB (async, don't block)
+  const dateStr = `${year}-${month}-${day}`;
+  saveVehicleToMongo(brandId, dateStr, data as unknown as Record<string, unknown>).catch(() => {});
 }
 
 // Safe JSON parse with fallback
@@ -4720,7 +4725,7 @@ async function collectAllBrands(): Promise<void> {
   }
 
   // Save errors before saving index
-  ErrorLogger.saveErrors();
+  await ErrorLogger.saveErrors();
 
   // Save updated index
   saveIndex(index);
@@ -4770,6 +4775,9 @@ async function collectAllBrands(): Promise<void> {
     failed.forEach(r => console.log(`  - ${r.brand}: ${r.error}`));
   }
 
+  // Disconnect MongoDB
+  await disconnectMongo();
+
   // Don't exit with error if we have fallback data
   // Only exit with error if ALL brands failed
   if (successful.length === 0) {
@@ -4779,7 +4787,7 @@ async function collectAllBrands(): Promise<void> {
 }
 
 // Run
-collectAllBrands().catch(error => {
+collectAllBrands().catch(async error => {
   console.error('Fatal error:', error);
   ErrorLogger.logError({
     category: 'FILE_ERROR',
@@ -4788,6 +4796,6 @@ collectAllBrands().catch(error => {
     message: `Fatal error in collection: ${error instanceof Error ? error.message : String(error)}`,
     stack: error instanceof Error ? error.stack : undefined,
   });
-  ErrorLogger.saveErrors();
+  await ErrorLogger.saveErrors();
   process.exit(1);
 });
