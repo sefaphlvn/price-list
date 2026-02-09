@@ -1,6 +1,6 @@
 // Layout Component - Main layout wrapper with header and footer
 // Includes price change checking on load
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect, useRef, Suspense } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Spin } from 'antd';
@@ -35,6 +35,7 @@ export default function Layout() {
   const location = useLocation();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [vehicles, setVehicles] = useState<LatestVehicle[]>([]);
+  const vehiclesFetched = useRef(false);
   const commandPalette = useCommandPalette();
 
   const {
@@ -44,30 +45,47 @@ export default function Layout() {
     setPriceChangesChecked,
   } = useAppStore();
 
-  // Fetch vehicles for command palette search
+  // Fetch vehicles for command palette search - only when palette is first opened
   useEffect(() => {
+    if (!commandPalette.isOpen || vehiclesFetched.current) return;
+    vehiclesFetched.current = true;
+
+    const controller = new AbortController();
+
     const fetchVehicles = async () => {
       try {
-        const data = await fetchFreshJson<any>(DATA_URLS.latest);
-        if (data && Array.isArray(data.vehicles)) {
-          setVehicles(data.vehicles.map((v: any) => ({
-            brand: v.brand || '',
-            model: v.model || '',
-            trim: v.trim || '',
-            engine: v.engine || '',
-            fuel: v.fuel || '',
-            transmission: v.transmission || '',
-            price: v.priceNumeric || v.price || 0,
-            priceFormatted: v.priceRaw || v.priceFormatted || '',
-          })));
+        const data = await fetchDedup<any>(DATA_URLS.latest);
+        if (controller.signal.aborted) return;
+
+        // Extract vehicles from brands object
+        const allVehicles: LatestVehicle[] = [];
+        const brands = data?.brands || {};
+        Object.values(brands).forEach((brand: any) => {
+          (brand.vehicles || []).forEach((v: any) => {
+            allVehicles.push({
+              brand: v.brand || brand.name || '',
+              model: v.model || '',
+              trim: v.trim || '',
+              engine: v.engine || '',
+              fuel: v.fuel || '',
+              transmission: v.transmission || '',
+              price: v.priceNumeric || v.price || 0,
+              priceFormatted: v.priceRaw || v.priceFormatted || '',
+            });
+          });
+        });
+
+        if (allVehicles.length > 0) {
+          setVehicles(allVehicles);
         }
       } catch {
-        // Silently fail - latest.json may not exist in dev mode
+        // Silently fail
       }
     };
 
     fetchVehicles();
-  }, []);
+    return () => controller.abort();
+  }, [commandPalette.isOpen]);
 
   // Check for price changes on app load
   useEffect(() => {

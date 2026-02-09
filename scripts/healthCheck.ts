@@ -8,6 +8,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { ErrorLogger, safeParseJSON } from './lib/errorLogger';
+import { disconnectMongo } from './lib/mongodb';
 
 interface IndexData {
   lastUpdated: string;
@@ -251,6 +252,9 @@ async function main(): Promise<void> {
   fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf-8');
   console.log(`Health report saved to ${reportPath}`);
 
+  // Close MongoDB connection to allow process to exit
+  await disconnectMongo();
+
   // Only fail if more than 5 brands have errors
   // This allows partial failures without breaking the entire pipeline
   const MAX_ALLOWED_FAILURES = 5;
@@ -295,5 +299,6 @@ main().catch(async error => {
     stack: error instanceof Error ? error.stack : undefined,
   });
   await ErrorLogger.saveErrors();
+  await disconnectMongo();
   process.exit(1);
 });
