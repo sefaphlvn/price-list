@@ -1,0 +1,31 @@
+replicaCount: 1
+
+image:
+  repository: jhonbrownn/price-list-api
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+  nodePort: 30080
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+env:
+  GIN_MODE: release
+  PORT: "8080"
+  MONGO_DATABASE: pricelist
+  CORS_ORIGINS: "https://otofiyatlist.com,https://www.otofiyatlist.com,http://localhost:5173"
+
+# MongoDB credentials from Kubernetes secret
+mongoSecret:
+  name: price-list-mongo
+  userKey: MONGO_USER
+  passKey: MONGO_PASS
