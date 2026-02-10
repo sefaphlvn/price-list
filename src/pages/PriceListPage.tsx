@@ -100,13 +100,19 @@ const loadingCenterStyle = { display: 'flex', justifyContent: 'center', padding:
 const sliderPadStyle = { padding: '0 8px' } as const;
 const sliderLabelStyle = { fontSize: 12, marginBottom: 4, display: 'block' as const } as const;
 
-/** Remove exact duplicate rows (same model+trim+engine+transmission+fuel+price) */
-function deduplicateRows(rows: PriceListRow[]): PriceListRow[] {
+/** Remove exact duplicate rows and assign stable unique _rowKey for virtual scroll */
+function prepareRows(rows: PriceListRow[]): PriceListRow[] {
   const seen = new Set<string>();
+  const keyCount = new Map<string, number>();
   return rows.filter((row) => {
-    const key = `${row.brand}|${row.model}|${row.trim}|${row.engine}|${row.transmission}|${row.fuel}|${row.priceNumeric}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
+    const dedupKey = `${row.brand}|${row.model}|${row.trim}|${row.engine}|${row.transmission}|${row.fuel}|${row.priceNumeric}`;
+    if (seen.has(dedupKey)) return false;
+    seen.add(dedupKey);
+    // Assign unique _rowKey: base key + counter suffix for same base key
+    const baseKey = `${row.brand}-${row.model}-${row.trim}-${row.engine || 'std'}-${row.transmission || 'auto'}`;
+    const count = keyCount.get(baseKey) || 0;
+    keyCount.set(baseKey, count + 1);
+    (row as any)._rowKey = count > 0 ? `${baseKey}-${count}` : baseKey;
     return true;
   });
 }
@@ -377,7 +383,7 @@ export default function PriceListPage() {
               loading: false,
               error: null,
               data: {
-                rows: deduplicateRows(allRows),
+                rows: prepareRows(allRows),
                 lastUpdated: latestTimestamp,
                 brand: t('common.all'),
               },
@@ -398,7 +404,7 @@ export default function PriceListPage() {
               loading: false,
               error: null,
               data: {
-                rows: deduplicateRows(storedData.rows),
+                rows: prepareRows(storedData.rows),
                 lastUpdated: storedData.collectedAt,
                 brand: storedData.brand,
               },
@@ -1292,7 +1298,7 @@ export default function PriceListPage() {
 <Table
               columns={columns}
               dataSource={filteredData}
-              rowKey={(record, index) => `${record.brand}-${record.model}-${record.trim}-${record.engine || 'std'}-${record.transmission || 'auto'}-${index}`}
+              rowKey="_rowKey"
               pagination={pagination}
               onChange={handleTableChange}
               scroll={{ x: isMobile ? 500 : 1200, y: isMobile ? undefined : 600 }}
