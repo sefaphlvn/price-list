@@ -4096,15 +4096,19 @@ const parseData = (data: any, brand: string, parserType: string, modelName?: str
   }
 };
 
-// Fetch data from a single URL
+// Fetch data from a single URL (with 30s timeout to prevent CI hangs)
 async function fetchSingleUrl(url: string, responseType?: string): Promise<any> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 30_000);
+
   const response = await fetch(url, {
+    signal: controller.signal,
     headers: {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
       'Accept': 'application/json, application/xml, text/xml, text/plain, application/pdf, text/html, */*',
       'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
     },
-  });
+  }).finally(() => clearTimeout(timeout));
 
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}: ${response.statusText}`);

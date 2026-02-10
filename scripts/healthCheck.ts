@@ -263,7 +263,7 @@ async function main(): Promise<void> {
     process.exit(1);
   } else if (failedCount > 0) {
     console.log(`\n⚠️ Warning: ${failedCount} brand(s) failed, but below threshold (${MAX_ALLOWED_FAILURES})`);
-    console.log(`   Failed brands: ${failedBrands.map(b => b.brand).join(', ')}`);
+    console.log(`   Failed brands: ${failedBrands.map(b => b.name).join(', ')}`);
   }
 }
 

@@ -31,9 +31,10 @@ interface TrendCache {
   timestamp: number;
 }
 
-// Global cache to avoid refetching for same vehicle
+// Global cache to avoid refetching for same vehicle (bounded to prevent memory leak)
 const trendCache = new Map<string, TrendCache>();
 const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+const MAX_CACHE_SIZE = 200;
 
 // Mini Sparkline SVG component
 const Sparkline = memo(({ data, width = 40, height = 16 }: { data: number[]; width?: number; height?: number }) => {
@@ -113,7 +114,11 @@ function PriceTrendBadge({ vehicle, showSparkline = true, compact = false }: Pri
       const response = await fetchDedup<TrendResponse>(url);
       const points = response.points || [];
 
-      // Cache the result
+      // Cache the result (evict oldest if at capacity)
+      if (trendCache.size >= MAX_CACHE_SIZE) {
+        const oldest = trendCache.keys().next().value;
+        if (oldest !== undefined) trendCache.delete(oldest);
+      }
       trendCache.set(cacheKey, { data: points, timestamp: Date.now() });
       setTrendData(points);
     } catch {

@@ -777,7 +777,9 @@ export default function PriceListPage() {
           Dizel: tokens.colors.fuel.dizel,
           Elektrik: tokens.colors.fuel.elektrik,
           Hybrid: tokens.colors.fuel.hybrid,
+          'Mild Hybrid': tokens.colors.fuel.hybrid,
           'Plug-in Hybrid': tokens.colors.fuel.pluginHybrid,
+          LPG: tokens.colors.fuel.cng,
           CNG: tokens.colors.fuel.cng,
         };
         const shortNames: { [key: string]: string } = {
@@ -785,7 +787,9 @@ export default function PriceListPage() {
           Dizel: 'D',
           Elektrik: 'E',
           Hybrid: 'H',
+          'Mild Hybrid': 'MH',
           'Plug-in Hybrid': 'PH',
+          LPG: 'LPG',
           CNG: 'C',
         };
         return text ? (

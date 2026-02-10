@@ -1,11 +1,13 @@
 package handlers
 
 import (
+	"errors"
 	"net/http"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spehlivan/price-list/backend/internal/repository"
+	"go.mongodb.org/mongo-driver/v2/mongo"
 )
 
 type VehicleHandler struct {
@@ -83,7 +85,11 @@ func (h *VehicleHandler) GetVehicles(c *gin.Context) {
 
 	data, err := h.repo.GetByBrandAndDate(c.Request.Context(), brand, date)
 	if err != nil {
-		c.JSON(http.StatusNotFound, gin.H{"error": "Data not found for the specified brand and date"})
+		if errors.Is(err, mongo.ErrNoDocuments) {
+			c.JSON(http.StatusNotFound, gin.H{"error": "Data not found for the specified brand and date"})
+		} else {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch vehicle data"})
+		}
 		return
 	}
 

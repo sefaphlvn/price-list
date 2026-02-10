@@ -50,6 +50,8 @@ export default function PriceTrendModal({ open, onClose, vehicle }: PriceTrendMo
   useEffect(() => {
     if (!open || !vehicle) return;
 
+    let cancelled = false;
+
     const fetchTrendData = async () => {
       setLoading(true);
 
@@ -64,6 +66,8 @@ export default function PriceTrendModal({ open, onClose, vehicle }: PriceTrendMo
         const days = parseInt(period);
         const url = DATA_URLS.trend(brandId, vehicle.model, vehicle.trim, vehicle.engine, days);
         const response = await fetchDedup<TrendResponse>(url);
+        if (cancelled) return;
+
         const points = response.points || [];
 
         const data: TrendDataPoint[] = points.map((p) => ({
@@ -75,14 +79,16 @@ export default function PriceTrendModal({ open, onClose, vehicle }: PriceTrendMo
 
         setTrendData(data);
       } catch (error) {
+        if (cancelled) return;
         console.error('Failed to fetch trend data:', error);
         setTrendData([]);
       }
 
-      setLoading(false);
+      if (!cancelled) setLoading(false);
     };
 
     fetchTrendData();
+    return () => { cancelled = true; };
   }, [open, vehicle, period]);
 
   // Calculate min/max/avg
