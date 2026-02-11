@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-10T01:33:43.324Z",
-  "totalVehicles": 552,
+  "generatedAt": "2026-02-11T01:34:29.421Z",
+  "totalVehicles": 557,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1865,11 +1865,11 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Yeni Clio",
-          "trim": "evolution",
+          "trim": "evolution plus",
           "engine": "evolution plus TCe 115 EDC",
           "transmission": "Otomatik",
           "fuel": "Benzin",
@@ -2606,7 +2606,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3283,7 +3283,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "i20",
@@ -3888,7 +3888,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "E-208",
@@ -4425,7 +4425,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "ATTO 2",
@@ -4641,8 +4641,81 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
+        {
+          "model": "Corsa",
+          "trim": "Edition",
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.535.000 TL",
+          "priceNumeric": 1535000,
+          "brand": "Opel",
+          "modelYear": 2026,
+          "priceListNumeric": 1447000,
+          "priceCampaignNumeric": 1416000,
+          "powerHP": 100,
+          "engineDisplacement": "1.2L"
+        },
+        {
+          "model": "Corsa",
+          "trim": "Edition",
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.749.000 TL",
+          "priceNumeric": 1749000,
+          "brand": "Opel",
+          "modelYear": 2025,
+          "priceListNumeric": 1749000,
+          "powerHP": 100,
+          "engineDisplacement": "1.2L"
+        },
+        {
+          "model": "Corsa",
+          "trim": "GS",
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "1.824.000 TL",
+          "priceNumeric": 1824000,
+          "brand": "Opel",
+          "modelYear": 2025,
+          "priceListNumeric": 1824000,
+          "powerHP": 100,
+          "engineDisplacement": "1.2L"
+        },
+        {
+          "model": "Corsa",
+          "trim": "Edition",
+          "engine": "Hybrid 1.2 110 (100HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "1.999.000 TL",
+          "priceNumeric": 1999000,
+          "brand": "Opel",
+          "modelYear": 2026,
+          "priceListNumeric": 1833000,
+          "powerHP": 100,
+          "engineDisplacement": "1.2L",
+          "isHybrid": true
+        },
+        {
+          "model": "Corsa",
+          "trim": "GS",
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.119.000 TL",
+          "priceNumeric": 2119000,
+          "brand": "Opel",
+          "modelYear": 2026,
+          "priceListNumeric": 1998000,
+          "powerHP": 136,
+          "engineDisplacement": "1.2L",
+          "isHybrid": true
+        },
         {
           "model": "Corsa E",
           "trim": "GS",
@@ -4882,7 +4955,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -4993,10 +5066,10 @@
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "1.955.000 TL",
-          "priceNumeric": 1955000,
+          "priceRaw": "1.962.000 TL",
+          "priceNumeric": 1962000,
           "brand": "Citroën",
-          "priceListNumeric": 1955000,
+          "priceListNumeric": 1962000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -5009,10 +5082,10 @@
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.050.000 TL",
-          "priceNumeric": 2050000,
+          "priceRaw": "2.057.000 TL",
+          "priceNumeric": 2057000,
           "brand": "Citroën",
-          "priceListNumeric": 2050000,
+          "priceListNumeric": 2057000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -5038,10 +5111,10 @@
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "1.955.000 TL",
-          "priceNumeric": 1955000,
+          "priceRaw": "1.962.000 TL",
+          "priceNumeric": 1962000,
           "brand": "Citroën",
-          "priceListNumeric": 1955000,
+          "priceListNumeric": 1962000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -5054,10 +5127,10 @@
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.059.000 TL",
-          "priceNumeric": 2059000,
+          "priceRaw": "2.066.000 TL",
+          "priceNumeric": 2066000,
           "brand": "Citroën",
-          "priceListNumeric": 2059000,
+          "priceListNumeric": 2066000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -5141,10 +5214,10 @@
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.744.000 TL",
-          "priceNumeric": 1744000,
+          "priceRaw": "1.779.000 TL",
+          "priceNumeric": 1779000,
           "brand": "Citroën",
-          "priceListNumeric": 1744000,
+          "priceListNumeric": 1779000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -5188,10 +5261,10 @@
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.356.000 TL",
-          "priceNumeric": 1356000,
+          "priceRaw": "1.376.000 TL",
+          "priceNumeric": 1376000,
           "brand": "Citroën",
-          "priceListNumeric": 1356000,
+          "priceListNumeric": 1376000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -5203,10 +5276,10 @@
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.434.000 TL",
-          "priceNumeric": 1434000,
+          "priceRaw": "1.454.000 TL",
+          "priceNumeric": 1454000,
           "brand": "Citroën",
-          "priceListNumeric": 1434000,
+          "priceListNumeric": 1454000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -5392,7 +5465,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6347,7 +6420,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "A 200",
@@ -7617,7 +7690,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -8335,7 +8408,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8473,7 +8546,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8778,7 +8851,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -8869,7 +8942,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Ibiza",
@@ -8997,7 +9070,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Stonic",
@@ -9417,7 +9490,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "EX30",
@@ -9984,7 +10057,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-02-10",
+      "date": "2026-02-11",
       "vehicles": [
         {
           "model": "Egea Sedan",

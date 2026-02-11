@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-02-10T01:33:43.356Z",
-  "totalVehicles": 552,
+  "generatedAt": "2026-02-11T01:34:29.453Z",
+  "totalVehicles": 557,
   "overallStats": {
-    "avgPrice": 5125569,
+    "avgPrice": 5096307,
     "minPrice": 544900,
     "maxPrice": 36933000,
-    "medianPrice": 2998250
+    "medianPrice": 2955000
   },
   "brandStats": [
     {
@@ -51,7 +51,7 @@
     {
       "name": "Citroën",
       "vehicleCount": 34,
-      "avgPrice": 1831382,
+      "avgPrice": 1834412,
       "minPrice": 585000,
       "maxPrice": 3150000,
       "medianPrice": 1875000
@@ -97,6 +97,14 @@
       "medianPrice": 2269999.99
     },
     {
+      "name": "Opel",
+      "vehicleCount": 21,
+      "avgPrice": 2352143,
+      "minPrice": 1535000,
+      "maxPrice": 3460000,
+      "medianPrice": 2178000
+    },
+    {
       "name": "Ford",
       "vehicleCount": 21,
       "avgPrice": 2495262,
@@ -119,14 +127,6 @@
       "minPrice": 1700300,
       "maxPrice": 4087000,
       "medianPrice": 3401000
-    },
-    {
-      "name": "Opel",
-      "vehicleCount": 16,
-      "avgPrice": 2510563,
-      "minPrice": 1857000,
-      "maxPrice": 3460000,
-      "medianPrice": 2261500
     },
     {
       "name": "BYD",
@@ -164,27 +164,27 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 222,
-      "percentage": 40.2,
-      "avgPrice": 5626304
+      "count": 225,
+      "percentage": 40.4,
+      "avgPrice": 5573988
     },
     {
       "fuel": "Elektrik",
       "count": 126,
-      "percentage": 22.8,
+      "percentage": 22.6,
       "avgPrice": 4748592
     },
     {
       "fuel": "Hibrit",
-      "count": 76,
-      "percentage": 13.8,
-      "avgPrice": 3687271
+      "count": 78,
+      "percentage": 14,
+      "avgPrice": 3645879
     },
     {
       "fuel": "Dizel",
       "count": 71,
-      "percentage": 12.9,
-      "avgPrice": 4278800
+      "percentage": 12.7,
+      "avgPrice": 4279856
     },
     {
       "fuel": "Hafif Hibrit",
@@ -195,7 +195,7 @@
     {
       "fuel": "Plug-in Hibrit",
       "count": 23,
-      "percentage": 4.2,
+      "percentage": 4.1,
       "avgPrice": 9131268
     },
     {
@@ -214,21 +214,21 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 395,
+      "count": 399,
       "percentage": 71.6,
-      "avgPrice": 6062447
+      "avgPrice": 6021067
     },
     {
       "transmission": "DSG",
       "count": 61,
-      "percentage": 11.1,
+      "percentage": 11,
       "avgPrice": 3695865
     },
     {
       "transmission": "Manuel",
-      "count": 42,
-      "percentage": 7.6,
-      "avgPrice": 1728898
+      "count": 43,
+      "percentage": 7.7,
+      "avgPrice": 1725667
     },
     {
       "transmission": "DCT",
@@ -239,7 +239,7 @@
     {
       "transmission": "Bilinmiyor",
       "count": 23,
-      "percentage": 4.2,
+      "percentage": 4.1,
       "avgPrice": 3018374
     }
   ],
@@ -249,28 +249,28 @@
       "min": 0,
       "max": 1500000,
       "count": 32,
-      "percentage": 5.8
+      "percentage": 5.7
     },
     {
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 244,
-      "percentage": 44.2
+      "count": 249,
+      "percentage": 44.7
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
       "count": 114,
-      "percentage": 20.7
+      "percentage": 20.5
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
       "count": 162,
-      "percentage": 29.3
+      "percentage": 29.1
     }
   ],
   "otvStats": {
@@ -396,15 +396,15 @@
     "distribution": [
       {
         "year": "2026",
-        "count": 208,
-        "percentage": 47.4,
-        "avgPrice": 5526365
+        "count": 211,
+        "percentage": 47.5,
+        "avgPrice": 5474583
       },
       {
         "year": "2025",
-        "count": 220,
-        "percentage": 50.1,
-        "avgPrice": 4417170
+        "count": 222,
+        "percentage": 50,
+        "avgPrice": 4393470
       },
       {
         "year": "2024",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-10T01:33:43.339Z",
-  "totalEntries": 552,
+  "generatedAt": "2026-02-11T01:34:29.436Z",
+  "totalEntries": 557,
   "entries": [
     {
       "id": "volkswagen-polo-life-1.0-tsi-95-ps",
@@ -835,17 +835,17 @@
       "searchText": "skoda skoda kodiaq sportline 1 5 tsi mhev 150 ps dsg sportline 1 5 tsi mhev 150 ps benzin dsg"
     },
     {
-      "id": "renault-yeni-clio-evolution-evolution-plus-tce-115-edc",
+      "id": "renault-yeni-clio-evolution-plus-evolution-plus-tce-115-edc",
       "brand": "Renault",
       "brandId": "renault",
       "model": "Yeni Clio",
-      "trim": "evolution",
+      "trim": "evolution plus",
       "engine": "evolution plus TCe 115 EDC",
       "fuel": "Benzin",
       "transmission": "Otomatik",
       "price": 1799000,
       "priceFormatted": "₺1.799.000,00",
-      "searchText": "renault yeni clio evolution evolution plus tce 115 edc benzin otomatik"
+      "searchText": "renault yeni clio evolution plus evolution plus tce 115 edc benzin otomatik"
     },
     {
       "id": "renault-yeni-clio-esprit-alpine-esprit-alpine-tce-115-edc",
@@ -2889,6 +2889,71 @@
       "searchText": "byd tang flagship byd 380 kw awd elektrik otomatik"
     },
     {
+      "id": "opel-corsa-edition-1.2-100-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Corsa",
+      "trim": "Edition",
+      "engine": "1.2 100 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Manuel",
+      "price": 1535000,
+      "priceFormatted": "1.535.000 TL",
+      "searchText": "opel corsa edition 1 2 100 hp benzin benzin manuel"
+    },
+    {
+      "id": "opel-corsa-edition-1.2-100-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Corsa",
+      "trim": "Edition",
+      "engine": "1.2 100 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "price": 1749000,
+      "priceFormatted": "1.749.000 TL",
+      "searchText": "opel corsa edition 1 2 100 hp benzin benzin otomatik"
+    },
+    {
+      "id": "opel-corsa-gs-1.2-100-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Corsa",
+      "trim": "GS",
+      "engine": "1.2 100 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "price": 1824000,
+      "priceFormatted": "1.824.000 TL",
+      "searchText": "opel corsa gs 1 2 100 hp benzin benzin otomatik"
+    },
+    {
+      "id": "opel-corsa-edition-hybrid-1.2-110-(100hp)²",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Corsa",
+      "trim": "Edition",
+      "engine": "Hybrid 1.2 110 (100HP)²",
+      "fuel": "Hybrid",
+      "transmission": "Otomatik",
+      "price": 1999000,
+      "priceFormatted": "1.999.000 TL",
+      "searchText": "opel corsa edition hybrid 1 2 110 100hp hybrid otomatik"
+    },
+    {
+      "id": "opel-corsa-gs-hybrid-1.2-145-(136hp)³",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Corsa",
+      "trim": "GS",
+      "engine": "Hybrid 1.2 145 (136HP)³",
+      "fuel": "Hybrid",
+      "transmission": "Otomatik",
+      "price": 2119000,
+      "priceFormatted": "2.119.000 TL",
+      "searchText": "opel corsa gs hybrid 1 2 145 136hp hybrid otomatik"
+    },
+    {
       "id": "opel-corsa-e-gs-100-kw",
       "brand": "Opel",
       "brandId": "opel",
@@ -3196,8 +3261,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1955000,
-      "priceFormatted": "1.955.000 TL",
+      "price": 1962000,
+      "priceFormatted": "1.962.000 TL",
       "searchText": "citroen c4 you 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3209,8 +3274,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2050000,
-      "priceFormatted": "2.050.000 TL",
+      "price": 2057000,
+      "priceFormatted": "2.057.000 TL",
       "searchText": "citroen c4 max 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3235,8 +3300,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1955000,
-      "priceFormatted": "1.955.000 TL",
+      "price": 1962000,
+      "priceFormatted": "1.962.000 TL",
       "searchText": "citroen c4 x you 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3248,8 +3313,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2059000,
-      "priceFormatted": "2.059.000 TL",
+      "price": 2066000,
+      "priceFormatted": "2.066.000 TL",
       "searchText": "citroen c4 x max 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3326,8 +3391,8 @@
       "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1744000,
-      "priceFormatted": "1.744.000 TL",
+      "price": 1779000,
+      "priceFormatted": "1.779.000 TL",
       "searchText": "citroen berlingo plus 1 5 bluehdi 130 hp 6 ileri manuel dizel manuel"
     },
     {
@@ -3365,8 +3430,8 @@
       "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1356000,
-      "priceFormatted": "1.356.000 TL",
+      "price": 1376000,
+      "priceFormatted": "1.376.000 TL",
       "searchText": "citroen berlingo van van 1 5 bluehdi 130 hp 6 ileri manuel dizel manuel"
     },
     {
@@ -3378,8 +3443,8 @@
       "engine": "1.5 BlueHDi 130 HP - EAT8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1434000,
-      "priceFormatted": "1.434.000 TL",
+      "price": 1454000,
+      "priceFormatted": "1.454.000 TL",
       "searchText": "citroen berlingo van van 1 5 bluehdi 130 hp eat8 dizel otomatik"
     },
     {

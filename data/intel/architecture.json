@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-10T01:33:46.501Z",
-  "date": "2026-02-10",
+  "generatedAt": "2026-02-11T01:34:32.688Z",
+  "date": "2026-02-11",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -948,7 +948,7 @@
       "brandId": "renault",
       "trims": [
         {
-          "trim": "evolution",
+          "trim": "evolution plus",
           "price": 1799000,
           "priceFormatted": "₺1.799.000,00",
           "stepFromBase": 0,
@@ -3276,6 +3276,69 @@
       "trimCount": 1
     },
     {
+      "id": "opel-corsa",
+      "model": "Corsa",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "Edition",
+          "price": 1535000,
+          "priceFormatted": "1.535.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "Edition",
+          "price": 1749000,
+          "priceFormatted": "1.749.000 TL",
+          "stepFromBase": 214000,
+          "stepPercent": 13.941368078175895,
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "GS",
+          "price": 1824000,
+          "priceFormatted": "1.824.000 TL",
+          "stepFromBase": 289000,
+          "stepPercent": 18.827361563517915,
+          "engine": "1.2 100 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin"
+        },
+        {
+          "trim": "Edition",
+          "price": 1999000,
+          "priceFormatted": "1.999.000 TL",
+          "stepFromBase": 464000,
+          "stepPercent": 30.22801302931596,
+          "engine": "Hybrid 1.2 110 (100HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit"
+        },
+        {
+          "trim": "GS",
+          "price": 2119000,
+          "priceFormatted": "2.119.000 TL",
+          "stepFromBase": 584000,
+          "stepPercent": 38.045602605863195,
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit"
+        }
+      ],
+      "basePrice": 1535000,
+      "topPrice": 2119000,
+      "priceSpread": 584000,
+      "priceSpreadPercent": 38.05,
+      "trimCount": 5
+    },
+    {
       "id": "opel-corsa-e",
       "model": "Corsa E",
       "brand": "Opel",
@@ -3656,8 +3719,8 @@
       "trims": [
         {
           "trim": "You",
-          "price": 1955000,
-          "priceFormatted": "1.955.000 TL",
+          "price": 1962000,
+          "priceFormatted": "1.962.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.2 Hybrid 145* eDCS6",
@@ -3666,19 +3729,19 @@
         },
         {
           "trim": "Max",
-          "price": 2050000,
-          "priceFormatted": "2.050.000 TL",
+          "price": 2057000,
+          "priceFormatted": "2.057.000 TL",
           "stepFromBase": 95000,
-          "stepPercent": 4.859335038363171,
+          "stepPercent": 4.841997961264016,
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         }
       ],
-      "basePrice": 1955000,
-      "topPrice": 2050000,
+      "basePrice": 1962000,
+      "topPrice": 2057000,
       "priceSpread": 95000,
-      "priceSpreadPercent": 4.86,
+      "priceSpreadPercent": 4.84,
       "trimCount": 2
     },
     {
@@ -3712,8 +3775,8 @@
       "trims": [
         {
           "trim": "You",
-          "price": 1955000,
-          "priceFormatted": "1.955.000 TL",
+          "price": 1962000,
+          "priceFormatted": "1.962.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.2 Hybrid 145* eDCS6",
@@ -3722,19 +3785,19 @@
         },
         {
           "trim": "Max",
-          "price": 2059000,
-          "priceFormatted": "2.059.000 TL",
+          "price": 2066000,
+          "priceFormatted": "2.066.000 TL",
           "stepFromBase": 104000,
-          "stepPercent": 5.319693094629156,
+          "stepPercent": 5.300713557594292,
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         }
       ],
-      "basePrice": 1955000,
-      "topPrice": 2059000,
+      "basePrice": 1962000,
+      "topPrice": 2066000,
       "priceSpread": 104000,
-      "priceSpreadPercent": 5.32,
+      "priceSpreadPercent": 5.3,
       "trimCount": 2
     },
     {
@@ -3834,8 +3897,8 @@
       "trims": [
         {
           "trim": "Plus",
-          "price": 1744000,
-          "priceFormatted": "1.744.000 TL",
+          "price": 1779000,
+          "priceFormatted": "1.779.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
@@ -3846,8 +3909,8 @@
           "trim": "Plus",
           "price": 1820000,
           "priceFormatted": "1.820.000 TL",
-          "stepFromBase": 76000,
-          "stepPercent": 4.3577981651376145,
+          "stepFromBase": 41000,
+          "stepPercent": 2.304665542439573,
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel"
@@ -3856,17 +3919,17 @@
           "trim": "Max",
           "price": 1959000,
           "priceFormatted": "1.959.000 TL",
-          "stepFromBase": 215000,
-          "stepPercent": 12.327981651376147,
+          "stepFromBase": 180000,
+          "stepPercent": 10.118043844856661,
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 1744000,
+      "basePrice": 1779000,
       "topPrice": 1959000,
-      "priceSpread": 215000,
-      "priceSpreadPercent": 12.33,
+      "priceSpread": 180000,
+      "priceSpreadPercent": 10.12,
       "trimCount": 3
     },
     {
@@ -3877,8 +3940,8 @@
       "trims": [
         {
           "trim": "Van",
-          "price": 1356000,
-          "priceFormatted": "1.356.000 TL",
+          "price": 1376000,
+          "priceFormatted": "1.376.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
@@ -3887,19 +3950,19 @@
         },
         {
           "trim": "Van",
-          "price": 1434000,
-          "priceFormatted": "1.434.000 TL",
+          "price": 1454000,
+          "priceFormatted": "1.454.000 TL",
           "stepFromBase": 78000,
-          "stepPercent": 5.752212389380531,
+          "stepPercent": 5.6686046511627906,
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 1356000,
-      "topPrice": 1434000,
+      "basePrice": 1376000,
+      "topPrice": 1454000,
       "priceSpread": 78000,
-      "priceSpreadPercent": 5.75,
+      "priceSpreadPercent": 5.67,
       "trimCount": 2
     },
     {
@@ -8670,6 +8733,16 @@
           "trimCount": 4
         },
         {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Corsa",
+          "basePrice": 1535000,
+          "topPrice": 2119000,
+          "basePriceFormatted": "₺1.535.000",
+          "topPriceFormatted": "₺2.119.000",
+          "trimCount": 5
+        },
+        {
           "brand": "Toyota",
           "brandId": "toyota",
           "model": "Proace Cargo",
@@ -9870,8 +9943,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8154535,
-      "avgTopPrice": 8484094
+      "avgBasePrice": 8104004,
+      "avgTopPrice": 8435505
     },
     {
       "segment": "SUV",
@@ -10307,20 +10380,20 @@
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "C4",
-          "basePrice": 1955000,
-          "topPrice": 2050000,
-          "basePriceFormatted": "₺1.955.000",
-          "topPriceFormatted": "₺2.050.000",
+          "basePrice": 1962000,
+          "topPrice": 2057000,
+          "basePriceFormatted": "₺1.962.000",
+          "topPriceFormatted": "₺2.057.000",
           "trimCount": 2
         },
         {
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "C4 X",
-          "basePrice": 1955000,
-          "topPrice": 2059000,
-          "basePriceFormatted": "₺1.955.000",
-          "topPriceFormatted": "₺2.059.000",
+          "basePrice": 1962000,
+          "topPrice": 2066000,
+          "basePriceFormatted": "₺1.962.000",
+          "topPriceFormatted": "₺2.066.000",
           "trimCount": 2
         },
         {
@@ -10514,8 +10587,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5518076,
-      "avgTopPrice": 6110066
+      "avgBasePrice": 5518660,
+      "avgTopPrice": 6110649
     },
     {
       "segment": "Electric",
@@ -10878,10 +10951,10 @@
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "Berlingo Van",
-          "basePrice": 1356000,
-          "topPrice": 1434000,
-          "basePriceFormatted": "₺1.356.000",
-          "topPriceFormatted": "₺1.434.000",
+          "basePrice": 1376000,
+          "topPrice": 1454000,
+          "basePriceFormatted": "₺1.376.000",
+          "topPriceFormatted": "₺1.454.000",
           "trimCount": 2
         },
         {
@@ -10908,9 +10981,9 @@
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "Berlingo",
-          "basePrice": 1744000,
+          "basePrice": 1779000,
           "topPrice": 1959000,
-          "basePriceFormatted": "₺1.744.000",
+          "basePriceFormatted": "₺1.779.000",
           "topPriceFormatted": "₺1.959.000",
           "trimCount": 3
         },
@@ -10935,14 +11008,14 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 1767286,
-      "avgTopPrice": 1938643
+      "avgBasePrice": 1775143,
+      "avgTopPrice": 1941500
     }
   ],
   "summary": {
-    "totalModels": 234,
+    "totalModels": 235,
     "avgTrimsPerModel": 2.4,
-    "avgPriceSpread": 364683,
-    "avgPriceSpreadPercent": 11.3
+    "avgPriceSpread": 365467,
+    "avgPriceSpreadPercent": 11.4
   }
 }
