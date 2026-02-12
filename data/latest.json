@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-11T01:34:29.421Z",
-  "totalVehicles": 557,
+  "generatedAt": "2026-02-12T18:18:08.334Z",
+  "totalVehicles": 559,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1865,7 +1865,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -2606,7 +2606,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3283,7 +3283,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "i20",
@@ -3888,7 +3888,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "E-208",
@@ -4425,7 +4425,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "ATTO 2",
@@ -4641,7 +4641,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4715,21 +4715,6 @@
           "powerHP": 136,
           "engineDisplacement": "1.2L",
           "isHybrid": true
-        },
-        {
-          "model": "Corsa E",
-          "trim": "GS",
-          "engine": "100 kW",
-          "transmission": "",
-          "fuel": "Elektrik",
-          "priceRaw": "2.101.000 TL",
-          "priceNumeric": 2101000,
-          "brand": "Opel",
-          "modelYear": 2026,
-          "priceListNumeric": 2021000,
-          "priceCampaignNumeric": 1819000,
-          "powerKW": 100,
-          "isElectric": true
         },
         {
           "model": "Frontera Hybrid",
@@ -4955,7 +4940,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5465,7 +5450,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6420,7 +6405,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "A 200",
@@ -7690,7 +7675,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -8408,7 +8393,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8541,12 +8526,76 @@
           "otvIncentivePrice": 1429999.99,
           "powerHP": 100,
           "engineType": "TCe"
+        },
+        {
+          "model": "Yeni Sandero Stepway",
+          "trim": "Expression",
+          "engine": "stepway expression Eco-G 120 auto",
+          "transmission": "Otomatik",
+          "fuel": "LPG",
+          "priceRaw": "₺1.685.000,01",
+          "priceNumeric": 1685000.01,
+          "brand": "Dacia",
+          "modelYear": "2026",
+          "otvRate": 75,
+          "netPrice": 773694.29,
+          "otvAmount": 580270.72,
+          "kdvAmount": 270793,
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 13000
+            },
+            {
+              "name": "16'' Tamia Aluminyum Jantlar",
+              "price": 32000
+            }
+          ],
+          "vehicleCategory": "Binek",
+          "otvIncentivePrice": 1685000.01,
+          "powerHP": 120
+        },
+        {
+          "model": "Yeni Sandero Stepway",
+          "trim": "Extreme",
+          "engine": "stepway extreme Eco-G 120 auto",
+          "transmission": "Otomatik",
+          "fuel": "LPG",
+          "priceRaw": "₺1.735.000,00",
+          "priceNumeric": 1735000,
+          "brand": "Dacia",
+          "modelYear": "2026",
+          "otvRate": 75,
+          "netPrice": 797503.81,
+          "otvAmount": 598127.86,
+          "kdvAmount": 279126.33,
+          "optionalEquipment": [
+            {
+              "name": "Elektrikli Cam Tavan",
+              "price": 58000
+            },
+            {
+              "name": "Metalik Renk",
+              "price": 13000
+            },
+            {
+              "name": "Sürüş Paketi",
+              "price": 45000
+            },
+            {
+              "name": "Kablosuz Şarj",
+              "price": 8000
+            }
+          ],
+          "vehicleCategory": "Binek",
+          "otvIncentivePrice": 1735000,
+          "powerHP": 120
         }
       ]
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8851,7 +8900,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -8911,6 +8960,20 @@
           "isHybrid": true
         },
         {
+          "model": "Prelude Hybrid",
+          "trim": "Advance",
+          "engine": "2.0L Hibrit Otomatik",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "5.400.000 TL",
+          "priceNumeric": 5400000,
+          "brand": "Honda",
+          "modelYear": 2025,
+          "priceListNumeric": 5400000,
+          "engineDisplacement": "2.0L",
+          "isHybrid": true
+        },
+        {
           "model": "Type R",
           "trim": "Type R",
           "engine": "2.0L VTEC Turbo Benzin Manuel",
@@ -8942,7 +9005,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Ibiza",
@@ -9070,7 +9133,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Stonic",
@@ -9490,7 +9553,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "EX30",
@@ -10057,7 +10120,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-02-11",
+      "date": "2026-02-12",
       "vehicles": [
         {
           "model": "Egea Sedan",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-11T01:34:32.688Z",
-  "date": "2026-02-11",
+  "generatedAt": "2026-02-12T18:18:10.796Z",
+  "date": "2026-02-12",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -3337,29 +3337,6 @@
       "priceSpread": 584000,
       "priceSpreadPercent": 38.05,
       "trimCount": 5
-    },
-    {
-      "id": "opel-corsa-e",
-      "model": "Corsa E",
-      "brand": "Opel",
-      "brandId": "opel",
-      "trims": [
-        {
-          "trim": "GS",
-          "price": 2101000,
-          "priceFormatted": "2.101.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "100 kW",
-          "transmission": "",
-          "fuel": "Elektrik"
-        }
-      ],
-      "basePrice": 2101000,
-      "topPrice": 2101000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
     },
     {
       "id": "opel-frontera-hybrid",
@@ -6987,6 +6964,39 @@
       "trimCount": 4
     },
     {
+      "id": "dacia-yeni-sandero-stepway",
+      "model": "Yeni Sandero Stepway",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "trims": [
+        {
+          "trim": "Expression",
+          "price": 1685000.01,
+          "priceFormatted": "₺1.685.000,01",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "stepway expression Eco-G 120 auto",
+          "transmission": "Otomatik",
+          "fuel": "LPG"
+        },
+        {
+          "trim": "Extreme",
+          "price": 1735000,
+          "priceFormatted": "₺1.735.000,00",
+          "stepFromBase": 49999.98999999999,
+          "stepPercent": 2.967358439362857,
+          "engine": "stepway extreme Eco-G 120 auto",
+          "transmission": "Otomatik",
+          "fuel": "LPG"
+        }
+      ],
+      "basePrice": 1685000.01,
+      "topPrice": 1735000,
+      "priceSpread": 49999.98999999999,
+      "priceSpreadPercent": 2.97,
+      "trimCount": 2
+    },
+    {
       "id": "nissan-qashqai",
       "model": "QASHQAI",
       "brand": "Nissan",
@@ -7260,6 +7270,29 @@
       "priceSpread": 566000,
       "priceSpreadPercent": 23.69,
       "trimCount": 3
+    },
+    {
+      "id": "honda-prelude-hybrid",
+      "model": "Prelude Hybrid",
+      "brand": "Honda",
+      "brandId": "honda",
+      "trims": [
+        {
+          "trim": "Advance",
+          "price": 5400000,
+          "priceFormatted": "5.400.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "2.0L Hibrit Otomatik",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit"
+        }
+      ],
+      "basePrice": 5400000,
+      "topPrice": 5400000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "honda-type-r",
@@ -8773,6 +8806,16 @@
           "trimCount": 3
         },
         {
+          "brand": "Dacia",
+          "brandId": "dacia",
+          "model": "Yeni Sandero Stepway",
+          "basePrice": 1685000.01,
+          "topPrice": 1735000,
+          "basePriceFormatted": "₺1.685.000",
+          "topPriceFormatted": "₺1.735.000",
+          "trimCount": 2
+        },
+        {
           "brand": "Toyota",
           "brandId": "toyota",
           "model": "Proace Max Kamyonet",
@@ -8910,16 +8953,6 @@
           "topPrice": 2070000,
           "basePriceFormatted": "₺2.070.000",
           "topPriceFormatted": "₺2.070.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "Opel",
-          "brandId": "opel",
-          "model": "Corsa E",
-          "basePrice": 2101000,
-          "topPrice": 2101000,
-          "basePriceFormatted": "₺2.101.000",
-          "topPriceFormatted": "₺2.101.000",
           "trimCount": 1
         },
         {
@@ -9230,6 +9263,16 @@
           "topPrice": 5120000,
           "basePriceFormatted": "₺5.120.000",
           "topPriceFormatted": "₺5.120.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "Honda",
+          "brandId": "honda",
+          "model": "Prelude Hybrid",
+          "basePrice": 5400000,
+          "topPrice": 5400000,
+          "basePriceFormatted": "₺5.400.000",
+          "topPriceFormatted": "₺5.400.000",
           "trimCount": 1
         },
         {
@@ -9943,8 +9986,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8104004,
-      "avgTopPrice": 8435505
+      "avgBasePrice": 8080367,
+      "avgTopPrice": 8409736
     },
     {
       "segment": "SUV",
@@ -11013,9 +11056,9 @@
     }
   ],
   "summary": {
-    "totalModels": 235,
+    "totalModels": 236,
     "avgTrimsPerModel": 2.4,
-    "avgPriceSpread": 365467,
-    "avgPriceSpreadPercent": 11.4
+    "avgPriceSpread": 364130,
+    "avgPriceSpreadPercent": 11.37
   }
 }

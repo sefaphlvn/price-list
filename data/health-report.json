@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-11T01:34:34.418Z",
+  "timestamp": "2026-02-12T18:18:12.295Z",
   "status": "healthy",
   "summary": {
     "totalBrands": 19,
-    "totalVehicles": 557,
-    "lastUpdate": "2026-02-11T01:34:27.483Z",
-    "dataDate": "2026-02-11"
+    "totalVehicles": 559,
+    "lastUpdate": "2026-02-12T18:18:07.387Z",
+    "dataDate": "2026-02-12"
   },
   "brands": [
     {
@@ -13,7 +13,7 @@
       "name": "Volkswagen",
       "status": "ok",
       "vehicleCount": 46,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -21,7 +21,7 @@
       "name": "Škoda",
       "status": "ok",
       "vehicleCount": 18,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -29,7 +29,7 @@
       "name": "Renault",
       "status": "ok",
       "vehicleCount": 21,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -37,7 +37,7 @@
       "name": "Toyota",
       "status": "ok",
       "vehicleCount": 48,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -45,7 +45,7 @@
       "name": "Hyundai",
       "status": "ok",
       "vehicleCount": 48,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -53,7 +53,7 @@
       "name": "Peugeot",
       "status": "ok",
       "vehicleCount": 30,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -61,15 +61,15 @@
       "name": "BYD",
       "status": "ok",
       "vehicleCount": 11,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
       "id": "opel",
       "name": "Opel",
       "status": "ok",
-      "vehicleCount": 21,
-      "latestDate": "2026-02-11",
+      "vehicleCount": 20,
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -77,7 +77,7 @@
       "name": "Citroën",
       "status": "ok",
       "vehicleCount": 34,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -85,7 +85,7 @@
       "name": "BMW",
       "status": "ok",
       "vehicleCount": 60,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -93,7 +93,7 @@
       "name": "Mercedes-Benz",
       "status": "ok",
       "vehicleCount": 79,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -101,15 +101,15 @@
       "name": "Ford",
       "status": "ok",
       "vehicleCount": 21,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
       "id": "dacia",
       "name": "Dacia",
       "status": "ok",
-      "vehicleCount": 4,
-      "latestDate": "2026-02-11",
+      "vehicleCount": 6,
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -117,15 +117,15 @@
       "name": "Nissan",
       "status": "ok",
       "vehicleCount": 17,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
       "id": "honda",
       "name": "Honda",
       "status": "ok",
-      "vehicleCount": 6,
-      "latestDate": "2026-02-11",
+      "vehicleCount": 7,
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -133,7 +133,7 @@
       "name": "SEAT",
       "status": "ok",
       "vehicleCount": 8,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -141,7 +141,7 @@
       "name": "Kia",
       "status": "ok",
       "vehicleCount": 25,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -149,7 +149,7 @@
       "name": "Volvo",
       "status": "ok",
       "vehicleCount": 34,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     },
     {
@@ -157,7 +157,7 @@
       "name": "Fiat",
       "status": "ok",
       "vehicleCount": 26,
-      "latestDate": "2026-02-11",
+      "latestDate": "2026-02-12",
       "issues": []
     }
   ],

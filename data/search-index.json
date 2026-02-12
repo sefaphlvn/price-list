@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-11T01:34:29.436Z",
-  "totalEntries": 557,
+  "generatedAt": "2026-02-12T18:18:08.348Z",
+  "totalEntries": 559,
   "entries": [
     {
       "id": "volkswagen-polo-life-1.0-tsi-95-ps",
@@ -2954,19 +2954,6 @@
       "searchText": "opel corsa gs hybrid 1 2 145 136hp hybrid otomatik"
     },
     {
-      "id": "opel-corsa-e-gs-100-kw",
-      "brand": "Opel",
-      "brandId": "opel",
-      "model": "Corsa E",
-      "trim": "GS",
-      "engine": "100 kW",
-      "fuel": "Elektrik",
-      "transmission": "",
-      "price": 2101000,
-      "priceFormatted": "2.101.000 TL",
-      "searchText": "opel corsa e gs 100 kw elektrik"
-    },
-    {
       "id": "opel-frontera-hybrid-edition-hybrid-1.2-145-(136hp)²",
       "brand": "Opel",
       "brandId": "opel",
@@ -5736,6 +5723,32 @@
       "searchText": "dacia yeni sandero expression expression tce 100 benzin manuel"
     },
     {
+      "id": "dacia-yeni-sandero-stepway-expression-stepway-expression-eco-g-120-auto",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Sandero Stepway",
+      "trim": "Expression",
+      "engine": "stepway expression Eco-G 120 auto",
+      "fuel": "LPG",
+      "transmission": "Otomatik",
+      "price": 1685000.01,
+      "priceFormatted": "₺1.685.000,01",
+      "searchText": "dacia yeni sandero stepway expression stepway expression eco g 120 auto lpg otomatik"
+    },
+    {
+      "id": "dacia-yeni-sandero-stepway-extreme-stepway-extreme-eco-g-120-auto",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Sandero Stepway",
+      "trim": "Extreme",
+      "engine": "stepway extreme Eco-G 120 auto",
+      "fuel": "LPG",
+      "transmission": "Otomatik",
+      "price": 1735000,
+      "priceFormatted": "₺1.735.000,00",
+      "searchText": "dacia yeni sandero stepway extreme stepway extreme eco g 120 auto lpg otomatik"
+    },
+    {
       "id": "nissan-qashqai-designpack-1.3-dig-t-mild-hybrid-158ps",
       "brand": "Nissan",
       "brandId": "nissan",
@@ -6007,6 +6020,19 @@
       "price": 2955000,
       "priceFormatted": "2.955.000 TL",
       "searchText": "honda hr v hybrid style 1 5l hibrit otomatik hybrid otomatik"
+    },
+    {
+      "id": "honda-prelude-hybrid-advance-2.0l-hibrit-otomatik",
+      "brand": "Honda",
+      "brandId": "honda",
+      "model": "Prelude Hybrid",
+      "trim": "Advance",
+      "engine": "2.0L Hibrit Otomatik",
+      "fuel": "Hybrid",
+      "transmission": "Otomatik",
+      "price": 5400000,
+      "priceFormatted": "5.400.000 TL",
+      "searchText": "honda prelude hybrid advance 2 0l hibrit otomatik hybrid otomatik"
     },
     {
       "id": "honda-type-r-type-r-2.0l-vtec-turbo-benzin-manuel",

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-02-11T01:34:29.453Z",
-  "totalVehicles": 557,
+  "generatedAt": "2026-02-12T18:18:08.365Z",
+  "totalVehicles": 559,
   "overallStats": {
-    "avgPrice": 5096307,
+    "avgPrice": 5090093,
     "minPrice": 544900,
     "maxPrice": 36933000,
     "medianPrice": 2955000
@@ -97,20 +97,20 @@
       "medianPrice": 2269999.99
     },
     {
-      "name": "Opel",
-      "vehicleCount": 21,
-      "avgPrice": 2352143,
-      "minPrice": 1535000,
-      "maxPrice": 3460000,
-      "medianPrice": 2178000
-    },
-    {
       "name": "Ford",
       "vehicleCount": 21,
       "avgPrice": 2495262,
       "minPrice": 1842100,
       "maxPrice": 3305300,
       "medianPrice": 2379100
+    },
+    {
+      "name": "Opel",
+      "vehicleCount": 20,
+      "avgPrice": 2364700,
+      "minPrice": 1535000,
+      "maxPrice": 3460000,
+      "medianPrice": 2193000
     },
     {
       "name": "Škoda",
@@ -146,39 +146,39 @@
     },
     {
       "name": "Honda",
-      "vehicleCount": 6,
-      "avgPrice": 3676500,
+      "vehicleCount": 7,
+      "avgPrice": 3922714,
       "minPrice": 2380000,
       "maxPrice": 6160000,
-      "medianPrice": 2815000
+      "medianPrice": 2955000
     },
     {
       "name": "Dacia",
-      "vehicleCount": 4,
-      "avgPrice": 1328250,
+      "vehicleCount": 6,
+      "avgPrice": 1455500,
       "minPrice": 1242000,
-      "maxPrice": 1429999.99,
-      "medianPrice": 1320500.005
+      "maxPrice": 1735000,
+      "medianPrice": 1385999.995
     }
   ],
   "fuelStats": [
     {
       "fuel": "Benzin",
       "count": 225,
-      "percentage": 40.4,
+      "percentage": 40.3,
       "avgPrice": 5573988
     },
     {
       "fuel": "Elektrik",
-      "count": 126,
-      "percentage": 22.6,
-      "avgPrice": 4748592
+      "count": 125,
+      "percentage": 22.4,
+      "avgPrice": 4769773
     },
     {
       "fuel": "Hibrit",
-      "count": 78,
-      "percentage": 14,
-      "avgPrice": 3645879
+      "count": 79,
+      "percentage": 14.1,
+      "avgPrice": 3668083
     },
     {
       "fuel": "Dizel",
@@ -199,29 +199,29 @@
       "avgPrice": 9131268
     },
     {
+      "fuel": "LPG",
+      "count": 5,
+      "percentage": 0.9,
+      "avgPrice": 2060800
+    },
+    {
       "fuel": "Diger",
       "count": 5,
       "percentage": 0.9,
       "avgPrice": 3346200
-    },
-    {
-      "fuel": "LPG",
-      "count": 3,
-      "percentage": 0.5,
-      "avgPrice": 2294667
     }
   ],
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 399,
-      "percentage": 71.6,
-      "avgPrice": 6021067
+      "count": 402,
+      "percentage": 71.9,
+      "avgPrice": 5998074
     },
     {
       "transmission": "DSG",
       "count": 61,
-      "percentage": 11,
+      "percentage": 10.9,
       "avgPrice": 3695865
     },
     {
@@ -233,14 +233,14 @@
     {
       "transmission": "DCT",
       "count": 31,
-      "percentage": 5.6,
+      "percentage": 5.5,
       "avgPrice": 2166565
     },
     {
       "transmission": "Bilinmiyor",
-      "count": 23,
-      "percentage": 4.1,
-      "avgPrice": 3018374
+      "count": 22,
+      "percentage": 3.9,
+      "avgPrice": 3060073
     }
   ],
   "priceSegments": [
@@ -255,7 +255,7 @@
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 249,
+      "count": 250,
       "percentage": 44.7
     },
     {
@@ -263,18 +263,18 @@
       "min": 3000000,
       "max": 5000000,
       "count": 114,
-      "percentage": 20.5
+      "percentage": 20.4
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
-      "count": 162,
-      "percentage": 29.1
+      "count": 163,
+      "percentage": 29.2
     }
   ],
   "otvStats": {
-    "avgOtvRate": 114,
+    "avgOtvRate": 113.7,
     "distribution": [
       {
         "rate": 1,
@@ -297,7 +297,7 @@
       {
         "rate": 55,
         "count": 17,
-        "percentage": 6.8,
+        "percentage": 6.7,
         "avgPrice": 4761512
       },
       {
@@ -308,9 +308,9 @@
       },
       {
         "rate": 75,
-        "count": 34,
-        "percentage": 13.6,
-        "avgPrice": 7046338
+        "count": 36,
+        "percentage": 14.3,
+        "avgPrice": 6749875
       },
       {
         "rate": 80,
@@ -321,13 +321,13 @@
       {
         "rate": 90,
         "count": 33,
-        "percentage": 13.2,
+        "percentage": 13.1,
         "avgPrice": 3119552
       },
       {
         "rate": 100,
         "count": 44,
-        "percentage": 17.6,
+        "percentage": 17.5,
         "avgPrice": 5741536
       },
       {
@@ -339,13 +339,13 @@
       {
         "rate": 170,
         "count": 53,
-        "percentage": 21.2,
+        "percentage": 21,
         "avgPrice": 8586417
       },
       {
         "rate": 220,
         "count": 33,
-        "percentage": 13.2,
+        "percentage": 13.1,
         "avgPrice": 21460321
       }
     ],
@@ -387,8 +387,8 @@
       },
       {
         "brand": "Dacia",
-        "avgOtvRate": 71.3,
-        "count": 4
+        "avgOtvRate": 72.5,
+        "count": 6
       }
     ]
   },
@@ -396,15 +396,15 @@
     "distribution": [
       {
         "year": "2026",
-        "count": 211,
+        "count": 212,
         "percentage": 47.5,
-        "avgPrice": 5474583
+        "avgPrice": 5454981
       },
       {
         "year": "2025",
-        "count": 222,
+        "count": 223,
         "percentage": 50,
-        "avgPrice": 4393470
+        "avgPrice": 4397983
       },
       {
         "year": "2024",
@@ -415,7 +415,7 @@
       {
         "year": "2023",
         "count": 10,
-        "percentage": 2.3,
+        "percentage": 2.2,
         "avgPrice": 8629310
       }
     ]
