@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-02-12T18:18:08.365Z",
-  "totalVehicles": 559,
+  "generatedAt": "2026-02-13T01:33:23.432Z",
+  "totalVehicles": 560,
   "overallStats": {
-    "avgPrice": 5090093,
+    "avgPrice": 5084756,
     "minPrice": 544900,
     "maxPrice": 36933000,
-    "medianPrice": 2955000
+    "medianPrice": 2953000
   },
   "brandStats": [
     {
@@ -97,20 +97,20 @@
       "medianPrice": 2269999.99
     },
     {
+      "name": "Opel",
+      "vehicleCount": 21,
+      "avgPrice": 2352143,
+      "minPrice": 1535000,
+      "maxPrice": 3460000,
+      "medianPrice": 2178000
+    },
+    {
       "name": "Ford",
       "vehicleCount": 21,
       "avgPrice": 2495262,
       "minPrice": 1842100,
       "maxPrice": 3305300,
       "medianPrice": 2379100
-    },
-    {
-      "name": "Opel",
-      "vehicleCount": 20,
-      "avgPrice": 2364700,
-      "minPrice": 1535000,
-      "maxPrice": 3460000,
-      "medianPrice": 2193000
     },
     {
       "name": "Škoda",
@@ -165,14 +165,14 @@
     {
       "fuel": "Benzin",
       "count": 225,
-      "percentage": 40.3,
+      "percentage": 40.2,
       "avgPrice": 5573988
     },
     {
       "fuel": "Elektrik",
-      "count": 125,
-      "percentage": 22.4,
-      "avgPrice": 4769773
+      "count": 126,
+      "percentage": 22.5,
+      "avgPrice": 4748592
     },
     {
       "fuel": "Hibrit",
@@ -189,7 +189,7 @@
     {
       "fuel": "Hafif Hibrit",
       "count": 26,
-      "percentage": 4.7,
+      "percentage": 4.6,
       "avgPrice": 6318869
     },
     {
@@ -215,7 +215,7 @@
     {
       "transmission": "Otomatik",
       "count": 402,
-      "percentage": 71.9,
+      "percentage": 71.8,
       "avgPrice": 5998074
     },
     {
@@ -238,9 +238,9 @@
     },
     {
       "transmission": "Bilinmiyor",
-      "count": 22,
-      "percentage": 3.9,
-      "avgPrice": 3060073
+      "count": 23,
+      "percentage": 4.1,
+      "avgPrice": 3018374
     }
   ],
   "priceSegments": [
@@ -255,8 +255,8 @@
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 250,
-      "percentage": 44.7
+      "count": 251,
+      "percentage": 44.8
     },
     {
       "segment": "premium",
@@ -270,7 +270,7 @@
       "min": 5000000,
       "max": 0,
       "count": 163,
-      "percentage": 29.2
+      "percentage": 29.1
     }
   ],
   "otvStats": {
@@ -396,14 +396,14 @@
     "distribution": [
       {
         "year": "2026",
-        "count": 212,
-        "percentage": 47.5,
-        "avgPrice": 5454981
+        "count": 213,
+        "percentage": 47.7,
+        "avgPrice": 5439235
       },
       {
         "year": "2025",
         "count": 223,
-        "percentage": 50,
+        "percentage": 49.9,
         "avgPrice": 4397983
       },
       {

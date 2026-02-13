@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-02-12T18:18:10.523Z",
-  "date": "2026-02-12",
-  "previousDate": "2026-02-11",
+  "generatedAt": "2026-02-13T01:33:25.704Z",
+  "date": "2026-02-13",
+  "previousDate": "2026-02-12",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-02-12",
-    "totalDays": 16
+    "end": "2026-02-13",
+    "totalDays": 17
   },
   "summary": {
-    "totalEvents": 674,
-    "newVehicles": 172,
+    "totalEvents": 675,
+    "newVehicles": 173,
     "removedVehicles": 169,
     "priceIncreases": 277,
     "priceDecreases": 56,
@@ -17,6 +17,21 @@
     "avgPriceChangePercent": 1.93
   },
   "events": [
+    {
+      "id": "opel-corsa-e-gs-100-kw-new-2026-02-13",
+      "type": "new",
+      "vehicleId": "opel-corsa-e-gs-100-kw",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Corsa E",
+      "trim": "GS",
+      "engine": "100 kW",
+      "fuel": "Elektrik",
+      "transmission": "",
+      "newPrice": 2101000,
+      "newPriceFormatted": "2.101.000 TL",
+      "date": "2026-02-13"
+    },
     {
       "id": "opel-corsa-e-gs-100-kw-removed-2026-02-12",
       "type": "removed",

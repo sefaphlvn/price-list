@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-12T18:18:10.796Z",
-  "date": "2026-02-12",
+  "generatedAt": "2026-02-13T01:33:26.023Z",
+  "date": "2026-02-13",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -3337,6 +3337,29 @@
       "priceSpread": 584000,
       "priceSpreadPercent": 38.05,
       "trimCount": 5
+    },
+    {
+      "id": "opel-corsa-e",
+      "model": "Corsa E",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "GS",
+          "price": 2101000,
+          "priceFormatted": "2.101.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "100 kW",
+          "transmission": "",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 2101000,
+      "topPrice": 2101000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "opel-frontera-hybrid",
@@ -8956,6 +8979,16 @@
           "trimCount": 1
         },
         {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Corsa E",
+          "basePrice": 2101000,
+          "topPrice": 2101000,
+          "basePriceFormatted": "₺2.101.000",
+          "topPriceFormatted": "₺2.101.000",
+          "trimCount": 1
+        },
+        {
           "brand": "Toyota",
           "brandId": "toyota",
           "model": "YENİ TOYOTA C-HR",
@@ -9986,8 +10019,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8080367,
-      "avgTopPrice": 8409736
+      "avgBasePrice": 8035410,
+      "avgTopPrice": 8362302
     },
     {
       "segment": "SUV",
@@ -11056,9 +11089,9 @@
     }
   ],
   "summary": {
-    "totalModels": 236,
+    "totalModels": 237,
     "avgTrimsPerModel": 2.4,
-    "avgPriceSpread": 364130,
-    "avgPriceSpreadPercent": 11.37
+    "avgPriceSpread": 362594,
+    "avgPriceSpreadPercent": 11.32
   }
 }
