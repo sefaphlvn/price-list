@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-02-16T01:33:20.217Z",
-  "totalVehicles": 560,
+  "generatedAt": "2026-02-17T01:33:44.212Z",
+  "totalVehicles": 561,
   "overallStats": {
-    "avgPrice": 5084756,
+    "avgPrice": 5087224,
     "minPrice": 544900,
     "maxPrice": 36933000,
-    "medianPrice": 2953000
+    "medianPrice": 2955000
   },
   "brandStats": [
     {
@@ -18,11 +18,11 @@
     },
     {
       "name": "BMW",
-      "vehicleCount": 60,
-      "avgPrice": 9864907,
+      "vehicleCount": 61,
+      "avgPrice": 9809246,
       "minPrice": 3698700,
       "maxPrice": 23795200,
-      "medianPrice": 8004300
+      "medianPrice": 7904100
     },
     {
       "name": "Toyota",
@@ -165,14 +165,14 @@
     {
       "fuel": "Benzin",
       "count": 225,
-      "percentage": 40.2,
+      "percentage": 40.1,
       "avgPrice": 5573988
     },
     {
       "fuel": "Elektrik",
-      "count": 126,
-      "percentage": 22.5,
-      "avgPrice": 4748592
+      "count": 127,
+      "percentage": 22.6,
+      "avgPrice": 4762144
     },
     {
       "fuel": "Hibrit",
@@ -214,9 +214,9 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 402,
+      "count": 403,
       "percentage": 71.8,
-      "avgPrice": 5998074
+      "avgPrice": 5999244
     },
     {
       "transmission": "DSG",
@@ -256,25 +256,25 @@
       "min": 1500000,
       "max": 3000000,
       "count": 251,
-      "percentage": 44.8
+      "percentage": 44.7
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
       "count": 114,
-      "percentage": 20.4
+      "percentage": 20.3
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
-      "count": 163,
-      "percentage": 29.1
+      "count": 164,
+      "percentage": 29.2
     }
   ],
   "otvStats": {
-    "avgOtvRate": 113.7,
+    "avgOtvRate": 113.5,
     "distribution": [
       {
         "rate": 1,
@@ -291,14 +291,14 @@
       {
         "rate": 25,
         "count": 12,
-        "percentage": 4.8,
+        "percentage": 4.7,
         "avgPrice": 2139033
       },
       {
         "rate": 55,
-        "count": 17,
-        "percentage": 6.7,
-        "avgPrice": 4761512
+        "count": 18,
+        "percentage": 7.1,
+        "avgPrice": 4856406
       },
       {
         "rate": 70,
@@ -309,7 +309,7 @@
       {
         "rate": 75,
         "count": 36,
-        "percentage": 14.3,
+        "percentage": 14.2,
         "avgPrice": 6749875
       },
       {
@@ -321,13 +321,13 @@
       {
         "rate": 90,
         "count": 33,
-        "percentage": 13.1,
+        "percentage": 13,
         "avgPrice": 3119552
       },
       {
         "rate": 100,
         "count": 44,
-        "percentage": 17.5,
+        "percentage": 17.4,
         "avgPrice": 5741536
       },
       {
@@ -339,13 +339,13 @@
       {
         "rate": 170,
         "count": 53,
-        "percentage": 21,
+        "percentage": 20.9,
         "avgPrice": 8586417
       },
       {
         "rate": 220,
         "count": 33,
-        "percentage": 13.1,
+        "percentage": 13,
         "avgPrice": 21460321
       }
     ],
@@ -357,8 +357,8 @@
       },
       {
         "brand": "BMW",
-        "avgOtvRate": 120.7,
-        "count": 60
+        "avgOtvRate": 119.6,
+        "count": 61
       },
       {
         "brand": "Volkswagen",
@@ -424,8 +424,8 @@
     "byFuel": [
       {
         "fuel": "Elektrik",
-        "avgConsumption": 18.4,
-        "count": 30
+        "avgConsumption": 18.3,
+        "count": 31
       },
       {
         "fuel": "Benzin",

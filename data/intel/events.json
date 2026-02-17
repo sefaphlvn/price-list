@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-02-16T01:33:25.481Z",
-  "date": "2026-02-16",
-  "previousDate": "2026-02-15",
+  "generatedAt": "2026-02-17T01:33:49.886Z",
+  "date": "2026-02-17",
+  "previousDate": "2026-02-16",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-02-16",
-    "totalDays": 20
+    "end": "2026-02-17",
+    "totalDays": 21
   },
   "summary": {
-    "totalEvents": 675,
-    "newVehicles": 173,
+    "totalEvents": 676,
+    "newVehicles": 174,
     "removedVehicles": 169,
     "priceIncreases": 277,
     "priceDecreases": 56,
@@ -17,6 +17,21 @@
     "avgPriceChangePercent": 1.93
   },
   "events": [
+    {
+      "id": "bmw-yeni-bmw-ix3-50-xdrive-ön-talep-formu-m-sport-218-hp-new-2026-02-17",
+      "type": "new",
+      "vehicleId": "bmw-yeni-bmw-ix3-50-xdrive-ön-talep-formu-m-sport-218-hp",
+      "brand": "BMW",
+      "brandId": "bmw",
+      "model": "Yeni BMW iX3 50 xDrive Ön talep formu",
+      "trim": "M Sport",
+      "engine": "218 HP",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "newPrice": 6469600,
+      "newPriceFormatted": "6.469.600 TL",
+      "date": "2026-02-17"
+    },
     {
       "id": "opel-corsa-e-gs-100-kw-new-2026-02-13",
       "type": "new",

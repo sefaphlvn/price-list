@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-16T01:33:29.566Z",
-  "date": "2026-02-16",
+  "generatedAt": "2026-02-17T01:33:54.022Z",
+  "date": "2026-02-17",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -5235,6 +5235,29 @@
       "trimCount": 1
     },
     {
+      "id": "bmw-yeni-bmw-ix3-50-xdrive-ön-talep-formu",
+      "model": "Yeni BMW iX3 50 xDrive Ön talep formu",
+      "brand": "BMW",
+      "brandId": "bmw",
+      "trims": [
+        {
+          "trim": "M Sport",
+          "price": 6469600,
+          "priceFormatted": "6.469.600 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "218 HP",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 6469600,
+      "topPrice": 6469600,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
       "id": "bmw-yeni-bmw-ix-xdrive60",
       "model": "Yeni BMW iX xDrive60",
       "brand": "BMW",
@@ -10378,6 +10401,16 @@
         {
           "brand": "BMW",
           "brandId": "bmw",
+          "model": "Yeni BMW iX3 50 xDrive Ön talep formu",
+          "basePrice": 6469600,
+          "topPrice": 6469600,
+          "basePriceFormatted": "₺6.469.600",
+          "topPriceFormatted": "₺6.469.600",
+          "trimCount": 1
+        },
+        {
+          "brand": "BMW",
+          "brandId": "bmw",
           "model": "Yeni BMW X3 20",
           "basePrice": 6712600,
           "topPrice": 7131900,
@@ -10416,8 +10449,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 3713372,
-      "avgTopPrice": 4162709
+      "avgBasePrice": 3782278,
+      "avgTopPrice": 4220381
     },
     {
       "segment": "Sedan",
@@ -11089,9 +11122,9 @@
     }
   ],
   "summary": {
-    "totalModels": 237,
+    "totalModels": 238,
     "avgTrimsPerModel": 2.4,
-    "avgPriceSpread": 362594,
-    "avgPriceSpreadPercent": 11.32
+    "avgPriceSpread": 361071,
+    "avgPriceSpreadPercent": 11.27
   }
 }
