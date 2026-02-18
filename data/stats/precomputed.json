@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-02-17T01:33:44.212Z",
-  "totalVehicles": 561,
+  "generatedAt": "2026-02-18T01:33:42.979Z",
+  "totalVehicles": 560,
   "overallStats": {
-    "avgPrice": 5087224,
+    "avgPrice": 5086487,
     "minPrice": 544900,
     "maxPrice": 36933000,
-    "medianPrice": 2955000
+    "medianPrice": 2953000
   },
   "brandStats": [
     {
@@ -145,33 +145,33 @@
       "medianPrice": 2119505.5
     },
     {
-      "name": "Honda",
-      "vehicleCount": 7,
-      "avgPrice": 3922714,
-      "minPrice": 2380000,
-      "maxPrice": 6160000,
-      "medianPrice": 2955000
-    },
-    {
       "name": "Dacia",
       "vehicleCount": 6,
       "avgPrice": 1455500,
       "minPrice": 1242000,
       "maxPrice": 1735000,
       "medianPrice": 1385999.995
+    },
+    {
+      "name": "Honda",
+      "vehicleCount": 6,
+      "avgPrice": 3659833,
+      "minPrice": 2380000,
+      "maxPrice": 6160000,
+      "medianPrice": 2815000
     }
   ],
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 225,
-      "percentage": 40.1,
-      "avgPrice": 5573988
+      "count": 224,
+      "percentage": 40,
+      "avgPrice": 5574319
     },
     {
       "fuel": "Elektrik",
       "count": 127,
-      "percentage": 22.6,
+      "percentage": 22.7,
       "avgPrice": 4762144
     },
     {
@@ -215,7 +215,7 @@
     {
       "transmission": "Otomatik",
       "count": 403,
-      "percentage": 71.8,
+      "percentage": 72,
       "avgPrice": 5999244
     },
     {
@@ -226,9 +226,9 @@
     },
     {
       "transmission": "Manuel",
-      "count": 43,
-      "percentage": 7.7,
-      "avgPrice": 1725667
+      "count": 42,
+      "percentage": 7.5,
+      "avgPrice": 1635802
     },
     {
       "transmission": "DCT",
@@ -256,21 +256,21 @@
       "min": 1500000,
       "max": 3000000,
       "count": 251,
-      "percentage": 44.7
+      "percentage": 44.8
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
       "count": 114,
-      "percentage": 20.3
+      "percentage": 20.4
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
-      "count": 164,
-      "percentage": 29.2
+      "count": 163,
+      "percentage": 29.1
     }
   ],
   "otvStats": {
@@ -397,14 +397,14 @@
       {
         "year": "2026",
         "count": 213,
-        "percentage": 47.7,
+        "percentage": 47.8,
         "avgPrice": 5439235
       },
       {
         "year": "2025",
-        "count": 223,
-        "percentage": 49.9,
-        "avgPrice": 4397983
+        "count": 222,
+        "percentage": 49.8,
+        "avgPrice": 4393019
       },
       {
         "year": "2024",

@@ -1,22 +1,38 @@
 {
-  "generatedAt": "2026-02-17T01:33:49.886Z",
-  "date": "2026-02-17",
-  "previousDate": "2026-02-16",
+  "generatedAt": "2026-02-18T01:33:48.744Z",
+  "date": "2026-02-18",
+  "previousDate": "2026-02-17",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-02-17",
-    "totalDays": 21
+    "end": "2026-02-18",
+    "totalDays": 22
   },
   "summary": {
-    "totalEvents": 676,
+    "totalEvents": 677,
     "newVehicles": 174,
-    "removedVehicles": 169,
+    "removedVehicles": 170,
     "priceIncreases": 277,
     "priceDecreases": 56,
     "avgPriceChange": 124609,
     "avgPriceChangePercent": 1.93
   },
   "events": [
+    {
+      "id": "honda-type-r-type-r-2.0l-vtec-turbo-benzin-manuel-removed-2026-02-18",
+      "type": "removed",
+      "vehicleId": "honda-type-r-type-r-2.0l-vtec-turbo-benzin-manuel",
+      "brand": "Honda",
+      "brandId": "honda",
+      "model": "Type R",
+      "trim": "Type R",
+      "engine": "2.0L VTEC Turbo Benzin Manuel",
+      "fuel": "Benzin",
+      "transmission": "Manuel",
+      "oldPrice": 5500000,
+      "oldPriceFormatted": "5.500.000 TL",
+      "date": "2026-02-18",
+      "previousDate": "2026-02-17"
+    },
     {
       "id": "bmw-yeni-bmw-ix3-50-xdrive-ön-talep-formu-m-sport-218-hp-new-2026-02-17",
       "type": "new",

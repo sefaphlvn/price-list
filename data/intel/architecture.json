@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-17T01:33:54.022Z",
-  "date": "2026-02-17",
+  "generatedAt": "2026-02-18T01:33:52.857Z",
+  "date": "2026-02-18",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -7341,29 +7341,6 @@
       "trimCount": 1
     },
     {
-      "id": "honda-type-r",
-      "model": "Type R",
-      "brand": "Honda",
-      "brandId": "honda",
-      "trims": [
-        {
-          "trim": "Type R",
-          "price": 5500000,
-          "priceFormatted": "5.500.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "2.0L VTEC Turbo Benzin Manuel",
-          "transmission": "Manuel",
-          "fuel": "Benzin"
-        }
-      ],
-      "basePrice": 5500000,
-      "topPrice": 5500000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
       "id": "honda-cr-v-hybrid",
       "model": "CR-V Hybrid",
       "brand": "Honda",
@@ -9362,16 +9339,6 @@
           "trimCount": 1
         },
         {
-          "brand": "Honda",
-          "brandId": "honda",
-          "model": "Type R",
-          "basePrice": 5500000,
-          "topPrice": 5500000,
-          "basePriceFormatted": "₺5.500.000",
-          "topPriceFormatted": "₺5.500.000",
-          "trimCount": 1
-        },
-        {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "EQE 280",
@@ -10042,8 +10009,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8035410,
-      "avgTopPrice": 8362302
+      "avgBasePrice": 8054617,
+      "avgTopPrice": 8383986
     },
     {
       "segment": "SUV",
@@ -11122,9 +11089,9 @@
     }
   ],
   "summary": {
-    "totalModels": 238,
+    "totalModels": 237,
     "avgTrimsPerModel": 2.4,
-    "avgPriceSpread": 361071,
-    "avgPriceSpreadPercent": 11.27
+    "avgPriceSpread": 362594,
+    "avgPriceSpreadPercent": 11.32
   }
 }
