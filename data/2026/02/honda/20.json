@@ -1,0 +1,93 @@
+{
+  "collectedAt": "2026-02-20T01:31:41.776Z",
+  "brand": "Honda",
+  "brandId": "honda",
+  "rowCount": 6,
+  "rows": [
+    {
+      "model": "Jazz Hybrid",
+      "trim": "Crosstar",
+      "engine": "1.5L Hibrit Otomatik",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "2.380.000 TL",
+      "priceNumeric": 2380000,
+      "brand": "Honda",
+      "modelYear": 2025,
+      "priceListNumeric": 2380000,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
+    },
+    {
+      "model": "HR-V Hybrid",
+      "trim": "Elegance",
+      "engine": "1.5L Hibrit Otomatik",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "2.389.000 TL",
+      "priceNumeric": 2389000,
+      "brand": "Honda",
+      "modelYear": 2025,
+      "priceListNumeric": 2544000,
+      "priceCampaignNumeric": 2389000,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
+    },
+    {
+      "model": "HR-V Hybrid",
+      "trim": "Advance",
+      "engine": "1.5L Hibrit Otomatik",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "2.675.000 TL",
+      "priceNumeric": 2675000,
+      "brand": "Honda",
+      "modelYear": 2025,
+      "priceListNumeric": 2675000,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
+    },
+    {
+      "model": "HR-V Hybrid",
+      "trim": "Style+",
+      "engine": "1.5L Hibrit Otomatik",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "2.955.000 TL",
+      "priceNumeric": 2955000,
+      "brand": "Honda",
+      "modelYear": 2025,
+      "priceListNumeric": 2955000,
+      "engineDisplacement": "1.5L",
+      "isHybrid": true
+    },
+    {
+      "model": "Prelude Hybrid",
+      "trim": "Advance",
+      "engine": "2.0L Hibrit Otomatik",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "5.400.000 TL",
+      "priceNumeric": 5400000,
+      "brand": "Honda",
+      "modelYear": 2025,
+      "priceListNumeric": 5400000,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true
+    },
+    {
+      "model": "CR-V Hybrid",
+      "trim": "Advance",
+      "engine": "2.0L Hibrit Otomatik",
+      "transmission": "Otomatik",
+      "fuel": "Hybrid",
+      "priceRaw": "6.160.000 TL",
+      "priceNumeric": 6160000,
+      "brand": "Honda",
+      "modelYear": 2025,
+      "priceListNumeric": 6160000,
+      "engineDisplacement": "2.0L",
+      "isHybrid": true
+    }
+  ]
+}
