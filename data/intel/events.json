@@ -1,22 +1,53 @@
 {
-  "generatedAt": "2026-02-20T01:33:09.138Z",
-  "date": "2026-02-20",
-  "previousDate": "2026-02-19",
+  "generatedAt": "2026-02-21T01:33:26.578Z",
+  "date": "2026-02-21",
+  "previousDate": "2026-02-20",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-02-20",
-    "totalDays": 24
+    "end": "2026-02-21",
+    "totalDays": 25
   },
   "summary": {
-    "totalEvents": 677,
-    "newVehicles": 174,
-    "removedVehicles": 170,
+    "totalEvents": 679,
+    "newVehicles": 175,
+    "removedVehicles": 171,
     "priceIncreases": 277,
     "priceDecreases": 56,
     "avgPriceChange": 124609,
     "avgPriceChangePercent": 1.93
   },
   "events": [
+    {
+      "id": "toyota-land-cruiser-prado-land-cruiser-prado-2.8-l-d-4d-mild-hybrid-power-8-a/t-2.8-new-2026-02-21",
+      "type": "new",
+      "vehicleId": "toyota-land-cruiser-prado-land-cruiser-prado-2.8-l-d-4d-mild-hybrid-power-8-a/t-2.8",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Land Cruiser Prado",
+      "trim": "Land Cruiser Prado 2.8 L D-4D Mild Hybrid Power 8 A/T",
+      "engine": "2.8",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "newPrice": 13100000,
+      "newPriceFormatted": "13100000",
+      "date": "2026-02-21"
+    },
+    {
+      "id": "toyota-land-cruiser-prado-2.8-d-4d-8-a\\t-land-cruiser-prado-2.8-removed-2026-02-21",
+      "type": "removed",
+      "vehicleId": "toyota-land-cruiser-prado-2.8-d-4d-8-a\\t-land-cruiser-prado-2.8",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "model": "Land Cruiser Prado",
+      "trim": "2.8 D-4D 8 A\\T Land Cruiser Prado",
+      "engine": "2.8",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "oldPrice": 12000000,
+      "oldPriceFormatted": "12000000",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-20"
+    },
     {
       "id": "honda-type-r-type-r-2.0l-vtec-turbo-benzin-manuel-removed-2026-02-18",
       "type": "removed",

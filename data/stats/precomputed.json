@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-02-20T01:33:06.481Z",
+  "generatedAt": "2026-02-21T01:33:23.650Z",
   "totalVehicles": 560,
   "overallStats": {
-    "avgPrice": 5086487,
+    "avgPrice": 5088451,
     "minPrice": 544900,
     "maxPrice": 36933000,
     "medianPrice": 2953000
@@ -27,9 +27,9 @@
     {
       "name": "Toyota",
       "vehicleCount": 48,
-      "avgPrice": 2504135,
+      "avgPrice": 2527052,
       "minPrice": 1222000,
-      "maxPrice": 12000000,
+      "maxPrice": 13100000,
       "medianPrice": 2279500
     },
     {
@@ -184,7 +184,7 @@
       "fuel": "Dizel",
       "count": 71,
       "percentage": 12.7,
-      "avgPrice": 4279856
+      "avgPrice": 4295349
     },
     {
       "fuel": "Hafif Hibrit",
@@ -216,7 +216,7 @@
       "transmission": "Otomatik",
       "count": 403,
       "percentage": 72,
-      "avgPrice": 5999244
+      "avgPrice": 6001973
     },
     {
       "transmission": "DSG",
@@ -404,7 +404,7 @@
         "year": "2025",
         "count": 222,
         "percentage": 49.8,
-        "avgPrice": 4393019
+        "avgPrice": 4397974
       },
       {
         "year": "2024",

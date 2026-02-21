@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-20T01:33:09.974Z",
-  "date": "2026-02-20",
+  "generatedAt": "2026-02-21T01:33:27.511Z",
+  "date": "2026-02-21",
   "summary": {
     "totalPriceDrops": 19,
     "totalRecentDrops": 36,
@@ -130,17 +130,9 @@
       "peakDate": "2026-01-28",
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "daysSincePeak": 23,
+      "daysSincePeak": 24,
       "priceHistory": [
         {
-          "date": "2026-02-16",
-          "price": 1999000
-        },
-        {
-          "date": "2026-02-16",
-          "price": 1740000
-        },
-        {
           "date": "2026-02-17",
           "price": 1999000
         },
@@ -170,6 +162,14 @@
         },
         {
           "date": "2026-02-20",
+          "price": 1740000
+        },
+        {
+          "date": "2026-02-21",
+          "price": 1999000
+        },
+        {
+          "date": "2026-02-21",
           "price": 1740000
         }
       ],
@@ -227,12 +227,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 309000,
       "dropPercent": 9.48,
-      "daysSincePeak": 23,
+      "daysSincePeak": 24,
       "priceHistory": [
-        {
-          "date": "2026-02-11",
-          "price": 2950000
-        },
         {
           "date": "2026-02-12",
           "price": 2950000
@@ -267,6 +263,10 @@
         },
         {
           "date": "2026-02-20",
+          "price": 2950000
+        },
+        {
+          "date": "2026-02-21",
           "price": 2950000
         }
       ],
@@ -290,12 +290,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 144000,
       "dropPercent": 7.96,
-      "daysSincePeak": 23,
+      "daysSincePeak": 24,
       "priceHistory": [
-        {
-          "date": "2026-02-11",
-          "price": 1665000
-        },
         {
           "date": "2026-02-12",
           "price": 1665000
@@ -330,6 +326,10 @@
         },
         {
           "date": "2026-02-20",
+          "price": 1665000
+        },
+        {
+          "date": "2026-02-21",
           "price": 1665000
         }
       ],
@@ -351,12 +351,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 196500,
       "dropPercent": 7.66,
-      "daysSincePeak": 23,
+      "daysSincePeak": 24,
       "priceHistory": [
-        {
-          "date": "2026-02-11",
-          "price": 2370000
-        },
         {
           "date": "2026-02-12",
           "price": 2370000
@@ -391,6 +387,10 @@
         },
         {
           "date": "2026-02-20",
+          "price": 2370000
+        },
+        {
+          "date": "2026-02-21",
           "price": 2370000
         }
       ],
@@ -414,12 +414,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 110000,
       "dropPercent": 7.01,
-      "daysSincePeak": 23,
+      "daysSincePeak": 24,
       "priceHistory": [
-        {
-          "date": "2026-02-11",
-          "price": 1459900
-        },
         {
           "date": "2026-02-12",
           "price": 1459900
@@ -454,6 +450,10 @@
         },
         {
           "date": "2026-02-20",
+          "price": 1459900
+        },
+        {
+          "date": "2026-02-21",
           "price": 1459900
         }
       ],
@@ -477,17 +477,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 389000,
       "dropPercent": 6.68,
-      "daysSincePeak": 11,
+      "daysSincePeak": 12,
       "priceHistory": [
         {
-          "date": "2026-02-16",
-          "price": 5825000
-        },
-        {
-          "date": "2026-02-16",
-          "price": 5436000
-        },
-        {
           "date": "2026-02-17",
           "price": 5825000
         },
@@ -517,6 +509,14 @@
         },
         {
           "date": "2026-02-20",
+          "price": 5436000
+        },
+        {
+          "date": "2026-02-21",
+          "price": 5825000
+        },
+        {
+          "date": "2026-02-21",
           "price": 5436000
         }
       ],
@@ -539,17 +539,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 400000,
       "dropPercent": 6.48,
-      "daysSincePeak": 11,
+      "daysSincePeak": 12,
       "priceHistory": [
         {
-          "date": "2026-02-16",
-          "price": 6170000
-        },
-        {
-          "date": "2026-02-16",
-          "price": 5770000
-        },
-        {
           "date": "2026-02-17",
           "price": 6170000
         },
@@ -579,6 +571,14 @@
         },
         {
           "date": "2026-02-20",
+          "price": 5770000
+        },
+        {
+          "date": "2026-02-21",
+          "price": 6170000
+        },
+        {
+          "date": "2026-02-21",
           "price": 5770000
         }
       ],
@@ -601,12 +601,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 155000,
       "dropPercent": 6.09,
-      "daysSincePeak": 23,
+      "daysSincePeak": 24,
       "priceHistory": [
-        {
-          "date": "2026-02-11",
-          "price": 2389000
-        },
         {
           "date": "2026-02-12",
           "price": 2389000
@@ -641,6 +637,10 @@
         },
         {
           "date": "2026-02-20",
+          "price": 2389000
+        },
+        {
+          "date": "2026-02-21",
           "price": 2389000
         }
       ],
@@ -664,12 +664,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 100000,
       "dropPercent": 6.06,
-      "daysSincePeak": 23,
+      "daysSincePeak": 24,
       "priceHistory": [
-        {
-          "date": "2026-02-11",
-          "price": 1549900
-        },
         {
           "date": "2026-02-12",
           "price": 1549900
@@ -704,6 +700,10 @@
         },
         {
           "date": "2026-02-20",
+          "price": 1549900
+        },
+        {
+          "date": "2026-02-21",
           "price": 1549900
         }
       ],
@@ -727,12 +727,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 127500,
       "dropPercent": 5.79,
-      "daysSincePeak": 23,
+      "daysSincePeak": 24,
       "priceHistory": [
-        {
-          "date": "2026-02-11",
-          "price": 2074000
-        },
         {
           "date": "2026-02-12",
           "price": 2074000
@@ -767,6 +763,10 @@
         },
         {
           "date": "2026-02-20",
+          "price": 2074000
+        },
+        {
+          "date": "2026-02-21",
           "price": 2074000
         }
       ],
@@ -790,17 +790,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 380000,
       "dropPercent": 5.63,
-      "daysSincePeak": 11,
+      "daysSincePeak": 12,
       "priceHistory": [
         {
-          "date": "2026-02-16",
-          "price": 6752000
-        },
-        {
-          "date": "2026-02-16",
-          "price": 6372000
-        },
-        {
           "date": "2026-02-17",
           "price": 6752000
         },
@@ -830,6 +822,14 @@
         },
         {
           "date": "2026-02-20",
+          "price": 6372000
+        },
+        {
+          "date": "2026-02-21",
+          "price": 6752000
+        },
+        {
+          "date": "2026-02-21",
           "price": 6372000
         }
       ],
@@ -852,17 +852,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 505000,
       "dropPercent": 5.63,
-      "daysSincePeak": 11,
+      "daysSincePeak": 12,
       "priceHistory": [
         {
-          "date": "2026-02-16",
-          "price": 8968000
-        },
-        {
-          "date": "2026-02-16",
-          "price": 8463000
-        },
-        {
           "date": "2026-02-17",
           "price": 8968000
         },
@@ -892,6 +884,14 @@
         },
         {
           "date": "2026-02-20",
+          "price": 8463000
+        },
+        {
+          "date": "2026-02-21",
+          "price": 8968000
+        },
+        {
+          "date": "2026-02-21",
           "price": 8463000
         }
       ],
@@ -914,17 +914,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 558000,
       "dropPercent": 5.63,
-      "daysSincePeak": 11,
+      "daysSincePeak": 12,
       "priceHistory": [
         {
-          "date": "2026-02-16",
-          "price": 9917000
-        },
-        {
-          "date": "2026-02-16",
-          "price": 9359000
-        },
-        {
           "date": "2026-02-17",
           "price": 9917000
         },
@@ -954,6 +946,14 @@
         },
         {
           "date": "2026-02-20",
+          "price": 9359000
+        },
+        {
+          "date": "2026-02-21",
+          "price": 9917000
+        },
+        {
+          "date": "2026-02-21",
           "price": 9359000
         }
       ],
@@ -976,12 +976,8 @@
       "peakDate": "2026-02-03",
       "dropAmount": 91000,
       "dropPercent": 5.4,
-      "daysSincePeak": 17,
+      "daysSincePeak": 18,
       "priceHistory": [
-        {
-          "date": "2026-02-11",
-          "price": 1593000
-        },
         {
           "date": "2026-02-12",
           "price": 1593000
@@ -1016,6 +1012,10 @@
         },
         {
           "date": "2026-02-20",
+          "price": 1593000
+        },
+        {
+          "date": "2026-02-21",
           "price": 1593000
         }
       ],
@@ -1037,12 +1037,8 @@
       "peakDate": "2026-01-28",
       "dropAmount": 106000,
       "dropPercent": 5.11,
-      "daysSincePeak": 23,
+      "daysSincePeak": 24,
       "priceHistory": [
-        {
-          "date": "2026-02-11",
-          "price": 1969900
-        },
         {
           "date": "2026-02-12",
           "price": 1969900
@@ -1077,6 +1073,10 @@
         },
         {
           "date": "2026-02-20",
+          "price": 1969900
+        },
+        {
+          "date": "2026-02-21",
           "price": 1969900
         }
       ],
@@ -1148,8 +1148,8 @@
       "previousPrice": 1999000,
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 921087.5,
       "campaignPrice": 1999000
     },
@@ -1181,8 +1181,8 @@
       "previousPrice": 5825000,
       "dropAmount": 389000,
       "dropPercent": 6.68,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2427083
     },
     {
@@ -1196,8 +1196,8 @@
       "previousPrice": 6170000,
       "dropAmount": 400000,
       "dropPercent": 6.48,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2570833
     },
     {
@@ -1211,8 +1211,8 @@
       "previousPrice": 6752000,
       "dropAmount": 380000,
       "dropPercent": 5.63,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2813333
     },
     {
@@ -1226,8 +1226,8 @@
       "previousPrice": 8968000,
       "dropAmount": 505000,
       "dropPercent": 5.63,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2767901
     },
     {
@@ -1241,8 +1241,8 @@
       "previousPrice": 9917000,
       "dropAmount": 558000,
       "dropPercent": 5.63,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 3060802
     },
     {
@@ -1256,8 +1256,8 @@
       "previousPrice": 4483000,
       "dropAmount": 215000,
       "dropPercent": 4.8,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 1966228
     },
     {
@@ -1271,8 +1271,8 @@
       "previousPrice": 5869000,
       "dropAmount": 281300,
       "dropPercent": 4.79,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 3155376
     },
     {
@@ -1286,8 +1286,8 @@
       "previousPrice": 4217000,
       "dropAmount": 202200,
       "dropPercent": 4.79,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2267204
     },
     {
@@ -1301,8 +1301,8 @@
       "previousPrice": 10705000,
       "dropAmount": 512000,
       "dropPercent": 4.78,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 3304012
     },
     {
@@ -1316,8 +1316,8 @@
       "previousPrice": 10785000,
       "dropAmount": 515000,
       "dropPercent": 4.78,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 3328704
     },
     {
@@ -1331,8 +1331,8 @@
       "previousPrice": 13551000,
       "dropAmount": 640400,
       "dropPercent": 4.73,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 3528906
     },
     {
@@ -1346,8 +1346,8 @@
       "previousPrice": 9309000,
       "dropAmount": 440000,
       "dropPercent": 4.73,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2873148
     },
     {
@@ -1361,8 +1361,8 @@
       "previousPrice": 7124000,
       "dropAmount": 337000,
       "dropPercent": 4.73,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2968333
     },
     {
@@ -1376,8 +1376,8 @@
       "previousPrice": 15209000,
       "dropAmount": 718800,
       "dropPercent": 4.73,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 7242381
     },
     {
@@ -1391,8 +1391,8 @@
       "previousPrice": 29550000,
       "dropAmount": 1396400,
       "dropPercent": 4.73,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 7695313
     },
     {
@@ -1406,8 +1406,8 @@
       "previousPrice": 15891000,
       "dropAmount": 751000,
       "dropPercent": 4.73,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 4904630
     },
     {
@@ -1421,8 +1421,8 @@
       "previousPrice": 8202000,
       "dropAmount": 387000,
       "dropPercent": 4.72,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2531481
     },
     {
@@ -1436,8 +1436,8 @@
       "previousPrice": 8303000,
       "dropAmount": 392000,
       "dropPercent": 4.72,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2562654
     },
     {
@@ -1451,8 +1451,8 @@
       "previousPrice": 10357000,
       "dropAmount": 489000,
       "dropPercent": 4.72,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 3196605
     },
     {
@@ -1466,8 +1466,8 @@
       "previousPrice": 21367000,
       "dropAmount": 1009400,
       "dropPercent": 4.72,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 5564323
     },
     {
@@ -1481,8 +1481,8 @@
       "previousPrice": 22745000,
       "dropAmount": 1074400,
       "dropPercent": 4.72,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 5923177
     },
     {
@@ -1496,8 +1496,8 @@
       "previousPrice": 15986000,
       "dropAmount": 755000,
       "dropPercent": 4.72,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 4933951
     },
     {
@@ -1511,8 +1511,8 @@
       "previousPrice": 4873000,
       "dropAmount": 230000,
       "dropPercent": 4.72,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 2030417
     },
     {
@@ -1526,8 +1526,8 @@
       "previousPrice": 20224000,
       "dropAmount": 896400,
       "dropPercent": 4.43,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 5266667
     },
     {
@@ -1541,8 +1541,8 @@
       "previousPrice": 7860000,
       "dropAmount": 335000,
       "dropPercent": 4.26,
-      "date": "2026-02-20",
-      "previousDate": "2026-02-20",
+      "date": "2026-02-21",
+      "previousDate": "2026-02-21",
       "listPrice": 3275000
     }
   ],

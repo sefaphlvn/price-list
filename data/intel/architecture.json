@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-20T01:33:09.503Z",
-  "date": "2026-02-20",
+  "generatedAt": "2026-02-21T01:33:26.976Z",
+  "date": "2026-02-21",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -1626,9 +1626,9 @@
       "brandId": "toyota",
       "trims": [
         {
-          "trim": "2.8 D-4D 8 A\\T Land Cruiser Prado",
-          "price": 12000000,
-          "priceFormatted": "12000000",
+          "trim": "Land Cruiser Prado 2.8 L D-4D Mild Hybrid Power 8 A/T",
+          "price": 13100000,
+          "priceFormatted": "13100000",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "2.8",
@@ -1636,8 +1636,8 @@
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 12000000,
-      "topPrice": 12000000,
+      "basePrice": 13100000,
+      "topPrice": 13100000,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -9709,16 +9709,6 @@
           "trimCount": 1
         },
         {
-          "brand": "Toyota",
-          "brandId": "toyota",
-          "model": "Land Cruiser Prado",
-          "basePrice": 12000000,
-          "topPrice": 12000000,
-          "basePriceFormatted": "₺12.000.000",
-          "topPriceFormatted": "₺12.000.000",
-          "trimCount": 1
-        },
-        {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-AMG C 63 S E PERFORMANCE",
@@ -9747,6 +9737,16 @@
           "basePriceFormatted": "₺12.910.600",
           "topPriceFormatted": "₺13.551.000",
           "trimCount": 2
+        },
+        {
+          "brand": "Toyota",
+          "brandId": "toyota",
+          "model": "Land Cruiser Prado",
+          "basePrice": 13100000,
+          "topPrice": 13100000,
+          "basePriceFormatted": "₺13.100.000",
+          "topPriceFormatted": "₺13.100.000",
+          "trimCount": 1
         },
         {
           "brand": "BMW",
@@ -10009,8 +10009,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8054617,
-      "avgTopPrice": 8383986
+      "avgBasePrice": 8062951,
+      "avgTopPrice": 8392320
     },
     {
       "segment": "SUV",
