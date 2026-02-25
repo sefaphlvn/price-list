@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-24T01:33:31.906Z",
-  "date": "2026-02-24",
+  "generatedAt": "2026-02-25T01:33:11.920Z",
+  "date": "2026-02-25",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -4015,16 +4015,6 @@
           "fuel": "Dizel"
         },
         {
-          "trim": "Panelvan L2 Standart",
-          "price": 1593000,
-          "priceFormatted": "1.593.000 TL",
-          "stepFromBase": 122000,
-          "stepPercent": 8.293677770224338,
-          "engine": "2.2 BlueHDi 180 HP - EAT8",
-          "transmission": "Otomatik",
-          "fuel": "Dizel"
-        },
-        {
           "trim": "Panelvan L3 Uzun",
           "price": 1593000,
           "priceFormatted": "1.593.000 TL",
@@ -4032,6 +4022,16 @@
           "stepPercent": 8.293677770224338,
           "engine": "2.2 BlueHDi 150 HP - 6 İleri Manuel",
           "transmission": "Manuel",
+          "fuel": "Dizel"
+        },
+        {
+          "trim": "Panelvan L2 Standart",
+          "price": 1593000,
+          "priceFormatted": "1.593.000 TL",
+          "stepFromBase": 122000,
+          "stepPercent": 8.293677770224338,
+          "engine": "2.2 BlueHDi 180 HP - EAT8",
+          "transmission": "Otomatik",
           "fuel": "Dizel"
         },
         {
