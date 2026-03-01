@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-27T01:33:05.066Z",
-  "date": "2026-02-27",
+  "generatedAt": "2026-03-01T01:33:20.954Z",
+  "date": "2026-03-01",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -7252,29 +7252,6 @@
       "trimCount": 6
     },
     {
-      "id": "honda-jazz-hybrid",
-      "model": "Jazz Hybrid",
-      "brand": "Honda",
-      "brandId": "honda",
-      "trims": [
-        {
-          "trim": "Crosstar",
-          "price": 2380000,
-          "priceFormatted": "2.380.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.5L Hibrit Otomatik",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        }
-      ],
-      "basePrice": 2380000,
-      "topPrice": 2380000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
       "id": "honda-hr-v-hybrid",
       "model": "HR-V Hybrid",
       "brand": "Honda",
@@ -7282,8 +7259,8 @@
       "trims": [
         {
           "trim": "Elegance",
-          "price": 2389000,
-          "priceFormatted": "2.389.000 TL",
+          "price": 2595000,
+          "priceFormatted": "2.595.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5L Hibrit Otomatik",
@@ -7292,76 +7269,20 @@
         },
         {
           "trim": "Advance",
-          "price": 2675000,
-          "priceFormatted": "2.675.000 TL",
-          "stepFromBase": 286000,
-          "stepPercent": 11.97153620761825,
-          "engine": "1.5L Hibrit Otomatik",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
-          "trim": "Style+",
-          "price": 2955000,
-          "priceFormatted": "2.955.000 TL",
-          "stepFromBase": 566000,
-          "stepPercent": 23.69192130598577,
+          "price": 2730000,
+          "priceFormatted": "2.730.000 TL",
+          "stepFromBase": 135000,
+          "stepPercent": 5.202312138728324,
           "engine": "1.5L Hibrit Otomatik",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         }
       ],
-      "basePrice": 2389000,
-      "topPrice": 2955000,
-      "priceSpread": 566000,
-      "priceSpreadPercent": 23.69,
-      "trimCount": 3
-    },
-    {
-      "id": "honda-prelude-hybrid",
-      "model": "Prelude Hybrid",
-      "brand": "Honda",
-      "brandId": "honda",
-      "trims": [
-        {
-          "trim": "Advance",
-          "price": 5400000,
-          "priceFormatted": "5.400.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "2.0L Hibrit Otomatik",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        }
-      ],
-      "basePrice": 5400000,
-      "topPrice": 5400000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
-      "id": "honda-cr-v-hybrid",
-      "model": "CR-V Hybrid",
-      "brand": "Honda",
-      "brandId": "honda",
-      "trims": [
-        {
-          "trim": "Advance",
-          "price": 6160000,
-          "priceFormatted": "6.160.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "2.0L Hibrit Otomatik",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        }
-      ],
-      "basePrice": 6160000,
-      "topPrice": 6160000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "basePrice": 2595000,
+      "topPrice": 2730000,
+      "priceSpread": 135000,
+      "priceSpreadPercent": 5.2,
+      "trimCount": 2
     },
     {
       "id": "seat-ibiza",
@@ -9299,16 +9220,6 @@
           "trimCount": 1
         },
         {
-          "brand": "Honda",
-          "brandId": "honda",
-          "model": "Prelude Hybrid",
-          "basePrice": 5400000,
-          "topPrice": 5400000,
-          "basePriceFormatted": "₺5.400.000",
-          "topPriceFormatted": "₺5.400.000",
-          "trimCount": 1
-        },
-        {
           "brand": "BYD",
           "brandId": "byd",
           "model": "TANG",
@@ -10009,8 +9920,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8062951,
-      "avgTopPrice": 8392320
+      "avgBasePrice": 8083279,
+      "avgTopPrice": 8415162
     },
     {
       "segment": "SUV",
@@ -10146,16 +10057,6 @@
           "trimCount": 3
         },
         {
-          "brand": "Honda",
-          "brandId": "honda",
-          "model": "HR-V Hybrid",
-          "basePrice": 2389000,
-          "topPrice": 2955000,
-          "basePriceFormatted": "₺2.389.000",
-          "topPriceFormatted": "₺2.955.000",
-          "trimCount": 3
-        },
-        {
           "brand": "Nissan",
           "brandId": "nissan",
           "model": "QASHQAI",
@@ -10164,6 +10065,16 @@
           "basePriceFormatted": "₺2.576.900",
           "topPriceFormatted": "₺3.753.200",
           "trimCount": 7
+        },
+        {
+          "brand": "Honda",
+          "brandId": "honda",
+          "model": "HR-V Hybrid",
+          "basePrice": 2595000,
+          "topPrice": 2730000,
+          "basePriceFormatted": "₺2.595.000",
+          "topPriceFormatted": "₺2.730.000",
+          "trimCount": 2
         },
         {
           "brand": "Citroën",
@@ -10356,16 +10267,6 @@
           "trimCount": 2
         },
         {
-          "brand": "Honda",
-          "brandId": "honda",
-          "model": "CR-V Hybrid",
-          "basePrice": 6160000,
-          "topPrice": 6160000,
-          "basePriceFormatted": "₺6.160.000",
-          "topPriceFormatted": "₺6.160.000",
-          "trimCount": 1
-        },
-        {
           "brand": "BMW",
           "brandId": "bmw",
           "model": "Yeni BMW iX3 50 xDrive Ön talep formu",
@@ -10416,8 +10317,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 3782278,
-      "avgTopPrice": 4220381
+      "avgBasePrice": 3726593,
+      "avgTopPrice": 4164878
     },
     {
       "segment": "Sedan",
@@ -10967,16 +10868,6 @@
           "trimCount": 1
         },
         {
-          "brand": "Honda",
-          "brandId": "honda",
-          "model": "Jazz Hybrid",
-          "basePrice": 2380000,
-          "topPrice": 2380000,
-          "basePriceFormatted": "₺2.380.000",
-          "topPriceFormatted": "₺2.380.000",
-          "trimCount": 1
-        },
-        {
           "brand": "SEAT",
           "brandId": "seat",
           "model": "Leon",
@@ -11007,8 +10898,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 2505443,
-      "avgTopPrice": 2678412
+      "avgBasePrice": 2513806,
+      "avgTopPrice": 2698306
     },
     {
       "segment": "MPV",
@@ -11089,9 +10980,9 @@
     }
   ],
   "summary": {
-    "totalModels": 237,
+    "totalModels": 234,
     "avgTrimsPerModel": 2.4,
-    "avgPriceSpread": 362594,
-    "avgPriceSpreadPercent": 11.32
+    "avgPriceSpread": 365401,
+    "avgPriceSpreadPercent": 11.39
   }
 }

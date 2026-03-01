@@ -1,107 +1,14 @@
 {
-  "generatedAt": "2026-02-27T01:33:05.607Z",
-  "date": "2026-02-27",
+  "generatedAt": "2026-03-01T01:33:21.466Z",
+  "date": "2026-03-01",
   "summary": {
-    "totalPriceDrops": 19,
-    "totalRecentDrops": 36,
-    "avgDropPercent": 8.3,
-    "maxDropPercent": 14.18,
-    "brandsWithDrops": 6
+    "totalPriceDrops": 7,
+    "totalRecentDrops": 32,
+    "avgDropPercent": 6.92,
+    "maxDropPercent": 12.96,
+    "brandsWithDrops": 3
   },
   "priceDrops": [
-    {
-      "id": "fiat-topolino-2025-topolino-6-kw/8-hp---5.5kwh",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino 2025",
-      "trim": "Topolino",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 544900,
-      "currentPriceFormatted": "₺544.900",
-      "peakPrice": 634900,
-      "peakPriceFormatted": "₺634.900",
-      "peakDate": "2026-01-29",
-      "dropAmount": 90000,
-      "dropPercent": 14.18,
-      "daysSincePeak": 1,
-      "priceHistory": [
-        {
-          "date": "2026-01-29",
-          "price": 634900
-        },
-        {
-          "date": "2026-01-30",
-          "price": 544900
-        }
-      ],
-      "listPrice": 634900,
-      "campaignPrice": 544900,
-      "campaignDiscount": 14.2
-    },
-    {
-      "id": "fiat-topolino-2026-topolino-6-kw/8-hp---5.5kwh",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino 2026",
-      "trim": "Topolino",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 559900,
-      "currentPriceFormatted": "₺559.900",
-      "peakPrice": 649900,
-      "peakPriceFormatted": "₺649.900",
-      "peakDate": "2026-01-29",
-      "dropAmount": 90000,
-      "dropPercent": 13.85,
-      "daysSincePeak": 1,
-      "priceHistory": [
-        {
-          "date": "2026-01-29",
-          "price": 649900
-        },
-        {
-          "date": "2026-01-30",
-          "price": 559900
-        }
-      ],
-      "listPrice": 649900,
-      "campaignPrice": 559900,
-      "campaignDiscount": 13.8
-    },
-    {
-      "id": "fiat-topolino-2025-topolino-plus-6-kw/8-hp---5.5kwh",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino 2025",
-      "trim": "Topolino Plus",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 589900,
-      "currentPriceFormatted": "₺589.900",
-      "peakPrice": 679900,
-      "peakPriceFormatted": "₺679.900",
-      "peakDate": "2026-01-29",
-      "dropAmount": 90000,
-      "dropPercent": 13.24,
-      "daysSincePeak": 1,
-      "priceHistory": [
-        {
-          "date": "2026-01-29",
-          "price": 679900
-        },
-        {
-          "date": "2026-01-30",
-          "price": 589900
-        }
-      ],
-      "listPrice": 679900,
-      "campaignPrice": 589900,
-      "campaignDiscount": 13.2
-    },
     {
       "id": "kia-stonic-cool-100-ps",
       "brand": "Kia",
@@ -115,20 +22,12 @@
       "currentPriceFormatted": "₺1.740.000",
       "peakPrice": 1999000,
       "peakPriceFormatted": "₺1.999.000",
-      "peakDate": "2026-01-29",
+      "peakDate": "2026-01-30",
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "daysSincePeak": 29,
+      "daysSincePeak": 30,
       "priceHistory": [
         {
-          "date": "2026-02-23",
-          "price": 1999000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 1740000
-        },
-        {
           "date": "2026-02-24",
           "price": 1999000
         },
@@ -158,292 +57,19 @@
         },
         {
           "date": "2026-02-27",
+          "price": 1740000
+        },
+        {
+          "date": "2026-03-01",
+          "price": 1999000
+        },
+        {
+          "date": "2026-03-01",
           "price": 1740000
         }
       ],
       "listPrice": 921087.5,
       "campaignPrice": 1999000
-    },
-    {
-      "id": "fiat-topolino-2026-topolino-plus-6-kw/8-hp---5.5kwh",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino 2026",
-      "trim": "Topolino Plus",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 604900,
-      "currentPriceFormatted": "₺604.900",
-      "peakPrice": 694900,
-      "peakPriceFormatted": "₺694.900",
-      "peakDate": "2026-01-29",
-      "dropAmount": 90000,
-      "dropPercent": 12.95,
-      "daysSincePeak": 1,
-      "priceHistory": [
-        {
-          "date": "2026-01-29",
-          "price": 694900
-        },
-        {
-          "date": "2026-01-30",
-          "price": 604900
-        }
-      ],
-      "listPrice": 694900,
-      "campaignPrice": 604900,
-      "campaignDiscount": 13
-    },
-    {
-      "id": "peugeot-3008-gt-1.2-hybrid-145-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "3008",
-      "trim": "Gt",
-      "engine": "1.2 Hybrid 145 HP",
-      "fuel": "Hibrit",
-      "transmission": "Otomatik",
-      "currentPrice": 2950000,
-      "currentPriceFormatted": "₺2.950.000",
-      "peakPrice": 3259000,
-      "peakPriceFormatted": "₺3.259.000",
-      "peakDate": "2026-01-29",
-      "dropAmount": 309000,
-      "dropPercent": 9.48,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-02-18",
-          "price": 2950000
-        },
-        {
-          "date": "2026-02-19",
-          "price": 2950000
-        },
-        {
-          "date": "2026-02-20",
-          "price": 2950000
-        },
-        {
-          "date": "2026-02-21",
-          "price": 2950000
-        },
-        {
-          "date": "2026-02-22",
-          "price": 2950000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 2950000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 2950000
-        },
-        {
-          "date": "2026-02-25",
-          "price": 2950000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 2950000
-        },
-        {
-          "date": "2026-02-27",
-          "price": 2950000
-        }
-      ],
-      "listPrice": 3259000,
-      "campaignPrice": 2950000,
-      "campaignDiscount": 9.5
-    },
-    {
-      "id": "citroen-elektrikli-ë-c3-aircross-max-83-kw-elektrikli-motor-standart-menzil",
-      "brand": "Citroën",
-      "brandId": "citroen",
-      "model": "Elektrikli ë-C3 Aircross",
-      "trim": "Max",
-      "engine": "83 kW Elektrikli Motor Standart Menzil",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 1665000,
-      "currentPriceFormatted": "₺1.665.000",
-      "peakPrice": 1809000,
-      "peakPriceFormatted": "₺1.809.000",
-      "peakDate": "2026-01-29",
-      "dropAmount": 144000,
-      "dropPercent": 7.96,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-02-18",
-          "price": 1665000
-        },
-        {
-          "date": "2026-02-19",
-          "price": 1665000
-        },
-        {
-          "date": "2026-02-20",
-          "price": 1665000
-        },
-        {
-          "date": "2026-02-21",
-          "price": 1665000
-        },
-        {
-          "date": "2026-02-22",
-          "price": 1665000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 1665000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 1665000
-        },
-        {
-          "date": "2026-02-25",
-          "price": 1665000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 1665000
-        },
-        {
-          "date": "2026-02-27",
-          "price": 1665000
-        }
-      ],
-      "listPrice": 1665000
-    },
-    {
-      "id": "peugeot-2008-gt-1.2-hybrid-145-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "2008",
-      "trim": "Gt",
-      "engine": "1.2 Hybrid 145 HP",
-      "fuel": "Hibrit",
-      "transmission": "Otomatik",
-      "currentPrice": 2370000,
-      "currentPriceFormatted": "₺2.370.000",
-      "peakPrice": 2566500,
-      "peakPriceFormatted": "₺2.566.500",
-      "peakDate": "2026-01-29",
-      "dropAmount": 196500,
-      "dropPercent": 7.66,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-02-18",
-          "price": 2370000
-        },
-        {
-          "date": "2026-02-19",
-          "price": 2370000
-        },
-        {
-          "date": "2026-02-20",
-          "price": 2370000
-        },
-        {
-          "date": "2026-02-21",
-          "price": 2370000
-        },
-        {
-          "date": "2026-02-22",
-          "price": 2370000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 2370000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 2370000
-        },
-        {
-          "date": "2026-02-25",
-          "price": 2370000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 2370000
-        },
-        {
-          "date": "2026-02-27",
-          "price": 2370000
-        }
-      ],
-      "listPrice": 2566500,
-      "campaignPrice": 2370000,
-      "campaignDiscount": 7.7
-    },
-    {
-      "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-gsr*",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Egea Sedan",
-      "trim": "Urban",
-      "engine": "1.6 M.Jet 130 HP GSR*",
-      "fuel": "Dizel",
-      "transmission": "Manuel",
-      "currentPrice": 1459900,
-      "currentPriceFormatted": "₺1.459.900",
-      "peakPrice": 1569900,
-      "peakPriceFormatted": "₺1.569.900",
-      "peakDate": "2026-01-29",
-      "dropAmount": 110000,
-      "dropPercent": 7.01,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-02-18",
-          "price": 1459900
-        },
-        {
-          "date": "2026-02-19",
-          "price": 1459900
-        },
-        {
-          "date": "2026-02-20",
-          "price": 1459900
-        },
-        {
-          "date": "2026-02-21",
-          "price": 1459900
-        },
-        {
-          "date": "2026-02-22",
-          "price": 1459900
-        },
-        {
-          "date": "2026-02-23",
-          "price": 1459900
-        },
-        {
-          "date": "2026-02-24",
-          "price": 1459900
-        },
-        {
-          "date": "2026-02-25",
-          "price": 1459900
-        },
-        {
-          "date": "2026-02-26",
-          "price": 1459900
-        },
-        {
-          "date": "2026-02-27",
-          "price": 1459900
-        }
-      ],
-      "listPrice": 1569900,
-      "campaignPrice": 1459900,
-      "campaignDiscount": 7
     },
     {
       "id": "mercedes-c-200-4matic-all-terrain---1.5l-204-hp",
@@ -461,17 +87,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 389000,
       "dropPercent": 6.68,
-      "daysSincePeak": 18,
+      "daysSincePeak": 20,
       "priceHistory": [
         {
-          "date": "2026-02-23",
-          "price": 5825000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 5436000
-        },
-        {
           "date": "2026-02-24",
           "price": 5825000
         },
@@ -501,6 +119,14 @@
         },
         {
           "date": "2026-02-27",
+          "price": 5436000
+        },
+        {
+          "date": "2026-03-01",
+          "price": 5825000
+        },
+        {
+          "date": "2026-03-01",
           "price": 5436000
         }
       ],
@@ -523,17 +149,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 400000,
       "dropPercent": 6.48,
-      "daysSincePeak": 18,
+      "daysSincePeak": 20,
       "priceHistory": [
         {
-          "date": "2026-02-23",
-          "price": 6170000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 5770000
-        },
-        {
           "date": "2026-02-24",
           "price": 6170000
         },
@@ -563,200 +181,19 @@
         },
         {
           "date": "2026-02-27",
+          "price": 5770000
+        },
+        {
+          "date": "2026-03-01",
+          "price": 6170000
+        },
+        {
+          "date": "2026-03-01",
           "price": 5770000
         }
       ],
       "listPrice": 2570833,
       "otvRate": 100
-    },
-    {
-      "id": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik",
-      "brand": "Honda",
-      "brandId": "honda",
-      "model": "HR-V Hybrid",
-      "trim": "Elegance",
-      "engine": "1.5L Hibrit Otomatik",
-      "fuel": "Hibrit",
-      "transmission": "Otomatik",
-      "currentPrice": 2389000,
-      "currentPriceFormatted": "₺2.389.000",
-      "peakPrice": 2544000,
-      "peakPriceFormatted": "₺2.544.000",
-      "peakDate": "2026-01-29",
-      "dropAmount": 155000,
-      "dropPercent": 6.09,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-02-18",
-          "price": 2389000
-        },
-        {
-          "date": "2026-02-19",
-          "price": 2389000
-        },
-        {
-          "date": "2026-02-20",
-          "price": 2389000
-        },
-        {
-          "date": "2026-02-21",
-          "price": 2389000
-        },
-        {
-          "date": "2026-02-22",
-          "price": 2389000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 2389000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 2389000
-        },
-        {
-          "date": "2026-02-25",
-          "price": 2389000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 2389000
-        },
-        {
-          "date": "2026-02-27",
-          "price": 2389000
-        }
-      ],
-      "listPrice": 2544000,
-      "campaignPrice": 2389000,
-      "campaignDiscount": 6.1
-    },
-    {
-      "id": "fiat-grande-panda-icon-1.2-mhev-110hp-edct",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Grande Panda",
-      "trim": "Icon",
-      "engine": "1.2 MHEV 110HP eDCT",
-      "fuel": "Hafif Hibrit",
-      "transmission": "Otomatik",
-      "currentPrice": 1549900,
-      "currentPriceFormatted": "₺1.549.900",
-      "peakPrice": 1649900,
-      "peakPriceFormatted": "₺1.649.900",
-      "peakDate": "2026-01-29",
-      "dropAmount": 100000,
-      "dropPercent": 6.06,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-02-18",
-          "price": 1549900
-        },
-        {
-          "date": "2026-02-19",
-          "price": 1549900
-        },
-        {
-          "date": "2026-02-20",
-          "price": 1549900
-        },
-        {
-          "date": "2026-02-21",
-          "price": 1549900
-        },
-        {
-          "date": "2026-02-22",
-          "price": 1549900
-        },
-        {
-          "date": "2026-02-23",
-          "price": 1549900
-        },
-        {
-          "date": "2026-02-24",
-          "price": 1549900
-        },
-        {
-          "date": "2026-02-25",
-          "price": 1549900
-        },
-        {
-          "date": "2026-02-26",
-          "price": 1549900
-        },
-        {
-          "date": "2026-02-27",
-          "price": 1549900
-        }
-      ],
-      "listPrice": 1649900,
-      "campaignPrice": 1549900,
-      "campaignDiscount": 6.1
-    },
-    {
-      "id": "peugeot-e-2008-allure-115-kw",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "E-2008",
-      "trim": "Allure",
-      "engine": "115 kW",
-      "fuel": "Elektrik",
-      "transmission": "",
-      "currentPrice": 2074000,
-      "currentPriceFormatted": "₺2.074.000",
-      "peakPrice": 2201500,
-      "peakPriceFormatted": "₺2.201.500",
-      "peakDate": "2026-01-29",
-      "dropAmount": 127500,
-      "dropPercent": 5.79,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-02-18",
-          "price": 2074000
-        },
-        {
-          "date": "2026-02-19",
-          "price": 2074000
-        },
-        {
-          "date": "2026-02-20",
-          "price": 2074000
-        },
-        {
-          "date": "2026-02-21",
-          "price": 2074000
-        },
-        {
-          "date": "2026-02-22",
-          "price": 2074000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 2074000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 2074000
-        },
-        {
-          "date": "2026-02-25",
-          "price": 2074000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 2074000
-        },
-        {
-          "date": "2026-02-27",
-          "price": 2074000
-        }
-      ],
-      "listPrice": 2201500,
-      "campaignPrice": 2074000,
-      "campaignDiscount": 5.8
     },
     {
       "id": "mercedes-glc-180-amg-1.5l-170-hp",
@@ -774,17 +211,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 380000,
       "dropPercent": 5.63,
-      "daysSincePeak": 18,
+      "daysSincePeak": 20,
       "priceHistory": [
         {
-          "date": "2026-02-23",
-          "price": 6752000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 6372000
-        },
-        {
           "date": "2026-02-24",
           "price": 6752000
         },
@@ -814,6 +243,14 @@
         },
         {
           "date": "2026-02-27",
+          "price": 6372000
+        },
+        {
+          "date": "2026-03-01",
+          "price": 6752000
+        },
+        {
+          "date": "2026-03-01",
           "price": 6372000
         }
       ],
@@ -836,17 +273,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 505000,
       "dropPercent": 5.63,
-      "daysSincePeak": 18,
+      "daysSincePeak": 20,
       "priceHistory": [
         {
-          "date": "2026-02-23",
-          "price": 8968000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 8463000
-        },
-        {
           "date": "2026-02-24",
           "price": 8968000
         },
@@ -876,6 +305,14 @@
         },
         {
           "date": "2026-02-27",
+          "price": 8463000
+        },
+        {
+          "date": "2026-03-01",
+          "price": 8968000
+        },
+        {
+          "date": "2026-03-01",
           "price": 8463000
         }
       ],
@@ -898,17 +335,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 558000,
       "dropPercent": 5.63,
-      "daysSincePeak": 18,
+      "daysSincePeak": 20,
       "priceHistory": [
         {
-          "date": "2026-02-23",
-          "price": 9917000
-        },
-        {
-          "date": "2026-02-23",
-          "price": 9359000
-        },
-        {
           "date": "2026-02-24",
           "price": 9917000
         },
@@ -938,6 +367,14 @@
         },
         {
           "date": "2026-02-27",
+          "price": 9359000
+        },
+        {
+          "date": "2026-03-01",
+          "price": 9917000
+        },
+        {
+          "date": "2026-03-01",
           "price": 9359000
         }
       ],
@@ -960,12 +397,8 @@
       "peakDate": "2026-02-03",
       "dropAmount": 91000,
       "dropPercent": 5.4,
-      "daysSincePeak": 24,
+      "daysSincePeak": 26,
       "priceHistory": [
-        {
-          "date": "2026-02-18",
-          "price": 1593000
-        },
         {
           "date": "2026-02-19",
           "price": 1593000
@@ -1000,127 +433,17 @@
         },
         {
           "date": "2026-02-27",
+          "price": 1593000
+        },
+        {
+          "date": "2026-03-01",
           "price": 1593000
         }
       ],
       "listPrice": 1593000
-    },
-    {
-      "id": "fiat-500e-cabrio-87-kw/118-hp---42kwh",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "500e",
-      "trim": "Cabrio",
-      "engine": "87 kW/118 HP - 42kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 1969900,
-      "currentPriceFormatted": "₺1.969.900",
-      "peakPrice": 2075900,
-      "peakPriceFormatted": "₺2.075.900",
-      "peakDate": "2026-01-29",
-      "dropAmount": 106000,
-      "dropPercent": 5.11,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-02-18",
-          "price": 1969900
-        },
-        {
-          "date": "2026-02-19",
-          "price": 1969900
-        },
-        {
-          "date": "2026-02-20",
-          "price": 1969900
-        },
-        {
-          "date": "2026-02-21",
-          "price": 1969900
-        },
-        {
-          "date": "2026-02-22",
-          "price": 1969900
-        },
-        {
-          "date": "2026-02-23",
-          "price": 1969900
-        },
-        {
-          "date": "2026-02-24",
-          "price": 1969900
-        },
-        {
-          "date": "2026-02-25",
-          "price": 1969900
-        },
-        {
-          "date": "2026-02-26",
-          "price": 1969900
-        },
-        {
-          "date": "2026-02-27",
-          "price": 1969900
-        }
-      ],
-      "listPrice": 2099900,
-      "campaignPrice": 1969900,
-      "campaignDiscount": 6.2
     }
   ],
   "recentDrops": [
-    {
-      "id": "fiat-topolino-2025-topolino-6-kw/8-hp---5.5kwh-recent",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino 2025",
-      "trim": "Topolino",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "currentPrice": 544900,
-      "previousPrice": 634900,
-      "dropAmount": 90000,
-      "dropPercent": 14.18,
-      "date": "2026-01-30",
-      "previousDate": "2026-01-29",
-      "listPrice": 634900,
-      "campaignPrice": 544900,
-      "campaignDiscount": 14.2
-    },
-    {
-      "id": "fiat-topolino-2026-topolino-6-kw/8-hp---5.5kwh-recent",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino 2026",
-      "trim": "Topolino",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "currentPrice": 559900,
-      "previousPrice": 649900,
-      "dropAmount": 90000,
-      "dropPercent": 13.85,
-      "date": "2026-01-30",
-      "previousDate": "2026-01-29",
-      "listPrice": 649900,
-      "campaignPrice": 559900,
-      "campaignDiscount": 13.8
-    },
-    {
-      "id": "fiat-topolino-2025-topolino-plus-6-kw/8-hp---5.5kwh-recent",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino 2025",
-      "trim": "Topolino Plus",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "currentPrice": 589900,
-      "previousPrice": 679900,
-      "dropAmount": 90000,
-      "dropPercent": 13.24,
-      "date": "2026-01-30",
-      "previousDate": "2026-01-29",
-      "listPrice": 679900,
-      "campaignPrice": 589900,
-      "campaignDiscount": 13.2
-    },
     {
       "id": "kia-stonic-cool-100-ps-recent",
       "brand": "Kia",
@@ -1132,27 +455,10 @@
       "previousPrice": 1999000,
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 921087.5,
       "campaignPrice": 1999000
-    },
-    {
-      "id": "fiat-topolino-2026-topolino-plus-6-kw/8-hp---5.5kwh-recent",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino 2026",
-      "trim": "Topolino Plus",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "currentPrice": 604900,
-      "previousPrice": 694900,
-      "dropAmount": 90000,
-      "dropPercent": 12.95,
-      "date": "2026-01-30",
-      "previousDate": "2026-01-29",
-      "listPrice": 694900,
-      "campaignPrice": 604900,
-      "campaignDiscount": 13
     },
     {
       "id": "mercedes-c-200-4matic-all-terrain---1.5l-204-hp-recent",
@@ -1165,8 +471,8 @@
       "previousPrice": 5825000,
       "dropAmount": 389000,
       "dropPercent": 6.68,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2427083
     },
     {
@@ -1180,8 +486,8 @@
       "previousPrice": 6170000,
       "dropAmount": 400000,
       "dropPercent": 6.48,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2570833
     },
     {
@@ -1195,8 +501,8 @@
       "previousPrice": 6752000,
       "dropAmount": 380000,
       "dropPercent": 5.63,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2813333
     },
     {
@@ -1210,8 +516,8 @@
       "previousPrice": 8968000,
       "dropAmount": 505000,
       "dropPercent": 5.63,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2767901
     },
     {
@@ -1225,8 +531,8 @@
       "previousPrice": 9917000,
       "dropAmount": 558000,
       "dropPercent": 5.63,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 3060802
     },
     {
@@ -1240,8 +546,8 @@
       "previousPrice": 4483000,
       "dropAmount": 215000,
       "dropPercent": 4.8,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 1966228
     },
     {
@@ -1255,8 +561,8 @@
       "previousPrice": 5869000,
       "dropAmount": 281300,
       "dropPercent": 4.79,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 3155376
     },
     {
@@ -1270,8 +576,8 @@
       "previousPrice": 4217000,
       "dropAmount": 202200,
       "dropPercent": 4.79,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2267204
     },
     {
@@ -1285,8 +591,8 @@
       "previousPrice": 10705000,
       "dropAmount": 512000,
       "dropPercent": 4.78,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 3304012
     },
     {
@@ -1300,8 +606,8 @@
       "previousPrice": 10785000,
       "dropAmount": 515000,
       "dropPercent": 4.78,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 3328704
     },
     {
@@ -1315,8 +621,8 @@
       "previousPrice": 13551000,
       "dropAmount": 640400,
       "dropPercent": 4.73,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 3528906
     },
     {
@@ -1330,8 +636,8 @@
       "previousPrice": 9309000,
       "dropAmount": 440000,
       "dropPercent": 4.73,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2873148
     },
     {
@@ -1345,8 +651,8 @@
       "previousPrice": 7124000,
       "dropAmount": 337000,
       "dropPercent": 4.73,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2968333
     },
     {
@@ -1360,8 +666,8 @@
       "previousPrice": 15209000,
       "dropAmount": 718800,
       "dropPercent": 4.73,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 7242381
     },
     {
@@ -1375,8 +681,8 @@
       "previousPrice": 29550000,
       "dropAmount": 1396400,
       "dropPercent": 4.73,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 7695313
     },
     {
@@ -1390,8 +696,8 @@
       "previousPrice": 15891000,
       "dropAmount": 751000,
       "dropPercent": 4.73,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 4904630
     },
     {
@@ -1405,8 +711,8 @@
       "previousPrice": 8202000,
       "dropAmount": 387000,
       "dropPercent": 4.72,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2531481
     },
     {
@@ -1420,8 +726,8 @@
       "previousPrice": 8303000,
       "dropAmount": 392000,
       "dropPercent": 4.72,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2562654
     },
     {
@@ -1435,8 +741,8 @@
       "previousPrice": 10357000,
       "dropAmount": 489000,
       "dropPercent": 4.72,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 3196605
     },
     {
@@ -1450,8 +756,8 @@
       "previousPrice": 21367000,
       "dropAmount": 1009400,
       "dropPercent": 4.72,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 5564323
     },
     {
@@ -1465,8 +771,8 @@
       "previousPrice": 22745000,
       "dropAmount": 1074400,
       "dropPercent": 4.72,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 5923177
     },
     {
@@ -1480,8 +786,8 @@
       "previousPrice": 15986000,
       "dropAmount": 755000,
       "dropPercent": 4.72,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 4933951
     },
     {
@@ -1495,8 +801,8 @@
       "previousPrice": 4873000,
       "dropAmount": 230000,
       "dropPercent": 4.72,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 2030417
     },
     {
@@ -1510,8 +816,8 @@
       "previousPrice": 20224000,
       "dropAmount": 896400,
       "dropPercent": 4.43,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 5266667
     },
     {
@@ -1525,18 +831,74 @@
       "previousPrice": 7860000,
       "dropAmount": 335000,
       "dropPercent": 4.26,
-      "date": "2026-02-27",
-      "previousDate": "2026-02-27",
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
       "listPrice": 3275000
+    },
+    {
+      "id": "mercedes-e-180-amg-1.5l-170-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "E 180",
+      "trim": "AMG",
+      "engine": "1.5L 170 HP",
+      "currentPrice": 7587000,
+      "previousPrice": 7925000,
+      "dropAmount": 338000,
+      "dropPercent": 4.26,
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
+      "listPrice": 3302083
+    },
+    {
+      "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 589900,
+      "previousPrice": 614900,
+      "dropAmount": 25000,
+      "dropPercent": 4.07,
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
+      "listPrice": 704900,
+      "campaignPrice": 614900,
+      "campaignDiscount": 12.8
+    },
+    {
+      "id": "mercedes-eqs-450-4matic-inspiration-360-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "EQS 450 4MATIC",
+      "trim": "Inspiration",
+      "engine": "360 HP",
+      "currentPrice": 9436200,
+      "previousPrice": 9810000,
+      "dropAmount": 373800,
+      "dropPercent": 3.81,
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
+      "listPrice": 4671429
+    },
+    {
+      "id": "mercedes-s-450-d-4matic-l-inspiration-2.9l-367-hp-recent",
+      "brand": "Mercedes-Benz",
+      "brandId": "mercedes",
+      "model": "S 450 d 4MATIC L",
+      "trim": "Inspiration",
+      "engine": "2.9L 367 HP",
+      "currentPrice": 19828600,
+      "previousPrice": 20415000,
+      "dropAmount": 586400,
+      "dropPercent": 2.87,
+      "date": "2026-03-01",
+      "previousDate": "2026-03-01",
+      "listPrice": 5316406
     }
   ],
   "brandSummary": [
-    {
-      "brandId": "fiat",
-      "brand": "Fiat",
-      "dropCount": 7,
-      "avgDropPercent": 10.34
-    },
     {
       "brandId": "mercedes",
       "brand": "Mercedes-Benz",
@@ -1544,22 +906,10 @@
       "avgDropPercent": 6.01
     },
     {
-      "brandId": "peugeot",
-      "brand": "Peugeot",
-      "dropCount": 3,
-      "avgDropPercent": 7.64
-    },
-    {
       "brandId": "citroen",
       "brand": "Citroën",
-      "dropCount": 2,
-      "avgDropPercent": 6.68
-    },
-    {
-      "brandId": "honda",
-      "brand": "Honda",
       "dropCount": 1,
-      "avgDropPercent": 6.09
+      "avgDropPercent": 5.4
     },
     {
       "brandId": "kia",

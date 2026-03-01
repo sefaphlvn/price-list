@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-02-27T01:33:01.466Z",
-  "totalVehicles": 560,
+  "generatedAt": "2026-03-01T01:33:17.583Z",
+  "totalVehicles": 556,
   "overallStats": {
-    "avgPrice": 5088451,
+    "avgPrice": 5095142,
     "minPrice": 544900,
     "maxPrice": 36933000,
-    "medianPrice": 2953000
+    "medianPrice": 2950600
   },
   "brandStats": [
     {
@@ -154,42 +154,42 @@
     },
     {
       "name": "Honda",
-      "vehicleCount": 6,
-      "avgPrice": 3659833,
-      "minPrice": 2380000,
-      "maxPrice": 6160000,
-      "medianPrice": 2815000
+      "vehicleCount": 2,
+      "avgPrice": 2662500,
+      "minPrice": 2595000,
+      "maxPrice": 2730000,
+      "medianPrice": 2662500
     }
   ],
   "fuelStats": [
     {
       "fuel": "Benzin",
       "count": 224,
-      "percentage": 40,
+      "percentage": 40.3,
       "avgPrice": 5574319
     },
     {
       "fuel": "Elektrik",
       "count": 127,
-      "percentage": 22.7,
+      "percentage": 22.8,
       "avgPrice": 4762144
     },
     {
       "fuel": "Hibrit",
-      "count": 79,
-      "percentage": 14.1,
-      "avgPrice": 3668083
+      "count": 75,
+      "percentage": 13.5,
+      "avgPrice": 3641928
     },
     {
       "fuel": "Dizel",
       "count": 71,
-      "percentage": 12.7,
+      "percentage": 12.8,
       "avgPrice": 4295349
     },
     {
       "fuel": "Hafif Hibrit",
       "count": 26,
-      "percentage": 4.6,
+      "percentage": 4.7,
       "avgPrice": 6318869
     },
     {
@@ -214,26 +214,26 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 403,
-      "percentage": 72,
-      "avgPrice": 6001973
+      "count": 399,
+      "percentage": 71.8,
+      "avgPrice": 6020454
     },
     {
       "transmission": "DSG",
       "count": 61,
-      "percentage": 10.9,
+      "percentage": 11,
       "avgPrice": 3695865
     },
     {
       "transmission": "Manuel",
       "count": 42,
-      "percentage": 7.5,
+      "percentage": 7.6,
       "avgPrice": 1635802
     },
     {
       "transmission": "DCT",
       "count": 31,
-      "percentage": 5.5,
+      "percentage": 5.6,
       "avgPrice": 2166565
     },
     {
@@ -249,13 +249,13 @@
       "min": 0,
       "max": 1500000,
       "count": 32,
-      "percentage": 5.7
+      "percentage": 5.8
     },
     {
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 251,
+      "count": 249,
       "percentage": 44.8
     },
     {
@@ -263,14 +263,14 @@
       "min": 3000000,
       "max": 5000000,
       "count": 114,
-      "percentage": 20.4
+      "percentage": 20.5
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
-      "count": 163,
-      "percentage": 29.1
+      "count": 161,
+      "percentage": 29
     }
   ],
   "otvStats": {
@@ -396,15 +396,15 @@
     "distribution": [
       {
         "year": "2026",
-        "count": 213,
-        "percentage": 47.8,
-        "avgPrice": 5439235
+        "count": 215,
+        "percentage": 48.6,
+        "avgPrice": 5413405
       },
       {
         "year": "2025",
-        "count": 222,
-        "percentage": 49.8,
-        "avgPrice": 4397974
+        "count": 216,
+        "percentage": 48.9,
+        "avgPrice": 4418478
       },
       {
         "year": "2024",
@@ -415,7 +415,7 @@
       {
         "year": "2023",
         "count": 10,
-        "percentage": 2.2,
+        "percentage": 2.3,
         "avgPrice": 8629310
       }
     ]

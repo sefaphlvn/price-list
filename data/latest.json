@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-27T01:33:01.432Z",
-  "totalVehicles": 560,
+  "generatedAt": "2026-03-01T01:33:17.549Z",
+  "totalVehicles": 556,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1865,7 +1865,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -2606,7 +2606,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3283,7 +3283,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "i20",
@@ -3888,7 +3888,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "E-208",
@@ -4425,7 +4425,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "ATTO 2",
@@ -4641,7 +4641,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4955,7 +4955,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5465,7 +5465,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6435,7 +6435,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "A 200",
@@ -7705,7 +7705,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -8423,7 +8423,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8625,7 +8625,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8930,34 +8930,19 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
-        {
-          "model": "Jazz Hybrid",
-          "trim": "Crosstar",
-          "engine": "1.5L Hibrit Otomatik",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "2.380.000 TL",
-          "priceNumeric": 2380000,
-          "brand": "Honda",
-          "modelYear": 2025,
-          "priceListNumeric": 2380000,
-          "engineDisplacement": "1.5L",
-          "isHybrid": true
-        },
         {
           "model": "HR-V Hybrid",
           "trim": "Elegance",
           "engine": "1.5L Hibrit Otomatik",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.389.000 TL",
-          "priceNumeric": 2389000,
+          "priceRaw": "2.595.000 TL",
+          "priceNumeric": 2595000,
           "brand": "Honda",
-          "modelYear": 2025,
-          "priceListNumeric": 2544000,
-          "priceCampaignNumeric": 2389000,
+          "modelYear": 2026,
+          "priceListNumeric": 2595000,
           "engineDisplacement": "1.5L",
           "isHybrid": true
         },
@@ -8967,61 +8952,19 @@
           "engine": "1.5L Hibrit Otomatik",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.675.000 TL",
-          "priceNumeric": 2675000,
+          "priceRaw": "2.730.000 TL",
+          "priceNumeric": 2730000,
           "brand": "Honda",
-          "modelYear": 2025,
-          "priceListNumeric": 2675000,
+          "modelYear": 2026,
+          "priceListNumeric": 2730000,
           "engineDisplacement": "1.5L",
-          "isHybrid": true
-        },
-        {
-          "model": "HR-V Hybrid",
-          "trim": "Style+",
-          "engine": "1.5L Hibrit Otomatik",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "2.955.000 TL",
-          "priceNumeric": 2955000,
-          "brand": "Honda",
-          "modelYear": 2025,
-          "priceListNumeric": 2955000,
-          "engineDisplacement": "1.5L",
-          "isHybrid": true
-        },
-        {
-          "model": "Prelude Hybrid",
-          "trim": "Advance",
-          "engine": "2.0L Hibrit Otomatik",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "5.400.000 TL",
-          "priceNumeric": 5400000,
-          "brand": "Honda",
-          "modelYear": 2025,
-          "priceListNumeric": 5400000,
-          "engineDisplacement": "2.0L",
-          "isHybrid": true
-        },
-        {
-          "model": "CR-V Hybrid",
-          "trim": "Advance",
-          "engine": "2.0L Hibrit Otomatik",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "6.160.000 TL",
-          "priceNumeric": 6160000,
-          "brand": "Honda",
-          "modelYear": 2025,
-          "priceListNumeric": 6160000,
-          "engineDisplacement": "2.0L",
           "isHybrid": true
         }
       ]
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Ibiza",
@@ -9149,7 +9092,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Stonic",
@@ -9569,7 +9512,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "EX30",
@@ -10136,7 +10079,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-02-27",
+      "date": "2026-03-01",
       "vehicles": [
         {
           "model": "Egea Sedan",
