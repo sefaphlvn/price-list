@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-01T01:33:21.466Z",
-  "date": "2026-03-01",
+  "generatedAt": "2026-03-02T01:33:30.098Z",
+  "date": "2026-03-02",
   "summary": {
-    "totalPriceDrops": 7,
-    "totalRecentDrops": 32,
-    "avgDropPercent": 6.92,
+    "totalPriceDrops": 8,
+    "totalRecentDrops": 33,
+    "avgDropPercent": 6.82,
     "maxDropPercent": 12.96,
-    "brandsWithDrops": 3
+    "brandsWithDrops": 4
   },
   "priceDrops": [
     {
@@ -22,20 +22,12 @@
       "currentPriceFormatted": "₺1.740.000",
       "peakPrice": 1999000,
       "peakPriceFormatted": "₺1.999.000",
-      "peakDate": "2026-01-30",
+      "peakDate": "2026-02-03",
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "daysSincePeak": 30,
+      "daysSincePeak": 27,
       "priceHistory": [
         {
-          "date": "2026-02-24",
-          "price": 1999000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 1740000
-        },
-        {
           "date": "2026-02-25",
           "price": 1999000
         },
@@ -65,6 +57,14 @@
         },
         {
           "date": "2026-03-01",
+          "price": 1740000
+        },
+        {
+          "date": "2026-03-02",
+          "price": 1999000
+        },
+        {
+          "date": "2026-03-02",
           "price": 1740000
         }
       ],
@@ -87,17 +87,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 389000,
       "dropPercent": 6.68,
-      "daysSincePeak": 20,
+      "daysSincePeak": 21,
       "priceHistory": [
         {
-          "date": "2026-02-24",
-          "price": 5825000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 5436000
-        },
-        {
           "date": "2026-02-25",
           "price": 5825000
         },
@@ -127,6 +119,14 @@
         },
         {
           "date": "2026-03-01",
+          "price": 5436000
+        },
+        {
+          "date": "2026-03-02",
+          "price": 5825000
+        },
+        {
+          "date": "2026-03-02",
           "price": 5436000
         }
       ],
@@ -149,17 +149,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 400000,
       "dropPercent": 6.48,
-      "daysSincePeak": 20,
+      "daysSincePeak": 21,
       "priceHistory": [
         {
-          "date": "2026-02-24",
-          "price": 6170000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 5770000
-        },
-        {
           "date": "2026-02-25",
           "price": 6170000
         },
@@ -189,11 +181,83 @@
         },
         {
           "date": "2026-03-01",
+          "price": 5770000
+        },
+        {
+          "date": "2026-03-02",
+          "price": 6170000
+        },
+        {
+          "date": "2026-03-02",
           "price": 5770000
         }
       ],
       "listPrice": 2570833,
       "otvRate": 100
+    },
+    {
+      "id": "byd-han-executive-byd-380-kw-awd",
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "HAN",
+      "trim": "Executive",
+      "engine": "BYD  380 kW AWD",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 4573000,
+      "currentPriceFormatted": "₺4.573.000",
+      "peakPrice": 4873000,
+      "peakPriceFormatted": "₺4.873.000",
+      "peakDate": "2026-02-02",
+      "dropAmount": 300000,
+      "dropPercent": 6.16,
+      "daysSincePeak": 28,
+      "priceHistory": [
+        {
+          "date": "2026-02-20",
+          "price": 4873000
+        },
+        {
+          "date": "2026-02-21",
+          "price": 4873000
+        },
+        {
+          "date": "2026-02-22",
+          "price": 4873000
+        },
+        {
+          "date": "2026-02-23",
+          "price": 4873000
+        },
+        {
+          "date": "2026-02-24",
+          "price": 4873000
+        },
+        {
+          "date": "2026-02-25",
+          "price": 4873000
+        },
+        {
+          "date": "2026-02-26",
+          "price": 4873000
+        },
+        {
+          "date": "2026-02-27",
+          "price": 4873000
+        },
+        {
+          "date": "2026-03-01",
+          "price": 4873000
+        },
+        {
+          "date": "2026-03-02",
+          "price": 4573000
+        }
+      ],
+      "listPrice": 4873000,
+      "campaignPrice": 4573000,
+      "campaignDiscount": 6.2,
+      "otvRate": 75
     },
     {
       "id": "mercedes-glc-180-amg-1.5l-170-hp",
@@ -211,17 +275,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 380000,
       "dropPercent": 5.63,
-      "daysSincePeak": 20,
+      "daysSincePeak": 21,
       "priceHistory": [
         {
-          "date": "2026-02-24",
-          "price": 6752000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 6372000
-        },
-        {
           "date": "2026-02-25",
           "price": 6752000
         },
@@ -251,6 +307,14 @@
         },
         {
           "date": "2026-03-01",
+          "price": 6372000
+        },
+        {
+          "date": "2026-03-02",
+          "price": 6752000
+        },
+        {
+          "date": "2026-03-02",
           "price": 6372000
         }
       ],
@@ -273,17 +337,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 505000,
       "dropPercent": 5.63,
-      "daysSincePeak": 20,
+      "daysSincePeak": 21,
       "priceHistory": [
         {
-          "date": "2026-02-24",
-          "price": 8968000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 8463000
-        },
-        {
           "date": "2026-02-25",
           "price": 8968000
         },
@@ -313,6 +369,14 @@
         },
         {
           "date": "2026-03-01",
+          "price": 8463000
+        },
+        {
+          "date": "2026-03-02",
+          "price": 8968000
+        },
+        {
+          "date": "2026-03-02",
           "price": 8463000
         }
       ],
@@ -335,17 +399,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 558000,
       "dropPercent": 5.63,
-      "daysSincePeak": 20,
+      "daysSincePeak": 21,
       "priceHistory": [
         {
-          "date": "2026-02-24",
-          "price": 9917000
-        },
-        {
-          "date": "2026-02-24",
-          "price": 9359000
-        },
-        {
           "date": "2026-02-25",
           "price": 9917000
         },
@@ -375,6 +431,14 @@
         },
         {
           "date": "2026-03-01",
+          "price": 9359000
+        },
+        {
+          "date": "2026-03-02",
+          "price": 9917000
+        },
+        {
+          "date": "2026-03-02",
           "price": 9359000
         }
       ],
@@ -397,12 +461,8 @@
       "peakDate": "2026-02-03",
       "dropAmount": 91000,
       "dropPercent": 5.4,
-      "daysSincePeak": 26,
+      "daysSincePeak": 27,
       "priceHistory": [
-        {
-          "date": "2026-02-19",
-          "price": 1593000
-        },
         {
           "date": "2026-02-20",
           "price": 1593000
@@ -438,6 +498,10 @@
         {
           "date": "2026-03-01",
           "price": 1593000
+        },
+        {
+          "date": "2026-03-02",
+          "price": 1593000
         }
       ],
       "listPrice": 1593000
@@ -455,8 +519,8 @@
       "previousPrice": 1999000,
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 921087.5,
       "campaignPrice": 1999000
     },
@@ -471,8 +535,8 @@
       "previousPrice": 5825000,
       "dropAmount": 389000,
       "dropPercent": 6.68,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2427083
     },
     {
@@ -486,9 +550,26 @@
       "previousPrice": 6170000,
       "dropAmount": 400000,
       "dropPercent": 6.48,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2570833
+    },
+    {
+      "id": "byd-han-executive-byd-380-kw-awd-recent",
+      "brand": "BYD",
+      "brandId": "byd",
+      "model": "HAN",
+      "trim": "Executive",
+      "engine": "BYD  380 kW AWD",
+      "currentPrice": 4573000,
+      "previousPrice": 4873000,
+      "dropAmount": 300000,
+      "dropPercent": 6.16,
+      "date": "2026-03-02",
+      "previousDate": "2026-03-01",
+      "listPrice": 4873000,
+      "campaignPrice": 4573000,
+      "campaignDiscount": 6.2
     },
     {
       "id": "mercedes-glc-180-amg-1.5l-170-hp-recent",
@@ -501,8 +582,8 @@
       "previousPrice": 6752000,
       "dropAmount": 380000,
       "dropPercent": 5.63,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2813333
     },
     {
@@ -516,8 +597,8 @@
       "previousPrice": 8968000,
       "dropAmount": 505000,
       "dropPercent": 5.63,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2767901
     },
     {
@@ -531,8 +612,8 @@
       "previousPrice": 9917000,
       "dropAmount": 558000,
       "dropPercent": 5.63,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 3060802
     },
     {
@@ -546,8 +627,8 @@
       "previousPrice": 4483000,
       "dropAmount": 215000,
       "dropPercent": 4.8,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 1966228
     },
     {
@@ -561,8 +642,8 @@
       "previousPrice": 5869000,
       "dropAmount": 281300,
       "dropPercent": 4.79,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 3155376
     },
     {
@@ -576,8 +657,8 @@
       "previousPrice": 4217000,
       "dropAmount": 202200,
       "dropPercent": 4.79,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2267204
     },
     {
@@ -591,8 +672,8 @@
       "previousPrice": 10705000,
       "dropAmount": 512000,
       "dropPercent": 4.78,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 3304012
     },
     {
@@ -606,8 +687,8 @@
       "previousPrice": 10785000,
       "dropAmount": 515000,
       "dropPercent": 4.78,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 3328704
     },
     {
@@ -621,8 +702,8 @@
       "previousPrice": 13551000,
       "dropAmount": 640400,
       "dropPercent": 4.73,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 3528906
     },
     {
@@ -636,8 +717,8 @@
       "previousPrice": 9309000,
       "dropAmount": 440000,
       "dropPercent": 4.73,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2873148
     },
     {
@@ -651,8 +732,8 @@
       "previousPrice": 7124000,
       "dropAmount": 337000,
       "dropPercent": 4.73,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2968333
     },
     {
@@ -666,8 +747,8 @@
       "previousPrice": 15209000,
       "dropAmount": 718800,
       "dropPercent": 4.73,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 7242381
     },
     {
@@ -681,8 +762,8 @@
       "previousPrice": 29550000,
       "dropAmount": 1396400,
       "dropPercent": 4.73,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 7695313
     },
     {
@@ -696,8 +777,8 @@
       "previousPrice": 15891000,
       "dropAmount": 751000,
       "dropPercent": 4.73,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 4904630
     },
     {
@@ -711,8 +792,8 @@
       "previousPrice": 8202000,
       "dropAmount": 387000,
       "dropPercent": 4.72,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2531481
     },
     {
@@ -726,8 +807,8 @@
       "previousPrice": 8303000,
       "dropAmount": 392000,
       "dropPercent": 4.72,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2562654
     },
     {
@@ -741,8 +822,8 @@
       "previousPrice": 10357000,
       "dropAmount": 489000,
       "dropPercent": 4.72,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 3196605
     },
     {
@@ -756,8 +837,8 @@
       "previousPrice": 21367000,
       "dropAmount": 1009400,
       "dropPercent": 4.72,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 5564323
     },
     {
@@ -771,8 +852,8 @@
       "previousPrice": 22745000,
       "dropAmount": 1074400,
       "dropPercent": 4.72,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 5923177
     },
     {
@@ -786,8 +867,8 @@
       "previousPrice": 15986000,
       "dropAmount": 755000,
       "dropPercent": 4.72,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 4933951
     },
     {
@@ -801,8 +882,8 @@
       "previousPrice": 4873000,
       "dropAmount": 230000,
       "dropPercent": 4.72,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 2030417
     },
     {
@@ -816,8 +897,8 @@
       "previousPrice": 20224000,
       "dropAmount": 896400,
       "dropPercent": 4.43,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 5266667
     },
     {
@@ -831,8 +912,8 @@
       "previousPrice": 7860000,
       "dropAmount": 335000,
       "dropPercent": 4.26,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 3275000
     },
     {
@@ -846,8 +927,8 @@
       "previousPrice": 7925000,
       "dropAmount": 338000,
       "dropPercent": 4.26,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 3302083
     },
     {
@@ -861,8 +942,8 @@
       "previousPrice": 614900,
       "dropAmount": 25000,
       "dropPercent": 4.07,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 704900,
       "campaignPrice": 614900,
       "campaignDiscount": 12.8
@@ -878,24 +959,9 @@
       "previousPrice": 9810000,
       "dropAmount": 373800,
       "dropPercent": 3.81,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
+      "date": "2026-03-02",
+      "previousDate": "2026-03-02",
       "listPrice": 4671429
-    },
-    {
-      "id": "mercedes-s-450-d-4matic-l-inspiration-2.9l-367-hp-recent",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "S 450 d 4MATIC L",
-      "trim": "Inspiration",
-      "engine": "2.9L 367 HP",
-      "currentPrice": 19828600,
-      "previousPrice": 20415000,
-      "dropAmount": 586400,
-      "dropPercent": 2.87,
-      "date": "2026-03-01",
-      "previousDate": "2026-03-01",
-      "listPrice": 5316406
     }
   ],
   "brandSummary": [
@@ -904,6 +970,12 @@
       "brand": "Mercedes-Benz",
       "dropCount": 5,
       "avgDropPercent": 6.01
+    },
+    {
+      "brandId": "byd",
+      "brand": "BYD",
+      "dropCount": 1,
+      "avgDropPercent": 6.16
     },
     {
       "brandId": "citroen",
