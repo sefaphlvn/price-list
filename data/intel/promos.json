@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-03T01:33:57.712Z",
-  "date": "2026-03-03",
+  "generatedAt": "2026-03-05T01:33:31.807Z",
+  "date": "2026-03-05",
   "summary": {
-    "totalPriceDrops": 13,
-    "totalRecentDrops": 29,
-    "avgDropPercent": 8.09,
+    "totalPriceDrops": 15,
+    "totalRecentDrops": 24,
+    "avgDropPercent": 7.81,
     "maxDropPercent": 12.96,
-    "brandsWithDrops": 4
+    "brandsWithDrops": 5
   },
   "priceDrops": [
     {
@@ -25,17 +25,9 @@
       "peakDate": "2026-02-03",
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "daysSincePeak": 28,
+      "daysSincePeak": 30,
       "priceHistory": [
         {
-          "date": "2026-02-26",
-          "price": 1999000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 1740000
-        },
-        {
           "date": "2026-02-27",
           "price": 1999000
         },
@@ -65,6 +57,14 @@
         },
         {
           "date": "2026-03-03",
+          "price": 1740000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 1999000
+        },
+        {
+          "date": "2026-03-05",
           "price": 1740000
         }
       ],
@@ -87,16 +87,8 @@
       "peakDate": "2026-03-03",
       "dropAmount": 588000,
       "dropPercent": 9.25,
-      "daysSincePeak": 0,
+      "daysSincePeak": 2,
       "priceHistory": [
-        {
-          "date": "2026-02-26",
-          "price": 6170000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 5770000
-        },
         {
           "date": "2026-02-27",
           "price": 6170000
@@ -128,6 +120,14 @@
         {
           "date": "2026-03-03",
           "price": 5770000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 6358000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 5770000
         }
       ],
       "listPrice": 2649167,
@@ -149,16 +149,8 @@
       "peakDate": "2026-03-03",
       "dropAmount": 1535000,
       "dropPercent": 9.21,
-      "daysSincePeak": 0,
+      "daysSincePeak": 2,
       "priceHistory": [
-        {
-          "date": "2026-02-26",
-          "price": 15891000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 15140000
-        },
         {
           "date": "2026-02-27",
           "price": 15891000
@@ -190,6 +182,14 @@
         {
           "date": "2026-03-03",
           "price": 15140000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 16675000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 15140000
         }
       ],
       "listPrice": 5146605,
@@ -211,16 +211,8 @@
       "peakDate": "2026-03-03",
       "dropAmount": 1541500,
       "dropPercent": 9.19,
-      "daysSincePeak": 0,
+      "daysSincePeak": 2,
       "priceHistory": [
-        {
-          "date": "2026-02-26",
-          "price": 15986000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 15231000
-        },
         {
           "date": "2026-02-27",
           "price": 15986000
@@ -252,6 +244,14 @@
         {
           "date": "2026-03-03",
           "price": 15231000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 16772500
+        },
+        {
+          "date": "2026-03-05",
+          "price": 15231000
         }
       ],
       "listPrice": 5176698,
@@ -273,16 +273,8 @@
       "peakDate": "2026-03-03",
       "dropAmount": 585500,
       "dropPercent": 8.42,
-      "daysSincePeak": 0,
+      "daysSincePeak": 2,
       "priceHistory": [
-        {
-          "date": "2026-02-26",
-          "price": 6752000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 6372000
-        },
         {
           "date": "2026-02-27",
           "price": 6752000
@@ -314,6 +306,14 @@
         {
           "date": "2026-03-03",
           "price": 6372000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 6957500
+        },
+        {
+          "date": "2026-03-05",
+          "price": 6372000
         }
       ],
       "listPrice": 2898958,
@@ -335,16 +335,8 @@
       "peakDate": "2026-03-03",
       "dropAmount": 351500,
       "dropPercent": 7.61,
-      "daysSincePeak": 0,
+      "daysSincePeak": 2,
       "priceHistory": [
-        {
-          "date": "2026-02-26",
-          "price": 4483000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 4268000
-        },
         {
           "date": "2026-02-27",
           "price": 4483000
@@ -376,6 +368,14 @@
         {
           "date": "2026-03-03",
           "price": 4268000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 4619500
+        },
+        {
+          "date": "2026-03-05",
+          "price": 4268000
         }
       ],
       "listPrice": 2026096,
@@ -397,16 +397,8 @@
       "peakDate": "2026-03-03",
       "dropAmount": 330200,
       "dropPercent": 7.6,
-      "daysSincePeak": 0,
+      "daysSincePeak": 2,
       "priceHistory": [
-        {
-          "date": "2026-02-26",
-          "price": 4217000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 4014800
-        },
         {
           "date": "2026-02-27",
           "price": 4217000
@@ -438,6 +430,14 @@
         {
           "date": "2026-03-03",
           "price": 4014800
+        },
+        {
+          "date": "2026-03-05",
+          "price": 4345000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 4014800
         }
       ],
       "listPrice": 2336022,
@@ -459,16 +459,8 @@
       "peakDate": "2026-03-03",
       "dropAmount": 837500,
       "dropPercent": 7.59,
-      "daysSincePeak": 0,
+      "daysSincePeak": 2,
       "priceHistory": [
-        {
-          "date": "2026-02-26",
-          "price": 10705000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 10193000
-        },
         {
           "date": "2026-02-27",
           "price": 10705000
@@ -500,6 +492,14 @@
         {
           "date": "2026-03-03",
           "price": 10193000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 11030500
+        },
+        {
+          "date": "2026-03-05",
+          "price": 10193000
         }
       ],
       "listPrice": 3404475,
@@ -521,16 +521,8 @@
       "peakDate": "2026-03-03",
       "dropAmount": 843500,
       "dropPercent": 7.59,
-      "daysSincePeak": 0,
+      "daysSincePeak": 2,
       "priceHistory": [
-        {
-          "date": "2026-02-26",
-          "price": 10785000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 10270000
-        },
         {
           "date": "2026-02-27",
           "price": 10785000
@@ -562,6 +554,14 @@
         {
           "date": "2026-03-03",
           "price": 10270000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 11113500
+        },
+        {
+          "date": "2026-03-05",
+          "price": 10270000
         }
       ],
       "listPrice": 3430093,
@@ -583,16 +583,8 @@
       "peakDate": "2026-03-03",
       "dropAmount": 554000,
       "dropPercent": 7.55,
-      "daysSincePeak": 0,
+      "daysSincePeak": 2,
       "priceHistory": [
-        {
-          "date": "2026-02-26",
-          "price": 7124000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 6787000
-        },
         {
           "date": "2026-02-27",
           "price": 7124000
@@ -624,6 +616,14 @@
         {
           "date": "2026-03-03",
           "price": 6787000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 7341000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 6787000
         }
       ],
       "listPrice": 3058750,
@@ -645,17 +645,9 @@
       "peakDate": "2026-02-09",
       "dropAmount": 389000,
       "dropPercent": 6.68,
-      "daysSincePeak": 22,
+      "daysSincePeak": 24,
       "priceHistory": [
         {
-          "date": "2026-02-26",
-          "price": 5825000
-        },
-        {
-          "date": "2026-02-26",
-          "price": 5436000
-        },
-        {
           "date": "2026-02-27",
           "price": 5825000
         },
@@ -685,11 +677,82 @@
         },
         {
           "date": "2026-03-03",
+          "price": 5436000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 5825000
+        },
+        {
+          "date": "2026-03-05",
           "price": 5436000
         }
       ],
       "listPrice": 2427083,
       "otvRate": 100
+    },
+    {
+      "id": "fiat-grande-panda-la-prima-44-kwh",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "trim": "La Prima",
+      "engine": "44 kWh",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 1469900,
+      "currentPriceFormatted": "₺1.469.900",
+      "peakPrice": 1569900,
+      "peakPriceFormatted": "₺1.569.900",
+      "peakDate": "2026-02-04",
+      "dropAmount": 100000,
+      "dropPercent": 6.37,
+      "daysSincePeak": 29,
+      "priceHistory": [
+        {
+          "date": "2026-02-27",
+          "price": 1569900
+        },
+        {
+          "date": "2026-02-27",
+          "price": 1524900
+        },
+        {
+          "date": "2026-03-01",
+          "price": 1569900
+        },
+        {
+          "date": "2026-03-01",
+          "price": 1524900
+        },
+        {
+          "date": "2026-03-02",
+          "price": 1569900
+        },
+        {
+          "date": "2026-03-02",
+          "price": 1524900
+        },
+        {
+          "date": "2026-03-03",
+          "price": 1569900
+        },
+        {
+          "date": "2026-03-03",
+          "price": 1524900
+        },
+        {
+          "date": "2026-03-05",
+          "price": 1514900
+        },
+        {
+          "date": "2026-03-05",
+          "price": 1469900
+        }
+      ],
+      "listPrice": 1584900,
+      "campaignPrice": 1514900,
+      "campaignDiscount": 4.4
     },
     {
       "id": "byd-han-executive-byd-380-kw-awd",
@@ -707,12 +770,8 @@
       "peakDate": "2026-02-02",
       "dropAmount": 300000,
       "dropPercent": 6.16,
-      "daysSincePeak": 29,
+      "daysSincePeak": 31,
       "priceHistory": [
-        {
-          "date": "2026-02-21",
-          "price": 4873000
-        },
         {
           "date": "2026-02-22",
           "price": 4873000
@@ -748,12 +807,79 @@
         {
           "date": "2026-03-03",
           "price": 4573000
+        },
+        {
+          "date": "2026-03-05",
+          "price": 4573000
         }
       ],
       "listPrice": 4873000,
       "campaignPrice": 4573000,
       "campaignDiscount": 6.2,
       "otvRate": 75
+    },
+    {
+      "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "currentPrice": 589900,
+      "currentPriceFormatted": "₺589.900",
+      "peakPrice": 624900,
+      "peakPriceFormatted": "₺624.900",
+      "peakDate": "2026-03-05",
+      "dropAmount": 35000,
+      "dropPercent": 5.6,
+      "daysSincePeak": 0,
+      "priceHistory": [
+        {
+          "date": "2026-02-27",
+          "price": 614900
+        },
+        {
+          "date": "2026-02-27",
+          "price": 589900
+        },
+        {
+          "date": "2026-03-01",
+          "price": 614900
+        },
+        {
+          "date": "2026-03-01",
+          "price": 589900
+        },
+        {
+          "date": "2026-03-02",
+          "price": 614900
+        },
+        {
+          "date": "2026-03-02",
+          "price": 589900
+        },
+        {
+          "date": "2026-03-03",
+          "price": 614900
+        },
+        {
+          "date": "2026-03-03",
+          "price": 589900
+        },
+        {
+          "date": "2026-03-05",
+          "price": 624900
+        },
+        {
+          "date": "2026-03-05",
+          "price": 589900
+        }
+      ],
+      "listPrice": 714900,
+      "campaignPrice": 624900,
+      "campaignDiscount": 12.6
     },
     {
       "id": "citroen-jumpy-van-panelvan-l3-uzun-2.2-bluehdi-150-hp---6-i̇leri-manuel",
@@ -771,12 +897,8 @@
       "peakDate": "2026-02-03",
       "dropAmount": 91000,
       "dropPercent": 5.4,
-      "daysSincePeak": 28,
+      "daysSincePeak": 30,
       "priceHistory": [
-        {
-          "date": "2026-02-21",
-          "price": 1593000
-        },
         {
           "date": "2026-02-22",
           "price": 1593000
@@ -811,6 +933,10 @@
         },
         {
           "date": "2026-03-03",
+          "price": 1593000
+        },
+        {
+          "date": "2026-03-05",
           "price": 1593000
         }
       ],
@@ -829,8 +955,8 @@
       "previousPrice": 1999000,
       "dropAmount": 259000,
       "dropPercent": 12.96,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 921087.5,
       "campaignPrice": 1999000
     },
@@ -845,8 +971,8 @@
       "previousPrice": 6358000,
       "dropAmount": 588000,
       "dropPercent": 9.25,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2649167
     },
     {
@@ -860,8 +986,8 @@
       "previousPrice": 16675000,
       "dropAmount": 1535000,
       "dropPercent": 9.21,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 5146605
     },
     {
@@ -875,8 +1001,8 @@
       "previousPrice": 16772500,
       "dropAmount": 1541500,
       "dropPercent": 9.19,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 5176698
     },
     {
@@ -890,8 +1016,8 @@
       "previousPrice": 6957500,
       "dropAmount": 585500,
       "dropPercent": 8.42,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2898958
     },
     {
@@ -905,8 +1031,8 @@
       "previousPrice": 4619500,
       "dropAmount": 351500,
       "dropPercent": 7.61,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2026096
     },
     {
@@ -920,8 +1046,8 @@
       "previousPrice": 4345000,
       "dropAmount": 330200,
       "dropPercent": 7.6,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2336022
     },
     {
@@ -935,8 +1061,8 @@
       "previousPrice": 11030500,
       "dropAmount": 837500,
       "dropPercent": 7.59,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 3404475
     },
     {
@@ -950,8 +1076,8 @@
       "previousPrice": 11113500,
       "dropAmount": 843500,
       "dropPercent": 7.59,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 3430093
     },
     {
@@ -965,8 +1091,8 @@
       "previousPrice": 7341000,
       "dropAmount": 554000,
       "dropPercent": 7.55,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 3058750
     },
     {
@@ -980,9 +1106,26 @@
       "previousPrice": 5825000,
       "dropAmount": 389000,
       "dropPercent": 6.68,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2427083
+    },
+    {
+      "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Topolino",
+      "trim": "Topolino Plus",
+      "engine": "6 kW/8 HP - 5.5kWh",
+      "currentPrice": 589900,
+      "previousPrice": 624900,
+      "dropAmount": 35000,
+      "dropPercent": 5.6,
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
+      "listPrice": 714900,
+      "campaignPrice": 624900,
+      "campaignDiscount": 12.6
     },
     {
       "id": "mercedes-eqe-280-amg-218-hp-recent",
@@ -995,8 +1138,8 @@
       "previousPrice": 5869000,
       "dropAmount": 281300,
       "dropPercent": 4.79,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 3155376
     },
     {
@@ -1010,8 +1153,8 @@
       "previousPrice": 9309000,
       "dropAmount": 440000,
       "dropPercent": 4.73,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2873148
     },
     {
@@ -1025,8 +1168,8 @@
       "previousPrice": 8202000,
       "dropAmount": 387000,
       "dropPercent": 4.72,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2531481
     },
     {
@@ -1040,8 +1183,8 @@
       "previousPrice": 8303000,
       "dropAmount": 392000,
       "dropPercent": 4.72,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2562654
     },
     {
@@ -1055,8 +1198,8 @@
       "previousPrice": 4873000,
       "dropAmount": 230000,
       "dropPercent": 4.72,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2030417
     },
     {
@@ -1070,8 +1213,8 @@
       "previousPrice": 7860000,
       "dropAmount": 335000,
       "dropPercent": 4.26,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 3275000
     },
     {
@@ -1085,26 +1228,9 @@
       "previousPrice": 7925000,
       "dropAmount": 338000,
       "dropPercent": 4.26,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 3302083
-    },
-    {
-      "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh-recent",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino",
-      "trim": "Topolino Plus",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "currentPrice": 589900,
-      "previousPrice": 614900,
-      "dropAmount": 25000,
-      "dropPercent": 4.07,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
-      "listPrice": 704900,
-      "campaignPrice": 614900,
-      "campaignDiscount": 12.8
     },
     {
       "id": "mercedes-eqs-450-4matic-inspiration-360-hp-recent",
@@ -1117,9 +1243,26 @@
       "previousPrice": 9810000,
       "dropAmount": 373800,
       "dropPercent": 3.81,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 4671429
+    },
+    {
+      "id": "fiat-grande-panda-la-prima-44-kwh-recent",
+      "brand": "Fiat",
+      "brandId": "fiat",
+      "model": "Grande Panda",
+      "trim": "La Prima",
+      "engine": "44 kWh",
+      "currentPrice": 1469900,
+      "previousPrice": 1514900,
+      "dropAmount": 45000,
+      "dropPercent": 2.97,
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
+      "listPrice": 1584900,
+      "campaignPrice": 1514900,
+      "campaignDiscount": 4.4
     },
     {
       "id": "mercedes-s-450-d-4matic-l-inspiration-2.9l-367-hp-recent",
@@ -1132,24 +1275,9 @@
       "previousPrice": 20415000,
       "dropAmount": 586400,
       "dropPercent": 2.87,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 5316406
-    },
-    {
-      "id": "fiat-grande-panda-la-prima-44-kwh-recent",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Grande Panda",
-      "trim": "La Prima",
-      "engine": "44 kWh",
-      "currentPrice": 1524900,
-      "previousPrice": 1569900,
-      "dropAmount": 45000,
-      "dropPercent": 2.87,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
-      "listPrice": 1569900
     },
     {
       "id": "kia-ev3-prestige-standard-range-150-kw-recent",
@@ -1162,40 +1290,10 @@
       "previousPrice": 2405000,
       "dropAmount": 60000,
       "dropPercent": 2.49,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 1595148.58,
       "campaignPrice": 2405000
-    },
-    {
-      "id": "hyundai-i20-1.0-elite-1.0-t-gdi-90ps-elite-recent",
-      "brand": "Hyundai",
-      "brandId": "hyundai",
-      "model": "i20",
-      "trim": "1.0 Elite",
-      "engine": "1.0 T-GDI 90PS Elite",
-      "currentPrice": 1745000,
-      "previousPrice": 1785000,
-      "dropAmount": 40000,
-      "dropPercent": 2.24,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-02",
-      "campaignPrice": 1745000
-    },
-    {
-      "id": "hyundai-bayon-elite-1.0-t-gdi-90ps-recent",
-      "brand": "Hyundai",
-      "brandId": "hyundai",
-      "model": "BAYON",
-      "trim": "Elite",
-      "engine": "1.0 T-GDI 90PS",
-      "currentPrice": 1824000,
-      "previousPrice": 1864000,
-      "dropAmount": 40000,
-      "dropPercent": 2.15,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-02",
-      "campaignPrice": 1824000
     },
     {
       "id": "mercedes-mercedes-amg-a-45-s-4matic+-final-edition-2.0l-421-hp-recent",
@@ -1208,54 +1306,9 @@
       "previousPrice": 7058000,
       "dropAmount": 138000,
       "dropPercent": 1.96,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-03",
+      "date": "2026-03-05",
+      "previousDate": "2026-03-05",
       "listPrice": 2178395
-    },
-    {
-      "id": "hyundai-ioniq-6-111-kw-4x2-advance-advance-111-kw-4x2-recent",
-      "brand": "Hyundai",
-      "brandId": "hyundai",
-      "model": "IONIQ 6",
-      "trim": "111 kW 4x2 Advance",
-      "engine": "Advance 111 kW 4x2",
-      "currentPrice": 2320000,
-      "previousPrice": 2359000,
-      "dropAmount": 39000,
-      "dropPercent": 1.65,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-02",
-      "campaignPrice": 2320000
-    },
-    {
-      "id": "hyundai-kona-elektrik-advance-99-kw-recent",
-      "brand": "Hyundai",
-      "brandId": "hyundai",
-      "model": "KONA Elektrik",
-      "trim": "Advance",
-      "engine": "99 kW",
-      "currentPrice": 2220000,
-      "previousPrice": 2257000,
-      "dropAmount": 37000,
-      "dropPercent": 1.64,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-02",
-      "campaignPrice": 2220000
-    },
-    {
-      "id": "hyundai-staria-hibrit-elite-1.6-t-gdi-225-ps-hev-at-4x2-recent",
-      "brand": "Hyundai",
-      "brandId": "hyundai",
-      "model": "STARIA Hibrit",
-      "trim": "Elite",
-      "engine": "1.6 T-GDI 225 PS HEV  AT 4X2",
-      "currentPrice": 2590000,
-      "previousPrice": 2630000,
-      "dropAmount": 40000,
-      "dropPercent": 1.52,
-      "date": "2026-03-03",
-      "previousDate": "2026-03-02",
-      "campaignPrice": 2590000
     }
   ],
   "brandSummary": [
@@ -1264,6 +1317,12 @@
       "brand": "Mercedes-Benz",
       "dropCount": 10,
       "avgDropPercent": 8.07
+    },
+    {
+      "brandId": "fiat",
+      "brand": "Fiat",
+      "dropCount": 2,
+      "avgDropPercent": 5.99
     },
     {
       "brandId": "byd",

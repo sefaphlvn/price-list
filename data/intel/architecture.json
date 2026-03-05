@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-03T01:33:57.205Z",
-  "date": "2026-03-03",
+  "generatedAt": "2026-03-05T01:33:31.280Z",
+  "date": "2026-03-05",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -7704,43 +7704,10 @@
           "engine": "150 kW / 204 hp",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
-        },
-        {
-          "trim": "TWIN MOTOR, ULTRA",
-          "price": 4777026,
-          "priceFormatted": "4.777.026 TL",
-          "stepFromBase": 843206,
-          "stepPercent": 21.434788577006575,
-          "engine": "300 kW / 408 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
         }
       ],
       "basePrice": 3933820,
-      "topPrice": 4777026,
-      "priceSpread": 843206,
-      "priceSpreadPercent": 21.43,
-      "trimCount": 2
-    },
-    {
-      "id": "volvo-ex40-black-edition",
-      "model": "EX40 BLACK EDITION",
-      "brand": "Volvo",
-      "brandId": "volvo",
-      "trims": [
-        {
-          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
-          "price": 4073599,
-          "priceFormatted": "4.073.599 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "150 kW / 204 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        }
-      ],
-      "basePrice": 4073599,
-      "topPrice": 4073599,
+      "topPrice": 3933820,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -7760,23 +7727,13 @@
           "engine": "150 kW / 204 hp",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
-        },
-        {
-          "trim": "TWIN MOTOR, ULTRA",
-          "price": 4874625,
-          "priceFormatted": "4.874.625 TL",
-          "stepFromBase": 854049,
-          "stepPercent": 21.2419563763998,
-          "engine": "300 kW / 408 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
         }
       ],
       "basePrice": 4020576,
-      "topPrice": 4874625,
-      "priceSpread": 854049,
-      "priceSpreadPercent": 21.24,
-      "trimCount": 2
+      "topPrice": 4020576,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "volvo-ec40-black-edition",
@@ -7831,16 +7788,6 @@
       "brandId": "volvo",
       "trims": [
         {
-          "trim": "B5 AWD MILD HYBRID, PLUS, BRIGHT",
-          "price": 6717287,
-          "priceFormatted": "6.717.287 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.969 cc 250 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
           "trim": "B5 AWD MILD HYBRID, PLUS, DARK",
           "price": 6717287,
           "priceFormatted": "6.717.287 TL",
@@ -7851,61 +7798,11 @@
           "fuel": "Hibrit"
         },
         {
-          "trim": "B5 AWD MILD HYBRID, ULTRA, BRIGHT",
-          "price": 6998108,
-          "priceFormatted": "6.998.108 TL",
-          "stepFromBase": 280821,
-          "stepPercent": 4.180571709977555,
-          "engine": "1.969 cc 250 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
-          "trim": "B5 AWD MILD HYBRID, ULTRA, DARK",
-          "price": 6998108,
-          "priceFormatted": "6.998.108 TL",
-          "stepFromBase": 280821,
-          "stepPercent": 4.180571709977555,
-          "engine": "1.969 cc 250 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
           "trim": "T8 AWD PLUG-IN HYBRID, PLUS, BRIGHT",
           "price": 7353597,
           "priceFormatted": "7.353.597 TL",
           "stepFromBase": 636310,
           "stepPercent": 9.472723139565126,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, DARK",
-          "price": 7353597,
-          "priceFormatted": "7.353.597 TL",
-          "stepFromBase": 636310,
-          "stepPercent": 9.472723139565126,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA, BRIGHT",
-          "price": 7634418,
-          "priceFormatted": "7.634.418 TL",
-          "stepFromBase": 917131,
-          "stepPercent": 13.65329484954268,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA, DARK",
-          "price": 7634418,
-          "priceFormatted": "7.634.418 TL",
-          "stepFromBase": 917131,
-          "stepPercent": 13.65329484954268,
           "engine": "1.969 cc 145 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hibrit"
@@ -7925,49 +7822,6 @@
       "topPrice": 8579143,
       "priceSpread": 1861856,
       "priceSpreadPercent": 27.72,
-      "trimCount": 9
-    },
-    {
-      "id": "volvo-xc60-black-edition",
-      "model": "XC60 BLACK EDITION",
-      "brand": "Volvo",
-      "brandId": "volvo",
-      "trims": [
-        {
-          "trim": "B5 AWD MILD HYBRID, PLUS",
-          "price": 7126344,
-          "priceFormatted": "7.126.344 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.969 cc 250 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, PLUS",
-          "price": 7762654,
-          "priceFormatted": "7.762.654 TL",
-          "stepFromBase": 636310,
-          "stepPercent": 8.928982378622194,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA",
-          "price": 8088925,
-          "priceFormatted": "8.088.925 TL",
-          "stepFromBase": 962581,
-          "stepPercent": 13.507360857123935,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
-        }
-      ],
-      "basePrice": 7126344,
-      "topPrice": 8088925,
-      "priceSpread": 962581,
-      "priceSpreadPercent": 13.51,
       "trimCount": 3
     },
     {
@@ -7987,36 +7841,6 @@
           "fuel": "Hibrit"
         },
         {
-          "trim": "B5 AWD MILD HYBRID, PLUS, DARK",
-          "price": 10615530,
-          "priceFormatted": "10.615.530 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.969 cc 250 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
-          "trim": "B5 AWD MILD HYBRID, ULTRA, BRIGHT",
-          "price": 10948295,
-          "priceFormatted": "10.948.295 TL",
-          "stepFromBase": 332765,
-          "stepPercent": 3.134699821864759,
-          "engine": "1.969 cc 250 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
-          "trim": "B5 AWD MILD HYBRID, ULTRA, DARK",
-          "price": 10948295,
-          "priceFormatted": "10.948.295 TL",
-          "stepFromBase": 332765,
-          "stepPercent": 3.134699821864759,
-          "engine": "1.969 cc 250 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
           "trim": "T8 AWD PLUG-IN HYBRID, PLUS, BRIGHT",
           "price": 11277812,
           "priceFormatted": "11.277.812 TL",
@@ -8025,43 +7849,13 @@
           "engine": "1.969 cc 145 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, DARK",
-          "price": 11277812,
-          "priceFormatted": "11.277.812 TL",
-          "stepFromBase": 662282,
-          "stepPercent": 6.2388029613217615,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA, BRIGHT",
-          "price": 11610576,
-          "priceFormatted": "11.610.576 TL",
-          "stepFromBase": 995046,
-          "stepPercent": 9.37349336302568,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA, DARK",
-          "price": 11610576,
-          "priceFormatted": "11.610.576 TL",
-          "stepFromBase": 995046,
-          "stepPercent": 9.37349336302568,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
         }
       ],
       "basePrice": 10615530,
-      "topPrice": 11610576,
-      "priceSpread": 995046,
-      "priceSpreadPercent": 9.37,
-      "trimCount": 8
+      "topPrice": 11277812,
+      "priceSpread": 662282,
+      "priceSpreadPercent": 6.24,
+      "trimCount": 2
     },
     {
       "id": "volvo-xc90-black-edition",
@@ -8080,16 +7874,6 @@
           "fuel": "Hibrit"
         },
         {
-          "trim": "B5 AWD MILD HYBRID, ULTRA",
-          "price": 11177171,
-          "priceFormatted": "11.177.171 TL",
-          "stepFromBase": 332764,
-          "stepPercent": 3.068531087038692,
-          "engine": "1.969 cc 250 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
           "trim": "T8 AWD PLUG-IN HYBRID, PLUS",
           "price": 11506689,
           "priceFormatted": "11.506.689 TL",
@@ -8098,23 +7882,13 @@
           "engine": "1.969 cc 145 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, ULTRA",
-          "price": 11839453,
-          "priceFormatted": "11.839.453 TL",
-          "stepFromBase": 995046,
-          "stepPercent": 9.175660780713967,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
         }
       ],
       "basePrice": 10844407,
-      "topPrice": 11839453,
-      "priceSpread": 995046,
-      "priceSpreadPercent": 9.18,
-      "trimCount": 4
+      "topPrice": 11506689,
+      "priceSpread": 662282,
+      "priceSpreadPercent": 6.11,
+      "trimCount": 2
     },
     {
       "id": "fiat-egea-sedan",
@@ -8124,8 +7898,8 @@
       "trims": [
         {
           "trim": "Urban",
-          "price": 1459900,
-          "priceFormatted": "1.459.900 TL",
+          "price": 1479900,
+          "priceFormatted": "1.479.900 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.6 M.Jet 130 HP GSR*",
@@ -8134,49 +7908,49 @@
         },
         {
           "trim": "Lounge",
-          "price": 1519900,
-          "priceFormatted": "1.519.900 TL",
+          "price": 1539900,
+          "priceFormatted": "1.539.900 TL",
           "stepFromBase": 60000,
-          "stepPercent": 4.1098705390780195,
+          "stepPercent": 4.054327995134806,
           "engine": "1.6 M.Jet 130 HP GSR*",
           "transmission": "Manuel",
           "fuel": "Dizel"
         },
         {
           "trim": "Easy",
-          "price": 1629900,
-          "priceFormatted": "1.629.900 TL",
-          "stepFromBase": 170000,
-          "stepPercent": 11.644633194054387,
+          "price": 1659900,
+          "priceFormatted": "1.659.900 TL",
+          "stepFromBase": 180000,
+          "stepPercent": 12.162983985404418,
           "engine": "1.6 M.Jet 130 HP GSR*",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         },
         {
           "trim": "Urban",
-          "price": 1679900,
-          "priceFormatted": "1.679.900 TL",
-          "stepFromBase": 220000,
-          "stepPercent": 15.069525309952736,
+          "price": 1709900,
+          "priceFormatted": "1.709.900 TL",
+          "stepFromBase": 230000,
+          "stepPercent": 15.54159064801676,
           "engine": "1.6 M.Jet 130 HP DCT GSR*",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         },
         {
           "trim": "Lounge",
-          "price": 1739900,
-          "priceFormatted": "1.739.900 TL",
-          "stepFromBase": 280000,
-          "stepPercent": 19.179395849030755,
+          "price": 1769900,
+          "priceFormatted": "1.769.900 TL",
+          "stepFromBase": 290000,
+          "stepPercent": 19.595918643151563,
           "engine": "1.6 M.Jet 130 HP DCT GSR*",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 1459900,
-      "topPrice": 1739900,
-      "priceSpread": 280000,
-      "priceSpreadPercent": 19.18,
+      "basePrice": 1479900,
+      "topPrice": 1769900,
+      "priceSpread": 290000,
+      "priceSpreadPercent": 19.6,
       "trimCount": 5
     },
     {
@@ -8187,80 +7961,40 @@
       "trims": [
         {
           "trim": "Urban",
-          "price": 1379900,
-          "priceFormatted": "1.379.900 TL",
+          "price": 1734900,
+          "priceFormatted": "1.734.900 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "1.4 Fire 95 HP GSR",
-          "transmission": "Manuel",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Lounge",
-          "price": 1439900,
-          "priceFormatted": "1.439.900 TL",
-          "stepFromBase": 60000,
-          "stepPercent": 4.348141169649974,
-          "engine": "1.4 Fire 95 HP GSR",
-          "transmission": "Manuel",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Limited",
-          "price": 1499900,
-          "priceFormatted": "1.499.900 TL",
-          "stepFromBase": 120000,
-          "stepPercent": 8.696282339299948,
-          "engine": "1.4 Fire 95 HP GSR",
-          "transmission": "Manuel",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Street",
-          "price": 1669900,
-          "priceFormatted": "1.669.900 TL",
-          "stepFromBase": 290000,
-          "stepPercent": 21.016015653308212,
-          "engine": "1.4 Fire 95 HP GSR",
-          "transmission": "Otomatik",
-          "fuel": "Dizel"
-        },
-        {
-          "trim": "Urban",
-          "price": 1709900,
-          "priceFormatted": "1.709.900 TL",
-          "stepFromBase": 330000,
-          "stepPercent": 23.91477643307486,
           "engine": "1.6 M.Jet 130 HP DCT GSR",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         },
         {
           "trim": "Lounge",
-          "price": 1779900,
-          "priceFormatted": "1.779.900 TL",
-          "stepFromBase": 400000,
-          "stepPercent": 28.9876077976665,
+          "price": 1851900,
+          "priceFormatted": "1.851.900 TL",
+          "stepFromBase": 117000,
+          "stepPercent": 6.743904547812554,
           "engine": "1.6 M.Jet 130 HP DCT GSR",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         },
         {
           "trim": "Limited",
-          "price": 1939900,
-          "priceFormatted": "1.939.900 TL",
-          "stepFromBase": 560000,
-          "stepPercent": 40.5826509167331,
+          "price": 1969900,
+          "priceFormatted": "1.969.900 TL",
+          "stepFromBase": 235000,
+          "stepPercent": 13.545449305435472,
           "engine": "1.6 M.Jet 130 HP DCT GSR",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 1379900,
-      "topPrice": 1939900,
-      "priceSpread": 560000,
-      "priceSpreadPercent": 40.58,
-      "trimCount": 7
+      "basePrice": 1734900,
+      "topPrice": 1969900,
+      "priceSpread": 235000,
+      "priceSpreadPercent": 13.55,
+      "trimCount": 3
     },
     {
       "id": "fiat-grande-panda",
@@ -8270,8 +8004,8 @@
       "trims": [
         {
           "trim": "La Prima",
-          "price": 1524900,
-          "priceFormatted": "1.524.900 TL",
+          "price": 1469900,
+          "priceFormatted": "1.469.900 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "44 kWh",
@@ -8279,40 +8013,40 @@
           "fuel": "Elektrik"
         },
         {
-          "trim": "Icon",
-          "price": 1549900,
-          "priceFormatted": "1.549.900 TL",
-          "stepFromBase": 25000,
-          "stepPercent": 1.6394517673290052,
-          "engine": "1.2 MHEV 110HP eDCT",
-          "transmission": "Otomatik",
-          "fuel": "Hafif Hibrit"
-        },
-        {
           "trim": "La Prima",
-          "price": 1569900,
-          "priceFormatted": "1.569.900 TL",
+          "price": 1514900,
+          "priceFormatted": "1.514.900 TL",
           "stepFromBase": 45000,
-          "stepPercent": 2.9510131811922093,
+          "stepPercent": 3.0614327505272465,
           "engine": "44 kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         },
         {
+          "trim": "Icon",
+          "price": 1569900,
+          "priceFormatted": "1.569.900 TL",
+          "stepFromBase": 100000,
+          "stepPercent": 6.803183890060549,
+          "engine": "1.2 MHEV 110HP eDCT",
+          "transmission": "Otomatik",
+          "fuel": "Hafif Hibrit"
+        },
+        {
           "trim": "La Prima",
-          "price": 1669900,
-          "priceFormatted": "1.669.900 TL",
-          "stepFromBase": 145000,
-          "stepPercent": 9.508820250508231,
+          "price": 1689900,
+          "priceFormatted": "1.689.900 TL",
+          "stepFromBase": 220000,
+          "stepPercent": 14.967004558133207,
           "engine": "1.2 MHEV 110HP eDCT",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         }
       ],
-      "basePrice": 1524900,
-      "topPrice": 1669900,
-      "priceSpread": 145000,
-      "priceSpreadPercent": 9.51,
+      "basePrice": 1469900,
+      "topPrice": 1689900,
+      "priceSpread": 220000,
+      "priceSpreadPercent": 14.97,
       "trimCount": 4
     },
     {
@@ -8333,20 +8067,20 @@
         },
         {
           "trim": "Topolino",
-          "price": 569900,
-          "priceFormatted": "569.900 TL",
-          "stepFromBase": 25000,
-          "stepPercent": 4.587997797761057,
+          "price": 575900,
+          "priceFormatted": "575.900 TL",
+          "stepFromBase": 31000,
+          "stepPercent": 5.68911726922371,
           "engine": "6 kW/8 HP - 5.5kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         },
         {
           "trim": "Topolino",
-          "price": 575900,
-          "priceFormatted": "575.900 TL",
-          "stepFromBase": 31000,
-          "stepPercent": 5.68911726922371,
+          "price": 579900,
+          "priceFormatted": "579.900 TL",
+          "stepFromBase": 35000,
+          "stepPercent": 6.4231969168654794,
           "engine": "6 kW/8 HP - 5.5kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
@@ -8363,19 +8097,19 @@
         },
         {
           "trim": "Topolino Plus",
-          "price": 614900,
-          "priceFormatted": "614.900 TL",
-          "stepFromBase": 70000,
-          "stepPercent": 12.846393833730959,
+          "price": 624900,
+          "priceFormatted": "624.900 TL",
+          "stepFromBase": 80000,
+          "stepPercent": 14.681592952835382,
           "engine": "6 kW/8 HP - 5.5kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
       "basePrice": 544900,
-      "topPrice": 614900,
-      "priceSpread": 70000,
-      "priceSpreadPercent": 12.85,
+      "topPrice": 624900,
+      "priceSpread": 80000,
+      "priceSpreadPercent": 14.68,
       "trimCount": 5
     },
     {
@@ -8385,31 +8119,21 @@
       "brandId": "fiat",
       "trims": [
         {
-          "trim": "Easy",
-          "price": 1697900,
-          "priceFormatted": "1.697.900 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.2 145 hp MHEV",
-          "transmission": "Otomatik",
-          "fuel": "Hafif Hibrit"
-        },
-        {
           "trim": "La Prima",
           "price": 1969900,
           "priceFormatted": "1.969.900 TL",
-          "stepFromBase": 272000,
-          "stepPercent": 16.019789151304554,
+          "stepFromBase": 0,
+          "stepPercent": 0,
           "engine": "54 kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 1697900,
+      "basePrice": 1969900,
       "topPrice": 1969900,
-      "priceSpread": 272000,
-      "priceSpreadPercent": 16.02,
-      "trimCount": 2
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "fiat-500e",
@@ -8419,8 +8143,8 @@
       "trims": [
         {
           "trim": "3+1",
-          "price": 1919900,
-          "priceFormatted": "1.919.900 TL",
+          "price": 1939900,
+          "priceFormatted": "1.939.900 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "87 kW/118 HP - 42kWh",
@@ -8429,29 +8153,29 @@
         },
         {
           "trim": "Cabrio",
-          "price": 1969900,
-          "priceFormatted": "1.969.900 TL",
+          "price": 1989900,
+          "priceFormatted": "1.989.900 TL",
           "stepFromBase": 50000,
-          "stepPercent": 2.604302307411844,
+          "stepPercent": 2.5774524460023716,
           "engine": "87 kW/118 HP - 42kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         },
         {
           "trim": "Giorgio Armani",
-          "price": 2069900,
-          "priceFormatted": "2.069.900 TL",
+          "price": 2089900,
+          "priceFormatted": "2.089.900 TL",
           "stepFromBase": 150000,
-          "stepPercent": 7.812906922235534,
+          "stepPercent": 7.732357338007113,
           "engine": "87 kW/118 HP - 42kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 1919900,
-      "topPrice": 2069900,
+      "basePrice": 1939900,
+      "topPrice": 2089900,
       "priceSpread": 150000,
-      "priceSpreadPercent": 7.81,
+      "priceSpreadPercent": 7.73,
       "trimCount": 3
     }
   ],
@@ -8464,9 +8188,9 @@
           "brandId": "fiat",
           "model": "Topolino",
           "basePrice": 544900,
-          "topPrice": 614900,
+          "topPrice": 624900,
           "basePriceFormatted": "₺544.900",
-          "topPriceFormatted": "₺614.900",
+          "topPriceFormatted": "₺624.900",
           "trimCount": 5
         },
         {
@@ -8500,16 +8224,6 @@
           "trimCount": 4
         },
         {
-          "brand": "Fiat",
-          "brandId": "fiat",
-          "model": "Egea Cross",
-          "basePrice": 1379900,
-          "topPrice": 1939900,
-          "basePriceFormatted": "₺1.379.900",
-          "topPriceFormatted": "₺1.939.900",
-          "trimCount": 7
-        },
-        {
           "brand": "Kia",
           "brandId": "kia",
           "model": "Picanto",
@@ -8520,6 +8234,16 @@
           "trimCount": 1
         },
         {
+          "brand": "Fiat",
+          "brandId": "fiat",
+          "model": "Grande Panda",
+          "basePrice": 1469900,
+          "topPrice": 1689900,
+          "basePriceFormatted": "₺1.469.900",
+          "topPriceFormatted": "₺1.689.900",
+          "trimCount": 4
+        },
+        {
           "brand": "Hyundai",
           "brandId": "hyundai",
           "model": "INSTER",
@@ -8528,16 +8252,6 @@
           "basePriceFormatted": "₺1.510.000",
           "topPriceFormatted": "₺1.790.000",
           "trimCount": 3
-        },
-        {
-          "brand": "Fiat",
-          "brandId": "fiat",
-          "model": "Grande Panda",
-          "basePrice": 1524900,
-          "topPrice": 1669900,
-          "basePriceFormatted": "₺1.524.900",
-          "topPriceFormatted": "₺1.669.900",
-          "trimCount": 4
         },
         {
           "brand": "Opel",
@@ -8612,12 +8326,12 @@
         {
           "brand": "Fiat",
           "brandId": "fiat",
-          "model": "600",
-          "basePrice": 1697900,
+          "model": "Egea Cross",
+          "basePrice": 1734900,
           "topPrice": 1969900,
-          "basePriceFormatted": "₺1.697.900",
+          "basePriceFormatted": "₺1.734.900",
           "topPriceFormatted": "₺1.969.900",
-          "trimCount": 2
+          "trimCount": 3
         },
         {
           "brand": "Kia",
@@ -8693,11 +8407,21 @@
           "brand": "Fiat",
           "brandId": "fiat",
           "model": "500e",
-          "basePrice": 1919900,
-          "topPrice": 2069900,
-          "basePriceFormatted": "₺1.919.900",
-          "topPriceFormatted": "₺2.069.900",
+          "basePrice": 1939900,
+          "topPrice": 2089900,
+          "basePriceFormatted": "₺1.939.900",
+          "topPriceFormatted": "₺2.089.900",
           "trimCount": 3
+        },
+        {
+          "brand": "Fiat",
+          "brandId": "fiat",
+          "model": "600",
+          "basePrice": 1969900,
+          "topPrice": 1969900,
+          "basePriceFormatted": "₺1.969.900",
+          "topPriceFormatted": "₺1.969.900",
+          "trimCount": 1
         },
         {
           "brand": "Opel",
@@ -9167,7 +8891,7 @@
           "topPrice": 8579143,
           "basePriceFormatted": "₺6.717.287",
           "topPriceFormatted": "₺8.579.143",
-          "trimCount": 9
+          "trimCount": 3
         },
         {
           "brand": "Mercedes-Benz",
@@ -9198,16 +8922,6 @@
           "basePriceFormatted": "₺6.920.000",
           "topPriceFormatted": "₺7.058.000",
           "trimCount": 2
-        },
-        {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "XC60 BLACK EDITION",
-          "basePrice": 7126344,
-          "topPrice": 8088925,
-          "basePriceFormatted": "₺7.126.344",
-          "topPriceFormatted": "₺8.088.925",
-          "trimCount": 3
         },
         {
           "brand": "Mercedes-Benz",
@@ -9414,10 +9128,10 @@
           "brandId": "volvo",
           "model": "XC90",
           "basePrice": 10615530,
-          "topPrice": 11610576,
+          "topPrice": 11277812,
           "basePriceFormatted": "₺10.615.530",
-          "topPriceFormatted": "₺11.610.576",
-          "trimCount": 8
+          "topPriceFormatted": "₺11.277.812",
+          "trimCount": 2
         },
         {
           "brand": "Volkswagen",
@@ -9434,10 +9148,10 @@
           "brandId": "volvo",
           "model": "XC90 BLACK EDITION",
           "basePrice": 10844407,
-          "topPrice": 11839453,
+          "topPrice": 11506689,
           "basePriceFormatted": "₺10.844.407",
-          "topPriceFormatted": "₺11.839.453",
-          "trimCount": 4
+          "topPriceFormatted": "₺11.506.689",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9760,8 +9474,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8263178,
-      "avgTopPrice": 8540140
+      "avgBasePrice": 8276580,
+      "avgTopPrice": 8539099
     },
     {
       "segment": "SUV",
@@ -10021,10 +9735,10 @@
           "brandId": "volvo",
           "model": "EX40",
           "basePrice": 3933820,
-          "topPrice": 4777026,
+          "topPrice": 3933820,
           "basePriceFormatted": "₺3.933.820",
-          "topPriceFormatted": "₺4.777.026",
-          "trimCount": 2
+          "topPriceFormatted": "₺3.933.820",
+          "trimCount": 1
         },
         {
           "brand": "BMW",
@@ -10045,16 +9759,6 @@
           "basePriceFormatted": "₺4.037.500",
           "topPriceFormatted": "₺4.403.600",
           "trimCount": 2
-        },
-        {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "EX40 BLACK EDITION",
-          "basePrice": 4073599,
-          "topPrice": 4073599,
-          "basePriceFormatted": "₺4.073.599",
-          "topPriceFormatted": "₺4.073.599",
-          "trimCount": 1
         },
         {
           "brand": "Škoda",
@@ -10157,8 +9861,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 3732044,
-      "avgTopPrice": 4183706
+      "avgBasePrice": 3723056,
+      "avgTopPrice": 4164414
     },
     {
       "segment": "Sedan",
@@ -10167,10 +9871,10 @@
           "brand": "Fiat",
           "brandId": "fiat",
           "model": "Egea Sedan",
-          "basePrice": 1459900,
-          "topPrice": 1739900,
-          "basePriceFormatted": "₺1.459.900",
-          "topPriceFormatted": "₺1.739.900",
+          "basePrice": 1479900,
+          "topPrice": 1769900,
+          "basePriceFormatted": "₺1.479.900",
+          "topPriceFormatted": "₺1.769.900",
           "trimCount": 5
         },
         {
@@ -10328,10 +10032,10 @@
           "brandId": "volvo",
           "model": "EC40",
           "basePrice": 4020576,
-          "topPrice": 4874625,
+          "topPrice": 4020576,
           "basePriceFormatted": "₺4.020.576",
-          "topPriceFormatted": "₺4.874.625",
-          "trimCount": 2
+          "topPriceFormatted": "₺4.020.576",
+          "trimCount": 1
         },
         {
           "brand": "Volvo",
@@ -10404,8 +10108,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5531180,
-      "avgTopPrice": 6139045
+      "avgBasePrice": 5532014,
+      "avgTopPrice": 6104710
     },
     {
       "segment": "Electric",
@@ -10830,9 +10534,9 @@
     }
   ],
   "summary": {
-    "totalModels": 234,
-    "avgTrimsPerModel": 2.3,
-    "avgPriceSpread": 344921,
-    "avgPriceSpreadPercent": 11.5
+    "totalModels": 232,
+    "avgTrimsPerModel": 2.2,
+    "avgPriceSpread": 331398,
+    "avgPriceSpreadPercent": 11.18
   }
 }
