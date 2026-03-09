@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-03-05T01:33:31.512Z",
-  "date": "2026-03-05",
+  "generatedAt": "2026-03-09T08:48:19.015Z",
+  "date": "2026-03-09",
   "summary": {
     "totalSegments": 11,
-    "totalGaps": 1002,
+    "totalGaps": 1001,
     "totalOpportunities": 20,
-    "avgOpportunityScore": 22.32
+    "avgOpportunityScore": 22.31
   },
   "segments": [
     {
       "segment": "SUV-Compact",
-      "totalVehicles": 116,
-      "avgPrice": 2777597,
+      "totalVehicles": 113,
+      "avgPrice": 2798386,
       "minPrice": 1211000,
       "maxPrice": 8210300,
       "brands": [
@@ -65,8 +65,8 @@
     },
     {
       "segment": "Hatchback-C",
-      "totalVehicles": 63,
-      "avgPrice": 2530610,
+      "totalVehicles": 62,
+      "avgPrice": 2512605,
       "minPrice": 544900,
       "maxPrice": 6683000,
       "brands": [
@@ -93,9 +93,30 @@
       ]
     },
     {
-      "segment": "SUV-Medium",
+      "segment": "Sedan-D",
       "totalVehicles": 60,
-      "avgPrice": 3754013,
+      "avgPrice": 10654642,
+      "minPrice": 3411000,
+      "maxPrice": 23795200,
+      "brands": [
+        "Volkswagen",
+        "Škoda",
+        "BYD",
+        "BMW",
+        "Mercedes-Benz"
+      ],
+      "fuelTypes": [
+        "Benzin",
+        "Plug-in Hibrit",
+        "Dizel",
+        "Elektrik",
+        "Hafif Hibrit"
+      ]
+    },
+    {
+      "segment": "SUV-Medium",
+      "totalVehicles": 58,
+      "avgPrice": 3784557,
       "minPrice": 2049000,
       "maxPrice": 8968000,
       "brands": [
@@ -120,31 +141,10 @@
       ]
     },
     {
-      "segment": "Sedan-D",
-      "totalVehicles": 60,
-      "avgPrice": 10654642,
-      "minPrice": 3411000,
-      "maxPrice": 23795200,
-      "brands": [
-        "Volkswagen",
-        "Škoda",
-        "BYD",
-        "BMW",
-        "Mercedes-Benz"
-      ],
-      "fuelTypes": [
-        "Benzin",
-        "Plug-in Hibrit",
-        "Dizel",
-        "Elektrik",
-        "Hafif Hibrit"
-      ]
-    },
-    {
       "segment": "SUV-Large",
       "totalVehicles": 44,
-      "avgPrice": 9457040,
-      "minPrice": 3218500,
+      "avgPrice": 9460267,
+      "minPrice": 3290000,
       "maxPrice": 33191000,
       "brands": [
         "Volkswagen",
@@ -168,7 +168,7 @@
     {
       "segment": "Hatchback-B",
       "totalVehicles": 39,
-      "avgPrice": 2087971,
+      "avgPrice": 2088838,
       "minPrice": 1242000,
       "maxPrice": 6660000,
       "brands": [
@@ -215,10 +215,10 @@
     },
     {
       "segment": "MPV",
-      "totalVehicles": 20,
-      "avgPrice": 1784725,
-      "minPrice": 1273500,
-      "maxPrice": 2615000,
+      "totalVehicles": 18,
+      "avgPrice": 1795972,
+      "minPrice": 1366000,
+      "maxPrice": 2590000,
       "brands": [
         "Hyundai",
         "Peugeot",
@@ -284,7 +284,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.02
+      "opportunityScore": 30.07
     },
     {
       "segment": "Hatchback-B",
@@ -297,7 +297,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.02
+      "opportunityScore": 33.07
     },
     {
       "segment": "Hatchback-B",
@@ -310,7 +310,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.02
+      "opportunityScore": 33.07
     },
     {
       "segment": "Hatchback-B",
@@ -327,7 +327,7 @@
         "Opel",
         "SEAT"
       ],
-      "avgPrice": 1741960,
+      "avgPrice": 1741445,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -344,7 +344,7 @@
       ],
       "avgPrice": 2252000,
       "hasGap": true,
-      "opportunityScore": 33.02
+      "opportunityScore": 33.07
     },
     {
       "segment": "Hatchback-B",
@@ -357,7 +357,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.02
+      "opportunityScore": 30.07
     },
     {
       "segment": "Hatchback-B",
@@ -370,7 +370,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.02
+      "opportunityScore": 30.07
     },
     {
       "segment": "Hatchback-B",
@@ -383,7 +383,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.02
+      "opportunityScore": 22.07
     },
     {
       "segment": "Hatchback-B",
@@ -396,7 +396,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.02
+      "opportunityScore": 25.07
     },
     {
       "segment": "Hatchback-B",
@@ -428,7 +428,7 @@
       ],
       "avgPrice": 1535000,
       "hasGap": true,
-      "opportunityScore": 25.02
+      "opportunityScore": 25.07
     },
     {
       "segment": "Hatchback-B",
@@ -441,7 +441,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.02
+      "opportunityScore": 25.07
     },
     {
       "segment": "Hatchback-B",
@@ -454,7 +454,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.02
+      "opportunityScore": 22.07
     },
     {
       "segment": "Hatchback-B",
@@ -467,7 +467,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.02
+      "opportunityScore": 22.07
     },
     {
       "segment": "Hatchback-B",
@@ -480,7 +480,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.02
+      "opportunityScore": 25.07
     },
     {
       "segment": "Hatchback-B",
@@ -493,7 +493,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.02
+      "opportunityScore": 28.07
     },
     {
       "segment": "Hatchback-B",
@@ -506,7 +506,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.02
+      "opportunityScore": 28.07
     },
     {
       "segment": "Hatchback-B",
@@ -519,7 +519,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.02
+      "opportunityScore": 28.07
     },
     {
       "segment": "Hatchback-B",
@@ -532,7 +532,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.02
+      "opportunityScore": 28.07
     },
     {
       "segment": "Hatchback-B",
@@ -545,7 +545,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.02
+      "opportunityScore": 25.07
     },
     {
       "segment": "Hatchback-B",
@@ -558,7 +558,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.02
+      "opportunityScore": 25.07
     },
     {
       "segment": "Hatchback-B",
@@ -571,7 +571,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.02
+      "opportunityScore": 17.07
     },
     {
       "segment": "Hatchback-B",
@@ -584,7 +584,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.02
+      "opportunityScore": 20.07
     },
     {
       "segment": "Hatchback-B",
@@ -597,7 +597,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.02
+      "opportunityScore": 20.07
     },
     {
       "segment": "Hatchback-B",
@@ -610,7 +610,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.02
+      "opportunityScore": 20.07
     },
     {
       "segment": "Hatchback-B",
@@ -623,7 +623,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.02
+      "opportunityScore": 20.07
     },
     {
       "segment": "Hatchback-B",
@@ -636,7 +636,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.02
+      "opportunityScore": 17.07
     },
     {
       "segment": "Hatchback-B",
@@ -649,7 +649,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.02
+      "opportunityScore": 17.07
     },
     {
       "segment": "Hatchback-B",
@@ -662,7 +662,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.52
+      "opportunityScore": 27.57
     },
     {
       "segment": "Hatchback-B",
@@ -675,7 +675,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.52
+      "opportunityScore": 30.57
     },
     {
       "segment": "Hatchback-B",
@@ -688,7 +688,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.52
+      "opportunityScore": 30.57
     },
     {
       "segment": "Hatchback-B",
@@ -733,7 +733,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.52
+      "opportunityScore": 27.57
     },
     {
       "segment": "Hatchback-B",
@@ -746,7 +746,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.52
+      "opportunityScore": 27.57
     },
     {
       "segment": "Hatchback-B",
@@ -759,7 +759,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.52
+      "opportunityScore": 19.57
     },
     {
       "segment": "Hatchback-B",
@@ -772,7 +772,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -785,7 +785,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -798,7 +798,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -811,7 +811,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -824,7 +824,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.52
+      "opportunityScore": 19.57
     },
     {
       "segment": "Hatchback-B",
@@ -837,7 +837,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.52
+      "opportunityScore": 19.57
     },
     {
       "segment": "Hatchback-B",
@@ -850,7 +850,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -863,7 +863,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -876,7 +876,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -904,7 +904,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -917,7 +917,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -930,7 +930,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -943,7 +943,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -956,7 +956,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -969,7 +969,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -982,7 +982,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -995,7 +995,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1008,7 +1008,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1021,7 +1021,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1034,7 +1034,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -1047,7 +1047,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -1060,7 +1060,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -1073,7 +1073,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -1086,7 +1086,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -1099,7 +1099,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -1112,7 +1112,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -1125,7 +1125,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1138,7 +1138,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1151,7 +1151,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1164,7 +1164,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1177,7 +1177,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1190,7 +1190,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1203,7 +1203,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1216,7 +1216,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -1229,7 +1229,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -1244,7 +1244,7 @@
       ],
       "avgPrice": 1469900,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -1318,7 +1318,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1331,7 +1331,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1344,7 +1344,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1357,7 +1357,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1370,7 +1370,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1383,7 +1383,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1396,7 +1396,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1409,7 +1409,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -1422,7 +1422,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -1435,7 +1435,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -1463,7 +1463,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.52
+      "opportunityScore": 25.57
     },
     {
       "segment": "Hatchback-B",
@@ -1476,7 +1476,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -1489,7 +1489,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.52
+      "opportunityScore": 22.57
     },
     {
       "segment": "Hatchback-B",
@@ -1502,7 +1502,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1515,7 +1515,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1528,7 +1528,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1541,7 +1541,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1554,7 +1554,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.52
+      "opportunityScore": 17.57
     },
     {
       "segment": "Hatchback-B",
@@ -1567,7 +1567,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "Hatchback-B",
@@ -1580,7 +1580,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.52
+      "opportunityScore": 14.57
     },
     {
       "segment": "SUV-Compact",
@@ -1593,7 +1593,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 35.99
+      "opportunityScore": 35.9
     },
     {
       "segment": "SUV-Compact",
@@ -1606,7 +1606,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 38.99
+      "opportunityScore": 38.9
     },
     {
       "segment": "SUV-Compact",
@@ -1638,7 +1638,7 @@
         "SEAT",
         "Kia"
       ],
-      "avgPrice": 1779323,
+      "avgPrice": 1778782,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -1649,18 +1649,17 @@
       "priceRange": "2M-3M",
       "priceRangeMin": 2000000,
       "priceRangeMax": 3000000,
-      "vehicleCount": 25,
+      "vehicleCount": 24,
       "brands": [
         "Volkswagen",
         "Škoda",
         "Renault",
         "Hyundai",
-        "Peugeot",
         "Opel",
         "Nissan",
         "SEAT"
       ],
-      "avgPrice": 2481583,
+      "avgPrice": 2493558,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -1706,7 +1705,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.99
+      "opportunityScore": 27.9
     },
     {
       "segment": "SUV-Compact",
@@ -1719,7 +1718,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.99
+      "opportunityScore": 30.9
     },
     {
       "segment": "SUV-Compact",
@@ -1732,7 +1731,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.99
+      "opportunityScore": 30.9
     },
     {
       "segment": "SUV-Compact",
@@ -1747,7 +1746,7 @@
       ],
       "avgPrice": 1988000,
       "hasGap": true,
-      "opportunityScore": 30.99
+      "opportunityScore": 30.9
     },
     {
       "segment": "SUV-Compact",
@@ -1775,7 +1774,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.99
+      "opportunityScore": 27.9
     },
     {
       "segment": "SUV-Compact",
@@ -1788,7 +1787,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.99
+      "opportunityScore": 27.9
     },
     {
       "segment": "SUV-Compact",
@@ -1801,7 +1800,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.99
+      "opportunityScore": 30.9
     },
     {
       "segment": "SUV-Compact",
@@ -1814,7 +1813,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.99
+      "opportunityScore": 33.9
     },
     {
       "segment": "SUV-Compact",
@@ -1827,7 +1826,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.99
+      "opportunityScore": 33.9
     },
     {
       "segment": "SUV-Compact",
@@ -1840,7 +1839,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.99
+      "opportunityScore": 33.9
     },
     {
       "segment": "SUV-Compact",
@@ -1853,7 +1852,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.99
+      "opportunityScore": 33.9
     },
     {
       "segment": "SUV-Compact",
@@ -1866,7 +1865,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.99
+      "opportunityScore": 30.9
     },
     {
       "segment": "SUV-Compact",
@@ -1879,7 +1878,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.99
+      "opportunityScore": 30.9
     },
     {
       "segment": "SUV-Compact",
@@ -1892,7 +1891,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.99
+      "opportunityScore": 22.9
     },
     {
       "segment": "SUV-Compact",
@@ -1905,7 +1904,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.99
+      "opportunityScore": 25.9
     },
     {
       "segment": "SUV-Compact",
@@ -1918,7 +1917,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.99
+      "opportunityScore": 25.9
     },
     {
       "segment": "SUV-Compact",
@@ -1931,7 +1930,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.99
+      "opportunityScore": 25.9
     },
     {
       "segment": "SUV-Compact",
@@ -1944,7 +1943,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.99
+      "opportunityScore": 25.9
     },
     {
       "segment": "SUV-Compact",
@@ -1957,7 +1956,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.99
+      "opportunityScore": 22.9
     },
     {
       "segment": "SUV-Compact",
@@ -1970,7 +1969,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.99
+      "opportunityScore": 22.9
     },
     {
       "segment": "SUV-Compact",
@@ -1983,7 +1982,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.49
+      "opportunityScore": 33.4
     },
     {
       "segment": "SUV-Compact",
@@ -1996,7 +1995,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 36.49
+      "opportunityScore": 36.4
     },
     {
       "segment": "SUV-Compact",
@@ -2009,7 +2008,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 36.49
+      "opportunityScore": 36.4
     },
     {
       "segment": "SUV-Compact",
@@ -2018,13 +2017,13 @@
       "priceRange": "1.5M-2M",
       "priceRangeMin": 1500000,
       "priceRangeMax": 2000000,
-      "vehicleCount": 3,
+      "vehicleCount": 4,
       "brands": [
         "Toyota",
         "Citroën",
         "Ford"
       ],
-      "avgPrice": 1938367,
+      "avgPrice": 1945775,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -2035,7 +2034,7 @@
       "priceRange": "2M-3M",
       "priceRangeMin": 2000000,
       "priceRangeMax": 3000000,
-      "vehicleCount": 20,
+      "vehicleCount": 19,
       "brands": [
         "Toyota",
         "Peugeot",
@@ -2044,7 +2043,7 @@
         "Ford",
         "Honda"
       ],
-      "avgPrice": 2461330,
+      "avgPrice": 2489532,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -2075,7 +2074,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.49
+      "opportunityScore": 33.4
     },
     {
       "segment": "SUV-Compact",
@@ -2088,7 +2087,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.49
+      "opportunityScore": 25.4
     },
     {
       "segment": "SUV-Compact",
@@ -2101,7 +2100,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2114,7 +2113,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2127,7 +2126,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2140,7 +2139,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2153,7 +2152,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.49
+      "opportunityScore": 25.4
     },
     {
       "segment": "SUV-Compact",
@@ -2166,7 +2165,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.49
+      "opportunityScore": 25.4
     },
     {
       "segment": "SUV-Compact",
@@ -2179,7 +2178,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2192,7 +2191,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2205,7 +2204,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2218,7 +2217,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2233,7 +2232,7 @@
       ],
       "avgPrice": 2595600,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2264,7 +2263,7 @@
       ],
       "avgPrice": 5427800,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2277,7 +2276,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2290,7 +2289,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2303,7 +2302,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2316,7 +2315,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2329,7 +2328,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2342,7 +2341,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2355,7 +2354,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2368,7 +2367,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2381,7 +2380,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2394,7 +2393,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2407,7 +2406,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2420,7 +2419,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2433,7 +2432,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2461,7 +2460,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2474,7 +2473,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2487,7 +2486,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2500,7 +2499,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2513,7 +2512,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2526,7 +2525,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2539,7 +2538,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2552,7 +2551,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2565,7 +2564,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2580,7 +2579,7 @@
       ],
       "avgPrice": 1468000,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2589,12 +2588,12 @@
       "priceRange": "1.5M-2M",
       "priceRangeMin": 1500000,
       "priceRangeMax": 2000000,
-      "vehicleCount": 4,
+      "vehicleCount": 3,
       "brands": [
         "Citroën",
         "Ford"
       ],
-      "avgPrice": 1717275,
+      "avgPrice": 1711700,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -2614,7 +2613,7 @@
         "Nissan",
         "Volvo"
       ],
-      "avgPrice": 2309543,
+      "avgPrice": 2282270,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -2660,7 +2659,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2673,7 +2672,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2686,7 +2685,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2699,7 +2698,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2712,7 +2711,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2725,7 +2724,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2738,7 +2737,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2751,7 +2750,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2764,7 +2763,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2777,7 +2776,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2790,7 +2789,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2803,7 +2802,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.49
+      "opportunityScore": 31.4
     },
     {
       "segment": "SUV-Compact",
@@ -2816,7 +2815,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2829,7 +2828,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.49
+      "opportunityScore": 28.4
     },
     {
       "segment": "SUV-Compact",
@@ -2842,7 +2841,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2855,7 +2854,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2868,7 +2867,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2881,7 +2880,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2894,7 +2893,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.49
+      "opportunityScore": 23.4
     },
     {
       "segment": "SUV-Compact",
@@ -2907,7 +2906,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "SUV-Compact",
@@ -2920,7 +2919,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.49
+      "opportunityScore": 20.4
     },
     {
       "segment": "Hatchback-C",
@@ -2968,11 +2967,14 @@
       "priceRange": "1.5M-2M",
       "priceRangeMin": 1500000,
       "priceRangeMax": 2000000,
-      "vehicleCount": 0,
-      "brands": [],
-      "avgPrice": 0,
-      "hasGap": true,
-      "opportunityScore": 34.88
+      "vehicleCount": 2,
+      "brands": [
+        "Škoda",
+        "SEAT"
+      ],
+      "avgPrice": 1830950,
+      "hasGap": false,
+      "opportunityScore": 0
     },
     {
       "segment": "Hatchback-C",
@@ -2981,16 +2983,15 @@
       "priceRange": "2M-3M",
       "priceRangeMin": 2000000,
       "priceRangeMax": 3000000,
-      "vehicleCount": 10,
+      "vehicleCount": 7,
       "brands": [
         "Volkswagen",
         "Škoda",
-        "Peugeot",
         "Opel",
         "Ford",
         "Kia"
       ],
-      "avgPrice": 2440030,
+      "avgPrice": 2471471,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -3353,12 +3354,12 @@
       "priceRange": "1.5M-2M",
       "priceRangeMin": 1500000,
       "priceRangeMax": 2000000,
-      "vehicleCount": 4,
+      "vehicleCount": 6,
       "brands": [
         "Citroën",
         "Kia"
       ],
-      "avgPrice": 1888500,
+      "avgPrice": 1879500,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -3369,13 +3370,12 @@
       "priceRange": "2M-3M",
       "priceRangeMin": 2000000,
       "priceRangeMax": 3000000,
-      "vehicleCount": 6,
+      "vehicleCount": 4,
       "brands": [
         "Peugeot",
-        "Citroën",
         "SEAT"
       ],
-      "avgPrice": 2441477,
+      "avgPrice": 2679250,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -4254,7 +4254,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.65
+      "opportunityScore": 31.57
     },
     {
       "segment": "SUV-Medium",
@@ -4267,7 +4267,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.57
     },
     {
       "segment": "SUV-Medium",
@@ -4280,7 +4280,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.57
     },
     {
       "segment": "SUV-Medium",
@@ -4293,7 +4293,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.57
     },
     {
       "segment": "SUV-Medium",
@@ -4359,7 +4359,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.65
+      "opportunityScore": 23.57
     },
     {
       "segment": "SUV-Medium",
@@ -4372,7 +4372,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.57
     },
     {
       "segment": "SUV-Medium",
@@ -4385,7 +4385,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.57
     },
     {
       "segment": "SUV-Medium",
@@ -4398,7 +4398,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.57
     },
     {
       "segment": "SUV-Medium",
@@ -4411,7 +4411,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.57
     },
     {
       "segment": "SUV-Medium",
@@ -4424,7 +4424,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.65
+      "opportunityScore": 23.57
     },
     {
       "segment": "SUV-Medium",
@@ -4437,7 +4437,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.65
+      "opportunityScore": 23.57
     },
     {
       "segment": "SUV-Medium",
@@ -4450,7 +4450,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.57
     },
     {
       "segment": "SUV-Medium",
@@ -4463,7 +4463,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.65
+      "opportunityScore": 29.57
     },
     {
       "segment": "SUV-Medium",
@@ -4476,7 +4476,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.65
+      "opportunityScore": 29.57
     },
     {
       "segment": "SUV-Medium",
@@ -4489,7 +4489,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.65
+      "opportunityScore": 29.57
     },
     {
       "segment": "SUV-Medium",
@@ -4504,7 +4504,7 @@
       ],
       "avgPrice": 2799000,
       "hasGap": true,
-      "opportunityScore": 29.65
+      "opportunityScore": 29.57
     },
     {
       "segment": "SUV-Medium",
@@ -4548,7 +4548,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.65
+      "opportunityScore": 18.57
     },
     {
       "segment": "SUV-Medium",
@@ -4561,7 +4561,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.65
+      "opportunityScore": 21.57
     },
     {
       "segment": "SUV-Medium",
@@ -4574,7 +4574,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.65
+      "opportunityScore": 21.57
     },
     {
       "segment": "SUV-Medium",
@@ -4587,7 +4587,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.65
+      "opportunityScore": 21.57
     },
     {
       "segment": "SUV-Medium",
@@ -4600,7 +4600,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.65
+      "opportunityScore": 21.57
     },
     {
       "segment": "SUV-Medium",
@@ -4613,7 +4613,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.65
+      "opportunityScore": 18.57
     },
     {
       "segment": "SUV-Medium",
@@ -4626,7 +4626,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.65
+      "opportunityScore": 18.57
     },
     {
       "segment": "SUV-Medium",
@@ -4639,7 +4639,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.15
+      "opportunityScore": 29.07
     },
     {
       "segment": "SUV-Medium",
@@ -4652,7 +4652,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.15
+      "opportunityScore": 32.07
     },
     {
       "segment": "SUV-Medium",
@@ -4665,7 +4665,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.15
+      "opportunityScore": 32.07
     },
     {
       "segment": "SUV-Medium",
@@ -4678,7 +4678,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.15
+      "opportunityScore": 32.07
     },
     {
       "segment": "SUV-Medium",
@@ -4687,12 +4687,12 @@
       "priceRange": "2M-3M",
       "priceRangeMin": 2000000,
       "priceRangeMax": 3000000,
-      "vehicleCount": 4,
+      "vehicleCount": 3,
       "brands": [
         "Peugeot",
         "Citroën"
       ],
-      "avgPrice": 2768750,
+      "avgPrice": 2698167,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -4703,12 +4703,12 @@
       "priceRange": "3M-5M",
       "priceRangeMin": 3000000,
       "priceRangeMax": 5000000,
-      "vehicleCount": 3,
+      "vehicleCount": 2,
       "brands": [
         "Renault",
-        "Opel"
+        "Peugeot"
       ],
-      "avgPrice": 3198667,
+      "avgPrice": 3310500,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -4723,7 +4723,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.15
+      "opportunityScore": 29.07
     },
     {
       "segment": "SUV-Medium",
@@ -4736,7 +4736,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.15
+      "opportunityScore": 21.07
     },
     {
       "segment": "SUV-Medium",
@@ -4749,7 +4749,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -4762,7 +4762,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -4775,7 +4775,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -4788,7 +4788,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -4801,7 +4801,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.15
+      "opportunityScore": 21.07
     },
     {
       "segment": "SUV-Medium",
@@ -4814,7 +4814,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.15
+      "opportunityScore": 21.07
     },
     {
       "segment": "SUV-Medium",
@@ -4827,7 +4827,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -4840,7 +4840,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -4853,7 +4853,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -4866,7 +4866,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -4879,7 +4879,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -4892,7 +4892,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -4920,7 +4920,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -4933,7 +4933,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -4946,7 +4946,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -4959,7 +4959,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -4972,7 +4972,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -4985,7 +4985,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -4998,7 +4998,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -5011,7 +5011,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -5024,7 +5024,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5037,7 +5037,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5050,7 +5050,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5063,7 +5063,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5076,7 +5076,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -5089,7 +5089,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -5102,7 +5102,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -5115,7 +5115,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5128,7 +5128,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5141,7 +5141,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5154,7 +5154,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5167,7 +5167,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -5180,7 +5180,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -5193,7 +5193,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -5206,7 +5206,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5219,7 +5219,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5232,7 +5232,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5245,9 +5245,9 @@
       "brands": [
         "Citroën"
       ],
-      "avgPrice": 2380000,
+      "avgPrice": 2430000,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5261,7 +5261,7 @@
         "Citroën",
         "Kia"
       ],
-      "avgPrice": 3325000,
+      "avgPrice": 3350000,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -5276,7 +5276,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -5289,7 +5289,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -5302,7 +5302,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5315,7 +5315,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5328,7 +5328,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5341,7 +5341,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5354,7 +5354,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -5367,7 +5367,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -5380,7 +5380,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -5393,7 +5393,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5406,7 +5406,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5419,7 +5419,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5432,7 +5432,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.07
     },
     {
       "segment": "SUV-Medium",
@@ -5445,7 +5445,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -5458,7 +5458,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.07
     },
     {
       "segment": "SUV-Medium",
@@ -5471,7 +5471,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -5484,7 +5484,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5497,7 +5497,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5510,7 +5510,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5523,7 +5523,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.07
     },
     {
       "segment": "SUV-Medium",
@@ -5536,7 +5536,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "SUV-Medium",
@@ -5549,7 +5549,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.07
     },
     {
       "segment": "Sedan-D",
@@ -5562,7 +5562,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.65
+      "opportunityScore": 31.72
     },
     {
       "segment": "Sedan-D",
@@ -5575,7 +5575,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.72
     },
     {
       "segment": "Sedan-D",
@@ -5588,7 +5588,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.72
     },
     {
       "segment": "Sedan-D",
@@ -5601,7 +5601,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.72
     },
     {
       "segment": "Sedan-D",
@@ -5614,7 +5614,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.72
     },
     {
       "segment": "Sedan-D",
@@ -5661,7 +5661,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.65
+      "opportunityScore": 23.72
     },
     {
       "segment": "Sedan-D",
@@ -5674,7 +5674,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.72
     },
     {
       "segment": "Sedan-D",
@@ -5687,7 +5687,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.72
     },
     {
       "segment": "Sedan-D",
@@ -5700,7 +5700,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.72
     },
     {
       "segment": "Sedan-D",
@@ -5713,7 +5713,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.72
     },
     {
       "segment": "Sedan-D",
@@ -5726,7 +5726,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.65
+      "opportunityScore": 23.72
     },
     {
       "segment": "Sedan-D",
@@ -5739,7 +5739,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.65
+      "opportunityScore": 23.72
     },
     {
       "segment": "Sedan-D",
@@ -5752,7 +5752,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.72
     },
     {
       "segment": "Sedan-D",
@@ -5765,7 +5765,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.65
+      "opportunityScore": 29.72
     },
     {
       "segment": "Sedan-D",
@@ -5778,7 +5778,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.65
+      "opportunityScore": 29.72
     },
     {
       "segment": "Sedan-D",
@@ -5791,7 +5791,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.65
+      "opportunityScore": 29.72
     },
     {
       "segment": "Sedan-D",
@@ -5804,7 +5804,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.65
+      "opportunityScore": 29.72
     },
     {
       "segment": "Sedan-D",
@@ -5817,7 +5817,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.65
+      "opportunityScore": 26.72
     },
     {
       "segment": "Sedan-D",
@@ -5846,7 +5846,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.65
+      "opportunityScore": 18.72
     },
     {
       "segment": "Sedan-D",
@@ -5859,7 +5859,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.65
+      "opportunityScore": 21.72
     },
     {
       "segment": "Sedan-D",
@@ -5872,7 +5872,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.65
+      "opportunityScore": 21.72
     },
     {
       "segment": "Sedan-D",
@@ -5885,7 +5885,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.65
+      "opportunityScore": 21.72
     },
     {
       "segment": "Sedan-D",
@@ -5898,7 +5898,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.65
+      "opportunityScore": 21.72
     },
     {
       "segment": "Sedan-D",
@@ -5911,7 +5911,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.65
+      "opportunityScore": 18.72
     },
     {
       "segment": "Sedan-D",
@@ -5924,7 +5924,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.65
+      "opportunityScore": 18.72
     },
     {
       "segment": "Sedan-D",
@@ -5937,7 +5937,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.15
+      "opportunityScore": 29.22
     },
     {
       "segment": "Sedan-D",
@@ -5950,7 +5950,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.15
+      "opportunityScore": 32.22
     },
     {
       "segment": "Sedan-D",
@@ -5963,7 +5963,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.15
+      "opportunityScore": 32.22
     },
     {
       "segment": "Sedan-D",
@@ -5976,7 +5976,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.15
+      "opportunityScore": 32.22
     },
     {
       "segment": "Sedan-D",
@@ -5989,7 +5989,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.15
+      "opportunityScore": 32.22
     },
     {
       "segment": "Sedan-D",
@@ -6002,7 +6002,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.15
+      "opportunityScore": 29.22
     },
     {
       "segment": "Sedan-D",
@@ -6015,7 +6015,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.15
+      "opportunityScore": 29.22
     },
     {
       "segment": "Sedan-D",
@@ -6028,7 +6028,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.15
+      "opportunityScore": 21.22
     },
     {
       "segment": "Sedan-D",
@@ -6041,7 +6041,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6054,7 +6054,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6067,7 +6067,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6080,7 +6080,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6093,7 +6093,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.15
+      "opportunityScore": 21.22
     },
     {
       "segment": "Sedan-D",
@@ -6106,7 +6106,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.15
+      "opportunityScore": 21.22
     },
     {
       "segment": "Sedan-D",
@@ -6119,7 +6119,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6132,7 +6132,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6145,7 +6145,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6158,7 +6158,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6171,7 +6171,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6184,7 +6184,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6212,7 +6212,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6225,7 +6225,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6238,7 +6238,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6251,7 +6251,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6264,7 +6264,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6277,7 +6277,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6290,7 +6290,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6303,7 +6303,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6316,7 +6316,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6329,7 +6329,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6342,7 +6342,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6355,7 +6355,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6398,7 +6398,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6411,7 +6411,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6424,7 +6424,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6437,7 +6437,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6450,7 +6450,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6463,7 +6463,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6476,7 +6476,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6489,7 +6489,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6502,7 +6502,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6515,7 +6515,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6528,7 +6528,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6541,7 +6541,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6556,7 +6556,7 @@
       ],
       "avgPrice": 4573000,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6585,7 +6585,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6598,7 +6598,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6611,7 +6611,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6624,7 +6624,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6637,7 +6637,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6650,7 +6650,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6663,7 +6663,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6676,7 +6676,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6689,7 +6689,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6702,7 +6702,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6715,7 +6715,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6728,7 +6728,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.15
+      "opportunityScore": 27.22
     },
     {
       "segment": "Sedan-D",
@@ -6741,7 +6741,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6754,7 +6754,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.15
+      "opportunityScore": 24.22
     },
     {
       "segment": "Sedan-D",
@@ -6767,7 +6767,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6780,7 +6780,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6793,7 +6793,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6806,7 +6806,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6819,7 +6819,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.15
+      "opportunityScore": 19.22
     },
     {
       "segment": "Sedan-D",
@@ -6832,7 +6832,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "Sedan-D",
@@ -6845,7 +6845,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.15
+      "opportunityScore": 16.22
     },
     {
       "segment": "SUV-Large",
@@ -6858,7 +6858,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.41
+      "opportunityScore": 30.46
     },
     {
       "segment": "SUV-Large",
@@ -6871,7 +6871,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.41
+      "opportunityScore": 33.46
     },
     {
       "segment": "SUV-Large",
@@ -6884,7 +6884,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.41
+      "opportunityScore": 33.46
     },
     {
       "segment": "SUV-Large",
@@ -6897,7 +6897,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.41
+      "opportunityScore": 33.46
     },
     {
       "segment": "SUV-Large",
@@ -6910,7 +6910,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.41
+      "opportunityScore": 33.46
     },
     {
       "segment": "SUV-Large",
@@ -6954,7 +6954,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.41
+      "opportunityScore": 22.46
     },
     {
       "segment": "SUV-Large",
@@ -6967,7 +6967,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.41
+      "opportunityScore": 25.46
     },
     {
       "segment": "SUV-Large",
@@ -6980,7 +6980,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.41
+      "opportunityScore": 25.46
     },
     {
       "segment": "SUV-Large",
@@ -6993,7 +6993,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.41
+      "opportunityScore": 25.46
     },
     {
       "segment": "SUV-Large",
@@ -7006,7 +7006,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.41
+      "opportunityScore": 25.46
     },
     {
       "segment": "SUV-Large",
@@ -7019,7 +7019,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.41
+      "opportunityScore": 22.46
     },
     {
       "segment": "SUV-Large",
@@ -7032,7 +7032,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.41
+      "opportunityScore": 22.46
     },
     {
       "segment": "SUV-Large",
@@ -7045,7 +7045,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.41
+      "opportunityScore": 25.46
     },
     {
       "segment": "SUV-Large",
@@ -7058,7 +7058,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.41
+      "opportunityScore": 28.46
     },
     {
       "segment": "SUV-Large",
@@ -7071,7 +7071,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.41
+      "opportunityScore": 28.46
     },
     {
       "segment": "SUV-Large",
@@ -7084,7 +7084,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.41
+      "opportunityScore": 28.46
     },
     {
       "segment": "SUV-Large",
@@ -7097,7 +7097,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.41
+      "opportunityScore": 28.46
     },
     {
       "segment": "SUV-Large",
@@ -7110,7 +7110,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.41
+      "opportunityScore": 25.46
     },
     {
       "segment": "SUV-Large",
@@ -7139,7 +7139,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.41
+      "opportunityScore": 17.46
     },
     {
       "segment": "SUV-Large",
@@ -7152,7 +7152,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.41
+      "opportunityScore": 20.46
     },
     {
       "segment": "SUV-Large",
@@ -7165,7 +7165,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.41
+      "opportunityScore": 20.46
     },
     {
       "segment": "SUV-Large",
@@ -7178,7 +7178,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.41
+      "opportunityScore": 20.46
     },
     {
       "segment": "SUV-Large",
@@ -7191,7 +7191,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.41
+      "opportunityScore": 20.46
     },
     {
       "segment": "SUV-Large",
@@ -7204,7 +7204,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.41
+      "opportunityScore": 17.46
     },
     {
       "segment": "SUV-Large",
@@ -7217,7 +7217,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.41
+      "opportunityScore": 17.46
     },
     {
       "segment": "SUV-Large",
@@ -7230,7 +7230,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.91
+      "opportunityScore": 27.96
     },
     {
       "segment": "SUV-Large",
@@ -7243,7 +7243,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.91
+      "opportunityScore": 30.96
     },
     {
       "segment": "SUV-Large",
@@ -7256,7 +7256,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.91
+      "opportunityScore": 30.96
     },
     {
       "segment": "SUV-Large",
@@ -7269,7 +7269,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.91
+      "opportunityScore": 30.96
     },
     {
       "segment": "SUV-Large",
@@ -7282,7 +7282,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.91
+      "opportunityScore": 30.96
     },
     {
       "segment": "SUV-Large",
@@ -7295,7 +7295,7 @@
       "brands": [
         "Peugeot"
       ],
-      "avgPrice": 3320500,
+      "avgPrice": 3391500,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -7326,7 +7326,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.91
+      "opportunityScore": 19.96
     },
     {
       "segment": "SUV-Large",
@@ -7339,7 +7339,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7352,7 +7352,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7365,7 +7365,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7378,7 +7378,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7391,7 +7391,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.91
+      "opportunityScore": 19.96
     },
     {
       "segment": "SUV-Large",
@@ -7404,7 +7404,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.91
+      "opportunityScore": 19.96
     },
     {
       "segment": "SUV-Large",
@@ -7417,7 +7417,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7430,7 +7430,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7443,7 +7443,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7456,7 +7456,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7469,7 +7469,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7482,7 +7482,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7495,7 +7495,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7508,7 +7508,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -7521,7 +7521,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7534,7 +7534,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7547,7 +7547,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7560,7 +7560,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7573,7 +7573,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -7586,7 +7586,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -7599,7 +7599,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7612,7 +7612,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7625,7 +7625,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7638,7 +7638,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7651,7 +7651,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7664,7 +7664,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7692,7 +7692,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -7705,7 +7705,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7718,7 +7718,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7731,7 +7731,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7744,7 +7744,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7757,7 +7757,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -7770,7 +7770,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -7783,7 +7783,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7796,7 +7796,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7809,7 +7809,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7822,7 +7822,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7835,7 +7835,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7880,7 +7880,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -7893,7 +7893,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7906,7 +7906,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7919,7 +7919,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7932,7 +7932,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -7945,7 +7945,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -7958,7 +7958,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -7971,7 +7971,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -7984,7 +7984,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -7997,7 +7997,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -8010,7 +8010,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -8023,7 +8023,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.91
+      "opportunityScore": 25.96
     },
     {
       "segment": "SUV-Large",
@@ -8036,7 +8036,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -8049,7 +8049,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.91
+      "opportunityScore": 22.96
     },
     {
       "segment": "SUV-Large",
@@ -8062,7 +8062,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -8075,7 +8075,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -8088,7 +8088,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -8101,7 +8101,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -8114,7 +8114,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.91
+      "opportunityScore": 17.96
     },
     {
       "segment": "SUV-Large",
@@ -8127,7 +8127,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "SUV-Large",
@@ -8140,7 +8140,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.91
+      "opportunityScore": 14.96
     },
     {
       "segment": "Sedan-C",
@@ -8153,7 +8153,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.19
+      "opportunityScore": 32.28
     },
     {
       "segment": "Sedan-C",
@@ -8166,7 +8166,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 35.19
+      "opportunityScore": 35.28
     },
     {
       "segment": "Sedan-C",
@@ -8179,7 +8179,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 35.19
+      "opportunityScore": 35.28
     },
     {
       "segment": "Sedan-C",
@@ -8257,7 +8257,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.19
+      "opportunityScore": 24.28
     },
     {
       "segment": "Sedan-C",
@@ -8270,7 +8270,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.19
+      "opportunityScore": 27.28
     },
     {
       "segment": "Sedan-C",
@@ -8283,7 +8283,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.19
+      "opportunityScore": 27.28
     },
     {
       "segment": "Sedan-C",
@@ -8312,7 +8312,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.19
+      "opportunityScore": 27.28
     },
     {
       "segment": "Sedan-C",
@@ -8325,7 +8325,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.19
+      "opportunityScore": 24.28
     },
     {
       "segment": "Sedan-C",
@@ -8338,7 +8338,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.19
+      "opportunityScore": 24.28
     },
     {
       "segment": "Sedan-C",
@@ -8351,7 +8351,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.19
+      "opportunityScore": 27.28
     },
     {
       "segment": "Sedan-C",
@@ -8364,7 +8364,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.19
+      "opportunityScore": 30.28
     },
     {
       "segment": "Sedan-C",
@@ -8377,7 +8377,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.19
+      "opportunityScore": 30.28
     },
     {
       "segment": "Sedan-C",
@@ -8407,7 +8407,7 @@
       ],
       "avgPrice": 2675000,
       "hasGap": true,
-      "opportunityScore": 30.19
+      "opportunityScore": 30.28
     },
     {
       "segment": "Sedan-C",
@@ -8420,7 +8420,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.19
+      "opportunityScore": 27.28
     },
     {
       "segment": "Sedan-C",
@@ -8435,7 +8435,7 @@
       ],
       "avgPrice": 22017000,
       "hasGap": true,
-      "opportunityScore": 27.19
+      "opportunityScore": 27.28
     },
     {
       "segment": "Sedan-C",
@@ -8448,7 +8448,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.19
+      "opportunityScore": 19.28
     },
     {
       "segment": "Sedan-C",
@@ -8461,7 +8461,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.19
+      "opportunityScore": 22.28
     },
     {
       "segment": "Sedan-C",
@@ -8476,7 +8476,7 @@
       ],
       "avgPrice": 1479900,
       "hasGap": true,
-      "opportunityScore": 22.19
+      "opportunityScore": 22.28
     },
     {
       "segment": "Sedan-C",
@@ -8491,7 +8491,7 @@
       ],
       "avgPrice": 1539900,
       "hasGap": true,
-      "opportunityScore": 22.19
+      "opportunityScore": 22.28
     },
     {
       "segment": "Sedan-C",
@@ -8504,7 +8504,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.19
+      "opportunityScore": 22.28
     },
     {
       "segment": "Sedan-C",
@@ -8517,7 +8517,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.19
+      "opportunityScore": 19.28
     },
     {
       "segment": "Sedan-C",
@@ -8530,7 +8530,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.19
+      "opportunityScore": 19.28
     },
     {
       "segment": "Sedan-C",
@@ -8543,7 +8543,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.69
+      "opportunityScore": 29.78
     },
     {
       "segment": "Sedan-C",
@@ -8556,7 +8556,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.69
+      "opportunityScore": 32.78
     },
     {
       "segment": "Sedan-C",
@@ -8569,7 +8569,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.69
+      "opportunityScore": 32.78
     },
     {
       "segment": "Sedan-C",
@@ -8582,7 +8582,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 32.69
+      "opportunityScore": 32.78
     },
     {
       "segment": "Sedan-C",
@@ -8610,7 +8610,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.69
+      "opportunityScore": 29.78
     },
     {
       "segment": "Sedan-C",
@@ -8623,7 +8623,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.69
+      "opportunityScore": 29.78
     },
     {
       "segment": "Sedan-C",
@@ -8636,7 +8636,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.69
+      "opportunityScore": 21.78
     },
     {
       "segment": "Sedan-C",
@@ -8649,7 +8649,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -8662,7 +8662,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -8675,7 +8675,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -8690,7 +8690,7 @@
       ],
       "avgPrice": 2748000,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -8703,7 +8703,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.69
+      "opportunityScore": 21.78
     },
     {
       "segment": "Sedan-C",
@@ -8716,7 +8716,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.69
+      "opportunityScore": 21.78
     },
     {
       "segment": "Sedan-C",
@@ -8729,7 +8729,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -8742,7 +8742,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -8755,7 +8755,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -8768,7 +8768,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -8781,7 +8781,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -8794,7 +8794,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -8807,7 +8807,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -8820,7 +8820,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -8833,7 +8833,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -8846,7 +8846,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -8859,7 +8859,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -8872,7 +8872,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -8885,7 +8885,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -8898,7 +8898,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -8911,7 +8911,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -8924,7 +8924,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -8937,7 +8937,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -8950,7 +8950,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -8963,7 +8963,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -8976,7 +8976,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -8989,7 +8989,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -9002,7 +9002,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -9015,7 +9015,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9028,7 +9028,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9041,7 +9041,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9054,7 +9054,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9067,7 +9067,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -9080,7 +9080,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -9093,7 +9093,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -9106,7 +9106,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -9119,7 +9119,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -9132,7 +9132,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -9145,7 +9145,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -9189,7 +9189,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -9202,7 +9202,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9215,7 +9215,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9228,7 +9228,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9241,7 +9241,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9254,7 +9254,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -9267,7 +9267,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -9280,7 +9280,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -9293,7 +9293,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -9306,7 +9306,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -9319,7 +9319,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -9332,7 +9332,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.69
+      "opportunityScore": 27.78
     },
     {
       "segment": "Sedan-C",
@@ -9345,7 +9345,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -9358,7 +9358,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.69
+      "opportunityScore": 24.78
     },
     {
       "segment": "Sedan-C",
@@ -9371,7 +9371,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -9384,7 +9384,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9397,7 +9397,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9410,7 +9410,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9423,7 +9423,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.69
+      "opportunityScore": 19.78
     },
     {
       "segment": "Sedan-C",
@@ -9436,7 +9436,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Sedan-C",
@@ -9449,7 +9449,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.69
+      "opportunityScore": 16.78
     },
     {
       "segment": "Pickup",
@@ -9462,7 +9462,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.62
+      "opportunityScore": 27.63
     },
     {
       "segment": "Pickup",
@@ -9475,7 +9475,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.62
+      "opportunityScore": 30.63
     },
     {
       "segment": "Pickup",
@@ -9488,7 +9488,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.62
+      "opportunityScore": 30.63
     },
     {
       "segment": "Pickup",
@@ -9501,7 +9501,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.62
+      "opportunityScore": 30.63
     },
     {
       "segment": "Pickup",
@@ -9514,7 +9514,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 30.62
+      "opportunityScore": 30.63
     },
     {
       "segment": "Pickup",
@@ -9527,7 +9527,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.62
+      "opportunityScore": 27.63
     },
     {
       "segment": "Pickup",
@@ -9540,7 +9540,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 27.62
+      "opportunityScore": 27.63
     },
     {
       "segment": "Pickup",
@@ -9553,7 +9553,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.62
+      "opportunityScore": 19.63
     },
     {
       "segment": "Pickup",
@@ -9566,7 +9566,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.62
+      "opportunityScore": 22.63
     },
     {
       "segment": "Pickup",
@@ -9579,7 +9579,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.62
+      "opportunityScore": 22.63
     },
     {
       "segment": "Pickup",
@@ -9592,7 +9592,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.62
+      "opportunityScore": 22.63
     },
     {
       "segment": "Pickup",
@@ -9605,7 +9605,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.62
+      "opportunityScore": 22.63
     },
     {
       "segment": "Pickup",
@@ -9618,7 +9618,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.62
+      "opportunityScore": 19.63
     },
     {
       "segment": "Pickup",
@@ -9631,7 +9631,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 19.62
+      "opportunityScore": 19.63
     },
     {
       "segment": "Pickup",
@@ -9644,7 +9644,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.62
+      "opportunityScore": 22.63
     },
     {
       "segment": "Pickup",
@@ -9657,7 +9657,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.62
+      "opportunityScore": 25.63
     },
     {
       "segment": "Pickup",
@@ -9670,7 +9670,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.62
+      "opportunityScore": 25.63
     },
     {
       "segment": "Pickup",
@@ -9683,7 +9683,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.62
+      "opportunityScore": 25.63
     },
     {
       "segment": "Pickup",
@@ -9696,7 +9696,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.62
+      "opportunityScore": 25.63
     },
     {
       "segment": "Pickup",
@@ -9709,7 +9709,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.62
+      "opportunityScore": 22.63
     },
     {
       "segment": "Pickup",
@@ -9722,7 +9722,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 22.62
+      "opportunityScore": 22.63
     },
     {
       "segment": "Pickup",
@@ -9735,7 +9735,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.62
+      "opportunityScore": 14.63
     },
     {
       "segment": "Pickup",
@@ -9748,7 +9748,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.62
+      "opportunityScore": 17.63
     },
     {
       "segment": "Pickup",
@@ -9761,7 +9761,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.62
+      "opportunityScore": 17.63
     },
     {
       "segment": "Pickup",
@@ -9774,7 +9774,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.62
+      "opportunityScore": 17.63
     },
     {
       "segment": "Pickup",
@@ -9787,7 +9787,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.62
+      "opportunityScore": 17.63
     },
     {
       "segment": "Pickup",
@@ -9800,7 +9800,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.62
+      "opportunityScore": 14.63
     },
     {
       "segment": "Pickup",
@@ -9813,7 +9813,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 14.62
+      "opportunityScore": 14.63
     },
     {
       "segment": "Pickup",
@@ -9826,7 +9826,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.12
+      "opportunityScore": 25.13
     },
     {
       "segment": "Pickup",
@@ -9839,7 +9839,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.12
+      "opportunityScore": 28.13
     },
     {
       "segment": "Pickup",
@@ -9852,7 +9852,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.12
+      "opportunityScore": 28.13
     },
     {
       "segment": "Pickup",
@@ -9865,7 +9865,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.12
+      "opportunityScore": 28.13
     },
     {
       "segment": "Pickup",
@@ -9878,7 +9878,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.12
+      "opportunityScore": 28.13
     },
     {
       "segment": "Pickup",
@@ -9891,7 +9891,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.12
+      "opportunityScore": 25.13
     },
     {
       "segment": "Pickup",
@@ -9904,7 +9904,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 25.12
+      "opportunityScore": 25.13
     },
     {
       "segment": "Pickup",
@@ -9917,7 +9917,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.12
+      "opportunityScore": 17.13
     },
     {
       "segment": "Pickup",
@@ -9930,7 +9930,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -9943,7 +9943,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -9956,7 +9956,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -9969,7 +9969,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -9982,7 +9982,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.12
+      "opportunityScore": 17.13
     },
     {
       "segment": "Pickup",
@@ -9995,7 +9995,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 17.12
+      "opportunityScore": 17.13
     },
     {
       "segment": "Pickup",
@@ -10008,7 +10008,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10021,7 +10021,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10034,7 +10034,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10047,7 +10047,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10060,7 +10060,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10073,7 +10073,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10086,7 +10086,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10099,7 +10099,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10112,7 +10112,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10125,7 +10125,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10138,7 +10138,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10151,7 +10151,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10164,7 +10164,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10177,7 +10177,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10190,7 +10190,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10203,7 +10203,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10216,7 +10216,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10229,7 +10229,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10242,7 +10242,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10255,7 +10255,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10268,7 +10268,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10281,7 +10281,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10294,7 +10294,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10307,7 +10307,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10320,7 +10320,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10333,7 +10333,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10346,7 +10346,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10359,7 +10359,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10372,7 +10372,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10385,7 +10385,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10398,7 +10398,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10411,7 +10411,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10424,7 +10424,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10437,7 +10437,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10450,7 +10450,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10463,7 +10463,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10476,7 +10476,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10489,7 +10489,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10502,7 +10502,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10515,7 +10515,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10528,7 +10528,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10541,7 +10541,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10554,7 +10554,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10567,7 +10567,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10580,7 +10580,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10593,7 +10593,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10606,7 +10606,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.12
+      "opportunityScore": 23.13
     },
     {
       "segment": "Pickup",
@@ -10619,7 +10619,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10632,7 +10632,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.12
+      "opportunityScore": 20.13
     },
     {
       "segment": "Pickup",
@@ -10645,7 +10645,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10658,7 +10658,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10671,7 +10671,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10684,7 +10684,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10697,7 +10697,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.12
+      "opportunityScore": 15.13
     },
     {
       "segment": "Pickup",
@@ -10710,7 +10710,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "Pickup",
@@ -10723,7 +10723,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 12.12
+      "opportunityScore": 12.13
     },
     {
       "segment": "MPV",
@@ -10736,7 +10736,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.55
+      "opportunityScore": 28.42
     },
     {
       "segment": "MPV",
@@ -10749,7 +10749,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.55
+      "opportunityScore": 31.42
     },
     {
       "segment": "MPV",
@@ -10762,7 +10762,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.55
+      "opportunityScore": 31.42
     },
     {
       "segment": "MPV",
@@ -10775,7 +10775,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 31.55
+      "opportunityScore": 31.42
     },
     {
       "segment": "MPV",
@@ -10790,7 +10790,7 @@
       ],
       "avgPrice": 2590000,
       "hasGap": true,
-      "opportunityScore": 31.55
+      "opportunityScore": 31.42
     },
     {
       "segment": "MPV",
@@ -10803,7 +10803,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.55
+      "opportunityScore": 28.42
     },
     {
       "segment": "MPV",
@@ -10816,7 +10816,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 28.55
+      "opportunityScore": 28.42
     },
     {
       "segment": "MPV",
@@ -10829,7 +10829,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.55
+      "opportunityScore": 20.42
     },
     {
       "segment": "MPV",
@@ -10842,7 +10842,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.55
+      "opportunityScore": 23.42
     },
     {
       "segment": "MPV",
@@ -10855,7 +10855,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.55
+      "opportunityScore": 23.42
     },
     {
       "segment": "MPV",
@@ -10868,7 +10868,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.55
+      "opportunityScore": 23.42
     },
     {
       "segment": "MPV",
@@ -10881,7 +10881,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.55
+      "opportunityScore": 23.42
     },
     {
       "segment": "MPV",
@@ -10894,7 +10894,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.55
+      "opportunityScore": 20.42
     },
     {
       "segment": "MPV",
@@ -10907,7 +10907,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 20.55
+      "opportunityScore": 20.42
     },
     {
       "segment": "MPV",
@@ -10920,7 +10920,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 23.55
+      "opportunityScore": 23.42
     },
     {
       "segment": "MPV",
@@ -10933,7 +10933,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.55
+      "opportunityScore": 26.42
     },
     {
       "segment": "MPV",
@@ -10947,7 +10947,7 @@
         "Peugeot",
         "Citroën"
       ],
-      "avgPrice": 1430500,
+      "avgPrice": 1450000,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -10963,7 +10963,7 @@
         "Peugeot",
         "Citroën"
       ],
-      "avgPrice": 1777500,
+      "avgPrice": 1801000,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -10974,96 +10974,96 @@
       "priceRange": "2M-3M",
       "priceRangeMin": 2000000,
       "priceRangeMax": 3000000,
+      "vehicleCount": 3,
+      "brands": [
+        "Peugeot",
+        "Citroën"
+      ],
+      "avgPrice": 2354000,
+      "hasGap": false,
+      "opportunityScore": 0
+    },
+    {
+      "segment": "MPV",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "priceRange": "3M-5M",
+      "priceRangeMin": 3000000,
+      "priceRangeMax": 5000000,
+      "vehicleCount": 0,
+      "brands": [],
+      "avgPrice": 0,
+      "hasGap": true,
+      "opportunityScore": 23.42
+    },
+    {
+      "segment": "MPV",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "priceRange": "5M+",
+      "priceRangeMin": 5000000,
+      "priceRangeMax": 100000000,
+      "vehicleCount": 0,
+      "brands": [],
+      "avgPrice": 0,
+      "hasGap": true,
+      "opportunityScore": 23.42
+    },
+    {
+      "segment": "MPV",
+      "fuel": "Dizel",
+      "transmission": "Manuel",
+      "priceRange": "0-500K",
+      "priceRangeMin": 0,
+      "priceRangeMax": 500000,
+      "vehicleCount": 0,
+      "brands": [],
+      "avgPrice": 0,
+      "hasGap": true,
+      "opportunityScore": 15.42
+    },
+    {
+      "segment": "MPV",
+      "fuel": "Dizel",
+      "transmission": "Manuel",
+      "priceRange": "500K-1M",
+      "priceRangeMin": 500000,
+      "priceRangeMax": 1000000,
+      "vehicleCount": 0,
+      "brands": [],
+      "avgPrice": 0,
+      "hasGap": true,
+      "opportunityScore": 18.42
+    },
+    {
+      "segment": "MPV",
+      "fuel": "Dizel",
+      "transmission": "Manuel",
+      "priceRange": "1M-1.5M",
+      "priceRangeMin": 1000000,
+      "priceRangeMax": 1500000,
+      "vehicleCount": 3,
+      "brands": [
+        "Peugeot",
+        "Citroën"
+      ],
+      "avgPrice": 1411000,
+      "hasGap": false,
+      "opportunityScore": 0
+    },
+    {
+      "segment": "MPV",
+      "fuel": "Dizel",
+      "transmission": "Manuel",
+      "priceRange": "1.5M-2M",
+      "priceRangeMin": 1500000,
+      "priceRangeMax": 2000000,
       "vehicleCount": 4,
       "brands": [
         "Peugeot",
         "Citroën"
       ],
-      "avgPrice": 2358000,
-      "hasGap": false,
-      "opportunityScore": 0
-    },
-    {
-      "segment": "MPV",
-      "fuel": "Dizel",
-      "transmission": "Otomatik",
-      "priceRange": "3M-5M",
-      "priceRangeMin": 3000000,
-      "priceRangeMax": 5000000,
-      "vehicleCount": 0,
-      "brands": [],
-      "avgPrice": 0,
-      "hasGap": true,
-      "opportunityScore": 23.55
-    },
-    {
-      "segment": "MPV",
-      "fuel": "Dizel",
-      "transmission": "Otomatik",
-      "priceRange": "5M+",
-      "priceRangeMin": 5000000,
-      "priceRangeMax": 100000000,
-      "vehicleCount": 0,
-      "brands": [],
-      "avgPrice": 0,
-      "hasGap": true,
-      "opportunityScore": 23.55
-    },
-    {
-      "segment": "MPV",
-      "fuel": "Dizel",
-      "transmission": "Manuel",
-      "priceRange": "0-500K",
-      "priceRangeMin": 0,
-      "priceRangeMax": 500000,
-      "vehicleCount": 0,
-      "brands": [],
-      "avgPrice": 0,
-      "hasGap": true,
-      "opportunityScore": 15.55
-    },
-    {
-      "segment": "MPV",
-      "fuel": "Dizel",
-      "transmission": "Manuel",
-      "priceRange": "500K-1M",
-      "priceRangeMin": 500000,
-      "priceRangeMax": 1000000,
-      "vehicleCount": 0,
-      "brands": [],
-      "avgPrice": 0,
-      "hasGap": true,
-      "opportunityScore": 18.55
-    },
-    {
-      "segment": "MPV",
-      "fuel": "Dizel",
-      "transmission": "Manuel",
-      "priceRange": "1M-1.5M",
-      "priceRangeMin": 1000000,
-      "priceRangeMax": 1500000,
-      "vehicleCount": 4,
-      "brands": [
-        "Peugeot",
-        "Citroën"
-      ],
-      "avgPrice": 1363500,
-      "hasGap": false,
-      "opportunityScore": 0
-    },
-    {
-      "segment": "MPV",
-      "fuel": "Dizel",
-      "transmission": "Manuel",
-      "priceRange": "1.5M-2M",
-      "priceRangeMin": 1500000,
-      "priceRangeMax": 2000000,
-      "vehicleCount": 4,
-      "brands": [
-        "Peugeot",
-        "Citroën"
-      ],
-      "avgPrice": 1617500,
+      "avgPrice": 1634375,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -11078,7 +11078,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.55
+      "opportunityScore": 18.42
     },
     {
       "segment": "MPV",
@@ -11091,7 +11091,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.55
+      "opportunityScore": 15.42
     },
     {
       "segment": "MPV",
@@ -11104,7 +11104,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 15.55
+      "opportunityScore": 15.42
     },
     {
       "segment": "MPV",
@@ -11117,7 +11117,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.05
+      "opportunityScore": 25.92
     },
     {
       "segment": "MPV",
@@ -11130,7 +11130,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.05
+      "opportunityScore": 28.92
     },
     {
       "segment": "MPV",
@@ -11143,7 +11143,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.05
+      "opportunityScore": 28.92
     },
     {
       "segment": "MPV",
@@ -11156,7 +11156,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.05
+      "opportunityScore": 28.92
     },
     {
       "segment": "MPV",
@@ -11169,7 +11169,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 29.05
+      "opportunityScore": 28.92
     },
     {
       "segment": "MPV",
@@ -11182,7 +11182,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.05
+      "opportunityScore": 25.92
     },
     {
       "segment": "MPV",
@@ -11195,7 +11195,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 26.05
+      "opportunityScore": 25.92
     },
     {
       "segment": "MPV",
@@ -11208,7 +11208,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.05
+      "opportunityScore": 17.92
     },
     {
       "segment": "MPV",
@@ -11221,7 +11221,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11234,7 +11234,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11247,7 +11247,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11260,7 +11260,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11273,7 +11273,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.05
+      "opportunityScore": 17.92
     },
     {
       "segment": "MPV",
@@ -11286,7 +11286,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 18.05
+      "opportunityScore": 17.92
     },
     {
       "segment": "MPV",
@@ -11299,7 +11299,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11312,7 +11312,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11325,7 +11325,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11338,7 +11338,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11351,7 +11351,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11364,7 +11364,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11377,7 +11377,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11390,7 +11390,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11403,7 +11403,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11416,7 +11416,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11429,7 +11429,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11442,7 +11442,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11455,7 +11455,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11468,7 +11468,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11481,7 +11481,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11494,7 +11494,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11507,7 +11507,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11520,7 +11520,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11533,7 +11533,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11546,7 +11546,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11559,7 +11559,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11572,7 +11572,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11585,7 +11585,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11598,7 +11598,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11611,7 +11611,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11624,7 +11624,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11637,7 +11637,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11650,7 +11650,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11663,7 +11663,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11676,7 +11676,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11689,7 +11689,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11702,7 +11702,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11715,7 +11715,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11728,7 +11728,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11741,7 +11741,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11754,7 +11754,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11767,7 +11767,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11780,7 +11780,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11793,7 +11793,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11806,7 +11806,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11819,7 +11819,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11832,7 +11832,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11845,7 +11845,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11858,7 +11858,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11871,7 +11871,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11884,7 +11884,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11897,7 +11897,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 24.05
+      "opportunityScore": 23.92
     },
     {
       "segment": "MPV",
@@ -11910,7 +11910,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11923,7 +11923,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 21.05
+      "opportunityScore": 20.92
     },
     {
       "segment": "MPV",
@@ -11936,7 +11936,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -11949,7 +11949,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11962,7 +11962,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11975,7 +11975,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -11988,7 +11988,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 16.05
+      "opportunityScore": 15.92
     },
     {
       "segment": "MPV",
@@ -12001,7 +12001,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "MPV",
@@ -12014,7 +12014,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 13.05
+      "opportunityScore": 12.92
     },
     {
       "segment": "Coupe",
@@ -14585,7 +14585,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 38.99
+      "opportunityScore": 38.9
     },
     {
       "segment": "SUV-Compact",
@@ -14598,7 +14598,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 36.49
+      "opportunityScore": 36.4
     },
     {
       "segment": "SUV-Compact",
@@ -14611,7 +14611,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 36.49
+      "opportunityScore": 36.4
     },
     {
       "segment": "SUV-Compact",
@@ -14624,7 +14624,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 35.99
+      "opportunityScore": 35.9
     },
     {
       "segment": "Sedan-C",
@@ -14637,7 +14637,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 35.19
+      "opportunityScore": 35.28
     },
     {
       "segment": "Sedan-C",
@@ -14650,7 +14650,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 35.19
+      "opportunityScore": 35.28
     },
     {
       "segment": "Hatchback-C",
@@ -14679,58 +14679,6 @@
       "opportunityScore": 34.88
     },
     {
-      "segment": "Hatchback-C",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "priceRange": "1.5M-2M",
-      "priceRangeMin": 1500000,
-      "priceRangeMax": 2000000,
-      "vehicleCount": 0,
-      "brands": [],
-      "avgPrice": 0,
-      "hasGap": true,
-      "opportunityScore": 34.88
-    },
-    {
-      "segment": "SUV-Medium",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "priceRange": "500K-1M",
-      "priceRangeMin": 500000,
-      "priceRangeMax": 1000000,
-      "vehicleCount": 0,
-      "brands": [],
-      "avgPrice": 0,
-      "hasGap": true,
-      "opportunityScore": 34.65
-    },
-    {
-      "segment": "SUV-Medium",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "priceRange": "1M-1.5M",
-      "priceRangeMin": 1000000,
-      "priceRangeMax": 1500000,
-      "vehicleCount": 0,
-      "brands": [],
-      "avgPrice": 0,
-      "hasGap": true,
-      "opportunityScore": 34.65
-    },
-    {
-      "segment": "SUV-Medium",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "priceRange": "1.5M-2M",
-      "priceRangeMin": 1500000,
-      "priceRangeMax": 2000000,
-      "vehicleCount": 0,
-      "brands": [],
-      "avgPrice": 0,
-      "hasGap": true,
-      "opportunityScore": 34.65
-    },
-    {
       "segment": "Sedan-D",
       "fuel": "Benzin",
       "transmission": "Otomatik",
@@ -14741,7 +14689,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.72
     },
     {
       "segment": "Sedan-D",
@@ -14754,7 +14702,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.72
     },
     {
       "segment": "Sedan-D",
@@ -14767,7 +14715,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.72
     },
     {
       "segment": "Sedan-D",
@@ -14780,7 +14728,46 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 34.65
+      "opportunityScore": 34.72
+    },
+    {
+      "segment": "SUV-Medium",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "priceRange": "500K-1M",
+      "priceRangeMin": 500000,
+      "priceRangeMax": 1000000,
+      "vehicleCount": 0,
+      "brands": [],
+      "avgPrice": 0,
+      "hasGap": true,
+      "opportunityScore": 34.57
+    },
+    {
+      "segment": "SUV-Medium",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "priceRange": "1M-1.5M",
+      "priceRangeMin": 1000000,
+      "priceRangeMax": 1500000,
+      "vehicleCount": 0,
+      "brands": [],
+      "avgPrice": 0,
+      "hasGap": true,
+      "opportunityScore": 34.57
+    },
+    {
+      "segment": "SUV-Medium",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "priceRange": "1.5M-2M",
+      "priceRangeMin": 1500000,
+      "priceRangeMax": 2000000,
+      "vehicleCount": 0,
+      "brands": [],
+      "avgPrice": 0,
+      "hasGap": true,
+      "opportunityScore": 34.57
     },
     {
       "segment": "SUV-Compact",
@@ -14793,7 +14780,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.99
+      "opportunityScore": 33.9
     },
     {
       "segment": "SUV-Compact",
@@ -14806,7 +14793,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.99
+      "opportunityScore": 33.9
     },
     {
       "segment": "SUV-Compact",
@@ -14819,7 +14806,7 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.99
+      "opportunityScore": 33.9
     },
     {
       "segment": "SUV-Compact",
@@ -14832,7 +14819,20 @@
       "brands": [],
       "avgPrice": 0,
       "hasGap": true,
-      "opportunityScore": 33.99
+      "opportunityScore": 33.9
+    },
+    {
+      "segment": "SUV-Large",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "priceRange": "500K-1M",
+      "priceRangeMin": 500000,
+      "priceRangeMax": 1000000,
+      "vehicleCount": 0,
+      "brands": [],
+      "avgPrice": 0,
+      "hasGap": true,
+      "opportunityScore": 33.46
     }
   ],
   "priceRanges": [

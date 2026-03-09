@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-05T01:33:27.856Z",
-  "totalEntries": 516,
+  "generatedAt": "2026-03-09T08:48:16.314Z",
+  "totalEntries": 508,
   "entries": [
     {
       "id": "volkswagen-polo-life-1.0-tsi-95-ps",
@@ -664,6 +664,19 @@
       "price": 1759900,
       "priceFormatted": "₺1.759.900",
       "searchText": "skoda skoda fabia premium 1 0 tsi 115 ps dsg premium 1 0 tsi 115 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-scala-elite-1,0-tsi-115-ps-dsg-elite-1,0-tsi-115-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Scala",
+      "trim": "Elite 1,0 TSI 115 PS DSG",
+      "engine": "Elite 1,0 TSI 115 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 1785900,
+      "priceFormatted": "₺1.785.900",
+      "searchText": "skoda skoda scala elite 1 0 tsi 115 ps dsg elite 1 0 tsi 115 ps benzin dsg"
     },
     {
       "id": "škoda-škoda-scala-monte-carlo-1.5-tsi-150-ps-dsg-monte-carlo-1.5-tsi-150-ps",
@@ -2221,8 +2234,8 @@
       "engine": "100 kW",
       "fuel": "Elektrik",
       "transmission": "",
-      "price": 1960000,
-      "priceFormatted": "1.960.000 TL",
+      "price": 1999500,
+      "priceFormatted": "1.999.500 TL",
       "searchText": "peugeot e 208 gt 100 kw elektrik"
     },
     {
@@ -2239,19 +2252,6 @@
       "searchText": "peugeot e 308 gt 115 kw elektrik"
     },
     {
-      "id": "peugeot-2008-allure-1.2-puretech-130-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "2008",
-      "trim": "Allure",
-      "engine": "1.2 PureTech 130 HP",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "price": 2181000,
-      "priceFormatted": "2.181.000 TL",
-      "searchText": "peugeot 2008 allure 1 2 puretech 130 hp benzin otomatik"
-    },
-    {
       "id": "peugeot-2008-allure-1.2-hybrid-145-hp",
       "brand": "Peugeot",
       "brandId": "peugeot",
@@ -2260,8 +2260,8 @@
       "engine": "1.2 Hybrid 145 HP",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2283000,
-      "priceFormatted": "2.283.000 TL",
+      "price": 2329000,
+      "priceFormatted": "2.329.000 TL",
       "searchText": "peugeot 2008 allure 1 2 hybrid 145 hp hybrid otomatik"
     },
     {
@@ -2273,22 +2273,9 @@
       "engine": "1.2 Hybrid 145 HP",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2370000,
-      "priceFormatted": "2.370.000 TL",
+      "price": 2566500,
+      "priceFormatted": "2.566.500 TL",
       "searchText": "peugeot 2008 gt 1 2 hybrid 145 hp hybrid otomatik"
-    },
-    {
-      "id": "peugeot-e-2008-allure-100-kw",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "E-2008",
-      "trim": "Allure",
-      "engine": "100 kW",
-      "fuel": "Elektrik",
-      "transmission": "",
-      "price": 2014000,
-      "priceFormatted": "2.014.000 TL",
-      "searchText": "peugeot e 2008 allure 100 kw elektrik"
     },
     {
       "id": "peugeot-e-2008-allure-115-kw",
@@ -2299,8 +2286,8 @@
       "engine": "115 kW",
       "fuel": "Elektrik",
       "transmission": "",
-      "price": 2074000,
-      "priceFormatted": "2.074.000 TL",
+      "price": 2201500,
+      "priceFormatted": "2.201.500 TL",
       "searchText": "peugeot e 2008 allure 115 kw elektrik"
     },
     {
@@ -2312,48 +2299,9 @@
       "engine": "115 kW",
       "fuel": "Elektrik",
       "transmission": "",
-      "price": 2214000,
-      "priceFormatted": "2.214.000 TL",
+      "price": 2308500,
+      "priceFormatted": "2.308.500 TL",
       "searchText": "peugeot e 2008 gt 115 kw elektrik"
-    },
-    {
-      "id": "peugeot-408-allure-1.2-puretech-130-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "408",
-      "trim": "Allure",
-      "engine": "1.2 PureTech 130 HP",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "price": 2175000,
-      "priceFormatted": "2.175.000 TL",
-      "searchText": "peugeot 408 allure 1 2 puretech 130 hp benzin otomatik"
-    },
-    {
-      "id": "peugeot-408-allure-1.2-puretech-130-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "408",
-      "trim": "Allure",
-      "engine": "1.2 PureTech 130 HP",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "price": 2255000,
-      "priceFormatted": "2.255.000 TL",
-      "searchText": "peugeot 408 allure 1 2 puretech 130 hp benzin otomatik"
-    },
-    {
-      "id": "peugeot-408-gt-1.2-puretech-130-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "408",
-      "trim": "Gt",
-      "engine": "1.2 PureTech 130 HP",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "price": 2670000,
-      "priceFormatted": "2.670.000 TL",
-      "searchText": "peugeot 408 gt 1 2 puretech 130 hp benzin otomatik"
     },
     {
       "id": "peugeot-408-allure-1.2-hybrid-145-hp",
@@ -2364,8 +2312,8 @@
       "engine": "1.2 Hybrid 145 HP",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2336000,
-      "priceFormatted": "2.336.000 TL",
+      "price": 2374500,
+      "priceFormatted": "2.374.500 TL",
       "searchText": "peugeot 408 allure 1 2 hybrid 145 hp hybrid otomatik"
     },
     {
@@ -2377,8 +2325,8 @@
       "engine": "1.2 Hybrid 145 HP",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2545000,
-      "priceFormatted": "2.545.000 TL",
+      "price": 2592000,
+      "priceFormatted": "2.592.000 TL",
       "searchText": "peugeot 408 allure 1 2 hybrid 145 hp hybrid otomatik"
     },
     {
@@ -2390,8 +2338,8 @@
       "engine": "1.2 Hybrid 145 HP",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2710000,
-      "priceFormatted": "2.710.000 TL",
+      "price": 2820500,
+      "priceFormatted": "2.820.500 TL",
       "searchText": "peugeot 408 gt 1 2 hybrid 145 hp hybrid otomatik"
     },
     {
@@ -2403,8 +2351,8 @@
       "engine": "1.2 Hybrid 145 HP",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2725000,
-      "priceFormatted": "2.725.000 TL",
+      "price": 2594500,
+      "priceFormatted": "2.594.500 TL",
       "searchText": "peugeot 3008 allure 1 2 hybrid 145 hp hybrid otomatik"
     },
     {
@@ -2416,8 +2364,8 @@
       "engine": "1.2 Hybrid 145 HP",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2950000,
-      "priceFormatted": "2.950.000 TL",
+      "price": 3259000,
+      "priceFormatted": "3.259.000 TL",
       "searchText": "peugeot 3008 gt 1 2 hybrid 145 hp hybrid otomatik"
     },
     {
@@ -2429,8 +2377,8 @@
       "engine": "157 kW",
       "fuel": "Elektrik",
       "transmission": "",
-      "price": 3199000,
-      "priceFormatted": "3.199.000 TL",
+      "price": 3318000,
+      "priceFormatted": "3.318.000 TL",
       "searchText": "peugeot e 3008 allure 157 kw elektrik"
     },
     {
@@ -2455,8 +2403,8 @@
       "engine": "1.2 Hybrid 145 HP",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 3218500,
-      "priceFormatted": "3.218.500 TL",
+      "price": 3290000,
+      "priceFormatted": "3.290.000 TL",
       "searchText": "peugeot 5008 allure 1 2 hybrid 145 hp hybrid otomatik"
     },
     {
@@ -2468,8 +2416,8 @@
       "engine": "1.2 Hybrid 145 HP",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 3422500,
-      "priceFormatted": "3.422.500 TL",
+      "price": 3493000,
+      "priceFormatted": "3.493.000 TL",
       "searchText": "peugeot 5008 gt 1 2 hybrid 145 hp hybrid otomatik"
     },
     {
@@ -2507,8 +2455,8 @@
       "engine": "1.5 BlueHDi 130 HP",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1536000,
-      "priceFormatted": "1.536.000 TL",
+      "price": 1573500,
+      "priceFormatted": "1.573.500 TL",
       "searchText": "peugeot rifter allure 1 5 bluehdi 130 hp dizel manuel"
     },
     {
@@ -2520,8 +2468,8 @@
       "engine": "1.5 BlueHDi 130 HP",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1831500,
-      "priceFormatted": "1.831.500 TL",
+      "price": 1877000,
+      "priceFormatted": "1.877.000 TL",
       "searchText": "peugeot rifter allure 1 5 bluehdi 130 hp dizel otomatik"
     },
     {
@@ -2533,22 +2481,9 @@
       "engine": "1.5 BlueHDi 130 HP",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 2026000,
-      "priceFormatted": "2.026.000 TL",
+      "price": 2077000,
+      "priceFormatted": "2.077.000 TL",
       "searchText": "peugeot rifter gt 1 5 bluehdi 130 hp dizel otomatik"
-    },
-    {
-      "id": "peugeot-partner-van-comfort-1.5-bluehdi-100-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "Partner Van",
-      "trim": "Comfort",
-      "engine": "1.5 BlueHDi 100 HP",
-      "fuel": "Dizel",
-      "transmission": "Manuel",
-      "price": 1273500,
-      "priceFormatted": "1.273.500 TL",
-      "searchText": "peugeot partner van comfort 1 5 bluehdi 100 hp dizel manuel"
     },
     {
       "id": "peugeot-partner-van-comfort-1.5-bluehdi-130-hp",
@@ -2559,8 +2494,8 @@
       "engine": "1.5 BlueHDi 130 HP",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1333500,
-      "priceFormatted": "1.333.500 TL",
+      "price": 1366000,
+      "priceFormatted": "1.366.000 TL",
       "searchText": "peugeot partner van comfort 1 5 bluehdi 130 hp dizel manuel"
     },
     {
@@ -2572,22 +2507,9 @@
       "engine": "1.5 BlueHDi 130 HP",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1407000,
-      "priceFormatted": "1.407.000 TL",
+      "price": 1441000,
+      "priceFormatted": "1.441.000 TL",
       "searchText": "peugeot partner van comfort 1 5 bluehdi 130 hp dizel otomatik"
-    },
-    {
-      "id": "peugeot-expert-traveller-allure-2.0-bluehdi-180-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "Expert Traveller",
-      "trim": "Allure",
-      "engine": "2.0 BlueHDi 180 HP",
-      "fuel": "Dizel",
-      "transmission": "Otomatik",
-      "price": 2360500,
-      "priceFormatted": "2.360.500 TL",
-      "searchText": "peugeot expert traveller allure 2 0 bluehdi 180 hp dizel otomatik"
     },
     {
       "id": "peugeot-expert-traveller-allure-2.2-bluehdi-180-hp",
@@ -2598,8 +2520,8 @@
       "engine": "2.2 BlueHDi 180 HP",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 2430500,
-      "priceFormatted": "2.430.500 TL",
+      "price": 2490000,
+      "priceFormatted": "2.490.000 TL",
       "searchText": "peugeot expert traveller allure 2 2 bluehdi 180 hp dizel otomatik"
     },
     {
@@ -2902,32 +2824,6 @@
       "searchText": "opel astra elektrik gs 115 kw elektrik"
     },
     {
-      "id": "opel-grandland-edition-hybrid-1.2-145-(136hp)³",
-      "brand": "Opel",
-      "brandId": "opel",
-      "model": "Grandland",
-      "trim": "Edition",
-      "engine": "Hybrid 1.2 145 (136HP)³",
-      "fuel": "Hybrid",
-      "transmission": "Otomatik",
-      "price": 3102000,
-      "priceFormatted": "3.102.000 TL",
-      "searchText": "opel grandland edition hybrid 1 2 145 136hp hybrid otomatik"
-    },
-    {
-      "id": "opel-grandland-gs-hybrid-1.2-145-(136hp)³",
-      "brand": "Opel",
-      "brandId": "opel",
-      "model": "Grandland",
-      "trim": "GS",
-      "engine": "Hybrid 1.2 145 (136HP)³",
-      "fuel": "Hybrid",
-      "transmission": "Otomatik",
-      "price": 3132000,
-      "priceFormatted": "3.132.000 TL",
-      "searchText": "opel grandland gs hybrid 1 2 145 136hp hybrid otomatik"
-    },
-    {
       "id": "opel-grandland-elektrik-edition-157-kw",
       "brand": "Opel",
       "brandId": "opel",
@@ -3001,8 +2897,8 @@
       "engine": "1.2 Hybrid 145* -  eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2068000,
-      "priceFormatted": "2.068.000 TL",
+      "price": 1968000,
+      "priceFormatted": "1.968.000 TL",
       "searchText": "citroen c3 aircross hybrid 145 max 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3014,22 +2910,9 @@
       "engine": "1.2 Hybrid 145* -  eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2171000,
-      "priceFormatted": "2.171.000 TL",
+      "price": 2071000,
+      "priceFormatted": "2.071.000 TL",
       "searchText": "citroen c3 aircross hybrid 145 max 7 koltuk 1 2 hybrid 145 edcs6 hybrid otomatik"
-    },
-    {
-      "id": "citroën-elektrikli-ë-c3-aircross-max-83-kw-elektrikli-motor-standart-menzil",
-      "brand": "Citroën",
-      "brandId": "citroen",
-      "model": "Elektrikli ë-C3 Aircross",
-      "trim": "Max",
-      "engine": "83 kW Elektrikli Motor Standart Menzil",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "price": 1665000,
-      "priceFormatted": "1.665.000 TL",
-      "searchText": "citroen elektrikli e c3 aircross max 83 kw elektrikli motor standart menzil elektrik otomatik"
     },
     {
       "id": "citroën-elektrikli-ë-c3-aircross-max-83-kw-elektrikli-motor-uzun-menzil",
@@ -3040,8 +2923,8 @@
       "engine": "83 kW Elektrikli Motor Uzun Menzil",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 1776000,
-      "priceFormatted": "1.776.000 TL",
+      "price": 1707000,
+      "priceFormatted": "1.707.000 TL",
       "searchText": "citroen elektrikli e c3 aircross max 83 kw elektrikli motor uzun menzil elektrik otomatik"
     },
     {
@@ -3053,8 +2936,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1962000,
-      "priceFormatted": "1.962.000 TL",
+      "price": 1862000,
+      "priceFormatted": "1.862.000 TL",
       "searchText": "citroen c4 you 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3066,8 +2949,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2057000,
-      "priceFormatted": "2.057.000 TL",
+      "price": 1957000,
+      "priceFormatted": "1.957.000 TL",
       "searchText": "citroen c4 max 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3079,8 +2962,8 @@
       "engine": "115 kW Elektrikli Motor",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 2202000,
-      "priceFormatted": "2.202.000 TL",
+      "price": 2052000,
+      "priceFormatted": "2.052.000 TL",
       "searchText": "citroen elektrikli e c4 max 115 kw elektrikli motor elektrik otomatik"
     },
     {
@@ -3092,8 +2975,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1962000,
-      "priceFormatted": "1.962.000 TL",
+      "price": 1862000,
+      "priceFormatted": "1.862.000 TL",
       "searchText": "citroen c4 x you 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3105,8 +2988,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2066000,
-      "priceFormatted": "2.066.000 TL",
+      "price": 1966000,
+      "priceFormatted": "1.966.000 TL",
       "searchText": "citroen c4 x max 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3118,8 +3001,8 @@
       "engine": "115 kW Elektrikli Motor",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 2167000,
-      "priceFormatted": "2.167.000 TL",
+      "price": 2017000,
+      "priceFormatted": "2.017.000 TL",
       "searchText": "citroen elektrikli e c4 x max 115 kw elektrikli motor elektrik otomatik"
     },
     {
@@ -3131,8 +3014,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2600000,
-      "priceFormatted": "2.600.000 TL",
+      "price": 2650000,
+      "priceFormatted": "2.650.000 TL",
       "searchText": "citroen yeni c5 aircross hybrid 145 plus 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3144,8 +3027,8 @@
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2800000,
-      "priceFormatted": "2.800.000 TL",
+      "price": 2850000,
+      "priceFormatted": "2.850.000 TL",
       "searchText": "citroen yeni c5 aircross hybrid 145 max 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -3157,8 +3040,8 @@
       "engine": "157 kW Elektrikli Motor",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 2380000,
-      "priceFormatted": "2.380.000 TL",
+      "price": 2430000,
+      "priceFormatted": "2.430.000 TL",
       "searchText": "citroen yeni e c5 aircross plus 157 kw elektrikli motor elektrik otomatik"
     },
     {
@@ -3170,8 +3053,8 @@
       "engine": "157 kW Elektrikli Motor",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 3150000,
-      "priceFormatted": "3.150.000 TL",
+      "price": 3200000,
+      "priceFormatted": "3.200.000 TL",
       "searchText": "citroen yeni e c5 aircross max 157 kw elektrikli motor elektrik otomatik"
     },
     {
@@ -3196,8 +3079,8 @@
       "engine": "1.5 BlueHDi 130 HP - EAT8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1820000,
-      "priceFormatted": "1.820.000 TL",
+      "price": 1847000,
+      "priceFormatted": "1.847.000 TL",
       "searchText": "citroen berlingo plus 1 5 bluehdi 130 hp eat8 dizel otomatik"
     },
     {
@@ -3222,8 +3105,8 @@
       "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1376000,
-      "priceFormatted": "1.376.000 TL",
+      "price": 1381000,
+      "priceFormatted": "1.381.000 TL",
       "searchText": "citroen berlingo van van 1 5 bluehdi 130 hp 6 ileri manuel dizel manuel"
     },
     {
@@ -3235,8 +3118,8 @@
       "engine": "1.5 BlueHDi 130 HP - EAT8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1454000,
-      "priceFormatted": "1.454.000 TL",
+      "price": 1459000,
+      "priceFormatted": "1.459.000 TL",
       "searchText": "citroen berlingo van van 1 5 bluehdi 130 hp eat8 dizel otomatik"
     },
     {
@@ -3248,8 +3131,8 @@
       "engine": "2.2 BlueHDi 180 HP - EAT8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 2615000,
-      "priceFormatted": "2.615.000 TL",
+      "price": 2495000,
+      "priceFormatted": "2.495.000 TL",
       "searchText": "citroen spacetourer spacetourer 8 1 2 2 bluehdi 180 hp eat8 dizel otomatik"
     },
     {
@@ -3261,9 +3144,22 @@
       "engine": "1.5 BlueHDi 120 HP - 6 İleri Manuel",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1471000,
-      "priceFormatted": "1.471.000 TL",
+      "price": 1486000,
+      "priceFormatted": "1.486.000 TL",
       "searchText": "citroen jumpy van panelvan l2 standart 1 5 bluehdi 120 hp 6 ileri manuel dizel manuel"
+    },
+    {
+      "id": "citroën-jumpy-van-panelvan-l2-standart-2.2-bluehdi-180-hp---eat8",
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Jumpy Van",
+      "trim": "Panelvan L2 Standart",
+      "engine": "2.2 BlueHDi 180 HP - EAT8",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "price": 1608000,
+      "priceFormatted": "1.608.000 TL",
+      "searchText": "citroen jumpy van panelvan l2 standart 2 2 bluehdi 180 hp eat8 dizel otomatik"
     },
     {
       "id": "citroën-jumpy-van-panelvan-l3-uzun-1.5-bluehdi-120-hp---6-i̇leri-manuel",
@@ -3274,8 +3170,8 @@
       "engine": "1.5 BlueHDi 120 HP - 6 İleri Manuel",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1562000,
-      "priceFormatted": "1.562.000 TL",
+      "price": 1577000,
+      "priceFormatted": "1.577.000 TL",
       "searchText": "citroen jumpy van panelvan l3 uzun 1 5 bluehdi 120 hp 6 ileri manuel dizel manuel"
     },
     {
@@ -3287,22 +3183,9 @@
       "engine": "2.2 BlueHDi 150 HP - 6 İleri Manuel",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1593000,
-      "priceFormatted": "1.593.000 TL",
+      "price": 1608000,
+      "priceFormatted": "1.608.000 TL",
       "searchText": "citroen jumpy van panelvan l3 uzun 2 2 bluehdi 150 hp 6 ileri manuel dizel manuel"
-    },
-    {
-      "id": "citroën-jumpy-van-panelvan-l2-standart-2.2-bluehdi-180-hp---eat8",
-      "brand": "Citroën",
-      "brandId": "citroen",
-      "model": "Jumpy Van",
-      "trim": "Panelvan L2 Standart",
-      "engine": "2.2 BlueHDi 180 HP - EAT8",
-      "fuel": "Dizel",
-      "transmission": "Otomatik",
-      "price": 1593000,
-      "priceFormatted": "1.593.000 TL",
-      "searchText": "citroen jumpy van panelvan l2 standart 2 2 bluehdi 180 hp eat8 dizel otomatik"
     },
     {
       "id": "citroën-jumpy-van-panelvan-l3-uzun-2.2-bluehdi-180-hp---eat8",
@@ -3313,8 +3196,8 @@
       "engine": "2.2 BlueHDi 180 HP - EAT8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1684000,
-      "priceFormatted": "1.684.000 TL",
+      "price": 1714000,
+      "priceFormatted": "1.714.000 TL",
       "searchText": "citroen jumpy van panelvan l3 uzun 2 2 bluehdi 180 hp eat8 dizel otomatik"
     },
     {
@@ -5809,8 +5692,8 @@
       "engine": "1.0 EcoTSI 115 PS",
       "fuel": "Benzin",
       "transmission": "Otomatik (DSG)",
-      "price": 1649726,
-      "priceFormatted": "1.649.726 TL",
+      "price": 1647000,
+      "priceFormatted": "1.647.000 TL",
       "searchText": "seat ibiza style 1 0 ecotsi 115 ps benzin otomatik dsg"
     },
     {
@@ -5822,9 +5705,22 @@
       "engine": "1.0 EcoTSI 115 PS",
       "fuel": "Benzin",
       "transmission": "Otomatik (DSG)",
-      "price": 1773933,
-      "priceFormatted": "1.773.933 TL",
+      "price": 1771000,
+      "priceFormatted": "1.771.000 TL",
       "searchText": "seat ibiza fr 1 0 ecotsi 115 ps benzin otomatik dsg"
+    },
+    {
+      "id": "seat-yeni̇-style-plus-1.0-tsi-116-ps",
+      "brand": "SEAT",
+      "brandId": "seat",
+      "model": "YENİ",
+      "trim": "Style Plus",
+      "engine": "1.0 TSI 116 PS",
+      "fuel": "Benzin",
+      "transmission": "Otomatik (DSG)",
+      "price": 1876000,
+      "priceFormatted": "1.876.000 TL",
+      "searchText": "seat yeni style plus 1 0 tsi 116 ps benzin otomatik dsg"
     },
     {
       "id": "seat-arona-style-1.0-ecotsi-115-ps",
@@ -5835,8 +5731,8 @@
       "engine": "1.0 EcoTSI 115 PS",
       "fuel": "Benzin",
       "transmission": "Otomatik (DSG)",
-      "price": 1742881,
-      "priceFormatted": "1.742.881 TL",
+      "price": 1740000,
+      "priceFormatted": "1.740.000 TL",
       "searchText": "seat arona style 1 0 ecotsi 115 ps benzin otomatik dsg"
     },
     {
@@ -5848,8 +5744,8 @@
       "engine": "1.0 EcoTSI 115 PS",
       "fuel": "Benzin",
       "transmission": "Otomatik (DSG)",
-      "price": 1856069,
-      "priceFormatted": "1.856.069 TL",
+      "price": 1853000,
+      "priceFormatted": "1.853.000 TL",
       "searchText": "seat arona fr 1 0 ecotsi 115 ps benzin otomatik dsg"
     },
     {
@@ -5861,8 +5757,8 @@
       "engine": "1.5 eHybrid 204 PS",
       "fuel": "Hybrid",
       "transmission": "Otomatik (DSG)",
-      "price": 2934860,
-      "priceFormatted": "2.934.860 TL",
+      "price": 2930000,
+      "priceFormatted": "2.930.000 TL",
       "searchText": "seat leon fr 1 5 ehybrid 204 ps hybrid otomatik dsg"
     },
     {
@@ -5874,8 +5770,8 @@
       "engine": "1.5 EcoTSI ACT 150 PS",
       "fuel": "Benzin",
       "transmission": "Otomatik (DSG)",
-      "price": 2382942,
-      "priceFormatted": "2.382.942 TL",
+      "price": 2379000,
+      "priceFormatted": "2.379.000 TL",
       "searchText": "seat ateca style plus 1 5 ecotsi act 150 ps benzin otomatik dsg"
     },
     {
@@ -5887,8 +5783,8 @@
       "engine": "1.5 EcoTSI ACT 150 PS",
       "fuel": "Benzin",
       "transmission": "Otomatik (DSG)",
-      "price": 2660403,
-      "priceFormatted": "2.660.403 TL",
+      "price": 2656000,
+      "priceFormatted": "2.656.000 TL",
       "searchText": "seat ateca xperience 1 5 ecotsi act 150 ps benzin otomatik dsg"
     },
     {
@@ -5900,8 +5796,8 @@
       "engine": "1.5 EcoTSI ACT 150 PS",
       "fuel": "Benzin",
       "transmission": "Otomatik (DSG)",
-      "price": 2923842,
-      "priceFormatted": "2.923.842 TL",
+      "price": 2919000,
+      "priceFormatted": "2.919.000 TL",
       "searchText": "seat ateca fr dark edition 1 5 ecotsi act 150 ps benzin otomatik dsg"
     },
     {
