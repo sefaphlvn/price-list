@@ -4974,12 +4974,13 @@ async function collectAllBrands(): Promise<void> {
   }
   await disconnectMongo();
 
-  // Don't exit with error if we have fallback data
-  // Only exit with error if ALL brands failed
+  // Exit with appropriate code
   if (successful.length === 0) {
     console.log('\nCritical: All brands failed, exiting with error');
     process.exit(1);
   }
+
+  process.exit(0);
 }
 
 // Run
