@@ -591,10 +591,26 @@ const parseSkodaData = (data: any, brand: string): PriceListRow[] => {
       if (yearMatch) modelYear = yearMatch[1];
     }
 
-    // Get sections - try new structure first, then old
+    // Get sections - try multiple structures
     let sections = data?.pageProps?.priceListSections;
     if (!sections && tabs?.[0]?.content?.priceListData?.priceListSections) {
       sections = tabs[0].content.priceListData.priceListSections;
+    }
+    // Try new initialData structure: initialData2025, initialData2026, etc.
+    if (!sections) {
+      const pageProps = data?.pageProps;
+      if (pageProps) {
+        for (const key of Object.keys(pageProps)) {
+          if (key.startsWith('initialData')) {
+            sections = pageProps[key]?.priceListData?.priceListSections;
+            if (!modelYear) {
+              const keyYear = key.match(/(\d{4})/);
+              if (keyYear) modelYear = keyYear[1];
+            }
+            if (sections) break;
+          }
+        }
+      }
     }
     if (!Array.isArray(sections)) return rows;
 
@@ -3355,23 +3371,29 @@ const parseSeatData = (html: string, brand: string): PriceListRow[] => {
         fuel = 'Benzin';
       }
 
-      // Get both prices: first is list price (without notary), second is turnkey price (with notary)
+      // Get prices - page may have 1 (turnkey only) or 2 (list + turnkey)
       const $prices = $row.find('.price');
-      if ($prices.length < 2) return;
+      if ($prices.length < 1) return;
 
-      // First price: list price (tavsiye edilen satış fiyatı)
-      const listPriceText = $($prices[0]).text().trim();
-      const listPriceMatch = listPriceText.match(/(\d{1,3}(?:\.\d{3})+)/);
+      let priceText: string;
+      let listPriceText: string | undefined;
 
-      // Second price: turnkey price (anahtar teslim fiyatı - with notary fee)
-      const priceText = $($prices[1]).text().trim();
+      if ($prices.length >= 2) {
+        // Old format: list price + turnkey price
+        listPriceText = $($prices[0]).text().trim();
+        priceText = $($prices[1]).text().trim();
+      } else {
+        // New format: only turnkey price
+        priceText = $($prices[0]).text().trim();
+      }
+
       const priceMatch = priceText.match(/(\d{1,3}(?:\.\d{3})+)/);
       if (!priceMatch) return;
 
       const priceNumeric = parsePrice(priceMatch[0] + ' TL');
       if (!isValidPrice(priceNumeric)) return;
 
-      // Parse list price if available
+      const listPriceMatch = listPriceText?.match(/(\d{1,3}(?:\.\d{3})+)/);
       const priceListNumeric = listPriceMatch ? parsePrice(listPriceMatch[0] + ' TL') : undefined;
 
       // Parse model name to extract components
@@ -4442,16 +4464,21 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
     return fetchSingleUrl(apiUrl, 'json');
   }
 
-  // Handle Škoda's dynamic Next.js URL
+  // Handle Škoda - extract __NEXT_DATA__ directly from HTML
   if (brand.parser === 'skoda') {
-    console.log(`  Fetching ${brand.name} - extracting build ID from ${brand.url}`);
-    const buildId = await extractNextJsBuildId(brand.url);
-    if (!buildId) {
-      throw new Error('Could not extract Next.js build ID for Škoda');
-    }
-    const apiUrl = `https://www.skoda.com.tr/_next/data/${buildId}/fiyat-listesi.json`;
-    console.log(`  Using API URL: ${apiUrl}`);
-    return fetchSingleUrl(apiUrl, 'json');
+    console.log(`  Fetching ${brand.name} HTML from ${brand.url}`);
+    const response = await fetchWithTimeout(brand.url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html',
+      },
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const html = await response.text();
+    const match = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+    if (!match) throw new Error('Could not find __NEXT_DATA__ in Škoda page');
+    const nextData = JSON.parse(match[1]);
+    return nextData.props;
   }
 
   // Handle Ford's special headers
@@ -4622,6 +4649,9 @@ async function fetchMultiUrlBrand(brand: BrandConfig): Promise<PriceListRow[]> {
   return allRows;
 }
 
+// Track pending MongoDB saves so we can await them before disconnecting
+const pendingMongoSaves: Promise<void>[] = [];
+
 // Save data to file and MongoDB
 function saveData(brandId: string, date: Date, data: StoredData): void {
   const year = date.getFullYear().toString();
@@ -4638,9 +4668,10 @@ function saveData(brandId: string, date: Date, data: StoredData): void {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
   console.log(`  Saved to ${filePath}`);
 
-  // Write to MongoDB (async, don't block)
+  // Write to MongoDB (async, track promise to await before disconnect)
   const dateStr = `${year}-${month}-${day}`;
-  saveVehicleToMongo(brandId, dateStr, data as unknown as Record<string, unknown>).catch(() => { });
+  const savePromise = saveVehicleToMongo(brandId, dateStr, data as unknown as Record<string, unknown>).catch(() => { });
+  pendingMongoSaves.push(savePromise);
 }
 
 // Safe JSON parse with fallback
@@ -4937,7 +4968,10 @@ async function collectAllBrands(): Promise<void> {
     failed.forEach(r => console.log(`  - ${r.brand}: ${r.error}`));
   }
 
-  // Disconnect MongoDB
+  // Wait for all pending MongoDB saves to complete before disconnecting
+  if (pendingMongoSaves.length > 0) {
+    await Promise.allSettled(pendingMongoSaves);
+  }
   await disconnectMongo();
 
   // Don't exit with error if we have fallback data
