@@ -29,7 +29,11 @@ export async function connectMongo(): Promise<Db | null> {
   }
 
   try {
-    client = new MongoClient(uri);
+    client = new MongoClient(uri, {
+      connectTimeoutMS: 10_000,
+      socketTimeoutMS: 30_000,
+      serverSelectionTimeoutMS: 10_000,
+    });
     await client.connect();
     db = client.db(process.env.MONGO_DATABASE || 'pricelist');
     console.log('[MongoDB] Connected to Atlas');

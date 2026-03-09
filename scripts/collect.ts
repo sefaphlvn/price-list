@@ -50,6 +50,7 @@ interface CollectionResult {
   count?: number;
   error?: string;
   usedFallback?: boolean;
+  elapsed?: number;
 }
 
 interface IndexData {
@@ -72,10 +73,38 @@ interface StoredData {
   rows: PriceListRow[];
 }
 
+// Fetch with timeout helper - wraps fetch with AbortController
+async function fetchWithTimeout(url: string, options: RequestInit = {}, timeoutMs = 30_000): Promise<Response> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, { ...options, signal: controller.signal });
+    return response;
+  } catch (error) {
+    if (error instanceof Error && error.name === 'AbortError') {
+      throw new Error(`Timeout: fetch ${url} exceeded ${timeoutMs}ms`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+// Timeout wrapper for arbitrary promises (e.g., PDF extraction)
+async function promiseWithTimeout<T>(promise: Promise<T>, timeoutMs: number, label: string): Promise<T> {
+  let timeoutId: ReturnType<typeof setTimeout>;
+  return Promise.race([
+    promise,
+    new Promise<never>((_, reject) => {
+      timeoutId = setTimeout(() => reject(new Error(`Timeout: ${label} (${timeoutMs}ms)`)), timeoutMs);
+    }),
+  ]).finally(() => clearTimeout(timeoutId!));
+}
+
 // Dynamic URL extraction for Next.js sites (e.g., Citroen, Skoda)
 async function extractNextJsBuildId(pageUrl: string): Promise<string | null> {
   try {
-    const response = await fetch(pageUrl, {
+    const response = await fetchWithTimeout(pageUrl, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'text/html',
@@ -285,7 +314,7 @@ const BRANDS: BrandConfig[] = [
 
 // Price validation constants (Turkish vehicle price range)
 const MIN_VALID_PRICE = 100_000; // 100K TL - minimum realistic car price
-const MAX_VALID_PRICE = 50_000_000; // 50M TL - maximum realistic car price
+const MAX_VALID_PRICE = 90_000_000; // 90M TL - maximum realistic car price
 
 // Parse price string to number
 const parsePrice = (priceStr: string): number => {
@@ -750,8 +779,8 @@ function parseRenaultEngineDetails(versiyonAdi: string, yakitTipi: string): Rena
 
   // Hybrid detection (includes mild hybrid)
   if (fuelLower.includes('hybrid') || fuelLower.includes('hibrit') ||
-      /E-TECH/i.test(versiyonAdi) || /E-TECH/i.test(yakitTipi) ||
-      /mild\s*hybrid/i.test(versiyonAdi)) {
+    /E-TECH/i.test(versiyonAdi) || /E-TECH/i.test(yakitTipi) ||
+    /mild\s*hybrid/i.test(versiyonAdi)) {
     details.isHybrid = true;
   }
 
@@ -1220,7 +1249,7 @@ const parseFiatData = (pdfData: PDFExtractResult, brand: string): PriceListRow[]
         }
         if (/TIPO.*MODEL/i.test(text)) {
           currentModel = text.includes('CROSS') ? 'Tipo Cross' :
-                         text.includes('SW') ? 'Tipo SW' : 'Tipo';
+            text.includes('SW') ? 'Tipo SW' : 'Tipo';
           currentEngine = '';
           inDataSection = true;
           continue;
@@ -1344,9 +1373,9 @@ const parseFiatData = (pdfData: PDFExtractResult, brand: string): PriceListRow[]
           // Check for duplicate (using cleanModel)
           const exists = vehicles.find(
             v => v.model === cleanModel &&
-                 v.trim === foundTrim &&
-                 v.engine === effectiveEngine &&
-                 v.priceNumeric === price
+              v.trim === foundTrim &&
+              v.engine === effectiveEngine &&
+              v.priceNumeric === price
           );
 
           if (!exists) {
@@ -1641,9 +1670,9 @@ const parsePeugeotData = (pdfData: PDFExtractResult, brand: string): PriceListRo
         // Check for duplicate
         const exists = vehicles.find(
           v => v.model === currentModel &&
-               v.trim === trim &&
-               v.engine === engine &&
-               v.priceNumeric === priceNumeric
+            v.trim === trim &&
+            v.engine === engine &&
+            v.priceNumeric === priceNumeric
         );
 
         if (!exists) {
@@ -1780,8 +1809,8 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
 
       // Get model name from h3.vehicle-name
       const modelName = $section.find('h3.vehicle-name').text().trim() ||
-                        $section.find('h3').first().text().trim() ||
-                        'Unknown';
+        $section.find('h3').first().text().trim() ||
+        'Unknown';
 
       // Clean model name (remove "BYD" prefix if present)
       const cleanModel = modelName.replace(/^BYD\s+/i, '').trim();
@@ -1878,8 +1907,8 @@ const parseBYDData = (html: string, brand: string): PriceListRow[] => {
         // Find the parent section to get model name
         const $parent = $table.closest('[id^="vehicle-"]');
         let modelName = $parent.find('h3').first().text().trim() ||
-                        $table.prev('h3').text().trim() ||
-                        'Unknown';
+          $table.prev('h3').text().trim() ||
+          'Unknown';
         const cleanModel = modelName.replace(/^BYD\s+/i, '').trim();
 
         $table.find('tbody tr').each((_, row) => {
@@ -2139,9 +2168,9 @@ const parseOpelData = (html: string, brand: string, modelName?: string): PriceLi
         // Check for duplicate
         const exists = vehicles.find(
           v => v.model === model &&
-               v.trim === trim &&
-               v.engine === engineSpan &&
-               v.transmission === mappedTransmission
+            v.trim === trim &&
+            v.engine === engineSpan &&
+            v.transmission === mappedTransmission
         );
 
         if (!exists) {
@@ -2360,8 +2389,8 @@ const parseBMWData = (html: string, brand: string): PriceListRow[] => {
         // Check for duplicate (by model+trim+price, not engine - engine can vary slightly)
         const exists = vehicles.find(
           v => v.model === model &&
-               v.trim === trim &&
-               v.priceNumeric === priceNumeric
+            v.trim === trim &&
+            v.priceNumeric === priceNumeric
         );
 
         if (!exists && model && trim) {
@@ -2471,15 +2500,15 @@ function parseMercedesExtendedDetails(
   const isEPerformance = modelUpper.includes('E PERFORMANCE');
   const hasHybridInModel = /\bHybrid\b/i.test(model);
   const isHybridModel = fuelLower.includes('hybrid') || fuelLower.includes('hibrit') ||
-                        isEPerformance || hasHybridInModel;
+    isEPerformance || hasHybridInModel;
   if (isHybridModel) {
     details.isHybrid = true;
   }
 
   // Electric detection - fuel type or EQ model prefix (exclude all hybrids)
   if (!isHybridModel && (
-      fuelLower.includes('elektrik') || fuelLower.includes('electric') ||
-      modelUpper.startsWith('EQ') || modelUpper.includes('G 580'))) {
+    fuelLower.includes('elektrik') || fuelLower.includes('electric') ||
+    modelUpper.startsWith('EQ') || modelUpper.includes('G 580'))) {
     details.isElectric = true;
   }
 
@@ -2584,8 +2613,8 @@ const parseMercedesData = (data: any, brand: string): PriceListRow[] => {
       // Check for duplicate
       const exists = vehicles.find(
         v => v.model === modelName &&
-             v.trim === trim &&
-             v.priceNumeric === priceNumeric
+          v.trim === trim &&
+          v.priceNumeric === priceNumeric
       );
 
       if (!exists && modelName) {
@@ -2675,7 +2704,7 @@ function parseFordEngineDetails(engine: string, fuel: string): FordEngineDetails
 
   // Hybrid detection - from fuel type or engine string
   if (fuelLower.includes('hibrit') || fuelLower.includes('hybrid') ||
-      /Hybrid/i.test(engine) || fuelLower === 'benzin/hibrit') {
+    /Hybrid/i.test(engine) || fuelLower === 'benzin/hibrit') {
     details.isHybrid = true;
   }
 
@@ -2768,9 +2797,9 @@ const parseFordData = (data: any, brand: string): PriceListRow[] => {
         // Check for duplicate
         const exists = vehicles.find(
           v => v.model === modelName &&
-               v.trim === series &&
-               v.engine === engine &&
-               v.priceNumeric === priceNumeric
+            v.trim === series &&
+            v.engine === engine &&
+            v.priceNumeric === priceNumeric
         );
 
         if (!exists && modelName && series) {
@@ -2874,7 +2903,7 @@ function parseNissanEngineDetails(versionStr: string, fuelType: string): NissanE
 
   // Electric detection (EV models)
   if (/\bEV\b/i.test(versionStr) || fuelLower.includes('elektrik') ||
-      fuelLower.includes('electric') || fuelLower === 'ev') {
+    fuelLower.includes('electric') || fuelLower === 'ev') {
     details.isElectric = true;
   }
 
@@ -3028,9 +3057,9 @@ const parseNissanData = (html: string, brand: string): PriceListRow[] => {
         // Check for duplicate
         const exists = vehicles.find(
           v => v.model === finalModel &&
-               v.trim === trim &&
-               v.engine === engine &&
-               v.priceNumeric === priceNumeric
+            v.trim === trim &&
+            v.engine === engine &&
+            v.priceNumeric === priceNumeric
         );
 
         if (!exists && finalModel && trim) {
@@ -3096,14 +3125,14 @@ function parseHondaEngineDetails(engineStr: string, fuelType: string): HondaEngi
 
   // Hybrid detection
   if (engineLower.includes('hibrit') || engineLower.includes('hybrid') ||
-      fuelLower.includes('hibrit') || fuelLower.includes('hybrid')) {
+    fuelLower.includes('hibrit') || fuelLower.includes('hybrid')) {
     details.isHybrid = true;
   }
 
   // Electric detection
   if (engineLower.includes('elektrik') || engineLower.includes('electric') ||
-      fuelLower.includes('elektrik') || fuelLower.includes('electric') ||
-      /e:ny/i.test(engineStr)) {
+    fuelLower.includes('elektrik') || fuelLower.includes('electric') ||
+    /e:ny/i.test(engineStr)) {
     details.isElectric = true;
   }
 
@@ -3200,9 +3229,9 @@ const parseHondaData = (html: string, brand: string): PriceListRow[] => {
             // Check for duplicate
             const exists = vehicles.find(
               v => v.model === model &&
-                   v.trim === trim &&
-                   v.engine === engine &&
-                   v.priceNumeric === priceNumeric
+                v.trim === trim &&
+                v.engine === engine &&
+                v.priceNumeric === priceNumeric
             );
 
             if (!exists) {
@@ -3382,9 +3411,9 @@ const parseSeatData = (html: string, brand: string): PriceListRow[] => {
       // Check for duplicate
       const exists = vehicles.find(
         v => v.model === model &&
-             v.trim === trim &&
-             v.engine === engine &&
-             v.priceNumeric === priceNumeric
+          v.trim === trim &&
+          v.engine === engine &&
+          v.priceNumeric === priceNumeric
       );
 
       if (!exists && model && trim) {
@@ -3493,8 +3522,8 @@ const parseKiaData = (html: string, brand: string): PriceListRow[] => {
       // Check for duplicate
       const exists = vehicles.find(
         v => v.model === modelName &&
-             v.trim === trimName &&
-             v.priceNumeric === priceNumeric
+          v.trim === trimName &&
+          v.priceNumeric === priceNumeric
       );
 
       if (!exists && trimName) {
@@ -3507,7 +3536,7 @@ const parseKiaData = (html: string, brand: string): PriceListRow[] => {
 
         // Parse list price (retail price has priority, then fallback to listPrice)
         const priceListNumeric = retailPriceStr ? parsePrice(retailPriceStr + ' TL') :
-                                 listPriceStr ? parsePrice(listPriceStr + ' TL') : undefined;
+          listPriceStr ? parsePrice(listPriceStr + ' TL') : undefined;
 
         // Parse campaign price
         const priceCampaignNumeric = campaignPriceStr ? parsePrice(campaignPriceStr + ' TL') : undefined;
@@ -3736,8 +3765,8 @@ const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRo
       // Extract power (e.g., "150kW/204hp" or "197 hp")
       let engine = '';
       const powerMatch = specsText.match(/(\d+)\s*kW\s*\/\s*(\d+)\s*hp/i) ||
-                        specsText.match(/(\d+)\s*KW\s*\/\s*(\d+)\s*hp/i) ||
-                        specsText.match(/(\d+)\s*hp/i);
+        specsText.match(/(\d+)\s*KW\s*\/\s*(\d+)\s*hp/i) ||
+        specsText.match(/(\d+)\s*hp/i);
       if (powerMatch) {
         if (powerMatch[2]) {
           engine = `${powerMatch[1]} kW / ${powerMatch[2]} hp`;
@@ -3755,8 +3784,8 @@ const parseVolvoData = (pdfResult: PDFExtractResult, brand: string): PriceListRo
       // Extract transmission
       let transmission = 'Otomatik';
       if (specsText.toLowerCase().includes('geartronic') ||
-          specsText.toLowerCase().includes('ileri') ||
-          specsText.toLowerCase().includes('otomatik')) {
+        specsText.toLowerCase().includes('ileri') ||
+        specsText.toLowerCase().includes('otomatik')) {
         transmission = 'Otomatik';
       } else if (specsText.toLowerCase().includes('manuel')) {
         transmission = 'Manuel';
@@ -4015,11 +4044,11 @@ const parseCitroenData = (data: any, brand: string): PriceListRow[] => {
       // Check for duplicate (include transmission & fuel to catch all variants)
       const exists = vehicles.find(
         v => v.model === modelName &&
-             v.trim === donanim &&
-             v.engine === engine &&
-             v.transmission === transmission &&
-             v.fuel === fuel &&
-             v.priceNumeric === priceNumeric
+          v.trim === donanim &&
+          v.engine === engine &&
+          v.transmission === transmission &&
+          v.fuel === fuel &&
+          v.priceNumeric === priceNumeric
       );
 
       if (!exists) {
@@ -4130,10 +4159,10 @@ async function fetchSingleUrl(url: string, responseType?: string): Promise<any> 
     fs.writeFileSync(tempPath, Buffer.from(buffer));
 
     const pdfExtract = new PDFExtract();
-    const pdfData = await pdfExtract.extract(tempPath, {});
+    const pdfData = await promiseWithTimeout(pdfExtract.extract(tempPath, {}), 60_000, 'PDF extract (fetchSingleUrl)');
 
     // Clean up temp file
-    try { fs.unlinkSync(tempPath); } catch {}
+    try { fs.unlinkSync(tempPath); } catch { }
 
     return pdfData;
   }
@@ -4147,7 +4176,7 @@ async function fetchSingleUrl(url: string, responseType?: string): Promise<any> 
 
 // Fetch Ford API with special headers
 async function fetchFordUrl(url: string): Promise<any> {
-  const response = await fetch(url, {
+  const response = await fetchWithTimeout(url, {
     headers: {
       'accept': 'application/json, text/plain, */*',
       'accept-language': 'tr,en;q=0.9',
@@ -4182,7 +4211,7 @@ async function fetchFiatPdf(url: string): Promise<any> {
       }
 
       console.log(`    Connecting to: ${url}`);
-      const response = await fetch(url, {
+      const response = await fetchWithTimeout(url, {
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
           'Accept': 'application/pdf,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
@@ -4242,7 +4271,7 @@ async function fetchFiatPdf(url: string): Promise<any> {
           await new Promise(resolve => setTimeout(resolve, delay));
         }
 
-        const response = await fetch(proxy.url, {
+        const response = await fetchWithTimeout(proxy.url, {
           headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
           },
@@ -4275,11 +4304,11 @@ async function extractPdfFromResponse(response: Response, brand: string): Promis
   fs.writeFileSync(tempPath, Buffer.from(buffer));
 
   const pdfExtract = new PDFExtract();
-  const pdfData = await pdfExtract.extract(tempPath, {});
+  const pdfData = await promiseWithTimeout(pdfExtract.extract(tempPath, {}), 60_000, `PDF extract (${brand})`);
   console.log(`    PDF extracted: ${pdfData.pages?.length || 0} pages`);
 
   // Clean up temp file
-  try { fs.unlinkSync(tempPath); } catch {}
+  try { fs.unlinkSync(tempPath); } catch { }
 
   return pdfData;
 }
@@ -4321,7 +4350,7 @@ async function fetchPeugeotPdf(url: string): Promise<any> {
         await new Promise(resolve => setTimeout(resolve, delay));
       }
 
-      const response = await fetch(url, {
+      const response = await fetchWithTimeout(url, {
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
           'Accept': 'application/pdf,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
@@ -4374,7 +4403,7 @@ async function fetchPeugeotPdf(url: string): Promise<any> {
           await new Promise(resolve => setTimeout(resolve, delay));
         }
 
-        const response = await fetch(proxy.url, {
+        const response = await fetchWithTimeout(proxy.url, {
           headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
           },
@@ -4434,7 +4463,7 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
   // Handle Volvo's dynamic PDF URL (first fetch HTML to find PDF link)
   if (brand.parser === 'volvo') {
     console.log(`  Fetching ${brand.name} - extracting PDF URL from ${brand.url}`);
-    const response = await fetch(brand.url, {
+    const response = await fetchWithTimeout(brand.url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
@@ -4478,7 +4507,7 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
       console.log(`  Trying ${brand.name} for year ${year}: ${url}`);
 
       try {
-        const response = await fetch(url, {
+        const response = await fetchWithTimeout(url, {
           headers: {
             'accept': 'text/html',
             'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
@@ -4527,7 +4556,7 @@ async function fetchBrandData(brand: BrandConfig): Promise<any> {
 async function fetchMercedesUrl(modelCode: string): Promise<any> {
   const url = `https://pladmin.mercedes-benz.com.tr/api/product/searchByCategoryCode?code=${modelCode}&_includes=ID,Code,Alias,Name,GroupName,ProductAttribute,ProductPrice,TaxRatio,VATRatio,IsActive,ImagePath`;
 
-  const response = await fetch(url, {
+  const response = await fetchWithTimeout(url, {
     headers: {
       'accept': 'application/json, text/plain, */*',
       'applicationid': 'b7d8f89b-8642-40e7-902e-eae1190c40c0',
@@ -4611,7 +4640,7 @@ function saveData(brandId: string, date: Date, data: StoredData): void {
 
   // Write to MongoDB (async, don't block)
   const dateStr = `${year}-${month}-${day}`;
-  saveVehicleToMongo(brandId, dateStr, data as unknown as Record<string, unknown>).catch(() => {});
+  saveVehicleToMongo(brandId, dateStr, data as unknown as Record<string, unknown>).catch(() => { });
 }
 
 // Safe JSON parse with fallback
@@ -4734,61 +4763,74 @@ async function collectAllBrands(): Promise<void> {
   const results: CollectionResult[] = [];
 
   for (const brand of BRANDS) {
-    console.log(`[${brand.name}]`);
+    const brandStart = Date.now();
+    console.log(`[${brand.name}] Starting collection...`);
 
     try {
-      let rawRows: PriceListRow[];
+      const result = await promiseWithTimeout((async (): Promise<CollectionResult> => {
+        let rawRows: PriceListRow[];
 
-      // Check if brand uses multiple URLs
-      if (brand.urls && brand.urls.length > 0) {
-        rawRows = await fetchMultiUrlBrand(brand);
-      } else {
-        const data = await fetchBrandData(brand);
-        rawRows = parseData(data, brand.name, brand.parser);
-      }
-
-      // Fill modelYear from resolved URL year (Honda, Nissan)
-      const resolvedYear = (brand as any)._resolvedYear;
-      if (resolvedYear) {
-        rawRows.forEach(r => { if (!r.modelYear) r.modelYear = resolvedYear; });
-      }
-
-      const rows = filterValidRows(rawRows, brand.name);
-
-      if (rows.length === 0) {
-        // Try fallback if no rows parsed
-        console.log(`  Warning: No rows parsed for ${brand.name}, trying fallback...`);
-        const previousData = getPreviousData(brand.id, now);
-
-        if (previousData) {
-          const fallbackData = useFallbackData(brand.id, brand.name, now, previousData);
-          saveData(brand.id, now, fallbackData);
-          updateIndex(index, brand.id, brand.name, dateStr, fallbackData.rowCount);
-          console.log(`  Fallback: Using previous data (${fallbackData.rowCount} rows)`);
-          results.push({ brand: brand.id, success: true, count: fallbackData.rowCount, usedFallback: true });
+        // Check if brand uses multiple URLs
+        if (brand.urls && brand.urls.length > 0) {
+          rawRows = await fetchMultiUrlBrand(brand);
         } else {
-          console.log(`  Error: No fallback data available`);
-          results.push({ brand: brand.id, success: false, error: 'No rows parsed and no fallback available' });
+          const data = await fetchBrandData(brand);
+          rawRows = parseData(data, brand.name, brand.parser);
         }
-        continue;
-      }
 
-      const storedData: StoredData = {
-        collectedAt: now.toISOString(),
-        brand: brand.name,
-        brandId: brand.id,
-        rowCount: rows.length,
-        rows,
-      };
+        // Fill modelYear from resolved URL year (Honda, Nissan)
+        const resolvedYear = (brand as any)._resolvedYear;
+        if (resolvedYear) {
+          rawRows.forEach(r => { if (!r.modelYear) r.modelYear = resolvedYear; });
+        }
 
-      saveData(brand.id, now, storedData);
-      updateIndex(index, brand.id, brand.name, dateStr, rows.length);
+        const rows = filterValidRows(rawRows, brand.name);
 
-      console.log(`  Success: ${rows.length} rows collected`);
-      results.push({ brand: brand.id, success: true, count: rows.length });
+        if (rows.length === 0) {
+          // Try fallback if no rows parsed
+          console.log(`  Warning: No rows parsed for ${brand.name}, trying fallback...`);
+          const previousData = getPreviousData(brand.id, now);
+
+          if (previousData) {
+            const fallbackData = useFallbackData(brand.id, brand.name, now, previousData);
+            saveData(brand.id, now, fallbackData);
+            updateIndex(index, brand.id, brand.name, dateStr, fallbackData.rowCount);
+            console.log(`  Fallback: Using previous data (${fallbackData.rowCount} rows)`);
+            return { brand: brand.id, success: true, count: fallbackData.rowCount, usedFallback: true, elapsed: Date.now() - brandStart };
+          } else {
+            console.log(`  Error: No fallback data available`);
+            return { brand: brand.id, success: false, error: 'No rows parsed and no fallback available', elapsed: Date.now() - brandStart };
+          }
+        }
+
+        const storedData: StoredData = {
+          collectedAt: now.toISOString(),
+          brand: brand.name,
+          brandId: brand.id,
+          rowCount: rows.length,
+          rows,
+        };
+
+        saveData(brand.id, now, storedData);
+        updateIndex(index, brand.id, brand.name, dateStr, rows.length);
+
+        console.log(`  Success: ${rows.length} rows collected`);
+        return { brand: brand.id, success: true, count: rows.length, elapsed: Date.now() - brandStart };
+      })(), 120_000, `Brand: ${brand.name}`);
+
+      results.push(result);
+      console.log(`[${brand.name}] Completed in ${((result.elapsed || (Date.now() - brandStart)) / 1000).toFixed(1)}s`);
     } catch (error) {
+      const elapsed = Date.now() - brandStart;
       const errorMessage = error instanceof Error ? error.message : String(error);
-      console.log(`  Error: ${errorMessage}`);
+      const isTimeout = errorMessage.includes('Timeout');
+      console.error(`[${brand.name}] FAILED after ${(elapsed / 1000).toFixed(1)}s`);
+      console.error(`  Type: ${isTimeout ? 'TIMEOUT' : 'ERROR'}`);
+      console.error(`  Message: ${errorMessage}`);
+      console.error(`  URL: ${brand.url}`);
+      if (error instanceof Error && error.stack) {
+        console.error(`  Stack: ${error.stack.split('\n').slice(0, 3).join('\n    ')}`);
+      }
 
       // Log to ErrorLogger
       ErrorLogger.logError({
@@ -4796,14 +4838,14 @@ async function collectAllBrands(): Promise<void> {
         source: 'collection',
         brand: brand.name,
         brandId: brand.id,
-        code: 'COLLECTION_FAILED',
+        code: isTimeout ? 'COLLECTION_TIMEOUT' : 'COLLECTION_FAILED',
         message: `Failed to collect ${brand.name}: ${errorMessage}`,
-        details: { error: errorMessage, url: brand.url },
+        details: { error: errorMessage, url: brand.url, elapsed, isTimeout },
         recovered: false,
       });
 
       // Try fallback on error
-      console.log(`  Trying fallback...`);
+      console.log(`[${brand.name}] Attempting fallback to previous data...`);
       const previousData = getPreviousData(brand.id, now);
 
       if (previousData) {
@@ -4811,7 +4853,7 @@ async function collectAllBrands(): Promise<void> {
         saveData(brand.id, now, fallbackData);
         updateIndex(index, brand.id, brand.name, dateStr, fallbackData.rowCount);
         console.log(`  Fallback: Using previous data (${fallbackData.rowCount} rows)`);
-        results.push({ brand: brand.id, success: true, count: fallbackData.rowCount, usedFallback: true });
+        results.push({ brand: brand.id, success: true, count: fallbackData.rowCount, usedFallback: true, elapsed });
 
         // Update error as recovered
         ErrorLogger.logWarning({
@@ -4826,7 +4868,7 @@ async function collectAllBrands(): Promise<void> {
         });
       } else {
         console.log(`  Error: No fallback data available`);
-        results.push({ brand: brand.id, success: false, error: errorMessage });
+        results.push({ brand: brand.id, success: false, error: errorMessage, elapsed });
       }
     }
 
@@ -4854,6 +4896,7 @@ async function collectAllBrands(): Promise<void> {
       count: r.count || 0,
       error: r.error || null,
       usedFallback: r.usedFallback || false,
+      elapsed: r.elapsed || 0,
     })),
   };
 
@@ -4861,23 +4904,33 @@ async function collectAllBrands(): Promise<void> {
   fs.writeFileSync(healthPath, JSON.stringify(healthReport, null, 2), 'utf-8');
   console.log(`Health report saved to ${healthPath}`);
 
-  // Summary
-  console.log('='.repeat(60));
-  console.log('Summary');
-  console.log('='.repeat(60));
-
-  const successful = results.filter(r => r.success);
+  // Summary table
+  const totalElapsed = results.reduce((sum, r) => sum + (r.elapsed || 0), 0);
+  const successful = results.filter(r => r.success && !r.usedFallback);
   const failed = results.filter(r => !r.success);
 
-  console.log(`Total: ${results.length} brands`);
-  console.log(`Success: ${successful.length}`);
-  console.log(`Failed: ${failed.length}`);
-  console.log(`Used Fallback: ${fallbackUsed.length}`);
+  console.log('');
+  console.log('='.repeat(60));
+  console.log('Collection Summary');
+  console.log('='.repeat(60));
+  console.log('Brand            | Status    | Rows | Time    | Notes');
+  console.log('-----------------+-----------+------+---------+------------------');
 
-  if (fallbackUsed.length > 0) {
-    console.log('\nBrands using previous day data:');
-    fallbackUsed.forEach(r => console.log(`  - ${r.brand} (${r.count} rows)`));
+  // Map brand IDs to display names
+  const brandNameMap = new Map(BRANDS.map(b => [b.id, b.name]));
+
+  for (const r of results) {
+    const name = (brandNameMap.get(r.brand) || r.brand).padEnd(16).slice(0, 16);
+    const status = r.usedFallback ? 'FALLBACK' : r.success ? 'SUCCESS' : 'FAILED';
+    const statusStr = status.padEnd(9);
+    const rows = String(r.count || 0).padStart(4);
+    const time = `${((r.elapsed || 0) / 1000).toFixed(1)}s`.padStart(7);
+    const notes = r.error ? r.error.slice(0, 30) : r.usedFallback ? 'Used previous data' : '';
+    console.log(`${name} | ${statusStr} | ${rows} | ${time} | ${notes}`);
   }
+
+  console.log('='.repeat(60));
+  console.log(`Total: ${results.length} brands | ${successful.length} OK | ${fallbackUsed.length} Fallback | ${failed.length} Failed | ${(totalElapsed / 1000).toFixed(1)}s total`);
 
   if (failed.length > 0) {
     console.log('\nFailed brands:');
