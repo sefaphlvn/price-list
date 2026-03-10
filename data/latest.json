@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-09T08:48:16.300Z",
-  "totalVehicles": 508,
+  "generatedAt": "2026-03-10T01:32:44.325Z",
+  "totalVehicles": 510,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1899,7 +1899,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -2765,7 +2765,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3428,7 +3428,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "i20",
@@ -3861,7 +3861,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "E-208",
@@ -4260,7 +4260,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "ATTO 3",
@@ -4382,7 +4382,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4633,6 +4633,37 @@
           "isElectric": true
         },
         {
+          "model": "Grandland",
+          "trim": "Edition",
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.102.000 TL",
+          "priceNumeric": 3102000,
+          "brand": "Opel",
+          "modelYear": 2026,
+          "priceListNumeric": 2854000,
+          "priceCampaignNumeric": 2380000,
+          "powerHP": 136,
+          "engineDisplacement": "1.2L",
+          "isHybrid": true
+        },
+        {
+          "model": "Grandland",
+          "trim": "GS",
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "3.132.000 TL",
+          "priceNumeric": 3132000,
+          "brand": "Opel",
+          "modelYear": 2026,
+          "priceListNumeric": 2953000,
+          "powerHP": 136,
+          "engineDisplacement": "1.2L",
+          "isHybrid": true
+        },
+        {
           "model": "Grandland Elektrik",
           "trim": "Edition",
           "engine": "157 kW",
@@ -4664,7 +4695,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5170,7 +5201,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -5183,6 +5214,7 @@
           "brand": "BMW",
           "fuelConsumption": "5,9",
           "otvRate": 90,
+          "monthlyLease": 89794,
           "powerHP": 156,
           "powerHPSecondary": 20,
           "engineDisplacement": "1.5L",
@@ -5200,6 +5232,7 @@
           "brand": "BMW",
           "fuelConsumption": "5,9",
           "otvRate": 100,
+          "monthlyLease": 102114,
           "powerHP": 156,
           "powerHPSecondary": 20,
           "engineDisplacement": "1.5L",
@@ -5217,6 +5250,7 @@
           "brand": "BMW",
           "fuelConsumption": "5,8",
           "otvRate": 100,
+          "monthlyLease": 86754,
           "powerHP": 156,
           "powerHPSecondary": 20,
           "engineDisplacement": "1.5L",
@@ -5234,6 +5268,7 @@
           "brand": "BMW",
           "fuelConsumption": "5,8",
           "otvRate": 100,
+          "monthlyLease": 92501,
           "powerHP": 156,
           "powerHPSecondary": 20,
           "engineDisplacement": "1.5L",
@@ -5287,6 +5322,7 @@
           "brand": "BMW",
           "fuelConsumption": "7,6",
           "otvRate": 100,
+          "monthlyLease": 96140,
           "powerHP": 170,
           "engineDisplacement": "1.6L"
         },
@@ -5341,7 +5377,7 @@
           "priceRaw": "9.684.100 TL",
           "priceNumeric": 9684100,
           "brand": "BMW",
-          "fuelConsumption": "8",
+          "fuelConsumption": "8,0",
           "otvRate": 170,
           "powerHP": 245,
           "engineDisplacement": "2.0L",
@@ -5358,6 +5394,7 @@
           "brand": "BMW",
           "fuelConsumption": "7,8",
           "otvRate": 100,
+          "monthlyLease": 173364,
           "powerHP": 170,
           "engineDisplacement": "1.6L"
         },
@@ -5386,6 +5423,7 @@
           "brand": "BMW",
           "fuelConsumption": "18,6",
           "otvRate": 55,
+          "monthlyLease": 204442,
           "powerHP": 218,
           "isElectric": true
         },
@@ -5413,8 +5451,9 @@
           "priceNumeric": 8293300,
           "brand": "BMW",
           "modelYear": 2023,
-          "fuelConsumption": "7",
+          "fuelConsumption": "7,0",
           "otvRate": 100,
+          "monthlyLease": 169688,
           "powerHP": 190,
           "powerHPSecondary": 11,
           "engineDisplacement": "1.6L",
@@ -5431,7 +5470,7 @@
           "priceNumeric": 8816000,
           "brand": "BMW",
           "modelYear": 2023,
-          "fuelConsumption": "7",
+          "fuelConsumption": "7,0",
           "otvRate": 100,
           "powerHP": 190,
           "powerHPSecondary": 11,
@@ -5451,6 +5490,7 @@
           "modelYear": 2023,
           "fuelConsumption": "5,6",
           "otvRate": 170,
+          "monthlyLease": 381810,
           "powerHP": 197,
           "powerHPSecondary": 11,
           "engineDisplacement": "2.0L",
@@ -5489,6 +5529,7 @@
           "modelYear": 2023,
           "fuelConsumption": "18,8",
           "otvRate": 55,
+          "monthlyLease": 165197,
           "powerHP": 218,
           "isElectric": true
         },
@@ -5648,6 +5689,7 @@
           "brand": "BMW",
           "fuelConsumption": "22,2",
           "otvRate": 75,
+          "monthlyLease": 580409,
           "powerHP": 544,
           "isElectric": true,
           "driveType": "AWD"
@@ -5737,6 +5779,7 @@
           "brand": "BMW",
           "fuelConsumption": "2,8",
           "otvRate": 100,
+          "monthlyLease": 97790,
           "powerHP": 136,
           "powerHPSecondary": 109,
           "engineDisplacement": "1.5L",
@@ -5809,6 +5852,7 @@
           "brand": "BMW",
           "fuelConsumption": "16,7",
           "otvRate": 55,
+          "monthlyLease": 82859,
           "powerHP": 204,
           "isElectric": true
         },
@@ -6140,7 +6184,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "A 200",
@@ -7265,7 +7309,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -7983,7 +8027,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8185,7 +8229,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8607,7 +8651,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "HR-V Hybrid",
@@ -8641,7 +8685,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Ibiza",
@@ -8775,7 +8819,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Stonic",
@@ -9231,7 +9275,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "EX30",
@@ -9469,7 +9513,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-03-09",
+      "date": "2026-03-10",
       "vehicles": [
         {
           "model": "Egea Sedan",

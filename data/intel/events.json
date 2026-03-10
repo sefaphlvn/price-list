@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-09T08:48:18.447Z",
-  "date": "2026-03-09",
-  "previousDate": "2026-03-05",
+  "generatedAt": "2026-03-10T01:32:47.406Z",
+  "date": "2026-03-10",
+  "previousDate": "2026-03-09",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-03-09",
-    "totalDays": 41
+    "end": "2026-03-10",
+    "totalDays": 42
   },
   "summary": {
-    "totalEvents": 899,
-    "newVehicles": 189,
+    "totalEvents": 901,
+    "newVehicles": 191,
     "removedVehicles": 229,
     "priceIncreases": 399,
     "priceDecreases": 82,
@@ -17,6 +17,36 @@
     "avgPriceChangePercent": 1.97
   },
   "events": [
+    {
+      "id": "opel-grandland-edition-hybrid-1.2-145-(136hp)³-new-2026-03-10",
+      "type": "new",
+      "vehicleId": "opel-grandland-edition-hybrid-1.2-145-(136hp)³",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Grandland",
+      "trim": "Edition",
+      "engine": "Hybrid 1.2 145 (136HP)³",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "newPrice": 3102000,
+      "newPriceFormatted": "3.102.000 TL",
+      "date": "2026-03-10"
+    },
+    {
+      "id": "opel-grandland-gs-hybrid-1.2-145-(136hp)³-new-2026-03-10",
+      "type": "new",
+      "vehicleId": "opel-grandland-gs-hybrid-1.2-145-(136hp)³",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Grandland",
+      "trim": "GS",
+      "engine": "Hybrid 1.2 145 (136HP)³",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "newPrice": 3132000,
+      "newPriceFormatted": "3.132.000 TL",
+      "date": "2026-03-10"
+    },
     {
       "id": "skoda-škoda-scala-elite-1,0-tsi-115-ps-dsg-elite-1,0-tsi-115-ps-new-2026-03-09",
       "type": "new",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-09T08:48:18.847Z",
-  "date": "2026-03-09",
+  "generatedAt": "2026-03-10T01:32:47.972Z",
+  "date": "2026-03-10",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -3289,6 +3289,39 @@
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
+    },
+    {
+      "id": "opel-grandland",
+      "model": "Grandland",
+      "brand": "Opel",
+      "brandId": "opel",
+      "trims": [
+        {
+          "trim": "Edition",
+          "price": 3102000,
+          "priceFormatted": "3.102.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit"
+        },
+        {
+          "trim": "GS",
+          "price": 3132000,
+          "priceFormatted": "3.132.000 TL",
+          "stepFromBase": 30000,
+          "stepPercent": 0.9671179883945842,
+          "engine": "Hybrid 1.2 145 (136HP)³",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit"
+        }
+      ],
+      "basePrice": 3102000,
+      "topPrice": 3132000,
+      "priceSpread": 30000,
+      "priceSpreadPercent": 0.97,
+      "trimCount": 2
     },
     {
       "id": "opel-grandland-elektrik",
@@ -8544,6 +8577,16 @@
           "trimCount": 1
         },
         {
+          "brand": "Opel",
+          "brandId": "opel",
+          "model": "Grandland",
+          "basePrice": 3102000,
+          "topPrice": 3132000,
+          "basePriceFormatted": "₺3.102.000",
+          "topPriceFormatted": "₺3.132.000",
+          "trimCount": 2
+        },
+        {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "A 200",
@@ -9394,8 +9437,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8267670,
-      "avgTopPrice": 8529265
+      "avgBasePrice": 8227934,
+      "avgTopPrice": 8487748
     },
     {
       "segment": "SUV",
@@ -10454,9 +10497,9 @@
     }
   ],
   "summary": {
-    "totalModels": 232,
+    "totalModels": 233,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 333280,
-    "avgPriceSpreadPercent": 11.25
+    "avgPriceSpread": 331978,
+    "avgPriceSpreadPercent": 11.21
   }
 }

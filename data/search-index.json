@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-09T08:48:16.314Z",
-  "totalEntries": 508,
+  "generatedAt": "2026-03-10T01:32:44.338Z",
+  "totalEntries": 510,
   "entries": [
     {
       "id": "volkswagen-polo-life-1.0-tsi-95-ps",
@@ -2822,6 +2822,32 @@
       "price": 3106000,
       "priceFormatted": "3.106.000 TL",
       "searchText": "opel astra elektrik gs 115 kw elektrik"
+    },
+    {
+      "id": "opel-grandland-edition-hybrid-1.2-145-(136hp)³",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Grandland",
+      "trim": "Edition",
+      "engine": "Hybrid 1.2 145 (136HP)³",
+      "fuel": "Hybrid",
+      "transmission": "Otomatik",
+      "price": 3102000,
+      "priceFormatted": "3.102.000 TL",
+      "searchText": "opel grandland edition hybrid 1 2 145 136hp hybrid otomatik"
+    },
+    {
+      "id": "opel-grandland-gs-hybrid-1.2-145-(136hp)³",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Grandland",
+      "trim": "GS",
+      "engine": "Hybrid 1.2 145 (136HP)³",
+      "fuel": "Hybrid",
+      "transmission": "Otomatik",
+      "price": 3132000,
+      "priceFormatted": "3.132.000 TL",
+      "searchText": "opel grandland gs hybrid 1 2 145 136hp hybrid otomatik"
     },
     {
       "id": "opel-grandland-elektrik-edition-157-kw",
