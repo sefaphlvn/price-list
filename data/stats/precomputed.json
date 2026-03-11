@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-10T01:32:44.352Z",
+  "generatedAt": "2026-03-11T01:33:07.873Z",
   "totalVehicles": 510,
   "overallStats": {
-    "avgPrice": 4909545,
+    "avgPrice": 4909748,
     "minPrice": 544900,
     "maxPrice": 36933000,
     "medianPrice": 2997750
@@ -99,7 +99,7 @@
     {
       "name": "Ford",
       "vehicleCount": 21,
-      "avgPrice": 2495262,
+      "avgPrice": 2500205,
       "minPrice": 1842100,
       "maxPrice": 3305300,
       "medianPrice": 2379100
@@ -184,7 +184,7 @@
       "fuel": "Dizel",
       "count": 63,
       "percentage": 12.4,
-      "avgPrice": 4255179
+      "avgPrice": 4256827
     },
     {
       "fuel": "Hafif Hibrit",
@@ -216,7 +216,7 @@
       "transmission": "Otomatik",
       "count": 365,
       "percentage": 71.6,
-      "avgPrice": 5690764
+      "avgPrice": 5691048
     },
     {
       "transmission": "DSG",
@@ -404,7 +404,7 @@
         "year": "2025",
         "count": 175,
         "percentage": 43.6,
-        "avgPrice": 4141149
+        "avgPrice": 4141742
       },
       {
         "year": "2024",

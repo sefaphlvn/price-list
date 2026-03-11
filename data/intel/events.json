@@ -1,22 +1,62 @@
 {
-  "generatedAt": "2026-03-10T01:32:47.406Z",
-  "date": "2026-03-10",
-  "previousDate": "2026-03-09",
+  "generatedAt": "2026-03-11T01:33:10.541Z",
+  "date": "2026-03-11",
+  "previousDate": "2026-03-10",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-03-10",
-    "totalDays": 42
+    "end": "2026-03-11",
+    "totalDays": 43
   },
   "summary": {
-    "totalEvents": 901,
+    "totalEvents": 903,
     "newVehicles": 191,
     "removedVehicles": 229,
-    "priceIncreases": 399,
+    "priceIncreases": 401,
     "priceDecreases": 82,
-    "avgPriceChange": 126385,
+    "avgPriceChange": 126077,
     "avgPriceChangePercent": 1.97
   },
   "events": [
+    {
+      "id": "ford-focus-yeni-titanium-stil-1.5l-ecoblue-115ps-price_increase-2026-03-11",
+      "type": "price_increase",
+      "vehicleId": "ford-focus-yeni-titanium-stil-1.5l-ecoblue-115ps",
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Focus",
+      "trim": "Yeni Titanium Stil",
+      "engine": "1.5L EcoBlue 115PS",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "oldPrice": 2539500,
+      "newPrice": 2590100,
+      "oldPriceFormatted": "2.539.500 TL",
+      "newPriceFormatted": "2.590.100 TL",
+      "priceChange": 50600,
+      "priceChangePercent": 1.99,
+      "date": "2026-03-11",
+      "previousDate": "2026-03-10"
+    },
+    {
+      "id": "ford-focus-yeni-titanium-x-1.5l-ecoblue-115ps-price_increase-2026-03-11",
+      "type": "price_increase",
+      "vehicleId": "ford-focus-yeni-titanium-x-1.5l-ecoblue-115ps",
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Focus",
+      "trim": "Yeni Titanium X",
+      "engine": "1.5L EcoBlue 115PS",
+      "fuel": "Dizel",
+      "transmission": "Otomatik",
+      "oldPrice": 2669500,
+      "newPrice": 2722700,
+      "oldPriceFormatted": "2.669.500 TL",
+      "newPriceFormatted": "2.722.700 TL",
+      "priceChange": 53200,
+      "priceChangePercent": 1.99,
+      "date": "2026-03-11",
+      "previousDate": "2026-03-10"
+    },
     {
       "id": "opel-grandland-edition-hybrid-1.2-145-(136hp)³-new-2026-03-10",
       "type": "new",
@@ -16289,10 +16329,10 @@
       {
         "id": "ford",
         "name": "Ford",
-        "changeCount": 10,
-        "avgChange": 127700,
-        "avgChangePercent": 5.46,
-        "increaseCount": 7,
+        "changeCount": 12,
+        "avgChange": 115067,
+        "avgChangePercent": 4.88,
+        "increaseCount": 9,
         "decreaseCount": 3
       },
       {
@@ -16460,6 +16500,15 @@
         "decreaseCount": 0
       },
       {
+        "id": "ford-Focus",
+        "name": "Ford Focus",
+        "changeCount": 6,
+        "avgChange": 144017,
+        "avgChangePercent": 5.78,
+        "increaseCount": 4,
+        "decreaseCount": 2
+      },
+      {
         "id": "volkswagen-Golf",
         "name": "Volkswagen Golf",
         "changeCount": 5,
@@ -16494,15 +16543,6 @@
         "avgChangePercent": 2.41,
         "increaseCount": 5,
         "decreaseCount": 0
-      },
-      {
-        "id": "peugeot-Rifter",
-        "name": "Peugeot Rifter",
-        "changeCount": 5,
-        "avgChange": 44600,
-        "avgChangePercent": 2.32,
-        "increaseCount": 3,
-        "decreaseCount": 2
       }
     ]
   },

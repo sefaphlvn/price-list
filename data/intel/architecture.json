@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-10T01:32:47.972Z",
-  "date": "2026-03-10",
+  "generatedAt": "2026-03-11T01:33:11.017Z",
+  "date": "2026-03-11",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -6383,8 +6383,8 @@
       "trims": [
         {
           "trim": "Yeni Titanium Stil",
-          "price": 2539500,
-          "priceFormatted": "2.539.500 TL",
+          "price": 2590100,
+          "priceFormatted": "2.590.100 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5L EcoBlue 115PS",
@@ -6393,18 +6393,18 @@
         },
         {
           "trim": "Yeni Titanium X",
-          "price": 2669500,
-          "priceFormatted": "2.669.500 TL",
-          "stepFromBase": 130000,
-          "stepPercent": 5.119117936601693,
+          "price": 2722700,
+          "priceFormatted": "2.722.700 TL",
+          "stepFromBase": 132600,
+          "stepPercent": 5.119493455851125,
           "engine": "1.5L EcoBlue 115PS",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 2539500,
-      "topPrice": 2669500,
-      "priceSpread": 130000,
+      "basePrice": 2590100,
+      "topPrice": 2722700,
+      "priceSpread": 132600,
       "priceSpreadPercent": 5.12,
       "trimCount": 2
     },
@@ -9941,16 +9941,6 @@
           "trimCount": 3
         },
         {
-          "brand": "Ford",
-          "brandId": "ford",
-          "model": "Focus",
-          "basePrice": 2539500,
-          "topPrice": 2669500,
-          "basePriceFormatted": "₺2.539.500",
-          "topPriceFormatted": "₺2.669.500",
-          "trimCount": 2
-        },
-        {
           "brand": "Toyota",
           "brandId": "toyota",
           "model": "YENİ COROLLA HATCHBACK HYBRID",
@@ -9959,6 +9949,16 @@
           "basePriceFormatted": "₺2.542.000",
           "topPriceFormatted": "₺2.542.000",
           "trimCount": 1
+        },
+        {
+          "brand": "Ford",
+          "brandId": "ford",
+          "model": "Focus",
+          "basePrice": 2590100,
+          "topPrice": 2722700,
+          "basePriceFormatted": "₺2.590.100",
+          "topPriceFormatted": "₺2.722.700",
+          "trimCount": 2
         },
         {
           "brand": "Škoda",
@@ -10071,8 +10071,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5511180,
-      "avgTopPrice": 6083876
+      "avgBasePrice": 5513289,
+      "avgTopPrice": 6086093
     },
     {
       "segment": "Electric",
@@ -10499,7 +10499,7 @@
   "summary": {
     "totalModels": 233,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 331978,
+    "avgPriceSpread": 331989,
     "avgPriceSpreadPercent": 11.21
   }
 }
