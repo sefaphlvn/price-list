@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-11T01:33:11.017Z",
-  "date": "2026-03-11",
+  "generatedAt": "2026-03-12T01:33:14.914Z",
+  "date": "2026-03-12",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -711,29 +711,6 @@
       "trimCount": 1
     },
     {
-      "id": "skoda-škoda-fabia",
-      "model": "Škoda Fabia",
-      "brand": "Škoda",
-      "brandId": "skoda",
-      "trims": [
-        {
-          "trim": "Premium 1.0 TSI 115 PS DSG",
-          "price": 1759900,
-          "priceFormatted": "₺1.759.900",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "Premium 1.0 TSI 115 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        }
-      ],
-      "basePrice": 1759900,
-      "topPrice": 1759900,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
       "id": "skoda-škoda-scala",
       "model": "Škoda Scala",
       "brand": "Škoda",
@@ -767,123 +744,27 @@
       "trimCount": 2
     },
     {
-      "id": "skoda-škoda-octavia",
-      "model": "Škoda Octavia",
-      "brand": "Škoda",
-      "brandId": "skoda",
-      "trims": [
-        {
-          "trim": "Combi Sportline 1.5 TSI mHEV 150 PS DSG",
-          "price": 3307900,
-          "priceFormatted": "₺3.307.900",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "Combi Sportline 1.5 TSI mHEV 150 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        }
-      ],
-      "basePrice": 3307900,
-      "topPrice": 3307900,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
       "id": "skoda-škoda-superb",
       "model": "Škoda Superb",
       "brand": "Škoda",
       "brandId": "skoda",
       "trims": [
         {
-          "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
-          "price": 3530400,
-          "priceFormatted": "₺3.530.400",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "Premium 1.5 TSI mHEV 150 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        },
-        {
           "trim": "Prestige 1.5 TSI  mHEV 150 PS DSG",
           "price": 4151900,
           "priceFormatted": "₺4.151.900",
-          "stepFromBase": 621500,
-          "stepPercent": 17.60423748017222,
+          "stepFromBase": 0,
+          "stepPercent": 0,
           "engine": "Prestige 1.5 TSI  mHEV 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin"
-        },
-        {
-          "trim": "L&K Crystal 1.5 TSI mHEV 150 PS DSG",
-          "price": 4609900,
-          "priceFormatted": "₺4.609.900",
-          "stepFromBase": 1079500,
-          "stepPercent": 30.5772716972581,
-          "engine": "L&K Crystal 1.5 TSI mHEV 150 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "L&K Crystal 2.0 TSI 265 PS DSG 4x4",
-          "price": 6675900,
-          "priceFormatted": "₺6.675.900",
-          "stepFromBase": 3145500,
-          "stepPercent": 89.09755268524813,
-          "engine": "L&K Crystal 2.0 TSI 265 PS  4x4",
-          "transmission": "DSG",
-          "fuel": "Benzin"
         }
       ],
-      "basePrice": 3530400,
-      "topPrice": 6675900,
-      "priceSpread": 3145500,
-      "priceSpreadPercent": 89.1,
-      "trimCount": 4
-    },
-    {
-      "id": "skoda-škoda-kamiq",
-      "model": "Škoda Kamiq",
-      "brand": "Škoda",
-      "brandId": "skoda",
-      "trims": [
-        {
-          "trim": "Elite 1.0 TSI 115 PS DSG",
-          "price": 1900400,
-          "priceFormatted": "₺1.900.400",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "Elite 1.0 TSI 115 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Premium 1.0 TSI 115 PS DSG",
-          "price": 2197900,
-          "priceFormatted": "₺2.197.900",
-          "stepFromBase": 297500,
-          "stepPercent": 15.654599031782782,
-          "engine": "Premium 1.0 TSI 115 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
-          "price": 2622900,
-          "priceFormatted": "₺2.622.900",
-          "stepFromBase": 722500,
-          "stepPercent": 38.01831193432961,
-          "engine": "Monte Carlo 1.5 TSI 150 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        }
-      ],
-      "basePrice": 1900400,
-      "topPrice": 2622900,
-      "priceSpread": 722500,
-      "priceSpreadPercent": 38.02,
-      "trimCount": 3
+      "basePrice": 4151900,
+      "topPrice": 4151900,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "skoda-škoda-karoq",
@@ -916,39 +797,6 @@
       "topPrice": 3454900,
       "priceSpread": 105500,
       "priceSpreadPercent": 3.15,
-      "trimCount": 2
-    },
-    {
-      "id": "skoda-škoda-kodiaq",
-      "model": "Škoda Kodiaq",
-      "brand": "Škoda",
-      "brandId": "skoda",
-      "trims": [
-        {
-          "trim": "Prestige 1.5 TSI  mHEV 150 PS DSG",
-          "price": 4379900,
-          "priceFormatted": "₺4.379.900",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "Prestige 1.5 TSI  mHEV 150 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Sportline 1.5 TSI mHEV 150 PS DSG",
-          "price": 4546900,
-          "priceFormatted": "₺4.546.900",
-          "stepFromBase": 167000,
-          "stepPercent": 3.8128724400100458,
-          "engine": "Sportline 1.5 TSI mHEV 150 PS",
-          "transmission": "DSG",
-          "fuel": "Benzin"
-        }
-      ],
-      "basePrice": 4379900,
-      "topPrice": 4546900,
-      "priceSpread": 167000,
-      "priceSpreadPercent": 3.81,
       "trimCount": 2
     },
     {
@@ -6340,10 +6188,10 @@
         },
         {
           "trim": "Titanium",
-          "price": 2009300,
-          "priceFormatted": "2.009.300 TL",
-          "stepFromBase": 167200,
-          "stepPercent": 9.076597361706748,
+          "price": 2029300,
+          "priceFormatted": "2.029.300 TL",
+          "stepFromBase": 187200,
+          "stepPercent": 10.162314749470713,
           "engine": "1.0L EcoBoost 125PS",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
@@ -6360,19 +6208,19 @@
         },
         {
           "trim": "ST-Line X",
-          "price": 2202600,
-          "priceFormatted": "2.202.600 TL",
-          "stepFromBase": 360500,
-          "stepPercent": 19.57005591444547,
+          "price": 2224600,
+          "priceFormatted": "2.224.600 TL",
+          "stepFromBase": 382500,
+          "stepPercent": 20.76434504098583,
           "engine": "1.0L EcoBoost 155PS",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         }
       ],
       "basePrice": 1842100,
-      "topPrice": 2202600,
-      "priceSpread": 360500,
-      "priceSpreadPercent": 19.57,
+      "topPrice": 2224600,
+      "priceSpread": 382500,
+      "priceSpreadPercent": 20.76,
       "trimCount": 4
     },
     {
@@ -6562,19 +6410,19 @@
         },
         {
           "trim": "Premium",
-          "price": 2015200,
-          "priceFormatted": "2.015.200 TL",
-          "stepFromBase": 115100,
-          "stepPercent": 6.0575759170569965,
+          "price": 2055300,
+          "priceFormatted": "2.055.300 TL",
+          "stepFromBase": 155200,
+          "stepPercent": 8.167991158360087,
           "engine": "123KW",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
       "basePrice": 1900100,
-      "topPrice": 2015200,
-      "priceSpread": 115100,
-      "priceSpreadPercent": 6.06,
+      "topPrice": 2055300,
+      "priceSpread": 155200,
+      "priceSpreadPercent": 8.17,
       "trimCount": 2
     },
     {
@@ -8331,9 +8179,9 @@
           "brandId": "ford",
           "model": "Yeni Puma",
           "basePrice": 1842100,
-          "topPrice": 2202600,
+          "topPrice": 2224600,
           "basePriceFormatted": "₺1.842.100",
-          "topPriceFormatted": "₺2.202.600",
+          "topPriceFormatted": "₺2.224.600",
           "trimCount": 4
         },
         {
@@ -8351,20 +8199,10 @@
           "brandId": "ford",
           "model": "PUMA GEN-E",
           "basePrice": 1900100,
-          "topPrice": 2015200,
+          "topPrice": 2055300,
           "basePriceFormatted": "₺1.900.100",
-          "topPriceFormatted": "₺2.015.200",
+          "topPriceFormatted": "₺2.055.300",
           "trimCount": 2
-        },
-        {
-          "brand": "Škoda",
-          "brandId": "skoda",
-          "model": "Škoda Kamiq",
-          "basePrice": 1900400,
-          "topPrice": 2622900,
-          "basePriceFormatted": "₺1.900.400",
-          "topPriceFormatted": "₺2.622.900",
-          "trimCount": 3
         },
         {
           "brand": "Fiat",
@@ -9437,8 +9275,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8227934,
-      "avgTopPrice": 8487748
+      "avgBasePrice": 8276985,
+      "avgTopPrice": 8533693
     },
     {
       "segment": "SUV",
@@ -9724,16 +9562,6 @@
           "trimCount": 2
         },
         {
-          "brand": "Škoda",
-          "brandId": "skoda",
-          "model": "Škoda Kodiaq",
-          "basePrice": 4379900,
-          "topPrice": 4546900,
-          "basePriceFormatted": "₺4.379.900",
-          "topPriceFormatted": "₺4.546.900",
-          "trimCount": 2
-        },
-        {
           "brand": "BMW",
           "brandId": "bmw",
           "model": "BMW X1 sDrive20i",
@@ -9824,8 +9652,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 3736939,
-      "avgTopPrice": 4180116
+      "avgBasePrice": 3719562,
+      "avgTopPrice": 4170202
     },
     {
       "segment": "Sedan",
@@ -9961,16 +9789,6 @@
           "trimCount": 2
         },
         {
-          "brand": "Škoda",
-          "brandId": "skoda",
-          "model": "Škoda Octavia",
-          "basePrice": 3307900,
-          "topPrice": 3307900,
-          "basePriceFormatted": "₺3.307.900",
-          "topPriceFormatted": "₺3.307.900",
-          "trimCount": 1
-        },
-        {
           "brand": "Volkswagen",
           "brandId": "volkswagen",
           "model": "Passat",
@@ -9981,16 +9799,6 @@
           "trimCount": 11
         },
         {
-          "brand": "Škoda",
-          "brandId": "skoda",
-          "model": "Škoda Superb",
-          "basePrice": 3530400,
-          "topPrice": 6675900,
-          "basePriceFormatted": "₺3.530.400",
-          "topPriceFormatted": "₺6.675.900",
-          "trimCount": 4
-        },
-        {
           "brand": "Volvo",
           "brandId": "volvo",
           "model": "EC40",
@@ -9998,6 +9806,16 @@
           "topPrice": 4020576,
           "basePriceFormatted": "₺4.020.576",
           "topPriceFormatted": "₺4.020.576",
+          "trimCount": 1
+        },
+        {
+          "brand": "Škoda",
+          "brandId": "skoda",
+          "model": "Škoda Superb",
+          "basePrice": 4151900,
+          "topPrice": 4151900,
+          "basePriceFormatted": "₺4.151.900",
+          "topPriceFormatted": "₺4.151.900",
           "trimCount": 1
         },
         {
@@ -10071,8 +9889,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5513289,
-      "avgTopPrice": 6086093
+      "avgBasePrice": 5636197,
+      "avgTopPrice": 6097145
     },
     {
       "segment": "Electric",
@@ -10287,16 +10105,6 @@
         {
           "brand": "Škoda",
           "brandId": "skoda",
-          "model": "Škoda Fabia",
-          "basePrice": 1759900,
-          "topPrice": 1759900,
-          "basePriceFormatted": "₺1.759.900",
-          "topPriceFormatted": "₺1.759.900",
-          "trimCount": 1
-        },
-        {
-          "brand": "Škoda",
-          "brandId": "skoda",
           "model": "Škoda Scala",
           "basePrice": 1785900,
           "topPrice": 2372900,
@@ -10405,8 +10213,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 2487353,
-      "avgTopPrice": 2718487
+      "avgBasePrice": 2539314,
+      "avgTopPrice": 2786957
     },
     {
       "segment": "MPV",
@@ -10497,9 +10305,9 @@
     }
   ],
   "summary": {
-    "totalModels": 233,
+    "totalModels": 229,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 331989,
-    "avgPriceSpreadPercent": 11.21
+    "avgPriceSpread": 320439,
+    "avgPriceSpreadPercent": 10.85
   }
 }
