@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-12T01:33:11.904Z",
-  "totalEntries": 500,
+  "generatedAt": "2026-03-13T01:32:57.607Z",
+  "totalEntries": 504,
   "entries": [
     {
       "id": "volkswagen-polo-life-1.0-tsi-95-ps",
@@ -833,6 +833,19 @@
       "price": 1780000,
       "priceFormatted": "₺1.780.000,00",
       "searchText": "renault yeni duster evolution evolution eco g 120 hp lpg manuel"
+    },
+    {
+      "id": "renault-yeni-duster-evolution-evolution-turbo-tce-edc-145-hp",
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Yeni Duster",
+      "trim": "evolution",
+      "engine": "evolution Turbo Tce EDC 145 hp",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "price": 1904999.99,
+      "priceFormatted": "₺1.904.999,99",
+      "searchText": "renault yeni duster evolution evolution turbo tce edc 145 hp benzin otomatik"
     },
     {
       "id": "renault-yeni-duster-evolution-evolution-hybrid-4x4-lpg-150-hp",
@@ -2819,8 +2832,8 @@
       "engine": "83 kW Elektrikli Motor Uzun Menzil",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 1707000,
-      "priceFormatted": "1.707.000 TL",
+      "price": 1800000,
+      "priceFormatted": "1.800.000 TL",
       "searchText": "citroen elektrikli e c3 aircross max 83 kw elektrikli motor uzun menzil elektrik otomatik"
     },
     {
@@ -5227,6 +5240,45 @@
       "price": 1750000,
       "priceFormatted": "₺1.750.000,00",
       "searchText": "dacia yeni sandero stepway extreme stepway extreme eco g 120 auto lpg otomatik"
+    },
+    {
+      "id": "dacia-yeni-jogger-extreme-extreme-tce-110---7-koltuklu",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Jogger",
+      "trim": "Extreme",
+      "engine": "extreme TCe 110 - 7 koltuklu",
+      "fuel": "Benzin",
+      "transmission": "Manuel",
+      "price": 1599000,
+      "priceFormatted": "₺1.599.000,00",
+      "searchText": "dacia yeni jogger extreme extreme tce 110 7 koltuklu benzin manuel"
+    },
+    {
+      "id": "dacia-yeni-jogger-extreme-extreme-eco-g-120---5-koltuklu",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Jogger",
+      "trim": "Extreme",
+      "engine": "extreme Eco-G 120 - 5 koltuklu",
+      "fuel": "LPG",
+      "transmission": "Manuel",
+      "price": 1649000,
+      "priceFormatted": "₺1.649.000,00",
+      "searchText": "dacia yeni jogger extreme extreme eco g 120 5 koltuklu lpg manuel"
+    },
+    {
+      "id": "dacia-yeni-jogger-extreme-extreme-eco-g-120-auto---7-koltuklu",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Jogger",
+      "trim": "Extreme",
+      "engine": "extreme Eco-G 120 auto - 7 koltuklu",
+      "fuel": "LPG",
+      "transmission": "Otomatik",
+      "price": 1799000,
+      "priceFormatted": "₺1.799.000,00",
+      "searchText": "dacia yeni jogger extreme extreme eco g 120 auto 7 koltuklu lpg otomatik"
     },
     {
       "id": "nissan-qashqai-designpack-1.3-dig-t-mild-hybrid-158ps",

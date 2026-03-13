@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-12T01:33:11.885Z",
-  "totalVehicles": 500,
+  "generatedAt": "2026-03-13T01:32:57.592Z",
+  "totalVehicles": 504,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1585,7 +1585,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -1917,6 +1917,43 @@
           "vehicleCategory": "Binek",
           "otvIncentivePrice": 1780000,
           "powerHP": 120
+        },
+        {
+          "model": "Yeni Duster",
+          "trim": "evolution",
+          "engine": "evolution Turbo Tce EDC 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.904.999,99",
+          "priceNumeric": 1904999.99,
+          "brand": "Renault",
+          "modelYear": "2026",
+          "otvRate": 75,
+          "netPrice": 877235.71,
+          "otvAmount": 657926.78,
+          "kdvAmount": 307032.5,
+          "optionalEquipment": [
+            {
+              "name": "Yedek Lastik",
+              "price": 14000
+            },
+            {
+              "name": "Metalik Renk",
+              "price": 15000
+            },
+            {
+              "name": "Modüler Tavan Barı",
+              "price": 7000
+            },
+            {
+              "name": "Sis Farı",
+              "price": 3500
+            }
+          ],
+          "vehicleCategory": "Binek",
+          "otvIncentivePrice": 1904999.99,
+          "powerHP": 145,
+          "engineType": "TCe"
         },
         {
           "model": "Yeni Duster",
@@ -2451,7 +2488,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3114,7 +3151,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "i20",
@@ -3547,7 +3584,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "E-208",
@@ -3946,7 +3983,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "ATTO 3",
@@ -4068,7 +4105,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4381,7 +4418,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -4467,10 +4504,10 @@
           "engine": "83 kW Elektrikli Motor Uzun Menzil",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.707.000 TL",
-          "priceNumeric": 1707000,
+          "priceRaw": "1.800.000 TL",
+          "priceNumeric": 1800000,
           "brand": "Citroën",
-          "priceListNumeric": 1707000,
+          "priceListNumeric": 1800000,
           "powerKW": 83,
           "isElectric": true,
           "hasLongRange": true
@@ -4887,7 +4924,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -5870,7 +5907,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "A 200",
@@ -6995,7 +7032,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -7713,7 +7750,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -7910,12 +7947,101 @@
           "vehicleCategory": "Binek",
           "otvIncentivePrice": 1750000,
           "powerHP": 120
+        },
+        {
+          "model": "Yeni Jogger",
+          "trim": "Extreme",
+          "engine": "extreme TCe 110 - 7 koltuklu",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.599.000,00",
+          "priceNumeric": 1599000,
+          "brand": "Dacia",
+          "modelYear": "2026",
+          "otvRate": 75,
+          "netPrice": 732741.9,
+          "otvAmount": 549556.43,
+          "kdvAmount": 256459.67,
+          "optionalEquipment": [
+            {
+              "name": "Yedek Lastik",
+              "price": 14000
+            },
+            {
+              "name": "Metalik Renk",
+              "price": 15000
+            },
+            {
+              "name": "Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
+              "price": 45000
+            }
+          ],
+          "vehicleCategory": "Binek",
+          "otvIncentivePrice": 1599000,
+          "powerHP": 110,
+          "engineType": "TCe"
+        },
+        {
+          "model": "Yeni Jogger",
+          "trim": "Extreme",
+          "engine": "extreme Eco-G 120 - 5 koltuklu",
+          "transmission": "Manuel",
+          "fuel": "LPG",
+          "priceRaw": "₺1.649.000,00",
+          "priceNumeric": 1649000,
+          "brand": "Dacia",
+          "modelYear": "2026",
+          "otvRate": 75,
+          "netPrice": 756551.43,
+          "otvAmount": 567413.57,
+          "kdvAmount": 264793,
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 15000
+            },
+            {
+              "name": "Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
+              "price": 45000
+            }
+          ],
+          "vehicleCategory": "Binek",
+          "otvIncentivePrice": 1649000,
+          "powerHP": 120
+        },
+        {
+          "model": "Yeni Jogger",
+          "trim": "Extreme",
+          "engine": "extreme Eco-G 120 auto - 7 koltuklu",
+          "transmission": "Otomatik",
+          "fuel": "LPG",
+          "priceRaw": "₺1.799.000,00",
+          "priceNumeric": 1799000,
+          "brand": "Dacia",
+          "modelYear": "2026",
+          "otvRate": 75,
+          "netPrice": 827980,
+          "otvAmount": 620985,
+          "kdvAmount": 289793,
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 15000
+            },
+            {
+              "name": "Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
+              "price": 45000
+            }
+          ],
+          "vehicleCategory": "Binek",
+          "otvIncentivePrice": 1799000,
+          "powerHP": 120
         }
       ]
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8337,7 +8463,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "HR-V Hybrid",
@@ -8371,7 +8497,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Ibiza",
@@ -8505,7 +8631,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Stonic",
@@ -8961,7 +9087,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "EX30",
@@ -9199,7 +9325,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-03-12",
+      "date": "2026-03-13",
       "vehicles": [
         {
           "model": "Egea Sedan",

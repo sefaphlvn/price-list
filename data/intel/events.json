@@ -1,22 +1,102 @@
 {
-  "generatedAt": "2026-03-12T01:33:14.454Z",
-  "date": "2026-03-12",
-  "previousDate": "2026-03-11",
+  "generatedAt": "2026-03-13T01:33:00.295Z",
+  "date": "2026-03-13",
+  "previousDate": "2026-03-12",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-03-12",
-    "totalDays": 44
+    "end": "2026-03-13",
+    "totalDays": 45
   },
   "summary": {
-    "totalEvents": 916,
-    "newVehicles": 191,
+    "totalEvents": 921,
+    "newVehicles": 195,
     "removedVehicles": 239,
-    "priceIncreases": 404,
+    "priceIncreases": 405,
     "priceDecreases": 82,
-    "avgPriceChange": 125467,
+    "avgPriceChange": 125401,
     "avgPriceChangePercent": 1.97
   },
   "events": [
+    {
+      "id": "renault-yeni-duster-evolution-evolution-turbo-tce-edc-145-hp-new-2026-03-13",
+      "type": "new",
+      "vehicleId": "renault-yeni-duster-evolution-evolution-turbo-tce-edc-145-hp",
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Yeni Duster",
+      "trim": "evolution",
+      "engine": "evolution Turbo Tce EDC 145 hp",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "newPrice": 1904999.99,
+      "newPriceFormatted": "₺1.904.999,99",
+      "date": "2026-03-13"
+    },
+    {
+      "id": "citroen-elektrikli-ë-c3-aircross-max-83-kw-elektrikli-motor-uzun-menzil-price_increase-2026-03-13",
+      "type": "price_increase",
+      "vehicleId": "citroën-elektrikli-ë-c3-aircross-max-83-kw-elektrikli-motor-uzun-menzil",
+      "brand": "Citroën",
+      "brandId": "citroen",
+      "model": "Elektrikli ë-C3 Aircross",
+      "trim": "Max",
+      "engine": "83 kW Elektrikli Motor Uzun Menzil",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "oldPrice": 1707000,
+      "newPrice": 1800000,
+      "oldPriceFormatted": "1.707.000 TL",
+      "newPriceFormatted": "1.800.000 TL",
+      "priceChange": 93000,
+      "priceChangePercent": 5.45,
+      "date": "2026-03-13",
+      "previousDate": "2026-03-12"
+    },
+    {
+      "id": "dacia-yeni-jogger-extreme-extreme-tce-110---7-koltuklu-new-2026-03-13",
+      "type": "new",
+      "vehicleId": "dacia-yeni-jogger-extreme-extreme-tce-110---7-koltuklu",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Jogger",
+      "trim": "Extreme",
+      "engine": "extreme TCe 110 - 7 koltuklu",
+      "fuel": "Benzin",
+      "transmission": "Manuel",
+      "newPrice": 1599000,
+      "newPriceFormatted": "₺1.599.000,00",
+      "date": "2026-03-13"
+    },
+    {
+      "id": "dacia-yeni-jogger-extreme-extreme-eco-g-120---5-koltuklu-new-2026-03-13",
+      "type": "new",
+      "vehicleId": "dacia-yeni-jogger-extreme-extreme-eco-g-120---5-koltuklu",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Jogger",
+      "trim": "Extreme",
+      "engine": "extreme Eco-G 120 - 5 koltuklu",
+      "fuel": "LPG",
+      "transmission": "Manuel",
+      "newPrice": 1649000,
+      "newPriceFormatted": "₺1.649.000,00",
+      "date": "2026-03-13"
+    },
+    {
+      "id": "dacia-yeni-jogger-extreme-extreme-eco-g-120-auto---7-koltuklu-new-2026-03-13",
+      "type": "new",
+      "vehicleId": "dacia-yeni-jogger-extreme-extreme-eco-g-120-auto---7-koltuklu",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Jogger",
+      "trim": "Extreme",
+      "engine": "extreme Eco-G 120 auto - 7 koltuklu",
+      "fuel": "LPG",
+      "transmission": "Otomatik",
+      "newPrice": 1799000,
+      "newPriceFormatted": "₺1.799.000,00",
+      "date": "2026-03-13"
+    },
     {
       "id": "skoda-škoda-fabia-premium-1.0-tsi-115-ps-dsg-premium-1.0-tsi-115-ps-removed-2026-03-12",
       "type": "removed",
@@ -16457,6 +16537,15 @@
         "decreaseCount": 15
       },
       {
+        "id": "citroen",
+        "name": "Citroën",
+        "changeCount": 43,
+        "avgChange": 45465,
+        "avgChangePercent": 2.29,
+        "increaseCount": 29,
+        "decreaseCount": 14
+      },
+      {
         "id": "volkswagen",
         "name": "Volkswagen",
         "changeCount": 42,
@@ -16464,15 +16553,6 @@
         "avgChangePercent": 3.22,
         "increaseCount": 42,
         "decreaseCount": 0
-      },
-      {
-        "id": "citroen",
-        "name": "Citroën",
-        "changeCount": 42,
-        "avgChange": 44333,
-        "avgChangePercent": 2.22,
-        "increaseCount": 28,
-        "decreaseCount": 14
       },
       {
         "id": "fiat",
