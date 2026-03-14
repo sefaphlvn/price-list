@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-13T01:33:00.782Z",
-  "date": "2026-03-13",
+  "generatedAt": "2026-03-14T01:33:21.143Z",
+  "date": "2026-03-14",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -3298,20 +3298,30 @@
       "trims": [
         {
           "trim": "Max",
-          "price": 1800000,
-          "priceFormatted": "1.800.000 TL",
+          "price": 1683000,
+          "priceFormatted": "1.683.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
+          "engine": "83 kW Elektrikli Motor Standart Menzil",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Max",
+          "price": 1800000,
+          "priceFormatted": "1.800.000 TL",
+          "stepFromBase": 117000,
+          "stepPercent": 6.951871657754011,
           "engine": "83 kW Elektrikli Motor Uzun Menzil",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 1800000,
+      "basePrice": 1683000,
       "topPrice": 1800000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
+      "priceSpread": 117000,
+      "priceSpreadPercent": 6.95,
+      "trimCount": 2
     },
     {
       "id": "citroen-c4",
@@ -4937,29 +4947,6 @@
       "priceSpread": 138000,
       "priceSpreadPercent": 1.99,
       "trimCount": 2
-    },
-    {
-      "id": "mercedes-mercedes-amg-cla-45-s-4matic+",
-      "model": "Mercedes-AMG CLA 45 S 4MATIC+",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "trims": [
-        {
-          "trim": "Final Edition",
-          "price": 7481000,
-          "priceFormatted": "7.481.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "2.0L 421 HP",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
-        }
-      ],
-      "basePrice": 7481000,
-      "topPrice": 7481000,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
     },
     {
       "id": "mercedes-mercedes-amg-cla-45-s-4matic+-shooting-brake",
@@ -8780,16 +8767,6 @@
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
-          "model": "Mercedes-AMG CLA 45 S 4MATIC+",
-          "basePrice": 7481000,
-          "topPrice": 7481000,
-          "basePriceFormatted": "₺7.481.000",
-          "topPriceFormatted": "₺7.481.000",
-          "trimCount": 1
-        },
-        {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
           "model": "E 180",
           "basePrice": 7525000,
           "topPrice": 7925000,
@@ -9328,8 +9305,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8276985,
-      "avgTopPrice": 8533693
+      "avgBasePrice": 8283204,
+      "avgTopPrice": 8541917
     },
     {
       "segment": "SUV",
@@ -9343,6 +9320,16 @@
           "basePriceFormatted": "₺1.599.000",
           "topPriceFormatted": "₺1.799.000",
           "trimCount": 3
+        },
+        {
+          "brand": "Citroën",
+          "brandId": "citroen",
+          "model": "Elektrikli ë-C3 Aircross",
+          "basePrice": 1683000,
+          "topPrice": 1800000,
+          "basePriceFormatted": "₺1.683.000",
+          "topPriceFormatted": "₺1.800.000",
+          "trimCount": 2
         },
         {
           "brand": "Nissan",
@@ -9363,16 +9350,6 @@
           "basePriceFormatted": "₺1.780.000",
           "topPriceFormatted": "₺2.567.000",
           "trimCount": 6
-        },
-        {
-          "brand": "Citroën",
-          "brandId": "citroen",
-          "model": "Elektrikli ë-C3 Aircross",
-          "basePrice": 1800000,
-          "topPrice": 1800000,
-          "basePriceFormatted": "₺1.800.000",
-          "topPriceFormatted": "₺1.800.000",
-          "trimCount": 1
         },
         {
           "brand": "Citroën",
@@ -9715,7 +9692,7 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 3666205,
+      "avgBasePrice": 3663126,
       "avgTopPrice": 4110250
     },
     {
@@ -10368,9 +10345,9 @@
     }
   ],
   "summary": {
-    "totalModels": 230,
+    "totalModels": 229,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 319916,
-    "avgPriceSpreadPercent": 10.85
+    "avgPriceSpread": 321824,
+    "avgPriceSpreadPercent": 10.93
   }
 }

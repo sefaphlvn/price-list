@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-13T01:32:57.592Z",
+  "generatedAt": "2026-03-14T01:33:18.228Z",
   "totalVehicles": 504,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1585,7 +1585,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -2488,7 +2488,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3151,7 +3151,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "i20",
@@ -3584,7 +3584,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "E-208",
@@ -3983,7 +3983,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "ATTO 3",
@@ -4105,7 +4105,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4418,7 +4418,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -4497,6 +4497,19 @@
           "engineType": "Hybrid",
           "transmissionType": "EDCS6",
           "isHybrid": true
+        },
+        {
+          "model": "Elektrikli ë-C3 Aircross",
+          "trim": "Max",
+          "engine": "83 kW Elektrikli Motor Standart Menzil",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik",
+          "priceRaw": "1.683.000 TL",
+          "priceNumeric": 1683000,
+          "brand": "Citroën",
+          "priceListNumeric": 1683000,
+          "powerKW": 83,
+          "isElectric": true
         },
         {
           "model": "Elektrikli ë-C3 Aircross",
@@ -4924,7 +4937,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -5907,7 +5920,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "A 200",
@@ -5953,23 +5966,6 @@
           "otvRate": 170,
           "modelYear": "2025",
           "priceListNumeric": 2135802,
-          "powerHP": 421,
-          "engineDisplacement": "2.0L",
-          "driveType": "AWD",
-          "isAMG": true
-        },
-        {
-          "model": "Mercedes-AMG CLA 45 S 4MATIC+",
-          "trim": "Final Edition",
-          "engine": "2.0L 421 HP",
-          "transmission": "Otomatik",
-          "fuel": "Benzin",
-          "priceRaw": "7.481.000 TL",
-          "priceNumeric": 7481000,
-          "brand": "Mercedes-Benz",
-          "otvRate": 170,
-          "modelYear": "2025",
-          "priceListNumeric": 2308951,
           "powerHP": 421,
           "engineDisplacement": "2.0L",
           "driveType": "AWD",
@@ -7032,7 +7028,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -7750,7 +7746,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -7972,7 +7968,7 @@
               "price": 15000
             },
             {
-              "name": "Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
+              "name": "Sürüş Paketi: Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
               "price": 45000
             }
           ],
@@ -8001,7 +7997,7 @@
               "price": 15000
             },
             {
-              "name": "Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
+              "name": "Sürüş Paketi: Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
               "price": 45000
             }
           ],
@@ -8029,7 +8025,7 @@
               "price": 15000
             },
             {
-              "name": "Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
+              "name": "Sürüş Paketi: Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
               "price": 45000
             }
           ],
@@ -8041,7 +8037,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8463,7 +8459,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "HR-V Hybrid",
@@ -8497,7 +8493,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Ibiza",
@@ -8631,7 +8627,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Stonic",
@@ -9087,7 +9083,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "EX30",
@@ -9325,7 +9321,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-03-13",
+      "date": "2026-03-14",
       "vehicles": [
         {
           "model": "Egea Sedan",

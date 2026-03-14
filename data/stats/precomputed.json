@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-03-13T01:32:57.625Z",
+  "generatedAt": "2026-03-14T01:33:18.255Z",
   "totalVehicles": 504,
   "overallStats": {
-    "avgPrice": 4911839,
+    "avgPrice": 4900335,
     "minPrice": 544900,
     "maxPrice": 36933000,
-    "medianPrice": 2950600
+    "medianPrice": 2944350
   },
   "brandStats": [
     {
       "name": "Mercedes-Benz",
-      "vehicleCount": 70,
-      "avgPrice": 11437621,
+      "vehicleCount": 69,
+      "avgPrice": 11494964,
       "minPrice": 3222000,
       "maxPrice": 36933000,
-      "medianPrice": 8438500
+      "medianPrice": 8574000
     },
     {
       "name": "BMW",
@@ -50,11 +50,11 @@
     },
     {
       "name": "Citroën",
-      "vehicleCount": 33,
-      "avgPrice": 1819273,
+      "vehicleCount": 34,
+      "avgPrice": 1815265,
       "minPrice": 585000,
       "maxPrice": 3200000,
-      "medianPrice": 1862000
+      "medianPrice": 1854500
     },
     {
       "name": "Kia",
@@ -164,15 +164,15 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 198,
-      "percentage": 39.3,
-      "avgPrice": 5565333
+      "count": 197,
+      "percentage": 39.1,
+      "avgPrice": 5555609
     },
     {
       "fuel": "Elektrik",
-      "count": 121,
-      "percentage": 24,
-      "avgPrice": 4615202
+      "count": 122,
+      "percentage": 24.2,
+      "avgPrice": 4591168
     },
     {
       "fuel": "Hibrit",
@@ -216,7 +216,7 @@
       "transmission": "Otomatik",
       "count": 367,
       "percentage": 72.8,
-      "avgPrice": 5670604
+      "avgPrice": 5654805
     },
     {
       "transmission": "DSG",
@@ -255,8 +255,8 @@
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 228,
-      "percentage": 45.2
+      "count": 229,
+      "percentage": 45.4
     },
     {
       "segment": "premium",
@@ -269,17 +269,17 @@
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
-      "count": 137,
-      "percentage": 27.2
+      "count": 136,
+      "percentage": 27
     }
   ],
   "otvStats": {
-    "avgOtvRate": 110.5,
+    "avgOtvRate": 110.3,
     "distribution": [
       {
         "rate": 1,
         "count": 8,
-        "percentage": 3.3,
+        "percentage": 3.4,
         "avgPrice": 3653125
       },
       {
@@ -297,7 +297,7 @@
       {
         "rate": 55,
         "count": 18,
-        "percentage": 7.5,
+        "percentage": 7.6,
         "avgPrice": 4863517
       },
       {
@@ -338,9 +338,9 @@
       },
       {
         "rate": 170,
-        "count": 50,
-        "percentage": 20.9,
-        "avgPrice": 8612714
+        "count": 49,
+        "percentage": 20.6,
+        "avgPrice": 8635810
       },
       {
         "rate": 220,
@@ -352,8 +352,8 @@
     "byBrand": [
       {
         "brand": "Mercedes-Benz",
-        "avgOtvRate": 141.9,
-        "count": 70
+        "avgOtvRate": 141.4,
+        "count": 69
       },
       {
         "brand": "BMW",
@@ -397,14 +397,14 @@
       {
         "year": "2026",
         "count": 219,
-        "percentage": 55.4,
+        "percentage": 55.6,
         "avgPrice": 4929665
       },
       {
         "year": "2025",
-        "count": 165,
-        "percentage": 41.8,
-        "avgPrice": 4177411
+        "count": 164,
+        "percentage": 41.6,
+        "avgPrice": 4157267
       },
       {
         "year": "2024",
