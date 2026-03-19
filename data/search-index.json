@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-18T01:33:32.724Z",
-  "totalEntries": 500,
+  "generatedAt": "2026-03-19T01:34:02.322Z",
+  "totalEntries": 504,
   "entries": [
     {
       "id": "volkswagen-polo-life-1.0-tsi-95-ps",
@@ -2616,6 +2616,58 @@
       "searchText": "opel frontera elektrik gs 54 kwh batarya uzun menzil elektrik"
     },
     {
+      "id": "opel-mokka-edition-1.2-136-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Mokka",
+      "trim": "Edition",
+      "engine": "1.2 136 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Manuel",
+      "price": 1988000,
+      "priceFormatted": "1.988.000 TL",
+      "searchText": "opel mokka edition 1 2 136 hp benzin benzin manuel"
+    },
+    {
+      "id": "opel-mokka-edition-1.2-130-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Mokka",
+      "trim": "Edition",
+      "engine": "1.2 130 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "price": 2085000,
+      "priceFormatted": "2.085.000 TL",
+      "searchText": "opel mokka edition 1 2 130 hp benzin benzin otomatik"
+    },
+    {
+      "id": "opel-mokka-gs-1.2-130-hp-benzin",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Mokka",
+      "trim": "GS",
+      "engine": "1.2 130 HP Benzin",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "price": 2208000,
+      "priceFormatted": "2.208.000 TL",
+      "searchText": "opel mokka gs 1 2 130 hp benzin benzin otomatik"
+    },
+    {
+      "id": "opel-mokka-gs-hybrid-1.2-145-(136-hp)²",
+      "brand": "Opel",
+      "brandId": "opel",
+      "model": "Mokka",
+      "trim": "GS",
+      "engine": "Hybrid 1.2 145 (136 HP)²",
+      "fuel": "Hybrid",
+      "transmission": "Otomatik",
+      "price": 2650000,
+      "priceFormatted": "2.650.000 TL",
+      "searchText": "opel mokka gs hybrid 1 2 145 136 hp hybrid otomatik"
+    },
+    {
       "id": "opel-astra-gs-1.2-130-hp-benzin",
       "brand": "Opel",
       "brandId": "opel",
@@ -3758,19 +3810,6 @@
       "price": 7131900,
       "priceFormatted": "7.131.900 TL",
       "searchText": "bmw yeni bmw x3 20 m sport 1 6l 190 11 hp mild hybrid otomatik"
-    },
-    {
-      "id": "bmw-yeni-bmw-x3-20d-xdrive-m-sport-2.0l-197+11-hp",
-      "brand": "BMW",
-      "brandId": "bmw",
-      "model": "Yeni BMW X3 20d xDrive",
-      "trim": "M Sport",
-      "engine": "2.0L 197+11 HP",
-      "fuel": "Mild Hybrid",
-      "transmission": "Otomatik",
-      "price": 8918600,
-      "priceFormatted": "8.918.600 TL",
-      "searchText": "bmw yeni bmw x3 20d xdrive m sport 2 0l 197 11 hp mild hybrid otomatik"
     },
     {
       "id": "bmw-bmw-z4-sdrive30i-m-sport-2.0l-258-hp",
@@ -5578,6 +5617,19 @@
       "price": 2730000,
       "priceFormatted": "2.730.000 TL",
       "searchText": "honda hr v hybrid advance 1 5l hibrit otomatik hybrid otomatik"
+    },
+    {
+      "id": "seat-yeni̇-style-plus-1.0-tsi-116-ps",
+      "brand": "SEAT",
+      "brandId": "seat",
+      "model": "YENİ",
+      "trim": "Style Plus",
+      "engine": "1.0 TSI 116 PS",
+      "fuel": "Benzin",
+      "transmission": "Otomatik (DSG)",
+      "price": 1785000,
+      "priceFormatted": "1.785.000 TL",
+      "searchText": "seat yeni style plus 1 0 tsi 116 ps benzin otomatik dsg"
     },
     {
       "id": "seat-ibiza-style-1.0-ecotsi-115-ps",

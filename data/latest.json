@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-18T01:33:32.709Z",
-  "totalVehicles": 500,
+  "generatedAt": "2026-03-19T01:34:02.307Z",
+  "totalVehicles": 504,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1585,7 +1585,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -2488,7 +2488,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3151,7 +3151,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "i20",
@@ -3584,7 +3584,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "E-208",
@@ -3983,7 +3983,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "ATTO 3",
@@ -4105,7 +4105,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4255,6 +4255,64 @@
           "hasLongRange": true
         },
         {
+          "model": "Mokka",
+          "trim": "Edition",
+          "engine": "1.2 136 HP Benzin",
+          "transmission": "Manuel",
+          "fuel": "Benzin",
+          "priceRaw": "1.988.000 TL",
+          "priceNumeric": 1988000,
+          "brand": "Opel",
+          "modelYear": 2026,
+          "priceListNumeric": 1988000,
+          "powerHP": 136,
+          "engineDisplacement": "1.2L"
+        },
+        {
+          "model": "Mokka",
+          "trim": "Edition",
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.085.000 TL",
+          "priceNumeric": 2085000,
+          "brand": "Opel",
+          "modelYear": 2025,
+          "priceListNumeric": 2085000,
+          "powerHP": 130,
+          "engineDisplacement": "1.2L"
+        },
+        {
+          "model": "Mokka",
+          "trim": "GS",
+          "engine": "1.2 130 HP Benzin",
+          "transmission": "Otomatik",
+          "fuel": "Benzin",
+          "priceRaw": "2.208.000 TL",
+          "priceNumeric": 2208000,
+          "brand": "Opel",
+          "modelYear": 2025,
+          "priceListNumeric": 2208000,
+          "powerHP": 130,
+          "engineDisplacement": "1.2L"
+        },
+        {
+          "model": "Mokka",
+          "trim": "GS",
+          "engine": "Hybrid 1.2 145 (136 HP)²",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "2.650.000 TL",
+          "priceNumeric": 2650000,
+          "brand": "Opel",
+          "modelYear": 2026,
+          "priceListNumeric": 2523000,
+          "priceCampaignNumeric": 2190000,
+          "powerHP": 136,
+          "engineDisplacement": "1.2L",
+          "isHybrid": true
+        },
+        {
           "model": "Astra",
           "trim": "GS",
           "engine": "1.2 130 HP Benzin",
@@ -4360,7 +4418,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -4879,7 +4937,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -5643,24 +5701,6 @@
           "isMildHybrid": true
         },
         {
-          "model": "Yeni BMW X3 20d xDrive",
-          "trim": "M Sport",
-          "engine": "2.0L 197+11 HP",
-          "transmission": "Otomatik",
-          "fuel": "Mild Hybrid",
-          "priceRaw": "8.918.600 TL",
-          "priceNumeric": 8918600,
-          "brand": "BMW",
-          "fuelConsumption": "6,2",
-          "otvRate": 170,
-          "powerHP": 197,
-          "powerHPSecondary": 11,
-          "engineDisplacement": "2.0L",
-          "isHybrid": true,
-          "isMildHybrid": true,
-          "driveType": "AWD"
-        },
-        {
           "model": "BMW Z4 sDrive30i",
           "trim": "M Sport",
           "engine": "2.0L 258 HP",
@@ -5862,7 +5902,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "A 200",
@@ -6970,7 +7010,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -7688,7 +7728,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -7979,7 +8019,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8401,7 +8441,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "HR-V Hybrid",
@@ -8435,8 +8475,22 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
+        {
+          "model": "YENİ",
+          "trim": "Style Plus",
+          "engine": "1.0 TSI 116 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Benzin",
+          "priceRaw": "1.785.000 TL",
+          "priceNumeric": 1785000,
+          "brand": "SEAT",
+          "powerHP": 116,
+          "engineDisplacement": "1.0L",
+          "engineType": "TSI",
+          "transmissionType": "DSG"
+        },
         {
           "model": "Ibiza",
           "trim": "Style",
@@ -8569,7 +8623,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "Stonic",
@@ -9025,7 +9079,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "EX30",
@@ -9263,7 +9317,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-03-18",
+      "date": "2026-03-19",
       "vehicles": [
         {
           "model": "Egea Sedan",
