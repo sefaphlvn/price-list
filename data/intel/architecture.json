@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-23T01:33:42.834Z",
-  "date": "2026-03-23",
+  "generatedAt": "2026-03-24T01:33:26.064Z",
+  "date": "2026-03-24",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -6367,39 +6367,6 @@
       "trimCount": 4
     },
     {
-      "id": "ford-puma-gen-e",
-      "model": "PUMA GEN-E",
-      "brand": "Ford",
-      "brandId": "ford",
-      "trims": [
-        {
-          "trim": "Premium",
-          "price": 1900100,
-          "priceFormatted": "1.900.100 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "123KW",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        },
-        {
-          "trim": "Premium",
-          "price": 2055300,
-          "priceFormatted": "2.055.300 TL",
-          "stepFromBase": 155200,
-          "stepPercent": 8.167991158360087,
-          "engine": "123KW",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        }
-      ],
-      "basePrice": 1900100,
-      "topPrice": 2055300,
-      "priceSpread": 155200,
-      "priceSpreadPercent": 8.17,
-      "trimCount": 2
-    },
-    {
       "id": "ford-yeni-journey-courier-bev",
       "model": "Yeni Journey Courier BEV",
       "brand": "Ford",
@@ -6430,6 +6397,39 @@
       "topPrice": 2145100,
       "priceSpread": 82200,
       "priceSpreadPercent": 3.98,
+      "trimCount": 2
+    },
+    {
+      "id": "ford-puma-gen-e",
+      "model": "PUMA GEN-E",
+      "brand": "Ford",
+      "brandId": "ford",
+      "trims": [
+        {
+          "trim": "Premium",
+          "price": 1900100,
+          "priceFormatted": "1.900.100 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "123KW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        },
+        {
+          "trim": "Premium",
+          "price": 2055300,
+          "priceFormatted": "2.055.300 TL",
+          "stepFromBase": 155200,
+          "stepPercent": 8.167991158360087,
+          "engine": "123KW",
+          "transmission": "Otomatik",
+          "fuel": "Elektrik"
+        }
+      ],
+      "basePrice": 1900100,
+      "topPrice": 2055300,
+      "priceSpread": 155200,
+      "priceSpreadPercent": 8.17,
       "trimCount": 2
     },
     {
