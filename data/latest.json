@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-27T01:33:37.422Z",
+  "generatedAt": "2026-03-28T01:33:36.177Z",
   "totalVehicles": 504,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1585,7 +1585,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -2488,7 +2488,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3151,7 +3151,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "i20",
@@ -3584,7 +3584,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "E-208",
@@ -3983,7 +3983,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "ATTO 3",
@@ -4105,7 +4105,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4418,7 +4418,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -4937,7 +4937,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -5902,7 +5902,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "A 200",
@@ -7010,7 +7010,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -7728,7 +7728,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8019,7 +8019,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8441,7 +8441,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "HR-V Hybrid",
@@ -8449,11 +8449,12 @@
           "engine": "1.5L Hibrit Otomatik",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.595.000 TL",
-          "priceNumeric": 2595000,
+          "priceRaw": "2.389.000 TL",
+          "priceNumeric": 2389000,
           "brand": "Honda",
           "modelYear": 2026,
           "priceListNumeric": 2595000,
+          "priceCampaignNumeric": 2389000,
           "engineDisplacement": "1.5L",
           "isHybrid": true
         },
@@ -8475,7 +8476,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "YENİ",
@@ -8623,7 +8624,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "Stonic",
@@ -9079,7 +9080,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "EX30",
@@ -9317,7 +9318,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-03-27",
+      "date": "2026-03-28",
       "vehicles": [
         {
           "model": "Egea Sedan",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-27T01:33:41.449Z",
-  "date": "2026-03-27",
+  "generatedAt": "2026-03-28T01:33:40.236Z",
+  "date": "2026-03-28",
   "summary": {
     "totalSegments": 11,
     "totalGaps": 1002,
@@ -11,7 +11,7 @@
     {
       "segment": "SUV-Compact",
       "totalVehicles": 111,
-      "avgPrice": 2804996,
+      "avgPrice": 2803140,
       "minPrice": 1211000,
       "maxPrice": 8210300,
       "brands": [
@@ -2040,7 +2040,7 @@
         "Ford",
         "Honda"
       ],
-      "avgPrice": 2491742,
+      "avgPrice": 2480900,
       "hasGap": false,
       "opportunityScore": 0
     },

@@ -1,22 +1,42 @@
 {
-  "generatedAt": "2026-03-27T01:33:40.633Z",
-  "date": "2026-03-27",
-  "previousDate": "2026-03-26",
+  "generatedAt": "2026-03-28T01:33:39.367Z",
+  "date": "2026-03-28",
+  "previousDate": "2026-03-27",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-03-27",
-    "totalDays": 59
+    "end": "2026-03-28",
+    "totalDays": 60
   },
   "summary": {
-    "totalEvents": 932,
+    "totalEvents": 933,
     "newVehicles": 200,
     "removedVehicles": 245,
     "priceIncreases": 405,
-    "priceDecreases": 82,
-    "avgPriceChange": 125401,
-    "avgPriceChangePercent": 1.97
+    "priceDecreases": 83,
+    "avgPriceChange": 124722,
+    "avgPriceChangePercent": 1.95
   },
   "events": [
+    {
+      "id": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik-price_decrease-2026-03-28",
+      "type": "price_decrease",
+      "vehicleId": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik",
+      "brand": "Honda",
+      "brandId": "honda",
+      "model": "HR-V Hybrid",
+      "trim": "Elegance",
+      "engine": "1.5L Hibrit Otomatik",
+      "fuel": "Hibrit",
+      "transmission": "Otomatik",
+      "oldPrice": 2595000,
+      "newPrice": 2389000,
+      "oldPriceFormatted": "2.595.000 TL",
+      "newPriceFormatted": "2.389.000 TL",
+      "priceChange": -206000,
+      "priceChangePercent": -7.94,
+      "date": "2026-03-28",
+      "previousDate": "2026-03-27"
+    },
     {
       "id": "opel-mokka-edition-1.2-136-hp-benzin-new-2026-03-19",
       "type": "new",
@@ -16816,6 +16836,15 @@
         "decreaseCount": 0
       },
       {
+        "id": "honda",
+        "name": "Honda",
+        "changeCount": 4,
+        "avgChange": 155500,
+        "avgChangePercent": 6.18,
+        "increaseCount": 2,
+        "decreaseCount": 2
+      },
+      {
         "id": "dacia",
         "name": "Dacia",
         "changeCount": 3,
@@ -16823,15 +16852,6 @@
         "avgChangePercent": 4.11,
         "increaseCount": 3,
         "decreaseCount": 0
-      },
-      {
-        "id": "honda",
-        "name": "Honda",
-        "changeCount": 3,
-        "avgChange": 138667,
-        "avgChangePercent": 5.59,
-        "increaseCount": 2,
-        "decreaseCount": 1
       }
     ],
     "byModel": [
@@ -17582,6 +17602,26 @@
         "previousDate": "2026-01-29"
       },
       {
+        "id": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik-price_decrease-2026-03-28",
+        "type": "price_decrease",
+        "vehicleId": "honda-hr-v-hybrid-elegance-1.5l-hibrit-otomatik",
+        "brand": "Honda",
+        "brandId": "honda",
+        "model": "HR-V Hybrid",
+        "trim": "Elegance",
+        "engine": "1.5L Hibrit Otomatik",
+        "fuel": "Hibrit",
+        "transmission": "Otomatik",
+        "oldPrice": 2595000,
+        "newPrice": 2389000,
+        "oldPriceFormatted": "2.595.000 TL",
+        "newPriceFormatted": "2.389.000 TL",
+        "priceChange": -206000,
+        "priceChangePercent": -7.94,
+        "date": "2026-03-28",
+        "previousDate": "2026-03-27"
+      },
+      {
         "id": "peugeot-2008-gt-1.2-hybrid-145-hp-price_decrease-2026-01-30",
         "type": "price_decrease",
         "vehicleId": "peugeot-2008-gt-1.2-hybrid-145-hp",
@@ -17798,26 +17838,6 @@
         "newPriceFormatted": "2.074.000 TL",
         "priceChange": -127500,
         "priceChangePercent": -5.79,
-        "date": "2026-01-30",
-        "previousDate": "2026-01-29"
-      },
-      {
-        "id": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-dct-gsr*-price_decrease-2026-01-30",
-        "type": "price_decrease",
-        "vehicleId": "fiat-egea-sedan-urban-1.6-m.jet-130-hp-dct-gsr*",
-        "brand": "Fiat",
-        "brandId": "fiat",
-        "model": "Egea Sedan",
-        "trim": "Urban",
-        "engine": "1.6 M.Jet 130 HP DCT GSR*",
-        "fuel": "Dizel",
-        "transmission": "Otomatik",
-        "oldPrice": 1739900,
-        "newPrice": 1639900,
-        "oldPriceFormatted": "1.739.900 TL",
-        "newPriceFormatted": "1.639.900 TL",
-        "priceChange": -100000,
-        "priceChangePercent": -5.75,
         "date": "2026-01-30",
         "previousDate": "2026-01-29"
       }

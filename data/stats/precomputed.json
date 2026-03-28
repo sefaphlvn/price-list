@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-27T01:33:37.451Z",
+  "generatedAt": "2026-03-28T01:33:36.206Z",
   "totalVehicles": 504,
   "overallStats": {
-    "avgPrice": 4886181,
+    "avgPrice": 4885772,
     "minPrice": 544900,
     "maxPrice": 36933000,
     "medianPrice": 2934250
@@ -155,10 +155,10 @@
     {
       "name": "Honda",
       "vehicleCount": 2,
-      "avgPrice": 2662500,
-      "minPrice": 2595000,
+      "avgPrice": 2559500,
+      "minPrice": 2389000,
       "maxPrice": 2730000,
-      "medianPrice": 2662500
+      "medianPrice": 2559500
     }
   ],
   "fuelStats": [
@@ -178,7 +178,7 @@
       "fuel": "Hibrit",
       "count": 67,
       "percentage": 13.3,
-      "avgPrice": 3168053
+      "avgPrice": 3164979
     },
     {
       "fuel": "Dizel",
@@ -216,7 +216,7 @@
       "transmission": "Otomatik",
       "count": 366,
       "percentage": 72.6,
-      "avgPrice": 5645888
+      "avgPrice": 5645325
     },
     {
       "transmission": "DSG",
@@ -398,7 +398,7 @@
         "year": "2026",
         "count": 219,
         "percentage": 55.6,
-        "avgPrice": 4929665
+        "avgPrice": 4928724
       },
       {
         "year": "2025",

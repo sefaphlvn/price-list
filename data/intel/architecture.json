@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-27T01:33:41.222Z",
-  "date": "2026-03-27",
+  "generatedAt": "2026-03-28T01:33:39.995Z",
+  "date": "2026-03-28",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -6884,8 +6884,8 @@
       "trims": [
         {
           "trim": "Elegance",
-          "price": 2595000,
-          "priceFormatted": "2.595.000 TL",
+          "price": 2389000,
+          "priceFormatted": "2.389.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5L Hibrit Otomatik",
@@ -6896,17 +6896,17 @@
           "trim": "Advance",
           "price": 2730000,
           "priceFormatted": "2.730.000 TL",
-          "stepFromBase": 135000,
-          "stepPercent": 5.202312138728324,
+          "stepFromBase": 341000,
+          "stepPercent": 14.273754709083297,
           "engine": "1.5L Hibrit Otomatik",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         }
       ],
-      "basePrice": 2595000,
+      "basePrice": 2389000,
       "topPrice": 2730000,
-      "priceSpread": 135000,
-      "priceSpreadPercent": 5.2,
+      "priceSpread": 341000,
+      "priceSpreadPercent": 14.27,
       "trimCount": 2
     },
     {
@@ -9429,6 +9429,16 @@
           "trimCount": 7
         },
         {
+          "brand": "Honda",
+          "brandId": "honda",
+          "model": "HR-V Hybrid",
+          "basePrice": 2389000,
+          "topPrice": 2730000,
+          "basePriceFormatted": "₺2.389.000",
+          "topPriceFormatted": "₺2.730.000",
+          "trimCount": 2
+        },
+        {
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "Yeni ë-C5 Aircross",
@@ -9446,16 +9456,6 @@
           "topPrice": 3259000,
           "basePriceFormatted": "₺2.594.500",
           "topPriceFormatted": "₺3.259.000",
-          "trimCount": 2
-        },
-        {
-          "brand": "Honda",
-          "brandId": "honda",
-          "model": "HR-V Hybrid",
-          "basePrice": 2595000,
-          "topPrice": 2730000,
-          "basePriceFormatted": "₺2.595.000",
-          "topPriceFormatted": "₺2.730.000",
           "trimCount": 2
         },
         {
@@ -9669,7 +9669,7 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 3521086,
+      "avgBasePrice": 3515518,
       "avgTopPrice": 3980294
     },
     {
@@ -10324,7 +10324,7 @@
   "summary": {
     "totalModels": 228,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 323634,
-    "avgPriceSpreadPercent": 11
+    "avgPriceSpread": 324538,
+    "avgPriceSpreadPercent": 11.04
   }
 }
