@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-02T01:33:19.772Z",
-  "totalVehicles": 497,
+  "generatedAt": "2026-04-03T01:33:20.219Z",
+  "totalVehicles": 525,
   "overallStats": {
-    "avgPrice": 4921985,
+    "avgPrice": 4910127,
     "minPrice": 544900,
     "maxPrice": 38034000,
-    "medianPrice": 2930000
+    "medianPrice": 3023000
   },
   "brandStats": [
     {
@@ -41,6 +41,14 @@
       "medianPrice": 2376500
     },
     {
+      "name": "Škoda",
+      "vehicleCount": 40,
+      "avgPrice": 4049900,
+      "minPrice": 1829900,
+      "maxPrice": 7099900,
+      "medianPrice": 3584900
+    },
+    {
       "name": "Hyundai",
       "vehicleCount": 35,
       "avgPrice": 2838540,
@@ -50,11 +58,11 @@
     },
     {
       "name": "Citroën",
-      "vehicleCount": 34,
-      "avgPrice": 1815265,
+      "vehicleCount": 33,
+      "avgPrice": 1881848,
       "minPrice": 585000,
       "maxPrice": 3200000,
-      "medianPrice": 1854500
+      "medianPrice": 1930000
     },
     {
       "name": "Kia",
@@ -97,20 +105,20 @@
       "medianPrice": 2379100
     },
     {
-      "name": "Fiat",
-      "vehicleCount": 21,
-      "avgPrice": 1469805,
-      "minPrice": 544900,
-      "maxPrice": 2089900,
-      "medianPrice": 1659900
-    },
-    {
       "name": "Opel",
       "vehicleCount": 19,
       "avgPrice": 2324579,
       "minPrice": 1535000,
       "maxPrice": 3460000,
       "medianPrice": 2119000
+    },
+    {
+      "name": "Fiat",
+      "vehicleCount": 19,
+      "avgPrice": 1519795,
+      "minPrice": 544900,
+      "maxPrice": 2149900,
+      "medianPrice": 1679900
     },
     {
       "name": "Volvo",
@@ -137,14 +145,6 @@
       "medianPrice": 1864500
     },
     {
-      "name": "Škoda",
-      "vehicleCount": 9,
-      "avgPrice": 3199789,
-      "minPrice": 1785900,
-      "maxPrice": 4399900,
-      "medianPrice": 3399400
-    },
-    {
       "name": "BYD",
       "vehicleCount": 6,
       "avgPrice": 3822667,
@@ -164,44 +164,44 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 193,
-      "percentage": 38.8,
-      "avgPrice": 5517218
+      "count": 220,
+      "percentage": 41.9,
+      "avgPrice": 5318476
     },
     {
       "fuel": "Elektrik",
-      "count": 124,
-      "percentage": 24.9,
-      "avgPrice": 4653443
+      "count": 121,
+      "percentage": 23,
+      "avgPrice": 4754849
     },
     {
       "fuel": "Hibrit",
       "count": 67,
-      "percentage": 13.5,
-      "avgPrice": 3172680
+      "percentage": 12.8,
+      "avgPrice": 3180531
     },
     {
       "fuel": "Dizel",
-      "count": 62,
-      "percentage": 12.5,
-      "avgPrice": 4509002
+      "count": 66,
+      "percentage": 12.6,
+      "avgPrice": 4649556
     },
     {
       "fuel": "Hafif Hibrit",
       "count": 24,
-      "percentage": 4.8,
-      "avgPrice": 6425758
+      "percentage": 4.6,
+      "avgPrice": 6434092
     },
     {
       "fuel": "Plug-in Hibrit",
       "count": 14,
-      "percentage": 2.8,
+      "percentage": 2.7,
       "avgPrice": 8943339
     },
     {
       "fuel": "LPG",
       "count": 8,
-      "percentage": 1.6,
+      "percentage": 1.5,
       "avgPrice": 1926750
     },
     {
@@ -214,33 +214,33 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 362,
-      "percentage": 72.8,
-      "avgPrice": 5704240
+      "count": 359,
+      "percentage": 68.4,
+      "avgPrice": 5747193
     },
     {
       "transmission": "DSG",
-      "count": 54,
-      "percentage": 10.9,
-      "avgPrice": 3617278
+      "count": 85,
+      "percentage": 16.2,
+      "avgPrice": 3854640
     },
     {
       "transmission": "Manuel",
       "count": 38,
-      "percentage": 7.6,
-      "avgPrice": 1699171
+      "percentage": 7.2,
+      "avgPrice": 1701408
     },
     {
       "transmission": "DCT",
       "count": 22,
-      "percentage": 4.4,
+      "percentage": 4.2,
       "avgPrice": 2552136
     },
     {
       "transmission": "Bilinmiyor",
       "count": 21,
-      "percentage": 4.2,
-      "avgPrice": 3106814
+      "percentage": 4,
+      "avgPrice": 3149029
     }
   ],
   "priceSegments": [
@@ -248,87 +248,87 @@
       "segment": "budget",
       "min": 0,
       "max": 1500000,
-      "count": 28,
-      "percentage": 5.6
+      "count": 26,
+      "percentage": 5
     },
     {
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 226,
-      "percentage": 45.5
+      "count": 235,
+      "percentage": 44.8
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
-      "count": 108,
-      "percentage": 21.7
+      "count": 119,
+      "percentage": 22.7
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
-      "count": 135,
-      "percentage": 27.2
+      "count": 145,
+      "percentage": 27.6
     }
   ],
   "otvStats": {
-    "avgOtvRate": 108.2,
+    "avgOtvRate": 108.8,
     "distribution": [
       {
         "rate": 1,
         "count": 9,
-        "percentage": 3.8,
+        "percentage": 3.4,
         "avgPrice": 4031667
       },
       {
         "rate": 2,
         "count": 6,
-        "percentage": 2.5,
+        "percentage": 2.2,
         "avgPrice": 6690000
       },
       {
         "rate": 25,
         "count": 9,
-        "percentage": 3.8,
-        "avgPrice": 2236933
+        "percentage": 3.4,
+        "avgPrice": 2246433
       },
       {
         "rate": 55,
         "count": 18,
-        "percentage": 7.6,
-        "avgPrice": 4866933
+        "percentage": 6.7,
+        "avgPrice": 4878100
       },
       {
         "rate": 70,
         "count": 4,
-        "percentage": 1.7,
+        "percentage": 1.5,
         "avgPrice": 1590500
       },
       {
         "rate": 75,
-        "count": 37,
-        "percentage": 15.6,
-        "avgPrice": 6279741
+        "count": 38,
+        "percentage": 14.2,
+        "avgPrice": 6180245
       },
       {
         "rate": 80,
-        "count": 8,
-        "percentage": 3.4,
-        "avgPrice": 2154988
+        "count": 12,
+        "percentage": 4.5,
+        "avgPrice": 2149708
       },
       {
         "rate": 90,
-        "count": 32,
-        "percentage": 13.5,
-        "avgPrice": 3094922
+        "count": 43,
+        "percentage": 16,
+        "avgPrice": 3101323
       },
       {
         "rate": 100,
-        "count": 41,
-        "percentage": 17.3,
-        "avgPrice": 5874595
+        "count": 47,
+        "percentage": 17.5,
+        "avgPrice": 5728634
       },
       {
         "rate": 150,
@@ -338,14 +338,14 @@
       },
       {
         "rate": 170,
-        "count": 45,
-        "percentage": 19,
-        "avgPrice": 8571291
+        "count": 54,
+        "percentage": 20.1,
+        "avgPrice": 8238096
       },
       {
         "rate": 220,
         "count": 27,
-        "percentage": 11.4,
+        "percentage": 10.1,
         "avgPrice": 21679296
       }
     ],
@@ -366,6 +366,11 @@
         "count": 46
       },
       {
+        "brand": "Škoda",
+        "avgOtvRate": 104,
+        "count": 40
+      },
+      {
         "brand": "Renault",
         "avgOtvRate": 68.2,
         "count": 25
@@ -381,11 +386,6 @@
         "count": 10
       },
       {
-        "brand": "Škoda",
-        "avgOtvRate": 71.7,
-        "count": 9
-      },
-      {
         "brand": "BYD",
         "avgOtvRate": 58.3,
         "count": 6
@@ -396,26 +396,20 @@
     "distribution": [
       {
         "year": "2026",
-        "count": 232,
-        "percentage": 59.9,
-        "avgPrice": 4910074
+        "count": 272,
+        "percentage": 65.2,
+        "avgPrice": 4783614
       },
       {
         "year": "2025",
-        "count": 144,
-        "percentage": 37.2,
-        "avgPrice": 4207242
-      },
-      {
-        "year": "2024",
-        "count": 1,
-        "percentage": 0.3,
-        "avgPrice": 575900
+        "count": 135,
+        "percentage": 32.4,
+        "avgPrice": 4274405
       },
       {
         "year": "2023",
         "count": 10,
-        "percentage": 2.6,
+        "percentage": 2.4,
         "avgPrice": 8629310
       }
     ]

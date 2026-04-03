@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-02T01:33:19.744Z",
-  "totalVehicles": 497,
+  "generatedAt": "2026-04-03T01:33:20.186Z",
+  "totalVehicles": 525,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1307,23 +1307,23 @@
           "engine": "60 e-Prestige 204 PS",
           "transmission": "",
           "fuel": "Elektrik",
-          "priceRaw": "₺2.384.400",
-          "priceNumeric": 2384400,
+          "priceRaw": "₺2.469.900",
+          "priceNumeric": 2469900,
           "brand": "Škoda",
-          "modelYear": "2025",
-          "priceListNumeric": 2384400,
-          "priceCampaignNumeric": 2151000,
+          "modelYear": "2026",
+          "priceListNumeric": 2469900,
+          "priceCampaignNumeric": 2299900,
           "otvRate": 25,
-          "netPrice": 1580119.27,
-          "otvAmount": 395029.82,
-          "kdvAmount": 395029.82,
+          "netPrice": 1637119.27,
+          "otvAmount": 409279.82,
+          "kdvAmount": 409279.82,
           "mtvAmount": 6277,
           "trafficRegistrationFee": 7944.1,
           "origin": "Çekya",
           "optionalEquipment": [
             {
               "name": "Metalik Renk",
-              "price": 26667
+              "price": 33333
             },
             {
               "name": "Exclusive Renk",
@@ -1337,21 +1337,21 @@
           "engine": "60 e-Sportline 204 PS",
           "transmission": "",
           "fuel": "Elektrik",
-          "priceRaw": "₺3.499.400",
-          "priceNumeric": 3499400,
+          "priceRaw": "₺3.599.900",
+          "priceNumeric": 3599900,
           "brand": "Škoda",
-          "modelYear": "2025",
+          "modelYear": "2026",
           "otvRate": 55,
-          "netPrice": 1873752.11,
-          "otvAmount": 1030563.66,
-          "kdvAmount": 580863.16,
+          "netPrice": 1927784.37,
+          "otvAmount": 1060281.4,
+          "kdvAmount": 597613.16,
           "mtvAmount": 6277,
           "trafficRegistrationFee": 7944.1,
           "origin": "Çekya",
           "optionalEquipment": [
             {
               "name": "Metalik Renk",
-              "price": 26667
+              "price": 33333
             },
             {
               "name": "Exclusive Renk",
@@ -1361,25 +1361,25 @@
         },
         {
           "model": "Yeni Škoda Enyaq Coupé",
-          "trim": "85x e-Sportline 285 PS",
-          "engine": "85x e-Sportline 285 PS",
+          "trim": "e-RS 340 PS 4x4",
+          "engine": "e-RS 340 PS 4x4",
           "transmission": "",
           "fuel": "Elektrik",
-          "priceRaw": "₺4.399.900",
-          "priceNumeric": 4399900,
+          "priceRaw": "₺4.999.900",
+          "priceNumeric": 4999900,
           "brand": "Škoda",
-          "modelYear": "2025",
+          "modelYear": "2026",
           "otvRate": 75,
-          "netPrice": 2085059.97,
-          "otvAmount": 1563794.98,
-          "kdvAmount": 729770.99,
-          "mtvAmount": 13330,
+          "netPrice": 2362148.52,
+          "otvAmount": 1771611.39,
+          "kdvAmount": 826751.98,
+          "mtvAmount": 31444,
           "trafficRegistrationFee": 7944.1,
           "origin": "Çekya",
           "optionalEquipment": [
             {
               "name": "Metalik Renk",
-              "price": 26667
+              "price": 33333
             },
             {
               "name": "Exclusive Renk",
@@ -1393,21 +1393,21 @@
           "engine": "60 e-Prestige 204 PS",
           "transmission": "",
           "fuel": "Elektrik",
-          "priceRaw": "₺3.399.400",
-          "priceNumeric": 3399400,
+          "priceRaw": "₺3.499.900",
+          "priceNumeric": 3499900,
           "brand": "Škoda",
-          "modelYear": "2025",
+          "modelYear": "2026",
           "otvRate": 55,
-          "netPrice": 1819988.67,
-          "otvAmount": 1000993.77,
-          "kdvAmount": 564196.49,
+          "netPrice": 1874020.93,
+          "otvAmount": 1030711.51,
+          "kdvAmount": 580946.49,
           "mtvAmount": 6277,
           "trafficRegistrationFee": 7944.1,
           "origin": "Çekya",
           "optionalEquipment": [
             {
               "name": "Metalik Renk",
-              "price": 26667
+              "price": 33333
             },
             {
               "name": "Exclusive Renk",
@@ -1416,21 +1416,21 @@
           ]
         },
         {
-          "model": "Škoda Scala",
-          "trim": "Elite 1,0 TSI 115 PS DSG",
-          "engine": "Elite 1,0 TSI 115 PS",
+          "model": "Škoda Fabia",
+          "trim": "Premium 1.0 TSI 115 PS DSG",
+          "engine": "Premium 1.0 TSI 115 PS",
           "transmission": "DSG",
           "fuel": "Benzin",
-          "priceRaw": "₺1.785.900",
-          "priceNumeric": 1785900,
+          "priceRaw": "₺1.829.900",
+          "priceNumeric": 1829900,
           "brand": "Škoda",
-          "modelYear": "2025",
-          "priceListNumeric": 1785900,
-          "priceCampaignNumeric": 1724800,
+          "modelYear": "2026",
+          "priceListNumeric": 1829900,
+          "priceCampaignNumeric": 1722500,
           "otvRate": 75,
-          "netPrice": 845002.33,
-          "otvAmount": 633751.75,
-          "kdvAmount": 295750.82,
+          "netPrice": 865954.71,
+          "otvAmount": 649466.04,
+          "kdvAmount": 303084.15,
           "mtvAmount": 3451,
           "trafficRegistrationFee": 7944.1,
           "origin": "Çekya",
@@ -1441,30 +1441,24 @@
             },
             {
               "name": "Exclusive Renk",
-              "price": 23148
-            },
-            {
-              "name": "Panoramik Cam Tavan",
-              "price": 38889
+              "price": 18519
             }
           ]
         },
         {
-          "model": "Škoda Scala",
+          "model": "Škoda Fabia",
           "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
           "engine": "Monte Carlo 1.5 TSI 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin",
-          "priceRaw": "₺2.372.900",
-          "priceNumeric": 2372900,
+          "priceRaw": "₺2.214.900",
+          "priceNumeric": 2214900,
           "brand": "Škoda",
-          "modelYear": "2025",
-          "priceListNumeric": 2372900,
-          "priceCampaignNumeric": 2199900,
+          "modelYear": "2026",
           "otvRate": 80,
-          "netPrice": 1092102.75,
-          "otvAmount": 873682.2,
-          "kdvAmount": 393156.99,
+          "netPrice": 1018954.58,
+          "otvAmount": 815163.67,
+          "kdvAmount": 366823.65,
           "mtvAmount": 6014,
           "trafficRegistrationFee": 7944.1,
           "origin": "Çekya",
@@ -1475,11 +1469,365 @@
             },
             {
               "name": "Exclusive Renk",
-              "price": 23148
+              "price": 18519
+            }
+          ]
+        },
+        {
+          "model": "Škoda Scala",
+          "trim": "Elite 1.0 TSI 115 PS DSG",
+          "engine": "Elite 1.0 TSI 115 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺1.854.900",
+          "priceNumeric": 1854900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "priceListNumeric": 1854900,
+          "priceCampaignNumeric": 1791400,
+          "otvRate": 75,
+          "netPrice": 877859.48,
+          "otvAmount": 658394.61,
+          "kdvAmount": 307250.82,
+          "mtvAmount": 3451,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 18519
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 18519
             },
             {
               "name": "Panoramik Cam Tavan",
-              "price": 38889
+              "price": 39352
+            }
+          ]
+        },
+        {
+          "model": "Škoda Scala",
+          "trim": "Premium 1.0 TSI 115 PS DSG",
+          "engine": "Premium 1.0 TSI 115 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.144.900",
+          "priceNumeric": 2144900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 80,
+          "netPrice": 987733.75,
+          "otvAmount": 790187,
+          "kdvAmount": 355584.15,
+          "mtvAmount": 3451,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 18519
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 18519
+            },
+            {
+              "name": "Panoramik Cam Tavan",
+              "price": 39352
+            }
+          ]
+        },
+        {
+          "model": "Škoda Scala",
+          "trim": "Premium 1.5 TSI 150 PS DSG",
+          "engine": "Premium 1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.274.900",
+          "priceNumeric": 2274900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 80,
+          "netPrice": 1046732.36,
+          "otvAmount": 837385.89,
+          "kdvAmount": 376823.65,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 18519
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 18519
+            },
+            {
+              "name": "Panoramik Cam Tavan",
+              "price": 39352
+            }
+          ]
+        },
+        {
+          "model": "Škoda Scala",
+          "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
+          "engine": "Monte Carlo 1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.584.900",
+          "priceNumeric": 2584900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "priceListNumeric": 2584900,
+          "priceCampaignNumeric": 2209700,
+          "otvRate": 90,
+          "netPrice": 1127606.1,
+          "otvAmount": 1014845.49,
+          "kdvAmount": 428490.32,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 18519
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 18519
+            },
+            {
+              "name": "Panoramik Cam Tavan",
+              "price": 39352
+            }
+          ]
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "Elite 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Elite 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.639.900",
+          "priceNumeric": 2639900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 90,
+          "netPrice": 1151728.9,
+          "otvAmount": 1036556.01,
+          "kdvAmount": 437656.98,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Premium 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.999.900",
+          "priceNumeric": 2999900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "priceListNumeric": 2999900,
+          "priceCampaignNumeric": 2522200,
+          "otvRate": 90,
+          "netPrice": 1309623.64,
+          "otvAmount": 1178661.28,
+          "kdvAmount": 497656.98,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "Prestige 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Prestige 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.299.900",
+          "priceNumeric": 3299900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 90,
+          "netPrice": 1441202.59,
+          "otvAmount": 1297082.33,
+          "kdvAmount": 547656.98,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "Sportline 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Sportline 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.299.900",
+          "priceNumeric": 3299900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 90,
+          "netPrice": 1441202.59,
+          "otvAmount": 1297082.33,
+          "kdvAmount": 547656.98,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "RS 2.0 TSI 265 PS DSG",
+          "engine": "RS 2.0 TSI 265 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺5.429.900",
+          "priceNumeric": 5429900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 170,
+          "netPrice": 1668277.44,
+          "otvAmount": 2836071.65,
+          "kdvAmount": 900869.82,
+          "mtvAmount": 16737,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "Combi Sportline 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Combi Sportline 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.399.900",
+          "priceNumeric": 3399900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 90,
+          "netPrice": 1485062.24,
+          "otvAmount": 1336556.01,
+          "kdvAmount": 564323.65,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Octavia",
+          "trim": "Combi RS 2.0 TSI 265 PS DSG",
+          "engine": "Combi RS 2.0 TSI 265 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺5.529.900",
+          "priceNumeric": 5529900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 170,
+          "netPrice": 1699141.64,
+          "otvAmount": 2888540.78,
+          "kdvAmount": 917536.48,
+          "mtvAmount": 16737,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Premium 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.774.900",
+          "priceNumeric": 3774900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 90,
+          "netPrice": 1649535.92,
+          "otvAmount": 1484582.33,
+          "kdvAmount": 626823.65,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Slovakya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
             }
           ]
         },
@@ -1489,27 +1837,419 @@
           "engine": "Prestige 1.5 TSI  mHEV 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin",
-          "priceRaw": "₺4.151.900",
-          "priceNumeric": 4151900,
+          "priceRaw": "₺4.449.900",
+          "priceNumeric": 4449900,
           "brand": "Škoda",
-          "modelYear": "2025",
-          "priceListNumeric": 4151900,
-          "priceCampaignNumeric": 3599900,
+          "modelYear": "2026",
+          "priceListNumeric": 4449900,
+          "priceCampaignNumeric": 3741600,
           "otvRate": 100,
-          "netPrice": 1724142.46,
-          "otvAmount": 1724142.46,
-          "kdvAmount": 689656.98,
+          "netPrice": 1848309.12,
+          "otvAmount": 1848309.12,
+          "kdvAmount": 739323.65,
           "mtvAmount": 6014,
           "trafficRegistrationFee": 7944.1,
           "origin": "Slovakya",
           "optionalEquipment": [
             {
               "name": "Metalik Renk",
-              "price": 20833
+              "price": 21930
             },
             {
               "name": "Exclusive Renk",
-              "price": 27778
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Sportline 1,5 TSI  mHEV 150 PS DSG",
+          "engine": "Sportline 1,5 TSI  mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.449.900",
+          "priceNumeric": 4449900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "priceListNumeric": 4449900,
+          "priceCampaignNumeric": 3682500,
+          "otvRate": 100,
+          "netPrice": 1848309.08,
+          "otvAmount": 1848309.08,
+          "kdvAmount": 739323.63,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Slovakya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "L&K Crystal 1.5 TSI mHEV 150 PS DSG",
+          "engine": "L&K Crystal 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.899.900",
+          "priceNumeric": 4899900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "priceListNumeric": 4899900,
+          "priceCampaignNumeric": 4418700,
+          "otvRate": 100,
+          "netPrice": 2035809.13,
+          "otvAmount": 2035809.13,
+          "kdvAmount": 814323.65,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Slovakya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "L&K Crystal 2.0 TDI 193 PS DSG 4x4",
+          "engine": "L&K Crystal 2.0 TDI 193 PS  4x4",
+          "transmission": "DSG",
+          "fuel": "Dizel",
+          "priceRaw": "₺6.849.900",
+          "priceNumeric": 6849900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 170,
+          "netPrice": 2106549.04,
+          "otvAmount": 3581133.37,
+          "kdvAmount": 1137536.48,
+          "mtvAmount": 16737,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Slovakya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "L&K Crystal 2.0 TSI 265 PS DSG 4x4",
+          "engine": "L&K Crystal 2.0 TSI 265 PS  4x4",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺6.949.900",
+          "priceNumeric": 6949900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 170,
+          "netPrice": 2137413.24,
+          "otvAmount": 3633602.51,
+          "kdvAmount": 1154203.15,
+          "mtvAmount": 16737,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Slovakya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Combi Prestige 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Combi Prestige 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.569.900",
+          "priceNumeric": 4569900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 100,
+          "netPrice": 1898309.13,
+          "otvAmount": 1898309.13,
+          "kdvAmount": 759323.65,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Slovakya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Combi L&K Crystal 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Combi L&K Crystal 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺5.019.900",
+          "priceNumeric": 5019900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 100,
+          "netPrice": 2085809.12,
+          "otvAmount": 2085809.12,
+          "kdvAmount": 834323.65,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Slovakya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Combi L&K Crystal 2.0 TDI SCR 193 PS DSG 4x4",
+          "engine": "Combi L&K Crystal 2.0 TDI SCR 193 PS  4x4",
+          "transmission": "DSG",
+          "fuel": "Dizel",
+          "priceRaw": "₺6.969.900",
+          "priceNumeric": 6969900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 170,
+          "netPrice": 2143586.08,
+          "otvAmount": 3644096.34,
+          "kdvAmount": 1157536.48,
+          "mtvAmount": 16737,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Slovakya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Superb",
+          "trim": "Combi L&K Crystal 2.0 TSI 265 PS DSG 4x4",
+          "engine": "Combi L&K Crystal 2.0 TSI 265 PS  4x4",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺7.069.900",
+          "priceNumeric": 7069900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 170,
+          "netPrice": 2174450.28,
+          "otvAmount": 3696565.47,
+          "kdvAmount": 1174203.15,
+          "mtvAmount": 16737,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Slovakya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kamiq",
+          "trim": "Elite 1.0 TSI 115 PS DSG",
+          "engine": "Elite 1.0 TSI 115 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.024.900",
+          "priceNumeric": 2024900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "priceListNumeric": 2024900,
+          "priceCampaignNumeric": 1797600,
+          "otvRate": 80,
+          "netPrice": 932178.19,
+          "otvAmount": 745742.56,
+          "kdvAmount": 335584.15,
+          "mtvAmount": 3451,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 18519
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 18519
+            },
+            {
+              "name": "Panoramik Cam Tavan",
+              "price": 39352
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kamiq",
+          "trim": "Premium 1.0 TSI 115 PS DSG",
+          "engine": "Premium 1.0 TSI 115 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.269.900",
+          "priceNumeric": 2269900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 80,
+          "netPrice": 1045604.12,
+          "otvAmount": 836483.3,
+          "kdvAmount": 376417.48,
+          "mtvAmount": 3451,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 18519
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 18519
+            },
+            {
+              "name": "Panoramik Cam Tavan",
+              "price": 39352
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kamiq",
+          "trim": "Premium 1.5 TSI 150 PS DSG",
+          "engine": "Premium 1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.534.900",
+          "priceNumeric": 2534900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 90,
+          "netPrice": 1105676.27,
+          "otvAmount": 995108.64,
+          "kdvAmount": 420156.98,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 18519
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 18519
+            },
+            {
+              "name": "Panoramik Cam Tavan",
+              "price": 39352
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kamiq",
+          "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
+          "engine": "Monte Carlo 1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺2.699.900",
+          "priceNumeric": 2699900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "priceListNumeric": 2699900,
+          "priceCampaignNumeric": 2359500,
+          "otvRate": 90,
+          "netPrice": 1178044.69,
+          "otvAmount": 1060240.22,
+          "kdvAmount": 447656.98,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 18519
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 18519
+            },
+            {
+              "name": "Panoramik Cam Tavan",
+              "price": 39352
+            }
+          ]
+        },
+        {
+          "model": "Škoda Karoq",
+          "trim": "Premium 1.5 TSI 150 PS DSG",
+          "engine": "Premium 1.5 TSI 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.149.900",
+          "priceNumeric": 3149900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 90,
+          "netPrice": 1375413.11,
+          "otvAmount": 1237871.8,
+          "kdvAmount": 522656.98,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            },
+            {
+              "name": "Elektrikli Açılabilir Panoramik Cam Tavan",
+              "price": 41667
             }
           ]
         },
@@ -1519,27 +2259,27 @@
           "engine": "Prestige 1.5 TSI 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin",
-          "priceRaw": "₺3.349.400",
-          "priceNumeric": 3349400,
+          "priceRaw": "₺3.469.900",
+          "priceNumeric": 3469900,
           "brand": "Škoda",
-          "modelYear": "2025",
-          "priceListNumeric": 3349400,
-          "priceCampaignNumeric": 2995100,
+          "modelYear": "2026",
+          "priceListNumeric": 3469900,
+          "priceCampaignNumeric": 3129500,
           "otvRate": 90,
-          "netPrice": 1462913.11,
-          "otvAmount": 1316621.8,
-          "kdvAmount": 555906.98,
+          "netPrice": 1515763.99,
+          "otvAmount": 1364187.59,
+          "kdvAmount": 575990.32,
           "mtvAmount": 6014,
           "trafficRegistrationFee": 7944.1,
           "origin": "Çekya",
           "optionalEquipment": [
             {
               "name": "Metalik Renk",
-              "price": 20833
+              "price": 21930
             },
             {
               "name": "Exclusive Renk",
-              "price": 27778
+              "price": 21930
             },
             {
               "name": "Elektrikli Açılabilir Panoramik Cam Tavan",
@@ -1553,31 +2293,227 @@
           "engine": "Sportline 1.5 TSI 150 PS",
           "transmission": "DSG",
           "fuel": "Benzin",
-          "priceRaw": "₺3.454.900",
-          "priceNumeric": 3454900,
+          "priceRaw": "₺3.569.900",
+          "priceNumeric": 3569900,
           "brand": "Škoda",
-          "modelYear": "2025",
-          "priceListNumeric": 3454900,
-          "priceCampaignNumeric": 3089300,
+          "modelYear": "2026",
+          "priceListNumeric": 3569900,
+          "priceCampaignNumeric": 3219700,
           "otvRate": 90,
-          "netPrice": 1509185.04,
-          "otvAmount": 1358266.54,
-          "kdvAmount": 573490.32,
+          "netPrice": 1559623.64,
+          "otvAmount": 1403661.28,
+          "kdvAmount": 592656.98,
           "mtvAmount": 6014,
           "trafficRegistrationFee": 7944.1,
           "origin": "Çekya",
           "optionalEquipment": [
             {
               "name": "Metalik Renk",
-              "price": 20833
+              "price": 21930
             },
             {
               "name": "Exclusive Renk",
-              "price": 27778
+              "price": 21930
             },
             {
               "name": "Elektrikli Açılabilir Panoramik Cam Tavan",
               "price": 41667
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kodiaq",
+          "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Premium 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺3.699.900",
+          "priceNumeric": 3699900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 90,
+          "netPrice": 1616641.18,
+          "otvAmount": 1454977.07,
+          "kdvAmount": 614323.65,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            },
+            {
+              "name": "7 Kişilik Versiyon",
+              "price": 46296
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kodiaq",
+          "trim": "Prestige 1.5 TSI  mHEV 150 PS DSG",
+          "engine": "Prestige 1.5 TSI  mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.499.900",
+          "priceNumeric": 4499900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "priceListNumeric": 4499900,
+          "priceCampaignNumeric": 3993000,
+          "otvRate": 100,
+          "netPrice": 1869142.46,
+          "otvAmount": 1869142.46,
+          "kdvAmount": 747656.98,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            },
+            {
+              "name": "7 Kişilik Versiyon",
+              "price": 46296
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kodiaq",
+          "trim": "Sportline 1.5 TSI mHEV 150 PS DSG",
+          "engine": "Sportline 1.5 TSI mHEV 150 PS",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺4.649.900",
+          "priceNumeric": 4649900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "priceListNumeric": 4649900,
+          "priceCampaignNumeric": 4422800,
+          "otvRate": 100,
+          "netPrice": 1931642.46,
+          "otvAmount": 1931642.46,
+          "kdvAmount": 772656.98,
+          "mtvAmount": 6014,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            },
+            {
+              "name": "7 Kişilik Versiyon",
+              "price": 46296
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kodiaq",
+          "trim": "Prestige 2.0 TDI SCR 193 PS DSG 4x4",
+          "engine": "Prestige 2.0 TDI SCR 193 PS  4x4",
+          "transmission": "DSG",
+          "fuel": "Dizel",
+          "priceRaw": "₺6.499.900",
+          "priceNumeric": 6499900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 170,
+          "netPrice": 1998524.35,
+          "otvAmount": 3397491.4,
+          "kdvAmount": 1079203.15,
+          "mtvAmount": 16737,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            },
+            {
+              "name": "7 Kişilik Versiyon",
+              "price": 46296
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kodiaq",
+          "trim": "Sportline 2.0 TDI SCR 193 PS DSG 4x4",
+          "engine": "Sportline 2.0 TDI SCR 193 PS  4x4",
+          "transmission": "DSG",
+          "fuel": "Dizel",
+          "priceRaw": "₺6.749.900",
+          "priceNumeric": 6749900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 170,
+          "netPrice": 2075684.85,
+          "otvAmount": 3528664.24,
+          "kdvAmount": 1120869.82,
+          "mtvAmount": 16737,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            },
+            {
+              "name": "7 Kişilik Versiyon",
+              "price": 46296
+            }
+          ]
+        },
+        {
+          "model": "Škoda Kodiaq",
+          "trim": "RS 2.0 TSI 265 PS DSG 4x4",
+          "engine": "RS 2.0 TSI 265 PS  4x4",
+          "transmission": "DSG",
+          "fuel": "Benzin",
+          "priceRaw": "₺7.099.900",
+          "priceNumeric": 7099900,
+          "brand": "Škoda",
+          "modelYear": "2026",
+          "otvRate": 170,
+          "netPrice": 2183709.54,
+          "otvAmount": 3712306.21,
+          "kdvAmount": 1179203.15,
+          "mtvAmount": 16737,
+          "trafficRegistrationFee": 7944.1,
+          "origin": "Çekya",
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 21930
+            },
+            {
+              "name": "Exclusive Renk",
+              "price": 21930
+            },
+            {
+              "name": "7 Kişilik Versiyon",
+              "price": 46296
             }
           ]
         }
@@ -1585,7 +2521,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -2488,7 +3424,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3081,7 +4017,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "i20",
@@ -3514,7 +4450,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "E-208",
@@ -3913,7 +4849,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "ATTO 3",
@@ -4035,7 +4971,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "Corsa",
@@ -4316,7 +5252,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -4352,10 +5288,10 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "1.974.000 TL",
-          "priceNumeric": 1974000,
+          "priceRaw": "2.014.000 TL",
+          "priceNumeric": 2014000,
           "brand": "Citroën",
-          "priceListNumeric": 1974000,
+          "priceListNumeric": 2014000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -4368,11 +5304,11 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "1.968.000 TL",
-          "priceNumeric": 1968000,
+          "priceRaw": "2.010.000 TL",
+          "priceNumeric": 2010000,
           "brand": "Citroën",
-          "priceListNumeric": 2068000,
-          "priceCampaignNumeric": 1968000,
+          "priceListNumeric": 2110000,
+          "priceCampaignNumeric": 2010000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -4385,11 +5321,11 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.071.000 TL",
-          "priceNumeric": 2071000,
+          "priceRaw": "2.115.000 TL",
+          "priceNumeric": 2115000,
           "brand": "Citroën",
-          "priceListNumeric": 2171000,
-          "priceCampaignNumeric": 2071000,
+          "priceListNumeric": 2215000,
+          "priceCampaignNumeric": 2115000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -4402,10 +5338,10 @@
           "engine": "83 kW Elektrikli Motor Standart Menzil",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.683.000 TL",
-          "priceNumeric": 1683000,
+          "priceRaw": "1.717.000 TL",
+          "priceNumeric": 1717000,
           "brand": "Citroën",
-          "priceListNumeric": 1683000,
+          "priceListNumeric": 1717000,
           "powerKW": 83,
           "isElectric": true
         },
@@ -4415,25 +5351,24 @@
           "engine": "83 kW Elektrikli Motor Uzun Menzil",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.800.000 TL",
-          "priceNumeric": 1800000,
+          "priceRaw": "1.836.000 TL",
+          "priceNumeric": 1836000,
           "brand": "Citroën",
-          "priceListNumeric": 1800000,
+          "priceListNumeric": 1836000,
           "powerKW": 83,
           "isElectric": true,
           "hasLongRange": true
         },
         {
-          "model": "C4",
+          "model": " C4 Hybrid 145",
           "trim": "You",
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "1.862.000 TL",
-          "priceNumeric": 1862000,
+          "priceRaw": "1.962.000 TL",
+          "priceNumeric": 1962000,
           "brand": "Citroën",
           "priceListNumeric": 1962000,
-          "priceCampaignNumeric": 1862000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -4441,16 +5376,15 @@
           "isHybrid": true
         },
         {
-          "model": "C4",
+          "model": " C4 Hybrid 145",
           "trim": "Max",
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "1.957.000 TL",
-          "priceNumeric": 1957000,
+          "priceRaw": "2.057.000 TL",
+          "priceNumeric": 2057000,
           "brand": "Citroën",
           "priceListNumeric": 2057000,
-          "priceCampaignNumeric": 1957000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -4463,25 +5397,23 @@
           "engine": "115 kW Elektrikli Motor",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "2.052.000 TL",
-          "priceNumeric": 2052000,
+          "priceRaw": "2.202.000 TL",
+          "priceNumeric": 2202000,
           "brand": "Citroën",
           "priceListNumeric": 2202000,
-          "priceCampaignNumeric": 2052000,
           "powerKW": 115,
           "isElectric": true
         },
         {
-          "model": "C4 X",
+          "model": "C4 X Hybrid 145",
           "trim": "You",
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "1.862.000 TL",
-          "priceNumeric": 1862000,
+          "priceRaw": "1.962.000 TL",
+          "priceNumeric": 1962000,
           "brand": "Citroën",
           "priceListNumeric": 1962000,
-          "priceCampaignNumeric": 1862000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -4489,16 +5421,15 @@
           "isHybrid": true
         },
         {
-          "model": "C4 X",
+          "model": "C4 X Hybrid 145",
           "trim": "Max",
           "engine": "1.2 Hybrid 145* eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "1.966.000 TL",
-          "priceNumeric": 1966000,
+          "priceRaw": "2.066.000 TL",
+          "priceNumeric": 2066000,
           "brand": "Citroën",
           "priceListNumeric": 2066000,
-          "priceCampaignNumeric": 1966000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -4511,11 +5442,10 @@
           "engine": "115 kW Elektrikli Motor",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "2.017.000 TL",
-          "priceNumeric": 2017000,
+          "priceRaw": "2.167.000 TL",
+          "priceNumeric": 2167000,
           "brand": "Citroën",
           "priceListNumeric": 2167000,
-          "priceCampaignNumeric": 2017000,
           "powerKW": 115,
           "isElectric": true
         },
@@ -4598,10 +5528,10 @@
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.847.000 TL",
-          "priceNumeric": 1847000,
+          "priceRaw": "1.870.000 TL",
+          "priceNumeric": 1870000,
           "brand": "Citroën",
-          "priceListNumeric": 1847000,
+          "priceListNumeric": 1870000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -4630,10 +5560,10 @@
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.381.000 TL",
-          "priceNumeric": 1381000,
+          "priceRaw": "1.384.000 TL",
+          "priceNumeric": 1384000,
           "brand": "Citroën",
-          "priceListNumeric": 1381000,
+          "priceListNumeric": 1384000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -4645,10 +5575,10 @@
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.459.000 TL",
-          "priceNumeric": 1459000,
+          "priceRaw": "1.462.000 TL",
+          "priceNumeric": 1462000,
           "brand": "Citroën",
-          "priceListNumeric": 1459000,
+          "priceListNumeric": 1462000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -4724,10 +5654,10 @@
           "engine": "2.2 BlueHDi 150 HP - 6 İleri Manuel",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.608.000 TL",
-          "priceNumeric": 1608000,
+          "priceRaw": "1.650.000 TL",
+          "priceNumeric": 1650000,
           "brand": "Citroën",
-          "priceListNumeric": 1608000,
+          "priceListNumeric": 1650000,
           "powerHP": 150,
           "engineDisplacement": "2.2L",
           "engineType": "BlueHDi",
@@ -4739,10 +5669,10 @@
           "engine": "2.2 BlueHDi 180 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.714.000 TL",
-          "priceNumeric": 1714000,
+          "priceRaw": "1.734.000 TL",
+          "priceNumeric": 1734000,
           "brand": "Citroën",
-          "priceListNumeric": 1714000,
+          "priceListNumeric": 1734000,
           "powerHP": 180,
           "engineDisplacement": "2.2L",
           "engineType": "BlueHDi",
@@ -4817,25 +5747,12 @@
           "priceListNumeric": 595000,
           "powerKW": 6,
           "isElectric": true
-        },
-        {
-          "model": "Ami",
-          "trim": "Ami Buggy",
-          "engine": "6 kW Elektrik Motor",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik",
-          "priceRaw": "605.000 TL",
-          "priceNumeric": 605000,
-          "brand": "Citroën",
-          "priceListNumeric": 605000,
-          "powerKW": 6,
-          "isElectric": true
         }
       ]
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -5800,7 +6717,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "A 200",
@@ -6859,7 +7776,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -7577,7 +8494,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -7892,7 +8809,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8314,7 +9231,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "HR-V Hybrid",
@@ -8349,7 +9266,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "YENİ",
@@ -8497,7 +9414,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "Stonic",
@@ -8986,7 +9903,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "EX30",
@@ -9224,7 +10141,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "vehicles": [
         {
           "model": "Egea Sedan",
@@ -9232,11 +10149,11 @@
           "engine": "1.6 M.Jet 130 HP GSR*",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.479.900 TL",
-          "priceNumeric": 1479900,
+          "priceRaw": "1.499.900 TL",
+          "priceNumeric": 1499900,
           "brand": "Fiat",
-          "priceListNumeric": 1579900,
-          "priceCampaignNumeric": 1479900,
+          "priceListNumeric": 1599900,
+          "priceCampaignNumeric": 1499900,
           "origin": "Türkiye",
           "powerHP": 130,
           "engineDisplacement": "1.6L",
@@ -9249,11 +10166,11 @@
           "engine": "1.6 M.Jet 130 HP GSR*",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.539.900 TL",
-          "priceNumeric": 1539900,
+          "priceRaw": "1.559.900 TL",
+          "priceNumeric": 1559900,
           "brand": "Fiat",
-          "priceListNumeric": 1639900,
-          "priceCampaignNumeric": 1539900,
+          "priceListNumeric": 1659900,
+          "priceCampaignNumeric": 1559900,
           "origin": "Türkiye",
           "powerHP": 130,
           "engineDisplacement": "1.6L",
@@ -9266,11 +10183,11 @@
           "engine": "1.6 M.Jet 130 HP GSR*",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.659.900 TL",
-          "priceNumeric": 1659900,
+          "priceRaw": "1.679.900 TL",
+          "priceNumeric": 1679900,
           "brand": "Fiat",
-          "priceListNumeric": 1709900,
-          "priceCampaignNumeric": 1659900,
+          "priceListNumeric": 1729900,
+          "priceCampaignNumeric": 1679900,
           "origin": "Türkiye",
           "powerHP": 130,
           "engineDisplacement": "1.6L",
@@ -9283,11 +10200,11 @@
           "engine": "1.6 M.Jet 130 HP DCT GSR*",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.709.900 TL",
-          "priceNumeric": 1709900,
+          "priceRaw": "1.729.900 TL",
+          "priceNumeric": 1729900,
           "brand": "Fiat",
-          "priceListNumeric": 1759900,
-          "priceCampaignNumeric": 1709900,
+          "priceListNumeric": 1779900,
+          "priceCampaignNumeric": 1729900,
           "origin": "Türkiye",
           "powerHP": 130,
           "engineDisplacement": "1.6L",
@@ -9300,11 +10217,11 @@
           "engine": "1.6 M.Jet 130 HP DCT GSR*",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.769.900 TL",
-          "priceNumeric": 1769900,
+          "priceRaw": "1.789.900 TL",
+          "priceNumeric": 1789900,
           "brand": "Fiat",
-          "priceListNumeric": 1869900,
-          "priceCampaignNumeric": 1769900,
+          "priceListNumeric": 1889900,
+          "priceCampaignNumeric": 1789900,
           "origin": "Türkiye",
           "powerHP": 130,
           "engineDisplacement": "1.6L",
@@ -9317,11 +10234,11 @@
           "engine": "1.6 M.Jet 130 HP DCT GSR",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.734.900 TL",
-          "priceNumeric": 1734900,
+          "priceRaw": "1.754.900 TL",
+          "priceNumeric": 1754900,
           "brand": "Fiat",
-          "priceListNumeric": 1784900,
-          "priceCampaignNumeric": 1734900,
+          "priceListNumeric": 1854900,
+          "priceCampaignNumeric": 1754900,
           "origin": "Türkiye",
           "powerHP": 130,
           "engineDisplacement": "1.6L",
@@ -9334,11 +10251,11 @@
           "engine": "1.6 M.Jet 130 HP DCT GSR",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.851.900 TL",
-          "priceNumeric": 1851900,
+          "priceRaw": "1.863.900 TL",
+          "priceNumeric": 1863900,
           "brand": "Fiat",
-          "priceListNumeric": 1879900,
-          "priceCampaignNumeric": 1851900,
+          "priceListNumeric": 1913900,
+          "priceCampaignNumeric": 1863900,
           "origin": "Türkiye",
           "powerHP": 130,
           "engineDisplacement": "1.6L",
@@ -9351,11 +10268,11 @@
           "engine": "1.6 M.Jet 130 HP DCT GSR",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.969.900 TL",
-          "priceNumeric": 1969900,
+          "priceRaw": "1.989.900 TL",
+          "priceNumeric": 1989900,
           "brand": "Fiat",
-          "priceListNumeric": 1989900,
-          "priceCampaignNumeric": 1969900,
+          "priceListNumeric": 2039900,
+          "priceCampaignNumeric": 1989900,
           "origin": "Türkiye",
           "powerHP": 130,
           "engineDisplacement": "1.6L",
@@ -9382,11 +10299,11 @@
           "engine": "6 kW/8 HP - 5.5kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "579.900 TL",
-          "priceNumeric": 579900,
+          "priceRaw": "584.900 TL",
+          "priceNumeric": 584900,
           "brand": "Fiat",
-          "priceListNumeric": 669900,
-          "priceCampaignNumeric": 579900,
+          "priceListNumeric": 674900,
+          "priceCampaignNumeric": 584900,
           "modelYear": 2026,
           "batteryCapacity": 5.5,
           "powerKW": 6,
@@ -9399,11 +10316,11 @@
           "engine": "6 kW/8 HP - 5.5kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "624.900 TL",
-          "priceNumeric": 624900,
+          "priceRaw": "629.900 TL",
+          "priceNumeric": 629900,
           "brand": "Fiat",
-          "priceListNumeric": 714900,
-          "priceCampaignNumeric": 624900,
+          "priceListNumeric": 719900,
+          "priceCampaignNumeric": 629900,
           "modelYear": 2026,
           "batteryCapacity": 5.5,
           "powerKW": 6,
@@ -9430,11 +10347,10 @@
           "engine": "1.2 MHEV 110HP eDCT",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "1.569.900 TL",
-          "priceNumeric": 1569900,
+          "priceRaw": "1.669.900 TL",
+          "priceNumeric": 1669900,
           "brand": "Fiat",
           "priceListNumeric": 1669900,
-          "priceCampaignNumeric": 1569900,
           "powerHP": 110,
           "engineDisplacement": "1.2L",
           "engineType": "MHEV",
@@ -9446,11 +10362,10 @@
           "engine": "1.2 MHEV 110HP eDCT",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "1.689.900 TL",
-          "priceNumeric": 1689900,
+          "priceRaw": "1.789.900 TL",
+          "priceNumeric": 1789900,
           "brand": "Fiat",
           "priceListNumeric": 1789900,
-          "priceCampaignNumeric": 1689900,
           "powerHP": 110,
           "engineDisplacement": "1.2L",
           "engineType": "MHEV",
@@ -9475,11 +10390,10 @@
           "engine": "87 kW/118 HP - 42kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.939.900 TL",
-          "priceNumeric": 1939900,
+          "priceRaw": "2.093.900 TL",
+          "priceNumeric": 2093900,
           "brand": "Fiat",
-          "priceListNumeric": 2063900,
-          "priceCampaignNumeric": 1939900,
+          "priceListNumeric": 2093900,
           "batteryCapacity": 42,
           "powerKW": 87,
           "powerHP": 118,
@@ -9491,27 +10405,10 @@
           "engine": "87 kW/118 HP - 42kWh",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.989.900 TL",
-          "priceNumeric": 1989900,
+          "priceRaw": "2.149.900 TL",
+          "priceNumeric": 2149900,
           "brand": "Fiat",
-          "priceListNumeric": 2119900,
-          "priceCampaignNumeric": 1989900,
-          "batteryCapacity": 42,
-          "powerKW": 87,
-          "powerHP": 118,
-          "isElectric": true
-        },
-        {
-          "model": "500e",
-          "trim": "Giorgio Armani",
-          "engine": "87 kW/118 HP - 42kWh",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik",
-          "priceRaw": "2.089.900 TL",
-          "priceNumeric": 2089900,
-          "brand": "Fiat",
-          "priceListNumeric": 2219900,
-          "priceCampaignNumeric": 2089900,
+          "priceListNumeric": 2149900,
           "batteryCapacity": 42,
           "powerKW": 87,
           "powerHP": 118,
@@ -9546,22 +10443,6 @@
           "priceListNumeric": 679900,
           "priceCampaignNumeric": 589900,
           "modelYear": 2025,
-          "batteryCapacity": 5.5,
-          "powerKW": 6,
-          "powerHP": 8,
-          "isElectric": true
-        },
-        {
-          "model": "Topolino",
-          "trim": "Topolino",
-          "engine": "6 kW/8 HP - 5.5kWh",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik",
-          "priceRaw": "575.900 TL",
-          "priceNumeric": 575900,
-          "brand": "Fiat",
-          "priceListNumeric": 575900,
-          "modelYear": 2024,
           "batteryCapacity": 5.5,
           "powerKW": 6,
           "powerHP": 8,

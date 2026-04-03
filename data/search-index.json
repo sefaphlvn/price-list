@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-02T01:33:19.756Z",
-  "totalEntries": 497,
+  "generatedAt": "2026-04-03T01:33:20.201Z",
+  "totalEntries": 525,
   "entries": [
     {
       "id": "volkswagen-polo-life-1.0-tsi-95-ps",
@@ -609,8 +609,8 @@
       "engine": "60 e-Prestige 204 PS",
       "fuel": "Elektrik",
       "transmission": "",
-      "price": 2384400,
-      "priceFormatted": "₺2.384.400",
+      "price": 2469900,
+      "priceFormatted": "₺2.469.900",
       "searchText": "skoda yeni skoda elroq 60 e prestige 204 ps 60 e prestige 204 ps elektrik"
     },
     {
@@ -622,22 +622,22 @@
       "engine": "60 e-Sportline 204 PS",
       "fuel": "Elektrik",
       "transmission": "",
-      "price": 3499400,
-      "priceFormatted": "₺3.499.400",
+      "price": 3599900,
+      "priceFormatted": "₺3.599.900",
       "searchText": "skoda yeni skoda enyaq coupe 60 e sportline 204 ps 60 e sportline 204 ps elektrik"
     },
     {
-      "id": "škoda-yeni-škoda-enyaq-coupé-85x-e-sportline-285-ps-85x-e-sportline-285-ps",
+      "id": "škoda-yeni-škoda-enyaq-coupé-e-rs-340-ps-4x4-e-rs-340-ps-4x4",
       "brand": "Škoda",
       "brandId": "skoda",
       "model": "Yeni Škoda Enyaq Coupé",
-      "trim": "85x e-Sportline 285 PS",
-      "engine": "85x e-Sportline 285 PS",
+      "trim": "e-RS 340 PS 4x4",
+      "engine": "e-RS 340 PS 4x4",
       "fuel": "Elektrik",
       "transmission": "",
-      "price": 4399900,
-      "priceFormatted": "₺4.399.900",
-      "searchText": "skoda yeni skoda enyaq coupe 85x e sportline 285 ps 85x e sportline 285 ps elektrik"
+      "price": 4999900,
+      "priceFormatted": "₺4.999.900",
+      "searchText": "skoda yeni skoda enyaq coupe e rs 340 ps 4x4 e rs 340 ps 4x4 elektrik"
     },
     {
       "id": "škoda-yeni-škoda-enyaq-60-e-prestige-204-ps-60-e-prestige-204-ps",
@@ -648,22 +648,74 @@
       "engine": "60 e-Prestige 204 PS",
       "fuel": "Elektrik",
       "transmission": "",
-      "price": 3399400,
-      "priceFormatted": "₺3.399.400",
+      "price": 3499900,
+      "priceFormatted": "₺3.499.900",
       "searchText": "skoda yeni skoda enyaq 60 e prestige 204 ps 60 e prestige 204 ps elektrik"
     },
     {
-      "id": "škoda-škoda-scala-elite-1,0-tsi-115-ps-dsg-elite-1,0-tsi-115-ps",
+      "id": "škoda-škoda-fabia-premium-1.0-tsi-115-ps-dsg-premium-1.0-tsi-115-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Fabia",
+      "trim": "Premium 1.0 TSI 115 PS DSG",
+      "engine": "Premium 1.0 TSI 115 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 1829900,
+      "priceFormatted": "₺1.829.900",
+      "searchText": "skoda skoda fabia premium 1 0 tsi 115 ps dsg premium 1 0 tsi 115 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-fabia-monte-carlo-1.5-tsi-150-ps-dsg-monte-carlo-1.5-tsi-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Fabia",
+      "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
+      "engine": "Monte Carlo 1.5 TSI 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 2214900,
+      "priceFormatted": "₺2.214.900",
+      "searchText": "skoda skoda fabia monte carlo 1 5 tsi 150 ps dsg monte carlo 1 5 tsi 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-scala-elite-1.0-tsi-115-ps-dsg-elite-1.0-tsi-115-ps",
       "brand": "Škoda",
       "brandId": "skoda",
       "model": "Škoda Scala",
-      "trim": "Elite 1,0 TSI 115 PS DSG",
-      "engine": "Elite 1,0 TSI 115 PS",
+      "trim": "Elite 1.0 TSI 115 PS DSG",
+      "engine": "Elite 1.0 TSI 115 PS",
       "fuel": "Benzin",
       "transmission": "DSG",
-      "price": 1785900,
-      "priceFormatted": "₺1.785.900",
+      "price": 1854900,
+      "priceFormatted": "₺1.854.900",
       "searchText": "skoda skoda scala elite 1 0 tsi 115 ps dsg elite 1 0 tsi 115 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-scala-premium-1.0-tsi-115-ps-dsg-premium-1.0-tsi-115-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Scala",
+      "trim": "Premium 1.0 TSI 115 PS DSG",
+      "engine": "Premium 1.0 TSI 115 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 2144900,
+      "priceFormatted": "₺2.144.900",
+      "searchText": "skoda skoda scala premium 1 0 tsi 115 ps dsg premium 1 0 tsi 115 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-scala-premium-1.5-tsi-150-ps-dsg-premium-1.5-tsi-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Scala",
+      "trim": "Premium 1.5 TSI 150 PS DSG",
+      "engine": "Premium 1.5 TSI 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 2274900,
+      "priceFormatted": "₺2.274.900",
+      "searchText": "skoda skoda scala premium 1 5 tsi 150 ps dsg premium 1 5 tsi 150 ps benzin dsg"
     },
     {
       "id": "škoda-škoda-scala-monte-carlo-1.5-tsi-150-ps-dsg-monte-carlo-1.5-tsi-150-ps",
@@ -674,9 +726,113 @@
       "engine": "Monte Carlo 1.5 TSI 150 PS",
       "fuel": "Benzin",
       "transmission": "DSG",
-      "price": 2372900,
-      "priceFormatted": "₺2.372.900",
+      "price": 2584900,
+      "priceFormatted": "₺2.584.900",
       "searchText": "skoda skoda scala monte carlo 1 5 tsi 150 ps dsg monte carlo 1 5 tsi 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-octavia-elite-1.5-tsi-mhev-150-ps-dsg-elite-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Octavia",
+      "trim": "Elite 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Elite 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 2639900,
+      "priceFormatted": "₺2.639.900",
+      "searchText": "skoda skoda octavia elite 1 5 tsi mhev 150 ps dsg elite 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-octavia-premium-1.5-tsi-mhev-150-ps-dsg-premium-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Octavia",
+      "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Premium 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 2999900,
+      "priceFormatted": "₺2.999.900",
+      "searchText": "skoda skoda octavia premium 1 5 tsi mhev 150 ps dsg premium 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-octavia-prestige-1.5-tsi-mhev-150-ps-dsg-prestige-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Octavia",
+      "trim": "Prestige 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Prestige 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 3299900,
+      "priceFormatted": "₺3.299.900",
+      "searchText": "skoda skoda octavia prestige 1 5 tsi mhev 150 ps dsg prestige 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-octavia-sportline-1.5-tsi-mhev-150-ps-dsg-sportline-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Octavia",
+      "trim": "Sportline 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Sportline 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 3299900,
+      "priceFormatted": "₺3.299.900",
+      "searchText": "skoda skoda octavia sportline 1 5 tsi mhev 150 ps dsg sportline 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-octavia-rs-2.0-tsi-265-ps-dsg-rs-2.0-tsi-265-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Octavia",
+      "trim": "RS 2.0 TSI 265 PS DSG",
+      "engine": "RS 2.0 TSI 265 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 5429900,
+      "priceFormatted": "₺5.429.900",
+      "searchText": "skoda skoda octavia rs 2 0 tsi 265 ps dsg rs 2 0 tsi 265 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-octavia-combi-sportline-1.5-tsi-mhev-150-ps-dsg-combi-sportline-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Octavia",
+      "trim": "Combi Sportline 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Combi Sportline 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 3399900,
+      "priceFormatted": "₺3.399.900",
+      "searchText": "skoda skoda octavia combi sportline 1 5 tsi mhev 150 ps dsg combi sportline 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-octavia-combi-rs-2.0-tsi-265-ps-dsg-combi-rs-2.0-tsi-265-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Octavia",
+      "trim": "Combi RS 2.0 TSI 265 PS DSG",
+      "engine": "Combi RS 2.0 TSI 265 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 5529900,
+      "priceFormatted": "₺5.529.900",
+      "searchText": "skoda skoda octavia combi rs 2 0 tsi 265 ps dsg combi rs 2 0 tsi 265 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-superb-premium-1.5-tsi-mhev-150-ps-dsg-premium-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Premium 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 3774900,
+      "priceFormatted": "₺3.774.900",
+      "searchText": "skoda skoda superb premium 1 5 tsi mhev 150 ps dsg premium 1 5 tsi mhev 150 ps benzin dsg"
     },
     {
       "id": "škoda-škoda-superb-prestige-1.5-tsi-mhev-150-ps-dsg-prestige-1.5-tsi-mhev-150-ps",
@@ -687,9 +843,178 @@
       "engine": "Prestige 1.5 TSI  mHEV 150 PS",
       "fuel": "Benzin",
       "transmission": "DSG",
-      "price": 4151900,
-      "priceFormatted": "₺4.151.900",
+      "price": 4449900,
+      "priceFormatted": "₺4.449.900",
       "searchText": "skoda skoda superb prestige 1 5 tsi mhev 150 ps dsg prestige 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-superb-sportline-1,5-tsi-mhev-150-ps-dsg-sportline-1,5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "trim": "Sportline 1,5 TSI  mHEV 150 PS DSG",
+      "engine": "Sportline 1,5 TSI  mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 4449900,
+      "priceFormatted": "₺4.449.900",
+      "searchText": "skoda skoda superb sportline 1 5 tsi mhev 150 ps dsg sportline 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-superb-l&k-crystal-1.5-tsi-mhev-150-ps-dsg-l&k-crystal-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "trim": "L&K Crystal 1.5 TSI mHEV 150 PS DSG",
+      "engine": "L&K Crystal 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 4899900,
+      "priceFormatted": "₺4.899.900",
+      "searchText": "skoda skoda superb l k crystal 1 5 tsi mhev 150 ps dsg l k crystal 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-superb-l&k-crystal-2.0-tdi-193-ps-dsg-4x4-l&k-crystal-2.0-tdi-193-ps-4x4",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "trim": "L&K Crystal 2.0 TDI 193 PS DSG 4x4",
+      "engine": "L&K Crystal 2.0 TDI 193 PS  4x4",
+      "fuel": "Dizel",
+      "transmission": "DSG",
+      "price": 6849900,
+      "priceFormatted": "₺6.849.900",
+      "searchText": "skoda skoda superb l k crystal 2 0 tdi 193 ps dsg 4x4 l k crystal 2 0 tdi 193 ps 4x4 dizel dsg"
+    },
+    {
+      "id": "škoda-škoda-superb-l&k-crystal-2.0-tsi-265-ps-dsg-4x4-l&k-crystal-2.0-tsi-265-ps-4x4",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "trim": "L&K Crystal 2.0 TSI 265 PS DSG 4x4",
+      "engine": "L&K Crystal 2.0 TSI 265 PS  4x4",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 6949900,
+      "priceFormatted": "₺6.949.900",
+      "searchText": "skoda skoda superb l k crystal 2 0 tsi 265 ps dsg 4x4 l k crystal 2 0 tsi 265 ps 4x4 benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-superb-combi-prestige-1.5-tsi-mhev-150-ps-dsg-combi-prestige-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "trim": "Combi Prestige 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Combi Prestige 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 4569900,
+      "priceFormatted": "₺4.569.900",
+      "searchText": "skoda skoda superb combi prestige 1 5 tsi mhev 150 ps dsg combi prestige 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-superb-combi-l&k-crystal-1.5-tsi-mhev-150-ps-dsg-combi-l&k-crystal-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "trim": "Combi L&K Crystal 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Combi L&K Crystal 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 5019900,
+      "priceFormatted": "₺5.019.900",
+      "searchText": "skoda skoda superb combi l k crystal 1 5 tsi mhev 150 ps dsg combi l k crystal 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-superb-combi-l&k-crystal-2.0-tdi-scr-193-ps-dsg-4x4-combi-l&k-crystal-2.0-tdi-scr-193-ps-4x4",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "trim": "Combi L&K Crystal 2.0 TDI SCR 193 PS DSG 4x4",
+      "engine": "Combi L&K Crystal 2.0 TDI SCR 193 PS  4x4",
+      "fuel": "Dizel",
+      "transmission": "DSG",
+      "price": 6969900,
+      "priceFormatted": "₺6.969.900",
+      "searchText": "skoda skoda superb combi l k crystal 2 0 tdi scr 193 ps dsg 4x4 combi l k crystal 2 0 tdi scr 193 ps 4x4 dizel dsg"
+    },
+    {
+      "id": "škoda-škoda-superb-combi-l&k-crystal-2.0-tsi-265-ps-dsg-4x4-combi-l&k-crystal-2.0-tsi-265-ps-4x4",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Superb",
+      "trim": "Combi L&K Crystal 2.0 TSI 265 PS DSG 4x4",
+      "engine": "Combi L&K Crystal 2.0 TSI 265 PS  4x4",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 7069900,
+      "priceFormatted": "₺7.069.900",
+      "searchText": "skoda skoda superb combi l k crystal 2 0 tsi 265 ps dsg 4x4 combi l k crystal 2 0 tsi 265 ps 4x4 benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-kamiq-elite-1.0-tsi-115-ps-dsg-elite-1.0-tsi-115-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kamiq",
+      "trim": "Elite 1.0 TSI 115 PS DSG",
+      "engine": "Elite 1.0 TSI 115 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 2024900,
+      "priceFormatted": "₺2.024.900",
+      "searchText": "skoda skoda kamiq elite 1 0 tsi 115 ps dsg elite 1 0 tsi 115 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-kamiq-premium-1.0-tsi-115-ps-dsg-premium-1.0-tsi-115-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kamiq",
+      "trim": "Premium 1.0 TSI 115 PS DSG",
+      "engine": "Premium 1.0 TSI 115 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 2269900,
+      "priceFormatted": "₺2.269.900",
+      "searchText": "skoda skoda kamiq premium 1 0 tsi 115 ps dsg premium 1 0 tsi 115 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-kamiq-premium-1.5-tsi-150-ps-dsg-premium-1.5-tsi-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kamiq",
+      "trim": "Premium 1.5 TSI 150 PS DSG",
+      "engine": "Premium 1.5 TSI 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 2534900,
+      "priceFormatted": "₺2.534.900",
+      "searchText": "skoda skoda kamiq premium 1 5 tsi 150 ps dsg premium 1 5 tsi 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-kamiq-monte-carlo-1.5-tsi-150-ps-dsg-monte-carlo-1.5-tsi-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kamiq",
+      "trim": "Monte Carlo 1.5 TSI 150 PS DSG",
+      "engine": "Monte Carlo 1.5 TSI 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 2699900,
+      "priceFormatted": "₺2.699.900",
+      "searchText": "skoda skoda kamiq monte carlo 1 5 tsi 150 ps dsg monte carlo 1 5 tsi 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-karoq-premium-1.5-tsi-150-ps-dsg-premium-1.5-tsi-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Karoq",
+      "trim": "Premium 1.5 TSI 150 PS DSG",
+      "engine": "Premium 1.5 TSI 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 3149900,
+      "priceFormatted": "₺3.149.900",
+      "searchText": "skoda skoda karoq premium 1 5 tsi 150 ps dsg premium 1 5 tsi 150 ps benzin dsg"
     },
     {
       "id": "škoda-škoda-karoq-prestige-1.5-tsi-150-ps-dsg-prestige-1.5-tsi-150-ps",
@@ -700,8 +1025,8 @@
       "engine": "Prestige 1.5 TSI 150 PS",
       "fuel": "Benzin",
       "transmission": "DSG",
-      "price": 3349400,
-      "priceFormatted": "₺3.349.400",
+      "price": 3469900,
+      "priceFormatted": "₺3.469.900",
       "searchText": "skoda skoda karoq prestige 1 5 tsi 150 ps dsg prestige 1 5 tsi 150 ps benzin dsg"
     },
     {
@@ -713,9 +1038,87 @@
       "engine": "Sportline 1.5 TSI 150 PS",
       "fuel": "Benzin",
       "transmission": "DSG",
-      "price": 3454900,
-      "priceFormatted": "₺3.454.900",
+      "price": 3569900,
+      "priceFormatted": "₺3.569.900",
       "searchText": "skoda skoda karoq sportline 1 5 tsi 150 ps dsg sportline 1 5 tsi 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-kodiaq-premium-1.5-tsi-mhev-150-ps-dsg-premium-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kodiaq",
+      "trim": "Premium 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Premium 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 3699900,
+      "priceFormatted": "₺3.699.900",
+      "searchText": "skoda skoda kodiaq premium 1 5 tsi mhev 150 ps dsg premium 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-kodiaq-prestige-1.5-tsi-mhev-150-ps-dsg-prestige-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kodiaq",
+      "trim": "Prestige 1.5 TSI  mHEV 150 PS DSG",
+      "engine": "Prestige 1.5 TSI  mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 4499900,
+      "priceFormatted": "₺4.499.900",
+      "searchText": "skoda skoda kodiaq prestige 1 5 tsi mhev 150 ps dsg prestige 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-kodiaq-sportline-1.5-tsi-mhev-150-ps-dsg-sportline-1.5-tsi-mhev-150-ps",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kodiaq",
+      "trim": "Sportline 1.5 TSI mHEV 150 PS DSG",
+      "engine": "Sportline 1.5 TSI mHEV 150 PS",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 4649900,
+      "priceFormatted": "₺4.649.900",
+      "searchText": "skoda skoda kodiaq sportline 1 5 tsi mhev 150 ps dsg sportline 1 5 tsi mhev 150 ps benzin dsg"
+    },
+    {
+      "id": "škoda-škoda-kodiaq-prestige-2.0-tdi-scr-193-ps-dsg-4x4-prestige-2.0-tdi-scr-193-ps-4x4",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kodiaq",
+      "trim": "Prestige 2.0 TDI SCR 193 PS DSG 4x4",
+      "engine": "Prestige 2.0 TDI SCR 193 PS  4x4",
+      "fuel": "Dizel",
+      "transmission": "DSG",
+      "price": 6499900,
+      "priceFormatted": "₺6.499.900",
+      "searchText": "skoda skoda kodiaq prestige 2 0 tdi scr 193 ps dsg 4x4 prestige 2 0 tdi scr 193 ps 4x4 dizel dsg"
+    },
+    {
+      "id": "škoda-škoda-kodiaq-sportline-2.0-tdi-scr-193-ps-dsg-4x4-sportline-2.0-tdi-scr-193-ps-4x4",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kodiaq",
+      "trim": "Sportline 2.0 TDI SCR 193 PS DSG 4x4",
+      "engine": "Sportline 2.0 TDI SCR 193 PS  4x4",
+      "fuel": "Dizel",
+      "transmission": "DSG",
+      "price": 6749900,
+      "priceFormatted": "₺6.749.900",
+      "searchText": "skoda skoda kodiaq sportline 2 0 tdi scr 193 ps dsg 4x4 sportline 2 0 tdi scr 193 ps 4x4 dizel dsg"
+    },
+    {
+      "id": "škoda-škoda-kodiaq-rs-2.0-tsi-265-ps-dsg-4x4-rs-2.0-tsi-265-ps-4x4",
+      "brand": "Škoda",
+      "brandId": "skoda",
+      "model": "Škoda Kodiaq",
+      "trim": "RS 2.0 TSI 265 PS DSG 4x4",
+      "engine": "RS 2.0 TSI 265 PS  4x4",
+      "fuel": "Benzin",
+      "transmission": "DSG",
+      "price": 7099900,
+      "priceFormatted": "₺7.099.900",
+      "searchText": "skoda skoda kodiaq rs 2 0 tsi 265 ps dsg 4x4 rs 2 0 tsi 265 ps 4x4 benzin dsg"
     },
     {
       "id": "renault-yeni-clio-evolution-plus-evolution-plus-tce-115-edc",
@@ -2702,8 +3105,8 @@
       "engine": "1.2 Hybrid 145* -  eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1974000,
-      "priceFormatted": "1.974.000 TL",
+      "price": 2014000,
+      "priceFormatted": "2.014.000 TL",
       "searchText": "citroen c3 aircross hybrid 145 plus 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -2715,8 +3118,8 @@
       "engine": "1.2 Hybrid 145* -  eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1968000,
-      "priceFormatted": "1.968.000 TL",
+      "price": 2010000,
+      "priceFormatted": "2.010.000 TL",
       "searchText": "citroen c3 aircross hybrid 145 max 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -2728,8 +3131,8 @@
       "engine": "1.2 Hybrid 145* -  eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 2071000,
-      "priceFormatted": "2.071.000 TL",
+      "price": 2115000,
+      "priceFormatted": "2.115.000 TL",
       "searchText": "citroen c3 aircross hybrid 145 max 7 koltuk 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
@@ -2741,8 +3144,8 @@
       "engine": "83 kW Elektrikli Motor Standart Menzil",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 1683000,
-      "priceFormatted": "1.683.000 TL",
+      "price": 1717000,
+      "priceFormatted": "1.717.000 TL",
       "searchText": "citroen elektrikli e c3 aircross max 83 kw elektrikli motor standart menzil elektrik otomatik"
     },
     {
@@ -2754,35 +3157,35 @@
       "engine": "83 kW Elektrikli Motor Uzun Menzil",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 1800000,
-      "priceFormatted": "1.800.000 TL",
+      "price": 1836000,
+      "priceFormatted": "1.836.000 TL",
       "searchText": "citroen elektrikli e c3 aircross max 83 kw elektrikli motor uzun menzil elektrik otomatik"
     },
     {
-      "id": "citroën-c4-you-1.2-hybrid-145*-edcs6",
+      "id": "citroën--c4-hybrid-145-you-1.2-hybrid-145*-edcs6",
       "brand": "Citroën",
       "brandId": "citroen",
-      "model": "C4",
+      "model": " C4 Hybrid 145",
       "trim": "You",
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1862000,
-      "priceFormatted": "1.862.000 TL",
-      "searchText": "citroen c4 you 1 2 hybrid 145 edcs6 hybrid otomatik"
+      "price": 1962000,
+      "priceFormatted": "1.962.000 TL",
+      "searchText": "citroen c4 hybrid 145 you 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
-      "id": "citroën-c4-max-1.2-hybrid-145*-edcs6",
+      "id": "citroën--c4-hybrid-145-max-1.2-hybrid-145*-edcs6",
       "brand": "Citroën",
       "brandId": "citroen",
-      "model": "C4",
+      "model": " C4 Hybrid 145",
       "trim": "Max",
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1957000,
-      "priceFormatted": "1.957.000 TL",
-      "searchText": "citroen c4 max 1 2 hybrid 145 edcs6 hybrid otomatik"
+      "price": 2057000,
+      "priceFormatted": "2.057.000 TL",
+      "searchText": "citroen c4 hybrid 145 max 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
       "id": "citroën-elektrikli-ë-c4-max-115-kw-elektrikli-motor",
@@ -2793,35 +3196,35 @@
       "engine": "115 kW Elektrikli Motor",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 2052000,
-      "priceFormatted": "2.052.000 TL",
+      "price": 2202000,
+      "priceFormatted": "2.202.000 TL",
       "searchText": "citroen elektrikli e c4 max 115 kw elektrikli motor elektrik otomatik"
     },
     {
-      "id": "citroën-c4-x-you-1.2-hybrid-145*-edcs6",
+      "id": "citroën-c4-x-hybrid-145-you-1.2-hybrid-145*-edcs6",
       "brand": "Citroën",
       "brandId": "citroen",
-      "model": "C4 X",
+      "model": "C4 X Hybrid 145",
       "trim": "You",
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1862000,
-      "priceFormatted": "1.862.000 TL",
-      "searchText": "citroen c4 x you 1 2 hybrid 145 edcs6 hybrid otomatik"
+      "price": 1962000,
+      "priceFormatted": "1.962.000 TL",
+      "searchText": "citroen c4 x hybrid 145 you 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
-      "id": "citroën-c4-x-max-1.2-hybrid-145*-edcs6",
+      "id": "citroën-c4-x-hybrid-145-max-1.2-hybrid-145*-edcs6",
       "brand": "Citroën",
       "brandId": "citroen",
-      "model": "C4 X",
+      "model": "C4 X Hybrid 145",
       "trim": "Max",
       "engine": "1.2 Hybrid 145* eDCS6",
       "fuel": "Hybrid",
       "transmission": "Otomatik",
-      "price": 1966000,
-      "priceFormatted": "1.966.000 TL",
-      "searchText": "citroen c4 x max 1 2 hybrid 145 edcs6 hybrid otomatik"
+      "price": 2066000,
+      "priceFormatted": "2.066.000 TL",
+      "searchText": "citroen c4 x hybrid 145 max 1 2 hybrid 145 edcs6 hybrid otomatik"
     },
     {
       "id": "citroën-elektrikli-ë-c4-x-max-115-kw-elektrikli-motor",
@@ -2832,8 +3235,8 @@
       "engine": "115 kW Elektrikli Motor",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 2017000,
-      "priceFormatted": "2.017.000 TL",
+      "price": 2167000,
+      "priceFormatted": "2.167.000 TL",
       "searchText": "citroen elektrikli e c4 x max 115 kw elektrikli motor elektrik otomatik"
     },
     {
@@ -2910,8 +3313,8 @@
       "engine": "1.5 BlueHDi 130 HP - EAT8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1847000,
-      "priceFormatted": "1.847.000 TL",
+      "price": 1870000,
+      "priceFormatted": "1.870.000 TL",
       "searchText": "citroen berlingo plus 1 5 bluehdi 130 hp eat8 dizel otomatik"
     },
     {
@@ -2936,8 +3339,8 @@
       "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1381000,
-      "priceFormatted": "1.381.000 TL",
+      "price": 1384000,
+      "priceFormatted": "1.384.000 TL",
       "searchText": "citroen berlingo van van 1 5 bluehdi 130 hp 6 ileri manuel dizel manuel"
     },
     {
@@ -2949,8 +3352,8 @@
       "engine": "1.5 BlueHDi 130 HP - EAT8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1459000,
-      "priceFormatted": "1.459.000 TL",
+      "price": 1462000,
+      "priceFormatted": "1.462.000 TL",
       "searchText": "citroen berlingo van van 1 5 bluehdi 130 hp eat8 dizel otomatik"
     },
     {
@@ -3014,8 +3417,8 @@
       "engine": "2.2 BlueHDi 150 HP - 6 İleri Manuel",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1608000,
-      "priceFormatted": "1.608.000 TL",
+      "price": 1650000,
+      "priceFormatted": "1.650.000 TL",
       "searchText": "citroen jumpy van panelvan l3 uzun 2 2 bluehdi 150 hp 6 ileri manuel dizel manuel"
     },
     {
@@ -3027,8 +3430,8 @@
       "engine": "2.2 BlueHDi 180 HP - EAT8",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1714000,
-      "priceFormatted": "1.714.000 TL",
+      "price": 1734000,
+      "priceFormatted": "1.734.000 TL",
       "searchText": "citroen jumpy van panelvan l3 uzun 2 2 bluehdi 180 hp eat8 dizel otomatik"
     },
     {
@@ -3095,19 +3498,6 @@
       "price": 595000,
       "priceFormatted": "595.000 TL",
       "searchText": "citroen ami yeni ami dark side 6 kw elektrik motor elektrik otomatik"
-    },
-    {
-      "id": "citroën-ami-ami-buggy-6-kw-elektrik-motor",
-      "brand": "Citroën",
-      "brandId": "citroen",
-      "model": "Ami",
-      "trim": "Ami Buggy",
-      "engine": "6 kW Elektrik Motor",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "price": 605000,
-      "priceFormatted": "605.000 TL",
-      "searchText": "citroen ami ami buggy 6 kw elektrik motor elektrik otomatik"
     },
     {
       "id": "bmw-bmw-120-sport-line-1.5l-156+20-hp",
@@ -6199,8 +6589,8 @@
       "engine": "1.6 M.Jet 130 HP GSR*",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1479900,
-      "priceFormatted": "1.479.900 TL",
+      "price": 1499900,
+      "priceFormatted": "1.499.900 TL",
       "searchText": "fiat egea sedan urban 1 6 m jet 130 hp gsr dizel manuel"
     },
     {
@@ -6212,8 +6602,8 @@
       "engine": "1.6 M.Jet 130 HP GSR*",
       "fuel": "Dizel",
       "transmission": "Manuel",
-      "price": 1539900,
-      "priceFormatted": "1.539.900 TL",
+      "price": 1559900,
+      "priceFormatted": "1.559.900 TL",
       "searchText": "fiat egea sedan lounge 1 6 m jet 130 hp gsr dizel manuel"
     },
     {
@@ -6225,8 +6615,8 @@
       "engine": "1.6 M.Jet 130 HP GSR*",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1659900,
-      "priceFormatted": "1.659.900 TL",
+      "price": 1679900,
+      "priceFormatted": "1.679.900 TL",
       "searchText": "fiat egea sedan easy 1 6 m jet 130 hp gsr dizel otomatik"
     },
     {
@@ -6238,8 +6628,8 @@
       "engine": "1.6 M.Jet 130 HP DCT GSR*",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1709900,
-      "priceFormatted": "1.709.900 TL",
+      "price": 1729900,
+      "priceFormatted": "1.729.900 TL",
       "searchText": "fiat egea sedan urban 1 6 m jet 130 hp dct gsr dizel otomatik"
     },
     {
@@ -6251,8 +6641,8 @@
       "engine": "1.6 M.Jet 130 HP DCT GSR*",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1769900,
-      "priceFormatted": "1.769.900 TL",
+      "price": 1789900,
+      "priceFormatted": "1.789.900 TL",
       "searchText": "fiat egea sedan lounge 1 6 m jet 130 hp dct gsr dizel otomatik"
     },
     {
@@ -6264,8 +6654,8 @@
       "engine": "1.6 M.Jet 130 HP DCT GSR",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1734900,
-      "priceFormatted": "1.734.900 TL",
+      "price": 1754900,
+      "priceFormatted": "1.754.900 TL",
       "searchText": "fiat egea cross urban 1 6 m jet 130 hp dct gsr dizel otomatik"
     },
     {
@@ -6277,8 +6667,8 @@
       "engine": "1.6 M.Jet 130 HP DCT GSR",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1851900,
-      "priceFormatted": "1.851.900 TL",
+      "price": 1863900,
+      "priceFormatted": "1.863.900 TL",
       "searchText": "fiat egea cross lounge 1 6 m jet 130 hp dct gsr dizel otomatik"
     },
     {
@@ -6290,8 +6680,8 @@
       "engine": "1.6 M.Jet 130 HP DCT GSR",
       "fuel": "Dizel",
       "transmission": "Otomatik",
-      "price": 1969900,
-      "priceFormatted": "1.969.900 TL",
+      "price": 1989900,
+      "priceFormatted": "1.989.900 TL",
       "searchText": "fiat egea cross limited 1 6 m jet 130 hp dct gsr dizel otomatik"
     },
     {
@@ -6316,8 +6706,8 @@
       "engine": "6 kW/8 HP - 5.5kWh",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 579900,
-      "priceFormatted": "579.900 TL",
+      "price": 584900,
+      "priceFormatted": "584.900 TL",
       "searchText": "fiat topolino topolino 6 kw 8 hp 5 5kwh elektrik otomatik"
     },
     {
@@ -6329,8 +6719,8 @@
       "engine": "6 kW/8 HP - 5.5kWh",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 624900,
-      "priceFormatted": "624.900 TL",
+      "price": 629900,
+      "priceFormatted": "629.900 TL",
       "searchText": "fiat topolino topolino plus 6 kw 8 hp 5 5kwh elektrik otomatik"
     },
     {
@@ -6355,8 +6745,8 @@
       "engine": "1.2 MHEV 110HP eDCT",
       "fuel": "Mild Hybrid",
       "transmission": "Otomatik",
-      "price": 1569900,
-      "priceFormatted": "1.569.900 TL",
+      "price": 1669900,
+      "priceFormatted": "1.669.900 TL",
       "searchText": "fiat grande panda icon 1 2 mhev 110hp edct mild hybrid otomatik"
     },
     {
@@ -6368,8 +6758,8 @@
       "engine": "1.2 MHEV 110HP eDCT",
       "fuel": "Mild Hybrid",
       "transmission": "Otomatik",
-      "price": 1689900,
-      "priceFormatted": "1.689.900 TL",
+      "price": 1789900,
+      "priceFormatted": "1.789.900 TL",
       "searchText": "fiat grande panda la prima 1 2 mhev 110hp edct mild hybrid otomatik"
     },
     {
@@ -6394,8 +6784,8 @@
       "engine": "87 kW/118 HP - 42kWh",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 1939900,
-      "priceFormatted": "1.939.900 TL",
+      "price": 2093900,
+      "priceFormatted": "2.093.900 TL",
       "searchText": "fiat 500e 3 1 87 kw 118 hp 42kwh elektrik otomatik"
     },
     {
@@ -6407,22 +6797,9 @@
       "engine": "87 kW/118 HP - 42kWh",
       "fuel": "Elektrik",
       "transmission": "Otomatik",
-      "price": 1989900,
-      "priceFormatted": "1.989.900 TL",
+      "price": 2149900,
+      "priceFormatted": "2.149.900 TL",
       "searchText": "fiat 500e cabrio 87 kw 118 hp 42kwh elektrik otomatik"
-    },
-    {
-      "id": "fiat-500e-giorgio-armani-87-kw/118-hp---42kwh",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "500e",
-      "trim": "Giorgio Armani",
-      "engine": "87 kW/118 HP - 42kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "price": 2089900,
-      "priceFormatted": "2.089.900 TL",
-      "searchText": "fiat 500e giorgio armani 87 kw 118 hp 42kwh elektrik otomatik"
     },
     {
       "id": "fiat-topolino-topolino-6-kw/8-hp---5.5kwh",
@@ -6449,19 +6826,6 @@
       "price": 589900,
       "priceFormatted": "589.900 TL",
       "searchText": "fiat topolino topolino plus 6 kw 8 hp 5 5kwh elektrik otomatik"
-    },
-    {
-      "id": "fiat-topolino-topolino-6-kw/8-hp---5.5kwh",
-      "brand": "Fiat",
-      "brandId": "fiat",
-      "model": "Topolino",
-      "trim": "Topolino",
-      "engine": "6 kW/8 HP - 5.5kWh",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "price": 575900,
-      "priceFormatted": "575.900 TL",
-      "searchText": "fiat topolino topolino 6 kw 8 hp 5 5kwh elektrik otomatik"
     }
   ]
 }
