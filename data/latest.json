@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-10T01:34:26.581Z",
-  "totalVehicles": 531,
+  "generatedAt": "2026-04-11T01:33:26.661Z",
+  "totalVehicles": 526,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -2521,7 +2521,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -3424,7 +3424,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -4017,7 +4017,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "i20",
@@ -4450,7 +4450,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "E-208",
@@ -4546,61 +4546,6 @@
           "priceListNumeric": 2308500,
           "powerKW": 115,
           "isElectric": true,
-          "vehicleCategory": "Binek"
-        },
-        {
-          "model": "408",
-          "trim": "Allure",
-          "engine": "1.2 Hybrid 145 HP",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "2.374.500 TL",
-          "priceNumeric": 2374500,
-          "brand": "Peugeot",
-          "modelYear": 2026,
-          "priceListNumeric": 2374500,
-          "powerHP": 145,
-          "engineDisplacement": "1.2L",
-          "engineType": "Hybrid",
-          "transmissionType": "eDCS6",
-          "isHybrid": true,
-          "vehicleCategory": "Binek"
-        },
-        {
-          "model": "408",
-          "trim": "Allure",
-          "engine": "1.2 Hybrid 145 HP",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "2.592.000 TL",
-          "priceNumeric": 2592000,
-          "brand": "Peugeot",
-          "modelYear": 2026,
-          "priceListNumeric": 2592000,
-          "powerHP": 145,
-          "engineDisplacement": "1.2L",
-          "engineType": "Hybrid",
-          "transmissionType": "eDCS6",
-          "isHybrid": true,
-          "vehicleCategory": "Binek",
-          "hasPanoramicRoof": true
-        },
-        {
-          "model": "408",
-          "trim": "Gt",
-          "engine": "1.2 Hybrid 145 HP",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "2.820.500 TL",
-          "priceNumeric": 2820500,
-          "brand": "Peugeot",
-          "modelYear": 2026,
-          "priceListNumeric": 2820500,
-          "powerHP": 145,
-          "engineDisplacement": "1.2L",
-          "engineType": "Hybrid",
-          "transmissionType": "eDCS6",
-          "isHybrid": true,
           "vehicleCategory": "Binek"
         },
         {
@@ -4849,7 +4794,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "ATTO 3",
@@ -4971,7 +4916,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "Corsa",
@@ -5252,7 +5197,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5752,7 +5697,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6666,7 +6611,7 @@
         {
           "model": "BMW X5 M Competition",
           "trim": "M",
-          "engine": "625 HP",
+          "engine": "4.4L 625+12 HP",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
           "priceRaw": "23.650.000 TL",
@@ -6675,13 +6620,15 @@
           "fuelConsumption": "12,9",
           "otvRate": 220,
           "powerHP": 625,
+          "powerHPSecondary": 12,
+          "engineDisplacement": "4.4L",
           "isHybrid": true,
           "isMildHybrid": true
         },
         {
           "model": "BMW X6 M Competition",
           "trim": "M",
-          "engine": "625 HP",
+          "engine": "4.4L 625+12 HP",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
           "priceRaw": "24.000.000 TL",
@@ -6690,6 +6637,8 @@
           "fuelConsumption": "12,8",
           "otvRate": 220,
           "powerHP": 625,
+          "powerHPSecondary": 12,
+          "engineDisplacement": "4.4L",
           "isHybrid": true,
           "isMildHybrid": true
         },
@@ -6772,7 +6721,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "A 200",
@@ -7831,7 +7780,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "Puma",
@@ -8549,7 +8498,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8864,7 +8813,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -9340,7 +9289,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "HR-V Hybrid",
@@ -9375,7 +9324,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "YENİ",
@@ -9406,20 +9355,6 @@
           "transmissionType": "DSG"
         },
         {
-          "model": "Ibiza",
-          "trim": "FR",
-          "engine": "1.0 EcoTSI 115 PS",
-          "transmission": "Otomatik (DSG)",
-          "fuel": "Benzin",
-          "priceRaw": "1.771.000 TL",
-          "priceNumeric": 1771000,
-          "brand": "SEAT",
-          "powerHP": 115,
-          "engineDisplacement": "1.0L",
-          "engineType": "EcoTSI",
-          "transmissionType": "DSG"
-        },
-        {
           "model": "YENİ",
           "trim": "Style Plus",
           "engine": "1.0 TSI 116 PS",
@@ -9431,20 +9366,6 @@
           "powerHP": 116,
           "engineDisplacement": "1.0L",
           "engineType": "TSI",
-          "transmissionType": "DSG"
-        },
-        {
-          "model": "Arona",
-          "trim": "Style",
-          "engine": "1.0 EcoTSI 115 PS",
-          "transmission": "Otomatik (DSG)",
-          "fuel": "Benzin",
-          "priceRaw": "1.740.000 TL",
-          "priceNumeric": 1740000,
-          "brand": "SEAT",
-          "powerHP": 115,
-          "engineDisplacement": "1.0L",
-          "engineType": "EcoTSI",
           "transmissionType": "DSG"
         },
         {
@@ -9478,6 +9399,20 @@
           "isPlugInHybrid": true
         },
         {
+          "model": "LEON",
+          "trim": "Style",
+          "engine": "1.5 eTSI 116 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Hybrid",
+          "priceRaw": "2.199.000 TL",
+          "priceNumeric": 2199000,
+          "brand": "SEAT",
+          "powerHP": 116,
+          "engineDisplacement": "1.5L",
+          "engineType": "eTSI",
+          "transmissionType": "DSG"
+        },
+        {
           "model": "Ateca",
           "trim": "Style Plus",
           "engine": "1.5 EcoTSI ACT 150 PS",
@@ -9485,20 +9420,6 @@
           "fuel": "Benzin",
           "priceRaw": "2.379.000 TL",
           "priceNumeric": 2379000,
-          "brand": "SEAT",
-          "powerHP": 150,
-          "engineDisplacement": "1.5L",
-          "engineType": "EcoTSI ACT",
-          "transmissionType": "DSG"
-        },
-        {
-          "model": "Ateca",
-          "trim": "Xperience",
-          "engine": "1.5 EcoTSI ACT 150 PS",
-          "transmission": "Otomatik (DSG)",
-          "fuel": "Benzin",
-          "priceRaw": "2.656.000 TL",
-          "priceNumeric": 2656000,
           "brand": "SEAT",
           "powerHP": 150,
           "engineDisplacement": "1.5L",
@@ -9523,7 +9444,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "Stonic",
@@ -10012,7 +9933,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "EX30",
@@ -10250,7 +10171,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "vehicles": [
         {
           "model": "Egea Sedan",

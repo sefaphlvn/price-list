@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-10T01:34:26.597Z",
-  "totalEntries": 531,
+  "generatedAt": "2026-04-11T01:33:26.675Z",
+  "totalEntries": 526,
   "entries": [
     {
       "id": "volkswagen-polo-life-1.0-tsi-95-ps",
@@ -2525,45 +2525,6 @@
       "searchText": "peugeot e 2008 gt 115 kw elektrik"
     },
     {
-      "id": "peugeot-408-allure-1.2-hybrid-145-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "408",
-      "trim": "Allure",
-      "engine": "1.2 Hybrid 145 HP",
-      "fuel": "Hybrid",
-      "transmission": "Otomatik",
-      "price": 2374500,
-      "priceFormatted": "2.374.500 TL",
-      "searchText": "peugeot 408 allure 1 2 hybrid 145 hp hybrid otomatik"
-    },
-    {
-      "id": "peugeot-408-allure-1.2-hybrid-145-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "408",
-      "trim": "Allure",
-      "engine": "1.2 Hybrid 145 HP",
-      "fuel": "Hybrid",
-      "transmission": "Otomatik",
-      "price": 2592000,
-      "priceFormatted": "2.592.000 TL",
-      "searchText": "peugeot 408 allure 1 2 hybrid 145 hp hybrid otomatik"
-    },
-    {
-      "id": "peugeot-408-gt-1.2-hybrid-145-hp",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "model": "408",
-      "trim": "Gt",
-      "engine": "1.2 Hybrid 145 HP",
-      "fuel": "Hybrid",
-      "transmission": "Otomatik",
-      "price": 2820500,
-      "priceFormatted": "2.820.500 TL",
-      "searchText": "peugeot 408 gt 1 2 hybrid 145 hp hybrid otomatik"
-    },
-    {
       "id": "peugeot-3008-allure-1.2-hybrid-145-hp",
       "brand": "Peugeot",
       "brandId": "peugeot",
@@ -4228,30 +4189,30 @@
       "searchText": "bmw bmw m5 touring m 4 4l 585 197 hp plug in hybrid otomatik"
     },
     {
-      "id": "bmw-bmw-x5-m-competition-m-625-hp",
+      "id": "bmw-bmw-x5-m-competition-m-4.4l-625+12-hp",
       "brand": "BMW",
       "brandId": "bmw",
       "model": "BMW X5 M Competition",
       "trim": "M",
-      "engine": "625 HP",
+      "engine": "4.4L 625+12 HP",
       "fuel": "Mild Hybrid",
       "transmission": "Otomatik",
       "price": 23650000,
       "priceFormatted": "23.650.000 TL",
-      "searchText": "bmw bmw x5 m competition m 625 hp mild hybrid otomatik"
+      "searchText": "bmw bmw x5 m competition m 4 4l 625 12 hp mild hybrid otomatik"
     },
     {
-      "id": "bmw-bmw-x6-m-competition-m-625-hp",
+      "id": "bmw-bmw-x6-m-competition-m-4.4l-625+12-hp",
       "brand": "BMW",
       "brandId": "bmw",
       "model": "BMW X6 M Competition",
       "trim": "M",
-      "engine": "625 HP",
+      "engine": "4.4L 625+12 HP",
       "fuel": "Mild Hybrid",
       "transmission": "Otomatik",
       "price": 24000000,
       "priceFormatted": "24.000.000 TL",
-      "searchText": "bmw bmw x6 m competition m 625 hp mild hybrid otomatik"
+      "searchText": "bmw bmw x6 m competition m 4 4l 625 12 hp mild hybrid otomatik"
     },
     {
       "id": "bmw-bmw-x1-m35i-xdrive-m-2.0l-300-hp",
@@ -5996,19 +5957,6 @@
       "searchText": "seat ibiza style 1 0 ecotsi 115 ps benzin otomatik dsg"
     },
     {
-      "id": "seat-ibiza-fr-1.0-ecotsi-115-ps",
-      "brand": "SEAT",
-      "brandId": "seat",
-      "model": "Ibiza",
-      "trim": "FR",
-      "engine": "1.0 EcoTSI 115 PS",
-      "fuel": "Benzin",
-      "transmission": "Otomatik (DSG)",
-      "price": 1771000,
-      "priceFormatted": "1.771.000 TL",
-      "searchText": "seat ibiza fr 1 0 ecotsi 115 ps benzin otomatik dsg"
-    },
-    {
       "id": "seat-yeni̇-style-plus-1.0-tsi-116-ps",
       "brand": "SEAT",
       "brandId": "seat",
@@ -6020,19 +5968,6 @@
       "price": 1876000,
       "priceFormatted": "1.876.000 TL",
       "searchText": "seat yeni style plus 1 0 tsi 116 ps benzin otomatik dsg"
-    },
-    {
-      "id": "seat-arona-style-1.0-ecotsi-115-ps",
-      "brand": "SEAT",
-      "brandId": "seat",
-      "model": "Arona",
-      "trim": "Style",
-      "engine": "1.0 EcoTSI 115 PS",
-      "fuel": "Benzin",
-      "transmission": "Otomatik (DSG)",
-      "price": 1740000,
-      "priceFormatted": "1.740.000 TL",
-      "searchText": "seat arona style 1 0 ecotsi 115 ps benzin otomatik dsg"
     },
     {
       "id": "seat-arona-fr-1.0-ecotsi-115-ps",
@@ -6061,6 +5996,19 @@
       "searchText": "seat leon fr 1 5 ehybrid 204 ps hybrid otomatik dsg"
     },
     {
+      "id": "seat-leon-style-1.5-etsi-116-ps",
+      "brand": "SEAT",
+      "brandId": "seat",
+      "model": "LEON",
+      "trim": "Style",
+      "engine": "1.5 eTSI 116 PS",
+      "fuel": "Hybrid",
+      "transmission": "Otomatik (DSG)",
+      "price": 2199000,
+      "priceFormatted": "2.199.000 TL",
+      "searchText": "seat leon style 1 5 etsi 116 ps hybrid otomatik dsg"
+    },
+    {
       "id": "seat-ateca-style-plus-1.5-ecotsi-act-150-ps",
       "brand": "SEAT",
       "brandId": "seat",
@@ -6072,19 +6020,6 @@
       "price": 2379000,
       "priceFormatted": "2.379.000 TL",
       "searchText": "seat ateca style plus 1 5 ecotsi act 150 ps benzin otomatik dsg"
-    },
-    {
-      "id": "seat-ateca-xperience-1.5-ecotsi-act-150-ps",
-      "brand": "SEAT",
-      "brandId": "seat",
-      "model": "Ateca",
-      "trim": "Xperience",
-      "engine": "1.5 EcoTSI ACT 150 PS",
-      "fuel": "Benzin",
-      "transmission": "Otomatik (DSG)",
-      "price": 2656000,
-      "priceFormatted": "2.656.000 TL",
-      "searchText": "seat ateca xperience 1 5 ecotsi act 150 ps benzin otomatik dsg"
     },
     {
       "id": "seat-ateca-fr-dark-edition-1.5-ecotsi-act-150-ps",

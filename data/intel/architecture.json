@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-10T01:34:30.031Z",
-  "date": "2026-04-10",
+  "generatedAt": "2026-04-11T01:33:29.963Z",
+  "date": "2026-04-11",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -2801,49 +2801,6 @@
       "trimCount": 2
     },
     {
-      "id": "peugeot-408",
-      "model": "408",
-      "brand": "Peugeot",
-      "brandId": "peugeot",
-      "trims": [
-        {
-          "trim": "Allure",
-          "price": 2374500,
-          "priceFormatted": "2.374.500 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.2 Hybrid 145 HP",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
-          "trim": "Allure",
-          "price": 2592000,
-          "priceFormatted": "2.592.000 TL",
-          "stepFromBase": 217500,
-          "stepPercent": 9.15982312065698,
-          "engine": "1.2 Hybrid 145 HP",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
-          "trim": "Gt",
-          "price": 2820500,
-          "priceFormatted": "2.820.500 TL",
-          "stepFromBase": 446000,
-          "stepPercent": 18.782901663508106,
-          "engine": "1.2 Hybrid 145 HP",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        }
-      ],
-      "basePrice": 2374500,
-      "topPrice": 2820500,
-      "priceSpread": 446000,
-      "priceSpreadPercent": 18.78,
-      "trimCount": 3
-    },
-    {
       "id": "peugeot-3008",
       "model": "3008",
       "brand": "Peugeot",
@@ -5058,7 +5015,7 @@
           "priceFormatted": "23.650.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "625 HP",
+          "engine": "4.4L 625+12 HP",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         }
@@ -5081,7 +5038,7 @@
           "priceFormatted": "24.000.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "625 HP",
+          "engine": "4.4L 625+12 HP",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         }
@@ -7305,23 +7262,13 @@
           "engine": "1.0 EcoTSI 115 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin"
-        },
-        {
-          "trim": "FR",
-          "price": 1771000,
-          "priceFormatted": "1.771.000 TL",
-          "stepFromBase": 124000,
-          "stepPercent": 7.528840315725562,
-          "engine": "1.0 EcoTSI 115 PS",
-          "transmission": "Otomatik (DSG)",
-          "fuel": "Benzin"
         }
       ],
       "basePrice": 1647000,
-      "topPrice": 1771000,
-      "priceSpread": 124000,
-      "priceSpreadPercent": 7.53,
-      "trimCount": 2
+      "topPrice": 1647000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "seat-arona",
@@ -7330,31 +7277,21 @@
       "brandId": "seat",
       "trims": [
         {
-          "trim": "Style",
-          "price": 1740000,
-          "priceFormatted": "1.740.000 TL",
+          "trim": "FR",
+          "price": 1853000,
+          "priceFormatted": "1.853.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.0 EcoTSI 115 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin"
-        },
-        {
-          "trim": "FR",
-          "price": 1853000,
-          "priceFormatted": "1.853.000 TL",
-          "stepFromBase": 113000,
-          "stepPercent": 6.494252873563218,
-          "engine": "1.0 EcoTSI 115 PS",
-          "transmission": "Otomatik (DSG)",
-          "fuel": "Benzin"
         }
       ],
-      "basePrice": 1740000,
+      "basePrice": 1853000,
       "topPrice": 1853000,
-      "priceSpread": 113000,
-      "priceSpreadPercent": 6.49,
-      "trimCount": 2
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "seat-leon",
@@ -7380,6 +7317,29 @@
       "trimCount": 1
     },
     {
+      "id": "seat-leon",
+      "model": "LEON",
+      "brand": "SEAT",
+      "brandId": "seat",
+      "trims": [
+        {
+          "trim": "Style",
+          "price": 2199000,
+          "priceFormatted": "2.199.000 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "1.5 eTSI 116 PS",
+          "transmission": "Otomatik (DSG)",
+          "fuel": "Hibrit"
+        }
+      ],
+      "basePrice": 2199000,
+      "topPrice": 2199000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
       "id": "seat-ateca",
       "model": "Ateca",
       "brand": "SEAT",
@@ -7391,16 +7351,6 @@
           "priceFormatted": "2.379.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
-          "engine": "1.5 EcoTSI ACT 150 PS",
-          "transmission": "Otomatik (DSG)",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Xperience",
-          "price": 2656000,
-          "priceFormatted": "2.656.000 TL",
-          "stepFromBase": 277000,
-          "stepPercent": 11.64354770912148,
           "engine": "1.5 EcoTSI ACT 150 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin"
@@ -7420,7 +7370,7 @@
       "topPrice": 2919000,
       "priceSpread": 540000,
       "priceSpreadPercent": 22.7,
-      "trimCount": 3
+      "trimCount": 2
     },
     {
       "id": "kia-stonic",
@@ -8490,16 +8440,6 @@
           "trimCount": 3
         },
         {
-          "brand": "SEAT",
-          "brandId": "seat",
-          "model": "Arona",
-          "basePrice": 1740000,
-          "topPrice": 1853000,
-          "basePriceFormatted": "₺1.740.000",
-          "topPriceFormatted": "₺1.853.000",
-          "trimCount": 2
-        },
-        {
           "brand": "Fiat",
           "brandId": "fiat",
           "model": "Egea Cross",
@@ -8558,6 +8498,16 @@
           "basePriceFormatted": "₺1.842.100",
           "topPriceFormatted": "₺2.291.000",
           "trimCount": 4
+        },
+        {
+          "brand": "SEAT",
+          "brandId": "seat",
+          "model": "Arona",
+          "basePrice": 1853000,
+          "topPrice": 1853000,
+          "basePriceFormatted": "₺1.853.000",
+          "topPriceFormatted": "₺1.853.000",
+          "trimCount": 1
         },
         {
           "brand": "Ford",
@@ -8718,16 +8668,6 @@
           "basePriceFormatted": "₺2.316.000",
           "topPriceFormatted": "₺2.383.000",
           "trimCount": 2
-        },
-        {
-          "brand": "Peugeot",
-          "brandId": "peugeot",
-          "model": "408",
-          "basePrice": 2374500,
-          "topPrice": 2820500,
-          "basePriceFormatted": "₺2.374.500",
-          "topPriceFormatted": "₺2.820.500",
-          "trimCount": 3
         },
         {
           "brand": "BYD",
@@ -9620,8 +9560,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 7987692,
-      "avgTopPrice": 8269094
+      "avgBasePrice": 8033501,
+      "avgTopPrice": 8312683
     },
     {
       "segment": "SUV",
@@ -9754,7 +9694,7 @@
           "topPrice": 2919000,
           "basePriceFormatted": "₺2.379.000",
           "topPriceFormatted": "₺2.919.000",
-          "trimCount": 3
+          "trimCount": 2
         },
         {
           "brand": "Ford",
@@ -10502,10 +10442,10 @@
           "brandId": "seat",
           "model": "Ibiza",
           "basePrice": 1647000,
-          "topPrice": 1771000,
+          "topPrice": 1647000,
           "basePriceFormatted": "₺1.647.000",
-          "topPriceFormatted": "₺1.771.000",
-          "trimCount": 2
+          "topPriceFormatted": "₺1.647.000",
+          "trimCount": 1
         },
         {
           "brand": "Renault",
@@ -10588,6 +10528,16 @@
           "trimCount": 5
         },
         {
+          "brand": "SEAT",
+          "brandId": "seat",
+          "model": "LEON",
+          "basePrice": 2199000,
+          "topPrice": 2199000,
+          "basePriceFormatted": "₺2.199.000",
+          "topPriceFormatted": "₺2.199.000",
+          "trimCount": 1
+        },
+        {
           "brand": "Volkswagen",
           "brandId": "volkswagen",
           "model": "Polo",
@@ -10638,8 +10588,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 2493553,
-      "avgTopPrice": 2766420
+      "avgBasePrice": 2475144,
+      "avgTopPrice": 2723206
     },
     {
       "segment": "MPV",
@@ -10731,8 +10681,8 @@
   ],
   "summary": {
     "totalModels": 234,
-    "avgTrimsPerModel": 2.3,
-    "avgPriceSpread": 374686,
-    "avgPriceSpreadPercent": 12.42
+    "avgTrimsPerModel": 2.2,
+    "avgPriceSpread": 371767,
+    "avgPriceSpreadPercent": 12.28
   }
 }
