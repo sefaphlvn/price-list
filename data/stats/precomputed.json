@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-13T01:33:46.302Z",
+  "generatedAt": "2026-04-14T01:33:28.229Z",
   "totalVehicles": 526,
   "overallStats": {
-    "avgPrice": 4969182,
+    "avgPrice": 4969376,
     "minPrice": 544900,
     "maxPrice": 38034000,
     "medianPrice": 3103500
@@ -83,7 +83,7 @@
     {
       "name": "Renault",
       "vehicleCount": 25,
-      "avgPrice": 2306560,
+      "avgPrice": 2310640,
       "minPrice": 1694999.99,
       "maxPrice": 3748000,
       "medianPrice": 2156000.01
@@ -166,7 +166,7 @@
       "fuel": "Benzin",
       "count": 214,
       "percentage": 40.7,
-      "avgPrice": 5145638
+      "avgPrice": 5146058
     },
     {
       "fuel": "Elektrik",
@@ -202,7 +202,7 @@
       "fuel": "LPG",
       "count": 8,
       "percentage": 1.5,
-      "avgPrice": 1926750
+      "avgPrice": 1928250
     },
     {
       "fuel": "Diger",
@@ -216,7 +216,7 @@
       "transmission": "Otomatik",
       "count": 362,
       "percentage": 68.8,
-      "avgPrice": 5809857
+      "avgPrice": 5810105
     },
     {
       "transmission": "DSG",
@@ -228,7 +228,7 @@
       "transmission": "Manuel",
       "count": 38,
       "percentage": 7.2,
-      "avgPrice": 1701803
+      "avgPrice": 1702118
     },
     {
       "transmission": "DCT",
@@ -304,19 +304,19 @@
         "rate": 70,
         "count": 4,
         "percentage": 1.5,
-        "avgPrice": 1590500
+        "avgPrice": 1593500
       },
       {
         "rate": 75,
-        "count": 38,
-        "percentage": 14,
-        "avgPrice": 6186595
+        "count": 37,
+        "percentage": 13.7,
+        "avgPrice": 6302746
       },
       {
         "rate": 80,
-        "count": 12,
-        "percentage": 4.4,
-        "avgPrice": 2149708
+        "count": 13,
+        "percentage": 4.8,
+        "avgPrice": 2136577
       },
       {
         "rate": 90,
@@ -372,7 +372,7 @@
       },
       {
         "brand": "Renault",
-        "avgOtvRate": 68.2,
+        "avgOtvRate": 68.4,
         "count": 25
       },
       {
@@ -398,7 +398,7 @@
         "year": "2026",
         "count": 272,
         "percentage": 65.2,
-        "avgPrice": 4797255
+        "avgPrice": 4797630
       },
       {
         "year": "2025",

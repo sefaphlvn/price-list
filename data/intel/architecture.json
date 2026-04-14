@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-13T01:33:49.449Z",
-  "date": "2026-04-13",
+  "generatedAt": "2026-04-14T01:33:31.816Z",
+  "date": "2026-04-14",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -1301,8 +1301,8 @@
       "trims": [
         {
           "trim": "evolution",
-          "price": 1776000,
-          "priceFormatted": "₺1.776.000,00",
+          "price": 1788000,
+          "priceFormatted": "₺1.788.000,00",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "evolution Eco-G 120 hp",
@@ -1311,30 +1311,30 @@
         },
         {
           "trim": "evolution",
-          "price": 1900999.99,
-          "priceFormatted": "₺1.900.999,99",
-          "stepFromBase": 124999.98999999999,
-          "stepPercent": 7.038287725225224,
+          "price": 1967000.01,
+          "priceFormatted": "₺1.967.000,01",
+          "stepFromBase": 179000.01,
+          "stepPercent": 10.011186241610739,
           "engine": "evolution Turbo Tce EDC 145 hp",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         },
         {
           "trim": "techno",
-          "price": 2026000,
-          "priceFormatted": "₺2.026.000,00",
+          "price": 2038000,
+          "priceFormatted": "₺2.038.000,00",
           "stepFromBase": 250000,
-          "stepPercent": 14.076576576576578,
+          "stepPercent": 13.982102908277405,
           "engine": "techno Turbo Tce EDC 145 hp",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         },
         {
           "trim": "techno",
-          "price": 2491000.01,
-          "priceFormatted": "₺2.491.000,01",
-          "stepFromBase": 715000.0099999998,
-          "stepPercent": 40.25900957207206,
+          "price": 2503000,
+          "priceFormatted": "₺2.503.000,00",
+          "stepFromBase": 715000,
+          "stepPercent": 39.98881431767337,
           "engine": "techno Full hybrid E-Tech 160 hp",
           "transmission": "Otomatik",
           "fuel": "Benzin"
@@ -1343,8 +1343,8 @@
           "trim": "evolution",
           "price": 2533000,
           "priceFormatted": "₺2.533.000,00",
-          "stepFromBase": 757000,
-          "stepPercent": 42.623873873873876,
+          "stepFromBase": 745000,
+          "stepPercent": 41.66666666666667,
           "engine": "evolution hybrid 4x4 LPG 150 hp",
           "transmission": "Otomatik",
           "fuel": "LPG"
@@ -1353,17 +1353,17 @@
           "trim": "techno",
           "price": 2563000.01,
           "priceFormatted": "₺2.563.000,01",
-          "stepFromBase": 787000.0099999998,
-          "stepPercent": 44.313063626126116,
+          "stepFromBase": 775000.0099999998,
+          "stepPercent": 43.34451957494406,
           "engine": "techno hybrid 4x4 LPG 150 hp",
           "transmission": "Otomatik",
           "fuel": "LPG"
         }
       ],
-      "basePrice": 1776000,
+      "basePrice": 1788000,
       "topPrice": 2563000.01,
-      "priceSpread": 787000.0099999998,
-      "priceSpreadPercent": 44.31,
+      "priceSpread": 775000.0099999998,
+      "priceSpreadPercent": 43.34,
       "trimCount": 6
     },
     {
@@ -9600,9 +9600,9 @@
           "brand": "Renault",
           "brandId": "renault",
           "model": "Yeni Duster",
-          "basePrice": 1776000,
+          "basePrice": 1788000,
           "topPrice": 2563000.01,
-          "basePriceFormatted": "₺1.776.000",
+          "basePriceFormatted": "₺1.788.000",
           "topPriceFormatted": "₺2.563.000",
           "trimCount": 6
         },
@@ -9997,7 +9997,7 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5231567,
+      "avgBasePrice": 5231846,
       "avgTopPrice": 5736977
     },
     {
@@ -10682,7 +10682,7 @@
   "summary": {
     "totalModels": 234,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 371767,
+    "avgPriceSpread": 371716,
     "avgPriceSpreadPercent": 12.28
   }
 }

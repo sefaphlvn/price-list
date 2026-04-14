@@ -1,22 +1,102 @@
 {
-  "generatedAt": "2026-04-13T01:33:48.942Z",
-  "date": "2026-04-13",
-  "previousDate": "2026-04-12",
+  "generatedAt": "2026-04-14T01:33:31.269Z",
+  "date": "2026-04-14",
+  "previousDate": "2026-04-13",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-04-13",
-    "totalDays": 76
+    "end": "2026-04-14",
+    "totalDays": 77
   },
   "summary": {
-    "totalEvents": 1238,
+    "totalEvents": 1242,
     "newVehicles": 273,
     "removedVehicles": 288,
-    "priceIncreases": 543,
+    "priceIncreases": 547,
     "priceDecreases": 134,
-    "avgPriceChange": 108834,
+    "avgPriceChange": 108344,
     "avgPriceChangePercent": 1.69
   },
   "events": [
+    {
+      "id": "renault-yeni-duster-evolution-evolution-eco-g-120-hp-price_increase-2026-04-14",
+      "type": "price_increase",
+      "vehicleId": "renault-yeni-duster-evolution-evolution-eco-g-120-hp",
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Yeni Duster",
+      "trim": "evolution",
+      "engine": "evolution Eco-G 120 hp",
+      "fuel": "LPG",
+      "transmission": "Manuel",
+      "oldPrice": 1776000,
+      "newPrice": 1788000,
+      "oldPriceFormatted": "₺1.776.000,00",
+      "newPriceFormatted": "₺1.788.000,00",
+      "priceChange": 12000,
+      "priceChangePercent": 0.68,
+      "date": "2026-04-14",
+      "previousDate": "2026-04-13"
+    },
+    {
+      "id": "renault-yeni-duster-evolution-evolution-turbo-tce-edc-145-hp-price_increase-2026-04-14",
+      "type": "price_increase",
+      "vehicleId": "renault-yeni-duster-evolution-evolution-turbo-tce-edc-145-hp",
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Yeni Duster",
+      "trim": "evolution",
+      "engine": "evolution Turbo Tce EDC 145 hp",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "oldPrice": 1900999.99,
+      "newPrice": 1967000.01,
+      "oldPriceFormatted": "₺1.900.999,99",
+      "newPriceFormatted": "₺1.967.000,01",
+      "priceChange": 66000.02000000002,
+      "priceChangePercent": 3.47,
+      "date": "2026-04-14",
+      "previousDate": "2026-04-13"
+    },
+    {
+      "id": "renault-yeni-duster-techno-techno-turbo-tce-edc-145-hp-price_increase-2026-04-14",
+      "type": "price_increase",
+      "vehicleId": "renault-yeni-duster-techno-techno-turbo-tce-edc-145-hp",
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Yeni Duster",
+      "trim": "techno",
+      "engine": "techno Turbo Tce EDC 145 hp",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "oldPrice": 2026000,
+      "newPrice": 2038000,
+      "oldPriceFormatted": "₺2.026.000,00",
+      "newPriceFormatted": "₺2.038.000,00",
+      "priceChange": 12000,
+      "priceChangePercent": 0.59,
+      "date": "2026-04-14",
+      "previousDate": "2026-04-13"
+    },
+    {
+      "id": "renault-yeni-duster-techno-techno-full-hybrid-e-tech-160-hp-price_increase-2026-04-14",
+      "type": "price_increase",
+      "vehicleId": "renault-yeni-duster-techno-techno-full-hybrid-e-tech-160-hp",
+      "brand": "Renault",
+      "brandId": "renault",
+      "model": "Yeni Duster",
+      "trim": "techno",
+      "engine": "techno Full hybrid E-Tech 160 hp",
+      "fuel": "Benzin",
+      "transmission": "Otomatik",
+      "oldPrice": 2491000.01,
+      "newPrice": 2503000,
+      "oldPriceFormatted": "₺2.491.000,01",
+      "newPriceFormatted": "₺2.503.000,00",
+      "priceChange": 11999.990000000224,
+      "priceChangePercent": 0.48,
+      "date": "2026-04-14",
+      "previousDate": "2026-04-13"
+    },
     {
       "id": "peugeot-408-allure-1.2-hybrid-145-hp-removed-2026-04-11",
       "type": "removed",
@@ -22311,10 +22391,10 @@
       {
         "id": "renault",
         "name": "Renault",
-        "changeCount": 48,
-        "avgChange": 38396,
-        "avgChangePercent": 1.76,
-        "increaseCount": 30,
+        "changeCount": 52,
+        "avgChange": 37404,
+        "avgChangePercent": 1.73,
+        "increaseCount": 34,
         "decreaseCount": 18
       },
       {
@@ -22464,6 +22544,15 @@
         "decreaseCount": 1
       },
       {
+        "id": "renault-Yeni Duster",
+        "name": "Renault Yeni Duster",
+        "changeCount": 17,
+        "avgChange": 24412,
+        "avgChangePercent": 1.24,
+        "increaseCount": 11,
+        "decreaseCount": 6
+      },
+      {
         "id": "fiat-Egea Sedan",
         "name": "Fiat Egea Sedan",
         "changeCount": 17,
@@ -22480,15 +22569,6 @@
         "avgChangePercent": 4.43,
         "increaseCount": 8,
         "decreaseCount": 8
-      },
-      {
-        "id": "renault-Yeni Duster",
-        "name": "Renault Yeni Duster",
-        "changeCount": 13,
-        "avgChange": 24077,
-        "avgChangePercent": 1.22,
-        "increaseCount": 7,
-        "decreaseCount": 6
       },
       {
         "id": "fiat-Egea Cross",
