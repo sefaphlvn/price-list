@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-27T01:34:03.162Z",
+  "generatedAt": "2026-04-28T01:34:27.262Z",
   "totalVehicles": 532,
   "overallStats": {
-    "avgPrice": 4951462,
+    "avgPrice": 4950290,
     "minPrice": 544900,
     "maxPrice": 38034000,
-    "medianPrice": 3103500
+    "medianPrice": 3093500
   },
   "brandStats": [
     {
@@ -75,7 +75,7 @@
     {
       "name": "Nissan",
       "vehicleCount": 28,
-      "avgPrice": 2898104,
+      "avgPrice": 2875800,
       "minPrice": 1273200,
       "maxPrice": 5515600,
       "medianPrice": 2598150
@@ -139,10 +139,10 @@
     {
       "name": "SEAT",
       "vehicleCount": 8,
-      "avgPrice": 2198500,
-      "minPrice": 1647000,
-      "maxPrice": 2930000,
-      "medianPrice": 2037500
+      "avgPrice": 2198650,
+      "minPrice": 1647150,
+      "maxPrice": 2930150,
+      "medianPrice": 2037650
     },
     {
       "name": "BYD",
@@ -166,7 +166,7 @@
       "fuel": "Benzin",
       "count": 214,
       "percentage": 40.2,
-      "avgPrice": 5147720
+      "avgPrice": 5147724
     },
     {
       "fuel": "Elektrik",
@@ -178,7 +178,7 @@
       "fuel": "Hibrit",
       "count": 69,
       "percentage": 13,
-      "avgPrice": 3165759
+      "avgPrice": 3165763
     },
     {
       "fuel": "Dizel",
@@ -190,7 +190,7 @@
       "fuel": "Hafif Hibrit",
       "count": 34,
       "percentage": 6.4,
-      "avgPrice": 7952497
+      "avgPrice": 7934129
     },
     {
       "fuel": "Plug-in Hibrit",
@@ -216,13 +216,13 @@
       "transmission": "Otomatik",
       "count": 366,
       "percentage": 68.8,
-      "avgPrice": 5780935
+      "avgPrice": 5779228
     },
     {
       "transmission": "DSG",
       "count": 83,
       "percentage": 15.6,
-      "avgPrice": 3899716
+      "avgPrice": 3899730
     },
     {
       "transmission": "Manuel",
@@ -255,15 +255,15 @@
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 234,
-      "percentage": 44
+      "count": 235,
+      "percentage": 44.2
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
-      "count": 125,
-      "percentage": 23.5
+      "count": 124,
+      "percentage": 23.3
     },
     {
       "segment": "luxury",
@@ -398,7 +398,7 @@
         "year": "2026",
         "count": 278,
         "percentage": 65.7,
-        "avgPrice": 4766627
+        "avgPrice": 4764381
       },
       {
         "year": "2025",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-27T01:34:06.215Z",
-  "date": "2026-04-27",
+  "generatedAt": "2026-04-28T01:34:30.549Z",
+  "date": "2026-04-28",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -6917,8 +6917,8 @@
       "trims": [
         {
           "trim": "Designpack",
-          "price": 2199000,
-          "priceFormatted": "2.199.000 TL",
+          "price": 2249000,
+          "priceFormatted": "2.249.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
@@ -6929,18 +6929,18 @@
           "trim": "Skypack",
           "price": 2620600,
           "priceFormatted": "2.620.600 TL",
-          "stepFromBase": 421600,
-          "stepPercent": 19.172351068667577,
+          "stepFromBase": 371600,
+          "stepPercent": 16.522899066251668,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         },
         {
           "trim": "Skypack 4x4",
-          "price": 3474500,
-          "priceFormatted": "3.474.500 TL",
-          "stepFromBase": 1275500,
-          "stepPercent": 58.00363801728058,
+          "price": 2800000,
+          "priceFormatted": "2.800.000 TL",
+          "stepFromBase": 551000,
+          "stepPercent": 24.499777678968428,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
@@ -6949,8 +6949,8 @@
           "trim": "Platinum",
           "price": 3575700,
           "priceFormatted": "3.575.700 TL",
-          "stepFromBase": 1376700,
-          "stepPercent": 62.60572987721692,
+          "stepFromBase": 1326700,
+          "stepPercent": 58.99066251667408,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
@@ -6959,8 +6959,8 @@
           "trim": "Platinum 4x4",
           "price": 3715600,
           "priceFormatted": "3.715.600 TL",
-          "stepFromBase": 1516600,
-          "stepPercent": 68.96771259663484,
+          "stepFromBase": 1466600,
+          "stepPercent": 65.21120497999111,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
@@ -6969,8 +6969,8 @@
           "trim": "Platinum Premium",
           "price": 3719500,
           "priceFormatted": "3.719.500 TL",
-          "stepFromBase": 1520500,
-          "stepPercent": 69.14506593906322,
+          "stepFromBase": 1470500,
+          "stepPercent": 65.38461538461539,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
@@ -6979,17 +6979,17 @@
           "trim": "Platinum Premium 4x4",
           "price": 3834000,
           "priceFormatted": "3.834.000 TL",
-          "stepFromBase": 1635000,
-          "stepPercent": 74.35197817189632,
+          "stepFromBase": 1585000,
+          "stepPercent": 70.47576700755891,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         }
       ],
-      "basePrice": 2199000,
+      "basePrice": 2249000,
       "topPrice": 3834000,
-      "priceSpread": 1635000,
-      "priceSpreadPercent": 74.35,
+      "priceSpread": 1585000,
+      "priceSpreadPercent": 70.48,
       "trimCount": 7
     },
     {
@@ -7308,8 +7308,8 @@
       "trims": [
         {
           "trim": "Style Plus",
-          "price": 1785000,
-          "priceFormatted": "1.785.000 TL",
+          "price": 1785150,
+          "priceFormatted": "1.785.150 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.0 TSI 116 PS",
@@ -7318,17 +7318,17 @@
         },
         {
           "trim": "Style Plus",
-          "price": 1876000,
-          "priceFormatted": "1.876.000 TL",
+          "price": 1876150,
+          "priceFormatted": "1.876.150 TL",
           "stepFromBase": 91000,
-          "stepPercent": 5.098039215686274,
+          "stepPercent": 5.097610845027028,
           "engine": "1.0 TSI 116 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 1785000,
-      "topPrice": 1876000,
+      "basePrice": 1785150,
+      "topPrice": 1876150,
       "priceSpread": 91000,
       "priceSpreadPercent": 5.1,
       "trimCount": 2
@@ -7341,8 +7341,8 @@
       "trims": [
         {
           "trim": "Style",
-          "price": 1647000,
-          "priceFormatted": "1.647.000 TL",
+          "price": 1647150,
+          "priceFormatted": "1.647.150 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.0 EcoTSI 115 PS",
@@ -7350,8 +7350,8 @@
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 1647000,
-      "topPrice": 1647000,
+      "basePrice": 1647150,
+      "topPrice": 1647150,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -7364,8 +7364,8 @@
       "trims": [
         {
           "trim": "FR",
-          "price": 1853000,
-          "priceFormatted": "1.853.000 TL",
+          "price": 1853150,
+          "priceFormatted": "1.853.150 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.0 EcoTSI 115 PS",
@@ -7373,8 +7373,8 @@
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 1853000,
-      "topPrice": 1853000,
+      "basePrice": 1853150,
+      "topPrice": 1853150,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -7387,8 +7387,8 @@
       "trims": [
         {
           "trim": "FR",
-          "price": 2930000,
-          "priceFormatted": "2.930.000 TL",
+          "price": 2930150,
+          "priceFormatted": "2.930.150 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5 eHybrid 204 PS",
@@ -7396,8 +7396,8 @@
           "fuel": "Hibrit"
         }
       ],
-      "basePrice": 2930000,
-      "topPrice": 2930000,
+      "basePrice": 2930150,
+      "topPrice": 2930150,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -7410,8 +7410,8 @@
       "trims": [
         {
           "trim": "Style",
-          "price": 2199000,
-          "priceFormatted": "2.199.000 TL",
+          "price": 2199150,
+          "priceFormatted": "2.199.150 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5 eTSI 116 PS",
@@ -7419,8 +7419,8 @@
           "fuel": "Hibrit"
         }
       ],
-      "basePrice": 2199000,
-      "topPrice": 2199000,
+      "basePrice": 2199150,
+      "topPrice": 2199150,
       "priceSpread": 0,
       "priceSpreadPercent": 0,
       "trimCount": 1
@@ -7433,8 +7433,8 @@
       "trims": [
         {
           "trim": "Style Plus",
-          "price": 2379000,
-          "priceFormatted": "2.379.000 TL",
+          "price": 2379150,
+          "priceFormatted": "2.379.150 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5 EcoTSI ACT 150 PS",
@@ -7443,17 +7443,17 @@
         },
         {
           "trim": "FR Dark Edition",
-          "price": 2919000,
-          "priceFormatted": "2.919.000 TL",
+          "price": 2919150,
+          "priceFormatted": "2.919.150 TL",
           "stepFromBase": 540000,
-          "stepPercent": 22.69861286254729,
+          "stepPercent": 22.697181766597314,
           "engine": "1.5 EcoTSI ACT 150 PS",
           "transmission": "Otomatik (DSG)",
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 2379000,
-      "topPrice": 2919000,
+      "basePrice": 2379150,
+      "topPrice": 2919150,
       "priceSpread": 540000,
       "priceSpreadPercent": 22.7,
       "trimCount": 2
@@ -8549,10 +8549,10 @@
           "brand": "SEAT",
           "brandId": "seat",
           "model": "YENİ",
-          "basePrice": 1785000,
-          "topPrice": 1876000,
-          "basePriceFormatted": "₺1.785.000",
-          "topPriceFormatted": "₺1.876.000",
+          "basePrice": 1785150,
+          "topPrice": 1876150,
+          "basePriceFormatted": "₺1.785.150",
+          "topPriceFormatted": "₺1.876.150",
           "trimCount": 2
         },
         {
@@ -8599,10 +8599,10 @@
           "brand": "SEAT",
           "brandId": "seat",
           "model": "Arona",
-          "basePrice": 1853000,
-          "topPrice": 1853000,
-          "basePriceFormatted": "₺1.853.000",
-          "topPriceFormatted": "₺1.853.000",
+          "basePrice": 1853150,
+          "topPrice": 1853150,
+          "basePriceFormatted": "₺1.853.150",
+          "topPriceFormatted": "₺1.853.150",
           "trimCount": 1
         },
         {
@@ -9656,8 +9656,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 7986688,
-      "avgTopPrice": 8274170
+      "avgBasePrice": 7986690,
+      "avgTopPrice": 8274172
     },
     {
       "segment": "SUV",
@@ -9733,16 +9733,6 @@
           "trimCount": 2
         },
         {
-          "brand": "Nissan",
-          "brandId": "nissan",
-          "model": "QASHQAI",
-          "basePrice": 2199000,
-          "topPrice": 3834000,
-          "basePriceFormatted": "₺2.199.000",
-          "topPriceFormatted": "₺3.834.000",
-          "trimCount": 7
-        },
-        {
           "brand": "Peugeot",
           "brandId": "peugeot",
           "model": "E-2008",
@@ -9751,6 +9741,16 @@
           "basePriceFormatted": "₺2.201.500",
           "topPriceFormatted": "₺2.308.500",
           "trimCount": 2
+        },
+        {
+          "brand": "Nissan",
+          "brandId": "nissan",
+          "model": "QASHQAI",
+          "basePrice": 2249000,
+          "topPrice": 3834000,
+          "basePriceFormatted": "₺2.249.000",
+          "topPriceFormatted": "₺3.834.000",
+          "trimCount": 7
         },
         {
           "brand": "Hyundai",
@@ -9783,16 +9783,6 @@
           "trimCount": 2
         },
         {
-          "brand": "SEAT",
-          "brandId": "seat",
-          "model": "Ateca",
-          "basePrice": 2379000,
-          "topPrice": 2919000,
-          "basePriceFormatted": "₺2.379.000",
-          "topPriceFormatted": "₺2.919.000",
-          "trimCount": 2
-        },
-        {
           "brand": "Ford",
           "brandId": "ford",
           "model": "Kuga",
@@ -9801,6 +9791,16 @@
           "basePriceFormatted": "₺2.379.100",
           "topPriceFormatted": "₺3.305.300",
           "trimCount": 7
+        },
+        {
+          "brand": "SEAT",
+          "brandId": "seat",
+          "model": "Ateca",
+          "basePrice": 2379150,
+          "topPrice": 2919150,
+          "basePriceFormatted": "₺2.379.150",
+          "topPriceFormatted": "₺2.919.150",
+          "trimCount": 2
         },
         {
           "brand": "Honda",
@@ -10093,8 +10093,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5236483,
-      "avgTopPrice": 5745228
+      "avgBasePrice": 5237650,
+      "avgTopPrice": 5745231
     },
     {
       "segment": "Sedan",
@@ -10547,10 +10547,10 @@
           "brand": "SEAT",
           "brandId": "seat",
           "model": "Ibiza",
-          "basePrice": 1647000,
-          "topPrice": 1647000,
-          "basePriceFormatted": "₺1.647.000",
-          "topPriceFormatted": "₺1.647.000",
+          "basePrice": 1647150,
+          "topPrice": 1647150,
+          "basePriceFormatted": "₺1.647.150",
+          "topPriceFormatted": "₺1.647.150",
           "trimCount": 1
         },
         {
@@ -10637,10 +10637,10 @@
           "brand": "SEAT",
           "brandId": "seat",
           "model": "LEON",
-          "basePrice": 2199000,
-          "topPrice": 2199000,
-          "basePriceFormatted": "₺2.199.000",
-          "topPriceFormatted": "₺2.199.000",
+          "basePrice": 2199150,
+          "topPrice": 2199150,
+          "basePriceFormatted": "₺2.199.150",
+          "topPriceFormatted": "₺2.199.150",
           "trimCount": 1
         },
         {
@@ -10667,10 +10667,10 @@
           "brand": "SEAT",
           "brandId": "seat",
           "model": "Leon",
-          "basePrice": 2930000,
-          "topPrice": 2930000,
-          "basePriceFormatted": "₺2.930.000",
-          "topPriceFormatted": "₺2.930.000",
+          "basePrice": 2930150,
+          "topPrice": 2930150,
+          "basePriceFormatted": "₺2.930.150",
+          "topPriceFormatted": "₺2.930.150",
           "trimCount": 1
         },
         {
@@ -10694,8 +10694,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 2475144,
-      "avgTopPrice": 2723206
+      "avgBasePrice": 2475172,
+      "avgTopPrice": 2723234
     },
     {
       "segment": "MPV",
@@ -10788,7 +10788,7 @@
   "summary": {
     "totalModels": 236,
     "avgTrimsPerModel": 2.3,
-    "avgPriceSpread": 377956,
-    "avgPriceSpreadPercent": 12.55
+    "avgPriceSpread": 377744,
+    "avgPriceSpreadPercent": 12.53
   }
 }

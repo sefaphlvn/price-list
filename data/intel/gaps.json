@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-27T01:34:06.377Z",
-  "date": "2026-04-27",
+  "generatedAt": "2026-04-28T01:34:30.723Z",
+  "date": "2026-04-28",
   "summary": {
     "totalSegments": 11,
     "totalGaps": 1000,
@@ -11,7 +11,7 @@
     {
       "segment": "SUV-Compact",
       "totalVehicles": 113,
-      "avgPrice": 2834319,
+      "avgPrice": 2828797,
       "minPrice": 1273200,
       "maxPrice": 8210300,
       "brands": [
@@ -66,7 +66,7 @@
     {
       "segment": "Hatchback-C",
       "totalVehicles": 66,
-      "avgPrice": 2619518,
+      "avgPrice": 2619527,
       "minPrice": 544900,
       "maxPrice": 6683000,
       "brands": [
@@ -169,7 +169,7 @@
     {
       "segment": "Hatchback-B",
       "totalVehicles": 39,
-      "avgPrice": 2097351,
+      "avgPrice": 2097355,
       "minPrice": 1238000,
       "maxPrice": 6660000,
       "brands": [
@@ -332,7 +332,7 @@
         "Opel",
         "SEAT"
       ],
-      "avgPrice": 1754790,
+      "avgPrice": 1754805,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -1643,7 +1643,7 @@
         "SEAT",
         "Kia"
       ],
-      "avgPrice": 1775290,
+      "avgPrice": 1775305,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -1664,7 +1664,7 @@
         "Nissan",
         "SEAT"
       ],
-      "avgPrice": 2501343,
+      "avgPrice": 2501357,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -2229,11 +2229,11 @@
       "priceRange": "2M-3M",
       "priceRangeMin": 2000000,
       "priceRangeMax": 3000000,
-      "vehicleCount": 2,
+      "vehicleCount": 3,
       "brands": [
         "Nissan"
       ],
-      "avgPrice": 2409800,
+      "avgPrice": 2556533,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -2244,12 +2244,12 @@
       "priceRange": "3M-5M",
       "priceRangeMin": 3000000,
       "priceRangeMax": 5000000,
-      "vehicleCount": 7,
+      "vehicleCount": 6,
       "brands": [
         "BMW",
         "Nissan"
       ],
-      "avgPrice": 3984114,
+      "avgPrice": 4069050,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -2976,7 +2976,7 @@
         "Škoda",
         "SEAT"
       ],
-      "avgPrice": 1838633,
+      "avgPrice": 1838733,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -3379,7 +3379,7 @@
         "Citroën",
         "SEAT"
       ],
-      "avgPrice": 2379857,
+      "avgPrice": 2379900,
       "hasGap": false,
       "opportunityScore": 0
     },
