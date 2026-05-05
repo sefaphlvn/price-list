@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T01:34:11.142Z",
-  "totalVehicles": 515,
+  "generatedAt": "2026-05-05T01:33:50.592Z",
+  "totalVehicles": 509,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -2523,7 +2523,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -3393,7 +3393,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3958,7 +3958,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "i20",
@@ -4391,7 +4391,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "E-208",
@@ -4793,7 +4793,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "SEAL",
@@ -4896,7 +4896,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Corsa",
@@ -5106,7 +5106,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5156,11 +5156,10 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.120.000 TL",
-          "priceNumeric": 2120000,
+          "priceRaw": "2.220.000 TL",
+          "priceNumeric": 2220000,
           "brand": "Citroën",
           "priceListNumeric": 2220000,
-          "priceCampaignNumeric": 2120000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -5173,11 +5172,10 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.230.000 TL",
-          "priceNumeric": 2230000,
+          "priceRaw": "2.330.000 TL",
+          "priceNumeric": 2330000,
           "brand": "Citroën",
           "priceListNumeric": 2330000,
-          "priceCampaignNumeric": 2230000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -5618,7 +5616,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6629,7 +6627,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "A 200",
@@ -7593,7 +7591,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Puma",
@@ -8311,7 +8309,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8626,7 +8624,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -9102,7 +9100,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -9165,7 +9163,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "YENİ",
@@ -9285,7 +9283,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Picanto",
@@ -9724,19 +9722,19 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
-          "model": "EX30",
-          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
+          "model": "EX40 Black Edition Ultra",
+          "trim": "Single Motor Extended Range   Elektrik   -   150kW/204hp   -   2.399.540   55%   3.719.287   4.463.144   8.926   13.000   4.485.071",
           "engine": "150 kW / 204 hp",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "2.347.670 TL",
-          "priceNumeric": 2347670,
+          "priceRaw": "4.345.292 TL",
+          "priceNumeric": 4345292,
           "brand": "Volvo",
           "modelYear": 2026,
-          "priceListNumeric": 1553340,
+          "priceListNumeric": 2324540,
           "powerKW": 150,
           "powerHP": 204,
           "driveType": "RWD",
@@ -9744,48 +9742,16 @@
           "isElectric": true
         },
         {
-          "model": "EX30",
-          "trim": "TWIN MOTOR, ULTRA",
-          "engine": "315 kW / 428 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik",
-          "priceRaw": "3.626.481 TL",
-          "priceNumeric": 3626481,
-          "brand": "Volvo",
-          "modelYear": 2026,
-          "priceListNumeric": 1706340,
-          "powerKW": 315,
-          "powerHP": 428,
-          "driveType": "AWD",
-          "isElectric": true
-        },
-        {
-          "model": "EX30 CROSS COUNTRY",
-          "trim": "TWIN MOTOR PERFORMANCE, ULTRA",
-          "engine": "315 kW / 428 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik",
-          "priceRaw": "3.765.989 TL",
-          "priceNumeric": 3765989,
-          "brand": "Volvo",
-          "modelYear": 2026,
-          "priceListNumeric": 1772640,
-          "powerKW": 315,
-          "powerHP": 428,
-          "driveType": "AWD",
-          "isElectric": true
-        },
-        {
-          "model": "EX40",
-          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
+          "model": "EC40 Black Edition Ultra",
+          "trim": "Single Motor Extended Range   Elektrik   -   150kW/204hp   -   2.448.940   55%   3.795.857   4.555.028   9.110   13.000   4.577.138",
           "engine": "150 kW / 204 hp",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "3.933.820 TL",
-          "priceNumeric": 3933820,
+          "priceRaw": "4.437.359 TL",
+          "priceNumeric": 4437359,
           "brand": "Volvo",
           "modelYear": 2026,
-          "priceListNumeric": 2103760,
+          "priceListNumeric": 2373940,
           "powerKW": 150,
           "powerHP": 204,
           "driveType": "RWD",
@@ -9793,67 +9759,16 @@
           "isElectric": true
         },
         {
-          "model": "EC40",
-          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
-          "engine": "150 kW / 204 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik",
-          "priceRaw": "4.020.576 TL",
-          "priceNumeric": 4020576,
-          "brand": "Volvo",
-          "modelYear": 2026,
-          "priceListNumeric": 2150310,
-          "powerKW": 150,
-          "powerHP": 204,
-          "driveType": "RWD",
-          "hasLongRange": true,
-          "isElectric": true
-        },
-        {
-          "model": "EC40 BLACK EDITION",
-          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
-          "engine": "150 kW / 204 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik",
-          "priceRaw": "4.160.355 TL",
-          "priceNumeric": 4160355,
-          "brand": "Volvo",
-          "modelYear": 2026,
-          "priceListNumeric": 2225310,
-          "powerKW": 150,
-          "powerHP": 204,
-          "driveType": "RWD",
-          "hasLongRange": true,
-          "isElectric": true
-        },
-        {
-          "model": "V60",
-          "trim": "B4 FWD MILD HYBRID, PLUS, DARK",
-          "engine": "1.969 cc 197 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hybrid",
-          "priceRaw": "5.489.241 TL",
-          "priceNumeric": 5489241,
-          "brand": "Volvo",
-          "modelYear": 2026,
-          "priceListNumeric": 1684360,
-          "powerHP": 197,
-          "engineDisplacement": "2.0L",
-          "driveType": "FWD",
-          "isMildHybrid": true,
-          "isHybrid": true
-        },
-        {
-          "model": "XC60",
-          "trim": "B5 AWD MILD HYBRID, PLUS, DARK",
+          "model": "XC60 Plus",
+          "trim": "B5 AWD Mild hybrid, Dark   Benzin   1.969 cc.   250 hp   8 ileri Geartronic   2.244.140   170%   6.059.178   7.271.014   14.542   21.000   7.306.556",
           "engine": "1.969 cc 250 hp",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "6.717.287 TL",
-          "priceNumeric": 6717287,
+          "priceRaw": "7.306.556 TL",
+          "priceNumeric": 7306556,
           "brand": "Volvo",
           "modelYear": 2026,
-          "priceListNumeric": 2062630,
+          "priceListNumeric": 2244140,
           "powerHP": 250,
           "engineDisplacement": "2.0L",
           "driveType": "AWD",
@@ -9861,48 +9776,16 @@
           "isHybrid": true
         },
         {
-          "model": "XC60",
-          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, BRIGHT",
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hybrid",
-          "priceRaw": "7.353.597 TL",
-          "priceNumeric": 7353597,
-          "brand": "Volvo",
-          "modelYear": 2026,
-          "priceListNumeric": 2258630,
-          "powerHP": 145,
-          "engineDisplacement": "2.0L",
-          "driveType": "AWD",
-          "isPlugInHybrid": true
-        },
-        {
-          "model": "XC60",
-          "trim": "T8 AWD PLUG-IN HYBRID, POLESTAR ENGINEERED",
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hybrid",
-          "priceRaw": "8.579.143 TL",
-          "priceNumeric": 8579143,
-          "brand": "Volvo",
-          "modelYear": 2026,
-          "priceListNumeric": 2636130,
-          "powerHP": 145,
-          "engineDisplacement": "2.0L",
-          "driveType": "AWD",
-          "isPlugInHybrid": true
-        },
-        {
-          "model": "XC90",
-          "trim": "B5 AWD MILD HYBRID, PLUS, BRIGHT",
+          "model": "XC60 Ultra",
+          "trim": "B5 AWD Mild hybrid, Dark   Benzin   1.969 cc.   250 hp   8 ileri Geartronic   2.337.640   170%   6.311.628   7.573.954   15.148   21.000   7.610.102",
           "engine": "1.969 cc 250 hp",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "10.615.530 TL",
-          "priceNumeric": 10615530,
+          "priceRaw": "7.610.102 TL",
+          "priceNumeric": 7610102,
           "brand": "Volvo",
           "modelYear": 2026,
-          "priceListNumeric": 3263390,
+          "priceListNumeric": 2337640,
           "powerHP": 250,
           "engineDisplacement": "2.0L",
           "driveType": "AWD",
@@ -9910,16 +9793,16 @@
           "isHybrid": true
         },
         {
-          "model": "XC90 BLACK EDITION",
-          "trim": "B5 AWD MILD HYBRID, PLUS",
+          "model": "XC60 Black Edition Ultra",
+          "trim": "B5 AWD Mild hybrid   Benzin   1.969 cc.   250 hp   8 ileri Geartronic   2.470.640   170%   6.670.728   8.004.874   16.010   21.000   8.041.883",
           "engine": "1.969 cc 250 hp",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "10.844.407 TL",
-          "priceNumeric": 10844407,
+          "priceRaw": "7.715.612 TL",
+          "priceNumeric": 7715612,
           "brand": "Volvo",
           "modelYear": 2026,
-          "priceListNumeric": 3333890,
+          "priceListNumeric": 2370140,
           "powerHP": 250,
           "engineDisplacement": "2.0L",
           "driveType": "AWD",
@@ -9927,32 +9810,48 @@
           "isHybrid": true
         },
         {
-          "model": "XC90",
-          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, BRIGHT",
+          "model": "XC60 Plus",
+          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.452.140   170%   6.620.778   7.944.934   15.890   21.000   7.981.823",
           "engine": "1.969 cc 145 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hybrid",
-          "priceRaw": "11.277.812 TL",
-          "priceNumeric": 11277812,
+          "priceRaw": "7.981.823 TL",
+          "priceNumeric": 7981823,
           "brand": "Volvo",
           "modelYear": 2026,
-          "priceListNumeric": 3467390,
+          "priceListNumeric": 2452140,
           "powerHP": 145,
           "engineDisplacement": "2.0L",
           "driveType": "AWD",
           "isPlugInHybrid": true
         },
         {
-          "model": "XC90 BLACK EDITION",
-          "trim": "T8 AWD PLUG-IN HYBRID, PLUS",
+          "model": "XC60 Ultra",
+          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.545.640   170%   6.873.228   8.247.874   16.496   21.000   8.285.369",
           "engine": "1.969 cc 145 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hybrid",
-          "priceRaw": "11.506.689 TL",
-          "priceNumeric": 11506689,
+          "priceRaw": "8.285.369 TL",
+          "priceNumeric": 8285369,
           "brand": "Volvo",
           "modelYear": 2026,
-          "priceListNumeric": 3537890,
+          "priceListNumeric": 2545640,
+          "powerHP": 145,
+          "engineDisplacement": "2.0L",
+          "driveType": "AWD",
+          "isPlugInHybrid": true
+        },
+        {
+          "model": "XC60 Black Edition Ultra",
+          "trim": "T8 AWD Plug-in hybrid   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.678.640   170%   7.232.328   8.678.794   17.358   21.000   8.717.151",
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hybrid",
+          "priceRaw": "8.390.880 TL",
+          "priceNumeric": 8390880,
+          "brand": "Volvo",
+          "modelYear": 2026,
+          "priceListNumeric": 2578140,
           "powerHP": 145,
           "engineDisplacement": "2.0L",
           "driveType": "AWD",
@@ -9962,7 +9861,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "vehicles": [
         {
           "model": "Egea Sedan",

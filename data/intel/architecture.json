@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-04T01:34:15.114Z",
-  "date": "2026-05-04",
+  "generatedAt": "2026-05-05T01:33:54.084Z",
+  "date": "2026-05-05",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -3427,9 +3427,9 @@
       "brandId": "citroen",
       "trims": [
         {
-          "trim": "Max",
-          "price": 2120000,
-          "priceFormatted": "2.120.000 TL",
+          "trim": "Plus",
+          "price": 2125000,
+          "priceFormatted": "2.125.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.2 Hybrid 145* -  eDCS6",
@@ -3437,30 +3437,30 @@
           "fuel": "Hibrit"
         },
         {
-          "trim": "Plus",
-          "price": 2125000,
-          "priceFormatted": "2.125.000 TL",
-          "stepFromBase": 5000,
-          "stepPercent": 0.2358490566037736,
+          "trim": "Max",
+          "price": 2220000,
+          "priceFormatted": "2.220.000 TL",
+          "stepFromBase": 95000,
+          "stepPercent": 4.470588235294118,
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         },
         {
           "trim": "Max - 7 Koltuk",
-          "price": 2230000,
-          "priceFormatted": "2.230.000 TL",
-          "stepFromBase": 110000,
-          "stepPercent": 5.188679245283019,
+          "price": 2330000,
+          "priceFormatted": "2.330.000 TL",
+          "stepFromBase": 205000,
+          "stepPercent": 9.647058823529411,
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         }
       ],
-      "basePrice": 2120000,
-      "topPrice": 2230000,
-      "priceSpread": 110000,
-      "priceSpreadPercent": 5.19,
+      "basePrice": 2125000,
+      "topPrice": 2330000,
+      "priceSpread": 205000,
+      "priceSpreadPercent": 9.65,
       "trimCount": 3
     },
     {
@@ -7670,163 +7670,94 @@
       "trimCount": 4
     },
     {
-      "id": "volvo-ex30",
-      "model": "EX30",
+      "id": "volvo-ex40-black-edition-ultra",
+      "model": "EX40 Black Edition Ultra",
       "brand": "Volvo",
       "brandId": "volvo",
       "trims": [
         {
-          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
-          "price": 2347670,
-          "priceFormatted": "2.347.670 TL",
+          "trim": "Single Motor Extended Range   Elektrik   -   150kW/204hp   -   2.399.540   55%   3.719.287   4.463.144   8.926   13.000   4.485.071",
+          "price": 4345292,
+          "priceFormatted": "4.345.292 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "150 kW / 204 hp",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
-        },
+        }
+      ],
+      "basePrice": 4345292,
+      "topPrice": 4345292,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
+      "id": "volvo-ec40-black-edition-ultra",
+      "model": "EC40 Black Edition Ultra",
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "trims": [
         {
-          "trim": "TWIN MOTOR, ULTRA",
-          "price": 3626481,
-          "priceFormatted": "3.626.481 TL",
-          "stepFromBase": 1278811,
-          "stepPercent": 54.47149727176307,
-          "engine": "315 kW / 428 hp",
+          "trim": "Single Motor Extended Range   Elektrik   -   150kW/204hp   -   2.448.940   55%   3.795.857   4.555.028   9.110   13.000   4.577.138",
+          "price": 4437359,
+          "priceFormatted": "4.437.359 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "150 kW / 204 hp",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 2347670,
-      "topPrice": 3626481,
-      "priceSpread": 1278811,
-      "priceSpreadPercent": 54.47,
+      "basePrice": 4437359,
+      "topPrice": 4437359,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
+      "id": "volvo-xc60-plus",
+      "model": "XC60 Plus",
+      "brand": "Volvo",
+      "brandId": "volvo",
+      "trims": [
+        {
+          "trim": "B5 AWD Mild hybrid, Dark   Benzin   1.969 cc.   250 hp   8 ileri Geartronic   2.244.140   170%   6.059.178   7.271.014   14.542   21.000   7.306.556",
+          "price": 7306556,
+          "priceFormatted": "7.306.556 TL",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "1.969 cc 250 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit"
+        },
+        {
+          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.452.140   170%   6.620.778   7.944.934   15.890   21.000   7.981.823",
+          "price": 7981823,
+          "priceFormatted": "7.981.823 TL",
+          "stepFromBase": 675267,
+          "stepPercent": 9.241932861391879,
+          "engine": "1.969 cc 145 hp",
+          "transmission": "Otomatik",
+          "fuel": "Plug-in Hibrit"
+        }
+      ],
+      "basePrice": 7306556,
+      "topPrice": 7981823,
+      "priceSpread": 675267,
+      "priceSpreadPercent": 9.24,
       "trimCount": 2
     },
     {
-      "id": "volvo-ex30-cross-country",
-      "model": "EX30 CROSS COUNTRY",
+      "id": "volvo-xc60-ultra",
+      "model": "XC60 Ultra",
       "brand": "Volvo",
       "brandId": "volvo",
       "trims": [
         {
-          "trim": "TWIN MOTOR PERFORMANCE, ULTRA",
-          "price": 3765989,
-          "priceFormatted": "3.765.989 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "315 kW / 428 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        }
-      ],
-      "basePrice": 3765989,
-      "topPrice": 3765989,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
-      "id": "volvo-ex40",
-      "model": "EX40",
-      "brand": "Volvo",
-      "brandId": "volvo",
-      "trims": [
-        {
-          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
-          "price": 3933820,
-          "priceFormatted": "3.933.820 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "150 kW / 204 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        }
-      ],
-      "basePrice": 3933820,
-      "topPrice": 3933820,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
-      "id": "volvo-ec40",
-      "model": "EC40",
-      "brand": "Volvo",
-      "brandId": "volvo",
-      "trims": [
-        {
-          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
-          "price": 4020576,
-          "priceFormatted": "4.020.576 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "150 kW / 204 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        }
-      ],
-      "basePrice": 4020576,
-      "topPrice": 4020576,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
-      "id": "volvo-ec40-black-edition",
-      "model": "EC40 BLACK EDITION",
-      "brand": "Volvo",
-      "brandId": "volvo",
-      "trims": [
-        {
-          "trim": "SINGLE MOTOR EXTENDED RANGE, ULTRA",
-          "price": 4160355,
-          "priceFormatted": "4.160.355 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "150 kW / 204 hp",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
-        }
-      ],
-      "basePrice": 4160355,
-      "topPrice": 4160355,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
-      "id": "volvo-v60",
-      "model": "V60",
-      "brand": "Volvo",
-      "brandId": "volvo",
-      "trims": [
-        {
-          "trim": "B4 FWD MILD HYBRID, PLUS, DARK",
-          "price": 5489241,
-          "priceFormatted": "5.489.241 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.969 cc 197 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        }
-      ],
-      "basePrice": 5489241,
-      "topPrice": 5489241,
-      "priceSpread": 0,
-      "priceSpreadPercent": 0,
-      "trimCount": 1
-    },
-    {
-      "id": "volvo-xc60",
-      "model": "XC60",
-      "brand": "Volvo",
-      "brandId": "volvo",
-      "trims": [
-        {
-          "trim": "B5 AWD MILD HYBRID, PLUS, DARK",
-          "price": 6717287,
-          "priceFormatted": "6.717.287 TL",
+          "trim": "B5 AWD Mild hybrid, Dark   Benzin   1.969 cc.   250 hp   8 ileri Geartronic   2.337.640   170%   6.311.628   7.573.954   15.148   21.000   7.610.102",
+          "price": 7610102,
+          "priceFormatted": "7.610.102 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.969 cc 250 hp",
@@ -7834,75 +7765,32 @@
           "fuel": "Hibrit"
         },
         {
-          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, BRIGHT",
-          "price": 7353597,
-          "priceFormatted": "7.353.597 TL",
-          "stepFromBase": 636310,
-          "stepPercent": 9.472723139565126,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, POLESTAR ENGINEERED",
-          "price": 8579143,
-          "priceFormatted": "8.579.143 TL",
-          "stepFromBase": 1861856,
-          "stepPercent": 27.71738054366294,
+          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.545.640   170%   6.873.228   8.247.874   16.496   21.000   8.285.369",
+          "price": 8285369,
+          "priceFormatted": "8.285.369 TL",
+          "stepFromBase": 675267,
+          "stepPercent": 8.873297624657331,
           "engine": "1.969 cc 145 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hibrit"
         }
       ],
-      "basePrice": 6717287,
-      "topPrice": 8579143,
-      "priceSpread": 1861856,
-      "priceSpreadPercent": 27.72,
-      "trimCount": 3
-    },
-    {
-      "id": "volvo-xc90",
-      "model": "XC90",
-      "brand": "Volvo",
-      "brandId": "volvo",
-      "trims": [
-        {
-          "trim": "B5 AWD MILD HYBRID, PLUS, BRIGHT",
-          "price": 10615530,
-          "priceFormatted": "10.615.530 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.969 cc 250 hp",
-          "transmission": "Otomatik",
-          "fuel": "Hibrit"
-        },
-        {
-          "trim": "T8 AWD PLUG-IN HYBRID, PLUS, BRIGHT",
-          "price": 11277812,
-          "priceFormatted": "11.277.812 TL",
-          "stepFromBase": 662282,
-          "stepPercent": 6.2388029613217615,
-          "engine": "1.969 cc 145 hp",
-          "transmission": "Otomatik",
-          "fuel": "Plug-in Hibrit"
-        }
-      ],
-      "basePrice": 10615530,
-      "topPrice": 11277812,
-      "priceSpread": 662282,
-      "priceSpreadPercent": 6.24,
+      "basePrice": 7610102,
+      "topPrice": 8285369,
+      "priceSpread": 675267,
+      "priceSpreadPercent": 8.87,
       "trimCount": 2
     },
     {
-      "id": "volvo-xc90-black-edition",
-      "model": "XC90 BLACK EDITION",
+      "id": "volvo-xc60-black-edition-ultra",
+      "model": "XC60 Black Edition Ultra",
       "brand": "Volvo",
       "brandId": "volvo",
       "trims": [
         {
-          "trim": "B5 AWD MILD HYBRID, PLUS",
-          "price": 10844407,
-          "priceFormatted": "10.844.407 TL",
+          "trim": "B5 AWD Mild hybrid   Benzin   1.969 cc.   250 hp   8 ileri Geartronic   2.470.640   170%   6.670.728   8.004.874   16.010   21.000   8.041.883",
+          "price": 7715612,
+          "priceFormatted": "7.715.612 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.969 cc 250 hp",
@@ -7910,20 +7798,20 @@
           "fuel": "Hibrit"
         },
         {
-          "trim": "T8 AWD PLUG-IN HYBRID, PLUS",
-          "price": 11506689,
-          "priceFormatted": "11.506.689 TL",
-          "stepFromBase": 662282,
-          "stepPercent": 6.107129693675274,
+          "trim": "T8 AWD Plug-in hybrid   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.678.640   170%   7.232.328   8.678.794   17.358   21.000   8.717.151",
+          "price": 8390880,
+          "priceFormatted": "8.390.880 TL",
+          "stepFromBase": 675268,
+          "stepPercent": 8.751969383634117,
           "engine": "1.969 cc 145 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hibrit"
         }
       ],
-      "basePrice": 10844407,
-      "topPrice": 11506689,
-      "priceSpread": 662282,
-      "priceSpreadPercent": 6.11,
+      "basePrice": 7715612,
+      "topPrice": 8390880,
+      "priceSpread": 675268,
+      "priceSpreadPercent": 8.75,
       "trimCount": 2
     },
     {
@@ -8810,16 +8698,6 @@
           "trimCount": 2
         },
         {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "V60",
-          "basePrice": 5489241,
-          "topPrice": 5489241,
-          "basePriceFormatted": "₺5.489.241",
-          "topPriceFormatted": "₺5.489.241",
-          "trimCount": 1
-        },
-        {
           "brand": "Honda",
           "brandId": "honda",
           "model": "Prelude Hybrid",
@@ -8868,16 +8746,6 @@
           "basePriceFormatted": "₺6.511.700",
           "topPriceFormatted": "₺7.312.600",
           "trimCount": 2
-        },
-        {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "XC60",
-          "basePrice": 6717287,
-          "topPrice": 8579143,
-          "basePriceFormatted": "₺6.717.287",
-          "topPriceFormatted": "₺8.579.143",
-          "trimCount": 3
         },
         {
           "brand": "Mercedes-Benz",
@@ -8940,6 +8808,16 @@
           "trimCount": 2
         },
         {
+          "brand": "Volvo",
+          "brandId": "volvo",
+          "model": "XC60 Plus",
+          "basePrice": 7306556,
+          "topPrice": 7981823,
+          "basePriceFormatted": "₺7.306.556",
+          "topPriceFormatted": "₺7.981.823",
+          "trimCount": 2
+        },
+        {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "E 180",
@@ -8948,6 +8826,26 @@
           "basePriceFormatted": "₺7.525.000",
           "topPriceFormatted": "₺8.416.000",
           "trimCount": 4
+        },
+        {
+          "brand": "Volvo",
+          "brandId": "volvo",
+          "model": "XC60 Ultra",
+          "basePrice": 7610102,
+          "topPrice": 8285369,
+          "basePriceFormatted": "₺7.610.102",
+          "topPriceFormatted": "₺8.285.369",
+          "trimCount": 2
+        },
+        {
+          "brand": "Volvo",
+          "brandId": "volvo",
+          "model": "XC60 Black Edition Ultra",
+          "basePrice": 7715612,
+          "topPrice": 8390880,
+          "basePriceFormatted": "₺7.715.612",
+          "topPriceFormatted": "₺8.390.880",
+          "trimCount": 2
         },
         {
           "brand": "BMW",
@@ -9110,16 +9008,6 @@
           "trimCount": 3
         },
         {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "XC90",
-          "basePrice": 10615530,
-          "topPrice": 11277812,
-          "basePriceFormatted": "₺10.615.530",
-          "topPriceFormatted": "₺11.277.812",
-          "trimCount": 2
-        },
-        {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
           "model": "Mercedes-AMG GLC 43 4MATIC Coupé",
@@ -9137,16 +9025,6 @@
           "topPrice": 11263000,
           "basePriceFormatted": "₺10.717.000",
           "topPriceFormatted": "₺11.263.000",
-          "trimCount": 2
-        },
-        {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "XC90 BLACK EDITION",
-          "basePrice": 10844407,
-          "topPrice": 11506689,
-          "basePriceFormatted": "₺10.844.407",
-          "topPriceFormatted": "₺11.506.689",
           "trimCount": 2
         },
         {
@@ -9430,8 +9308,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8050290,
-      "avgTopPrice": 8323912
+      "avgBasePrice": 8025832,
+      "avgTopPrice": 8292183
     },
     {
       "segment": "SUV",
@@ -9490,10 +9368,10 @@
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "C3 Aircross Hybrid 145",
-          "basePrice": 2120000,
-          "topPrice": 2230000,
-          "basePriceFormatted": "₺2.120.000",
-          "topPriceFormatted": "₺2.230.000",
+          "basePrice": 2125000,
+          "topPrice": 2330000,
+          "basePriceFormatted": "₺2.125.000",
+          "topPriceFormatted": "₺2.330.000",
           "trimCount": 3
         },
         {
@@ -9544,16 +9422,6 @@
           "topPrice": 2566500,
           "basePriceFormatted": "₺2.329.000",
           "topPriceFormatted": "₺2.566.500",
-          "trimCount": 2
-        },
-        {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "EX30",
-          "basePrice": 2347670,
-          "topPrice": 3626481,
-          "basePriceFormatted": "₺2.347.670",
-          "topPriceFormatted": "₺3.626.481",
           "trimCount": 2
         },
         {
@@ -9697,26 +9565,6 @@
           "trimCount": 6
         },
         {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "EX30 CROSS COUNTRY",
-          "basePrice": 3765989,
-          "topPrice": 3765989,
-          "basePriceFormatted": "₺3.765.989",
-          "topPriceFormatted": "₺3.765.989",
-          "trimCount": 1
-        },
-        {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "EX40",
-          "basePrice": 3933820,
-          "topPrice": 3933820,
-          "basePriceFormatted": "₺3.933.820",
-          "topPriceFormatted": "₺3.933.820",
-          "trimCount": 1
-        },
-        {
           "brand": "BMW",
           "brandId": "bmw",
           "model": "BMW iX1 eDrive20",
@@ -9725,6 +9573,16 @@
           "basePriceFormatted": "₺4.064.300",
           "topPriceFormatted": "₺4.438.300",
           "trimCount": 3
+        },
+        {
+          "brand": "Volvo",
+          "brandId": "volvo",
+          "model": "EX40 Black Edition Ultra",
+          "basePrice": 4345292,
+          "topPrice": 4345292,
+          "basePriceFormatted": "₺4.345.292",
+          "topPriceFormatted": "₺4.345.292",
+          "trimCount": 1
         },
         {
           "brand": "BMW",
@@ -9867,8 +9725,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5287474,
-      "avgTopPrice": 5784494
+      "avgBasePrice": 5406444,
+      "avgTopPrice": 5898835
     },
     {
       "segment": "Sedan",
@@ -10036,21 +9894,11 @@
         {
           "brand": "Volvo",
           "brandId": "volvo",
-          "model": "EC40",
-          "basePrice": 4020576,
-          "topPrice": 4020576,
-          "basePriceFormatted": "₺4.020.576",
-          "topPriceFormatted": "₺4.020.576",
-          "trimCount": 1
-        },
-        {
-          "brand": "Volvo",
-          "brandId": "volvo",
-          "model": "EC40 BLACK EDITION",
-          "basePrice": 4160355,
-          "topPrice": 4160355,
-          "basePriceFormatted": "₺4.160.355",
-          "topPriceFormatted": "₺4.160.355",
+          "model": "EC40 Black Edition Ultra",
+          "basePrice": 4437359,
+          "topPrice": 4437359,
+          "basePriceFormatted": "₺4.437.359",
+          "topPriceFormatted": "₺4.437.359",
           "trimCount": 1
         },
         {
@@ -10114,8 +9962,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5600930,
-      "avgTopPrice": 6294385
+      "avgBasePrice": 5681685,
+      "avgTopPrice": 6405290
     },
     {
       "segment": "Electric",
@@ -10570,9 +10418,9 @@
     }
   ],
   "summary": {
-    "totalModels": 234,
+    "totalModels": 230,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 368656,
-    "avgPriceSpreadPercent": 12.18
+    "avgPriceSpread": 364875,
+    "avgPriceSpreadPercent": 12.11
   }
 }
