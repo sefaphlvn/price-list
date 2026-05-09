@@ -1,22 +1,42 @@
 {
-  "generatedAt": "2026-05-08T01:34:36.167Z",
-  "date": "2026-05-08",
-  "previousDate": "2026-05-07",
+  "generatedAt": "2026-05-09T01:34:16.411Z",
+  "date": "2026-05-09",
+  "previousDate": "2026-05-08",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-05-08",
-    "totalDays": 101
+    "end": "2026-05-09",
+    "totalDays": 102
   },
   "summary": {
-    "totalEvents": 1580,
+    "totalEvents": 1581,
     "newVehicles": 325,
     "removedVehicles": 349,
-    "priceIncreases": 759,
+    "priceIncreases": 760,
     "priceDecreases": 147,
-    "avgPriceChange": 98124,
+    "avgPriceChange": 98090,
     "avgPriceChangePercent": 1.59
   },
   "events": [
+    {
+      "id": "ford-yeni-journey-courier-bev-titanium-100kw-price_increase-2026-05-09",
+      "type": "price_increase",
+      "vehicleId": "ford-yeni-journey-courier-bev-titanium-100kw",
+      "brand": "Ford",
+      "brandId": "ford",
+      "model": "Yeni Journey Courier BEV",
+      "trim": "Titanium",
+      "engine": "100KW",
+      "fuel": "Elektrik",
+      "transmission": "Otomatik",
+      "oldPrice": 2251900,
+      "newPrice": 2319200,
+      "oldPriceFormatted": "2.251.900 TL",
+      "newPriceFormatted": "2.319.200 TL",
+      "priceChange": 67300,
+      "priceChangePercent": 2.99,
+      "date": "2026-05-09",
+      "previousDate": "2026-05-08"
+    },
     {
       "id": "opel-astra-gs-1.5-130-hp-dizel-new-2026-05-08",
       "type": "new",
@@ -28701,10 +28721,10 @@
       {
         "id": "ford",
         "name": "Ford",
-        "changeCount": 25,
-        "avgChange": 87724,
-        "avgChangePercent": 3.58,
-        "increaseCount": 22,
+        "changeCount": 26,
+        "avgChange": 86938,
+        "avgChangePercent": 3.55,
+        "increaseCount": 23,
         "decreaseCount": 3
       },
       {

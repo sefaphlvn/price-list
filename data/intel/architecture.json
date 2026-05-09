@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-08T01:34:37.036Z",
-  "date": "2026-05-08",
+  "generatedAt": "2026-05-09T01:34:17.001Z",
+  "date": "2026-05-09",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -6536,8 +6536,8 @@
       "trims": [
         {
           "trim": "Titanium",
-          "price": 2165600,
-          "priceFormatted": "2.165.600 TL",
+          "price": 2230400,
+          "priceFormatted": "2.230.400 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "100KW",
@@ -6546,19 +6546,19 @@
         },
         {
           "trim": "Titanium",
-          "price": 2251900,
-          "priceFormatted": "2.251.900 TL",
-          "stepFromBase": 86300,
-          "stepPercent": 3.9850387883265608,
+          "price": 2319200,
+          "priceFormatted": "2.319.200 TL",
+          "stepFromBase": 88800,
+          "stepPercent": 3.9813486370157816,
           "engine": "100KW",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 2165600,
-      "topPrice": 2251900,
-      "priceSpread": 86300,
-      "priceSpreadPercent": 3.99,
+      "basePrice": 2230400,
+      "topPrice": 2319200,
+      "priceSpread": 88800,
+      "priceSpreadPercent": 3.98,
       "trimCount": 2
     },
     {
@@ -10045,16 +10045,6 @@
           "trimCount": 5
         },
         {
-          "brand": "Ford",
-          "brandId": "ford",
-          "model": "Yeni Journey Courier BEV",
-          "basePrice": 2165600,
-          "topPrice": 2251900,
-          "basePriceFormatted": "₺2.165.600",
-          "topPriceFormatted": "₺2.251.900",
-          "trimCount": 2
-        },
-        {
           "brand": "Hyundai",
           "brandId": "hyundai",
           "model": "KONA Elektrik",
@@ -10063,6 +10053,16 @@
           "basePriceFormatted": "₺2.220.000",
           "topPriceFormatted": "₺2.220.000",
           "trimCount": 1
+        },
+        {
+          "brand": "Ford",
+          "brandId": "ford",
+          "model": "Yeni Journey Courier BEV",
+          "basePrice": 2230400,
+          "topPrice": 2319200,
+          "basePriceFormatted": "₺2.230.400",
+          "topPriceFormatted": "₺2.319.200",
+          "trimCount": 2
         },
         {
           "brand": "Kia",
@@ -10185,8 +10185,8 @@
           "trimCount": 4
         }
       ],
-      "avgBasePrice": 3123722,
-      "avgTopPrice": 3520889
+      "avgBasePrice": 3127322,
+      "avgTopPrice": 3524628
     },
     {
       "segment": "Hatchback",
@@ -10456,7 +10456,7 @@
   "summary": {
     "totalModels": 232,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 363253,
+    "avgPriceSpread": 363263,
     "avgPriceSpreadPercent": 12.06
   }
 }

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-08T01:34:32.749Z",
+  "generatedAt": "2026-05-09T01:34:13.743Z",
   "totalVehicles": 508,
   "overallStats": {
-    "avgPrice": 5019048,
+    "avgPrice": 5019308,
     "minPrice": 544900,
     "maxPrice": 38034000,
     "medianPrice": 3067999.995
@@ -99,7 +99,7 @@
     {
       "name": "Ford",
       "vehicleCount": 21,
-      "avgPrice": 2609090,
+      "avgPrice": 2615381,
       "minPrice": 1897100,
       "maxPrice": 3404200,
       "medianPrice": 2585600
@@ -172,7 +172,7 @@
       "fuel": "Elektrik",
       "count": 115,
       "percentage": 22.6,
-      "avgPrice": 4870061
+      "avgPrice": 4871210
     },
     {
       "fuel": "Hibrit",
@@ -216,7 +216,7 @@
       "transmission": "Otomatik",
       "count": 344,
       "percentage": 67.7,
-      "avgPrice": 5922010
+      "avgPrice": 5922394
     },
     {
       "transmission": "DSG",
@@ -398,13 +398,13 @@
         "year": "2026",
         "count": 274,
         "percentage": 68.7,
-        "avgPrice": 4735781
+        "avgPrice": 4736027
       },
       {
         "year": "2025",
         "count": 115,
         "percentage": 28.8,
-        "avgPrice": 4306203
+        "avgPrice": 4306767
       },
       {
         "year": "2023",
