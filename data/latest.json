@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-12T01:34:42.927Z",
-  "totalVehicles": 508,
+  "generatedAt": "2026-05-13T01:35:47.759Z",
+  "totalVehicles": 507,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -2523,7 +2523,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -2804,7 +2804,7 @@
           "isHybrid": true
         },
         {
-          "model": "Yeni Duster",
+          "model": "Duster",
           "trim": "evolution",
           "engine": "evolution Eco-G 120 hp",
           "transmission": "Manuel",
@@ -2828,7 +2828,7 @@
           "powerHP": 120
         },
         {
-          "model": "Yeni Duster",
+          "model": "Duster",
           "trim": "evolution",
           "engine": "evolution Turbo Tce EDC 145 hp",
           "transmission": "Otomatik",
@@ -2865,7 +2865,7 @@
           "engineType": "TCe"
         },
         {
-          "model": "Yeni Duster",
+          "model": "Duster",
           "trim": "evolution",
           "engine": "evolution hybrid 4x4 LPG 150 hp",
           "transmission": "Otomatik",
@@ -2889,7 +2889,7 @@
           "powerHP": 150
         },
         {
-          "model": "Yeni Duster",
+          "model": "Duster",
           "trim": "techno",
           "engine": "techno Turbo Tce EDC 145 hp",
           "transmission": "Otomatik",
@@ -2938,7 +2938,7 @@
           "engineType": "TCe"
         },
         {
-          "model": "Yeni Duster",
+          "model": "Duster",
           "trim": "techno",
           "engine": "techno Full hybrid E-Tech 160 hp",
           "transmission": "Otomatik",
@@ -2964,7 +2964,7 @@
           "isHybrid": true
         },
         {
-          "model": "Yeni Duster",
+          "model": "Duster",
           "trim": "techno",
           "engine": "techno hybrid 4x4 LPG 150 hp",
           "transmission": "Otomatik",
@@ -3364,7 +3364,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3929,7 +3929,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "i20",
@@ -4362,7 +4362,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "E-208",
@@ -4764,7 +4764,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "SEAL",
@@ -4867,7 +4867,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Corsa",
@@ -5091,7 +5091,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5573,7 +5573,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6614,7 +6614,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "A 200",
@@ -7577,7 +7577,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -8295,7 +8295,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8602,7 +8602,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -8614,7 +8614,7 @@
           "priceNumeric": 2249000,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 2688200,
+          "priceListNumeric": 2720400,
           "priceCampaignNumeric": 2249000,
           "powerHP": 158,
           "engineDisplacement": "1.3L",
@@ -8629,12 +8629,12 @@
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "2.620.600 TL",
-          "priceNumeric": 2620600,
+          "priceRaw": "2.652.100 TL",
+          "priceNumeric": 2652100,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 3096900,
-          "priceCampaignNumeric": 2620600,
+          "priceListNumeric": 3134200,
+          "priceCampaignNumeric": 2652100,
           "powerHP": 158,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T",
@@ -8648,12 +8648,12 @@
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "2.800.000 TL",
-          "priceNumeric": 2800000,
+          "priceRaw": "2.833.400 TL",
+          "priceNumeric": 2833400,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 3296000,
-          "priceCampaignNumeric": 2800000,
+          "priceListNumeric": 3335400,
+          "priceCampaignNumeric": 2833400,
           "powerHP": 158,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T",
@@ -8667,12 +8667,12 @@
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "3.575.700 TL",
-          "priceNumeric": 3575700,
+          "priceRaw": "3.618.800 TL",
+          "priceNumeric": 3618800,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 3575700,
-          "priceCampaignNumeric": 3575700,
+          "priceListNumeric": 3618800,
+          "priceCampaignNumeric": 3618800,
           "powerHP": 158,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T",
@@ -8686,12 +8686,12 @@
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "3.715.600 TL",
-          "priceNumeric": 3715600,
+          "priceRaw": "3.760.200 TL",
+          "priceNumeric": 3760200,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 3715600,
-          "priceCampaignNumeric": 3715600,
+          "priceListNumeric": 3760200,
+          "priceCampaignNumeric": 3760200,
           "powerHP": 158,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T",
@@ -8705,12 +8705,12 @@
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "3.719.500 TL",
-          "priceNumeric": 3719500,
+          "priceRaw": "3.764.300 TL",
+          "priceNumeric": 3764300,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 3719500,
-          "priceCampaignNumeric": 3719500,
+          "priceListNumeric": 3764300,
+          "priceCampaignNumeric": 3764300,
           "powerHP": 158,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T",
@@ -8724,12 +8724,12 @@
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "3.834.000 TL",
-          "priceNumeric": 3834000,
+          "priceRaw": "3.879.200 TL",
+          "priceNumeric": 3879200,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 3834000,
-          "priceCampaignNumeric": 3834000,
+          "priceListNumeric": 3879200,
+          "priceCampaignNumeric": 3879200,
           "powerHP": 158,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T",
@@ -8743,12 +8743,12 @@
           "engine": "e-POWER 190PS",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "3.366.700 TL",
-          "priceNumeric": 3366700,
+          "priceRaw": "3.408.200 TL",
+          "priceNumeric": 3408200,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 3466700,
-          "priceCampaignNumeric": 3366700,
+          "priceListNumeric": 3508200,
+          "priceCampaignNumeric": 3408200,
           "powerHP": 190,
           "engineType": "e-POWER",
           "isHybrid": true
@@ -8759,12 +8759,12 @@
           "engine": "e-POWER 190PS",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "3.592.400 TL",
-          "priceNumeric": 3592400,
+          "priceRaw": "3.636.900 TL",
+          "priceNumeric": 3636900,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 3692400,
-          "priceCampaignNumeric": 3592400,
+          "priceListNumeric": 3736900,
+          "priceCampaignNumeric": 3636900,
           "powerHP": 190,
           "engineType": "e-POWER",
           "isHybrid": true
@@ -8775,12 +8775,12 @@
           "engine": "e-POWER 190PS",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "3.716.600 TL",
-          "priceNumeric": 3716600,
+          "priceRaw": "3.762.300 TL",
+          "priceNumeric": 3762300,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 3816600,
-          "priceCampaignNumeric": 3716600,
+          "priceListNumeric": 3862300,
+          "priceCampaignNumeric": 3762300,
           "powerHP": 190,
           "engineType": "e-POWER",
           "isHybrid": true
@@ -8791,12 +8791,12 @@
           "engine": "e-POWER 190PS",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "4.039.000 TL",
-          "priceNumeric": 4039000,
+          "priceRaw": "4.088.900 TL",
+          "priceNumeric": 4088900,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 4139000,
-          "priceCampaignNumeric": 4039000,
+          "priceListNumeric": 4188900,
+          "priceCampaignNumeric": 4088900,
           "powerHP": 190,
           "engineType": "e-POWER",
           "isHybrid": true
@@ -8807,12 +8807,12 @@
           "engine": "e-POWER 190PS",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "4.178.700 TL",
-          "priceNumeric": 4178700,
+          "priceRaw": "4.230.200 TL",
+          "priceNumeric": 4230200,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 4278700,
-          "priceCampaignNumeric": 4178700,
+          "priceListNumeric": 4330200,
+          "priceCampaignNumeric": 4230200,
           "powerHP": 190,
           "engineType": "e-POWER",
           "isHybrid": true
@@ -8827,7 +8827,7 @@
           "priceNumeric": 1699000,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 2063700,
+          "priceListNumeric": 2087800,
           "priceCampaignNumeric": 1699000,
           "powerHP": 115,
           "engineDisplacement": "1.0L",
@@ -8844,7 +8844,7 @@
           "priceNumeric": 1799000,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 2182400,
+          "priceListNumeric": 2207900,
           "priceCampaignNumeric": 1799000,
           "powerHP": 115,
           "engineDisplacement": "1.0L",
@@ -8857,12 +8857,12 @@
           "engine": "1.0 DIG-T 115PS",
           "transmission": "Otomatik",
           "fuel": "Benzin",
-          "priceRaw": "1.991.500 TL",
-          "priceNumeric": 1991500,
+          "priceRaw": "2.015.300 TL",
+          "priceNumeric": 2015300,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 2300500,
-          "priceCampaignNumeric": 1991500,
+          "priceListNumeric": 2327500,
+          "priceCampaignNumeric": 2015300,
           "powerHP": 115,
           "engineDisplacement": "1.0L",
           "engineType": "DIG-T",
@@ -8870,33 +8870,16 @@
         },
         {
           "model": "JUKE",
-          "trim": "N-Design",
+          "trim": "Redline Edition",
           "engine": "1.0 DIG-T 115PS",
           "transmission": "Otomatik",
           "fuel": "Benzin",
-          "priceRaw": "2.345.300 TL",
-          "priceNumeric": 2345300,
+          "priceRaw": "2.099.000 TL",
+          "priceNumeric": 2099000,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 2445300,
-          "priceCampaignNumeric": 2345300,
-          "powerHP": 115,
-          "engineDisplacement": "1.0L",
-          "engineType": "DIG-T",
-          "transmissionType": "DCT"
-        },
-        {
-          "model": "JUKE",
-          "trim": "N-Sport",
-          "engine": "1.0 DIG-T 115PS",
-          "transmission": "Otomatik",
-          "fuel": "Benzin",
-          "priceRaw": "2.345.300 TL",
-          "priceNumeric": 2345300,
-          "brand": "Nissan",
-          "modelYear": 2026,
-          "priceListNumeric": 2445300,
-          "priceCampaignNumeric": 2345300,
+          "priceListNumeric": 2417500,
+          "priceCampaignNumeric": 2099000,
           "powerHP": 115,
           "engineDisplacement": "1.0L",
           "engineType": "DIG-T",
@@ -8908,12 +8891,12 @@
           "engine": "1.0 DIG-T 115PS",
           "transmission": "Otomatik",
           "fuel": "Benzin",
-          "priceRaw": "2.575.700 TL",
-          "priceNumeric": 2575700,
+          "priceRaw": "2.607.100 TL",
+          "priceNumeric": 2607100,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 2675700,
-          "priceCampaignNumeric": 2575700,
+          "priceListNumeric": 2707100,
+          "priceCampaignNumeric": 2607100,
           "powerHP": 115,
           "engineDisplacement": "1.0L",
           "engineType": "DIG-T",
@@ -8963,11 +8946,11 @@
           "engine": "1.3 DIG-T 130PS",
           "transmission": "Otomatik",
           "fuel": "Benzin",
-          "priceRaw": "1.273.200 TL",
-          "priceNumeric": 1273200,
+          "priceRaw": "1.288.800 TL",
+          "priceNumeric": 1288800,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 1273200,
+          "priceListNumeric": 1288800,
           "powerHP": 130,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T",
@@ -8979,12 +8962,12 @@
           "engine": "1.3 DIG-T 130PS",
           "transmission": "Otomatik",
           "fuel": "Benzin",
-          "priceRaw": "1.406.300 TL",
-          "priceNumeric": 1406300,
+          "priceRaw": "1.424.000 TL",
+          "priceNumeric": 1424000,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 1456300,
-          "priceCampaignNumeric": 1406300,
+          "priceListNumeric": 1474000,
+          "priceCampaignNumeric": 1424000,
           "powerHP": 130,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T",
@@ -8996,12 +8979,12 @@
           "engine": "1.3 DIG-T 130PS",
           "transmission": "Otomatik",
           "fuel": "Benzin",
-          "priceRaw": "1.532.200 TL",
-          "priceNumeric": 1532200,
+          "priceRaw": "1.551.400 TL",
+          "priceNumeric": 1551400,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 1582200,
-          "priceCampaignNumeric": 1532200,
+          "priceListNumeric": 1601400,
+          "priceCampaignNumeric": 1551400,
           "powerHP": 130,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T"
@@ -9012,12 +8995,12 @@
           "engine": "1.3 DIG-T 130PS",
           "transmission": "Otomatik",
           "fuel": "Benzin",
-          "priceRaw": "1.610.200 TL",
-          "priceNumeric": 1610200,
+          "priceRaw": "1.630.200 TL",
+          "priceNumeric": 1630200,
           "brand": "Nissan",
           "modelYear": 2026,
-          "priceListNumeric": 1660200,
-          "priceCampaignNumeric": 1610200,
+          "priceListNumeric": 1680200,
+          "priceCampaignNumeric": 1630200,
           "powerHP": 130,
           "engineDisplacement": "1.3L",
           "engineType": "DIG-T"
@@ -9078,7 +9061,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -9141,7 +9124,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "YENİ",
@@ -9261,7 +9244,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Niro EV",
@@ -9700,7 +9683,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "EX40 Black Edition Ultra",
@@ -9839,7 +9822,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "vehicles": [
         {
           "model": "Egea Sedan",

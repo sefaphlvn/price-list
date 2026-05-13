@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-12T01:34:42.959Z",
-  "totalVehicles": 508,
+  "generatedAt": "2026-05-13T01:35:47.791Z",
+  "totalVehicles": 507,
   "overallStats": {
-    "avgPrice": 5019308,
+    "avgPrice": 5025287,
     "minPrice": 544900,
     "maxPrice": 38034000,
-    "medianPrice": 3067999.995
+    "medianPrice": 3080000
   },
   "brandStats": [
     {
@@ -66,11 +66,11 @@
     },
     {
       "name": "Nissan",
-      "vehicleCount": 28,
-      "avgPrice": 2875800,
-      "minPrice": 1273200,
+      "vehicleCount": 27,
+      "avgPrice": 2908674,
+      "minPrice": 1288800,
       "maxPrice": 5515600,
-      "medianPrice": 2598150
+      "medianPrice": 2652100
     },
     {
       "name": "Kia",
@@ -164,21 +164,21 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 203,
-      "percentage": 40,
-      "avgPrice": 5221784
+      "count": 202,
+      "percentage": 39.8,
+      "avgPrice": 5235437
     },
     {
       "fuel": "Elektrik",
       "count": 115,
-      "percentage": 22.6,
+      "percentage": 22.7,
       "avgPrice": 4871210
     },
     {
       "fuel": "Hibrit",
       "count": 66,
       "percentage": 13,
-      "avgPrice": 3130554
+      "avgPrice": 3134086
     },
     {
       "fuel": "Dizel",
@@ -190,7 +190,7 @@
       "fuel": "Hafif Hibrit",
       "count": 35,
       "percentage": 6.9,
-      "avgPrice": 8308260
+      "avgPrice": 8315191
     },
     {
       "fuel": "Plug-in Hibrit",
@@ -214,14 +214,14 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 344,
+      "count": 343,
       "percentage": 67.7,
-      "avgPrice": 5922394
+      "avgPrice": 5933864
     },
     {
       "transmission": "DSG",
       "count": 83,
-      "percentage": 16.3,
+      "percentage": 16.4,
       "avgPrice": 3906108
     },
     {
@@ -255,22 +255,22 @@
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 225,
-      "percentage": 44.3
+      "count": 224,
+      "percentage": 44.2
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
       "count": 114,
-      "percentage": 22.4
+      "percentage": 22.5
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
       "count": 146,
-      "percentage": 28.7
+      "percentage": 28.8
     }
   ],
   "otvStats": {
@@ -396,14 +396,14 @@
     "distribution": [
       {
         "year": "2026",
-        "count": 274,
-        "percentage": 68.7,
-        "avgPrice": 4736027
+        "count": 273,
+        "percentage": 68.6,
+        "avgPrice": 4746092
       },
       {
         "year": "2025",
         "count": 115,
-        "percentage": 28.8,
+        "percentage": 28.9,
         "avgPrice": 4306767
       },
       {

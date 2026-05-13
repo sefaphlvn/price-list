@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-12T01:34:45.949Z",
-  "date": "2026-05-12",
+  "generatedAt": "2026-05-13T01:35:51.505Z",
+  "date": "2026-05-13",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -1284,8 +1284,8 @@
       "trimCount": 1
     },
     {
-      "id": "renault-yeni-duster",
-      "model": "Yeni Duster",
+      "id": "renault-duster",
+      "model": "Duster",
       "brand": "Renault",
       "brandId": "renault",
       "trims": [
@@ -6718,69 +6718,69 @@
         },
         {
           "trim": "Skypack",
-          "price": 2620600,
-          "priceFormatted": "2.620.600 TL",
-          "stepFromBase": 371600,
-          "stepPercent": 16.522899066251668,
+          "price": 2652100,
+          "priceFormatted": "2.652.100 TL",
+          "stepFromBase": 403100,
+          "stepPercent": 17.923521565140064,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         },
         {
           "trim": "Skypack 4x4",
-          "price": 2800000,
-          "priceFormatted": "2.800.000 TL",
-          "stepFromBase": 551000,
-          "stepPercent": 24.499777678968428,
+          "price": 2833400,
+          "priceFormatted": "2.833.400 TL",
+          "stepFromBase": 584400,
+          "stepPercent": 25.984882169853268,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         },
         {
           "trim": "Platinum",
-          "price": 3575700,
-          "priceFormatted": "3.575.700 TL",
-          "stepFromBase": 1326700,
-          "stepPercent": 58.99066251667408,
+          "price": 3618800,
+          "priceFormatted": "3.618.800 TL",
+          "stepFromBase": 1369800,
+          "stepPercent": 60.90706980880392,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         },
         {
           "trim": "Platinum 4x4",
-          "price": 3715600,
-          "priceFormatted": "3.715.600 TL",
-          "stepFromBase": 1466600,
-          "stepPercent": 65.21120497999111,
+          "price": 3760200,
+          "priceFormatted": "3.760.200 TL",
+          "stepFromBase": 1511200,
+          "stepPercent": 67.19430858159183,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         },
         {
           "trim": "Platinum Premium",
-          "price": 3719500,
-          "priceFormatted": "3.719.500 TL",
-          "stepFromBase": 1470500,
-          "stepPercent": 65.38461538461539,
+          "price": 3764300,
+          "priceFormatted": "3.764.300 TL",
+          "stepFromBase": 1515300,
+          "stepPercent": 67.37661182747888,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         },
         {
           "trim": "Platinum Premium 4x4",
-          "price": 3834000,
-          "priceFormatted": "3.834.000 TL",
-          "stepFromBase": 1585000,
-          "stepPercent": 70.47576700755891,
+          "price": 3879200,
+          "priceFormatted": "3.879.200 TL",
+          "stepFromBase": 1630200,
+          "stepPercent": 72.48554913294798,
           "engine": "1.3 DIG-T Mild Hybrid 158PS",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         }
       ],
       "basePrice": 2249000,
-      "topPrice": 3834000,
-      "priceSpread": 1585000,
-      "priceSpreadPercent": 70.48,
+      "topPrice": 3879200,
+      "priceSpread": 1630200,
+      "priceSpreadPercent": 72.49,
       "trimCount": 7
     },
     {
@@ -6791,8 +6791,8 @@
       "trims": [
         {
           "trim": "Designpack",
-          "price": 3366700,
-          "priceFormatted": "3.366.700 TL",
+          "price": 3408200,
+          "priceFormatted": "3.408.200 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "e-POWER 190PS",
@@ -6801,48 +6801,48 @@
         },
         {
           "trim": "Skypack",
-          "price": 3592400,
-          "priceFormatted": "3.592.400 TL",
-          "stepFromBase": 225700,
-          "stepPercent": 6.703894020851278,
+          "price": 3636900,
+          "priceFormatted": "3.636.900 TL",
+          "stepFromBase": 228700,
+          "stepPercent": 6.710286954990904,
           "engine": "e-POWER 190PS",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         },
         {
           "trim": "N-Design",
-          "price": 3716600,
-          "priceFormatted": "3.716.600 TL",
-          "stepFromBase": 349900,
-          "stepPercent": 10.392966406273205,
+          "price": 3762300,
+          "priceFormatted": "3.762.300 TL",
+          "stepFromBase": 354100,
+          "stepPercent": 10.389648494806643,
           "engine": "e-POWER 190PS",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         },
         {
           "trim": "Platinum",
-          "price": 4039000,
-          "priceFormatted": "4.039.000 TL",
-          "stepFromBase": 672300,
-          "stepPercent": 19.969109216740428,
+          "price": 4088900,
+          "priceFormatted": "4.088.900 TL",
+          "stepFromBase": 680700,
+          "stepPercent": 19.97241945895194,
           "engine": "e-POWER 190PS",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         },
         {
           "trim": "Platinum Premium",
-          "price": 4178700,
-          "priceFormatted": "4.178.700 TL",
-          "stepFromBase": 812000,
-          "stepPercent": 24.118573083434818,
+          "price": 4230200,
+          "priceFormatted": "4.230.200 TL",
+          "stepFromBase": 822000,
+          "stepPercent": 24.11830291649551,
           "engine": "e-POWER 190PS",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         }
       ],
-      "basePrice": 3366700,
-      "topPrice": 4178700,
-      "priceSpread": 812000,
+      "basePrice": 3408200,
+      "topPrice": 4230200,
+      "priceSpread": 822000,
       "priceSpreadPercent": 24.12,
       "trimCount": 5
     },
@@ -6874,50 +6874,40 @@
         },
         {
           "trim": "Platinum",
-          "price": 1991500,
-          "priceFormatted": "1.991.500 TL",
-          "stepFromBase": 292500,
-          "stepPercent": 17.216009417304296,
+          "price": 2015300,
+          "priceFormatted": "2.015.300 TL",
+          "stepFromBase": 316300,
+          "stepPercent": 18.61683343143025,
           "engine": "1.0 DIG-T 115PS",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         },
         {
-          "trim": "N-Design",
-          "price": 2345300,
-          "priceFormatted": "2.345.300 TL",
-          "stepFromBase": 646300,
-          "stepPercent": 38.040023543260745,
-          "engine": "1.0 DIG-T 115PS",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "N-Sport",
-          "price": 2345300,
-          "priceFormatted": "2.345.300 TL",
-          "stepFromBase": 646300,
-          "stepPercent": 38.040023543260745,
+          "trim": "Redline Edition",
+          "price": 2099000,
+          "priceFormatted": "2.099.000 TL",
+          "stepFromBase": 400000,
+          "stepPercent": 23.543260741612713,
           "engine": "1.0 DIG-T 115PS",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         },
         {
           "trim": "Platinum Premium",
-          "price": 2575700,
-          "priceFormatted": "2.575.700 TL",
-          "stepFromBase": 876700,
-          "stepPercent": 51.60094173042966,
+          "price": 2607100,
+          "priceFormatted": "2.607.100 TL",
+          "stepFromBase": 908100,
+          "stepPercent": 53.44908769864626,
           "engine": "1.0 DIG-T 115PS",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         }
       ],
       "basePrice": 1699000,
-      "topPrice": 2575700,
-      "priceSpread": 876700,
-      "priceSpreadPercent": 51.6,
-      "trimCount": 6
+      "topPrice": 2607100,
+      "priceSpread": 908100,
+      "priceSpreadPercent": 53.45,
+      "trimCount": 5
     },
     {
       "id": "nissan-x-trail-mild-hybrid",
@@ -6960,8 +6950,8 @@
       "trims": [
         {
           "trim": "Visia",
-          "price": 1273200,
-          "priceFormatted": "1.273.200 TL",
+          "price": 1288800,
+          "priceFormatted": "1.288.800 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.3 DIG-T 130PS",
@@ -6970,30 +6960,30 @@
         },
         {
           "trim": "Visia",
-          "price": 1406300,
-          "priceFormatted": "1.406.300 TL",
-          "stepFromBase": 133100,
-          "stepPercent": 10.45397423814012,
+          "price": 1424000,
+          "priceFormatted": "1.424.000 TL",
+          "stepFromBase": 135200,
+          "stepPercent": 10.490378646803228,
           "engine": "1.3 DIG-T 130PS",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         },
         {
           "trim": "Visia",
-          "price": 1532200,
-          "priceFormatted": "1.532.200 TL",
-          "stepFromBase": 259000,
-          "stepPercent": 20.342444234998432,
+          "price": 1551400,
+          "priceFormatted": "1.551.400 TL",
+          "stepFromBase": 262600,
+          "stepPercent": 20.37554314090627,
           "engine": "1.3 DIG-T 130PS",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         },
         {
           "trim": "Tekna",
-          "price": 1610200,
-          "priceFormatted": "1.610.200 TL",
-          "stepFromBase": 337000,
-          "stepPercent": 26.46874018221803,
+          "price": 1630200,
+          "priceFormatted": "1.630.200 TL",
+          "stepFromBase": 341400,
+          "stepPercent": 26.489757914338917,
           "engine": "1.3 DIG-T 130PS",
           "transmission": "Otomatik",
           "fuel": "Benzin"
@@ -7002,8 +6992,8 @@
           "trim": "Tekna",
           "price": 2184100,
           "priceFormatted": "2.184.100 TL",
-          "stepFromBase": 910900,
-          "stepPercent": 71.54414074772227,
+          "stepFromBase": 895300,
+          "stepPercent": 69.46772191185599,
           "engine": "",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
@@ -7012,17 +7002,17 @@
           "trim": "Tekna",
           "price": 2205200,
           "priceFormatted": "2.205.200 TL",
-          "stepFromBase": 932000,
-          "stepPercent": 73.20138234370091,
+          "stepFromBase": 916400,
+          "stepPercent": 71.10490378646803,
           "engine": "",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 1273200,
+      "basePrice": 1288800,
       "topPrice": 2205200,
-      "priceSpread": 932000,
-      "priceSpreadPercent": 73.2,
+      "priceSpread": 916400,
+      "priceSpreadPercent": 71.1,
       "trimCount": 6
     },
     {
@@ -9355,10 +9345,10 @@
           "brandId": "nissan",
           "model": "JUKE",
           "basePrice": 1699000,
-          "topPrice": 2575700,
+          "topPrice": 2607100,
           "basePriceFormatted": "₺1.699.000",
-          "topPriceFormatted": "₺2.575.700",
-          "trimCount": 6
+          "topPriceFormatted": "₺2.607.100",
+          "trimCount": 5
         },
         {
           "brand": "Citroën",
@@ -9373,7 +9363,7 @@
         {
           "brand": "Renault",
           "brandId": "renault",
-          "model": "Yeni Duster",
+          "model": "Duster",
           "basePrice": 1824999.99,
           "topPrice": 2750000,
           "basePriceFormatted": "₺1.825.000",
@@ -9415,9 +9405,9 @@
           "brandId": "nissan",
           "model": "QASHQAI",
           "basePrice": 2249000,
-          "topPrice": 3834000,
+          "topPrice": 3879200,
           "basePriceFormatted": "₺2.249.000",
-          "topPriceFormatted": "₺3.834.000",
+          "topPriceFormatted": "₺3.879.200",
           "trimCount": 7
         },
         {
@@ -9554,10 +9544,10 @@
           "brand": "Nissan",
           "brandId": "nissan",
           "model": "QASHQAI e-POWER",
-          "basePrice": 3366700,
-          "topPrice": 4178700,
-          "basePriceFormatted": "₺3.366.700",
-          "topPriceFormatted": "₺4.178.700",
+          "basePrice": 3408200,
+          "topPrice": 4230200,
+          "basePriceFormatted": "₺3.408.200",
+          "topPriceFormatted": "₺4.230.200",
           "trimCount": 5
         },
         {
@@ -9761,8 +9751,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5721625,
-      "avgTopPrice": 6197517
+      "avgBasePrice": 5722613,
+      "avgTopPrice": 6200567
     },
     {
       "segment": "Sedan",
@@ -10372,9 +10362,9 @@
           "brand": "Nissan",
           "brandId": "nissan",
           "model": "TOWNSTAR VAN",
-          "basePrice": 1273200,
+          "basePrice": 1288800,
           "topPrice": 2205200,
-          "basePriceFormatted": "₺1.273.200",
+          "basePriceFormatted": "₺1.288.800",
           "topPriceFormatted": "₺2.205.200",
           "trimCount": 6
         },
@@ -10449,14 +10439,14 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 1751713,
+      "avgBasePrice": 1753663,
       "avgTopPrice": 2003025
     }
   ],
   "summary": {
     "totalModels": 232,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 363263,
-    "avgPriceSpreadPercent": 12.06
+    "avgPriceSpread": 363569,
+    "avgPriceSpreadPercent": 12.07
   }
 }
