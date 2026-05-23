@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-22T01:39:23.531Z",
-  "date": "2026-05-22",
+  "generatedAt": "2026-05-23T01:34:46.072Z",
+  "date": "2026-05-23",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -6648,6 +6648,39 @@
       "trimCount": 2
     },
     {
+      "id": "dacia-yeni-logan",
+      "model": "Yeni Logan",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "trims": [
+        {
+          "trim": "Expression",
+          "price": 1698999.99,
+          "priceFormatted": "₺1.698.999,99",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "expression Eco-G 120 auto",
+          "transmission": "Otomatik",
+          "fuel": "LPG"
+        },
+        {
+          "trim": "Journey",
+          "price": 1774000,
+          "priceFormatted": "₺1.774.000,00",
+          "stepFromBase": 75000.01000000001,
+          "stepPercent": 4.414362003616022,
+          "engine": "journey Eco-G 120 auto",
+          "transmission": "Otomatik",
+          "fuel": "LPG"
+        }
+      ],
+      "basePrice": 1698999.99,
+      "topPrice": 1774000,
+      "priceSpread": 75000.01000000001,
+      "priceSpreadPercent": 4.41,
+      "trimCount": 2
+    },
+    {
       "id": "dacia-yeni-jogger",
       "model": "Yeni Jogger",
       "brand": "Dacia",
@@ -8224,6 +8257,16 @@
           "trimCount": 3
         },
         {
+          "brand": "Dacia",
+          "brandId": "dacia",
+          "model": "Yeni Logan",
+          "basePrice": 1698999.99,
+          "topPrice": 1774000,
+          "basePriceFormatted": "₺1.699.000",
+          "topPriceFormatted": "₺1.774.000",
+          "trimCount": 2
+        },
+        {
           "brand": "Fiat",
           "brandId": "fiat",
           "model": "Egea Cross",
@@ -9324,8 +9367,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8027909,
-      "avgTopPrice": 8288442
+      "avgBasePrice": 7976869,
+      "avgTopPrice": 8235906
     },
     {
       "segment": "SUV",
@@ -10444,9 +10487,9 @@
     }
   ],
   "summary": {
-    "totalModels": 232,
+    "totalModels": 233,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 363291,
-    "avgPriceSpreadPercent": 11.99
+    "avgPriceSpread": 362054,
+    "avgPriceSpreadPercent": 11.95
   }
 }

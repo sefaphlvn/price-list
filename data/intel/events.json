@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-05-22T01:39:22.805Z",
-  "date": "2026-05-22",
-  "previousDate": "2026-05-21",
+  "generatedAt": "2026-05-23T01:34:45.482Z",
+  "date": "2026-05-23",
+  "previousDate": "2026-05-22",
   "dateRange": {
     "start": "2026-01-28",
-    "end": "2026-05-22",
-    "totalDays": 115
+    "end": "2026-05-23",
+    "totalDays": 116
   },
   "summary": {
-    "totalEvents": 1651,
-    "newVehicles": 332,
+    "totalEvents": 1653,
+    "newVehicles": 334,
     "removedVehicles": 357,
     "priceIncreases": 815,
     "priceDecreases": 147,
@@ -17,6 +17,36 @@
     "avgPriceChangePercent": 1.66
   },
   "events": [
+    {
+      "id": "dacia-yeni-logan-expression-expression-eco-g-120-auto-new-2026-05-23",
+      "type": "new",
+      "vehicleId": "dacia-yeni-logan-expression-expression-eco-g-120-auto",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Logan",
+      "trim": "Expression",
+      "engine": "expression Eco-G 120 auto",
+      "fuel": "LPG",
+      "transmission": "Otomatik",
+      "newPrice": 1698999.99,
+      "newPriceFormatted": "₺1.698.999,99",
+      "date": "2026-05-23"
+    },
+    {
+      "id": "dacia-yeni-logan-journey-journey-eco-g-120-auto-new-2026-05-23",
+      "type": "new",
+      "vehicleId": "dacia-yeni-logan-journey-journey-eco-g-120-auto",
+      "brand": "Dacia",
+      "brandId": "dacia",
+      "model": "Yeni Logan",
+      "trim": "Journey",
+      "engine": "journey Eco-G 120 auto",
+      "fuel": "LPG",
+      "transmission": "Otomatik",
+      "newPrice": 1774000,
+      "newPriceFormatted": "₺1.774.000,00",
+      "date": "2026-05-23"
+    },
     {
       "id": "skoda-yeni-škoda-elroq-60-e-prestige-204-ps-60-e-prestige-204-ps-price_increase-2026-05-22",
       "type": "price_increase",

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-22T01:39:19.963Z",
-  "totalVehicles": 507,
+  "generatedAt": "2026-05-23T01:34:42.670Z",
+  "totalVehicles": 509,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -2525,7 +2525,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -2552,7 +2552,7 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1830000,
+          "otvIncentivePrice": 1765000.01,
           "powerHP": 115,
           "engineType": "TCe"
         },
@@ -2581,7 +2581,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2035000,
           "powerHP": 115,
           "engineType": "TCe"
         },
@@ -2634,7 +2633,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1886000,
           "powerHP": 120,
           "engineType": "EV",
           "isElectric": true
@@ -2688,7 +2686,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1938050,
           "powerHP": 150,
           "engineType": "EV",
           "isElectric": true
@@ -2742,7 +2739,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2101000,
           "powerHP": 150,
           "engineType": "EV",
           "isElectric": true
@@ -2772,7 +2768,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1735000,
           "powerHP": 90,
           "engineType": "TCe"
         },
@@ -2801,7 +2796,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2156000.01,
           "powerHP": 140,
           "isHybrid": true
         },
@@ -2826,7 +2820,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1824999.99,
           "powerHP": 120
         },
         {
@@ -2862,7 +2855,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2010000,
           "powerHP": 145,
           "engineType": "TCe"
         },
@@ -2887,7 +2879,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2714999.99,
           "powerHP": 150
         },
         {
@@ -2935,7 +2926,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2080000,
           "powerHP": 145,
           "engineType": "TCe"
         },
@@ -2960,7 +2950,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2530000,
           "powerHP": 160,
           "engineType": "E-TECH",
           "isHybrid": true
@@ -2986,7 +2975,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2750000,
           "powerHP": 150
         },
         {
@@ -3026,7 +3014,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2273000,
           "powerHP": 220,
           "engineType": "EV",
           "isElectric": true
@@ -3068,7 +3055,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2386050,
           "powerHP": 220,
           "engineType": "EV",
           "isElectric": true
@@ -3102,7 +3088,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2486000,
           "powerHP": 220,
           "engineType": "EV",
           "isElectric": true
@@ -3128,7 +3113,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1791000,
           "powerHP": 140,
           "engineType": "TCe"
         },
@@ -3157,7 +3141,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2160000.01,
           "powerHP": 140,
           "engineType": "TCe"
         },
@@ -3206,7 +3189,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2325000.01,
           "powerHP": 140,
           "engineType": "TCe"
         },
@@ -3251,7 +3233,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2699050,
           "powerHP": 115,
           "engineType": "dCi"
         },
@@ -3284,7 +3265,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 2625999.99,
           "powerHP": 150,
           "isHybrid": true
         },
@@ -3325,7 +3305,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 3055999.99,
           "powerHP": 150,
           "isHybrid": true
         },
@@ -3354,7 +3333,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 3490000,
           "powerHP": 220,
           "engineType": "EV",
           "isElectric": true
@@ -3380,7 +3358,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 3748000,
           "powerHP": 200,
           "engineType": "E-TECH",
           "isHybrid": true,
@@ -3390,7 +3367,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3955,7 +3932,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "i20",
@@ -4388,7 +4365,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "E-208",
@@ -4790,7 +4767,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "SEAL",
@@ -4893,7 +4870,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Corsa",
@@ -5117,7 +5094,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5599,7 +5576,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6640,7 +6617,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "A 200",
@@ -7603,7 +7580,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -8321,7 +8298,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8352,7 +8329,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1238000,
           "powerHP": 100,
           "engineType": "TCe"
         },
@@ -8385,7 +8361,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1295000.01,
           "powerHP": 100,
           "engineType": "TCe"
         },
@@ -8414,7 +8389,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1338000,
           "powerHP": 100,
           "engineType": "TCe"
         },
@@ -8443,7 +8417,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1425999.99,
           "powerHP": 100,
           "engineType": "TCe"
         },
@@ -8472,7 +8445,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1681000.01,
           "powerHP": 120
         },
         {
@@ -8508,7 +8480,60 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1746000,
+          "powerHP": 120
+        },
+        {
+          "model": "Yeni Logan",
+          "trim": "Expression",
+          "engine": "expression Eco-G 120 auto",
+          "transmission": "Otomatik",
+          "fuel": "LPG",
+          "priceRaw": "₺1.698.999,99",
+          "priceNumeric": 1698999.99,
+          "brand": "Dacia",
+          "modelYear": "2026",
+          "otvRate": 75,
+          "netPrice": 782265.71,
+          "otvAmount": 586699.28,
+          "kdvAmount": 273793,
+          "optionalEquipment": [
+            {
+              "name": "Metalik Renk",
+              "price": 13000
+            }
+          ],
+          "vehicleCategory": "Binek",
+          "powerHP": 120
+        },
+        {
+          "model": "Yeni Logan",
+          "trim": "Journey",
+          "engine": "journey Eco-G 120 auto",
+          "transmission": "Otomatik",
+          "fuel": "LPG",
+          "priceRaw": "₺1.774.000,00",
+          "priceNumeric": 1774000,
+          "brand": "Dacia",
+          "modelYear": "2026",
+          "otvRate": 75,
+          "netPrice": 817980,
+          "otvAmount": 613485,
+          "kdvAmount": 286293,
+          "optionalEquipment": [
+            {
+              "name": "Kablosuz Şarj",
+              "price": 8000
+            },
+            {
+              "name": "Metalik Renk",
+              "price": 13000
+            },
+            {
+              "name": "Sürüş Paketi: Elektrikli katlanabilir yan aynalar, otomatik kısa/uzun farlar, çoklu görüş kamerası",
+              "price": 35000
+            }
+          ],
+          "vehicleCategory": "Binek",
           "powerHP": 120
         },
         {
@@ -8540,7 +8565,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1595000,
           "powerHP": 110,
           "engineType": "TCe"
         },
@@ -8569,7 +8593,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1645000,
           "powerHP": 120
         },
         {
@@ -8593,7 +8616,6 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1675000,
           "powerHP": 120
         },
         {
@@ -8621,14 +8643,13 @@
             }
           ],
           "vehicleCategory": "Binek",
-          "otvIncentivePrice": 1795000,
           "powerHP": 120
         }
       ]
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -9087,7 +9108,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -9150,7 +9171,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "YENİ",
@@ -9270,7 +9291,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Niro EV",
@@ -9709,7 +9730,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "EX40 Black Edition Ultra",
@@ -9848,7 +9869,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-05-22",
+      "date": "2026-05-23",
       "vehicles": [
         {
           "model": "Egea Sedan",
