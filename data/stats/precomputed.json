@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-03T01:52:55.999Z",
-  "totalVehicles": 510,
+  "generatedAt": "2026-06-04T01:52:18.542Z",
+  "totalVehicles": 511,
   "overallStats": {
-    "avgPrice": 5043798,
+    "avgPrice": 5037414,
     "minPrice": 544900,
     "maxPrice": 38034000,
-    "medianPrice": 3110850
+    "medianPrice": 3105000
   },
   "brandStats": [
     {
       "name": "BMW",
       "vehicleCount": 64,
-      "avgPrice": 10274670,
+      "avgPrice": 10274400,
       "minPrice": 3724500,
       "maxPrice": 24573500,
       "medianPrice": 8078150
@@ -33,20 +33,20 @@
       "medianPrice": 3613000
     },
     {
+      "name": "Toyota",
+      "vehicleCount": 41,
+      "avgPrice": 3020415,
+      "minPrice": 1339000,
+      "maxPrice": 13750000,
+      "medianPrice": 2439000
+    },
+    {
       "name": "Škoda",
       "vehicleCount": 40,
       "avgPrice": 4185638,
       "minPrice": 1874900,
       "maxPrice": 7224900,
       "medianPrice": 3812400
-    },
-    {
-      "name": "Toyota",
-      "vehicleCount": 40,
-      "avgPrice": 3050950,
-      "minPrice": 1339000,
-      "maxPrice": 13750000,
-      "medianPrice": 2474000
     },
     {
       "name": "Hyundai",
@@ -165,13 +165,13 @@
     {
       "fuel": "Benzin",
       "count": 202,
-      "percentage": 39.6,
+      "percentage": 39.5,
       "avgPrice": 5273500
     },
     {
       "fuel": "Elektrik",
       "count": 113,
-      "percentage": 22.2,
+      "percentage": 22.1,
       "avgPrice": 4889946
     },
     {
@@ -182,15 +182,15 @@
     },
     {
       "fuel": "Dizel",
-      "count": 64,
-      "percentage": 12.5,
-      "avgPrice": 4646630
+      "count": 65,
+      "percentage": 12.7,
+      "avgPrice": 4602820
     },
     {
       "fuel": "Hafif Hibrit",
       "count": 34,
       "percentage": 6.7,
-      "avgPrice": 8410235
+      "avgPrice": 8409726
     },
     {
       "fuel": "Plug-in Hibrit",
@@ -214,20 +214,20 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 347,
-      "percentage": 68,
-      "avgPrice": 5925665
+      "count": 348,
+      "percentage": 68.1,
+      "avgPrice": 5913757
     },
     {
       "transmission": "DSG",
       "count": 83,
-      "percentage": 16.3,
+      "percentage": 16.2,
       "avgPrice": 3948187
     },
     {
       "transmission": "Manuel",
       "count": 37,
-      "percentage": 7.3,
+      "percentage": 7.2,
       "avgPrice": 1740381
     },
     {
@@ -255,8 +255,8 @@
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 222,
-      "percentage": 43.5
+      "count": 223,
+      "percentage": 43.6
     },
     {
       "segment": "premium",
@@ -328,7 +328,7 @@
         "rate": 100,
         "count": 50,
         "percentage": 19,
-        "avgPrice": 5732384
+        "avgPrice": 5732038
       },
       {
         "rate": 150,
@@ -402,9 +402,9 @@
       },
       {
         "year": "2026",
-        "count": 271,
-        "percentage": 67.6,
-        "avgPrice": 4696899
+        "count": 272,
+        "percentage": 67.7,
+        "avgPrice": 4686245
       },
       {
         "year": "2025",

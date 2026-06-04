@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-03T01:52:59.298Z",
-  "date": "2026-06-03",
+  "generatedAt": "2026-06-04T01:52:22.075Z",
+  "date": "2026-06-04",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -2048,6 +2048,29 @@
       "trimCount": 2
     },
     {
+      "id": "toyota-proace-cargo",
+      "model": "Proace Cargo",
+      "brand": "Toyota",
+      "brandId": "toyota",
+      "trims": [
+        {
+          "trim": "2.2 D 150 HP Flame A/T",
+          "price": 1799000,
+          "priceFormatted": "1799000",
+          "stepFromBase": 0,
+          "stepPercent": 0,
+          "engine": "2.2",
+          "transmission": "Otomatik",
+          "fuel": "Dizel"
+        }
+      ],
+      "basePrice": 1799000,
+      "topPrice": 1799000,
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
+    },
+    {
       "id": "toyota-proace-max",
       "model": "Proace Max",
       "brand": "Toyota",
@@ -3966,8 +3989,8 @@
       "trims": [
         {
           "trim": "Luxury Line",
-          "price": 4387900,
-          "priceFormatted": "4.387.900 TL",
+          "price": 4379500,
+          "priceFormatted": "4.379.500 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5L 156+20 HP",
@@ -3976,18 +3999,18 @@
         },
         {
           "trim": "M Sport",
-          "price": 4622100,
-          "priceFormatted": "4.622.100 TL",
-          "stepFromBase": 234200,
-          "stepPercent": 5.33740513685362,
+          "price": 4613200,
+          "priceFormatted": "4.613.200 TL",
+          "stepFromBase": 233700,
+          "stepPercent": 5.336225596529284,
           "engine": "1.5L 156+20 HP",
           "transmission": "Otomatik",
           "fuel": "Hafif Hibrit"
         }
       ],
-      "basePrice": 4387900,
-      "topPrice": 4622100,
-      "priceSpread": 234200,
+      "basePrice": 4379500,
+      "topPrice": 4613200,
+      "priceSpread": 233700,
       "priceSpreadPercent": 5.34,
       "trimCount": 2
     },
@@ -7781,12 +7804,12 @@
           "fuel": "Hibrit"
         },
         {
-          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.452.140   170%   6.620.778   7.944.934   21.000   7.965.934",
+          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   250+156 hp   8 ileri Geartronic   2.452.140   170%   6.620.778   7.944.934   21.000   7.965.934",
           "price": 7965934,
           "priceFormatted": "7.965.934 TL",
           "stepFromBase": 673920,
           "stepPercent": 9.241891197685579,
-          "engine": "1.969 cc 145 hp",
+          "engine": "1.969 cc 156 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hibrit"
         }
@@ -7814,12 +7837,12 @@
           "fuel": "Hibrit"
         },
         {
-          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.545.640   170%   6.873.228   8.247.874   21.000   8.268.874",
+          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   250+156 hp   8 ileri Geartronic   2.545.640   170%   6.873.228   8.247.874   21.000   8.268.874",
           "price": 8268874,
           "priceFormatted": "8.268.874 TL",
           "stepFromBase": 673920,
           "stepPercent": 8.873259798545192,
-          "engine": "1.969 cc 145 hp",
+          "engine": "1.969 cc 156 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hibrit"
         }
@@ -7847,12 +7870,12 @@
           "fuel": "Hibrit"
         },
         {
-          "trim": "T8 AWD Plug-in hybrid   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.678.640   170%   7.232.328   8.678.794   21.000   8.699.794",
+          "trim": "T8 AWD Plug-in hybrid   Elektrik/Benzin   1.969 cc.   250+156 hp   8 ileri Geartronic   2.678.640   170%   7.232.328   8.678.794   21.000   8.699.794",
           "price": 8374174,
           "priceFormatted": "8.374.174 TL",
           "stepFromBase": 673920,
           "stepPercent": 8.751919092539024,
-          "engine": "1.969 cc 145 hp",
+          "engine": "1.969 cc 156 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hibrit"
         }
@@ -8265,6 +8288,16 @@
           "basePriceFormatted": "₺1.754.900",
           "topPriceFormatted": "₺1.989.900",
           "trimCount": 3
+        },
+        {
+          "brand": "Toyota",
+          "brandId": "toyota",
+          "model": "Proace Cargo",
+          "basePrice": 1799000,
+          "topPrice": 1799000,
+          "basePriceFormatted": "₺1.799.000",
+          "topPriceFormatted": "₺1.799.000",
+          "trimCount": 1
         },
         {
           "brand": "SEAT",
@@ -8680,10 +8713,10 @@
           "brand": "BMW",
           "brandId": "bmw",
           "model": "BMW 220i Active Tourer",
-          "basePrice": 4387900,
-          "topPrice": 4622100,
-          "basePriceFormatted": "₺4.387.900",
-          "topPriceFormatted": "₺4.622.100",
+          "basePrice": 4379500,
+          "topPrice": 4613200,
+          "basePriceFormatted": "₺4.379.500",
+          "topPriceFormatted": "₺4.613.200",
           "trimCount": 2
         },
         {
@@ -9367,8 +9400,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 8045260,
-      "avgTopPrice": 8297995
+      "avgBasePrice": 7994819,
+      "avgTopPrice": 8245512
     },
     {
       "segment": "SUV",
@@ -10497,9 +10530,9 @@
     }
   ],
   "summary": {
-    "totalModels": 233,
+    "totalModels": 234,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 359031,
-    "avgPriceSpreadPercent": 11.75
+    "avgPriceSpread": 357495,
+    "avgPriceSpreadPercent": 11.7
   }
 }

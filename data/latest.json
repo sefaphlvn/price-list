@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-03T01:52:55.968Z",
-  "totalVehicles": 510,
+  "generatedAt": "2026-06-04T01:52:18.510Z",
+  "totalVehicles": 511,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -1312,7 +1312,7 @@
           "brand": "Škoda",
           "modelYear": "2026",
           "priceListNumeric": 3199900,
-          "priceCampaignNumeric": 2299900,
+          "priceCampaignNumeric": 2349900,
           "otvRate": 55,
           "netPrice": 1712649.93,
           "otvAmount": 941957.46,
@@ -1646,7 +1646,7 @@
           "brand": "Škoda",
           "modelYear": "2026",
           "priceListNumeric": 3094900,
-          "priceCampaignNumeric": 2525000,
+          "priceCampaignNumeric": 2565100,
           "otvRate": 90,
           "netPrice": 1351224.52,
           "otvAmount": 1216102.07,
@@ -1844,10 +1844,10 @@
           "brand": "Škoda",
           "modelYear": "2026",
           "priceListNumeric": 4539900,
-          "priceCampaignNumeric": 3757000,
+          "priceCampaignNumeric": 3996300,
           "otvRate": 100,
-          "netPrice": 1885746.62,
-          "otvAmount": 1885746.62,
+          "netPrice": 1885746.63,
+          "otvAmount": 1885746.63,
           "kdvAmount": 754298.65,
           "mtvAmount": 6014,
           "trafficRegistrationFee": 8094.1,
@@ -1906,8 +1906,8 @@
           "priceListNumeric": 4989900,
           "priceCampaignNumeric": 4499800,
           "otvRate": 100,
-          "netPrice": 2073246.62,
-          "otvAmount": 2073246.62,
+          "netPrice": 2073246.63,
+          "otvAmount": 2073246.63,
           "kdvAmount": 829298.65,
           "mtvAmount": 6014,
           "trafficRegistrationFee": 8094.1,
@@ -1990,8 +1990,8 @@
           "brand": "Škoda",
           "modelYear": "2026",
           "otvRate": 100,
-          "netPrice": 1935746.62,
-          "otvAmount": 1935746.62,
+          "netPrice": 1935746.63,
+          "otvAmount": 1935746.63,
           "kdvAmount": 774298.65,
           "mtvAmount": 6014,
           "trafficRegistrationFee": 8094.1,
@@ -2018,8 +2018,8 @@
           "brand": "Škoda",
           "modelYear": "2026",
           "otvRate": 100,
-          "netPrice": 2123246.62,
-          "otvAmount": 2123246.62,
+          "netPrice": 2123246.63,
+          "otvAmount": 2123246.63,
           "kdvAmount": 849298.65,
           "mtvAmount": 6014,
           "trafficRegistrationFee": 8094.1,
@@ -2266,7 +2266,7 @@
           "brand": "Škoda",
           "modelYear": "2026",
           "priceListNumeric": 3569900,
-          "priceCampaignNumeric": 3139700,
+          "priceCampaignNumeric": 3203700,
           "otvRate": 90,
           "netPrice": 1559557.85,
           "otvAmount": 1403602.07,
@@ -2300,7 +2300,7 @@
           "brand": "Škoda",
           "modelYear": "2026",
           "priceListNumeric": 3669900,
-          "priceCampaignNumeric": 3227600,
+          "priceCampaignNumeric": 3293400,
           "otvRate": 90,
           "netPrice": 1603417.5,
           "otvAmount": 1443075.75,
@@ -2368,7 +2368,7 @@
           "brand": "Škoda",
           "modelYear": "2026",
           "priceListNumeric": 4624900,
-          "priceCampaignNumeric": 3998400,
+          "priceCampaignNumeric": 4099900,
           "otvRate": 100,
           "netPrice": 1921163.29,
           "otvAmount": 1921163.29,
@@ -2525,7 +2525,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -3367,7 +3367,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3873,6 +3873,20 @@
           "priceCampaignNumeric": 2509000
         },
         {
+          "model": "Proace Cargo",
+          "trim": "2.2 D 150 HP Flame A/T",
+          "engine": "2.2",
+          "transmission": "Otomatik",
+          "fuel": "Dizel",
+          "priceRaw": "1799000",
+          "priceNumeric": 1799000,
+          "brand": "Toyota",
+          "modelYear": 2026,
+          "origin": "Fransa",
+          "priceListNumeric": 1845000,
+          "priceCampaignNumeric": 1799000
+        },
+        {
           "model": "Proace Max",
           "trim": "2.2D 140 HP M/T 13 M³",
           "engine": "2.2",
@@ -3932,7 +3946,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "i20",
@@ -4365,7 +4379,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "E-208",
@@ -4767,7 +4781,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "SEAL",
@@ -4850,7 +4864,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Corsa",
@@ -5074,7 +5088,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5556,7 +5570,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -5632,8 +5646,8 @@
           "engine": "1.5L 156+20 HP",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "4.387.900 TL",
-          "priceNumeric": 4387900,
+          "priceRaw": "4.379.500 TL",
+          "priceNumeric": 4379500,
           "brand": "BMW",
           "fuelConsumption": "6,0",
           "otvRate": 100,
@@ -5649,8 +5663,8 @@
           "engine": "1.5L 156+20 HP",
           "transmission": "Otomatik",
           "fuel": "Mild Hybrid",
-          "priceRaw": "4.622.100 TL",
-          "priceNumeric": 4622100,
+          "priceRaw": "4.613.200 TL",
+          "priceNumeric": 4613200,
           "brand": "BMW",
           "fuelConsumption": "6,0",
           "otvRate": 100,
@@ -6585,7 +6599,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "A 200",
@@ -7532,7 +7546,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -8250,7 +8264,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8601,7 +8615,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -9079,7 +9093,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -9171,7 +9185,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "YENİ",
@@ -9291,7 +9305,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Niro EV",
@@ -9730,7 +9744,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "EX40 Black Edition Ultra",
@@ -9819,8 +9833,8 @@
         },
         {
           "model": "XC60 Plus",
-          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.452.140   170%   6.620.778   7.944.934   21.000   7.965.934",
-          "engine": "1.969 cc 145 hp",
+          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   250+156 hp   8 ileri Geartronic   2.452.140   170%   6.620.778   7.944.934   21.000   7.965.934",
+          "engine": "1.969 cc 156 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hybrid",
           "priceRaw": "7.965.934 TL",
@@ -9828,15 +9842,15 @@
           "brand": "Volvo",
           "modelYear": 2027,
           "priceListNumeric": 2452140,
-          "powerHP": 145,
+          "powerHP": 156,
           "engineDisplacement": "2.0L",
           "driveType": "AWD",
           "isPlugInHybrid": true
         },
         {
           "model": "XC60 Ultra",
-          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.545.640   170%   6.873.228   8.247.874   21.000   8.268.874",
-          "engine": "1.969 cc 145 hp",
+          "trim": "T8 AWD Plug-in hybrid, Dark   Elektrik/Benzin   1.969 cc.   250+156 hp   8 ileri Geartronic   2.545.640   170%   6.873.228   8.247.874   21.000   8.268.874",
+          "engine": "1.969 cc 156 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hybrid",
           "priceRaw": "8.268.874 TL",
@@ -9844,15 +9858,15 @@
           "brand": "Volvo",
           "modelYear": 2027,
           "priceListNumeric": 2545640,
-          "powerHP": 145,
+          "powerHP": 156,
           "engineDisplacement": "2.0L",
           "driveType": "AWD",
           "isPlugInHybrid": true
         },
         {
           "model": "XC60 Black Edition Ultra",
-          "trim": "T8 AWD Plug-in hybrid   Elektrik/Benzin   1.969 cc.   310+145 hp   8 ileri Geartronic   2.678.640   170%   7.232.328   8.678.794   21.000   8.699.794",
-          "engine": "1.969 cc 145 hp",
+          "trim": "T8 AWD Plug-in hybrid   Elektrik/Benzin   1.969 cc.   250+156 hp   8 ileri Geartronic   2.678.640   170%   7.232.328   8.678.794   21.000   8.699.794",
+          "engine": "1.969 cc 156 hp",
           "transmission": "Otomatik",
           "fuel": "Plug-in Hybrid",
           "priceRaw": "8.374.174 TL",
@@ -9860,7 +9874,7 @@
           "brand": "Volvo",
           "modelYear": 2027,
           "priceListNumeric": 2578140,
-          "powerHP": 145,
+          "powerHP": 156,
           "engineDisplacement": "2.0L",
           "driveType": "AWD",
           "isPlugInHybrid": true
@@ -9869,7 +9883,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "vehicles": [
         {
           "model": "Egea Sedan",
