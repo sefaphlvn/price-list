@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-05T01:43:01.798Z",
-  "totalVehicles": 511,
+  "generatedAt": "2026-06-06T01:39:07.442Z",
+  "totalVehicles": 506,
   "overallStats": {
-    "avgPrice": 5038217,
+    "avgPrice": 4957724,
     "minPrice": 544900,
     "maxPrice": 38034000,
-    "medianPrice": 3105000
+    "medianPrice": 3087450
   },
   "brandStats": [
     {
@@ -18,11 +18,11 @@
     },
     {
       "name": "Mercedes-Benz",
-      "vehicleCount": 59,
-      "avgPrice": 12173915,
+      "vehicleCount": 53,
+      "avgPrice": 12233645,
       "minPrice": 3222000,
       "maxPrice": 38034000,
-      "medianPrice": 9241000
+      "medianPrice": 8574000
     },
     {
       "name": "Volkswagen",
@@ -59,10 +59,10 @@
     {
       "name": "Citroën",
       "vehicleCount": 32,
-      "avgPrice": 1898563,
+      "avgPrice": 1908156,
       "minPrice": 585000,
       "maxPrice": 2900000,
-      "medianPrice": 1932000
+      "medianPrice": 1951000
     },
     {
       "name": "Nissan",
@@ -82,11 +82,11 @@
     },
     {
       "name": "Renault",
-      "vehicleCount": 24,
-      "avgPrice": 2377208,
+      "vehicleCount": 25,
+      "avgPrice": 2428120,
       "minPrice": 1750000,
       "maxPrice": 3748000,
-      "medianPrice": 2216500
+      "medianPrice": 2272999.99
     },
     {
       "name": "Peugeot",
@@ -164,27 +164,27 @@
   "fuelStats": [
     {
       "fuel": "Benzin",
-      "count": 202,
-      "percentage": 39.5,
-      "avgPrice": 5273500
+      "count": 199,
+      "percentage": 39.3,
+      "avgPrice": 5200523
     },
     {
       "fuel": "Elektrik",
-      "count": 113,
+      "count": 112,
       "percentage": 22.1,
-      "avgPrice": 4889946
+      "avgPrice": 4850113
     },
     {
       "fuel": "Hibrit",
-      "count": 69,
-      "percentage": 13.5,
-      "avgPrice": 3215436
+      "count": 70,
+      "percentage": 13.8,
+      "avgPrice": 3223216
     },
     {
       "fuel": "Dizel",
-      "count": 65,
-      "percentage": 12.7,
-      "avgPrice": 4603158
+      "count": 63,
+      "percentage": 12.5,
+      "avgPrice": 4273313
     },
     {
       "fuel": "Hafif Hibrit",
@@ -195,7 +195,7 @@
     {
       "fuel": "Plug-in Hibrit",
       "count": 13,
-      "percentage": 2.5,
+      "percentage": 2.6,
       "avgPrice": 8675237
     },
     {
@@ -214,21 +214,21 @@
   "transmissionStats": [
     {
       "transmission": "Otomatik",
-      "count": 348,
-      "percentage": 68.1,
-      "avgPrice": 5914937
+      "count": 343,
+      "percentage": 67.8,
+      "avgPrice": 5808793
     },
     {
       "transmission": "DSG",
       "count": 83,
-      "percentage": 16.2,
+      "percentage": 16.4,
       "avgPrice": 3948187
     },
     {
       "transmission": "Manuel",
       "count": 37,
-      "percentage": 7.2,
-      "avgPrice": 1740381
+      "percentage": 7.3,
+      "avgPrice": 1742030
     },
     {
       "transmission": "DCT",
@@ -239,7 +239,7 @@
     {
       "transmission": "Bilinmiyor",
       "count": 21,
-      "percentage": 4.1,
+      "percentage": 4.2,
       "avgPrice": 3232886
     }
   ],
@@ -256,30 +256,30 @@
       "min": 1500000,
       "max": 3000000,
       "count": 223,
-      "percentage": 43.6
+      "percentage": 44.1
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
-      "count": 117,
-      "percentage": 22.9
+      "count": 118,
+      "percentage": 23.3
     },
     {
       "segment": "luxury",
       "min": 5000000,
       "max": 0,
-      "count": 148,
-      "percentage": 29
+      "count": 142,
+      "percentage": 28.1
     }
   ],
   "otvStats": {
-    "avgOtvRate": 110.2,
+    "avgOtvRate": 109.5,
     "distribution": [
       {
         "rate": 1,
         "count": 8,
-        "percentage": 3,
+        "percentage": 3.1,
         "avgPrice": 4148125
       },
       {
@@ -297,38 +297,38 @@
       {
         "rate": 55,
         "count": 19,
-        "percentage": 7.2,
+        "percentage": 7.4,
         "avgPrice": 4967205
       },
       {
         "rate": 70,
         "count": 4,
-        "percentage": 1.5,
+        "percentage": 1.6,
         "avgPrice": 1610250
       },
       {
         "rate": 75,
-        "count": 36,
-        "percentage": 13.7,
-        "avgPrice": 6254000
+        "count": 35,
+        "percentage": 13.6,
+        "avgPrice": 6163080
       },
       {
         "rate": 80,
         "count": 13,
-        "percentage": 4.9,
+        "percentage": 5,
         "avgPrice": 2175569
       },
       {
         "rate": 90,
-        "count": 40,
-        "percentage": 15.2,
-        "avgPrice": 3086570
+        "count": 41,
+        "percentage": 15.9,
+        "avgPrice": 3100312
       },
       {
         "rate": 100,
-        "count": 50,
-        "percentage": 19,
-        "avgPrice": 5732038
+        "count": 48,
+        "percentage": 18.6,
+        "avgPrice": 5656040
       },
       {
         "rate": 150,
@@ -338,15 +338,15 @@
       },
       {
         "rate": 170,
-        "count": 52,
-        "percentage": 19.8,
-        "avgPrice": 8263575
+        "count": 50,
+        "percentage": 19.4,
+        "avgPrice": 8084098
       },
       {
         "rate": 220,
-        "count": 28,
-        "percentage": 10.6,
-        "avgPrice": 22144471
+        "count": 27,
+        "percentage": 10.5,
+        "avgPrice": 22230244
       }
     ],
     "byBrand": [
@@ -357,8 +357,8 @@
       },
       {
         "brand": "Mercedes-Benz",
-        "avgOtvRate": 142.3,
-        "count": 59
+        "avgOtvRate": 142.6,
+        "count": 53
       },
       {
         "brand": "Volkswagen",
@@ -372,8 +372,8 @@
       },
       {
         "brand": "Renault",
-        "avgOtvRate": 66.5,
-        "count": 24
+        "avgOtvRate": 67.4,
+        "count": 25
       },
       {
         "brand": "Kia",
@@ -402,15 +402,15 @@
       },
       {
         "year": "2026",
-        "count": 272,
-        "percentage": 67.7,
-        "avgPrice": 4687754
+        "count": 273,
+        "percentage": 68.8,
+        "avgPrice": 4683953
       },
       {
         "year": "2025",
-        "count": 112,
-        "percentage": 27.9,
-        "avgPrice": 4293125
+        "count": 106,
+        "percentage": 26.7,
+        "avgPrice": 3876908
       },
       {
         "year": "2023",

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-05T01:43:01.764Z",
-  "totalVehicles": 511,
+  "generatedAt": "2026-06-06T01:39:07.409Z",
+  "totalVehicles": 506,
   "brands": {
     "volkswagen": {
       "name": "Volkswagen",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Polo",
@@ -1299,7 +1299,7 @@
     },
     "skoda": {
       "name": "Škoda",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Yeni Škoda Elroq",
@@ -2525,7 +2525,7 @@
     },
     "renault": {
       "name": "Renault",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Yeni Clio",
@@ -3309,6 +3309,48 @@
           "isHybrid": true
         },
         {
+          "model": "Austral",
+          "trim": "esprit alpine",
+          "engine": "esprit alpine full hybrid E-Tech 200 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hybrid",
+          "priceRaw": "₺3.650.000,00",
+          "priceNumeric": 3650000,
+          "brand": "Renault",
+          "modelYear": "2026",
+          "otvRate": 90,
+          "netPrice": 1574630.7,
+          "otvAmount": 1417167.63,
+          "kdvAmount": 598359.67,
+          "optionalEquipment": [
+            {
+              "name": "Hacim Kazanımlı Yedek Lastik",
+              "price": 15500
+            },
+            {
+              "name": "Çift Renk Tavan",
+              "price": 38000
+            },
+            {
+              "name": "Metalik Renk",
+              "price": 17500
+            },
+            {
+              "name": "Harman Kardon Premium Ses Sistemi",
+              "price": 69000
+            },
+            {
+              "name": "Gelişmiş Park Paketi",
+              "price": 61000
+            }
+          ],
+          "vehicleCategory": "Binek",
+          "powerHP": 200,
+          "engineType": "E-TECH",
+          "isHybrid": true,
+          "isElectric": true
+        },
+        {
           "model": "Scenic E-Tech ELEKTRİKLİ",
           "trim": "Esprit Alpine",
           "engine": "Esprit Alpine EV87 220 hp",
@@ -3367,7 +3409,7 @@
     },
     "toyota": {
       "name": "Toyota",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "COROLLA",
@@ -3946,7 +3988,7 @@
     },
     "hyundai": {
       "name": "Hyundai",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "i20",
@@ -4379,7 +4421,7 @@
     },
     "peugeot": {
       "name": "Peugeot",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "E-208",
@@ -4780,7 +4822,7 @@
     },
     "byd": {
       "name": "BYD",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "SEAL",
@@ -4863,7 +4905,7 @@
     },
     "opel": {
       "name": "Opel",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Corsa",
@@ -5087,7 +5129,7 @@
     },
     "citroen": {
       "name": "Citroën",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Elektrikli ë-C3",
@@ -5095,10 +5137,10 @@
           "engine": "83 kW Elektrikli Motor",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.525.000 TL",
-          "priceNumeric": 1525000,
+          "priceRaw": "1.545.000 TL",
+          "priceNumeric": 1545000,
           "brand": "Citroën",
-          "priceListNumeric": 1525000,
+          "priceListNumeric": 1545000,
           "powerKW": 83,
           "isElectric": true
         },
@@ -5108,10 +5150,10 @@
           "engine": "83 kW Elektrikli Motor",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.585.000 TL",
-          "priceNumeric": 1585000,
+          "priceRaw": "1.610.000 TL",
+          "priceNumeric": 1610000,
           "brand": "Citroën",
-          "priceListNumeric": 1585000,
+          "priceListNumeric": 1610000,
           "powerKW": 83,
           "isElectric": true
         },
@@ -5121,10 +5163,10 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.125.000 TL",
-          "priceNumeric": 2125000,
+          "priceRaw": "2.155.000 TL",
+          "priceNumeric": 2155000,
           "brand": "Citroën",
-          "priceListNumeric": 2125000,
+          "priceListNumeric": 2155000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -5137,10 +5179,10 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.220.000 TL",
-          "priceNumeric": 2220000,
+          "priceRaw": "2.260.000 TL",
+          "priceNumeric": 2260000,
           "brand": "Citroën",
-          "priceListNumeric": 2220000,
+          "priceListNumeric": 2260000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -5153,10 +5195,10 @@
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hybrid",
-          "priceRaw": "2.330.000 TL",
-          "priceNumeric": 2330000,
+          "priceRaw": "2.370.000 TL",
+          "priceNumeric": 2370000,
           "brand": "Citroën",
-          "priceListNumeric": 2330000,
+          "priceListNumeric": 2370000,
           "powerHP": 145,
           "engineDisplacement": "1.2L",
           "engineType": "Hybrid",
@@ -5169,10 +5211,10 @@
           "engine": "83 kW Elektrikli Motor Standart Menzil",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.740.000 TL",
-          "priceNumeric": 1740000,
+          "priceRaw": "1.760.000 TL",
+          "priceNumeric": 1760000,
           "brand": "Citroën",
-          "priceListNumeric": 1740000,
+          "priceListNumeric": 1760000,
           "powerKW": 83,
           "isElectric": true
         },
@@ -5182,10 +5224,10 @@
           "engine": "83 kW Elektrikli Motor Uzun Menzil",
           "transmission": "Otomatik",
           "fuel": "Elektrik",
-          "priceRaw": "1.880.000 TL",
-          "priceNumeric": 1880000,
+          "priceRaw": "1.900.000 TL",
+          "priceNumeric": 1900000,
           "brand": "Citroën",
-          "priceListNumeric": 1880000,
+          "priceListNumeric": 1900000,
           "powerKW": 83,
           "isElectric": true,
           "hasLongRange": true
@@ -5331,10 +5373,10 @@
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.799.000 TL",
-          "priceNumeric": 1799000,
+          "priceRaw": "1.815.000 TL",
+          "priceNumeric": 1815000,
           "brand": "Citroën",
-          "priceListNumeric": 1799000,
+          "priceListNumeric": 1815000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -5346,10 +5388,10 @@
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.901.000 TL",
-          "priceNumeric": 1901000,
+          "priceRaw": "1.920.000 TL",
+          "priceNumeric": 1920000,
           "brand": "Citroën",
-          "priceListNumeric": 1901000,
+          "priceListNumeric": 1920000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -5362,10 +5404,10 @@
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.963.000 TL",
-          "priceNumeric": 1963000,
+          "priceRaw": "1.982.000 TL",
+          "priceNumeric": 1982000,
           "brand": "Citroën",
-          "priceListNumeric": 1963000,
+          "priceListNumeric": 1982000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -5378,10 +5420,10 @@
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.399.000 TL",
-          "priceNumeric": 1399000,
+          "priceRaw": "1.411.000 TL",
+          "priceNumeric": 1411000,
           "brand": "Citroën",
-          "priceListNumeric": 1399000,
+          "priceListNumeric": 1411000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -5393,10 +5435,10 @@
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel",
-          "priceRaw": "1.477.000 TL",
-          "priceNumeric": 1477000,
+          "priceRaw": "1.490.000 TL",
+          "priceNumeric": 1490000,
           "brand": "Citroën",
-          "priceListNumeric": 1477000,
+          "priceListNumeric": 1490000,
           "powerHP": 130,
           "engineDisplacement": "1.5L",
           "engineType": "BlueHDi",
@@ -5531,10 +5573,10 @@
           "engine": "2.2 BlueHDi 140 HP - 6 İleri Manuel",
           "transmission": "Manuel",
           "fuel": "Dizel",
-          "priceRaw": "1.965.000 TL",
-          "priceNumeric": 1965000,
+          "priceRaw": "1.998.000 TL",
+          "priceNumeric": 1998000,
           "brand": "Citroën",
-          "priceListNumeric": 1965000,
+          "priceListNumeric": 1998000,
           "powerHP": 140,
           "engineDisplacement": "2.2L",
           "engineType": "BlueHDi"
@@ -5569,7 +5611,7 @@
     },
     "bmw": {
       "name": "BMW",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "BMW 120",
@@ -6598,7 +6640,7 @@
     },
     "mercedes": {
       "name": "Mercedes-Benz",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "A 200",
@@ -6878,52 +6920,6 @@
           "isAMG": true
         },
         {
-          "model": "E 180",
-          "trim": "Exclusive",
-          "engine": "1.5L 170 HP",
-          "transmission": "Otomatik",
-          "fuel": "Benzin",
-          "priceRaw": "7.525.000 TL",
-          "priceNumeric": 7525000,
-          "brand": "Mercedes-Benz",
-          "otvRate": 100,
-          "modelYear": "2025",
-          "priceListNumeric": 3135417,
-          "powerHP": 170,
-          "engineDisplacement": "1.5L"
-        },
-        {
-          "model": "E 180",
-          "trim": "AMG",
-          "engine": "1.5L 170 HP",
-          "transmission": "Otomatik",
-          "fuel": "Benzin",
-          "priceRaw": "7.587.000 TL",
-          "priceNumeric": 7587000,
-          "brand": "Mercedes-Benz",
-          "otvRate": 100,
-          "modelYear": "2025",
-          "priceListNumeric": 3161250,
-          "powerHP": 170,
-          "engineDisplacement": "1.5L"
-        },
-        {
-          "model": "E 220 d 4MATIC",
-          "trim": "AMG",
-          "engine": "2.0L 197 HP",
-          "transmission": "Otomatik",
-          "fuel": "Dizel",
-          "priceRaw": "10.270.000 TL",
-          "priceNumeric": 10270000,
-          "brand": "Mercedes-Benz",
-          "otvRate": 170,
-          "modelYear": "2025",
-          "priceListNumeric": 3169753,
-          "powerHP": 197,
-          "engineDisplacement": "2.0L",
-          "driveType": "AWD"
-        },
-        {
           "model": "CLE 300 4MATIC Coupé",
           "trim": "AMG",
           "engine": "2.0L 258 HP",
@@ -7002,22 +6998,6 @@
           "priceListNumeric": 5477865,
           "powerHP": 367,
           "engineDisplacement": "3.0L",
-          "driveType": "AWD"
-        },
-        {
-          "model": "S 450 d 4MATIC L",
-          "trim": "Inspiration",
-          "engine": "2.9L 367 HP",
-          "transmission": "Otomatik",
-          "fuel": "Dizel",
-          "priceRaw": "19.828.600 TL",
-          "priceNumeric": 19828600,
-          "brand": "Mercedes-Benz",
-          "otvRate": 220,
-          "modelYear": "2025",
-          "priceListNumeric": 5163698,
-          "powerHP": 367,
-          "engineDisplacement": "2.9L",
           "driveType": "AWD"
         },
         {
@@ -7111,22 +7091,6 @@
           "modelYear": "2026",
           "priceListNumeric": 5633095,
           "powerHP": 544,
-          "isElectric": true,
-          "driveType": "AWD"
-        },
-        {
-          "model": "EQS 450 4MATIC",
-          "trim": "Inspiration",
-          "engine": "360 HP",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik",
-          "priceRaw": "9.436.200 TL",
-          "priceNumeric": 9436200,
-          "brand": "Mercedes-Benz",
-          "otvRate": 75,
-          "modelYear": "2025",
-          "priceListNumeric": 4493429,
-          "powerHP": 360,
           "isElectric": true,
           "driveType": "AWD"
         },
@@ -7414,22 +7378,6 @@
           "isAMG": true
         },
         {
-          "model": "Mercedes-AMG SL 43",
-          "trim": "Performance",
-          "engine": "2.0L 421 HP",
-          "transmission": "Otomatik",
-          "fuel": "Benzin",
-          "priceRaw": "15.231.000 TL",
-          "priceNumeric": 15231000,
-          "brand": "Mercedes-Benz",
-          "otvRate": 170,
-          "modelYear": "2025",
-          "priceListNumeric": 4700926,
-          "powerHP": 421,
-          "engineDisplacement": "2.0L",
-          "isAMG": true
-        },
-        {
           "model": "Mercedes-Maybach SL 680",
           "trim": "Monogram Series",
           "engine": "4.0L 585 HP",
@@ -7545,7 +7493,7 @@
     },
     "ford": {
       "name": "Ford",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Yeni Puma",
@@ -8263,7 +8211,7 @@
     },
     "dacia": {
       "name": "Dacia",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Yeni Sandero",
@@ -8614,7 +8562,7 @@
     },
     "nissan": {
       "name": "Nissan",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "QASHQAI",
@@ -9092,7 +9040,7 @@
     },
     "honda": {
       "name": "Honda",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Jazz Hybrid",
@@ -9184,7 +9132,7 @@
     },
     "seat": {
       "name": "SEAT",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "YENİ",
@@ -9304,7 +9252,7 @@
     },
     "kia": {
       "name": "Kia",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Niro EV",
@@ -9743,7 +9691,7 @@
     },
     "volvo": {
       "name": "Volvo",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "EX40 Black Edition Ultra",
@@ -9882,7 +9830,7 @@
     },
     "fiat": {
       "name": "Fiat",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
       "vehicles": [
         {
           "model": "Egea Sedan",

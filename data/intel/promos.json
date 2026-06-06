@@ -1,261 +1,14 @@
 {
-  "generatedAt": "2026-06-05T01:43:05.779Z",
-  "date": "2026-06-05",
+  "generatedAt": "2026-06-06T01:39:12.516Z",
+  "date": "2026-06-06",
   "summary": {
-    "totalPriceDrops": 16,
-    "totalRecentDrops": 17,
-    "avgDropPercent": 9.01,
-    "maxDropPercent": 28.18,
-    "brandsWithDrops": 5
+    "totalPriceDrops": 10,
+    "totalRecentDrops": 12,
+    "avgDropPercent": 7,
+    "maxDropPercent": 9.43,
+    "brandsWithDrops": 4
   },
   "priceDrops": [
-    {
-      "id": "opel-grandland-elektrik-edition-157-kw",
-      "brand": "Opel",
-      "brandId": "opel",
-      "model": "Grandland Elektrik",
-      "trim": "Edition",
-      "engine": "157 kW",
-      "fuel": "Elektrik",
-      "transmission": "",
-      "currentPrice": 2485000,
-      "currentPriceFormatted": "₺2.485.000",
-      "peakPrice": 3460000,
-      "peakPriceFormatted": "₺3.460.000",
-      "peakDate": "2026-05-07",
-      "dropAmount": 975000,
-      "dropPercent": 28.18,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-05-27",
-          "price": 2485000
-        },
-        {
-          "date": "2026-05-28",
-          "price": 2485000
-        },
-        {
-          "date": "2026-05-29",
-          "price": 2485000
-        },
-        {
-          "date": "2026-05-30",
-          "price": 2485000
-        },
-        {
-          "date": "2026-05-31",
-          "price": 2485000
-        },
-        {
-          "date": "2026-06-01",
-          "price": 2485000
-        },
-        {
-          "date": "2026-06-02",
-          "price": 2485000
-        },
-        {
-          "date": "2026-06-03",
-          "price": 2485000
-        },
-        {
-          "date": "2026-06-04",
-          "price": 2485000
-        },
-        {
-          "date": "2026-06-05",
-          "price": 2485000
-        }
-      ],
-      "listPrice": 2485000
-    },
-    {
-      "id": "mercedes-e-220-d-4matic-amg-2.0l-197-hp",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "E 220 d 4MATIC",
-      "trim": "AMG",
-      "engine": "2.0L 197 HP",
-      "fuel": "Dizel",
-      "transmission": "Otomatik",
-      "currentPrice": 10270000,
-      "currentPriceFormatted": "₺10.270.000",
-      "peakPrice": 11450500,
-      "peakPriceFormatted": "₺11.450.500",
-      "peakDate": "2026-05-07",
-      "dropAmount": 1180500,
-      "dropPercent": 10.31,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-06-01",
-          "price": 11450500
-        },
-        {
-          "date": "2026-06-01",
-          "price": 10270000
-        },
-        {
-          "date": "2026-06-02",
-          "price": 11450500
-        },
-        {
-          "date": "2026-06-02",
-          "price": 10270000
-        },
-        {
-          "date": "2026-06-03",
-          "price": 11450500
-        },
-        {
-          "date": "2026-06-03",
-          "price": 10270000
-        },
-        {
-          "date": "2026-06-04",
-          "price": 11450500
-        },
-        {
-          "date": "2026-06-04",
-          "price": 10270000
-        },
-        {
-          "date": "2026-06-05",
-          "price": 11450500
-        },
-        {
-          "date": "2026-06-05",
-          "price": 10270000
-        }
-      ],
-      "listPrice": 3534105,
-      "otvRate": 170
-    },
-    {
-      "id": "mercedes-e-180-exclusive-1.5l-170-hp",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "E 180",
-      "trim": "Exclusive",
-      "engine": "1.5L 170 HP",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "currentPrice": 7525000,
-      "currentPriceFormatted": "₺7.525.000",
-      "peakPrice": 8349000,
-      "peakPriceFormatted": "₺8.349.000",
-      "peakDate": "2026-05-07",
-      "dropAmount": 824000,
-      "dropPercent": 9.87,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-06-01",
-          "price": 8349000
-        },
-        {
-          "date": "2026-06-01",
-          "price": 7525000
-        },
-        {
-          "date": "2026-06-02",
-          "price": 8349000
-        },
-        {
-          "date": "2026-06-02",
-          "price": 7525000
-        },
-        {
-          "date": "2026-06-03",
-          "price": 8349000
-        },
-        {
-          "date": "2026-06-03",
-          "price": 7525000
-        },
-        {
-          "date": "2026-06-04",
-          "price": 8349000
-        },
-        {
-          "date": "2026-06-04",
-          "price": 7525000
-        },
-        {
-          "date": "2026-06-05",
-          "price": 8349000
-        },
-        {
-          "date": "2026-06-05",
-          "price": 7525000
-        }
-      ],
-      "listPrice": 3478750,
-      "otvRate": 100
-    },
-    {
-      "id": "mercedes-e-180-amg-1.5l-170-hp",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "E 180",
-      "trim": "AMG",
-      "engine": "1.5L 170 HP",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "currentPrice": 7587000,
-      "currentPriceFormatted": "₺7.587.000",
-      "peakPrice": 8416000,
-      "peakPriceFormatted": "₺8.416.000",
-      "peakDate": "2026-05-07",
-      "dropAmount": 829000,
-      "dropPercent": 9.85,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-06-01",
-          "price": 8416000
-        },
-        {
-          "date": "2026-06-01",
-          "price": 7587000
-        },
-        {
-          "date": "2026-06-02",
-          "price": 8416000
-        },
-        {
-          "date": "2026-06-02",
-          "price": 7587000
-        },
-        {
-          "date": "2026-06-03",
-          "price": 8416000
-        },
-        {
-          "date": "2026-06-03",
-          "price": 7587000
-        },
-        {
-          "date": "2026-06-04",
-          "price": 8416000
-        },
-        {
-          "date": "2026-06-04",
-          "price": 7587000
-        },
-        {
-          "date": "2026-06-05",
-          "price": 8416000
-        },
-        {
-          "date": "2026-06-05",
-          "price": 7587000
-        }
-      ],
-      "listPrice": 3506667,
-      "otvRate": 100
-    },
     {
       "id": "mercedes-c-200-4matic-all-terrain---1.5l-204-hp",
       "brand": "Mercedes-Benz",
@@ -269,20 +22,12 @@
       "currentPriceFormatted": "₺5.436.000",
       "peakPrice": 6002000,
       "peakPriceFormatted": "₺6.002.000",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 566000,
       "dropPercent": 9.43,
       "daysSincePeak": 29,
       "priceHistory": [
         {
-          "date": "2026-06-01",
-          "price": 6002000
-        },
-        {
-          "date": "2026-06-01",
-          "price": 5436000
-        },
-        {
           "date": "2026-06-02",
           "price": 6002000
         },
@@ -312,6 +57,14 @@
         },
         {
           "date": "2026-06-05",
+          "price": 5436000
+        },
+        {
+          "date": "2026-06-06",
+          "price": 6002000
+        },
+        {
+          "date": "2026-06-06",
           "price": 5436000
         }
       ],
@@ -331,20 +84,12 @@
       "currentPriceFormatted": "₺5.770.000",
       "peakPrice": 6358000,
       "peakPriceFormatted": "₺6.358.000",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 588000,
       "dropPercent": 9.25,
       "daysSincePeak": 29,
       "priceHistory": [
         {
-          "date": "2026-06-01",
-          "price": 6358000
-        },
-        {
-          "date": "2026-06-01",
-          "price": 5770000
-        },
-        {
           "date": "2026-06-02",
           "price": 6358000
         },
@@ -374,73 +119,19 @@
         },
         {
           "date": "2026-06-05",
+          "price": 5770000
+        },
+        {
+          "date": "2026-06-06",
+          "price": 6358000
+        },
+        {
+          "date": "2026-06-06",
           "price": 5770000
         }
       ],
       "listPrice": 2649167,
       "otvRate": 100
-    },
-    {
-      "id": "mercedes-mercedes-amg-sl-43-performance-2.0l-421-hp",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "Mercedes-AMG SL 43",
-      "trim": "Performance",
-      "engine": "2.0L 421 HP",
-      "fuel": "Benzin",
-      "transmission": "Otomatik",
-      "currentPrice": 15231000,
-      "currentPriceFormatted": "₺15.231.000",
-      "peakPrice": 16772500,
-      "peakPriceFormatted": "₺16.772.500",
-      "peakDate": "2026-05-07",
-      "dropAmount": 1541500,
-      "dropPercent": 9.19,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-06-01",
-          "price": 16772500
-        },
-        {
-          "date": "2026-06-01",
-          "price": 15231000
-        },
-        {
-          "date": "2026-06-02",
-          "price": 16772500
-        },
-        {
-          "date": "2026-06-02",
-          "price": 15231000
-        },
-        {
-          "date": "2026-06-03",
-          "price": 16772500
-        },
-        {
-          "date": "2026-06-03",
-          "price": 15231000
-        },
-        {
-          "date": "2026-06-04",
-          "price": 16772500
-        },
-        {
-          "date": "2026-06-04",
-          "price": 15231000
-        },
-        {
-          "date": "2026-06-05",
-          "price": 16772500
-        },
-        {
-          "date": "2026-06-05",
-          "price": 15231000
-        }
-      ],
-      "listPrice": 5176698,
-      "otvRate": 170
     },
     {
       "id": "mercedes-gla-200-amg-1.3l-163-hp",
@@ -455,20 +146,12 @@
       "currentPriceFormatted": "₺4.268.000",
       "peakPrice": 4619500,
       "peakPriceFormatted": "₺4.619.500",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 351500,
       "dropPercent": 7.61,
       "daysSincePeak": 29,
       "priceHistory": [
         {
-          "date": "2026-06-01",
-          "price": 4619500
-        },
-        {
-          "date": "2026-06-01",
-          "price": 4268000
-        },
-        {
           "date": "2026-06-02",
           "price": 4619500
         },
@@ -498,6 +181,14 @@
         },
         {
           "date": "2026-06-05",
+          "price": 4268000
+        },
+        {
+          "date": "2026-06-06",
+          "price": 4619500
+        },
+        {
+          "date": "2026-06-06",
           "price": 4268000
         }
       ],
@@ -517,20 +208,12 @@
       "currentPriceFormatted": "₺6.787.000",
       "peakPrice": 7341000,
       "peakPriceFormatted": "₺7.341.000",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 554000,
       "dropPercent": 7.55,
       "daysSincePeak": 29,
       "priceHistory": [
         {
-          "date": "2026-06-01",
-          "price": 7341000
-        },
-        {
-          "date": "2026-06-01",
-          "price": 6787000
-        },
-        {
           "date": "2026-06-02",
           "price": 7341000
         },
@@ -560,6 +243,14 @@
         },
         {
           "date": "2026-06-05",
+          "price": 6787000
+        },
+        {
+          "date": "2026-06-06",
+          "price": 7341000
+        },
+        {
+          "date": "2026-06-06",
           "price": 6787000
         }
       ],
@@ -579,20 +270,12 @@
       "currentPriceFormatted": "₺544.900",
       "peakPrice": 584900,
       "peakPriceFormatted": "₺584.900",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 40000,
       "dropPercent": 6.84,
       "daysSincePeak": 29,
       "priceHistory": [
         {
-          "date": "2026-06-01",
-          "price": 584900
-        },
-        {
-          "date": "2026-06-01",
-          "price": 544900
-        },
-        {
           "date": "2026-06-02",
           "price": 584900
         },
@@ -622,74 +305,20 @@
         },
         {
           "date": "2026-06-05",
+          "price": 544900
+        },
+        {
+          "date": "2026-06-06",
+          "price": 584900
+        },
+        {
+          "date": "2026-06-06",
           "price": 544900
         }
       ],
       "listPrice": 674900,
       "campaignPrice": 584900,
       "campaignDiscount": 13.3
-    },
-    {
-      "id": "mercedes-eqs-450-4matic-inspiration-360-hp",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "EQS 450 4MATIC",
-      "trim": "Inspiration",
-      "engine": "360 HP",
-      "fuel": "Elektrik",
-      "transmission": "Otomatik",
-      "currentPrice": 9436200,
-      "currentPriceFormatted": "₺9.436.200",
-      "peakPrice": 10108500,
-      "peakPriceFormatted": "₺10.108.500",
-      "peakDate": "2026-05-07",
-      "dropAmount": 672300,
-      "dropPercent": 6.65,
-      "daysSincePeak": 29,
-      "priceHistory": [
-        {
-          "date": "2026-06-01",
-          "price": 10108500
-        },
-        {
-          "date": "2026-06-01",
-          "price": 9436200
-        },
-        {
-          "date": "2026-06-02",
-          "price": 10108500
-        },
-        {
-          "date": "2026-06-02",
-          "price": 9436200
-        },
-        {
-          "date": "2026-06-03",
-          "price": 10108500
-        },
-        {
-          "date": "2026-06-03",
-          "price": 9436200
-        },
-        {
-          "date": "2026-06-04",
-          "price": 10108500
-        },
-        {
-          "date": "2026-06-04",
-          "price": 9436200
-        },
-        {
-          "date": "2026-06-05",
-          "price": 10108500
-        },
-        {
-          "date": "2026-06-05",
-          "price": 9436200
-        }
-      ],
-      "listPrice": 4813571,
-      "otvRate": 75
     },
     {
       "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh",
@@ -704,20 +333,12 @@
       "currentPriceFormatted": "₺589.900",
       "peakPrice": 629900,
       "peakPriceFormatted": "₺629.900",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 40000,
       "dropPercent": 6.35,
       "daysSincePeak": 29,
       "priceHistory": [
         {
-          "date": "2026-06-01",
-          "price": 629900
-        },
-        {
-          "date": "2026-06-01",
-          "price": 589900
-        },
-        {
           "date": "2026-06-02",
           "price": 629900
         },
@@ -747,6 +368,14 @@
         },
         {
           "date": "2026-06-05",
+          "price": 589900
+        },
+        {
+          "date": "2026-06-06",
+          "price": 629900
+        },
+        {
+          "date": "2026-06-06",
           "price": 589900
         }
       ],
@@ -767,15 +396,11 @@
       "currentPriceFormatted": "₺2.550.000",
       "peakPrice": 2710000,
       "peakPriceFormatted": "₺2.710.000",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 160000,
       "dropPercent": 5.9,
       "daysSincePeak": 29,
       "priceHistory": [
-        {
-          "date": "2026-05-27",
-          "price": 2710000
-        },
         {
           "date": "2026-05-28",
           "price": 2710000
@@ -811,6 +436,10 @@
         {
           "date": "2026-06-05",
           "price": 2550000
+        },
+        {
+          "date": "2026-06-06",
+          "price": 2550000
         }
       ],
       "listPrice": 2952000,
@@ -830,20 +459,12 @@
       "currentPriceFormatted": "₺5.587.700",
       "peakPrice": 5930500,
       "peakPriceFormatted": "₺5.930.500",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 342800,
       "dropPercent": 5.78,
       "daysSincePeak": 29,
       "priceHistory": [
         {
-          "date": "2026-06-01",
-          "price": 5930500
-        },
-        {
-          "date": "2026-06-01",
-          "price": 5587700
-        },
-        {
           "date": "2026-06-02",
           "price": 5930500
         },
@@ -873,6 +494,14 @@
         },
         {
           "date": "2026-06-05",
+          "price": 5587700
+        },
+        {
+          "date": "2026-06-06",
+          "price": 5930500
+        },
+        {
+          "date": "2026-06-06",
           "price": 5587700
         }
       ],
@@ -892,20 +521,12 @@
       "currentPriceFormatted": "₺7.911.000",
       "peakPrice": 8389000,
       "peakPriceFormatted": "₺8.389.000",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 478000,
       "dropPercent": 5.7,
       "daysSincePeak": 29,
       "priceHistory": [
         {
-          "date": "2026-06-01",
-          "price": 8389000
-        },
-        {
-          "date": "2026-06-01",
-          "price": 7911000
-        },
-        {
           "date": "2026-06-02",
           "price": 8389000
         },
@@ -935,6 +556,14 @@
         },
         {
           "date": "2026-06-05",
+          "price": 7911000
+        },
+        {
+          "date": "2026-06-06",
+          "price": 8389000
+        },
+        {
+          "date": "2026-06-06",
           "price": 7911000
         }
       ],
@@ -954,20 +583,12 @@
       "currentPriceFormatted": "₺2.345.000",
       "peakPrice": 2485000,
       "peakPriceFormatted": "₺2.485.000",
-      "peakDate": "2026-05-07",
+      "peakDate": "2026-05-08",
       "dropAmount": 140000,
       "dropPercent": 5.63,
       "daysSincePeak": 29,
       "priceHistory": [
         {
-          "date": "2026-05-31",
-          "price": 2485000
-        },
-        {
-          "date": "2026-05-31",
-          "price": 2345000
-        },
-        {
           "date": "2026-06-02",
           "price": 2485000
         },
@@ -997,6 +618,14 @@
         },
         {
           "date": "2026-06-05",
+          "price": 2345000
+        },
+        {
+          "date": "2026-06-06",
+          "price": 2485000
+        },
+        {
+          "date": "2026-06-06",
           "price": 2345000
         }
       ],
@@ -1005,51 +634,6 @@
     }
   ],
   "recentDrops": [
-    {
-      "id": "mercedes-e-220-d-4matic-amg-2.0l-197-hp-recent",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "E 220 d 4MATIC",
-      "trim": "AMG",
-      "engine": "2.0L 197 HP",
-      "currentPrice": 10270000,
-      "previousPrice": 11450500,
-      "dropAmount": 1180500,
-      "dropPercent": 10.31,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
-      "listPrice": 3534105
-    },
-    {
-      "id": "mercedes-e-180-exclusive-1.5l-170-hp-recent",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "E 180",
-      "trim": "Exclusive",
-      "engine": "1.5L 170 HP",
-      "currentPrice": 7525000,
-      "previousPrice": 8349000,
-      "dropAmount": 824000,
-      "dropPercent": 9.87,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
-      "listPrice": 3478750
-    },
-    {
-      "id": "mercedes-e-180-amg-1.5l-170-hp-recent",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "E 180",
-      "trim": "AMG",
-      "engine": "1.5L 170 HP",
-      "currentPrice": 7587000,
-      "previousPrice": 8416000,
-      "dropAmount": 829000,
-      "dropPercent": 9.85,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
-      "listPrice": 3506667
-    },
     {
       "id": "mercedes-c-200-4matic-all-terrain---1.5l-204-hp-recent",
       "brand": "Mercedes-Benz",
@@ -1061,8 +645,8 @@
       "previousPrice": 6002000,
       "dropAmount": 566000,
       "dropPercent": 9.43,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 2500833
     },
     {
@@ -1076,24 +660,9 @@
       "previousPrice": 6358000,
       "dropAmount": 588000,
       "dropPercent": 9.25,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 2649167
-    },
-    {
-      "id": "mercedes-mercedes-amg-sl-43-performance-2.0l-421-hp-recent",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "Mercedes-AMG SL 43",
-      "trim": "Performance",
-      "engine": "2.0L 421 HP",
-      "currentPrice": 15231000,
-      "previousPrice": 16772500,
-      "dropAmount": 1541500,
-      "dropPercent": 9.19,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
-      "listPrice": 5176698
     },
     {
       "id": "mercedes-gla-200-amg-1.3l-163-hp-recent",
@@ -1106,8 +675,8 @@
       "previousPrice": 4619500,
       "dropAmount": 351500,
       "dropPercent": 7.61,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 2026096
     },
     {
@@ -1121,8 +690,8 @@
       "previousPrice": 7341000,
       "dropAmount": 554000,
       "dropPercent": 7.55,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 3058750
     },
     {
@@ -1136,26 +705,11 @@
       "previousPrice": 584900,
       "dropAmount": 40000,
       "dropPercent": 6.84,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 674900,
       "campaignPrice": 584900,
       "campaignDiscount": 13.3
-    },
-    {
-      "id": "mercedes-eqs-450-4matic-inspiration-360-hp-recent",
-      "brand": "Mercedes-Benz",
-      "brandId": "mercedes",
-      "model": "EQS 450 4MATIC",
-      "trim": "Inspiration",
-      "engine": "360 HP",
-      "currentPrice": 9436200,
-      "previousPrice": 10108500,
-      "dropAmount": 672300,
-      "dropPercent": 6.65,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
-      "listPrice": 4813571
     },
     {
       "id": "fiat-topolino-topolino-plus-6-kw/8-hp---5.5kwh-recent",
@@ -1168,8 +722,8 @@
       "previousPrice": 629900,
       "dropAmount": 40000,
       "dropPercent": 6.35,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 719900,
       "campaignPrice": 629900,
       "campaignDiscount": 12.5
@@ -1185,8 +739,8 @@
       "previousPrice": 5930500,
       "dropAmount": 342800,
       "dropPercent": 5.78,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 3188441
     },
     {
@@ -1200,8 +754,8 @@
       "previousPrice": 8389000,
       "dropAmount": 478000,
       "dropPercent": 5.7,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 2589198
     },
     {
@@ -1215,8 +769,8 @@
       "previousPrice": 2485000,
       "dropAmount": 140000,
       "dropPercent": 5.63,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 1648481.91,
       "campaignPrice": 2485000
     },
@@ -1231,8 +785,8 @@
       "previousPrice": 4873000,
       "dropAmount": 230000,
       "dropPercent": 4.72,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 2030417
     },
     {
@@ -1246,8 +800,8 @@
       "previousPrice": 1514900,
       "dropAmount": 45000,
       "dropPercent": 2.97,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 1584900,
       "campaignPrice": 1514900,
       "campaignDiscount": 4.4
@@ -1263,8 +817,8 @@
       "previousPrice": 7058000,
       "dropAmount": 138000,
       "dropPercent": 1.96,
-      "date": "2026-06-05",
-      "previousDate": "2026-06-05",
+      "date": "2026-06-06",
+      "previousDate": "2026-06-06",
       "listPrice": 2178395
     }
   ],
@@ -1272,8 +826,8 @@
     {
       "brandId": "mercedes",
       "brand": "Mercedes-Benz",
-      "dropCount": 11,
-      "avgDropPercent": 8.29
+      "dropCount": 6,
+      "avgDropPercent": 7.55
     },
     {
       "brandId": "fiat",
@@ -1286,12 +840,6 @@
       "brand": "Toyota",
       "dropCount": 1,
       "avgDropPercent": 5.9
-    },
-    {
-      "brandId": "opel",
-      "brand": "Opel",
-      "dropCount": 1,
-      "avgDropPercent": 28.18
     },
     {
       "brandId": "kia",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-05T01:43:05.292Z",
-  "date": "2026-06-05",
+  "generatedAt": "2026-06-06T01:39:11.886Z",
+  "date": "2026-06-06",
   "ladders": [
     {
       "id": "volkswagen-polo",
@@ -1477,13 +1477,23 @@
           "engine": "esprit alpine mild hybrid 150 hp auto",
           "transmission": "Otomatik",
           "fuel": "Benzin"
+        },
+        {
+          "trim": "esprit alpine",
+          "price": 3650000,
+          "priceFormatted": "₺3.650.000,00",
+          "stepFromBase": 950999.9900000002,
+          "stepPercent": 35.23527182202568,
+          "engine": "esprit alpine full hybrid E-Tech 200 hp",
+          "transmission": "Otomatik",
+          "fuel": "Hibrit"
         }
       ],
       "basePrice": 2699000.01,
-      "topPrice": 3129999.99,
-      "priceSpread": 430999.98000000045,
-      "priceSpreadPercent": 15.97,
-      "trimCount": 2
+      "topPrice": 3650000,
+      "priceSpread": 950999.9900000002,
+      "priceSpreadPercent": 35.24,
+      "trimCount": 3
     },
     {
       "id": "renault-scenic-e-tech-elektri̇kli̇",
@@ -3408,8 +3418,8 @@
       "trims": [
         {
           "trim": "Plus",
-          "price": 1525000,
-          "priceFormatted": "1.525.000 TL",
+          "price": 1545000,
+          "priceFormatted": "1.545.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "83 kW Elektrikli Motor",
@@ -3418,19 +3428,19 @@
         },
         {
           "trim": "Max",
-          "price": 1585000,
-          "priceFormatted": "1.585.000 TL",
-          "stepFromBase": 60000,
-          "stepPercent": 3.934426229508197,
+          "price": 1610000,
+          "priceFormatted": "1.610.000 TL",
+          "stepFromBase": 65000,
+          "stepPercent": 4.207119741100324,
           "engine": "83 kW Elektrikli Motor",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 1525000,
-      "topPrice": 1585000,
-      "priceSpread": 60000,
-      "priceSpreadPercent": 3.93,
+      "basePrice": 1545000,
+      "topPrice": 1610000,
+      "priceSpread": 65000,
+      "priceSpreadPercent": 4.21,
       "trimCount": 2
     },
     {
@@ -3441,8 +3451,8 @@
       "trims": [
         {
           "trim": "Plus",
-          "price": 2125000,
-          "priceFormatted": "2.125.000 TL",
+          "price": 2155000,
+          "priceFormatted": "2.155.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.2 Hybrid 145* -  eDCS6",
@@ -3451,29 +3461,29 @@
         },
         {
           "trim": "Max",
-          "price": 2220000,
-          "priceFormatted": "2.220.000 TL",
-          "stepFromBase": 95000,
-          "stepPercent": 4.470588235294118,
+          "price": 2260000,
+          "priceFormatted": "2.260.000 TL",
+          "stepFromBase": 105000,
+          "stepPercent": 4.872389791183294,
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         },
         {
           "trim": "Max - 7 Koltuk",
-          "price": 2330000,
-          "priceFormatted": "2.330.000 TL",
-          "stepFromBase": 205000,
-          "stepPercent": 9.647058823529411,
+          "price": 2370000,
+          "priceFormatted": "2.370.000 TL",
+          "stepFromBase": 215000,
+          "stepPercent": 9.976798143851507,
           "engine": "1.2 Hybrid 145* -  eDCS6",
           "transmission": "Otomatik",
           "fuel": "Hibrit"
         }
       ],
-      "basePrice": 2125000,
-      "topPrice": 2330000,
-      "priceSpread": 205000,
-      "priceSpreadPercent": 9.65,
+      "basePrice": 2155000,
+      "topPrice": 2370000,
+      "priceSpread": 215000,
+      "priceSpreadPercent": 9.98,
       "trimCount": 3
     },
     {
@@ -3484,8 +3494,8 @@
       "trims": [
         {
           "trim": "Max",
-          "price": 1740000,
-          "priceFormatted": "1.740.000 TL",
+          "price": 1760000,
+          "priceFormatted": "1.760.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "83 kW Elektrikli Motor Standart Menzil",
@@ -3494,19 +3504,19 @@
         },
         {
           "trim": "Max",
-          "price": 1880000,
-          "priceFormatted": "1.880.000 TL",
+          "price": 1900000,
+          "priceFormatted": "1.900.000 TL",
           "stepFromBase": 140000,
-          "stepPercent": 8.045977011494253,
+          "stepPercent": 7.954545454545454,
           "engine": "83 kW Elektrikli Motor Uzun Menzil",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
         }
       ],
-      "basePrice": 1740000,
-      "topPrice": 1880000,
+      "basePrice": 1760000,
+      "topPrice": 1900000,
       "priceSpread": 140000,
-      "priceSpreadPercent": 8.05,
+      "priceSpreadPercent": 7.95,
       "trimCount": 2
     },
     {
@@ -3685,8 +3695,8 @@
       "trims": [
         {
           "trim": "Plus",
-          "price": 1799000,
-          "priceFormatted": "1.799.000 TL",
+          "price": 1815000,
+          "priceFormatted": "1.815.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
@@ -3695,29 +3705,29 @@
         },
         {
           "trim": "Plus",
-          "price": 1901000,
-          "priceFormatted": "1.901.000 TL",
-          "stepFromBase": 102000,
-          "stepPercent": 5.669816564758199,
+          "price": 1920000,
+          "priceFormatted": "1.920.000 TL",
+          "stepFromBase": 105000,
+          "stepPercent": 5.785123966942149,
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         },
         {
           "trim": "Max",
-          "price": 1963000,
-          "priceFormatted": "1.963.000 TL",
-          "stepFromBase": 164000,
-          "stepPercent": 9.116175653140633,
+          "price": 1982000,
+          "priceFormatted": "1.982.000 TL",
+          "stepFromBase": 167000,
+          "stepPercent": 9.201101928374655,
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 1799000,
-      "topPrice": 1963000,
-      "priceSpread": 164000,
-      "priceSpreadPercent": 9.12,
+      "basePrice": 1815000,
+      "topPrice": 1982000,
+      "priceSpread": 167000,
+      "priceSpreadPercent": 9.2,
       "trimCount": 3
     },
     {
@@ -3728,8 +3738,8 @@
       "trims": [
         {
           "trim": "Van",
-          "price": 1399000,
-          "priceFormatted": "1.399.000 TL",
+          "price": 1411000,
+          "priceFormatted": "1.411.000 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "1.5 BlueHDi 130 HP - 6 İleri Manuel",
@@ -3738,19 +3748,19 @@
         },
         {
           "trim": "Van",
-          "price": 1477000,
-          "priceFormatted": "1.477.000 TL",
-          "stepFromBase": 78000,
-          "stepPercent": 5.575411007862759,
+          "price": 1490000,
+          "priceFormatted": "1.490.000 TL",
+          "stepFromBase": 79000,
+          "stepPercent": 5.598866052445074,
           "engine": "1.5 BlueHDi 130 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 1399000,
-      "topPrice": 1477000,
-      "priceSpread": 78000,
-      "priceSpreadPercent": 5.58,
+      "basePrice": 1411000,
+      "topPrice": 1490000,
+      "priceSpread": 79000,
+      "priceSpreadPercent": 5.6,
       "trimCount": 2
     },
     {
@@ -3856,16 +3866,6 @@
           "fuel": "Dizel"
         },
         {
-          "trim": "4.2T (15M³)",
-          "price": 1965000,
-          "priceFormatted": "1.965.000 TL",
-          "stepFromBase": 91000,
-          "stepPercent": 4.855923159018143,
-          "engine": "2.2 BlueHDi 140 HP - 6 İleri Manuel",
-          "transmission": "Manuel",
-          "fuel": "Dizel"
-        },
-        {
           "trim": "3.5T (15M³)",
           "price": 1996000,
           "priceFormatted": "1.996.000 TL",
@@ -3874,12 +3874,22 @@
           "engine": "2.2 BlueHDi 180 HP - EAT8",
           "transmission": "Otomatik",
           "fuel": "Dizel"
+        },
+        {
+          "trim": "4.2T (15M³)",
+          "price": 1998000,
+          "priceFormatted": "1.998.000 TL",
+          "stepFromBase": 124000,
+          "stepPercent": 6.616862326574173,
+          "engine": "2.2 BlueHDi 140 HP - 6 İleri Manuel",
+          "transmission": "Manuel",
+          "fuel": "Dizel"
         }
       ],
       "basePrice": 1874000,
-      "topPrice": 1996000,
-      "priceSpread": 122000,
-      "priceSpreadPercent": 6.51,
+      "topPrice": 1998000,
+      "priceSpread": 124000,
+      "priceSpreadPercent": 6.62,
       "trimCount": 3
     },
     {
@@ -5346,30 +5356,10 @@
       "trims": [
         {
           "trim": "Exclusive",
-          "price": 7525000,
-          "priceFormatted": "7.525.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "1.5L 170 HP",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "AMG",
-          "price": 7587000,
-          "priceFormatted": "7.587.000 TL",
-          "stepFromBase": 62000,
-          "stepPercent": 0.823920265780731,
-          "engine": "1.5L 170 HP",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
-        },
-        {
-          "trim": "Exclusive",
           "price": 8349000,
           "priceFormatted": "8.349.000 TL",
-          "stepFromBase": 824000,
-          "stepPercent": 10.950166112956811,
+          "stepFromBase": 0,
+          "stepPercent": 0,
           "engine": "1.5L 170 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
@@ -5378,18 +5368,18 @@
           "trim": "AMG",
           "price": 8416000,
           "priceFormatted": "8.416.000 TL",
-          "stepFromBase": 891000,
-          "stepPercent": 11.840531561461793,
+          "stepFromBase": 67000,
+          "stepPercent": 0.8024913163253085,
           "engine": "1.5L 170 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
         }
       ],
-      "basePrice": 7525000,
+      "basePrice": 8349000,
       "topPrice": 8416000,
-      "priceSpread": 891000,
-      "priceSpreadPercent": 11.84,
-      "trimCount": 4
+      "priceSpread": 67000,
+      "priceSpreadPercent": 0.8,
+      "trimCount": 2
     },
     {
       "id": "mercedes-e-220-d-4matic",
@@ -5398,21 +5388,11 @@
       "brandId": "mercedes",
       "trims": [
         {
-          "trim": "AMG",
-          "price": 10270000,
-          "priceFormatted": "10.270.000 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "2.0L 197 HP",
-          "transmission": "Otomatik",
-          "fuel": "Dizel"
-        },
-        {
           "trim": "Exclusive",
           "price": 11367500,
           "priceFormatted": "11.367.500 TL",
-          "stepFromBase": 1097500,
-          "stepPercent": 10.686465433300876,
+          "stepFromBase": 0,
+          "stepPercent": 0,
           "engine": "2.0L 197 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel"
@@ -5421,18 +5401,18 @@
           "trim": "AMG",
           "price": 11450500,
           "priceFormatted": "11.450.500 TL",
-          "stepFromBase": 1180500,
-          "stepPercent": 11.494644595910419,
+          "stepFromBase": 83000,
+          "stepPercent": 0.7301517484055421,
           "engine": "2.0L 197 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 10270000,
+      "basePrice": 11367500,
       "topPrice": 11450500,
-      "priceSpread": 1180500,
-      "priceSpreadPercent": 11.49,
-      "trimCount": 3
+      "priceSpread": 83000,
+      "priceSpreadPercent": 0.73,
+      "trimCount": 2
     },
     {
       "id": "mercedes-mercedes-amg-e-53-hybrid-4matic+",
@@ -5544,30 +5524,20 @@
       "trims": [
         {
           "trim": "Inspiration",
-          "price": 19828600,
-          "priceFormatted": "19.828.600 TL",
-          "stepFromBase": 0,
-          "stepPercent": 0,
-          "engine": "2.9L 367 HP",
-          "transmission": "Otomatik",
-          "fuel": "Dizel"
-        },
-        {
-          "trim": "Inspiration",
           "price": 21035000,
           "priceFormatted": "21.035.000 TL",
-          "stepFromBase": 1206400,
-          "stepPercent": 6.084141089133877,
+          "stepFromBase": 0,
+          "stepPercent": 0,
           "engine": "3.0L 367 HP",
           "transmission": "Otomatik",
           "fuel": "Dizel"
         }
       ],
-      "basePrice": 19828600,
+      "basePrice": 21035000,
       "topPrice": 21035000,
-      "priceSpread": 1206400,
-      "priceSpreadPercent": 6.08,
-      "trimCount": 2
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "mercedes-mercedes-maybach-s-580-4matic",
@@ -5656,30 +5626,20 @@
       "trims": [
         {
           "trim": "Inspiration",
-          "price": 9436200,
-          "priceFormatted": "9.436.200 TL",
+          "price": 10108500,
+          "priceFormatted": "10.108.500 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "360 HP",
           "transmission": "Otomatik",
           "fuel": "Elektrik"
-        },
-        {
-          "trim": "Inspiration",
-          "price": 10108500,
-          "priceFormatted": "10.108.500 TL",
-          "stepFromBase": 672300,
-          "stepPercent": 7.12469002352642,
-          "engine": "360 HP",
-          "transmission": "Otomatik",
-          "fuel": "Elektrik"
         }
       ],
-      "basePrice": 9436200,
+      "basePrice": 10108500,
       "topPrice": 10108500,
-      "priceSpread": 672300,
-      "priceSpreadPercent": 7.12,
-      "trimCount": 2
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "mercedes-eqs-580-4matic",
@@ -6054,30 +6014,20 @@
       "trims": [
         {
           "trim": "Performance",
-          "price": 15231000,
-          "priceFormatted": "15.231.000 TL",
+          "price": 16772500,
+          "priceFormatted": "16.772.500 TL",
           "stepFromBase": 0,
           "stepPercent": 0,
           "engine": "2.0L 421 HP",
           "transmission": "Otomatik",
           "fuel": "Benzin"
-        },
-        {
-          "trim": "Performance",
-          "price": 16772500,
-          "priceFormatted": "16.772.500 TL",
-          "stepFromBase": 1541500,
-          "stepPercent": 10.120806250410347,
-          "engine": "2.0L 421 HP",
-          "transmission": "Otomatik",
-          "fuel": "Benzin"
         }
       ],
-      "basePrice": 15231000,
+      "basePrice": 16772500,
       "topPrice": 16772500,
-      "priceSpread": 1541500,
-      "priceSpreadPercent": 10.12,
-      "trimCount": 2
+      "priceSpread": 0,
+      "priceSpreadPercent": 0,
+      "trimCount": 1
     },
     {
       "id": "mercedes-mercedes-amg-sl-63-4matic+",
@@ -8344,9 +8294,9 @@
           "brandId": "citroen",
           "model": "Jumper",
           "basePrice": 1874000,
-          "topPrice": 1996000,
+          "topPrice": 1998000,
           "basePriceFormatted": "₺1.874.000",
-          "topPriceFormatted": "₺1.996.000",
+          "topPriceFormatted": "₺1.998.000",
           "trimCount": 3
         },
         {
@@ -8564,10 +8514,10 @@
           "brandId": "renault",
           "model": "Austral",
           "basePrice": 2699000.01,
-          "topPrice": 3129999.99,
+          "topPrice": 3650000,
           "basePriceFormatted": "₺2.699.000",
-          "topPriceFormatted": "₺3.130.000",
-          "trimCount": 2
+          "topPriceFormatted": "₺3.650.000",
+          "trimCount": 3
         },
         {
           "brand": "Opel",
@@ -8920,16 +8870,6 @@
           "trimCount": 2
         },
         {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
-          "model": "E 180",
-          "basePrice": 7525000,
-          "topPrice": 8416000,
-          "basePriceFormatted": "₺7.525.000",
-          "topPriceFormatted": "₺8.416.000",
-          "trimCount": 4
-        },
-        {
           "brand": "Volvo",
           "brandId": "volvo",
           "model": "XC60 Ultra",
@@ -8977,6 +8917,16 @@
           "topPrice": 8575300,
           "basePriceFormatted": "₺8.159.300",
           "topPriceFormatted": "₺8.575.300",
+          "trimCount": 2
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brandId": "mercedes",
+          "model": "E 180",
+          "basePrice": 8349000,
+          "topPrice": 8416000,
+          "basePriceFormatted": "₺8.349.000",
+          "topPriceFormatted": "₺8.416.000",
           "trimCount": 2
         },
         {
@@ -9030,16 +8980,6 @@
           "trimCount": 1
         },
         {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
-          "model": "EQS 450 4MATIC",
-          "basePrice": 9436200,
-          "topPrice": 10108500,
-          "basePriceFormatted": "₺9.436.200",
-          "topPriceFormatted": "₺10.108.500",
-          "trimCount": 2
-        },
-        {
           "brand": "BMW",
           "brandId": "bmw",
           "model": "BMW i5 M60 xDrive",
@@ -9072,22 +9012,22 @@
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
+          "model": "EQS 450 4MATIC",
+          "basePrice": 10108500,
+          "topPrice": 10108500,
+          "basePriceFormatted": "₺10.108.500",
+          "topPriceFormatted": "₺10.108.500",
+          "trimCount": 1
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brandId": "mercedes",
           "model": "Mercedes-AMG GLC 43 4MATIC",
           "basePrice": 10219000,
           "topPrice": 10219000,
           "basePriceFormatted": "₺10.219.000",
           "topPriceFormatted": "₺10.219.000",
           "trimCount": 1
-        },
-        {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
-          "model": "E 220 d 4MATIC",
-          "basePrice": 10270000,
-          "topPrice": 11450500,
-          "basePriceFormatted": "₺10.270.000",
-          "topPriceFormatted": "₺11.450.500",
-          "trimCount": 3
         },
         {
           "brand": "BMW",
@@ -9128,6 +9068,16 @@
           "basePriceFormatted": "₺11.095.800",
           "topPriceFormatted": "₺11.095.800",
           "trimCount": 1
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brandId": "mercedes",
+          "model": "E 220 d 4MATIC",
+          "basePrice": 11367500,
+          "topPrice": 11450500,
+          "basePriceFormatted": "₺11.367.500",
+          "topPriceFormatted": "₺11.450.500",
+          "trimCount": 2
         },
         {
           "brand": "Mercedes-Benz",
@@ -9212,16 +9162,6 @@
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
-          "model": "Mercedes-AMG SL 43",
-          "basePrice": 15231000,
-          "topPrice": 16772500,
-          "basePriceFormatted": "₺15.231.000",
-          "topPriceFormatted": "₺16.772.500",
-          "trimCount": 2
-        },
-        {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
           "model": "Mercedes-AMG GLC 63 S E PERFORMANCE Coupé",
           "basePrice": 15295000,
           "topPrice": 15295000,
@@ -9260,6 +9200,16 @@
           "trimCount": 1
         },
         {
+          "brand": "Mercedes-Benz",
+          "brandId": "mercedes",
+          "model": "Mercedes-AMG SL 43",
+          "basePrice": 16772500,
+          "topPrice": 16772500,
+          "basePriceFormatted": "₺16.772.500",
+          "topPriceFormatted": "₺16.772.500",
+          "trimCount": 1
+        },
+        {
           "brand": "BMW",
           "brandId": "bmw",
           "model": "BMW M3 Touring M xDrive",
@@ -9292,21 +9242,21 @@
         {
           "brand": "Mercedes-Benz",
           "brandId": "mercedes",
-          "model": "S 450 d 4MATIC L",
-          "basePrice": 19828600,
-          "topPrice": 21035000,
-          "basePriceFormatted": "₺19.828.600",
-          "topPriceFormatted": "₺21.035.000",
-          "trimCount": 2
-        },
-        {
-          "brand": "Mercedes-Benz",
-          "brandId": "mercedes",
           "model": "Mercedes-AMG E 53 Hybrid 4MATIC+",
           "basePrice": 20839000,
           "topPrice": 20839000,
           "basePriceFormatted": "₺20.839.000",
           "topPriceFormatted": "₺20.839.000",
+          "trimCount": 1
+        },
+        {
+          "brand": "Mercedes-Benz",
+          "brandId": "mercedes",
+          "model": "S 450 d 4MATIC L",
+          "basePrice": 21035000,
+          "topPrice": 21035000,
+          "basePriceFormatted": "₺21.035.000",
+          "topPriceFormatted": "₺21.035.000",
           "trimCount": 1
         },
         {
@@ -9400,8 +9350,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 7995303,
-      "avgTopPrice": 8245512
+      "avgBasePrice": 8038381,
+      "avgTopPrice": 8249722
     },
     {
       "segment": "SUV",
@@ -9430,10 +9380,10 @@
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "Elektrikli ë-C3 Aircross",
-          "basePrice": 1740000,
-          "topPrice": 1880000,
-          "basePriceFormatted": "₺1.740.000",
-          "topPriceFormatted": "₺1.880.000",
+          "basePrice": 1760000,
+          "topPrice": 1900000,
+          "basePriceFormatted": "₺1.760.000",
+          "topPriceFormatted": "₺1.900.000",
           "trimCount": 2
         },
         {
@@ -9450,10 +9400,10 @@
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "C3 Aircross Hybrid 145",
-          "basePrice": 2125000,
-          "topPrice": 2330000,
-          "basePriceFormatted": "₺2.125.000",
-          "topPriceFormatted": "₺2.330.000",
+          "basePrice": 2155000,
+          "topPrice": 2370000,
+          "basePriceFormatted": "₺2.155.000",
+          "topPriceFormatted": "₺2.370.000",
           "trimCount": 3
         },
         {
@@ -9837,8 +9787,8 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 5767508,
-      "avgTopPrice": 6231358
+      "avgBasePrice": 5768671,
+      "avgTopPrice": 6232753
     },
     {
       "segment": "Sedan",
@@ -10084,10 +10034,10 @@
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "Elektrikli ë-C3",
-          "basePrice": 1525000,
-          "topPrice": 1585000,
-          "basePriceFormatted": "₺1.525.000",
-          "topPriceFormatted": "₺1.585.000",
+          "basePrice": 1545000,
+          "topPrice": 1610000,
+          "basePriceFormatted": "₺1.545.000",
+          "topPriceFormatted": "₺1.610.000",
           "trimCount": 2
         },
         {
@@ -10261,8 +10211,8 @@
           "trimCount": 4
         }
       ],
-      "avgBasePrice": 3127322,
-      "avgTopPrice": 3524628
+      "avgBasePrice": 3128433,
+      "avgTopPrice": 3526017
     },
     {
       "segment": "Hatchback",
@@ -10468,10 +10418,10 @@
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "Berlingo Van",
-          "basePrice": 1399000,
-          "topPrice": 1477000,
-          "basePriceFormatted": "₺1.399.000",
-          "topPriceFormatted": "₺1.477.000",
+          "basePrice": 1411000,
+          "topPrice": 1490000,
+          "basePriceFormatted": "₺1.411.000",
+          "topPriceFormatted": "₺1.490.000",
           "trimCount": 2
         },
         {
@@ -10498,10 +10448,10 @@
           "brand": "Citroën",
           "brandId": "citroen",
           "model": "Berlingo",
-          "basePrice": 1799000,
-          "topPrice": 1963000,
-          "basePriceFormatted": "₺1.799.000",
-          "topPriceFormatted": "₺1.963.000",
+          "basePrice": 1815000,
+          "topPrice": 1982000,
+          "basePriceFormatted": "₺1.815.000",
+          "topPriceFormatted": "₺1.982.000",
           "trimCount": 3
         },
         {
@@ -10525,14 +10475,14 @@
           "trimCount": 1
         }
       ],
-      "avgBasePrice": 1756925,
-      "avgTopPrice": 2011275
+      "avgBasePrice": 1760425,
+      "avgTopPrice": 2015275
     }
   ],
   "summary": {
     "totalModels": 234,
     "avgTrimsPerModel": 2.2,
-    "avgPriceSpread": 357230,
-    "avgPriceSpreadPercent": 11.69
+    "avgPriceSpread": 336714,
+    "avgPriceSpreadPercent": 11.58
   }
 }
