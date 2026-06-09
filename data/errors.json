@@ -1,11 +1,51 @@
 {
-  "generatedAt": "2026-06-08T01:49:38.438Z",
-  "clearedAt": "2026-06-08T01:49:28.513Z",
-  "errors": [],
+  "generatedAt": "2026-06-09T01:35:15.026Z",
+  "clearedAt": "2026-06-09T01:34:40.304Z",
+  "errors": [
+    {
+      "id": "err_1780968913154_ap4xn2r",
+      "timestamp": "2026-06-09T01:35:13.154Z",
+      "severity": "error",
+      "category": "HTTP_ERROR",
+      "source": "collection",
+      "brand": "SEAT",
+      "brandId": "seat",
+      "code": "COLLECTION_FAILED",
+      "message": "Failed to collect SEAT: HTTP 400: Bad Request",
+      "details": {
+        "error": "HTTP 400: Bad Request",
+        "url": "https://www.seat.com.tr/firsatlar/fiyat-listesi",
+        "elapsed": 2510,
+        "isTimeout": false
+      },
+      "recovered": false
+    },
+    {
+      "id": "err_1780968913156_i4w6y4s",
+      "timestamp": "2026-06-09T01:35:13.156Z",
+      "severity": "warning",
+      "category": "DATA_QUALITY_ERROR",
+      "source": "collection",
+      "brand": "SEAT",
+      "brandId": "seat",
+      "code": "USING_FALLBACK_DATA",
+      "message": "Using fallback data for SEAT (8 rows)",
+      "recovered": true,
+      "recoveryMethod": "Used previous day data"
+    }
+  ],
   "summary": {
-    "total": 0,
-    "byCategory": {},
-    "bySeverity": {},
-    "bySource": {}
+    "total": 2,
+    "byCategory": {
+      "HTTP_ERROR": 1,
+      "DATA_QUALITY_ERROR": 1
+    },
+    "bySeverity": {
+      "error": 1,
+      "warning": 1
+    },
+    "bySource": {
+      "collection": 2
+    }
   }
 }
