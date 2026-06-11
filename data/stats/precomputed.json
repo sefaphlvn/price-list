@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-10T01:45:38.050Z",
+  "generatedAt": "2026-06-11T01:56:06.321Z",
   "totalVehicles": 515,
   "overallStats": {
-    "avgPrice": 5003932,
+    "avgPrice": 5007121,
     "minPrice": 585000,
     "maxPrice": 38034000,
-    "medianPrice": 3126000
+    "medianPrice": 3147200
   },
   "brandStats": [
     {
@@ -99,10 +99,10 @@
     {
       "name": "Ford",
       "vehicleCount": 21,
-      "avgPrice": 2615381,
+      "avgPrice": 2693576,
       "minPrice": 1897100,
-      "maxPrice": 3404200,
-      "medianPrice": 2585600
+      "maxPrice": 3455000,
+      "medianPrice": 2720500
     },
     {
       "name": "Volvo",
@@ -166,19 +166,19 @@
       "fuel": "Benzin",
       "count": 198,
       "percentage": 38.4,
-      "avgPrice": 5218695
+      "avgPrice": 5220517
     },
     {
       "fuel": "Elektrik",
       "count": 114,
       "percentage": 22.1,
-      "avgPrice": 4929568
+      "avgPrice": 4938449
     },
     {
       "fuel": "Hibrit",
       "count": 75,
       "percentage": 14.6,
-      "avgPrice": 3359970
+      "avgPrice": 3363553
     },
     {
       "fuel": "Dizel",
@@ -216,7 +216,7 @@
       "transmission": "Otomatik",
       "count": 351,
       "percentage": 68.2,
-      "avgPrice": 5867003
+      "avgPrice": 5871392
     },
     {
       "transmission": "DSG",
@@ -228,7 +228,7 @@
       "transmission": "Manuel",
       "count": 38,
       "percentage": 7.4,
-      "avgPrice": 1736053
+      "avgPrice": 1738726
     },
     {
       "transmission": "DCT",
@@ -255,15 +255,15 @@
       "segment": "mid",
       "min": 1500000,
       "max": 3000000,
-      "count": 222,
-      "percentage": 43.1
+      "count": 221,
+      "percentage": 42.9
     },
     {
       "segment": "premium",
       "min": 3000000,
       "max": 5000000,
-      "count": 120,
-      "percentage": 23.3
+      "count": 121,
+      "percentage": 23.5
     },
     {
       "segment": "luxury",
@@ -409,13 +409,13 @@
         "year": "2026",
         "count": 281,
         "percentage": 66.7,
-        "avgPrice": 4607202
+        "avgPrice": 4612334
       },
       {
         "year": "2025",
         "count": 111,
         "percentage": 26.4,
-        "avgPrice": 3782584
+        "avgPrice": 3784385
       },
       {
         "year": "2023",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-10T01:45:40.414Z",
-  "date": "2026-06-10",
+  "generatedAt": "2026-06-11T01:56:09.014Z",
+  "date": "2026-06-11",
   "summary": {
     "totalSegments": 11,
     "totalGaps": 1000,
@@ -11,7 +11,7 @@
     {
       "segment": "SUV-Compact",
       "totalVehicles": 109,
-      "avgPrice": 2923032,
+      "avgPrice": 2925498,
       "minPrice": 1314900,
       "maxPrice": 8379900,
       "brands": [
@@ -66,7 +66,7 @@
     {
       "segment": "Hatchback-C",
       "totalVehicles": 59,
-      "avgPrice": 2827434,
+      "avgPrice": 2848368,
       "minPrice": 585000,
       "maxPrice": 6683000,
       "brands": [
@@ -96,7 +96,7 @@
     {
       "segment": "SUV-Medium",
       "totalVehicles": 58,
-      "avgPrice": 3826421,
+      "avgPrice": 3828805,
       "minPrice": 2249000,
       "maxPrice": 9241000,
       "brands": [
@@ -2045,7 +2045,7 @@
         "Ford",
         "Honda"
       ],
-      "avgPrice": 2438379,
+      "avgPrice": 2452521,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -3008,7 +3008,7 @@
         "Volkswagen",
         "Ford"
       ],
-      "avgPrice": 3525480,
+      "avgPrice": 3549680,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -3091,7 +3091,7 @@
         "Volkswagen",
         "Ford"
       ],
-      "avgPrice": 2338267,
+      "avgPrice": 2372133,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -3932,13 +3932,13 @@
       "priceRange": "2M-3M",
       "priceRangeMin": 2000000,
       "priceRangeMax": 3000000,
-      "vehicleCount": 9,
+      "vehicleCount": 8,
       "brands": [
         "Renault",
         "Ford",
         "Kia"
       ],
-      "avgPrice": 2344956,
+      "avgPrice": 2373162,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -3949,12 +3949,13 @@
       "priceRange": "3M-5M",
       "priceRangeMin": 3000000,
       "priceRangeMax": 5000000,
-      "vehicleCount": 3,
+      "vehicleCount": 4,
       "brands": [
         "BYD",
+        "Ford",
         "Kia"
       ],
-      "avgPrice": 4009000,
+      "avgPrice": 3789700,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -4310,7 +4311,7 @@
         "Ford",
         "Kia"
       ],
-      "avgPrice": 2572289,
+      "avgPrice": 2576833,
       "hasGap": false,
       "opportunityScore": 0
     },
@@ -4330,7 +4331,7 @@
         "Ford",
         "Kia"
       ],
-      "avgPrice": 3397268,
+      "avgPrice": 3401695,
       "hasGap": false,
       "opportunityScore": 0
     },
